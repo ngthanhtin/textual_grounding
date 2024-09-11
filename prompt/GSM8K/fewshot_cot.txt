@@ -1,0 +1,31 @@
+Question: For every 12 cans you recycle, you receive $0.50, and for every 5 kilograms of newspapers, you receive $1.50. If your family collected 144 cans and 20 kilograms of newspapers, how much money would you receive?
+Answer: There are 144/12 = 12 sets of 12 cans that the family collected. So, the family would receive $0.50 x 12 = $6 for the cans. There are 20/5 = 4 sets of 5 kilograms of newspapers that the family collected. So, the family would receive $1.50 x 4 = $6 for the newspapers. Therefore, the family would receive a total of $6 + $6 = $12.
+The answer is 12.
+
+Question: Betty picked 16 strawberries. Matthew picked 20 more strawberries than Betty and twice as many as Natalie. They used their strawberries to make jam. One jar of jam used 7 strawberries and they sold each jar at $4. How much money were they able to make from the strawberries they picked?
+Answer: Matthew picked 16 + 20 = 36 strawberries. Natalie picked 36/2 = 18 strawberries . All together, they have 16 + 36 + 18 = 70 strawberries. They can make 70/7 = 10 jars of strawberries . They earn 10 x $4 = $40 from the strawberries they picked .
+The answer is 40.
+
+Question: Jack has a stack of books that is 12 inches thick. He knows from experience that 80 pages is one inch thick. If he has 6 books, how many pages is each one on average?
+Answer: There are 960 pages because 80  x 12 = 960. Each book is 160 pages because 960 / 6 = 160.
+The answer is 160.
+
+Question: James dumps his whole collection of 500 Legos on the floor and starts building a castle out of them. He uses half the pieces before finishing and is told to put the rest away. He puts all of the leftover pieces back in the box they came from, except for 5 missing pieces that he can't find. How many Legos are in the box at the end?
+Answer: James starts with 500 Legos and uses half of them, leaving 500/2=250 Legos unused . He puts those unused Legos away but since he's missing 5 he only puts 250-5=245 Legos away.
+The answer is 245.
+
+Question: Ines had $20 in her purse. She bought 3 pounds of peaches, which are $2 per pound at the local farmers’ market. How much did she have left?
+Answer: Ines bought 3 pounds of peaches for 3 * $2/peach = $6. Ines has $20 - $6 = $14 left.
+The answer is 14.
+
+Question: Aaron pays his actuary membership fees each year. The membership fee increases yearly by $10. If he pays $80 in the first year, how much does his membership cost, in dollars, in the sixth year?
+Answer: In year 2, he pays 80+10=$90. In year 3, he pays 90+10=$100. In year 4, he pays 100+10=$110. In year 5, he pays 110+10=$120. In year 6, he pays 120+10=$130.
+The answer is 130.
+
+Question: Joseph invested $1000 into a hedge fund. The fund promised a yearly interest rate of 10%. If he deposited an additional $100 every month into the account to add to his initial investment of $1000, how much money will he have in the fund after two years?
+Answer: For the first year, Joseph will have invested $1000 + ($100 * 12) = $2200. The interest calculated for the first year will be $2200 * 10% = $220. The total value of the investment for the first year will be $2200 + $220 = $2420. For the second year, the total invested will be $2420 + ($100 * 12) = $3620. The interest calculated after the second year will be $3620 * 10% = $362. Therefore, Joseph's investment in the hedge fund will be worth $3620 + $362 = $3982.
+The answer is 3982.
+
+Question: The price of buying a wooden toy at the new Craftee And Best store is $20, and the cost of buying a hat is $10. If Kendra went to the shop with a $100 bill and bought two wooden toys and three hats, calculate the change she received.
+Answer: When Kendra bought 2 toys, she paid 2*$20 = $40. Since the price of a hat is $10, when Kendra bought 3 hats, she paid 3*$10 = $30. The total costs for the hats and wooden toys Kendra bought is $40+$30 = $70. From the $100 bill, Kendra received change worth $100-$70 = $30.
+The answer is 30.
