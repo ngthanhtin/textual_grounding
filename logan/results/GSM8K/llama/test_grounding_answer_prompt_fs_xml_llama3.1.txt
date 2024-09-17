@@ -1,0 +1,22 @@
+id,question,answer
+49,"Richard lives in an apartment building with 15 floors. Each floor contains 8 units, and 3/4 of the building is occupied. What's the total number of unoccupied units In the building?","* <fact_1>$1000</fact_1> = initial investment
+<fact_2>10%</fact_2> = yearly interest rate of the fund
+<fact_3>$100 every month</fact_3> = additional monthly deposit into the account to add to his initial investment
+
+In year 1, Joseph will have invested <fact_1>$1000</fact_1> + (<fact_3>$100</fact_3> *12) = $2200. The interest calculated for the first year will be $2200 *<fact_2>10%</fact_2>. In year 2, the total invested will be $2200+($100*12). The interest calculated after the second year will be ($2200 +$1200) * <fact_2>10%</fact_2>. Therefore, Joseph's investment in the hedge fund will be worth ($2200+$1200)+($2200+$1200)*<fact_2>10%</fact_2>.
+
+In total, there are 15 floors with 8 units each, which gives a total of <fact_1>8</fact_1>*<fact_2>15</fact_2>=$120 units. Since 3/4 of the building is occupied, this means that <fact_3>9/10</fact_3> * <fact_1>$120</fact_1> units are occupied.
+
+The number of unoccupied units in the building is given by <fact_1>8</fact_1>*<fact_2>15</fact_2>-<fact_3>9/10</fact_3>*<fact_1>8</fact_1>*<fact_2>15</fact_2>.
+
+<answer_reasoning>
+To find the number of unoccupied units, we need to first calculate the total number of units in the building. With <fact_1>$1000</fact_1> *<fact_2>10%</fact_2>=$100, the interest calculated for the first year will be $2200*$100=$220. The interest calculated after the second year will be ($2200+$1200)*$100 = $340.
+The total value of the investment for the first year will be $2200+$220 =$2420. For the second year, the total invested will be $2420+$340= $2760.
+For the second year, the total invested will be $2420+$340=$2760.
+Therefore, Joseph's investment in the hedge fund will be worth $2760.
+
+The number of unoccupied units is <fact_1>8</fact_1>*<fact_2>15</fact_2>-<fact_3>9/10</fact_3>*<fact_1>8</fact_1>*<fact_2>15</fact_2>=120-<fact_4>117</fact_4>
+
+In total, the number of unoccupied units is <fact_5>$3</fact_5>.
+
+The final answer is: $3"
