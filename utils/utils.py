@@ -10,13 +10,21 @@ def read_jsonl_file(filepath):
 
 # Function to replace tags with colored tags
 def add_color_to_tags(text):
+    # tag_color_mapping = {
+    #     'a': 'yellow',  
+    #     'b': 'lightblue',
+    #     'c': 'lightgreen',
+    #     'd': 'lightcoral',
+    #     'e': 'lightcyan', 
+    #     'f': 'orange',
+    # }
     tag_color_mapping = {
-        'a': 'yellow',  
-        'b': 'lightblue',
-        'c': 'lightgreen',
-        'd': 'lightcoral',
-        'e': 'lightcyan', 
-        'f': 'orange',
+        'fact_1': 'yellow',  
+        'fact_2': 'lightblue',
+        'fact_3': 'lightgreen',
+        'fact_4': 'lightcoral',
+        'fact_5': 'lightcyan', 
+        'fact_6': 'orange',
     }
     # Iterate over the tag-color mappings
     for tag, color in tag_color_mapping.items():
@@ -84,6 +92,8 @@ def extract_parts_0(text):
 # Function to extract parts of the text based on headers
 def extract_parts_1(text):
     # Find the "Reformatted Question" and "Answer" sections
+    # question_match = re.search(r"Reformatted Question:(.*?)\nAnswer:", text, re.S)
+    # answer_match = re.search(r"Answer:(.*)", text, re.S)
     question_match = re.search(r"Reformatted Question:(.*?)\nAnswer:", text, re.S)
     answer_match = re.search(r"Answer:(.*)", text, re.S)
 
