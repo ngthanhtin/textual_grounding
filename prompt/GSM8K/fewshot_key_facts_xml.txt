@@ -87,7 +87,7 @@ Aaron pays his actuary membership fees each year. The membership fee increases y
 <fact_3>sixth year</fact_3>
 </key_facts>
 <answer_reasoning>
-In year 2, he pays 80+<fact_1>10</fact_1>=$90. In year 3, he pays 90+<fact_1>10</fact_1>=$100. In year 4, he pays 100+<fact_1>10</fact_1>=$110. In year 5, he pays 110+<fact_1>10</fact_1>=$120. In year 6, he pays 120+<fact_1>10</fact_1>=$130.
+In year 2, he pays <fact_2>80</fact_2>+<fact_1>10</fact_1>=$90. In year 3, he pays 90+<fact_1>10</fact_1>=$100. In year 4, he pays 100+<fact_1>10</fact_1>=$110. In year 5, he pays 110+<fact_1>10</fact_1>=$120. In <fact_3>year 6</fact_3>, he pays 120+<fact_1>10</fact_1>=$130.
 </answer_reasoning>
 <final_answer>
 130
