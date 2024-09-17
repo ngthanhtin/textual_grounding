@@ -1,0 +1,52 @@
+id,question,answer
+919,"To raise money for their class fund, each of the 30 students from one class sold lollipops that cost $0.8 per lollypop. On average, each student sold 10 lollipops. If they bought the lollipops for $0.5 each, how much money was the class able to raise from the profit of selling lollipops?","<key_facts>
+<fact_1>30 students sold lollipops</fact_1>
+<fact_2>lollipops cost $0.8 each</fact_2>
+<fact_3>each student sold 10 lollipops</fact_3>
+<fact_4>students bought lollipops for $0.5 each</fact_4>
+</key_facts>
+<answer_reasoning>
+Each student made a profit of <fact_2>$0.8</fact_2> - <fact_4>$0.5</fact_4> = $0.3 per lollipop. Since each student sold <fact_3>10</fact_3> lollipops, the total profit for one student was <fact_3>10</fact_3>*<fact_2>$0.8</fact_2> - <fact_4>10*$0.5</fact_4> = $3. Since there are 30 students, the total amount raised from selling lollipops is 30*<answer_of_fact_1>$3</answer_of_fact_1> =$90.
+</answer_reasoning>
+<final_answer>
+90
+</final_answer>"
+148,"Brittany and her mom go to the museum. The cost of admission is $12 for adults and $10 for children. Brittany's mom gives the cashier money for 1 child ticket and 1 adult ticket. If she received $8 in change, how much money, in dollars, did she give the cashier?","<key_facts>
+<fact_1>admission cost for adults is $12</fact_1>
+<fact_2>admission cost for children is $10</fact_2>
+<fact_3>Brittany's mom bought 1 adult ticket and 1 child ticket</fact_3>
+<fact_4>she received $8 in change</fact_4>
+</key_facts>
+
+<answer_reasoning>
+The total cost of the admission tickets is <fact_2>$10</fact_2>+<fact_1>$12</fact_1>= $22. Since Brittany's mom received <fact_4>$8 in change</fact_4>, she must have given the cashier $22-$8 = $14.
+</answer_reasoning>
+
+<final_answer>
+14
+</final_answer>"
+64,"Sophia is thinking of taking a road trip in her car, and would like to know how far she can drive on a single tank of gas. She has traveled 100 miles since last filling her tank, and she needed to put in 4 gallons of gas to fill it up again. The owner's manual for her car says that her tank holds 12 gallons of gas. How many miles can Sophia drive on a single tank of gas?","<key_facts>
+<fact_1>sophia has traveled 100 miles since last filling her tank</fact_1>
+<fact_2>she needed to put in 4 gallons of gas to fill it up again</fact_2>
+<fact_3>the owner's manual for her car says that her tank holds 12 gallons of gas</fact_3>
+</key_facts>
+
+<answer_reasoning>
+Since Sophia can travel <fact_1>100 miles</fact_1> on 4 gallons, we need to find out how many miles she can drive on the total capacity of her tank, which is <fact_3>12 gallons</fact_3>. To do this, we first determine how far she can travel per gallon. This will be <fact_2>100 miles</fact_2>/4 gallons = 25 miles per gallon. Now that we know Sophia can drive 25 miles per gallon, and her tank holds <fact_3>12 gallons</fact_3>, the total distance she can travel on a single tank of gas is 25 * 12 = 300.
+</answer_reasoning>
+
+<final_answer>
+300
+</final_answer>"
+1226,"A basic manicure starts at $35 while a pedicure starts at $40. A certain salon offers 20% off if you get both. Suppose Karen chooses to do both and would also like to add nail art on each of her fingers, which costs $3 per nail. How much would she pay in all?","<key_facts>
+<fact_1>a basic manicure starts at $35</fact_1>
+<fact_2>a pedicure starts at $40</fact_2>
+<fact_3>nail art costs $3 per nail</fact_3>
+<fact_4>20% off for both a manicure and pedicure</fact_4>
+</key_facts>
+<answer_reasoning>
+The total cost of a basic manicure and pedicure before any discount is <fact_1>$35</fact_1>+<fact_2>$40</fact_2> = $75. Since the salon offers 20% off for both, that means Karen will pay only 80% of $75, which is 0.8*$75 =$60. To add nail art on each of her fingers, since she has <fact_3>10 nails</fact_3>, she would have to pay <fact_3>$3 per nail</fact_3>*<fact_3>10 nails</fact_3>= $30. Therefore, in total, Karen will pay <fact_4>$60 for the manicure and pedicure</fact_4>+<fact_3>$30 for nail art</fact_3> = $90.
+</answer_reasoning>
+<final_answer>
+90
+</final_answer>"
