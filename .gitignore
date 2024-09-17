@@ -1,2 +1,4 @@
 .DS_Store
 utils/keys.py
+__pycache__/
+
