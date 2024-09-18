@@ -1,5 +1,51 @@
 import re, json
 
+index_2_color_map = {
+    1: "#FF5733",  # Red
+    2: "#33FF57",  # Green
+    3: "#3357FF",  # Blue
+    4: "#FF33A1",  # Pink
+    5: "#FFA533",  # Orange
+    6: "#33FFF3",  # Cyan
+    7: "#FF5733",  # Coral Red
+    8: "#8D33FF",  # Purple
+    9: "#33FF8D",  # Mint Green
+    10: "#FF335E",  # Deep Rose
+    11: "#3378FF",  # Light Blue
+    12: "#FFB833",  # Amber
+    13: "#FF33F5",  # Magenta
+    14: "#75FF33",  # Lime Green
+    15: "#33C4FF",  # Sky Blue
+    16: "#FF8633",  # Deep Orange
+    17: "#C433FF",  # Violet
+    18: "#33FFB5",  # Aquamarine
+    19: "#FF336B",  # Bright Pink
+    20: "#FFDD33",  # Golden Yellow
+}
+
+char_2_color_map = {
+    'a': "#FF5733",  # Red
+    'b': "#33FF57",  # Green
+    'c': "#3357FF",  # Blue
+    'd': "#FF33A1",  # Pink
+    'e': "#FFA533",  # Orange
+    'f': "#33FFF3",  # Cyan
+    'g': "#FF5733",  # Coral Red
+    'h': "#8D33FF",  # Purple
+    'i': "#33FF8D",  # Mint Green
+    'j': "#FF335E",  # Deep Rose
+    'k': "#3378FF",  # Light Blue
+    'l': "#FFB833",  # Amber
+    'm': "#FF33F5",  # Magenta
+    'n': "#75FF33",  # Lime Green
+    'o': "#33C4FF",  # Sky Blue
+    'p': "#FF8633",  # Deep Orange
+    'q': "#C433FF",  # Violet
+    'r': "#33FFB5",  # Aquamarine
+    's': "#FF336B",  # Bright Pink
+    't': "#FFDD33",  # Golden Yellow
+}
+
 def read_jsonl_file(filepath):
     data = [] 
     with open(filepath, 'r') as file:
@@ -10,16 +56,8 @@ def read_jsonl_file(filepath):
 
 # Function to replace tags with colored tags
 def add_color_to_tags(text):
-    tag_color_mapping = {
-        'a': 'yellow',  
-        'b': 'lightblue',
-        'c': 'lightgreen',
-        'd': 'lightcoral',
-        'e': 'lightcyan', 
-        'f': 'orange',
-    }
     # Iterate over the tag-color mappings
-    for tag, color in tag_color_mapping.items():
+    for tag, color in char_2_color_map.items():
         # Regex to find the tag and replace it with the same tag having a color attribute
         text = re.sub(f'<{tag}>', f'<{tag} style="background-color: {color};">', text)
         text = re.sub(f'</{tag}>', f'</{tag}>', text)  # Closing tags remain unchanged
