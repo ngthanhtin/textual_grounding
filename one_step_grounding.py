@@ -8,7 +8,7 @@ import anthropic
 import random, json, argparse
 from tqdm import tqdm
 import pandas as pd
-from utils.utils import read_jsonl_file
+from utils.utils import read_jsonl_file, extract_last_sentence
 random.seed(0)
 
 
@@ -22,10 +22,16 @@ def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used):
         # prompt = f"{few_shot_prompt}\n{q}\nCan you help me answer the question and use <a></a> tags to highlight important information and its reference to the information in the question by using <ref></ref> tags." # prompt 1
         # prompt = f"{q}\nCan you help me answer the question and use <a></a> tags to highlight important information and its reference to the information in the question by using <ref></ref> tags." # prompt zeroshot
         
+        last_sentence = extract_last_sentence(q)
+        
         if prompt_used == "fs":
             prompt = f"{few_shot_prompt}\n{q}"
         if prompt_used == "fs_inst":
-            prompt = f"{few_shot_prompt}\n{q}\nI want you to answer this question but your explanation should contain references referring back to the information in the question. To do that, first, re-generate the question with proper tags and then generate your answers. The output format is as follow:\n\
+            # prompt = f"{few_shot_prompt}\n{q}\nI want you to answer this question but your explanation should contain references referring back to the information in the question. To do that, first, re-generate the question with proper tags and then generate your answers. The output format is as follow:\n\
+            #     Reformatted Question: \
+            #         Answer:"
+            
+            prompt = f"{few_shot_prompt}\n{q}\nI want you to answer this question but your explanation should contain references referring back to the information in the question. To do that, first, re-generate the question with proper tags for key phrases the key phrases that are most relevant to answering the question {last_sentence} and then generate your answers. The output format is as follow:\n\
                 Reformatted Question: \
                     Answer:"
         if prompt_used == "zs":
@@ -72,10 +78,15 @@ if __name__ == "__main__":
     
     args = arg_parser.parse_args()
     
+    # data path
     data_path = f'data/{args.dataset}/test.jsonl'
-    fewshot_prompt_path = f"prompt/{args.dataset}/fewshot_grounding_prompt_design_1_tin_v2.txt"
-    save_path = f'results/{args.dataset}/design_1_tin_v2/test_grounding_answer_prompt_{args.prompt_used}_{args.llm_model}.csv'
-    os.makedirs(f'results/{args.dataset}/design_1_tin_v2', exist_ok=True)
+    # fewshot prompt path
+    prompt_design = 'design_1'
+    version = 'v3'
+    fewshot_prompt_path = f"prompt/{args.dataset}/fewshot_{prompt_design}_{version}.txt"
+    # save path
+    save_path = f'results/{args.dataset}/{prompt_design}_{version}/{args.prompt_used}_{args.llm_model}.csv'
+    os.makedirs(f'results/{args.dataset}/{prompt_design}_{version}', exist_ok=True)
     
     # read file grounding_prompt.txt
     with open(fewshot_prompt_path, 'r') as file:
@@ -84,11 +95,13 @@ if __name__ == "__main__":
     # read data
     data = read_jsonl_file(data_path)
     # take random data
-    random_data = random.sample(data, 10)
+    # random_data = random.sample(data, 10)
+    random_data = data
     
-    questions = [x["question"] for x in random_data]
-    ids = [x["id"] for x in random_data]       
-            
+    question_length = 526 # 800
+    questions = [x["question"] for x in random_data if len(x["question"]) >= question_length]
+    ids = [x["id"] for x in random_data if len(x["question"]) >= question_length]
+    
     ids_can_be_answered, questions_can_be_answered, answers = query_llm(args.llm_model, ids, questions, few_shot_prompt, args.prompt_used)
     
     if args.save_answer:

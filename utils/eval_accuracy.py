@@ -1,57 +1,73 @@
-# if args.dataset == 'GSM8K':
-        #extract the answer
-        # gts = [x.split("####")[-1].strip() for x in gts] 
-        
-        
 # %%
 import pandas as pd
-from utils.utils import extract_parts, calculate_iou, add_color_to_tags, extract_conclusion, extract_parts_only_answer, check_for_word
+from utils import extract_parts_1, calculate_iou, add_color_to_tags, extract_conclusion, extract_parts_only_answer, check_for_word, read_jsonl_file
 
-llm_model = 'gemini'
-dataset = 'StrategyQA' # 'GSM8K', 'StrategyQA'
-prompt_used = 2 #0, 1, 2
-save_html_path = f"results/{dataset}/design_1_50/question_answer_highlights_prompt_{prompt_used}_{llm_model}.html"
-df_path = f'results/{dataset}/design_1_50/test_grounding_answer_prompt_{prompt_used}_{llm_model}.csv'
-gt_path = f'sample_datasets/{dataset}/gt_50.txt'
+llm_model = 'claude'
+dataset = 'GSM8K' # 'GSM8K', 'StrategyQA'
+prompt_used = 1 #0, 1, 2
+data_path = f'../data/{dataset}/test.jsonl'
+df_path = f'../results/{dataset}/design_1_v3/fs_inst_{llm_model}.csv'
+
 if prompt_used in [0,1]:
     prefix = 'The answer is'
     prefix = 'The answer is'
 elif prompt_used == 2:
     prefix = 'Final answer:'
 
-# read gt
-with open(gt_path, 'r') as file:
-    gts = file.readlines()
-    gts = [x.strip() for x in gts]
-    if dataset == 'GSM8K':
-        gts = [float(x.replace(',','')) for x in gts] # GSM8K
-    elif dataset == 'StrategyQA':
-        gts = [bool(x) for x in gts]
 # %%
+# read data
+data = read_jsonl_file(data_path)
+# read df
 df = pd.read_csv(df_path)
 questions = df['question'].tolist()
 answers = df['answer'].tolist()
+ids = df['id'].tolist()
+# read gt
+gts = []
+for id in ids:
+    for temp in data:
+        if temp['id'] == id:
+            gt = temp['answer']
+            gt = gt.split('####')[1].strip()
+            if ',' in gt:
+                gt = gt.replace(',', '')
+            gts.append(float(gt))
+        
+
+
 # %%
 # Append each question and its highlighted answer to the HTML content
 total_iou = 0
 total_acc = 0
 avg_grounding_question = 0
 avg_grounding_answer = 0
+avg_len_grounding_question = 0
+avg_len_grounding_answer = 0
 failed_follow_format_question = 0
 failed_follow_format_final_answer = 0
 
 for i, (question, answer, gt) in enumerate(zip(questions, answers, gts)):
     try:
-        reformulated_question, extracted_answer = extract_parts(answer)
+        reformulated_question, extracted_answer = extract_parts_1(answer)
         # extracted_answer = extract_parts_only_answer(answer)
         # reformulated_question = ''
     except:
         failed_follow_format_question += 1
         continue
-    iou, len_question_tag, len_answer_tag = calculate_iou(reformulated_question, extracted_answer)
+    iou, len_question_tag, len_answer_tag, question_tags, answer_tags = calculate_iou(reformulated_question, extracted_answer)
     
     avg_grounding_question+=len_question_tag
     avg_grounding_answer+=len_answer_tag
+    
+    total_tag_question_legth = 0
+    for tag in question_tags:
+        total_tag_question_legth+= len(tag[1])
+    avg_len_grounding_question+=total_tag_question_legth/len(question_tags)
+    
+    total_tag_answer_legth = 0
+    for tag in answer_tags:
+        total_tag_answer_legth+= len(tag[1])
+    avg_len_grounding_answer+=total_tag_answer_legth/len(answer_tags)
     
     if dataset == 'GSM8K':
         answer = answer.replace("*", "").replace("$", "")
@@ -92,3 +108,10 @@ for i, (question, answer, gt) in enumerate(zip(questions, answers, gts)):
 print("The number of failed to follow the format (question, final answer): ", failed_follow_format_question, failed_follow_format_final_answer)
 print(total_iou/len(questions))
 print(total_acc/len(questions))
+# %%
+print(avg_grounding_question/len(questions))
+print(avg_grounding_answer/len(questions))
+# %%
+print(avg_len_grounding_question/len(questions))
+print(avg_len_grounding_answer/len(questions))
+# %%

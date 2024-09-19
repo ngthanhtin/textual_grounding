@@ -1,4 +1,5 @@
 import re, json
+from collections import Counter
 
 index_2_color_map = {
     1: "#FF5733",  # Red
@@ -7,7 +8,7 @@ index_2_color_map = {
     4: "#FF33A1",  # Pink
     5: "#FFA533",  # Orange
     6: "#33FFF3",  # Cyan
-    7: "#FF5733",  # Coral Red
+    7: "#FFDD33",  # Golden Yellow
     8: "#8D33FF",  # Purple
     9: "#33FF8D",  # Mint Green
     10: "#FF335E",  # Deep Rose
@@ -20,7 +21,6 @@ index_2_color_map = {
     17: "#C433FF",  # Violet
     18: "#33FFB5",  # Aquamarine
     19: "#FF336B",  # Bright Pink
-    20: "#FFDD33",  # Golden Yellow
 }
 
 char_2_color_map = {
@@ -30,7 +30,7 @@ char_2_color_map = {
     'd': "#FF33A1",  # Pink
     'e': "#FFA533",  # Orange
     'f': "#33FFF3",  # Cyan
-    'g': "#FF5733",  # Coral Red
+    'g': "#FFDD33",  # Coral Red
     'h': "#8D33FF",  # Purple
     'i': "#33FF8D",  # Mint Green
     'j': "#FF335E",  # Deep Rose
@@ -43,7 +43,6 @@ char_2_color_map = {
     'q': "#C433FF",  # Violet
     'r': "#33FFB5",  # Aquamarine
     's': "#FF336B",  # Bright Pink
-    't': "#FFDD33",  # Golden Yellow
 }
 
 def read_jsonl_file(filepath):
@@ -105,7 +104,7 @@ def calculate_iou(original_text, reformulated_text):
             ious.append(iou)
     
     # Return average IoU if there are any IoUs calculated
-    return sum(ious) / len(ious) if ious else 0, len(original_tags), len(reformulated_tags)
+    return sum(ious) / len(ious) if ious else 0, len(original_tags), len(reformulated_tags), original_tags, reformulated_tags
 
 # Function to extract parts of the text based on a heading pattern
 def extract_parts_0(text):
@@ -180,6 +179,15 @@ def extract_number(text):
     match = re.search(r"\$?(\d{1,9}(?:,\d{3})*(?:\.\d+)?)", text)
     return match.group(1) if match else "No number found"
 
+def count_tags(text):
+    # Find all the tags using a regular expression
+    tags = re.findall(r'<([a-z])>', text)
+    
+    # Count the occurrences of each tag using Counter
+    tag_counts = Counter(tags)
+    
+    return tag_counts
+
 def check_for_word(text, option):
     # Validate the option to make sure it's either "yes" or "no"
     # if option.lower() not in ["yes", "no"]:
@@ -193,3 +201,10 @@ def check_for_word(text, option):
     
     # Return True if a match is found, otherwise False
     return bool(match)
+
+def extract_last_sentence(text):
+    # Split the text into sentences using regular expression to handle punctuation.
+    sentences = re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s', text)
+    
+    # Return the last sentence after stripping any extra spaces.
+    return sentences[-1].strip() if sentences else text

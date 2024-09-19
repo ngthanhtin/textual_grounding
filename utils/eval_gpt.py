@@ -35,10 +35,10 @@ def evaluate_recall_llm(question, statement, tag):
     
     Statement: {statement}
     
-    1 - Most information in the statement is supported by or extracted from the tagged phrases in the question. This applies only to cases where the statement and parts of the snippet are almost identical.\n
+    1 - Most information in the statement is supported by or extracted from the tagged phrases in the question. This applies only to cases where the statement and parts of the tagged phrases are almost identical.\n
     0.5 - More than half of the content in the statement is supported by the tagged phrases in the question, but a small portion is either not mentioned or contradicts the tagged phrases in the question. For example, if the statement has two key points and the tagged phrases in the question support only one of them, it should be considered 0.5.\n
     0 - The statement is largely unrelated to the tagged phrases in the question, or most key points in the statement do not align with the content of the tagged phrases in the question.\n
-    Ensure that you do not use any information or knowledge outside of the snippet when evaluating.\n
+    Ensure that you do not use any information or knowledge outside of the tagged phrases when evaluating.\n
     Please provide the rating. Just return the number.
     """
     # response = openai.Completion.create(
@@ -74,9 +74,9 @@ def evaluate_precision_llm(cited_question, answer, tag):
     
     Statement: {answer}
     
-    1 - Some key points of the statement are supported by the snippet or extracted from it.\n
-    0 - The statement is almost unrelated to the snippet, or all key points of the statement are inconsistent with the snippet content.\n
-    Ensure that you do not use any information or knowledge outside of the snippet when evaluating.\n
+    1 - Some key points of the statement are supported by the tagged phrases or extracted from it.\n
+    0 - The statement is almost unrelated to the tagged phrases, or all key points of the statement are inconsistent with the tagged phrases content.\n
+    Ensure that you do not use any information or knowledge outside of the tagged phrases when evaluating.\n
     Please provide the rating. Just return the number.
     """
     # response = openai.Completion.create(
@@ -145,7 +145,8 @@ def evaluate_citation_recall_and_precision(reformatted_question, answer):
 
 # %%
 import pandas as pd
-df_path = '/Users/tinnguyen/Downloads/LAB_PROJECTS/textual_grounding/results/GSM8K/design_1_tin_v2/test_grounding_answer_prompt_fs_inst_claude.csv'
+llm_model = 'claude'
+df_path = f'../results/GSM8K/design_1_v3/fs_inst_{llm_model}.csv'
 df = pd.read_csv(df_path)
 questions = df['question'].tolist()
 answers = df['answer'].tolist()
@@ -172,5 +173,5 @@ print(f"Average F1 Score: {sum(f1s) / len(f1s)}")
 # %%
 # create a new dataframe to save the results
 df = pd.DataFrame(data={'recall': recalls, 'precision': precisions, 'f1_score': f1s})
-df.to_csv('test_grounding_answer_prompt_fs_inst_claude_citation_recall_precision_v2_2.csv', index=False)
+df.to_csv(f'fs_inst_{llm_model}_recall_precision_v3.csv', index=False)
 # %%

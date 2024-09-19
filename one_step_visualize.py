@@ -64,8 +64,8 @@ if __name__ == "__main__":
     
     args = arg_parser.parse_args()
     
-    save_html_path = f"results/{args.dataset}/design_1_tin_v2/question_answer_highlights_prompt_{args.prompt_used}_{args.llm_model}.html"
-    df_path = f'results/{args.dataset}/design_1_tin_v2/test_grounding_answer_prompt_{args.prompt_used}_{args.llm_model}.csv'
+    save_html_path = f"results/{args.dataset}/design_1_v3/highlights_{args.prompt_used}_{args.llm_model}.html"
+    df_path = f'results/{args.dataset}/design_1_v3/{args.prompt_used}_{args.llm_model}.csv'
 
     if args.prompt_used in ["fs", "fs_inst"]:
         prefix = 'The answer is'
