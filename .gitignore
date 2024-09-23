@@ -3,7 +3,6 @@ utils/keys.py
 utils/__pycache__/
 utils/one_step_to_two_step.py
 
-
 data/AQUA
 data/ASDiv
 data/CLUTRR
@@ -15,6 +14,9 @@ data/sports
 data/StrategyQA
 data/SVAMP
 
+utils/vis_fs/
+utils/eval_results/
 
 run.sh
+test.py
 
