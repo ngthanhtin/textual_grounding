@@ -1,0 +1,32 @@
+Question: For every 12 cans you recycle, you receive $0.50, and for every 5 kilograms of newspapers, you receive $1.50. If your family collected 144 cans and 20 kilograms of newspapers, how much money would you receive?
+Fact Diagram:
+graph TD
+    A[Recycling Problem]
+    A --> B[Cans]
+    A --> C[Newspapers]
+    A --> D[Family Collection]
+    
+    B --> B1[12 cans = $0.50]
+    
+    C --> C1[5 kg = $1.50]
+    
+    D --> D1[144 cans collected]
+    D --> D2[20 kg newspapers collected]
+Answer_Reasoning: There are <A_D_D1>144</A_D_D1>/<A_B_B1>12</A_B_B1> = 12 sets of 12 cans that the family collected. So, the family would receive <A_B_B1>$0.50</A_B_B1> * 12 = $6 for the cans. There are <A_D_D2>20 kilograms of newspapers</A_D2> that the family collected. So the family would receive <A_C_C1>$1.50</A_C_C1> * 4 = $6 for the newspapers. Therefore, the family would receive a total of $6 + $6 = $12. The answer is $12.
+Final_Answer: $12
+
+Question: Betty picked 16 strawberries. Matthew picked 20 more strawberries than Betty and twice as many as Natalie. They used their strawberries to make jam. One jar of jam used 7 strawberries and they sold each jar at $4. How much money were they able to make from the strawberries they picked?
+Fact Diagram:
+graph TD
+    A[Strawberry Picking]
+    A --> B[Betty]
+    A --> C[Matthew]
+    A --> D[Natalie]
+    B --> B1[Picked 16 strawberries]
+    C --> C1[Picked 20 more than Betty]
+    C --> C2[Picked twice as many as Natalie]
+    E[Jam Making]
+    E --> E1[1 jar uses 7 strawberries]
+    E --> E2[1 jar sells for $4]
+Answer_Reasoning: Matthew picked <A_B_B1>16</A_B_B1> + <A_C_C1>20</A_C_C1> = 36 strawberries. <A_C_C2>Natalie picked 36/2 = 18 strawberries </A_C_C2>. All together, they have <A_B_B1>16</A_B_B1> + 36 + 18 = 70 strawberries. They can make <E_E1>70/7 = 10 jars of strawberries </E_E1>. They earn <E_E2>10 x $4</E_E2>= $40 from the strawberries they picked. The answer is $40.
+Final_Answer: $40
