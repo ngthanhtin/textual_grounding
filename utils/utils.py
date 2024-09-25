@@ -45,6 +45,28 @@ char_2_color_map = {
     's': "#FF336B",  # Bright Pink
 }
 
+char_2_color_map = {
+    'fact1': "#FF5733",  # Red
+    'fact2': "#33FF57",  # Green
+    'fact3': "#3357FF",  # Blue
+    'fact4': "#FF33A1",  # Pink
+    'fact5': "#FFA533",  # Orange
+    'fact6': "#33FFF3",  # Cyan
+    'fact7': "#FFDD33",  # Coral Red
+    'fact8': "#8D33FF",  # Purple
+    'fact9': "#33FF8D",  # Mint Green
+    'fact10': "#FF335E",  # Deep Rose
+    'fact11': "#3378FF",  # Light Blue
+    'fact12': "#FFB833",  # Amber
+    'fact13': "#FF33F5",  # Magenta
+    'fact14': "#75FF33",  # Lime Green
+    'fact15': "#33C4FF",  # Sky Blue
+    'fact16': "#FF8633",  # Deep Orange
+    'fact17': "#C433FF",  # Violet
+    'fact18': "#33FFB5",  # Aquamarine
+    'fact19': "#FF336B",  # Bright Pink
+}
+
 def read_jsonl_file(filepath):
     data = [] 
     with open(filepath, 'r') as file:
@@ -82,9 +104,11 @@ def markdown_to_html_highlight(text):
 # Function to extract and compare text segments from tags
 def calculate_iou(original_text, reformulated_text):
     # Extract tagged segments from both texts
-    original_tags = re.findall(r'<([abcde])>(.*?)<\/\1>', original_text)
-    reformulated_tags = re.findall(r'<([abcde])>(.*?)<\/\1>', reformulated_text)
-
+    # original_tags = re.findall(r'<([abcde])>(.*?)<\/\1>', original_text)
+    # reformulated_tags = re.findall(r'<([abcde])>(.*?)<\/\1>', reformulated_text)
+    original_tags = re.findall(r'<(fact\d+)>(.*?)<\/\1>', original_text)
+    reformulated_tags = re.findall(r'<(fact\d+)>(.*?)<\/\1>', reformulated_text)
+    
     # Convert lists to dictionaries
     original_dict = {tag: text.strip() for tag, text in original_tags}
     reformulated_dict = {tag: text.strip() for tag, text in reformulated_tags}
@@ -104,19 +128,7 @@ def calculate_iou(original_text, reformulated_text):
             ious.append(iou)
     
     # Return average IoU if there are any IoUs calculated
-    return sum(ious) / len(ious) if ious else 0, len(original_tags), len(reformulated_tags), original_tags, reformulated_tags
-
-# Function to extract parts of the text based on a heading pattern
-def extract_parts_0(text):
-    # Find the Reformatted Question and Answer using regex
-    question_match = re.search(r"Reformatted Question:\n(.*?)(?=\n[A-Z])", text, re.S)
-    answer_match = re.search(r"Answer:\n(.*)", text, re.S)
-
-    # Extracting text for each part
-    question_text = question_match.group(1).strip() if question_match else "Question not found"
-    answer_text = answer_match.group(1).strip() if answer_match else "Answer not found"
-
-    return question_text, answer_text
+    return sum(ious) / len(ious) if ious else 0, original_tags, reformulated_tags
 
 # Function to extract parts of the text based on headers
 def extract_parts_1(text):
