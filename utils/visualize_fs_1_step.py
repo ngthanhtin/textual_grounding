@@ -102,7 +102,7 @@ def create_html_content(filename, save_html_path):
 
 
 # Specify the file name
-file_name = '../prompt/GSM8K/fewshot_design_1_v3.txt'
-save_html_path = 'vis_fs/fewshot_design_1_v3.html'
+file_name = '../prompt/GSM8K/fewshot_design_1_v4.txt'
+save_html_path = 'vis_fs/fewshot_design_1_v4.html'
 
 create_html_content(file_name, save_html_path)

@@ -22,10 +22,6 @@ def extract_tagged_phrases(text):
     return dict(tagged_phrases)
 
 # %%
-# Assuming we have an API key for GPT-4o
-openai.api_key = 'YOUR_API_KEY'
-claude_key = ''
-
 # Function to send a query to GPT-4o for evaluating citation recall
 def evaluate_recall_llm(question, statement, tag):
     prompt = f"""
@@ -146,7 +142,7 @@ def evaluate_citation_recall_and_precision(reformatted_question, answer):
 # %%
 import pandas as pd
 llm_model = 'claude'
-df_path = f'../results/GSM8K/design_1_v3/fs_inst_{llm_model}.csv'
+df_path = f'../results/GSM8K/design_1_v4/fs_inst_{llm_model}.csv'
 df = pd.read_csv(df_path)
 questions = df['question'].tolist()
 answers = df['answer'].tolist()
