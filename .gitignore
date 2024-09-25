@@ -14,6 +14,11 @@ data/sports
 data/StrategyQA
 data/SVAMP
 
+prompt/GSM8K/fewshot_design_0.txt
+prompt/GSM8K/fewshot_design_1_v1.txt
+prompt/GSM8K/fewshot_design_1_v2.txt
+prompt/GSM8K/fewshot_design_1_v1.txt
+
 utils/vis_fs/
 utils/eval_results/
 
