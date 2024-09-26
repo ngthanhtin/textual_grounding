@@ -1,0 +1,29 @@
+id,question,answer
+0,Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?,"
+
+```mermaid
+graph LR
+    A[Janet's ducks]
+    A --> B[Eggs laid: 16 per day]
+    C[Daily Consumption]
+    C --> D[BREAKFAST] -- E3 [3 eggs]-->  E4[""breakfast""]
+    C --> F[MUFFINS] -- G4 [4 eggs]-->  G5[""baking muffins""]
+
+    H[Remaining Eggs]
+    H --> I[SOLD AT MARKET]--J[""$2 per egg""]--> K[DAILY REVENUE]
+
+    L[Daily Revenue]
+    L --> M=K
+```
+1,A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?,"
+
+```mermaid
+graph TD
+    A[Robe]
+    A --> B[Fiber Requirements]
+    
+    B --> C[Bolts of blue fiber: 2]
+    B --> D[White fiber amount: half of blue fiber]
+    
+    D --> E[Half of 2 bolts is 1 bolt]
+```

@@ -1,6 +1,5 @@
 Question: For every 12 cans you recycle, you receive $0.50, and for every 5 kilograms of newspapers, you receive $1.50. If your family collected 144 cans and 20 kilograms of newspapers, how much money would you receive?
 Fact Diagram:
-
 graph TD
     A[Recycling Problem]
     A --> B[Cans]
@@ -13,8 +12,7 @@ graph TD
     
     D --> D1[144 cans collected]
     D --> D2[20 kg newspapers collected]
-
-Answer_Reasoning: There are <D1>144</A_D_D1>/<A_B_B1>12</A_B_B1> = 12 sets of 12 cans that the family collected. So, the family would receive <A_B_B1>$0.50</A_B_B1> * 12 = $6 for the cans. There are <A_D_D2>20 kilograms of newspapers</A_D2> that the family collected. So the family would receive <A_C_C1>$1.50</A_C_C1> * 4 = $6 for the newspapers. Therefore, the family would receive a total of $6 + $6 = $12. The answer is $12.
+Answer_Reasoning: There are <A_D_D1>144</A_D_D1>/<A_B_B1>12</A_B_B1> = 12 sets of 12 cans that the family collected. So, the family would receive <A_B_B1>$0.50</A_B_B1> * 12 = $6 for the cans. There are <A_D_D2>20 kilograms of newspapers</A_D2> that the family collected. So the family would receive <A_C_C1>$1.50</A_C_C1> * 4 = $6 for the newspapers. Therefore, the family would receive a total of $6 + $6 = $12. The answer is $12.
 Final_Answer: $12
 
 Question: Betty picked 16 strawberries. Matthew picked 20 more strawberries than Betty and twice as many as Natalie. They used their strawberries to make jam. One jar of jam used 7 strawberries and they sold each jar at $4. How much money were they able to make from the strawberries they picked?
