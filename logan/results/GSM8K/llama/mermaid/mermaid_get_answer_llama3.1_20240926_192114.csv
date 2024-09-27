@@ -1,0 +1,64 @@
+id,question,answer
+0,Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?,"Here is the mermaid diagram representing the key facts:
+```
+graph TD
+    A[Janet's Duck Egg Sales]
+    B[Ducks Lay Eggs]
+    C[Eggs Consumption and Use]
+    D[Farmers Market Sale]
+    
+    A --> B
+    A --> C
+    A --> D
+    
+    B --> B1[16 eggs/day]
+    
+    C --> C1[3 eaten for breakfast]
+    C --> C2[4 used for baking muffins]
+    C --> C3[13 remaining to be sold]
+    
+    D --> D1[$2 per egg]
+```
+Now, let's use these nodes to answer the question:
+
+Answer Reasoning: According to <B>fact</node_name>, Janet's ducks lay 16 eggs per day. According to <C3>fact</node_name>, 13 of those eggs are remaining after consumption and baking muffins. So, Janet sells 13 fresh duck eggs at the farmers' market every day. Since each egg is sold for $2, as indicated by <D1>fact</node_name>, Janet makes a total of 13 x $2 = $26 per day at the farmers' market.
+
+Final Answer: The final answer is $26."
+1,A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?,"Here is the key facts represented in a hierarchal format through a mermaid diagram:
+
+```mermaid
+graph TD
+    A[Robe Production]
+    B[Blue Fiber Requirements]
+    C[White Fiber Requirements]
+    
+    A --> B
+    
+    B --> B1[Takes 2 bolts of blue fiber]
+    
+    B --> C
+    
+    C --> C1[Half that much white fiber as blue fiber]
+```
+
+In this diagram:
+
+*   `A` represents the overall process of robe production.
+*   `B` and `C` represent the specific requirements for blue and white fibers, respectively.
+
+From the above diagram, we have the following key facts:
+
+*   <B1>fact</B1>: It takes 2 bolts of blue fiber to produce a robe.
+*   <C1>fact</C1>: The amount of white fiber required is half that much as blue fiber, which means it requires 2 / 2 = 1 bolt of white fiber.
+
+Now, we can use these facts to answer the question. 
+
+Since it takes 2 bolts of blue fiber and 1 bolt of white fiber to produce a robe, the total number of bolts required is:
+
+<BR_B1>fact</B_R_B1>, <BC_C1>fact</BC_C1>
+
+Total Bolts = 2 (Blue) + 1 (White) = 3
+
+Therefore, it takes 3 bolts in total to make a robe. 
+
+The answer is 3."

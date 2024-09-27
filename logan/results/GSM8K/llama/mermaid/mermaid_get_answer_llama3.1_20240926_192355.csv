@@ -1,0 +1,47 @@
+id,question,answer
+0,Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?,"Here is the key facts from the question represented in a hierarchal format through a mermaid diagram:
+
+```mermaid
+graph TD
+    A[Janet's Ducks]
+    A --> B[Ducks lay eggs]
+    A --> C[Egg Sales]
+    
+    B --> D[Lays 16 eggs per day]
+    B --> E[Sells remainder at market]
+    
+    C --> F[Eats 3 for breakfast]
+    C --> G[Bakes 4 for muffins]
+```
+
+From this graph, we can see that the key facts are:
+
+- Janet's ducks lay 16 eggs per day (D).
+- She sells the remainder of the eggs at the farmers' market.
+- She eats 3 eggs for breakfast every morning and bakes 4 for muffins.
+
+We can use these nodes to cite specific facts in our answer reasoning. 
+
+Note that fact F (Eats 3 for breakfast) is not directly relevant to the question, which asks about how much Janet makes at the farmers' market. However, it is included in the graph as it might be useful to know how many eggs are used or sold in total.
+
+Answer Reasoning:
+
+Janet's ducks lay <D>16</D> eggs per day. She eats 3 for breakfast and bakes 4 for muffins, so she uses 7 eggs daily. This leaves her with <E>16-7 = 9 </E>eggs to sell at the market. Janet sells each egg at $2, so she makes <F>9 x $2</F> = $18 every day at the farmers' market. The answer is $18.
+
+Final Answer: {18}"
+1,A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?,"Here is a mermaid diagram representing the key facts:
+
+```mermaid
+graph TD
+    A[Robe Material]
+    B[Blue Fiber]
+    C[White Fiber]
+    
+    A --> B
+    A --> C
+    
+    B --> D[2 bolts]
+    C --> E[half of blue fiber's amount]
+```
+
+Let me know if you'd like me to add anything else."
