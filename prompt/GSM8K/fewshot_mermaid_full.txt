@@ -46,6 +46,6 @@ graph TD
     B --> E[48 clips]
     C --> F[Half of April's sales]
     D --> G[Sum of April and May sales]
-Natalia sold <E>48</E>/<F>2</F> = 24 clips in May. Natalia sold <G>48+24</G> = 72 clips altogether in April and May. The answer is $72.
+Answer_Reasoning: Natalia sold <E>48</E>/<F>2</F> = 24 clips in May. Natalia sold <G>48+24</G> = 72 clips altogether in April and May. The answer is $72.
 Final_Answer: {72}
 

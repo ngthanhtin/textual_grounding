@@ -1,0 +1,25 @@
+id,question,answer
+0,Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?,"Let's break down the problem step by step.
+
+Janet has 16 ducks laying eggs every day. She uses 3 for breakfast and 4 for baking muffins, which means she uses a total of 7 eggs each day.
+
+To find out how many eggs are left to sell, we subtract the number of eggs used from the total number of eggs laid:
+
+16 (eggs per day) - 7 (eggs used per day) = 9
+
+So, Janet has 9 eggs left to sell every day.
+
+Since she sells each egg for $2, her daily earnings at the farmers' market are:
+
+9 (eggs sold per day) x $2 (price per egg) = $18
+
+Therefore, Janet makes $18 every day selling duck eggs at the farmers' market."
+1,A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?,"To find out how many bolts are needed in total to make a robe, we need to calculate the amount of blue and white fiber required.
+
+The robe takes 2 bolts of blue fiber. 
+
+For the white fiber, it is stated that it is ""half that much"" as the blue fiber, which means 2 / 2 = 1 bolt of white fiber is needed.
+
+So, in total, it requires 2 (blue) + 1 (white) = 3 bolts to make a robe. 
+
+Therefore, the answer is: {3}"
