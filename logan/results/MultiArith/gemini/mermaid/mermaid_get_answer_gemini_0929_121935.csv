@@ -1,0 +1,2339 @@
+id,question,answer
+1," Paige had 11 songs on her mp3 player. If she deleted 9 old songs from it and then added 8 new songs, how many songs does she have on her mp3 player? ","Fact_Diagram:
+graph TD
+    A[Paige's MP3 Player]
+    A --> B[Initial Songs]
+    A --> C[Songs Deleted]
+    A --> D[Songs Added]
+    B --> B1[11 songs]
+    C --> C1[9 songs]
+    D --> D1[8 songs]
+Answer_Reasoning: Paige started with <B1>11</B1> songs on her mp3 player. After deleting <C1>9</C1> songs, she had 11 - 9 = 2 songs left.  Then, she added <D1>8</D1> new songs, giving her a total of 2 + 8 = 10 songs. 
+Final_Answer: {10} 
+"
+2," There were 39 girls and 4 boys trying out for the schools basketball team. If only 26 of them got called back, how many students didn't make the cut? ","Fact_Diagram:
+graph TD
+    A[Basketball Tryouts]
+    A --> B[Total Trying Out]
+    A --> C[Total Making Team]
+    A --> D[Total Not Making Team]
+    B --> B1[39 girls]
+    B --> B2[4 boys]
+    C --> C1[26 students]
+
+Answer_Reasoning: There were a total of <B1>39</B1> + <B2>4</B2> = 43 students trying out for the basketball team.  Since only <C1>26</C1> students made the team, then 43 - <C1>26</C1> = 17 students did not make the cut. 
+Final_Answer: {17} 
+"
+3," Faye had 34 coloring books. If she gave away 3 of them, but then bought 48 more, how many would she have total? ","Fact_Diagram:
+graph TD
+    A[Faye's Coloring Books]
+    A --> B[Starting Amount]
+    A --> C[Giving Away]
+    A --> D[Buying More]
+    B --> B1[34 coloring books]
+    C --> C1[Gave away 3]
+    D --> D1[Bought 48]
+
+Answer_Reasoning: Faye started with <B1>34</B1> coloring books. After giving some away, she had <B1>34</B1> - <C1>3</C1> = 31 coloring books. After buying more, she had 31 + <D1>48</D1> = 79 coloring books. 
+Final_Answer: {79} 
+"
+4," The school cafeteria had 23 apples. If they used 20 to make lunch for the students and then bought 6 more, how many apples would they have? ","Fact_Diagram:
+graph TD
+    A[Cafeteria Apples]
+    A --> B[Starting Apples]
+    A --> C[Apples Used]
+    A --> D[Apples Bought]
+    B --> B1[23 apples]
+    C --> C1[20 apples]
+    D --> D1[6 apples]
+
+Answer_Reasoning: The cafeteria had <B1>23</B1> apples and used <C1>20</C1> apples, leaving them with 23 - 20 = 3 apples. They then bought <D1>6</D1> more apples, giving them a total of 3 + 6 = 9 apples. 
+Final_Answer: {9} 
+"
+5," In a video game, each enemy defeated gives you 9 points. If a level has 11 enemies total and you destroy all but 3 of them, how many points would you earn? ","Fact_Diagram:
+graph TD
+    A[Video Game]
+    A --> B[Enemies]
+    A --> C[Points]
+    B --> B1[11 enemies in level]
+    B --> B2[3 enemies not destroyed]
+    C --> C1[9 points per enemy]
+Answer_Reasoning: There are <B1>11</B1> - <B2>3</B2> = 8 enemies that were destroyed. You earn <C1>9</C1> * 8 = 72 points.  The answer is 72
+Final_Answer: {72} 
+"
+7," April's discount flowers was having a sale where each rose was 4 dollars. If April started with 13 roses and had 4 roses left, how much money did she earn? ","Fact_Diagram:
+graph TD
+    A[April's Flower Sale]
+    A --> B[Roses]
+    B --> B1[Started with 13 roses]
+    B --> B2[Sold each rose for $4]
+    B --> B3[Had 4 roses left] 
+
+Answer_Reasoning: April sold <B1>13</B1> - <B3>4</B3> = 9 roses. She earned a total of 9 x <B2>$4</B2> = $36. The answer is $36. 
+Final_Answer: {36} 
+"
+8," Ned had to wash 9 short sleeve shirts and 21 long sleeve shirts before school. If he had only washed 29 of them by the time school started, how many did he not wash? ","```mermaid
+graph TD
+    A[Laundry Chore]
+    A --> B[Total Shirts]
+    B --> C{9 short sleeve shirts}
+    B --> D{21 long sleeve shirts}
+    A --> E[Shirts Washed]
+    E --> F{29 shirts washed} 
+```
+
+Answer Reasoning: Ned had to wash a total of <C>9</C> + <D>21</D> = 30 shirts. Since he only washed <F>29 shirts</F>, he did not wash 30 - 29 = 1 shirt. 
+Final_Answer: {1} 
+"
+9," A company invited 47 people to a luncheon, but 7 of them didn't show up. If the tables they had held 5 people each, how many tables do they need? ","Fact_Diagram:
+graph TD
+    A[Luncheon Seating]
+    A --> B{Invited}
+    A --> C{Attendees}
+    A --> D[Table Capacity]
+    B --> E[47 People]
+    C --> F[Invited - Absent]
+    F --> G[7 People]
+    D --> H[5 People]
+Answer_Reasoning: There were <B><E>47</E></B> - <F><G>7</G></F> = 40 people who attended the luncheon.  Therefore, they need 40/<H>5</H> = 8 tables.
+Final_Answer: {8} 
+"
+10," Tom had 5 books. If he sold 4 of them and used the money he earned to buy 38 new books, how many books would Tom have? ","Fact_Diagram:
+graph TD
+    A[Tom's Books]
+    A --> B{Started with 5 books}
+    A --> C[Selling]
+    A --> D[Buying]
+    C --> C1{Sold 4 books}
+    D --> D1{Bought 38 new books}
+Answer_Reasoning: Tom had <B>5</B> books and sold <C1>4</C1> leaving him with 1 book.  After buying <D1>38</D1> more books he had 39 books.
+Final_Answer: {39} 
+"
+11," For a birthday party Jerry bought 41 regular sodas and 22 diet sodas. If his fridge would only hold 9 on each shelf, how many shelves would he fill up? ","Fact_Diagram:
+graph TD
+    A[Soda for Party]
+    A --> B[Regular Sodas]
+    A --> C[Diet Sodas]
+    B --> B1[41 sodas]
+    C --> C1[22 sodas]
+    D[Refrigerator Storage]
+    D --> D1[9 sodas per shelf]
+Answer_Reasoning: Jerry bought <B1>41</B1> + <C1>22</C1> = 63 sodas in total.  Therefore, he will fill 63 / <D1>9</D1> = 7 shelves. 
+Final_Answer: {7} 
+"
+12," For Halloween Debby and her sister combined the candy they received. Debby had 32 pieces of candy while her sister had 42. If they ate 35 pieces the first night, how many pieces do they have left? ","Fact_Diagram:
+graph TD
+    A[Halloween Candy]
+    A --> B[Debby's Candy]
+    A --> C[Sister's Candy]
+    A --> D[Total Candy]
+    A --> E[Candy Eaten]
+    A --> F[Candy Remaining]
+    B --> B1[32 pieces]
+    C --> C1[42 pieces]
+    D --> D1[B1 + C1]
+    E --> E1[35 pieces]
+    F --> F1[D1 - E1]
+
+Answer_Reasoning: Debby and her sister had a total of <B1>32</B1> + <C1>42</C1> = <D1>74</D1> pieces of candy. After eating <E1>35</E1> pieces, they have <D1>74</D1> - <E1>35</E1> = <F1>39</F1> pieces left. 
+Final_Answer: {39} 
+"
+13, Emily was planting vegetables in her garden. She started with 41 seeds and planted 29 of them in the big garden and in each of her small gardens put 4 seeds each. How many small gardens did Emily have? ,"Fact_Diagram:
+graph TD
+    A[Emily's Garden]
+    A --> B[Seeds]
+    A --> C[Big Garden]
+    A --> D[Small Gardens]
+    
+    B --> B1[Started with 41 seeds]
+    B --> B2[Planted 29 seeds in big garden]
+    
+    D --> D1[4 seeds per small garden]
+Answer_Reasoning: Emily had <B1>41</B1> - <B2>29</B2> = 12 seeds left for her small gardens.  Since she planted <D1>4</D1> seeds in each small garden, Emily had 12/<D1>4</D1> = 3 small gardens. 
+Final_Answer: {3} 
+"
+14," For Halloween Emily received 5 pieces of candy from neighbors and 13 pieces from her older sister. If she only ate 9 pieces a day, how long would the candy last her? ","Fact_Diagram: 
+graph TD
+    A[Emily's Halloween Candy]
+    A --> B[Total Candy]
+    B --> C[Neighbors: 5 pieces]
+    B --> D[Sister: 13 pieces]
+    A --> E[Daily Consumption]
+    E --> F[9 pieces per day]
+
+Answer_Reasoning: Emily received a total of <C>5</C> + <D>13</D> = 18 pieces of candy.  Therefore, her candy would last her <B>18</B>/<F>9</F> = 2 days. 
+Final_Answer: {2} 
+"
+15," Mike is at the library helping put away books. There are 82 book to put away total but a librarian takes 10 of them and leaves Mike with the rest. If he can fit 9 books on a shelf, how many shelves will he need? ","Fact_Diagram:
+graph TD
+    A[Library Book Organization]
+    A --> B[Total Books]
+    B --> B1[82 books]
+    A --> C[Librarian's Action]
+    C --> C1[Takes 10 books]
+    A --> D[Mike's Task]
+    D --> D1[Shelve remaining books]
+    D --> D2[9 books per shelf]
+
+Answer_Reasoning: There are <B1>82</B1> - <C1>10</C1> = 72 books left for Mike to put away. He needs <D1>72/ <D2>9</D2> = 8 shelves for the books. 
+Final_Answer: {8} 
+"
+16," While on vacation, Nancy took 49 pictures at the zoo and 8 at the museum. If she later deleted 38 of the pictures, how many pictures from her vacation did she still have? ","Fact_Diagram:
+graph TD
+    A[Nancy's Vacation Pictures]
+    A --> B{Pictures Taken]
+    B --> B1[Zoo: 49 pictures]
+    B --> B2[Museum: 8 pictures]
+    A --> C[Pictures Deleted: 38 pictures]
+
+Answer_Reasoning: Nancy took a total of <B1>49</B1> + <B2>8</B2> = 57 pictures on vacation. After deleting some, she had 57 - <C>38</C> = 19 pictures left. 
+Final_Answer: {19} 
+"
+17," A new building needed 14 windows. The builder had already installed 8 of them. If it takes 8 hours to install each window, how long will it take him to install the rest? ","Fact_Diagram:
+graph TD
+    A[New Building Windows]
+    A --> B[Total Windows]
+    A --> C[Windows Installed]
+    A --> D[Installation Time]
+    B --> B1[14 windows]
+    C --> C1[8 windows]
+    D --> D1[8 hours per window]
+Answer_Reasoning: The builder still has <B1>14</B1> - <C1>8</C1> = 6 windows left to install. Therefore, it will take him <D1>8</D1> * 6 = 48 hours to install the rest. 
+Final_Answer: {48} 
+"
+18, A store had 40 oranges in a bin. If they threw away 25 of the old ones and put 21 new ones in the bin how many would be in the bin? ,"Fact_Diagram:
+graph TD
+    A[Orange Bin]
+    A --> B[Starting Oranges]
+    A --> C[Removed Oranges]
+    A --> D[Added Oranges]
+    B --> B1[40 oranges]
+    C --> C1[25 oranges]
+    D --> D1[21 oranges]
+Answer_Reasoning: The bin started with <B1>40 oranges</B1>. Then, <C1>25 oranges were removed</C1>. This leaves 40-25 = 15 oranges. Then, <D1>21 oranges were added</D1>. There would now be 15+21 = 36 oranges in the bin.
+Final_Answer: {36}"
+19," At lunch a waiter had 7 customers and 5 of them didn't leave a tip. If he got $3 each from the ones who did tip, how much money did he earn? ","Fact_Diagram: 
+graph TD
+    A[Waiter's Earnings]
+    A --> B{Customers}
+    B --> B1[7 total]
+    B --> C{Tipping Customers}
+    C --> C1[<B1>7</B1> - 5 = 2] 
+    A --> D{Tip Amount}
+    D --> D1[$3 per customer]
+
+Answer_Reasoning: The waiter had <C1>2</C1> customers that left a tip. Since each tip was <D1>$3</D1>, he earned 2 x $3 = $6.  Final_Answer: {6} 
+"
+20, For Halloween Faye scored 47 pieces of candy. She ate 25 pieces the first night and then her sister gave her 40 more pieces. How many pieces of candy does Faye have now? ,"Fact_Diagram:
+graph TD
+    A[Faye's Candy]
+    A --> B{Started with 47 pieces}
+    A --> C[Changes]
+    C --> D{Ate 25 pieces}
+    C --> E{Given 40 more pieces}
+    A --> F{Total Pieces Now}
+
+Answer_Reasoning: Faye had <B>47</B> pieces of candy and ate <D>25</D>, leaving her with 47-25 = 22 pieces.  Her sister gave her <E>40</E> more pieces so she now has 22 + 40 = 62 pieces. <F>Faye now has 62 pieces of candy</F>.
+Final_Answer: {62} 
+"
+21, A group of 4 friends went into a restaurant. The chef already had 9 chicken wings cooked but cooked 7 more for the group. If they each got the same amount how many would each person get? ,"Fact_Diagram:
+graph TD
+    A[Chicken Wings]
+    A --> B[Chef's Wings]
+    A --> C[Cooked Wings]
+    A --> D[Friends]
+    B --> B1[9 wings]
+    C --> C1[7 wings]
+    D --> D1[4 friends]
+Answer_Reasoning: The chef has a total of <B1>9</B1> + <C1>7</C1> = 16 chicken wings. If the wings are divided equally among the <D1>4</D1> friends, each friend would get 16 / 4 = 4 chicken wings.
+Final_Answer: {4} 
+"
+22," John earned 8 dollars for each lawn he mowed. If he had 15 lawns to mow, but forgot to mow 7 of them, how much money did he actually earn? ","Fact_Diagram:
+graph TD
+    A[John's Earnings]
+    A --> B{Lawns to mow}
+    B --> B1[Total: 15]
+    B --> B2[Forgot: 7]
+    A --> C[Pay rate: $8/lawn]
+
+Answer_Reasoning: John forgot to mow <B2>7</B2> lawns out of his total of <B1>15</B1>, so he actually mowed 15 - 7 = 8 lawns. Since his pay rate is <C>$8 per lawn</C>, he earned 8 * $8 = $64.
+Final_Answer: {64} 
+"
+23," A pet shelter had 5 puppies when another 35 were brought in. If 8 puppies a day are adopted, how long would it take for all of them to be adopted? ","Fact_Diagram:
+graph TD
+    A[Pet Shelter]
+    A --> B[Starting Puppies]
+    A --> C[New Puppies]
+    A --> D[Adoption Rate]
+    B --> B1[5 puppies]
+    C --> C1[35 puppies]
+    D --> D1[8 puppies/day]
+
+Answer_Reasoning: The shelter has a total of <B1>5</B1> + <C1>35</C1> = 40 puppies. It would take 40/<D1>8</D1> = 5 days for all of them to be adopted.
+Final_Answer: {5} 
+"
+24," A new building needed 9 windows. The builder had already installed 6 of them. If it takes 6 hours to install each window, how long will it take him to install the rest? ","Fact_Diagram:
+graph TD
+    A[New Building Windows]
+    A --> B[Windows Needed]
+    A --> C[Windows Installed]
+    D[Installation Time]
+    D --> E[6 hours per window]
+    
+    B --> F[9 windows]
+    C --> G[6 windows]
+
+Answer_Reasoning: The builder still needs to install <F>9</F> - <G>6</G> = 3 more windows.  Since each window takes <E>6</E> hours to install, it will take him 3 x <E>6</E> = 18 hours to install the rest. 
+Final_Answer: {18} 
+"
+25," A teacher had 34 worksheets to grade. If she graded 7, but then another 36 were turned in, how many worksheets would she have to grade? ","Fact_Diagram: 
+graph TD
+    A[Grading Workload]
+    A --> B[Initial Amount]
+    A --> C[Amount Graded]
+    A --> D[Amount Turned In]
+    A --> E[Total to Grade]
+    B --> B1[34 worksheets]
+    C --> C1[7 worksheets]
+    D --> D1[36 worksheets]
+
+Answer_Reasoning: The teacher had <B1> 34 </B1> worksheets to grade. After grading <C1> 7 </C1> worksheets, she had <B1> 34 </B1> - <C1> 7 </C1> = 27 worksheets left to grade.  After another <D1> 36 </D1> were turned in, she had a total of 27 + <D1> 36 </D1> = 63 worksheets to grade. 
+Final_Answer: {63} 
+"
+26," While playing at the arcade, Frank won 33 tickets playing 'whack a mole' and 9 tickets playing 'skee ball'. If he was trying to buy candy that cost 6 tickets a piece, how many could he buy? ","Fact_Diagram: 
+graph TD
+    A[Frank's Arcade Tickets]
+    A --> B[Total Tickets]
+    A --> D[Candy]
+    B --> C[33 from 'Whack a Mole']
+    B --> E[9 from 'Skee Ball']
+    D --> F[Cost 6 tickets each]
+Answer_Reasoning: Frank won a total of <C>33</C> + <E>9</E> = 42 tickets. Since each candy costs <F>6</F> tickets, he could buy 42 / 6 = 7 candies. 
+Final_Answer: {7} 
+"
+28," Paige had 43 math problems and 12 science problems for homework. If she finished 44 of the problems at school, how many problems did she have to do for homework? ","Fact_Diagram:
+graph TD
+    A[Homework Problems]
+    A --> B[Math Problems]
+    A --> C[Science Problems]
+    A --> D[Problems Completed at School]
+    A --> E[Problems for Homework]
+    
+    B --> B1[43 problems]
+    C --> C1[12 problems]
+    D --> D1[44 problems]
+
+Answer_Reasoning: Paige had a total of <B1>43</B1> + <C1>12</C1> = 55 problems for homework.  Since she finished <D1>44</D1> problems at school, she had 55 - <D1>44</D1> = 11 problems to do for homework. 
+Final_Answer: {11} 
+"
+6," Megan earned 8 points for each bag of cans she recycled. If she had 14 bags, but didn't recycle 5 of them, how many points would she have earned? ","```mermaid
+graph TD
+    A[Megan's Recycling]
+    A --> B{Bags for Recycling}
+    B --> B1[14 bags total]
+    B --> B2[5 bags not recycled]
+    A --> C[Points System]
+    C --> C1[8 points per bag]
+```
+
+Answer_Reasoning: Megan had <B1>14</B1> bags, but didn't recycle <B2>5</B2> bags, so she recycled 14 - 5 = 9 bags. Since Megan earns <C1>8</C1> points per bag, she earned 9 * 8 = 72 points. 
+Final_Answer: {72} 
+"
+27," At a restaurant each adult meal costs $7 and kids eat free. If a group of 13 people came in and 9 were kids, how much would it cost for the group to eat? ","Fact_Diagram:
+graph TD
+    A[Restaurant Bill]
+    A --> B[Prices]
+    A --> C[Group]
+    
+    B --> B1[Adult Meal: $7]
+    B --> B2[Kids eat Free]
+    
+    C --> C1[13 Total People]
+    C --> C2[9 Kids]
+Answer_Reasoning: Since there are <C1>13</C1> people in the group and <C2>9</C2> are kids, then 13-9 = 4 adults are eating.  Since each adult meal costs <B1>$7</B1>, the total cost will be 4 * $7 = $28. The answer is $28
+Final_Answer: {28} 
+"
+29," Rachel was playing a video game where she scores 9 points for each treasure she finds. If she found 5 treasures on the first level and 2 on the second, what would her score be? ","Fact_Diagram:
+graph TD
+    A[Video Game Scoring]
+    A --> B[Points per Treasure]
+    A --> C[Treasures Found]
+    B --> B1[9 points/treasure]
+    C --> C1[Level 1: 5 treasures]
+    C --> C2[Level 2: 2 treasures]
+Answer_Reasoning: Rachel scored a total of <C1>5</C1> * <B1>9</B1> = 45 points on the first level.  On the second level, she scored <C2>2</C2> * <B1>9</B1> = 18 points.  In total, her score would be 45 + 18 = 63.
+Final_Answer: {63} 
+"
+31, A toy store had 17 giant stuffed bears in stock when they got another shipment with 10 bears in it. The put the bears onto shelves with 9 on each shelf. How many shelves did they use? ,"Fact_Diagram:
+graph TD
+    A[Toy Store Inventory]
+    A --> B[Giant Stuffed Bears]
+    B --> B1[Initial Stock: 17 bears]
+    B --> B2[Shipment: +10 bears]
+    B --> B3[Total Bears: B1 + B2]
+    A --> C[Shelf Arrangement]
+    C --> C1[Bears per Shelf: 9 bears]
+
+Answer_Reasoning: The toy store had a total of <B1>17</B1> + <B2>10</B2> = 27 bears. They used 27 / <C1>9</C1> = 3 shelves to display the bears. 
+Final_Answer: {3} 
+"
+32," Gwen was organizing her book case making sure each of the shelves had exactly 4 books on it. If she had 5 shelves of mystery books and 3 shelves of picture books, how many books did she have total? ","Fact_Diagram:
+graph TD
+    A[Gwen's Books]
+    A --> B[Mystery Books]
+    A --> C[Picture Books]
+    B --> B1[5 shelves]
+    C --> C1[3 shelves]
+    B --> B2[4 books per shelf]
+    C --> C2[4 books per shelf]
+Answer_Reasoning: Gwen had <B1>5</B1> x <B2>4</B2> = 20 mystery books. She also had <C1>3</C1> x <C2>4</C2> = 12 picture books. In total, Gwen had 20 + 12 = 32 books. 
+Final_Answer: {32} 
+"
+33, Wendy uploaded 79 pictures to Facebook. She put 44 pics into one album and put the rest into 5 different albums. How many pictures were in each album? ,"```mermaid
+graph TD
+    A[Wendy's Pictures]
+    A --> B[Facebook Upload]
+    A --> C[Album Distribution]
+    B --> B1[79 total pictures]
+    C --> C1[44 pictures in one album]
+    C --> C2[Remaining pictures in 5 albums]
+```
+
+Answer_Reasoning: Wendy uploaded <B1>79</B1> pictures in total. After putting <C1>44</C1> pictures in one album, she had <B1>79</B1>-<C1>44</C1> = 35 pictures remaining. These remaining pictures were distributed equally among <C2>5 albums</C2>, so there were 35/<C2>5</C2> = 7 pictures in each of these albums. 
+Final_Answer: {7} 
+"
+34, The schools debate team had 5 boys and 40 girls on it. If they were split into groups of 9 how many groups could they make? ,"```mermaid
+graph TD
+    A[Debate Team]
+    A --> B[Members]
+    B --> C{5 boys}
+    B --> D{40 girls}
+    A --> E[Group Formation]
+    E --> F{9 members per group} 
+```
+
+Answer_Reasoning: The debate team had a total of <C>5</C> + <D>40</D> = 45 members. Therefore, they could make <F>45/9</F> = 5 groups. 
+Final_Answer: {5} 
+"
+35," April's discount flowers was having a sale where each rose was 7 dollars. If April started with 9 roses and had 4 roses left, how much money did she earn? ","Fact_Diagram:
+graph TD
+    A[April's Flower Sale]
+    A --> B[Roses]
+    A --> D[Earnings]
+    
+    B --> B1[Started with 9 roses]
+    B --> B2[4 roses left]
+    B --> C[Price per rose: $7]
+
+Answer_Reasoning: April sold <B1>9</B1> - <B2>4</B2> = 5 roses. So she made <C>$7</C> * 5 = $35 from the roses. The answer is $35. 
+Final_Answer: {35} 
+"
+36," A trivia team had 11 members total, but during a game 6 members didn't show up. If each member that did show up scored 9 points, how many points were scored total? ","Fact_Diagram:
+graph TD
+    A[Trivia Team]
+    A --> B[Team Size]
+    A --> C[Game Attendance]
+    C --> D[Members Present]
+    C --> E[Members Absent]
+    D --> F[Points Per Member]
+
+    B --> B1[11 members]
+    E --> E1[6 members]
+    F --> F1[9 points]
+
+Answer_Reasoning: There were <B1>11</B1> total members on the trivia team, but <E1>6</E1> members were absent. This means that <B1>11</B1>-<E1>6</E1>= 5 members were present at the game. With each member scoring <F1>9</F1> points, the total points scored is 5*<F1>9</F1>= 45 points.
+Final_Answer: {45} 
+"
+37, A pet store had 13 siamese cats and 5 house cats. During a sale they sold 10 cats. How many cats do they have left? ,"Fact_Diagram:
+graph TD
+    A[Pet Store Cats]
+    A --> B[Siamese Cats]
+    A --> C[House Cats]
+    A --> D[Cats Sold]
+    B --> E[13 Siamese Cats]
+    C --> F[5 House Cats]
+    D --> G[10 Cats Sold]
+Answer_Reasoning: The pet store had a total of <E>13</E> + <F>5</F> = 18 cats. After the sale, they have 18 - <G>10</G> = 8 cats left. 
+Final_Answer: {8} 
+"
+38, Victor was working as a sacker at a grocery store where he made 6 dollars an hour. On Monday he worked 5 hours and on Tuesday he worked 5 hours. How much money did Victor make in those two days? ,"Fact_Diagram:
+graph TD
+    A[Victor's Earnings]
+    A --> B{Hourly Rate}
+    B --> B1[$6/hour]
+    A --> C{Monday Work}
+    C --> C1[5 hours]
+    A --> D{Tuesday Work}
+    D --> D1[5 hours]
+
+Answer_Reasoning: Victor worked a total of <C1>5</C1> + <D1>5</D1> = 10 hours on Monday and Tuesday.  Since Victor makes <B1>$6</B1> an hour, he made 10 * <B1>6</B1> = $60 over those two days.
+Final_Answer: {60} 
+"
+39," Megan baked 71 cupcakes for her school's bake sale. If her brother, Todd, ate 43 of them how many packages could she make if she put 7 cupcake in each package? ","Fact_Diagram:
+graph TD
+    A[Cupcake Sales]
+    A --> B[Cupcakes Baked]
+    A --> D[Cupcakes for Sale]
+    D --> C[Cupcakes Eaten]
+    D --> E[Cupcakes Per Package]
+    B --> B1[71 cupcakes]
+    C --> C1[43 cupcakes]
+    E --> E1[7 cupcakes]
+
+Answer_Reasoning:  Megan had <B1>71</B1> - <C1>43</C1> = 28 cupcakes for sale after her brother ate some.  She could make 28/<E1>7</E1> = 4 packages of cupcakes. 
+Final_Answer: {4} 
+"
+40," There were 2 friends playing a video game online when 2 more players joined the game. If each player had 6 lives, how many lives did they have total? ","Fact_Diagram:
+graph TD
+    A[Video Game]
+    A --> B[Players]
+    B --> B1[Initially 2 friends]
+    B --> B2[2 more joined]
+    A --> C[Lives]
+    C --> C1[6 lives per player]
+Answer_Reasoning: There were a total of <B1>2</B1> + <B2>2</B2> = 4 players. Since each player had <C1>6</C1> lives, they had a total of 4 * <C1>6</C1> = 24 lives. 
+Final_Answer: {24} 
+"
+41," Sam had 10 socks. If he threw away 3 old ones that didn't fit and bought 36 new ones, how many socks would he have? ","Fact_Diagram:
+graph TD
+    A[Sam's Socks]
+    A --> B[Starting Socks]
+    A --> C[Discarded Socks]
+    A --> D[New Socks]
+    B --> B1[10 socks]
+    C --> C1[3 socks]
+    D --> D1[36 socks]
+
+Answer_Reasoning: Sam had <B1>10</B1> socks and threw away <C1>3</C1>, leaving him with 10 - 3 = 7 socks. He then bought <D1>36</D1> new socks, giving him a total of 7 + 36 = 43 socks. 
+Final_Answer: {43} 
+"
+42," Wendy picked 103 flowers for her friend’s wedding. She was making bouquets with 8 flowers in each one. If 47 of the flowers wilted before the wedding, how many bouquets could she still make? ","Fact_Diagram:
+graph TD
+    A[Wedding Flowers]
+    A --> B{Flowers Picked}
+    B --> B1(103)
+    A --> C{Bouquet Size}
+    C --> C1(8 flowers)
+    A --> D{Wilted Flowers}
+    D --> D1(47) 
+
+Answer_Reasoning: Wendy had <B1>103</B1> - <D1>47</D1> = 56 flowers left after some wilted. She could make 56 / <C1>8</C1> = 7 bouquets. 
+Final_Answer: {7} 
+"
+44," Nancy's class is going on a field trip to the zoo. If each van can hold 5 people and there are 12 students and 3 adults going, how many vans will they need? ","Fact_Diagram:
+graph TD
+    A[Field Trip Logistics]
+    A --> B[Transportation]
+    A --> C[Participants]
+    B --> B1[Van Capacity: 5 people/van]
+    C --> C1[Students: 12]
+    C --> C2[Adults: 3]
+
+Answer_Reasoning: There are a total of <C1>12</C1> + <C2>3</C2> = 15 people going on the trip.  Since each van holds <B1>5</B1> people, they will need 15 / 5 = 3 vans. 
+Final_Answer: {3} 
+"
+47," Luke was helping the cafeteria workers pick up lunch trays, but he could only carry 4 trays at a time. If he had to pick up 20 trays from one table and 16 trays from another, how many trips will he make? ","Fact_Diagram:
+graph TD
+    A[Lunch Tray Pickup]
+    A --> B{Luke}
+    A --> C{Table 1}
+    A --> D{Table 2}
+    B --> E[Carries 4 trays per trip]
+    C --> F[20 trays]
+    D --> G[16 trays]
+
+Answer_Reasoning:  Luke needs to make <F>20</F>/<E>4</E> = 5 trips to carry all the trays from the first table.  He needs to make <G>16</G>/<E>4</E> = 4 trips to carry all the trays from the second table.  In total, Luke will make 5 + 4 = 9 trips.
+Final_Answer: {9} 
+"
+48," The cafeteria had 96 apples. For lunch they handed out 42 to students and decided to use the rest to make pies. If each pie takes 6 apples, how many pies could they make? ","Fact_Diagram:
+graph TD
+    A[Cafeteria Apples]
+    A --> B[Total Apples]
+    B --> B1[96 apples]
+    A --> C[Apple Usage]
+    C --> C1[42 for students]
+    C --> C2[Rest for pies]
+    A --> D[Pie Making]
+    D --> D1[6 apples per pie]
+
+Answer_Reasoning: The cafeteria had <B1>96</B1> apples and used <C1>42</C1> for students, leaving 96-42 = 54 for pies. Since each pie needs <D1>6</D1> apples, they could make 54 / 6 = 9 pies. 
+Final_Answer: {9} 
+"
+49," Henry had 3 action figures, but needed 8 total for a complete collection. If each one costs $6, how much money would he need to finish his collection? ","```mermaid
+graph TD
+    A[Action Figures] --> B[Henry's Collection]
+    B --> B1[Has 3 figures]
+    B --> B2[Needs 8 figures total]
+    A --> C[Cost]
+    C --> C1[$6 per figure] 
+```
+
+Answer_Reasoning: Henry needs to buy <B2>8</B2> - <B1>3</B1> = 5 more action figures. This will cost him 5 x <C1>$6</C1> = $30. 
+Final_Answer: {30} 
+"
+51," Vanessa and her mom were picking carrots from their garden. Vanessa picked 17 and her mother picked 14. If only 24 of the carrots were good, how many bad carrots did they have? ","Fact_Diagram:
+graph TD
+    A[Carrot Picking]
+    A --> B[Vanessa]
+    A --> C[Mother]
+    A --> D[Total Carrots]
+    D --> D1[Good Carrots]
+    D --> D2[Bad Carrots]
+    
+    B --> B1[Picked 17 carrots]
+    
+    C --> C1[Picked 14 carrots]
+
+    D1 --> D3[24 carrots]
+
+Answer_Reasoning: Vanessa and her mom picked a total of <B1>17</B1> + <C1>14</C1> = 31 carrots. Since <D3>24</D3> carrots were good, they had 31 - <D3>24</D3> = 7 bad carrots. 
+Final_Answer: {7} 
+"
+52, At a company picnic 23 managers and 7 employees decided to start a game of volleyball. If they split into 6 teams how many people would be on each team? ,"```mermaid
+graph TD
+    A[Company Picnic Volleyball]
+    A --> B[Players]
+    A --> C[Teams]
+    B --> D[23 Managers]
+    B --> E[7 Employees]
+    C --> F[6 Teams] 
+```
+
+Answer_Reasoning: There are a total of <D>23</D> + <E>7</E> = 30 people who want to play volleyball. If they split into <F>6</F> teams, there would be 30/<F>6</F> = 5 people on each team. 
+Final_Answer: {5} 
+"
+56," There were 8 friends playing a video game online when 2 more players joined the game. If each player had 6 lives, how many lives did they have total? ","Fact_Diagram:
+graph TD
+    A[Video Game]
+    A --> B[Players]
+    B --> B1[Started with 8 players]
+    B --> B2[2 more joined]
+    A --> C[Lives]
+    C --> C1[6 lives per player]
+
+Answer_Reasoning: There were a total of <B1>8</B1> + <B2>2</B2> = 10 players. Since each player had <C1>6</C1> lives, they had a total of 10 * <C1>6</C1> = 60 lives. 
+Final_Answer: {60} 
+"
+60," At a restaurant each adult meal costs $8 and kids eat free. If a group of 11 people came in and 2 were kids, how much would it cost for the group to eat? ","Fact_Diagram:
+graph TD
+    A[Restaurant Bill]
+    A --> B{Cost per Adult} 
+    B --> B1{$8}
+    A --> C[Diners]
+    C --> C1[11 total people]
+    C --> C2[2 kids]
+
+Answer_Reasoning: There are <C1>11</C1> total people and <C2>2</C2> are kids, which means 11 - 2 = 9 adults are eating. The <B1>$8</B1> adult meals cost 9 * 8 = $72 in total.  The answer is $72.
+Final_Answer: {72} 
+"
+64," There school's baseball team had 48 new players and 6 returning players. If the coach put them into groups with 6 players in each group, how many groups would there be? ","Fact_Diagram:
+graph TD
+    A[Baseball Team]
+    A --> B[New Players]
+    A --> C[Returning Players]
+    B --> D[48 players]
+    C --> E[6 players]
+    F[Team Organization]
+    F --> G[6 players per group]
+Answer_Reasoning: There are a total of <D>48</D> + <E>6</E> = 54 players on the baseball team. The coach wants to divide the <G>6</G> players into groups, so there would be 54 / <G>6</G> = 9 groups. 
+Final_Answer: {9} 
+"
+68, Isabel uploaded 25 pictures to Facebook. She put 10 pics into one album and put the rest into 5 different albums. How many pictures were in each album? ,"Fact_Diagram: 
+graph TD
+    A[Isabel's Pictures]
+    A --> B{Total Pictures}
+    B --> B1[25]
+    A --> C[Album 1]
+    C --> C1[10 pictures]
+    A --> D{Other Albums]
+    D --> D1[5 albums]
+    D --> D2[15 pictures total]
+
+Answer_Reasoning: Isabel uploaded a total of <B1>25</B1> pictures. After putting <C1>10</C1> pictures in one album, she had <D2>25-10 = 15</D2> pictures remaining.  She split these pictures evenly across <D1>5</D1> albums. Therefore, each album contained <D2>15/5 = 3</D2> pictures. 
+Final_Answer: {3} 
+"
+72," A chef needs to cook 9 potatoes. He has already cooked 7. If each potato takes 3 minutes to cook, how long will it take him to cook the rest? ","Fact_Diagram:
+graph TD
+    A[Chef Cooking Potatoes]
+    A --> B[Total Potatoes]
+    A --> C[Potatoes Cooked]
+    A --> D[Cooking Time Per Potato]
+    B --> B1[9 potatoes]
+    C --> C1[7 potatoes]
+    D --> D1[3 minutes/potato]
+
+Answer_Reasoning: The chef still has <B1>9</B1> - <C1>7</C1> = 2 potatoes left to cook.  It will take him 2 x <D1>3</D1> = 6 minutes to cook the rest. 
+Final_Answer: {6} 
+"
+76," Adam bought 2 boxes of chocolate candy and 5 boxes of caramel candy. If each box has 4 pieces inside it, how much candy did he have total? ","Fact_Diagram:
+graph TD
+    A[Adam's Candy]
+    A --> B{Chocolate Candy}
+    A --> C{Caramel Candy}
+    B --> D{2 Boxes}
+    C --> E{5 Boxes}
+    D --> F{4 Pieces/Box}
+    E --> F
+
+Answer_Reasoning: Adam had <D>2 boxes</D> of chocolate candy and each box contains <F>4 pieces</F>, so he had 2 * 4 = 8 pieces of chocolate candy. He also had <E>5 boxes</E> of caramel candy and since each box also has <F>4 pieces</F>, he had 5 * 4 = 20 pieces of caramel candy. In total, Adam had 8 + 20 = 28 pieces of candy. 
+Final_Answer: {28} 
+"
+80," A florist had 50 roses. If she sold 15 of them and then later picked 21 more, how many roses would she have? ","Fact_Diagram:
+graph TD
+    A[Florist Roses]
+    A --> B[Starting Roses]
+    A --> C[Sold Roses]
+    A --> D[Picked Roses]
+    B --> B1[50 roses]
+    C --> C1[15 roses]
+    D --> D1[21 roses]
+Answer_Reasoning: The florist had <B1>50</B1> roses and sold <C1>15</C1> roses, leaving her with 50 - 15 = 35 roses.  She then picked <D1>21</D1> more roses, giving her a total of 35 + 21 = 56 roses.
+Final_Answer: {56} 
+"
+84," Katie had 7 pages of math homework and 3 pages of reading homework. If each page had 9 problems on it, how many problems did she have to complete total? ","Fact_Diagram:
+graph TD
+    A[Katie's Homework]
+    A --> B[Math Homework]
+    A --> C[Reading Homework]
+    B --> B1[7 pages]
+    C --> C1[3 pages]
+    A --> D[Problems per Page]
+    D --> D1[9 problems]
+Answer_Reasoning: Katie had a total of <B1>7</B1> + <C1>3</C1> = 10 pages of homework. Since each page has <D1>9</D1> problems, she had to complete 10 * <D1>9</D1> = 90 problems. 
+Final_Answer: {90} 
+"
+88," Kaleb was collecting cans for recycling. On Saturday he filled 5 bags up and on Sunday he filled 5 more bags. If each bag had 4 cans in it, how many cans did he pick up total? ","Fact_Diagram:
+graph TD
+    A[Can Collection]
+    A --> B[Saturday]
+    A --> C[Sunday]
+    B --> D[5 bags filled]
+    C --> E[5 bags filled]
+    D --> F[4 cans per bag]
+    E --> F
+
+Answer_Reasoning: Kaleb filled <D>5</D> bags on Saturday and <E>5</E> bags on Sunday for a total of <D>5</D>+<E>5</E>=10 bags. Since each bag holds <F>4</F> cans he collected a total of 10*<F>4</F>=40 cans.
+Final_Answer: {40} 
+"
+92, Katie had 85 files on her computer. She deleted 40 of them and put the rest into folders with 5 files in each one. How many folders did Katie end up with? ,"Fact_Diagram:
+graph TD
+    A[Katie's Files]
+    A --> B[Initial Number of Files]
+    B --> B1[85 files]
+    A --> C[File Actions]
+    C --> D[Deleted Files]
+    D --> D1[40 files]
+    C --> E[Files in Folders]
+    E --> E1[5 files per folder]
+
+Answer_Reasoning: Katie had <B1>85</B1> - <D1>40</D1> = 45 files left after deleting some. She therefore had 45 / <E1>5</E1> = 9 folders. 
+Final_Answer: {9} 
+"
+96," A trivia team had 5 members total, but during a game 2 members didn't show up. If each member that did show up scored 6 points, how many points were scored total? ","```mermaid
+graph TD
+    A[Trivia Team] --> B[Total Members]
+    B[Total Members] --> B1[5 Members]
+    A[Trivia Team] --> C[Absent Members]
+    C[Absent Members] --> C1[2 Members]
+    A[Trivia Team] --> D[Points Per Member]
+    D[Points Per Member] --> D1[6 points]
+```
+
+Answer_Reasoning: Since <C1>2</C1> members were absent, a total of <B1>5</B1> - <C1>2</C1> = 3 members were present. With each of the 3 members scoring <D1>6</D1> points, the team scored a total of 3 * <D1>6</D1> = 18 points. 
+Final_Answer: {18} 
+"
+30," A waiter at 'The Greasy Spoon' restaurant had 26 customers to wait on. During the lunch rush he added another 27 customers. If 27 of the customers didn't leave him a tip, how many customers did leave a tip? ","Fact_Diagram:
+graph TD
+    A[The Greasy Spoon]
+    A --> B[Waiter's Customers]
+    B --> C{Initial Customers}
+    C --> C1[26 Customers]
+    B --> D{Added Customers}
+    D --> D1[27 Customers]
+    B --> E{Customers Who Didn't Tip}
+    E --> E1[27 Customers]
+
+
+Answer_Reasoning: The waiter had a total of <C1>26</C1> + <D1>27</D1> = 53 customers. Since <E1>27</E1> customers didn't leave a tip, then 53 - <E1>27</E1> = 26 customers left a tip. 
+Final_Answer: {26} 
+"
+43," Adam had 48 books. If he sold 19 of them and used the money he earned to buy 38 new books, how many books would Adam have? ","Fact_Diagram:
+graph TD
+    A[Adam's Books]
+    A --> B[Initial Amount]
+    A --> C[Books Sold]
+    A --> D[Books Bought]
+    B --> B1[48 books]
+    C --> C1[19 books]
+    D --> D1[38 books]
+
+Answer_Reasoning: Adam had <B1>48</B1> books initially. After selling <C1>19</C1> books, he had 48 - 19 = 29 books. Then he bought <D1>38</D1> more books. Now Adam has 29 + 38 = 67 books. 
+Final_Answer: {67} 
+"
+45," For a birthday party Tom bought 4 regular sodas and 52 diet sodas. If his fridge would only hold 7 on each shelf, how many shelves would he fill up? ","Fact_Diagram:
+graph TD
+    A[Soda for Party]
+    A --> B[Regular Sodas]
+    A --> C[Diet Sodas]
+    D[Fridge Storage]
+    D --> E[7 Sodas per Shelf]
+    B --> F[4 Sodas]
+    C --> G[52 Sodas]
+
+Answer_Reasoning: Tom bought a total of <F>4</F> + <G>52</G> = 56 sodas. Since each shelf holds <E>7</E> sodas, he would fill 56 / 7 = 8 shelves. 
+Final_Answer: {8} 
+"
+46," The school cafeteria had 38 apples. If they used 20 to make lunch for the students and then bought 28 more, how many apples would they have? ","Fact_Diagram:
+graph TD
+    A[Apple Inventory]
+    A --> B{Starting Apples: 38}
+    A --> C[Lunch Apples: 20]
+    A --> D[Apples Bought: 28]
+
+Answer_Reasoning: The cafeteria had <B>38</B> apples and used <C>20</C> for lunch, leaving them with 38 - 20 = 18 apples. They then bought <D>28</D> more apples.  Therefore, they would have 18 + 28 = 46 apples. 
+Final_Answer: {46} 
+"
+50," Frank had saved up 3 dollars. If he received another 37 dollars for his allowance, how many 8 dollar toys could he buy? ","```mermaid
+graph TD
+    A[Frank's Money]
+    A --> B[Savings]
+    A --> C[Allowance]
+    A --> D[Total Money]
+    B --> E[$3]
+    C --> F[$37]
+    D --> G[Savings + Allowance]
+    H[Toy Information]
+    H --> I[Cost per toy: $8]
+```
+
+Answer_Reasoning: Frank has a total of <E>$3</E> + <F>$37</F> = <G>$40</G>. Therefore, he can buy <G>$40</G>/<I>$8</I> = 5 toys. 
+Final_Answer: {5} 
+"
+53," Tiffany baked 8 brownies, but needed 17 total for her party. If she used 8 cups of flour on each one, how much cups of flour does she still need? ","```mermaid
+graph TD
+    A[Baking Problem]
+    A --> B[Brownies]
+    A --> C[Flour]
+    B --> B1[8 baked]
+    B --> B2[17 needed]
+    C --> C1[8 cups per brownie]
+```
+Answer_Reasoning: Tiffany still needs to bake <B2>17</B2> - <B1>8</B1> = 9 more brownies. Therefore, she needs 9 x <C1>8</C1> = 72 cups of flour. 
+Final_Answer: {72} 
+"
+55," A worksheet had 7 problems on it. If a teacher had 17 worksheets to grade and had already graded 8 of them, how many more problems does she have to grade? ","```mermaid
+graph TD
+    A[Grading Work]
+    A --> B[Worksheets]
+    B --> B1[7 problems per worksheet]
+    B --> B2[17 worksheets total]
+    B --> B3[8 worksheets graded]
+```
+
+Answer_Reasoning: The teacher has <B2>17</B2> - <B3>8</B3> = 9 worksheets left to grade. Since each worksheet has <B1>7</B1> problems, she still has to grade <B1>7</B1> * 9 = 63 problems. 
+Final_Answer: {63} 
+"
+57," At the arcade Cody won 49 tickets. If he spent 25 tickets on a beanie and later won 6 more tickets, how many would he have? ","Fact_Diagram:
+graph TD
+    A[Cody's Tickets]
+    A --> B{Initial Amount}
+    B --> B1(49 tickets)
+    A --> C{Spent Tickets}
+    C --> C1(25 tickets)
+    A --> D{Tickets Won}
+    D --> D1(6 tickets)
+
+Answer_Reasoning: Cody starts with <B1>49 tickets</B1>. After spending <C1>25 tickets</C1> on a beanie, he has 49 - 25 = 24 tickets left. Then, after winning <D1>6 more tickets</D1>, he has 24 + 6 = 30 tickets. 
+Final_Answer: {30} 
+"
+58, For Halloween Bianca received 78 pieces of candy. She ate 30 pieces then placed the rest into piles with 8 in each pile. How many piles could she make? ,"Fact_Diagram:
+graph TD
+    A[Bianca's Candy]
+    A --> B{Received 78 pieces}
+    A --> C[Candy After Eating]
+    C --> D{78 - 30 = 48 pieces}
+    A --> E{Makes piles of 8}
+
+Answer_Reasoning: After eating some candy, Bianca had <D>48</D> pieces left. She could make <D>48</D>/<E>8</E> = 6 piles.
+Final_Answer: {6} 
+"
+59," There were 5 friends playing a video game online when 2 more players joined the game. If each player had 8 lives, how many lives did they have total? ","Fact_Diagram:
+graph TD
+    A[Video Game Players]
+    A --> B[Starting Players]
+    A --> C[Joined Players]
+    A --> D[Total Players]
+    B --> B1[5 players]
+    C --> C1[2 players]
+    D --> D1[7 players]
+    E[Lives]
+    E --> E1[8 lives per player]
+    E --> E2[Total Lives]
+
+Answer_Reasoning: There were a total of <D1>7</D1> players because <B1>5</B1> players were initially playing and then <C1>2</C1> more players joined the game. Since each of the <D1>7</D1> players had <E1>8</E1> lives, they had a total of <E2>7 * 8 = 56</E2> lives. 
+Final_Answer: {56} 
+"
+62," Wendy was playing a video game and had 10 lives. In a hard part of the game she lost 6 lives. If she got 37 more lives in the next level, how many lives would she have? ","Fact_Diagram:
+graph TD
+    A[Video Game Lives]
+    A --> B[Starting Lives]
+    A --> C[Lives Lost]
+    A --> D[Lives Gained]
+    B --> B1[10 lives]
+    C --> C1[6 lives]
+    D --> D1[37 lives]
+
+Answer_Reasoning: Wendy started with <B1>10</B1> lives and lost <C1>6</C1> lives, leaving her with 10 - 6 = 4 lives.  Then she gained <D1>37</D1> more lives, giving her a total of 4 + 37 = 41 lives. 
+Final_Answer: {41} 
+"
+63," Frank made 19 dollars mowing lawns over the summer. If he spent 11 dollars buying new mower blades, how many 2 dollar games could he buy with the money he had left? ","Fact_Diagram:
+graph TD
+    A[Frank's Summer Earnings]
+    A --> B[Total Earned]
+    A --> C[Money Spent]
+    A --> D[Money Leftover]
+    B --> B1[$19]
+    C --> C1[$11]
+    D --> D1[Total Earned - Money Spent]
+    E[Games]
+    E --> E1[Cost $2 each]
+
+Answer_Reasoning: Frank had $<B1>19</B1> - <C1>$11</C1> = $8 left after buying new mower blades. Therefore, he could buy $<D1>$8</D1> / <E1>$2</E1> = 4 games. 
+Final_Answer: {4} 
+"
+65, Nancy had 80 files on her computer. She deleted 31 of them and put the rest into folders with 7 files in each one. How many folders did Nancy end up with? ,"Fact_Diagram:
+graph TD
+    A[Nancy's Files]
+    A --> B[Initial Files]
+    A --> C[Deleted Files]
+    A --> D[Files in Folders]
+    A --> E[Folders]
+    B --> B1[80 files]
+    C --> C1[31 files]
+    D --> D1[7 files per folder]
+
+Answer_Reasoning: After deleting some files, Nancy had <B1>80</B1> - <C1>31</C1> = 49 files left.  Therefore, Nancy ended up with  49 / <D1>7</D1> = 7 folders. 
+Final_Answer: {7} 
+"
+71," Dave had to wash 9 short sleeve shirts and 27 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash? ","```mermaid
+graph TD
+    A[Laundry Problem]
+    A --> B[Clothes to Wash]
+    A --> C[Clothes Washed]
+    A --> D[Clothes Not Washed]
+    
+    B --> B1[9 Short Sleeve Shirts]
+    B --> B2[27 Long Sleeve Shirts]
+    
+    C --> C1[20 Shirts] 
+```
+
+Answer_Reasoning: Dave had to wash a total of <B1>9</B1> + <B2>27</B2> = 36 shirts. Since he only washed <C1>20</C1> shirts, he did not wash 36 - 20 = 16 shirts. 
+Final_Answer: {16} 
+"
+90," Paul had saved up 3 dollars. If he received another 7 dollars for his allowance, how many 5 dollar toys could he buy? ","Fact_Diagram:
+graph TD
+    A[Paul's Toy Shopping]
+    A --> B[Savings]
+    A --> C[Allowance]
+    A --> D[Toy Price]
+    B --> B1[$3]
+    C --> C1[$7]
+    D --> D1[$5 per toy]
+Answer_Reasoning: Paul has a total of <B1>$3</B1> + <C1>$7</C1> = $10.  Therefore, he can buy $10/<D1>$5</D1> = 2 toys. 
+Final_Answer: {2} 
+"
+100, Haley's favorite band was holding a concert where tickets were 4 dollars each. Haley bought 3 tickets for herself and her friends and 5 extra tickets in case anyone else wanted to go. How much did she spend? ,"```mermaid
+graph TD
+    A[Concert Tickets] --> B{Ticket Price}
+    B{Ticket Price} --> C($4 per ticket)
+    A[Concert Tickets] --> D{Tickets Purchased}
+    D{Tickets Purchased} --> E(3 tickets for friends and herself)
+    D{Tickets Purchased} --> F(5 extra tickets)
+```
+
+Answer_Reasoning: Haley bought <E>3</E> + <F>5</F> = 8 tickets in total. Since each ticket cost <C>$4</C>, she spent 8 * <C>$4</C> = $32 on concert tickets. 
+Final_Answer: {32} 
+"
+101, George had 30 dollars. For his birthday he got 16 more dollars but spent 38 on a new game. How much money does he have now? ,"Fact_Diagram:
+graph TD
+    A[George's Money]
+    A --> B[Starting Money]
+    A --> C[Birthday Money]
+    A --> D[Game Purchase]
+    B --> B1[$30]
+    C --> C1[+$16]
+    D --> D1[-$38]
+
+Answer_Reasoning: George started with <B1>$30</B1>. He then received <C1>$16</C1> for his birthday. This means he had <B1>$30</B1> + <C1>$16</C1> = $46. After buying a new game for <D1>$38</D1>, he has $46 - <D1>$38</D1> = $8 left. 
+Final_Answer: {8} 
+"
+104," Robin uploaded 31 pictures from her phone and 5 from her camera to facebook. If she sorted the pics into 9 different albums with the same amount of pics in each album, how many pictures were in each of the albums? ","Fact_Diagram:
+graph TD
+    A[Facebook Pictures]
+    A --> B[Phone Uploads]
+    A --> C[Camera Uploads]
+    A --> D[Total Pictures]
+    A --> E[Picture Albums]
+    
+    B --> B1[31 pictures]
+    
+    C --> C1[5 pictures]
+    
+    D --> D1[Sum of Phone & Camera Uploads]
+    
+    E --> E1[9 albums]
+    E --> E2[Same number of pictures in each]
+Answer_Reasoning: Robin uploaded a total of <B1>31</B1> + <C1>5</C1> = 36 pictures to Facebook. She wanted to sort these pictures into <E1>9</E1> different albums with the <E2>same amount of pictures in each</E2>.  Therefore, there are 36 / <E1>9</E1> = 4 pictures in each album. 
+Final_Answer: {4} 
+"
+107," While on vacation, Rachel took 6 pictures at the zoo and 9 at the museum. If she later deleted 11 of the pictures, how many pictures from her vacation did she still have? ","Fact_Diagram:
+graph TD
+    A[Rachel's Pictures]
+    A --> B[Zoo Pictures]
+    A --> C[Museum Pictures]
+    A --> D[Deleted Pictures]
+    A --> E[Total Pictures Left]
+    
+    B --> B1[6 pictures]
+    
+    C --> C1[9 pictures]
+
+    D --> D1[11 pictures deleted]
+Answer_Reasoning: Rachel took a total of <B1>6</B1> + <C1>9</C1> = 15 pictures on vacation. After deleting some, she had 15 - <D1>11</D1> = 4 pictures left. 
+Final_Answer: {4} 
+"
+108," Maria was making baggies of cookies with 8 cookies in each bag. If she had 5 chocolate chip cookies and 19 oatmeal cookies, how many baggies could she make? ","Fact_Diagram:
+graph TD
+    A[Cookie Baggies]
+    A --> B[Cookies per bag]
+    A --> C[Total Cookies]
+    B --> B1[8 cookies]
+    C --> D[Chocolate Chip]
+    C --> E[Oatmeal]
+    D --> D1[5 cookies]
+    E --> E1[19 cookies]
+Answer_Reasoning: Maria has a total of <D1>5</D1> + <E1>19</E1> = 24 cookies. Since each baggie holds <B1>8</B1> cookies, she can make 24 / <B1>8</B1> = 3 baggies of cookies. 
+Final_Answer: {3} 
+"
+112," Isabel baked 3 brownies, but needed 5 total for her party. If she used 5 cups of flour on each one, how much cups of flour does she still need? ","Fact_Diagram:
+graph TD
+    A[Baking Problem]
+    A --> B[Brownies]
+    A --> C[Flour]
+    
+    B --> B1[Baked: 3]
+    B --> B2[Needed: 5]
+    
+    C --> C1[5 cups per brownie]
+Answer_Reasoning: Isabel needs to bake <B2>5</B2> - <B1>3</B1> = 2 more brownies. Therefore, she needs an additional 2 x <C1>5</C1> = 10 cups of flour. 
+Final_Answer: {10} 
+"
+113," For the school bake sale Maria made 19 cupcakes. If she sold 5 of them and then made 10 more, how many cupcakes would she have? ","Fact_Diagram:
+graph TD
+    A[Cupcake Bake Sale]
+    A --> B[Maria's Cupcakes]
+    B --> B1[Starts with 19 cupcakes]
+    B --> B2[Sold 5 cupcakes]
+    B --> B3[Made 10 more cupcakes]
+
+Answer_Reasoning: Maria had <B1>19</B1> cupcakes and sold <B2>5</B2>, leaving her with 19 - 5 = 14 cupcakes. She then made <B3>10</B3> more cupcakes, giving her a total of 14 + 10 = 24 cupcakes. 
+Final_Answer: {24} 
+"
+54," Carol and her mom were picking carrots from their garden. Carol picked 29 and her mother picked 16. If only 38 of the carrots were good, how many bad carrots did they have? ","Fact_Diagram:
+graph TD
+    A[Carrot Picking]
+    A --> B[Carol's Carrots]
+    A --> C[Mom's Carrots]
+    A --> D[Total Carrots]
+    D --> E[Good Carrots]
+    D --> F[Bad Carrots]
+    
+    B --> B1[Picked 29 carrots]
+    C --> C1[Picked 16 carrots]
+    E --> E1[38 good carrots]
+Answer_Reasoning: Carol and her mom picked a total of <B1>29</B1> + <C1>16</C1> = 45 carrots. Since only <E1>38</E1> of the carrots were good, they had 45 - <E1>38</E1> = 7 bad carrots.
+Final_Answer: {7} 
+"
+61," Roger had 25 books. If he sold 21 of them and used the money he earned to buy 30 new books, how many books would Roger have? ","Fact_Diagram:
+graph TD
+    A[Roger's Books]
+    A --> B{Starting Books}
+    B --> B1[25 books]
+    A --> C{Books Sold}
+    C --> C1[21 books]
+    A --> D{New Books}
+    D --> D1[30 books]
+
+Answer_Reasoning: Roger had <B1>25 books</B1> and sold <C1>21 books</C1>, leaving him with 25-21 = 4 books. After buying <D1>30 new books</D1>, he has a total of 4+30 = 34 books.
+Final_Answer: {34} 
+"
+66, Luke was selling his old games. He started out with 39 but sold 19 of them. He packed the rest up putting 4 games into each box. How many boxes did he have to use? ,"Fact_Diagram:
+graph TD
+    A[Luke's Games]
+    A --> B[Starting Games]
+    A --> C[Games Sold]
+    A --> D[Games Remaining]
+    A --> E[Packing]
+    
+    B --> B1[39 games]
+    C --> C1[19 games]
+    E --> E1[4 games per box]
+Answer_Reasoning: Luke had <B1>39</B1> - <C1>19</C1> = 20 games remaining after selling some. He packed the <D>remaining games</D> into boxes, putting <E1>4 games in each box</E1>, so he used 20 / 4 = 5 boxes.
+Final_Answer: {5} 
+"
+67," There are 65 students trying out for the school's trivia teams. If 17 of them didn't get picked for the team and the rest were put into 8 groups, how many students would be in each group? ","```mermaid
+graph TD
+    A[Trivia Team Tryouts]
+    A --> B[Total Students]
+    A --> C[Students Not Picked]
+    A --> D[Selected Students]
+    D --> E[Number of Groups]
+    
+    B --> B1[65 Students]
+    C --> C1[17 Students]
+    E --> E1[8 groups]
+```
+
+Answer_Reasoning: There were a total of <B1>65</B1> students who tried out. Since <C1>17</C1> students were not picked, <B1>65</B1> - <C1>17</C1> = 48 students were selected for the team. These 48 students were divided into <E1>8</E1> groups, so there are 48 / <E1>8</E1> = 6 students in each group. 
+Final_Answer: {6} 
+"
+69," Mike made 14 dollars mowing lawns and 26 dollars weed eating. If he only spent 5 dollar a week, how long would the money last him? ","Fact_Diagram:
+graph TD
+    A[Mike's Earnings and Spending]
+    A --> B[Total Earnings]
+    B --> B1[Mowing Lawns: $14]
+    B --> B2[Weed Eating: $26]
+    A --> C[Weekly Spending: $5]
+
+Answer_Reasoning: Mike earned a total of $<B1>14</B1> + $<B2>26</B2> = $40. The money would last him $<B>40</B> / $<C>5</C> = 8 weeks.
+Final_Answer: {8} 
+"
+70," Vanessa had 16 music files and 48 video files on her flash drive. If she deleted 30 of the files, how many files were still on her flash drive? ","Fact_Diagram:
+graph TD
+    A[Vanessa's Flash Drive]
+    A --> B[Music Files]
+    A --> C[Video Files]
+    A --> D[Deleted Files]
+    B --> B1[16 files]
+    C --> C1[48 files]
+    D --> D1[30 files]
+
+Answer_Reasoning: Vanessa had a total of <B1>16</B1> + <C1>48</C1> = 64 files on her flash drive. After deleting <D1>30</D1> files, she had 64 - 30 = 34 files left. The answer is 34. 
+Final_Answer: {34} 
+"
+73," While on vacation, Gwen took 41 pictures at the zoo and 29 at the museum. If she later deleted 15 of the pictures, how many pictures from her vacation did she still have? ","Fact_Diagram:
+graph TD
+    A[Gwen's Pictures]
+    A --> B[Zoo Pictures]
+    A --> C[Museum Pictures]
+    A --> D[Deleted Pictures]
+    B --> B1[41 pictures]
+    C --> C1[29 pictures]
+    D --> D1[15 pictures]
+Answer_Reasoning: Gwen took a total of <B1>41</B1> + <C1>29</C1> = 70 pictures on vacation. After deleting some, she had 70 - <D1>15</D1> = 55 pictures left. 
+Final_Answer: {55} 
+"
+74," A pet shelter had 2 puppies when another 34 were brought in. If 4 puppies a day are adopted, how long would it take for all of them to be adopted? ","Fact_Diagram:
+graph TD
+    A[Pet Shelter Adoptions]
+    A --> B[Starting Puppies]
+    A --> C[New Puppies]
+    A --> D[Adoption Rate]
+    B --> B1[2 puppies]
+    C --> C1[34 puppies]
+    D --> D1[4 puppies/day]
+Answer_Reasoning: The shelter had a total of <B1>2</B1> + <C1>34</C1> = 36 puppies. At a rate of <D1>4 puppies/day</D1>, it would take 36 / 4 = 9 days to adopt all of them. 
+Final_Answer: {9} 
+"
+75," Will had 59 pieces of clothing to wash. He put 32 of them in one load, but decided to split the rest into 9 equal loads. How many pieces of clothing could go in each of the small loads? ","Fact_Diagram:
+graph TD
+    A[Laundry Loads]
+    A --> B[Total Clothes]
+    A --> C[Large Load]
+    A --> D[Small Loads]
+    
+    B --> B1[59 pieces]
+    C --> C1[32 pieces]
+    D --> D1[9 loads]
+    D --> D2[Remaining clothes split equally]
+
+Answer_Reasoning: Will had <B1>59</B1> - <C1>32</C1> = 27 pieces of clothing left to wash. He could put 27/<D1>9</D1> = 3 pieces of clothing in each of the small loads.
+Final_Answer: {3} 
+"
+77," April's discount flowers was having a sale where each flower was 6 dollars. If Katie bought 5 roses and 5 daisies, how much did she spend? ","Fact_Diagram:
+graph TD
+    A[Katie's Flower Purchase]
+    A --> B{Flower Sale}
+    A --> C{Katie's Purchases}
+    B --> D{Each flower costs $6}
+    C --> E{Bought 5 roses}
+    C --> F{Bought 5 daisies}
+
+Answer_Reasoning: Katie bought a total of <E>5</E> + <F>5</F> = 10 flowers. Since each flower costs <D>$6</D>, Katie spent 10 * <D>6</D> = $60 on flowers. 
+Final_Answer: {60} 
+"
+78," At the schools book fair Victor bought 32 adventure books and 37 mystery books. If 16 of the books were used, how many new books did he buy? ","Fact_Diagram: 
+graph TD
+    A[Book Fair Purchases]
+    A --> B{Victor's Purchases}
+    B --> C[Adventure Books: 32]
+    B --> D[Mystery Books: 37]
+    A --> E[Used Books: 16]
+
+Answer_Reasoning: Victor bought a total of <C>32</C> + <D>37</D> = 69 books. Since <E>16</E> of the books were used, he bought 69 - <E>16</E> = 53 new books. 
+Final_Answer: {53} 
+"
+79," Maria picked 48 carrots from her garden. If she threw out 11 of them and then picked 15 more the next day, how many carrots would she have total? ","Fact_Diagram:
+graph TD
+    A[Maria's Carrots]
+    A --> B{Initial Pick} 
+    A --> C{Discarded Carrots}
+    A --> D{Additional Pick}
+    B --> B1{48 carrots}
+    C --> C1{11 carrots}
+    D --> D1{15 carrots}
+
+Answer_Reasoning: Maria initially picked <B1>48</B1> carrots. After throwing out <C1>11</C1>, she had 48 - 11 = 37 carrots. After picking <D1>15</D1> more carrots, she had a total of 37 + 15 = 52 carrots. 
+Final_Answer: {52} 
+"
+81," Isabel had 2 pages of math homework and 4 pages of reading homework. If each page had 5 problems on it, how many problems did she have to complete total? ","Fact_Diagram:
+graph TD
+    A[Isabel's Homework]
+    A --> B[Math Homework]
+    A --> C[Reading Homework]
+    A --> D[Problems per Page]
+    B --> B1[2 pages]
+    C --> C1[4 pages]
+    D --> D1[5 problems per page]
+
+Answer_Reasoning: Isabel had a total of <B1>2</B1> + <C1>4</C1> = 6 pages of homework. Since each page has <D1>5</D1> problems, she had to complete 6 * 5 = 30 problems. 
+Final_Answer: {30} 
+"
+82," There were 4 friends playing a video game online when 5 more players joined the game. If each player had 3 lives, how many lives did they have total? ","Fact_Diagram:
+graph TD
+    A[Video Game]
+    A --> B[Initial Players]
+    A --> C[Players Joined]
+    A --> D[Lives per Player]
+    A --> E[Total Players]
+    
+    B --> B1[4 players]
+    C --> C1[5 players]
+    D --> D1[3 lives]
+    E --> E1[4 + 5 = 9 players]
+
+Answer_Reasoning: There were a total of <E1>9</E1> players in the game. Since each player had <D1>3</D1> lives, they had a total of 9 * 3 = 27 lives. 
+Final_Answer: {27} 
+"
+83," Kaleb had 12 dollars. If he spent 8 bucks on a new game, how many 2 dollar toys could he buy with the money he had left? ","Fact_Diagram:
+graph TD
+    A[Kaleb's Money]
+    A --> B{Starting Money}
+    A --> C{Game Cost}
+    A --> D{Toy Cost}
+    B --> B1{$12}
+    C --> C1{$8}
+    D --> D1{$2}
+Answer_Reasoning: Kaleb had <B1>$12</B1> and spent <C1>$8</C1> on a game. This left him with 12 - 8 = 4 dollars. Since each toy cost <D1>$2</D1>, Kaleb could buy 4 / 2 = 2 toys. 
+Final_Answer: {2} 
+"
+85," While shopping for music online, Janet bought 6 country albums and 2 pop albums. Each album came with a lyric sheet and had 9 songs. How many songs did Janet buy total? ","Fact_Diagram:
+graph TD
+    A[Music Shopping]
+    A --> B[Janet's Purchases]
+    B --> C{Country Albums}
+    C --> D[6 albums]
+    B --> E{Pop Albums}
+    E --> F[2 albums]
+    A --> G{Album Features}
+    G --> H[Lyric Sheet Included]
+    G --> I[9 songs per album]
+Answer_Reasoning: Janet bought a total of <D>6</D> + <F>2</F> = 8 albums. Since each album has <I>9 songs</I>, she bought a total of 8 * 9 = 72 songs.
+Final_Answer: {72} 
+"
+86," Jerry made 14 dollars mowing lawns and 31 dollars weed eating. If he only spent 5 dollar a week, how long would the money last him? ","Fact_Diagram: 
+graph TD
+    A[Jerry's Money]
+    A --> B[Income]
+    A --> C[Expenses]
+    B --> D[Mowing: $14]
+    B --> E[Weed Eating: $31]
+    C --> F[Weekly Spending: $5]
+
+Answer_Reasoning: Jerry made a total of <D>$14</D> + <E>$31</E> = $45.  Therefore, the money would last him <F>$45</F> / <C>$5</C> = 9 weeks. 
+Final_Answer: {9} 
+"
+87," Adam had 33 books. If he sold 11 of them and used the money he earned to buy 23 new books, how many books would Adam have? ","Fact_Diagram:
+graph TD
+    A[Adam's Books]
+    A --> B[Initial Amount]
+    A --> C[Books Sold]
+    A --> D[Books Bought]
+    B --> B1[33 books]
+    C --> C1[11 books]
+    D --> D1[23 books]
+
+Answer_Reasoning: Adam had <B1>33 books</B1> initially. After selling <C1>11 books</C1>, he was left with 33 - 11 = 22 books.  He then bought <D1>23 books</D1>. Therefore, Adam has 22 + 23 = 45 books now. 
+Final_Answer: {45} 
+"
+89," Nancy was organizing her book case making sure each of the shelves had exactly 6 books on it. If she had 2 shelves of mystery books and 6 shelves of picture books, how many books did she have total? ","```mermaid
+graph TD
+    A[Nancy's Books] --> B[Mystery Bookshelves];
+    A --> C[Picture Bookshelves];
+    A --> D[Total Books];
+    B --> E[2 shelves];
+    C --> F[6 shelves];
+    B --> G[6 books per shelf];
+    C --> G;
+
+```
+
+Answer_Reasoning: Nancy had <E>2</E> shelves of mystery books and <G>6 books per shelf</G>, meaning she had 2 * 6 = 12 mystery books. She also had <F>6</F> shelves of picture books, giving her 6 * 6 = 36 picture books. In total, Nancy had <D>12 + 36 = 48 books</D>.
+Final_Answer: {48} 
+"
+91," Wendy was playing a video game and had 43 lives. In a hard part of the game she lost 8 lives. If she got 39 more lives in the next level, how many lives would she have? ","```mermaid
+graph TD
+    A[Video Game Lives]
+    A --> B[Starting Lives]
+    A --> C[Lives Lost]
+    A --> D[Lives Gained]
+    B --> B1[43 lives]
+    C --> C1[8 lives]
+    D --> D1[39 lives]
+```
+
+Answer Reasoning: Wendy had <B1>43</B1> lives and lost <C1>8</C1> lives, leaving her with 43 - 8 = 35 lives.  She then gained <D1>39</D1> more lives, resulting in a total of 35 + 39 = 74 lives. 
+
+Final_Answer: {74} 
+"
+93, Will was working as a sacker at a grocery store where he made 8 dollars an hour. On Monday he worked 8 hours and on Tuesday he worked 2 hours. How much money did Will make in those two days? ,"Fact_Diagram:
+graph TD
+    A[Will's Earnings]
+    A --> B{Hourly Rate: $8}
+    A --> C[Monday]
+    A --> D[Tuesday]
+    C --> E{Hours worked: 8}
+    D --> F{Hours worked: 2}
+
+Answer_Reasoning: Will made <B>$8</B> * <E>8</E> = $64 on Monday. He made <B>$8</B> * <F>2</F> = $16 on Tuesday. In total, he made $64 + $16 = $80.
+Final_Answer: {80} 
+"
+94," For the school bake sale Carol made 19 cupcakes. If she sold 6 of them and then made 27 more, how many cupcakes would she have? ","Fact_Diagram:
+graph TD
+    A[Cupcake Situation]
+    A --> B{Carol}
+    B --> B1[Starts with 19 cupcakes]
+    B --> B2[Sells 6 cupcakes]
+    B --> B3[Makes 27 cupcakes]
+
+Answer_Reasoning: Carol starts with <B1>19</B1> cupcakes. After selling some, she has 19 - <B2>6</B2> = 13 cupcakes left. After making more, she has 13 + <B3>27</B3> = 40 cupcakes. 
+Final_Answer: {40} 
+"
+95," A trivia team had 14 members total, but during a game 7 members didn't show up. If each member that did show up scored 5 points, how many points were scored total? ","```mermaid
+graph TD
+    A[Trivia Team]
+    A --> B[Total Members]
+    A --> C[Members Present]
+    C --> D[Score Per Member]
+    B --> E{14}
+    C --> F{7}
+    D --> G{5}
+```
+
+Answer Reasoning:  There were <F>7</F> members present at the trivia game because <E>14</E>-7=<F>7</F>. Since each member scored <G>5</G> points, the team scored a total of <F>7</F>*<G>5</G>=35 points. 
+Final_Answer: {35}"
+97," Oliver is at the library helping put away books. There are 46 book to put away total but a librarian takes 10 of them and leaves Oliver with the rest. If he can fit 4 books on a shelf, how many shelves will he need? ","Fact_Diagram:
+graph TD
+    A[Library Book Organization]
+    A --> B[Total Books]
+    A --> C[Librarian's Role]
+    A --> D[Oliver's Task]
+    
+    B --> B1[46 books]
+    C --> C1[Takes 10 books]
+    D --> D1[Puts away remaining books]
+    D --> D2[4 books per shelf]
+
+Answer_Reasoning: The librarian takes <C1>10</C1> books from the <B1>46</B1> books, leaving <B1>46</B1> - <C1>10</C1> = 36 books for Oliver to put away. Since Oliver can fit <D2>4</D2> books on each shelf, he will need 36 / <D2>4</D2> = 9 shelves. 
+Final_Answer: {9} 
+"
+98," Luke was putting his spare change into piles. He had 5 piles of quarters and 5 piles of dimes. If each pile had 3 coins in it, how many coins did he have total? ","Fact_Diagram:
+graph TD
+    A[Luke's Coins]
+    A --> B[Quarters]
+    A --> C[Dimes]
+    B --> B1[5 piles]
+    C --> C1[5 piles]
+    B --> B2[3 coins per pile]
+    C --> C2[3 coins per pile]
+Answer_Reasoning: Luke had <B1>5</B1> * <B2>3</B2> = 15 quarters. He also had <C1>5</C1> * <C2>3</C2> = 15 dimes. In total Luke had 15 + 15 = 30 coins. 
+Final_Answer: {30} 
+"
+99," Gwen and her friends were recycling paper for their class. For every 3 pounds they recycled they earned one point. If Gwen recycled 5 pounds and her friends recycled 13 pounds, how many points did they earn? ","Fact_Diagram:
+graph TD
+    A[Paper Recycling]
+    A --> B[Points System]
+    A --> C[Gwen's Recycling]
+    A --> D[Friends' Recycling]
+    B --> B1[3 pounds = 1 point]
+    C --> C1[Recycled 5 pounds]
+    D --> D1[Recycled 13 pounds]
+Answer_Reasoning: Gwen and her friends recycled a total of <C1>5</C1> + <D1>13</D1> = 18 pounds of paper.  Since every <B1>3 pounds earns them 1 point</B1>, they earned 18 / 3 = 6 points.
+Final_Answer: {6} 
+"
+102," A pet store has 4 bird cages. If each cage has 8 parrots and 2 parakeets in it, how many birds does the pet store have total? ","Fact_Diagram:
+graph TD
+    A[Pet Store]
+    A --> B{Bird Cages}
+    B --> B1[4 cages]
+    A --> C{Birds per Cage}
+    C --> C1[8 parrots]
+    C --> C2[2 parakeets]
+
+Answer_Reasoning: There are <C1>8 parrots</C1> and <C2>2 parakeets</C2> in each cage for a total of 8 + 2 = 10 birds. Since there are <B1>4 bird cages</B1> in the store, there is a total of 4 x 10 = 40 birds in the pet store. 
+Final_Answer: {40} 
+"
+103," Kaleb bought 14 boxes of chocolate candy and gave 5 to his little brother. If each box has 6 pieces inside it, how many pieces did Kaleb still have? ","Fact_Diagram:
+graph TD
+    A[Chocolate Candy Problem]
+    A --> B{Kaleb's Purchase}
+    B --> B1[14 boxes]
+    B --> B2[6 pieces per box]
+    A --> C{Gift to Brother}
+    C --> C1[5 boxes]
+    A --> D{Remaining Candy} 
+
+
+Answer_Reasoning: Kaleb initially had <B1>14</B1> * <B2>6</B2> = 84 pieces of candy. After giving <C1>5</C1> boxes to his brother, Kaleb had 84 - (<C1>5</C1> * <B2>6</B2>) = 54 pieces left. 
+Final_Answer: {54} 
+"
+105," Mike made 69 dollars mowing lawns over the summer. If he spent 24 dollars buying new mower blades, how many 5 dollar games could he buy with the money he had left? ","Fact_Diagram:
+graph TD
+    A[Mike's Summer Earnings]
+    A --> B{Total Earnings}
+    B --> B1($69)
+    A --> C{Mower Blade Cost}
+    C --> C1($24)
+    A --> D{Game Cost}
+    D --> D1($5 each) 
+
+Answer_Reasoning: After buying mower blades, Mike had $<B1>69</B1> - $<C1>24</C1> = $45 left. So, he could buy $45/<D1>$5</D1> = 9 games. 
+Final_Answer: {9} 
+"
+106," Maria bought 2 new chairs and 2 new tables for her house. If she spent 8 minutes on each piece furniture putting it together, how many minutes did it take her to finish? ","Fact_Diagram:
+graph TD
+    A[Furniture Assembly]
+    A --> B[Furniture Bought]
+    A --> C[Assembly Time]
+    B --> B1[2 Chairs]
+    B --> B2[2 Tables]
+    C --> C1[8 minutes per item]
+Answer_Reasoning: Maria bought a total of <B1>2</B1> + <B2>2</B2> = 4 pieces of furniture. Since each piece of furniture takes <C1>8</C1> minutes to assemble, it took her 4 * <C1>8</C1> = 32 minutes to finish. 
+Final_Answer: {32} 
+"
+109," April's discount flowers was having a sale where each flower was 3 dollars. If Zoe bought 8 roses and 2 daisies, how much did she spend? ","Fact_Diagram:
+graph TD
+    A[Flower Sale]
+    A --> B[Price per flower]
+    A --> C[Zoe's Purchases]
+    B --> B1[$3]
+    C --> C1[8 roses]
+    C --> C2[2 daisies]
+Answer_Reasoning: Zoe bought a total of <C1>8</C1> + <C2>2</C2> = 10 flowers. Since each flower costs <B1>$3</B1>, Zoe spent $3 x 10 = $30 on flowers.
+Final_Answer: {30}
+"
+110," Bianca was organizing her book case making sure each of the shelves had exactly 8 books on it. If she had 5 shelves of mystery books and 4 shelves of picture books, how many books did she have total? ","Fact_Diagram:
+graph TD
+    A[Bianca's Books]
+    A --> B[Mystery Books]
+    A --> C[Picture Books]
+    B --> B1[5 shelves]
+    C --> C1[4 shelves]
+    A --> D[Books per Shelf]
+    D --> D1[8 books]
+Answer_Reasoning: Bianca had a total of <B1>5</B1> + <C1>4</C1> = 9 shelves. Since each shelf has <D1>8</D1> books, she had a total of 9 * <D1>8</D1> = 72 books. 
+Final_Answer: {72} 
+"
+111," John was organizing his baseball cards in a binder with 3 on each page. If he had 8 new cards and 16 old cards to put in the binder, how many pages would he use? ","Fact_Diagram:
+graph TD
+    A[John's Baseball Cards]
+    A --> B{Cards}
+    B --> B1[8 new cards]
+    B --> B2[16 old cards]
+    A --> C[Binder]
+    C --> C1[3 cards per page]
+
+Answer_Reasoning:  John has a total of <B1>8</B1> + <B2>16</B2> = 24 cards.  Since his binder holds <C1>3</C1> cards per page, he will need 24 / 3 = 8 pages.
+Final_Answer: {8} 
+"
+114," Tom bought 40 tickets at the state fair. He spent 28 tickets at the 'dunk a clown' booth and decided to use the rest on rides. If each ride cost 4 tickets, how many rides could he go on? ","Fact_Diagram:
+graph TD
+    A[State Fair]
+    A --> B[Tickets]
+    B --> B1[Bought 40 tickets]
+    B --> B2[28 tickets used at dunk tank]
+    B --> B3[Rest of tickets used for rides]
+    A --> C[Rides]
+    C --> C1[Each ride costs 4 tickets]
+Answer_Reasoning: Tom had <B1>40</B1> - <B2>28</B2> = 12 tickets left for rides. Therefore, he could go on 12 / <C1>4</C1> = 3 rides.
+Final_Answer: {3} 
+"
+115, In fourth grade there were 31 students at the start of the year. During the year 5 students left and 11 new students came to school. How many students were in fourth grade at the end? ,"Fact_Diagram:
+graph TD
+    A[Fourth Grade Class]
+    A --> B[Start of Year]
+    A --> C[During Year]
+    A --> D[End of Year]
+    
+    B --> B1[31 students]
+    C --> C1[5 students left]
+    C --> C2[11 new students]
+    
+
+Answer_Reasoning: At the start of the year there were <B1>31</B1> students in fourth grade.  During the year, <C1>5 students left</C1> and <C2>11 new students</C2> came to the school.  Therefore, there were 31 - 5 + 11 = 37 students at the end of the year.
+Final_Answer: {37} 
+"
+116," While shopping, Maria bought 35 green towels and 21 white towels. If she gave her mother 34 of them, how many towels did Maria end up with? ","Fact_Diagram:
+graph TD
+    A[Towel Shopping]
+    A --> B[Green Towels]
+    A --> C[White Towels]
+    A --> D[Gift to Mother]
+    B --> B1[35 green towels]
+    C --> C1[21 white towels]
+    D --> D1[Gave away 34 towels]
+Answer_Reasoning: Maria bought a total of <B1>35</B1> + <C1>21</C1> = 56 towels. After giving <D1>34</D1> towels to her mother, she had 56 - 34 = 22 towels left. 
+Final_Answer: {22} 
+"
+117," While playing a trivia game, Adam answered 8 questions correct in the first half and 2 questions correct in the second half. If each question was worth 8 points, what was his final score? ","Fact_Diagram:
+graph TD
+    A[Trivia Game]
+    A --> B[Adam's Performance]
+    A --> C[Scoring]
+    B --> B1[8 correct in first half]
+    B --> B2[2 correct in second half]
+    C --> C1[Each question worth 8 points]
+Answer_Reasoning: Adam answered a total of <B1>8</B1> + <B2>2</B2> = 10 questions correctly. Since each question is worth <C1>8</C1> points, his final score is 10 * <C1>8</C1> = 80. 
+Final_Answer: {80} 
+"
+118," Paul was collecting cans for recycling. On Saturday he filled 6 bags up and on Sunday he filled 3 more bags. If each bag had 8 cans in it, how many cans did he pick up total? ","Fact_Diagram:
+graph TD
+    A[Can Collection]
+    A --> B{Saturday Collection}
+    A --> C{Sunday Collection}
+    A --> D{Total Cans}
+    B --> E{6 bags}
+    C --> F{3 bags}
+    D --> G{8 cans per bag}
+Answer_Reasoning: Paul collected a total of <E>6</E> + <F>3</F> = 9 bags of cans. Since each bag holds <G>8</G> cans, he collected 9 * 8 = 72 cans in total.
+Final_Answer: {72} 
+"
+119," Bianca and her friends were recycling paper for their class. For every 3 pounds they recycled they earned one point. If Bianca recycled 24 pounds and her friends recycled 3 pounds, how many points did they earn? ","Fact_Diagram:
+graph TD
+    A[Recycling Competition]
+    A --> B[Points System]
+    A --> C[Bianca's Recycling]
+    A --> D[Friends' Recycling]
+    B --> B1[3 pounds = 1 point]
+    C --> C1[Recycled 24 pounds]
+    D --> D1[Recycled 3 pounds]
+
+Answer_Reasoning: Bianca earned <C1>24</C1>/<B1>3</B1> = 8 points for her recycling.  Her friends earned <D1>3</D1>/<B1>3</B1> = 1 point for their recycling. Together they earned 8 + 1 = 9 points.
+Final_Answer: {9} 
+"
+120, A group of 3 friends went into a restaurant. The chef already had 8 chicken wings cooked but cooked 10 more for the group. If they each got the same amount how many would each person get? ,"```mermaid
+graph TD
+    A[Chicken Wing Problem]
+    A --> B[Initial Wings]
+    A --> C[Wings Cooked]
+    A --> D[Friends]
+    B --> B1[8 wings]
+    C --> C1[10 wings]
+    D --> D1[3 friends]
+
+```
+
+Answer_Reasoning: The chef cooked a total of <B1>8</B1> + <C1>10</C1> = 18 chicken wings. Therefore, each friend received 18 / <D1>3</D1> = 6 chicken wings.  
+Final_Answer: {6} 
+"
+121," John had 33 socks. If he threw away 19 old ones that didn't fit and bought 13 new ones, how many socks would he have? ","Fact_Diagram:
+graph TD
+    A[John's Socks]
+    A --> B{Starting Socks}
+    B --> B1[33 socks]
+    A --> C{Discarded Socks}
+    C --> C1[19 socks]
+    A --> D{New Socks}
+    D --> D1[13 socks]
+Answer_Reasoning: John had <B1>33</B1> socks initially. After throwing away <C1>19</C1> socks, he had 33 - 19 = 14 socks. Then, he bought <D1>13</D1> new socks, resulting in a total of 14 + 13 = 27 socks. 
+Final_Answer: {27} 
+"
+122," There school's baseball team had 2 new players and 6 returning players. If the coach put them into groups with 4 players in each group, how many groups would there be? ","Fact_Diagram:
+graph TD
+    A[Baseball Team]
+    A --> B[Players]
+    B --> C{New: 2}
+    B --> D{Returning: 6}
+
+Answer_Reasoning: There are a total of <C>2</C> + <D>6</D> = 8 players on the baseball team. Since the coach wants <A>4 players in each group</A>, there would be 8 / 4 = 2 groups. 
+Final_Answer: {2} 
+"
+123," A painter needed to paint 6 rooms in a building. Each room takes 5 hours to paint. If he already painted 2 rooms, how much longer will he take to paint the rest? ","Fact_Diagram:
+graph TD
+    A[Painting Project]
+    A --> B[Rooms]
+    A --> C[Painting Time]
+    A --> D[Progress]
+    
+    B --> B1[6 rooms total]
+    
+    C --> C1[5 hours per room]
+    
+    D --> D1[2 rooms painted]
+Answer_Reasoning: The painter has <B1>6</B1> - <D1>2</D1> = 4 rooms left to paint. It will take him <C1>5</C1> * 4 = 20 hours to paint the rest of the rooms.  
+Final_Answer: {20} 
+"
+124," A waiter had 22 customers in his section. If 14 of them left and the rest of his tables had 4 people at each table, how many tables did he have? ","Fact_Diagram:
+graph TD
+    A[Waiter's Section]
+    A --> B[Customers]
+    A --> C[Tables]
+    B --> B1[Started with 22]
+    B --> B2[14 left]
+    C --> C1[Remaining tables have 4 people each]
+
+Answer_Reasoning:  The waiter had <B1>22</B1> - <B2>14</B2> = 8 customers remaining. Since each of the remaining tables had <C1>4</C1> people, he had 8 / 4 = 2 tables. 
+Final_Answer: {2} 
+"
+125," Roger had 120 pieces of clothing to wash. He put 48 of them in one load, but decided to split the rest into 9 equal loads. How many pieces of clothing could go in each of the small loads? ","Fact_Diagram:
+graph TD
+    A[Laundry Loads]
+    A --> B{Total Clothes}
+    A --> C{Large Load}
+    A --> D{Small Loads}
+    B --> B1(120 pieces)
+    C --> C1(48 pieces)
+    D --> D1(9 loads)
+
+Answer_Reasoning: Roger had <B1>120</B1> pieces of clothing and put <C1>48</C1> in a large load. This left <B1>120</B1> - <C1>48</C1> = 72 pieces for the smaller loads.  He wanted to split this into <D1>9</D1> loads. Therefore each small load could hold 72 / <D1>9</D1> = 8 pieces of clothing.
+Final_Answer: {8} 
+"
+126, In fourth grade there were 10 students at the start of the year. During the year 4 students left and 42 new students came to school. How many students were in fourth grade at the end? ,"Fact_Diagram:
+graph TD
+    A[Fourth Grade Class]
+    A --> B[Start of Year]
+    A --> C[During the year]
+    A --> D[End of Year]
+    
+    B --> B1[10 students]
+    
+    C --> C1[4 students left]
+    C --> C2[42 new students]
+    
+
+Answer_Reasoning: At the start of the year, there were <B1>10</B1> students in fourth grade.  During the year <C1>4 students left</C1> and <C2>42 new students came</C2>. This means that the total number of students in fourth grade at the end of the year was <B1>10</B1> - <C1>4</C1> + <C2>42</C2> = 48. 
+Final_Answer: {48} 
+"
+127," Roger is at the library helping put away books. There are 14 book to put away total but a librarian takes 2 of them and leaves Roger with the rest. If he can fit 3 books on a shelf, how many shelves will he need? ","Fact_Diagram:
+graph TD
+    A[Library Book Organization]
+    A --> B[Total Books]
+    B --> B1[14 books]
+    A --> C[Librarian's Actions]
+    C --> C1[Takes 2 books]
+    A --> D[Roger's Task]
+    D --> D1[Puts away remaining books]
+    D --> D2[Fits 3 books per shelf]
+
+Answer_Reasoning: There are <B1>14 books</B1> total, and the librarian takes <C1>2 books</C1>. This leaves Roger with 14 - 2 = 12 books to put away. Since he can fit <D2>3 books per shelf</D2>, he will need 12 / 3 = 4 shelves. 
+Final_Answer: {4} 
+"
+128," Bianca picked 39 tulips and 49 roses to make flower bouquets. If she only used 81 of the flowers though, how many extra flowers did Bianca pick? ","Fact_Diagram:
+graph TD
+    A[Bianca's Flowers]
+    A --> B[Total Picked]
+    A --> C[Flowers Used]
+    A --> D[Extra Flowers]
+    
+    B --> B1[39 Tulips]
+    B --> B2[49 Roses]
+    
+    C --> C1[81 Flowers]
+Answer_Reasoning: Bianca picked a total of <B1>39</B1> + <B2>49</B2> = 88 flowers. Since she only used <C1>81</C1> flowers, she picked 88 - <C1>81</C1> = 7 extra flowers.
+Final_Answer: {7} 
+"
+129," Emily bought 4 new chairs and 2 new tables for her house. If she spent 8 minutes on each piece furniture putting it together, how many minutes did it take her to finish? ","Fact_Diagram:
+graph TD
+    A[Furniture Assembly]
+    A --> B[Chairs]
+    A --> C[Tables]
+    A --> D[Assembly Time]
+    
+    B --> B1[4 chairs]
+    
+    C --> C1[2 tables]
+    
+    D --> D1[8 minutes per piece]
+
+Answer_Reasoning: Emily bought a total of <B1>4</B1> + <C1>2</C1> = 6 pieces of furniture.  It took her <D1>8</D1> * 6 = 48 minutes to finish putting all the furniture together.
+Final_Answer: {48} 
+"
+130," A pet store has 6 bird cages. If each cage has 2 parrots and 7 parakeets in it, how many birds does the pet store have total? ","Fact_Diagram:
+graph TD
+    A[Pet Store]
+    A --> B[Bird Cages]
+    B --> C{6 cages}
+    A --> D[Birds per Cage]
+    D --> E{2 parrots}
+    D --> F{7 parakeets}
+
+Answer_Reasoning: There are <E>2 parrots</E> and <F>7 parakeets</F> in each cage, for a total of 2+7 = 9 birds per cage. Since there are <C>6 cages</C> total, the pet store has 9*6 = 54 birds. 
+Final_Answer: {54} 
+"
+131," Dave had to wash 9 short sleeve shirts and 27 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash? ","```mermaid
+graph TD
+    A[Laundry]
+    A --> B[Clothes to wash]
+    A --> C[Clothes washed]
+    A --> D[Clothes not washed]
+
+    B --> B1[9 short sleeve shirts]
+    B --> B2[27 long sleeve shirts]
+
+    C --> C1[20 shirts washed] 
+```
+
+Answer_Reasoning: Dave had to wash a total of <B1>9</B1> + <B2>27</B2> = 36 shirts. Since he only washed <C1>20</C1> shirts, he did not wash 36 - 20 = 16 shirts.  
+Final_Answer: {16} 
+"
+132," While on vacation, Haley took 50 pictures at the zoo and 8 at the museum. If she later deleted 38 of the pictures, how many pictures from her vacation did she still have? ","Fact_Diagram:
+graph TD
+    A[Vacation Pictures]
+    A --> B{Zoo Pictures}
+    B --> B1[50 pictures]
+    A --> C{Museum Pictures}
+    C --> C1[8 pictures]
+    A --> D{Deleted Pictures}
+    D --> D1[38 pictures] 
+
+Answer_Reasoning: Haley took a total of <B1>50</B1> + <C1>8</C1> = 58 pictures on vacation. After deleting some, she had 58 - <D1>38</D1> = 20 pictures left. 
+Final_Answer: {20} 
+"
+133," A florist had 5 roses. If she sold 3 of them and then later picked 34 more, how many roses would she have? ","Fact_Diagram:
+graph TD
+    A[Florist Roses]
+    A --> B{Started with 5 roses}
+    A --> C[Sales]
+    A --> D[Picked More]
+    C --> E{Sold 3 roses}
+    D --> F{Picked 34 roses}
+
+Answer_Reasoning: The florist had <B>5</B> roses and sold <E>3</E>, leaving her with 5 - 3 = 2 roses. After picking <F>34</F> more roses, she would have 2 + 34 = 36 roses.
+Final_Answer: {36} 
+"
+134," For a birthday party Cody bought 4 regular sodas and 44 diet sodas. If his fridge would only hold 6 on each shelf, how many shelves would he fill up? ","Fact_Diagram:
+graph TD
+    A[Cody's Sodas]
+    A --> B[Regular Sodas]
+    A --> C[Diet Sodas]
+    A --> D[Fridge Storage]
+    
+    B --> B1[4 sodas]
+    
+    C --> C1[44 sodas]
+    
+    D --> D1[6 sodas per shelf]
+Answer_Reasoning: Cody bought a total of <B1>4</B1> + <C1>44</C1> = 48 sodas.  Therefore, he will fill up <D1>48/6</D1> = 8 shelves in his fridge.
+Final_Answer: {8} 
+"
+135, The schools debate team had 26 boys and 46 girls on it. If they were split into groups of 9 how many groups could they make? ,"Fact_Diagram:
+graph TD
+    A[Debate Team]
+    A --> B[Boys]
+    A --> C[Girls]
+    A --> D[Groups]
+    
+    B --> B1[26 boys]
+    
+    C --> C1[46 girls]
+    
+    D --> D1[9 per group]
+Answer_Reasoning: There are a total of <B1>26</B1> + <C1>46</C1> = 72 students in the debate team. Therefore, they can form a total of 72 / <D1>9</D1> = 8 groups.
+Final_Answer: {8} 
+"
+136," The school cafeteria ordered 6 red apples and 15 green apples for students lunches. But, if only 5 students wanted fruit, how many extra did the cafeteria end up with? ","Fact_Diagram:
+graph TD
+    A[Cafeteria Apples]
+    A --> B{Total Apples}
+    B --> C[Red Apples: 6]
+    B --> D[Green Apples: 15]
+    A --> E[Students Wanting Fruit: 5]
+
+Answer_Reasoning: The cafeteria ordered a total of <C>6</C> + <D>15</D> = 21 apples. Since only <E>5</E> students wanted fruit, the cafeteria had 21 - <E>5</E> = 16 extra apples. 
+Final_Answer: {16} 
+"
+137, At a company picnic 9 managers and 15 employees decided to start a game of volleyball. If they split into 8 teams how many people would be on each team? ,"Fact_Diagram:
+graph TD
+    A[Company Picnic Volleyball]
+    A --> B[Players]
+    B --> C[9 Managers]
+    B --> D[15 Employees]
+    A --> E[Teams]
+    E --> F[8 Teams]
+Answer_Reasoning: There are a total of <C>9</C> + <D>15</D> = 24 people playing volleyball. If they split into <F>8</F> teams, there would be 24 / <F>8</F> = 3 people on each team. 
+Final_Answer: {3} 
+"
+138," A book store had 4 books in the bargin bin. If they sold 3 books, but then put 10 more in the bin, how many books would be in the bin? ","Fact_Diagram:
+graph TD
+    A[Bookstore Inventory]
+    A --> B[Starting Books]
+    B --> B1[4 books]
+    A --> C[Books Sold]
+    C --> C1[3 books]
+    A --> D[Books Added]
+    D --> D1[10 books]
+
+Answer_Reasoning: The store started with <B1>4 books</B1> in the bargain bin. After selling <C1>3 books</C1>, they had 1 book left. They then added <D1>10 books</D1> to the bin. There would be 1 + 10 = 11 books in the bin. 
+Final_Answer: {11} 
+"
+139," Mike made 42 dollars mowing lawns over the summer. If he spent 10 dollars buying new mower blades, how many 8 dollar games could he buy with the money he had left? ","Fact_Diagram:
+graph TD
+    A[Mike's Summer Earnings]
+    A --> B[Total Earnings]
+    A --> C[Mower Blade Expense]
+    A --> D[Video Game Purchases]
+    
+    B --> B1[$42]
+    C --> C1[$10]
+    D --> D1[$8 per game]
+
+Answer_Reasoning: After buying new mower blades, Mike had $<B1>42</B1>-<C1>10</C1> = $32 dollars left.  Therefore, he could buy $<D1>8</D1> into $32, or 4 games. 
+Final_Answer: {4} 
+"
+140," A chef needs to cook 13 potatoes. He has already cooked 5. If each potato takes 6 minutes to cook, how long will it take him to cook the rest? ","Fact_Diagram:
+graph TD
+    A[Chef Cooking Potatoes]
+    A --> B[Potatoes Needed]
+    A --> C[Potatoes Cooked]
+    A --> D[Cooking Time Per Potato]
+    B --> B1[13 potatoes]
+    C --> C1[5 potatoes]
+    D --> D1[6 minutes per potato]
+Answer_Reasoning: The chef needs to cook <B1>13</B1> - <C1>5</C1> = 8 more potatoes. It will take him <D1>6</D1> * 8 = 48 minutes to cook the rest of the potatoes. 
+Final_Answer: {48} 
+"
+141," Paige had 43 math problems and 12 science problems for homework. If she finished 44 of the problems at school, how many problems did she have to do for homework? ","Fact_Diagram:
+graph TD
+    A[Homework Problems]
+    A --> B[Math Problems]
+    A --> C[Science Problems]
+    B --> B1[43 problems]
+    C --> C1[12 problems]
+    A --> D[Completed Problems]
+    D --> D1[44 problems]
+Answer_Reasoning: Paige had a total of <B1>43</B1> + <C1>12</C1> = 55 problems for homework. If she finished <D1>44</D1> problems at school, she had 55 - 44 = 11 problems left to do for homework. 
+Final_Answer: {11} 
+"
+142," April's discount flowers was having a sale where each flower was 8 dollars. If Vanessa bought 3 roses and 3 daisies, how much did she spend? ","Fact_Diagram:
+graph TD
+    A[Flower Sale]
+    A --> B[Price per flower]
+    A --> C[Vanessa's Purchase]
+    B --> B1[$8]
+    C --> C1[3 roses]
+    C --> C2[3 daisies]
+
+Answer_Reasoning: Vanessa bought a total of <C1>3</C1> + <C2>3</C2> = 6 flowers. Since each flower cost <B1>$8</B1>, Vanessa spent 6 * <B1>$8</B1> = $48. 
+Final_Answer: {48} 
+"
+143," Olivia uploaded 5 pictures from her phone and 35 from her camera to facebook. If she sorted the pics into 8 different albums with the same amount of pics in each album, how many pictures were in each of the albums? ","Fact_Diagram:
+graph TD
+    A[Olivia's Facebook Pics]
+    A --> B[Phone Uploads]
+    A --> C[Camera Uploads]
+    A --> D[Total Pictures]
+    A --> E[Albums]
+    B --> B1[5 pictures]
+    C --> C1[35 pictures]
+    D --> D1[Sum of phone and camera uploads]
+    E --> E1[8 albums]
+    E --> E2[Equal number of pictures per album]
+Answer_Reasoning: Olivia uploaded a total of <B1>5</B1> + <C1>35</C1> = <D1>40</D1> pictures to Facebook. She wanted to sort these pictures into <E1>8</E1> different albums with an <E2>equal</E2> number of pictures in each album. Therefore, Olivia would have <D1>40</D1> / <E1>8</E1> = 5 pictures in each album. 
+Final_Answer: {5} 
+"
+144," Robin was making baggies of cookies with 6 cookies in each bag. If she had 23 chocolate chip cookies and 25 oatmeal cookies, how many baggies could she make? ","Fact_Diagram:
+graph TD
+    A[Cookie Baggies]
+    A --> B[Cookies per Bag]
+    A --> C[Total Cookies]
+    B --> B1[6 cookies]
+    C --> D[Chocolate Chip]
+    C --> E[Oatmeal]
+    D --> D1[23 cookies]
+    E --> E1[25 cookies]
+
+Answer_Reasoning: Robin has a total of <D1>23</D1> + <E1>25</E1> = 48 cookies.  She can make a total of 48/<B1>6</B1> = 8 bags of cookies. 
+Final_Answer: {8} 
+"
+145, Cody had 45 dollars. For his birthday he got 9 more dollars but spent 19 on a new game. How much money does he have now? ,"Fact_Diagram:
+graph TD
+    A[Cody's Money]
+    A --> B{Starting Money}
+    A --> C{Birthday Money}
+    A --> D{Game Cost}
+    B --> B1{$45}
+    C --> C1{$9}
+    D --> D1{$19}
+
+Answer_Reasoning: Cody had $<B1>45</B1> to start with.  After his birthday he had $<B1>45</B1> + $<C1>9</C1> = $54. After buying the game he had $54 - $<D1>19</D1> = $35. 
+Final_Answer: {35}"
+146," Wendy uploaded 22 pictures from her phone and 2 from her camera to facebook. If she sorted the pics into 4 different albums with the same amount of pics in each album, how many pictures were in each of the albums? ","Fact_Diagram:
+graph TD
+    A[Wendy's Facebook Pictures]
+    A --> B[Phone Uploads]
+    A --> C[Camera Uploads]
+    A --> D[Total Pictures]
+    A --> E[Albums]
+    
+    B --> B1[22 pictures]
+    
+    C --> C1[2 pictures]
+
+    D --> D1[24 pictures]
+
+    E --> E1[4 albums]
+    E --> E2[Same amount in each album]
+
+Answer_Reasoning: Wendy uploaded a total of <B1>22</B1> + <C1>2</C1> = <D1>24</D1> pictures to Facebook. She divided the <D1>24</D1> pictures equally into <E1>4</E1> albums, so there were <D1>24</D1>/<E1>4</E1> = 6 pictures in each album. 
+Final_Answer: {6} 
+"
+147," For Halloween Katie and her sister combined the candy they received. Katie had 8 pieces of candy while her sister had 23. If they ate 8 pieces the first night, how many pieces do they have left? ","Fact_Diagram:
+graph TD
+    A[Halloween Candy]
+    A --> B[Katie's Candy]
+    A --> C[Sister's Candy]
+    A --> D[Total Candy]
+    A --> E[Candy Eaten]
+    B --> B1[8 pieces]
+    C --> C1[23 pieces]
+    D --> D1[Katie's + Sister's Candy]
+    E --> E1[8 pieces]
+
+Answer_Reasoning: Katie and her sister had a total of <B1>8</B1> + <C1>23</C1> = <D1>31</D1> pieces of candy. After eating <E1>8</E1> pieces, they have <D1>31</D1> - <E1>8</E1> = 23 pieces left.
+Final_Answer: {23} 
+"
+148, A pet store had 88 puppies. In one day they sold 34 of them and put the rest into cages with 6 in each cage. How many cages did they use? ,"Fact_Diagram:
+graph TD
+    A[Pet Store]
+    A --> B[Puppies]
+    B --> B1[Started with 88 puppies]
+    B --> B2[Sold 34 puppies]
+    B --> B3[Remaining puppies put in cages]
+    B3 --> B3a[6 puppies per cage]
+
+Answer_Reasoning: The pet store had <B1>88</B1> puppies and sold <B2>34</B2> leaving 88-34 = 54 puppies.  They put <B3a>6</B3a> puppies in each cage so they used 54/6 = 9 cages.
+Final_Answer: {9} 
+"
+149," Jerry was helping the cafeteria workers pick up lunch trays, but he could only carry 8 trays at a time. If he had to pick up 9 trays from one table and 7 trays from another, how many trips will he make? ","Fact_Diagram:
+graph TD
+    A[Lunch Tray Pickup]
+    A --> B[Jerry's Carrying Capacity]
+    A --> C[Trays to Pick Up]
+    B --> B1[8 trays per trip]
+    C --> C1[9 trays from table 1]
+    C --> C2[7 trays from table 2]
+Answer_Reasoning: Jerry needs to pick up a total of <C1>9</C1> + <C2>7</C2> = 16 trays. Since he can carry only <B1>8</B1> trays at a time, he'll need to make 16 / 8 = 2 trips. 
+Final_Answer: {2} 
+"
+150," Faye was playing a video game where she scores 7 points for each treasure she finds. If she found 2 treasures on the first level and 6 on the second, what would her score be? ","Fact_Diagram:
+graph TD
+    A[Video Game Scoring]
+    A --> B[Points per Treasure]
+    A --> C[Treasures Found]
+    B --> B1[7 points/treasure]
+    C --> C1[Level 1: 2 treasures]
+    C --> C2[Level 2: 6 treasures]
+
+Answer_Reasoning: Faye scored <B1>7</B1> * <C1>2</C1> = 14 points on the first level. She scored <B1>7</B1> * <C2>6</C2> = 42 points on the second level.  In total, Faye scored 14 + 42 = 56 points.
+Final_Answer: {56} 
+"
+151," Megan picked 19 carrots from her garden. If she threw out 4 of them and then picked 46 more the next day, how many carrots would she have total? ","Fact_Diagram:
+graph TD
+    A[Megan's Carrots]
+    A --> B{Initial Harvest} 
+    A --> C{Discarded Carrots}
+    A --> D{Second Harvest}
+    B --> E{19 carrots}
+    C --> F{4 carrots}
+    D --> G{46 carrots}
+Answer_Reasoning: Megan had <E>19</E> carrots after her initial harvest. After discarding <F>4</F> carrots, she had 19 - 4 = 15 carrots.  After the second harvest, she had 15 + <G>46</G> = 61 carrots.
+Final_Answer: {61} 
+"
+152, Wendy had 82 files on her computer. She deleted 37 of them and put the rest into folders with 5 files in each one. How many folders did Wendy end up with? ,"Fact_Diagram:
+graph TD
+    A[Wendy's Files]
+    A --> B[Initial Number]
+    A --> C[Deleted Files]
+    A --> D[Organizing Files]
+    B --> B1[82 files]
+    C --> C1[Deleted 37 files]
+    D --> D1[Folders created]
+    D --> D2[5 files per folder]
+
+Answer_Reasoning: After deleting some files, Wendy had <B1>82</B1> - <C1>37</C1> = 45 files left. Therefore, she ended up with <D2>45</D2>/<D1>5</D1> = 9 folders. 
+Final_Answer: {9} 
+"
+153," There school's baseball team had 12 new players and 44 returning players. If the coach put them into groups with 8 players in each group, how many groups would there be? ","Fact_Diagram:
+graph TD
+    A[Baseball Team]
+    A --> B[New Players]
+    A --> C[Returning Players]
+    A --> D[Groups]
+    
+    B --> B1[12 players]
+    C --> C1[44 players]
+    D --> D1[8 players per group]
+Answer_Reasoning: There are a total of <B1>12</B1> + <C1>44</C1> = 56 players on the baseball team. The coach can form <D1>56/8</D1> = 7 groups. 
+Final_Answer: {7} 
+"
+154," Will made 104 dollars mowing lawns over the summer. If he spent 41 dollars buying new mower blades, how many 9 dollar games could he buy with the money he had left? ","Fact_Diagram:
+graph TD
+    A[Will's Summer Earnings]
+    A --> B[Total Earnings]
+    A --> C[Mower Blade Expense]
+    A --> D[Game Purchases]
+    B --> B1[$104]
+    C --> C1[$41]
+    D --> D1[$9 per game]
+
+Answer_Reasoning: Will had <B1>$104</B1> - <C1>$41</C1> = $63 dollars left after buying new mower blades. Therefore, he could buy <D1>$63/$9</D1> = 7 games. 
+Final_Answer: {7} 
+"
+155," Nancy picked 12 carrots from her garden. If she threw out 2 of them and then picked 21 more the next day, how many carrots would she have total? ","```mermaid
+graph TD
+    A[Nancy's Carrots]
+    A --> B{Picked 12 carrots}
+    A --> C{Threw out 2 carrots}
+    A --> D{Picked 21 carrots the next day}
+```
+
+Answer Reasoning: Nancy had <B>12</B> carrots after her first picking. After throwing out carrots, she had 12 - <C>2</C> = 10 carrots. After picking more carrots the next day, Nancy had 10 + <D>21</D> = 31 carrots. 
+Final_Answer: {31} 
+"
+156, Roger had 16 dollars. For his birthday he got 28 more dollars but spent 25 on a new game. How much money does he have now? ,"Fact_Diagram:
+graph TD
+    A[Roger's Money]
+    A --> B{Starting Money}
+    B --> B1[$16]
+    A --> C{Birthday Money}
+    C --> C1[$28]
+    A --> D{Game Cost}
+    D --> D1[$25]
+
+Answer_Reasoning: Roger started with <B1>$16</B1>. He received <C1>$28</C1> for his birthday, giving him a total of <B1>$16</B1> + <C1>$28</C1> = $44. He then spent <D1>$25</D1> on a game, leaving him with $44 - <D1>$25</D1> = $19. 
+Final_Answer: {19} 
+"
+157," Sam was collecting cans for recycling. On Saturday he filled 3 bags up and on Sunday he filled 4 more bags. If each bag had 9 cans in it, how many cans did he pick up total? ","Fact_Diagram:
+graph TD
+    A[Can Collection]
+    A --> B{Saturday}
+    A --> C{Sunday}
+    B --> D[3 bags]
+    C --> E[4 bags]
+    D --> F[9 cans per bag]
+    E --> F
+
+Answer_Reasoning: On Saturday, Sam collected <D>3 bags</D> * <F>9 cans per bag</F> = 27 cans. On Sunday, he collected <E>4 bags</E> * <F>9 cans per bag</F> = 36 cans. In total, Sam picked up 27 + 36 = 63 cans.
+Final_Answer: {63} 
+"
+158," A worksheet had 4 problems on it. If a teacher had 16 worksheets to grade and had already graded 8 of them, how many more problems does she have to grade? ","Fact_Diagram: 
+graph TD
+    A[Grading Problem]
+    A --> B[Worksheets]
+    A --> C[Problems]
+    B --> B1[16 total worksheets]
+    B --> B2[8 worksheets graded]
+    C --> C1[4 problems per worksheet]
+
+Answer_Reasoning: The teacher has <B1>16</B1> - <B2>8</B2> = 8 worksheets left to grade.  Since each worksheet has <C1>4</C1> problems, she has to grade another 8 * <C1>4</C1> = 32 problems. 
+Final_Answer: {32} 
+"
+159, Paige was unboxing some of her old winter clothes. She found 6 boxes of clothing and inside each box there were 5 scarves and 5 mittens. How many pieces of winter clothing did Paige have total? ,"Fact_Diagram:
+graph TD
+    A[Paige's Winter Clothes]
+    A --> B{Boxes}
+    B --> B1[6 boxes]
+    A --> C{Contents per box}
+    C --> C1[5 scarves]
+    C --> C2[5 mittens]
+
+Answer_Reasoning: Paige had <C1>5</C1> scarves and <C2>5</C2> mittens in each box, for a total of <C1>5</C1> + <C2>5</C2> = 10 pieces of clothing per box. Since she had <B1>6</B1> boxes, she had a total of 10 * <B1>6</B1> = 60 pieces of winter clothing. 
+Final_Answer: {60} 
+"
+160," A chef needs to cook 12 potatoes. He has already cooked 6. If each potato takes 6 minutes to cook, how long will it take him to cook the rest? ","```mermaid
+graph TD
+    A[Cooking Potatoes]
+    A --> B[Potatoes Needed]
+    A --> C[Potatoes Cooked]
+    A --> D[Cooking Time Per Potato]
+    B --> E[12 potatoes]
+    C --> F[6 potatoes]
+    D --> G[6 minutes/potato]
+```
+
+Answer_Reasoning: The chef still needs to cook <E>12</E> - <F>6</F> = 6 more potatoes. This will take him <G>6</G> * 6 = 36 minutes. 
+Final_Answer: {36} 
+"
+161, Luke was selling his old games. He started out with 57 but sold 39 of them. He packed the rest up putting 2 games into each box. How many boxes did he have to use? ,"Fact_Diagram:
+graph TD
+    A[Luke's Games]
+    A --> B[Starting Games]
+    A --> C[Games Sold]
+    A --> D[Games Remaining]
+    A --> E[Packing]
+    
+    B --> B1[57 games]
+    C --> C1[39 games]
+    E --> E1[2 games per box] 
+
+Answer_Reasoning: Luke had <B1>57</B1> - <C1>39</C1> = 18 games remaining after selling some. He needs 18 / <E1>2</E1> = 9 boxes. 
+Final_Answer: {9} 
+"
+162," April's discount flowers was having a sale where each flower was 3 dollars. If Emily bought 2 roses and 2 daisies, how much did she spend? ","Fact_Diagram:
+graph TD
+    A[April's Discount Flowers]
+    A --> B{Sale Price}
+    B --> C(Each flower costs $3)
+    A --> D{Emily's Purchase}
+    D --> E[Bought 2 roses]
+    D --> F[Bought 2 daisies]
+
+Answer_Reasoning: Emily bought a total of <E>2</E> + <F>2</F> = 4 flowers. Since each flower cost <C>$3</C>, she spent 4 * <C>$3</C> = $12.  
+Final_Answer: {12} 
+"
+163, A pet store had 13 puppies. In one day they sold 7 of them and put the rest into cages with 2 in each cage. How many cages did they use? ,"Fact_Diagram:
+graph TD
+    A[Pet Store]
+    A --> B[Puppies]
+    B --> B1[Started with 13 puppies]
+    B --> B2[Sold 7 puppies]
+    B --> B3[Remaining puppies caged]
+    B3 --> B3a[2 puppies per cage] 
+
+Answer_Reasoning: The pet store had <B1>13</B1> puppies and sold <B2>7</B2>, leaving them with 13-7 = 6 puppies. Since they put <B3a>2</B3a> puppies in each cage, they used 6/2 = 3 cages. 
+Final_Answer: {3} 
+"
+164," Faye and her mom were picking carrots from their garden. Faye picked 23 and her mother picked 5. If only 12 of the carrots were good, how many bad carrots did they have? ","```mermaid
+graph TD
+    A[Carrot Picking] --> B{Total Carrots Picked} 
+    B --> C[Faye's Carrots: 23]
+    B --> D[Mom's Carrots: 5]
+    A --> E[Good Carrots: 12]
+```
+
+Answer_Reasoning: Faye and her mom picked a total of <C>23</C> + <D>5</D> = 28 carrots. Since only <E>12</E> of the carrots were good, they had 28 - <E>12</E> = 16 bad carrots. 
+Final_Answer: {16} 
+"
+165," Isabel picked 66 flowers for her friend’s wedding. She was making bouquets with 8 flowers in each one. If 10 of the flowers wilted before the wedding, how many bouquets could she still make? ","Fact_Diagram:
+graph TD
+    A[Isabel's Bouquets]
+    A --> B[Flowers]
+    B --> B1[Picked 66 flowers]
+    B --> B2[10 flowers wilted]
+    A --> C[Bouquet Arrangement]
+    C --> C1[8 flowers per bouquet]
+
+Answer_Reasoning: Isabel had <B1>66</B1> - <B2>10</B2> = 56 flowers left after some wilted. She could make <C1>56/8</C1> = 7 bouquets.  
+Final_Answer: {7} 
+"
+166," At the town carnival Oliver rode the ferris wheel 5 times and the bumper cars 4 times. If each ride cost 7 tickets, how many tickets did he use? ","Fact_Diagram:
+graph TD
+    A[Carnival Rides]
+    A --> B{Oliver's Rides}
+    B --> C[Ferris Wheel: 5 rides]
+    B --> D[Bumper Cars: 4 rides]
+    A --> E[Ticket Cost: 7 tickets/ride]
+
+Answer_Reasoning: Oliver rode the ferris wheel <C>5</C> times and the bumper cars <D>4</D> times for a total of 5 + 4 = 9 rides. Since each ride costs <E>7</E> tickets, he used 9 * 7 = 63 tickets. 
+Final_Answer: {63} 
+"
+167," Wendy bought 4 new chairs and 4 new tables for her house. If she spent 6 minutes on each piece furniture putting it together, how many minutes did it take her to finish? ","Fact_Diagram:
+graph TD
+    A[Furniture Assembly]
+    A --> B[Furniture Bought]
+    A --> C[Assembly Time]
+    B --> B1[4 chairs]
+    B --> B2[4 tables]
+    C --> C1[6 minutes per piece]
+Answer_Reasoning: Wendy bought a total of <B1>4</B1> + <B2>4</B2> = 8 pieces of furniture. Since each piece took <C1>6</C1> minutes to assemble, it took her 8 x <C1>6</C1> = 48 minutes to finish.
+Final_Answer: {48} 
+"
+168," Ned was trying to expand his game collection. He bought 50 games from a friend and bought 27 more at a garage sale. If 74 of the games didn't work, how many good games did he end up with? ","Fact_Diagram:
+graph TD
+    A[Ned's Game Collection]
+    A --> B[Games Purchased]
+    B --> B1[50 games from friend]
+    B --> B2[27 games from garage sale]
+    A --> C[Game Functionality]
+    C --> C1[74 games didn't work]
+
+Answer_Reasoning: Ned bought a total of <B1>50</B1> + <B2>27</B2> = 77 games. Since <C1>74</C1> games didn't work, he had 77 - 74 = 3 good games. 
+Final_Answer: {3} 
+"
+169, A pet store had 38 siamese cats and 25 house cats. During a sale they sold 45 cats. How many cats do they have left? ,"Fact_Diagram:
+graph TD
+    A[Pet Store Inventory]
+    A --> B[Starting Cats]
+    A --> C[Cats Sold]
+    
+    B --> B1[38 Siamese cats]
+    B --> B2[25 House cats]
+    
+    C --> C1[45 cats sold] 
+
+Answer_Reasoning: The pet store starts with <B1>38</B1> + <B2>25</B2> = 63 cats. After the sale they had 63 - <C1>45</C1> = 18 cats. The answer is 18.
+Final_Answer: {18} 
+"
+170, Carol was playing a trivia game. In the first round she scored 17 points and in the second round she scored 6 points. In the last round she lost 16 points. How many points did she have at the end of the game? ,"Fact_Diagram:
+graph TD
+    A[Trivia Game]
+    A --> B[Round 1]
+    A --> C[Round 2]
+    A --> D[Round 3]
+    B --> B1[Scored 17 points]
+    C --> C1[Scored 6 points]
+    D --> D1[Lost 16 points]
+Answer_Reasoning: Carol had <B1>17</B1> + <C1>6</C1> = 23 points before the last round. After the last round, she had 23 - <D1>16</D1> = 7 points. 
+Final_Answer: {7} 
+"
+171," Dave bought 12 boxes of chocolate candy and gave 5 to his little brother. If each box has 3 pieces inside it, how many pieces did Dave still have? ","Fact_Diagram:
+graph TD
+    A[Candy Problem]
+    A --> B[Dave's Purchase]
+    B --> B1[12 boxes]
+    B --> B2[3 pieces per box]
+    A --> C[Gift]
+    C --> C1[5 boxes given away] 
+
+Answer_Reasoning: Dave bought a total of <B1>12</B1> * <B2>3</B2> = 36 pieces of candy. After giving <C1>5</C1> boxes to his brother, Dave had 12 - 5 = 7 boxes left. This means Dave had 7 * <B2>3</B2> = 21 pieces left. 
+Final_Answer: {21} 
+"
+172," A waiter at 'The Greasy Spoon' restaurant had 39 customers to wait on. During the lunch rush he added another 12 customers. If 49 of the customers didn't leave him a tip, how many customers did leave a tip? ","Fact_Diagram:
+graph TD
+    A[The Greasy Spoon]
+    A --> B{Customers}
+    B --> B1[Started with 39]
+    B --> B2[Added 12 more]
+    B --> B3[49 didn't tip]
+
+Answer_Reasoning: The waiter had a total of <B1>39</B1> + <B2>12</B2> = 51 customers. Since <B3>49</B3> customers didn't leave a tip, then 51 - 49 = 2 customers left a tip. 
+Final_Answer: {2} 
+"
+173," The cafeteria had 50 apples. For lunch they handed out 5 to students and decided to use the rest to make pies. If each pie takes 5 apples, how many pies could they make? ","Fact_Diagram:
+graph TD
+    A[Cafeteria Apples]
+    A --> B[Total Apples]
+    A --> C[Apples Used]
+    B --> B1[50 apples]
+    C --> C1[5 apples for students]
+    C --> C2[5 apples per pie]
+
+Answer_Reasoning: The cafeteria had <B1>50</B1> apples and used <C1>5</C1> for students. This left them with 50 - 5 = 45 apples for pies. Since each pie needs <C2>5</C2> apples, they could make 45 / 5 = 9 pies. 
+Final_Answer: {9} 
+"
+174," Oliver had 33 dollars in January. By March he had spent 4 dollars. If he got another 32 dollars from his mom, how much money would he have? ","Fact_Diagram:
+graph TD
+    A[Oliver's Money]
+    A --> B[January]
+    A --> C[March]
+    A --> D[Mom]
+    B --> B1[$33]
+    C --> C1[Spent $4]
+    D --> D1[Received $32]
+Answer_Reasoning: Oliver had $<B1>33</B1> in January. After spending money in March, he had $<B1>33</B1> - <C1>$4</C1> = $29. His mom gave him an additional $<D1>$32</D1>, so he now has $29 + $<D1>$32</D1> = $61.
+Final_Answer: {61} 
+"
+175," The school cafeteria had 14 apples. If they used 13 to make lunch for the students and then bought 49 more, how many apples would they have? ","Fact_Diagram: 
+```mermaid
+graph TD
+    A[Cafeteria Apples]
+    A --> B{Starting Apples}
+    B --> B1[14 apples]
+    A --> C{Apples Used}
+    C --> C1[13 apples]
+    A --> D{Apples Bought}
+    D --> D1[49 apples]
+```
+
+Answer_Reasoning: The cafeteria started with <B1>14</B1> apples. After using <C1>13</C1> apples, they had 14 - 13 = 1 apple left. Then, after buying <D1>49</D1> more apples, they would have 1 + 49 = 50 apples. 
+Final_Answer: {50} 
+"
+176," While playing a trivia game, Frank answered 3 questions correct in the first half and 2 questions correct in the second half. If each question was worth 3 points, what was his final score? ","Fact_Diagram:
+graph TD
+    A[Trivia Game]
+    A --> B[Frank's Performance]
+    A --> C[Point System]
+    B --> B1[3 correct answers in the first half]
+    B --> B2[2 correct answers in the second half]
+    C --> C1[Each question worth 3 points]
+Answer_Reasoning: Frank answered a total of <B1>3</B1> + <B2>2</B2> = 5 questions correctly. Since each question is worth <C1>3</C1> points, his final score is 5 * <C1>3</C1> = 15 points. 
+Final_Answer: {15} 
+"
+177, Zoe was unboxing some of her old winter clothes. She found 8 boxes of clothing and inside each box there were 4 scarves and 6 mittens. How many pieces of winter clothing did Zoe have total? ,"Fact_Diagram:
+graph TD
+    A[Zoe's Winter Clothes]
+    A --> B[Boxes]
+    B --> B1[8 boxes]
+    A --> C[Contents Per Box]
+    C --> C1[4 scarves]
+    C --> C2[6 mittens]
+Answer_Reasoning: Zoe had a total of <C1>4</C1> scarves + <C2>6</C2> mittens = 10 pieces of clothing in each box.  Since she had <B1>8</B1> boxes, that means she had 10 x <B1>8</B1> = 80 pieces of winter clothing total.
+Final_Answer: {80} 
+"
+179," Sam had to wash 40 short sleeve shirts and 23 long sleeve shirts before school. If he had only washed 29 of them by the time school started, how many did he not wash? ","Fact_Diagram:
+graph TD
+    A[Laundry]
+    A --> B[Short Sleeve Shirts]
+    A --> C[Long Sleeve Shirts]
+    A --> D[Shirts Washed]
+    A --> E[Shirts Not Washed]
+    
+    B --> B1[40 shirts]
+    
+    C --> C1[23 shirts]
+
+    D --> D1[29 shirts]
+    
+Answer_Reasoning: Sam had <B1>40</B1> + <C1>23</C1> = 63 shirts to wash. If he washed <D1>29</D1> shirts, then he did not wash 63 - <D1>29</D1> = 34 shirts. The answer is 34. 
+Final_Answer: {34} 
+"
+180," A waiter had 47 customers to wait on. If 41 customers left and he got another 20 customers, how many customers would he have? ","Fact_Diagram:
+graph TD
+    A[Customers]
+    A --> B{Starting Customers}
+    A --> C{Customers Leaving}
+    A --> D{New Customers}
+    B --> B1{47}
+    C --> C1{41}
+    D --> D1{20}
+
+Answer_Reasoning: The waiter starts with <B1>47</B1> customers. After <C1>41</C1> customers leave, he has 47 - 41 = 6 customers remaining. The waiter then gets <D1>20</D1> new customers, giving him a total of 6 + 20 = 26 customers. 
+Final_Answer: {26} 
+"
+178, Frank and his friend were buying trick decks from the magic shop for 7 dollars each. How much did they spend if Frank bought 3 decks and his friend bought 2 decks? ,"Fact_Diagram:
+graph TD
+    A[Magic Deck Purchases]
+    A --> B[Price Per Deck]
+    A --> C[Frank's Purchases]
+    A --> D[Friend's Purchases]
+    
+    B --> B1[$7 per deck]
+    
+    C --> C1[Bought 3 decks]
+    
+    D --> D1[Bought 2 decks]
+
+Answer_Reasoning: Frank spent <C1>3</C1> * <B1>$7</B1> = $21 on magic decks. His friend spent <D1>2</D1> * <B1>$7</B1> = $14 on magic decks. Altogether, they spent $21 + $14 = $35 on magic decks. 
+Final_Answer: {35} 
+"
