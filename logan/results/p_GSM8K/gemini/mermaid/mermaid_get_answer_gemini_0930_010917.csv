@@ -1,0 +1,16 @@
+id,question,answer
+0,"Carmen goes to an auction to win an antique desk. She accepts the opening bid of $200 and continues bidding until she wins. The bids on the desk rise by $50 each time and 3 other people each bid once. Carmen bids after each of the 3 other people and eventually wins. How much money, in dollars, does the desk cost her?","Fact_Diagram:
+graph TD
+    A[Antique Desk Auction]
+    A --> B{Carmen}
+    A --> C{Other Bidders}
+    A --> D[Bidding Process]
+    B --> B1[Wins the auction]
+    C --> C1[3 other bidders]
+    C --> C2[Each bid once]
+    D --> D1[Opening bid: $200]
+    D --> D2[Bid increase: $50 each time]
+
+Answer_Reasoning: Since there is an <D1>opening bid of $200</D1>, and <C1>3 other people</C1> each bid once, there are a total of 3 + 1 = 4 bids before Carmen wins.  With each bid increasing by <D2>$50</D2>, the price increases by a total of 4 * $50 = $200. Therefore, Carmen pays $200 + $200 = $400 for the desk. 
+Final_Answer: {400} 
+"
