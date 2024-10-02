@@ -1,0 +1,118 @@
+import google.generativeai as genai
+import os
+from utils.keys import API_KEYS
+from google.generativeai.types import RequestOptions
+from google.api_core import retry
+import anthropic
+
+import random, json, argparse
+from tqdm import tqdm
+import pandas as pd
+from utils.utils import read_jsonl_file, extract_last_sentence
+random.seed(0)
+
+
+def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used):
+    answers = []
+    ids_can_be_answered = []
+    questions_can_be_answered = []
+    
+    for id, q in tqdm(zip(ids, questions)):
+        # prompt = f"{few_shot_prompt}\n{q}" # prompt 0
+        # prompt = f"{few_shot_prompt}\n{q}\nCan you help me answer the question and use <a></a> tags to highlight important information and its reference to the information in the question by using <ref></ref> tags." # prompt 1
+        # prompt = f"{q}\nCan you help me answer the question and use <a></a> tags to highlight important information and its reference to the information in the question by using <ref></ref> tags." # prompt zeroshot
+        
+        last_sentence = extract_last_sentence(q)
+        
+        if prompt_used == "fs":
+            prompt = f"{few_shot_prompt}\n{q}"
+        if prompt_used == "fs_inst":
+            # prompt = f"{few_shot_prompt}\n{q}\nI want you to answer this question but your explanation should contain references referring back to the information in the question. To do that, first, re-generate the question with proper tags and then generate your answers. The output format is as follow:\n\
+            #     Reformatted Question: \
+            #         Answer:"
+            
+            prompt = f"{few_shot_prompt}\n{q}\nI want you to answer this question but your explanation should contain references referring back to the information in the question. To do that, first, re-generate the question with proper tags for key phrases the key phrases that are most relevant to answering the question {last_sentence} and then generate your answers. The output format is as follow:\n\
+                Reformatted Question: \
+                    Answer:"
+        if prompt_used == "zs":
+            prompt = f"{q}\nI want you to answer this question but your explanation should contain references referring back to the information in the question. To do that, first, re-generate the question with proper tags (<a>, <b>, <c>, etc) for refered information and then generate your answers that also have the tag (<a>, <b>, <c>, etc) for the grounded information, furthermore for each tag in the answer, please classify it into a category. Give your answer by analyzing step by step, and give only numbers in the final answer. The output format is as follow:\n\
+                Reformatted Question: \
+                    Answer:\
+                        Final answer:"   
+            # prompt = f"{q}\nGive your answer by analyzing step by step, and give only numbers in the final answer. The output format is as follow:\n\
+            #         Answer:\
+            #             Final answer:"   
+        if llm_model == 'gemini':
+            genai.configure(api_key=API_KEYS['gemini'])
+            model = genai.GenerativeModel('gemini-1.5-pro-latest')
+            try:
+                response = model.generate_content(prompt, request_options=RequestOptions(retry=retry.Retry(initial=10, multiplier=2, maximum=60, timeout=60)))
+                answers.append(response.text)
+                questions_can_be_answered.append(q)
+                ids_can_be_answered.append(id)
+            except:
+                continue
+            
+        elif llm_model == 'claude':
+            client = anthropic.Anthropic(api_key=API_KEYS['claude'])
+            try:
+                response = client.messages.create(
+                    model="claude-3-5-sonnet-20240620",
+                    max_tokens=1024,
+                    messages=[{"role": "user", "content": prompt}]
+                )
+                answers.append(response.content[0].text)
+                questions_can_be_answered.append(q)
+                ids_can_be_answered.append(id)
+            except:
+                continue
+    
+    return ids_can_be_answered, questions_can_be_answered, answers
+
+if __name__ == "__main__":
+    arg_parser = argparse.ArgumentParser()
+    arg_parser.add_argument('--llm_model', type=str, default='gemini', help='The language model to query', choices=['gemini', 'claude'])
+    arg_parser.add_argument('--dataset', type=str, default='GSM8K', help='The dataset to query', choices=['GSM8K', 'StrategyQA'])
+    arg_parser.add_argument('--prompt_used', type=str, default='fs_inst', help='The prompt used to query the language model', choices=['zs', 'fs', 'fs_inst'])
+    arg_parser.add_argument('--save_answer', action='store_true')
+    
+    args = arg_parser.parse_args()
+    
+    # data path
+    data_path = f'data/{args.dataset}/test.jsonl'
+    # fewshot prompt path
+    prompt_design = 'design_1'
+    version = 'v3'
+    fewshot_prompt_path = f"prompt/{args.dataset}/fewshot_{prompt_design}_{version}.txt"
+    # save path
+    save_path = f'results/{args.dataset}/{prompt_design}_{version}/{args.prompt_used}_{args.llm_model}.csv'
+    os.makedirs(f'results/{args.dataset}/{prompt_design}_{version}', exist_ok=True)
+    
+    # read file grounding_prompt.txt
+    with open(fewshot_prompt_path, 'r') as file:
+        few_shot_prompt = file.read()
+        
+    # read data
+    data = read_jsonl_file(data_path)
+    # take random data
+    # random_data = random.sample(data, 10)
+    random_data = data
+    
+    question_length = 526 # 800
+    questions = [x["question"] for x in random_data if len(x["question"]) >= question_length]
+    ids = [x["id"] for x in random_data if len(x["question"]) >= question_length]
+    
+    questions = questions[:1]
+    ids = ids[:1]
+    ids_can_be_answered, questions_can_be_answered, answers = query_llm(args.llm_model, ids, questions, few_shot_prompt, args.prompt_used)
+    
+    print(questions_can_be_answered)
+    print('------')
+    print(answers)
+    # if args.save_answer:
+    #     # save answers and questions to csv file (the len of question and answer should be the same)
+    #     df = pd.DataFrame({'id': ids_can_be_answered, 'question': questions_can_be_answered, 'answer': answers})
+    #     df.to_csv(save_path, index=False)
+    
+    
+    # ["## Reformatted Question: \n\nThe great dragon, <a>Perg</a>, sat high atop mount <b >Farbo</b>, breathing fire upon anything within a distance of <c>1000 feet</c>. <d>Polly</d> could throw the gold javelin, the only known weapon that could slay <a>the dragon</a>, for a distance of <e>400 feet</e>, well within the reach of <a>the dragon</a>'s flames. But when <d>Polly</d> held the sapphire gemstone, <d>she</d> could throw the javelin <f>three times</f> farther than when not holding the gemstone. If holding the gemstone, how far outside of the reach of <a>the dragon</a>'s flames could <d>Polly</d> stand and still hit <a>the dragon</a> with the gold javelin? \n\n## Answer:\n\n1. **Calculate Polly's throwing distance with the gemstone:** <d>Polly</d> can throw the javelin <f>three times</f> farther with the gemstone, so her throwing range becomes <e>400 feet</e> * <f>3</f> = <g>1200 feet</g>. ( **<d>: Entity**, **<e>: Quantity**, **<f>: Multiplier**, **<g>: Calculated Quantity** )\n\n2. **Determine the safe distance outside the dragon's flame range:** Since <a>the dragon</a>'s flames reach <c>1000 feet</c> and <d>Polly</d> can throw <g>1200 feet</g> with the gemstone, <d>she</d> can stand <g>1200 feet</g> - <c>1000 feet</c> = <h>200 feet</h> outside the range of the flames and still hit <a>the dragon</a>. ( **<a>: Entity**, **<c>: Quantity**, **<g>: Calculated Quantity**, **<h>: Calculated Quantity** )\n\n## Final answer: 200 \n"]
