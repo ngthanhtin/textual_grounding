@@ -1,0 +1,286 @@
+id,question,answer
+1,Alice has 4 brothers and she also has 1 sister. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 4 brothers</fact1> and <fact2>she also has 1 sister</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact2>Alice has 1 sister</fact2>, all of Alice's brothers must also have <fact2>1</fact2> sister. Therefore, Alice's brother has <fact2>1</fact2> sister. 
+Final_Answer: {1} 
+"
+2,Alice has 4 sisters and she also has 1 brother. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 4 sisters</fact1> and <fact2>she also has 1 brother</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact1>Alice has 4 sisters</fact1>, and they all share the same brother, her brother has <fact1>4</fact1> sisters. 
+Final_Answer: {4} 
+"
+3,Alice has four brothers and she also has one sister. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has four brothers</fact1> and <fact2>she also has one sister</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact2>Alice has one sister</fact2>, and all of Alice's siblings share the same parents, her brother must also have <fact2>one sister</fact2>.
+Final_Answer: {1} 
+"
+16,"Alice has 4 sisters and she also has 1 brother. All brothers identify themselves as males, and all sisters identify themselves as females. How many sisters does Alice's brother have?","Reformatted_Question: ""<fact1>Alice has 4 sisters</fact1> and <fact2>she also has 1 brother</fact2>. <fact3>All brothers identify themselves as males, and all sisters identify themselves as females.</fact3> How many sisters does Alice's brother have?
+Answer_Reasoning: Since <fact1>Alice has 4 sisters</fact1>, and <fact2>1 brother<fact2>, her <fact2>brother</fact2> must also have 4 sisters.  <fact3>The information about gender identification is irrelevant</fact3> to the question. 
+Final_Answer: {4} 
+"
+17,Alice has 1 sister and she also has 4 brothers. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 1 sister</fact1> and <fact2>she also has 4 brothers</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact1>Alice has 1 sister</fact1>, and all of Alice's brothers share the same siblings, each of her brothers also has <fact1>1</fact1> sister. 
+Final_Answer: {1} 
+"
+18,Alice has 1 brother and she also has 4 sisters. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 1 brother</fact1> and <fact2>she also has 4 sisters</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact2>Alice has 4 sisters</fact2>, and her brother shares all of Alice's siblings, her brother must also have <fact2>4</fact2> sisters. 
+Final_Answer: {4} 
+"
+19,Alice has 4 brothers and she also has 2 sisters. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 4 brothers</fact1> and <fact2>she also has 2 sisters</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact2>Alice has 2 sisters</fact2>, all of Alice's brothers also have <fact2>2 sisters</fact2>. Therefore, Alice's brother has <fact2>2 sisters</fact2>.
+Final_Answer: {2} 
+"
+20,Alice has 4 sisters and she also has 3 brothers. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 4 sisters</fact1> and <fact2>she also has 3 brothers</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact1>Alice has 4 sisters</fact1>, and Alice's brother is also a sibling, he must also have <fact1>4</fact1> sisters.
+Final_Answer: {4} 
+"
+33,Alice has 4 brothers and she also has 2 sisters. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 4 brothers</fact1> and <fact2>she also has 2 sisters</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact2>Alice has 2 sisters</fact2>, all of Alice's brothers also have <fact2>2 sisters</fact2>. Therefore, Alice's brother has <fact2>2 sisters</fact2>. 
+Final_Answer: {2} 
+"
+34,Alice has 4 sisters and she also has 3 brothers. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 4 sisters</fact1> and <fact2>she also has 3 brothers</fact2>. How many sisters does Alice's brother have?
+Answer_Reasoning: Since <fact1>Alice has 4 sisters</fact1>, and Alice's brother is also a sibling to these sisters, he will also have 4 sisters. 
+Final_Answer: {4} 
+"
+35,Alice has 4 brothers and she also has 1 sister. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 4 brothers</fact1> and <fact2>she also has 1 sister</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact2>Alice has 1 sister</fact2>, all of Alice's brothers also have <fact2>1 sister</fact2>. Therefore, Alice's brother has <fact2>1 sister</fact2>.
+Final_Answer: {1} 
+"
+36,Alice has 4 sisters and she also has 1 brother. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 4 sisters</fact1> and <fact2>she also has 1 brother</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact1>Alice has 4 sisters</fact1>, and they are all siblings of her <fact2>1 brother</fact2>, her brother also has <fact1>4</fact1> sisters. 
+Final_Answer: {4} 
+"
+37,Alice has 4 brothers and she also has 1 sister. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 4 brothers</fact1> and <fact2>she also has 1 sister</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: We know that <fact2>Alice has 1 sister</fact2>. Since they share the same parents, all of Alice's brothers also have this sister. Therefore, Alice's brother has <fact2>1</fact2> sister. 
+Final_Answer: {1} 
+"
+50,Alice has 2 sisters and she also has 5 brothers. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 2 sisters</fact1> and <fact2>she also has 5 brothers</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact1>Alice has 2 sisters</fact1>, and Alice's brother is also a sibling, he must also have <fact1>2</fact1> sisters. 
+Final_Answer: {2} 
+"
+51,Alice has 3 brothers and she also has 6 sisters. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 3 brothers</fact1> and <fact2>she also has 6 sisters</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact2>Alice has 6 sisters</fact2>, all of Alice's brothers also have <fact2>6 sisters</fact2>. Therefore, Alice's brother has <fact2>6 sisters</fact2>.
+Final_Answer: {6} 
+"
+52,Alice has 3 sisters and she also has 5 brothers. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 3 sisters</fact1> and <fact2>she also has 5 brothers</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact1>Alice has 3 sisters</fact1>, and Alice is also a sister, there are a total of <fact1>3</fact1> + 1 = 4 sisters.  Since they are all siblings, Alice's brother also has <fact1>3</fact1> sisters. 
+Final_Answer: {3} 
+"
+53,Alice has 3 brothers and she also has 6 sisters. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 3 brothers</fact1> and <fact2>she also has 6 sisters</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact2>Alice has 6 sisters</fact2>, all of Alice's brothers must also have <fact2>6 sisters</fact2>. Therefore, Alice's brother has <fact2>6</fact2> sisters.
+Final_Answer: {6} 
+"
+54,Alice has 2 sisters and she also has 4 brothers. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 2 sisters</fact1> and <fact2>she also has 4 brothers</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact1>Alice has 2 sisters</fact1>, and they share the same brothers, her brother also has <fact1>2 sisters</fact1>.
+Final_Answer: {2} 
+"
+67,Alice has 2 sisters and she also has 4 brothers. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 2 sisters</fact1> and <fact2>she also has 4 brothers</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact1>Alice has 2 sisters</fact1>, and Alice is also a sister, her brother has <fact1>2</fact1> + 1 = 3 sisters.
+Final_Answer: {3} 
+"
+68,Alice has 4 sisters and she also has 1 brother. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 4 sisters</fact1> and <fact2>she also has 1 brother</fact2>. How many sisters does Alice's brother have?
+Answer_Reasoning: Since <fact1>Alice has 4 sisters</fact1>, and they share the same brother, Alice's brother has <fact1>4</fact1> sisters. 
+Final_Answer: {4} 
+"
+69,Alice has 4 brothers and she also has 1 sister. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 4 brothers</fact1> and <fact2>she also has 1 sister</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact2>Alice has 1 sister</fact2>, and Alice's brother is also a sibling, Alice's brother also has <fact2>1</fact2> sister.
+Final_Answer: {1} 
+"
+70,Alice has 4 brothers and she also has 1 sister. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 4 brothers</fact1> and <fact2>she also has 1 sister</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: We know that <fact2>Alice has 1 sister</fact2>. Since Alice's brother shares all of Alice's siblings, her brother must also have <fact2>1</fact2> sister. 
+Final_Answer: {1} 
+"
+71,Alice has 4 brothers and she also has 1 sister. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 4 brothers</fact1> and <fact2>she also has 1 sister</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact2>Alice has 1 sister</fact2>, all of Alice's brothers must also have <fact2>1</fact2> sister. Therefore, Alice's brother has <fact2>1</fact2> sister. 
+Final_Answer: {1} 
+"
+84,Haret has 4 brothers and she also has 1 sister. How many sisters does Haret's brother have?,"Reformatted_Question: ""<fact1>Haret has 4 brothers</fact1> and <fact2>she also has 1 sister</fact2>. How many sisters does Haret's brother have?""
+Answer_Reasoning: Since <fact2>Haret has 1 sister</fact2>, all of Haret's brothers also have <fact2>1 sister</fact2>. Therefore, Haret's brother has <fact2>1 sister</fact2>.
+Final_Answer: {1} 
+"
+85,Haret has 4 brothers and she also has 1 sister. How many sisters does Haret's brother have?,"Reformatted_Question: ""<fact1>Haret has 4 brothers</fact1> and <fact2>she also has 1 sister</fact2>. How many sisters does Haret's brother have?""
+Answer_Reasoning: Since <fact2>Haret has 1 sister</fact2>, all of Haret's brothers also have <fact2>1 sister</fact2>.  Therefore, Haret's brother has <fact2>1 sister</fact2>.
+Final_Answer: {1} 
+"
+86,"Build SQLite queries for creation and population of the table that represents: ""Alice has 4 sisters and she also has a brother. How many sisters in total does Alice's brother have?","Reformatted_Question: ""<fact1>Alice has 4 sisters</fact1> and <fact2>she also has a brother</fact2>. How many sisters in total does Alice's brother have?""
+Answer_Reasoning: Including Alice, her <fact1>4 sisters</fact1> and <fact2>brother</fact2> means there are 1 + 4 + 1 = 6 siblings in the family. Since they are all siblings, Alice's brother will also have the same number of sisters as Alice, which is <fact1>4</fact1>.
+Final_Answer: {4} 
+
+Here's how you can represent this information in a SQLite database:
+
+**Database Schema:**
+
+```sql
+CREATE TABLE siblings (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  gender TEXT NOT NULL,
+  CHECK (gender IN ('male', 'female'))
+);
+```
+
+**Data Population:**
+
+```sql
+-- We don't know all the sibling names, so we'll use placeholders 
+-- where needed.
+INSERT INTO siblings (name, gender) VALUES 
+  ('Alice', 'female'),
+  ('Sister 1', 'female'),
+  ('Sister 2', 'female'),
+  ('Sister 3', 'female'),
+  ('Sister 4', 'female'),
+  ('Brother', 'male'); 
+```
+
+**Query to get the number of Alice's brother's sisters:**
+
+```sql
+SELECT 
+  COUNT(DISTINCT s2.id) - 1  -- Subtract 1 to exclude Alice herself
+FROM siblings s1
+JOIN siblings s2 ON s1.gender = 'male' AND s2.gender = 'female' 
+WHERE 
+  s1.name = 'Brother';
+```
+
+**Explanation of the Query:**
+
+1. **`SELECT COUNT(DISTINCT s2.id) - 1`**: This selects the count of distinct sister IDs minus 1 (to exclude Alice).
+2. **`FROM siblings s1 JOIN siblings s2`**: This joins the `siblings` table with itself to find relationships between siblings.
+3. **`ON s1.gender = 'male' AND s2.gender = 'female'`**: This condition ensures we are counting sisters (female) of the brother (male).
+4. **`WHERE s1.name = 'Brother'`**: This specifies that we are looking for the sisters of the sibling named ""Brother"". 
+"
+87,### Problem: Alice has 3 brothers and she also has 6 sisters. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 3 brothers</fact1> and <fact2>she also has 6 sisters</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact2>Alice has 6 sisters</fact2>, her brother also has <fact2>6 sisters</fact2>. 
+Final_Answer: {6} 
+"
+88,### Problem: Alice has 2 sisters and she also has 4 brothers. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 2 sisters</fact1> and <fact2>she also has 4 brothers</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Including Alice, there are <fact1>2 + 1 = 3 sisters</fact1> in the family.  Since they are all siblings, each brother will also have <fact1>3 sisters</fact1>. 
+Final_Answer: {3} 
+"
+118,Alice has N sisters and she also has M brothers. How many brothers does Alice's sister have?,"Reformatted_Question: ""<fact1>Alice has N sisters</fact1> and <fact2>she also has M brothers</fact2>. How many brothers does Alice's sister have?""
+Answer_Reasoning: Since <fact2>Alice has M brothers</fact2>, all of Alice's sisters also have <fact2>M brothers</fact2>. Therefore, Alice's sister has <fact2>M brothers</fact2>. 
+Final_Answer: {M} 
+"
+119,Alice has N sisters and she also has M brothers. How many brothers does Alice's sister have?,"Reformatted_Question: ""<fact1>Alice has N sisters</fact1> and <fact2>she also has M brothers</fact2>. How many brothers does Alice's sister have?""
+Answer_Reasoning: Since <fact2>Alice has M brothers</fact2>, all of Alice's sisters also have <fact2>M brothers</fact2>. Therefore, Alice's sister has <fact2>M brothers</fact2>. 
+Final_Answer: {M} 
+"
+120,Bob has 4 brothers and he also has 3 sisters. How many sisters does Bob's brother have?,"Reformatted_Question: ""<fact1>Bob has 4 brothers</fact1> and <fact2>he also has 3 sisters</fact2>. How many sisters does Bob's brother have?""
+Answer_Reasoning: Since <fact2>Bob has 3 sisters</fact2>, all of Bob's brothers also have <fact2>3 sisters</fact2>. Therefore, Bob's brother has <fact2>3 sisters</fact2>. 
+Final_Answer: {3} 
+"
+121,Bob has 4 brothers and he also has 3 sisters. How many sisters does Bob's brother have?,"Reformatted_Question: ""<fact1>Bob has 4 brothers</fact1> and <fact2>he also has 3 sisters</fact2>. How many sisters does Bob's brother have?""
+Answer_Reasoning: Since <fact2>Bob has 3 sisters</fact2>, all of Bob's brothers also have <fact2>3 sisters</fact2>. Therefore, Bob's brother has <fact2>3 sisters</fact2>.
+Final_Answer: {3} 
+"
+122,Bob has 4 brothers and he also has 3 sisters. How many sisters does Bob's brother have?,"Reformatted_Question: ""<fact1>Bob has 4 brothers</fact1> and <fact2>he also has 3 sisters</fact2>. How many sisters does Bob's brother have?""
+Answer_Reasoning: Since <fact2>Bob has 3 sisters</fact2>, all of Bob's brothers also have <fact2>3 sisters</fact2>. Therefore, Bob's brother has <fact2>3 sisters</fact2>. 
+Final_Answer: {3} 
+"
+135,"Alice has 4 brothers and she also has 1 sister. Alice and all her mentioned siblings have the same two parents, the description of Alice's family is complete and no person is left out. How many sisters does Alice's brother have?","Reformatted_Question: ""<fact1>Alice has 4 brothers</fact1> and <fact2>she also has 1 sister</fact2>. <fact3>Alice and all her mentioned siblings have the same two parents</fact3>, <fact4>the description of Alice's family is complete and no person is left out</fact4>. How many sisters does Alice's brother have?
+Answer_Reasoning: Since <fact2>Alice has 1 sister</fact2> and <fact4>no person is left out</fact4>, this sister must also be the sister of all of Alice's brothers.  Therefore, Alice's brother has <fact2>1</fact2> sister. 
+Final_Answer: {1} 
+"
+136,"Alice has 4 brothers and she also has 1 sister. Alice and all her mentioned siblings have the same two parents, the description of Alice's family is complete and no person is left out. How many sisters does Alice's brother have?","Reformatted_Question: ""<fact1>Alice has 4 brothers</fact1> and <fact2>she also has 1 sister</fact2>. <fact3>Alice and all her mentioned siblings have the same two parents</fact3>, <fact4>the description of Alice's family is complete and no person is left out</fact4>. How many sisters does Alice's brother have?
+Answer_Reasoning: Since <fact2>Alice has 1 sister</fact2> and <fact3>they share the same parents</fact3>, her brother also has <fact2>1 sister</fact2>.
+Final_Answer: {1} 
+"
+137,"Alice has 4 brothers and she also has 1 sister. Alice and all her mentioned siblings have the same two parents, the description of Alice's family is complete and no person is left out. How many sisters does Alice's brother have?","Reformatted_Question: ""<fact1>Alice has 4 brothers</fact1> and <fact2>she also has 1 sister</fact2>. <fact3>Alice and all her mentioned siblings have the same two parents</fact3>, <fact4>the description of Alice's family is complete and no person is left out</fact4>. How many sisters does Alice's brother have?
+Answer_Reasoning:  Since <fact2>Alice has 1 sister</fact2>, and <fact3>they share the same parents</fact3>, her brother must also have <fact2>1</fact2> sister. 
+Final_Answer: {1} 
+"
+138,Bob has 4 brothers and he also has 1 sister. How many brothers does Bob's sister have?,"Reformatted_Question: ""<fact1>Bob has 4 brothers</fact1> and <fact2>he also has 1 sister</fact2>. How many brothers does Bob's sister have?""
+Answer_Reasoning: Since <fact1>Bob has 4 brothers</fact1>, all of Bob's siblings have <fact1>4</fact1> brothers. Therefore, Bob's sister has <fact1>4</fact1> brothers. 
+Final_Answer: {4} 
+"
+139,Bob has 4 brothers and he also has 1 sister. How many brothers does Bob's sister have?,"Reformatted_Question: ""<fact1>Bob has 4 brothers</fact1> and <fact2>he also has 1 sister</fact2>. How many brothers does Bob's sister have?""
+Answer_Reasoning: Since <fact1>Bob has 4 brothers</fact1>, all of Bob's siblings will have the same number of brothers. Therefore, Bob's sister also has <fact1>4</fact1> brothers. 
+Final_Answer: {4} 
+"
+152,Alice is female and has three brothers and she also has seven sisters. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice is female</fact1> and <fact2>has three brothers</fact2> and <fact3>she also has seven sisters</fact3>. How many sisters does Alice's brother have?""
+
+Answer_Reasoning: Since <fact1>Alice is female</fact1> and <fact3>has seven sisters</fact3>, all of Alice's brothers have <fact3>seven sisters</fact3>. 
+
+Final_Answer: {7} 
+"
+153,Alice is female and has eight brothers and she also has seven sisters. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice is female</fact1> and has <fact2>eight brothers</fact2> and <fact3>she also has seven sisters</fact3>. How many sisters does Alice's brother have?""
+
+Answer_Reasoning: We know that <fact1>Alice is female</fact1> and <fact3>has seven sisters</fact3>. Since they are all sisters, they share the same siblings. Therefore, Alice's brother also has <fact3>seven</fact3> sisters. 
+
+Final_Answer: {7} 
+"
+154,Alice is a female and Bob is a male. Alice and Bob are sister and brother. Alice has 3 sisters and Bob has 2 brothers. How many brothers does Alice have?,"Reformatted_Question: ""<fact1>Alice is a female</fact1> and <fact2>Bob is a male</fact2>. <fact3>Alice and Bob are sister and brother</fact3>. <fact4>Alice has 3 sisters</fact4> and <fact5>Bob has 2 brothers</fact5>. How many brothers does Alice have?
+Answer_Reasoning: Since <fact3>Alice and Bob are sister and brother</fact3>, they share the same parents. Therefore, if <fact5>Bob has 2 brothers</fact5>, Alice also has these <fact5>2 brothers</fact5>, plus <fact3>Bob</fact3> himself as a brother.  This means Alice has a total of <fact5>2</fact5> + <fact3>1</fact3> = 3 brothers. 
+Final_Answer: {3} 
+"
+155,Alice is a female and Bob is a male. Alice and Bob are sister and brother. Alice has 3 sisters and Bob has 2 brothers. How many sisters does Bob have?,"Reformatted_Question: ""<fact1>Alice is a female</fact1> and <fact2>Bob is a male</fact2>. <fact3>Alice and Bob are sister and brother</fact3>. <fact4>Alice has 3 sisters</fact4> and <fact5>Bob has 2 brothers</fact5>. How many sisters does Bob have?""
+Answer_Reasoning: We know that <fact3>Alice and Bob are sister and brother</fact3>. Therefore, Bob has at least one sister (Alice). <fact4>Alice has 3 sisters</fact4> in total, and since they are all siblings, these 3 must also be Bob's sisters. Therefore, Bob has a total of <fact4>3</fact4> + <fact3>1</fact3> = 4 sisters. 
+Final_Answer: {4} 
+"
+156,Alice is a female and Bob is a male. Alice and Bob are sister and brother. Alice has 3 sisters and Bob has 2 brothers. How many sisters does Bob have?,"Reformatted_Question: ""<fact1>Alice is a female</fact1> and <fact2>Bob is a male</fact2>. <fact3>Alice and Bob are sister and brother</fact3>. <fact4>Alice has 3 sisters</fact4> and <fact5>Bob has 2 brothers</fact5>. How many sisters does Bob have?""
+Answer_Reasoning: We know that <fact3>Alice and Bob are sister and brother</fact3>. Therefore, Bob has at least one sister (Alice). <fact4>Alice has 3 sisters</fact4> in total, and since they are all sisters, they must also be Bob's sisters. Therefore, Bob has 1(Alice) + <fact4>3</fact4> = 4 sisters.
+Final_Answer: {4} 
+"
+169,Alice is female and has four sisters and she also has one brother. How many sisters does Alice's brother have?,"Reformatted_Question: <fact1>Alice is female</fact1> and has <fact2>four sisters</fact2> and <fact3>she also has one brother</fact3>. How many sisters does Alice's brother have?
+Answer_Reasoning: Since <fact1>Alice is female</fact1> and has <fact2>four sisters</fact2>, they must all share the same brother.  Therefore, Alice's brother has <fact2>four</fact2> sisters. 
+Final_Answer: {4} 
+"
+170,Alice is female and has four sisters and she also has one brother. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice is female</fact1> and has <fact2>four sisters</fact2> and she also has <fact3>one brother</fact3>. How many sisters does Alice's brother have?
+Answer_Reasoning:  Since <fact1>Alice is female</fact1> and has <fact2>four sisters</fact2>, they must all be sisters to each other.  This means Alice's <fact3>brother</fact3> also has five sisters (<fact2>four sisters</fact2> + Alice).
+Final_Answer: {5} 
+"
+171,Alice is female and has 4 sisters and she also has 1 brother. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice is female</fact1> and has <fact2>4 sisters</fact2> and she also has <fact3>1 brother</fact3>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact1>Alice is female</fact1> and has <fact2>4 sisters</fact2>, this means there are a total of 5 sisters (including Alice). Since they all share the same brother (<fact3>1 brother</fact3>), Alice's brother has <fact2>4 sisters</fact2>. 
+Final_Answer: {4} 
+"
+172,Alice is female and has 4 sisters and she also has 1 brother. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice is female</fact1> and has <fact2>4 sisters</fact2> and she also has <fact3>1 brother</fact3>. How many sisters does Alice's brother have?
+Answer_Reasoning: We know that <fact1>Alice is female</fact1> and has <fact2>4 sisters</fact2>, and since they are all sisters they must also be female. Additionally, we know that Alice has <fact3>1 brother</fact3>. That means in total there are <fact2>4</fact2> + <fact1>1</fact1> = 5 sisters. Therefore, Alice's brother has <fact2>4</fact2> + <fact1>1</fact1> = 5 sisters. 
+Final_Answer: {5} 
+"
+173,Alice is female and has 4 sisters and she also has 1 brother. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice is female</fact1> and has <fact2>4 sisters</fact2> and <fact3>she also has 1 brother</fact3>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact1>Alice is female</fact1> and <fact2>has 4 sisters</fact2>, this means there are 5 females in the family in total. Given that <fact3>Alice also has 1 brother</fact3>, he will also have these 5 females as his sisters. Therefore, Alice's brother has <fact2>5</fact2> sisters. 
+Final_Answer: {5} 
+"
+186,Alice is female and has 4 sisters and she also has 1 brother. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice is female</fact1> and has <fact2>4 sisters</fact2> and <fact3>she also has 1 brother</fact3>. How many sisters does Alice's brother have?
+Answer_Reasoning: We know that <fact1>Alice is female</fact1>, so her brother is male. We also know that <fact2>Alice has 4 sisters</fact2>. Since they are all siblings, these sisters are also the sisters of Alice's brother. Therefore, Alice's brother has <fact2>4</fact2> sisters. 
+Final_Answer: {4} 
+"
+187,Alice has 4 sisters and she also has 1 brother. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 4 sisters</fact1> and <fact2>she also has 1 brother</fact2>. How many sisters does Alice's brother have?
+Answer_Reasoning: Since <fact1>Alice has 4 sisters</fact1>, and they share the same brother (<fact2>Alice has one brother</fact2>), Alice's brother must also have <fact1>4</fact1> sisters. 
+Final_Answer: {4} 
+"
+188,Alice has 4 brothers and she also has 1 sister. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 4 brothers</fact1> and <fact2>she also has 1 sister</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact2>Alice has 1 sister</fact2>, all of Alice's brothers also have <fact2>1 sister</fact2>.  Therefore, Alice's brother has <fact2>1 sister</fact2>. 
+Final_Answer: {1} 
+"
+189,Alice is female and has 4 sisters and she also has 1 brother. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice is female</fact1> and has <fact2>4 sisters</fact2> and she also has <fact3>1 brother</fact3>. How many sisters does Alice's brother have?
+Answer_Reasoning: Since <fact1>Alice is female</fact1>, and she has <fact2>4 sisters</fact2>, this means there are a total of <fact1>1</fact1> + <fact2>4</fact2> = 5 female siblings. Since they share the same parents, <fact3>Alice's brother</fact3> also has 5 sisters. 
+Final_Answer: {5} 
+"
+190,Alice is female and has 4 brothers and she also has 1 sister. How many sisters does Alice's brother have?,"Reformatted_Question: <fact1>Alice is female</fact1> and has <fact2>4 brothers</fact2> and <fact3>she also has 1 sister</fact3>. How many sisters does Alice's brother have? 
+Answer_Reasoning: We know that <fact1>Alice is female</fact1> and <fact3>has 1 sister</fact3>. Since they share the same parents,  Alice's brother also has <fact3>1</fact3> sister. 
+Final_Answer: {1} 
+"
+203,Alice is female and has 4 brothers and she also has 1 sister. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice is female</fact1> and has <fact2>4 brothers</fact2> and she also has <fact3>1 sister</fact3>. How many sisters does Alice's brother have?""
+
+Answer_Reasoning: Since <fact1>Alice is female</fact1> and has <fact3>1 sister</fact3>, there are two sisters total.  Since <fact2>Alice has 4 brothers</fact2>, each of Alice's brothers will also have these same two sisters. Therefore, Alice's brother has <fact3>1</fact3> + <fact1>1</fact1> = 2 sisters. 
+
+Final_Answer: {2} 
+"
+204,Alice is female and has 4 brothers and she also has 1 sister. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice is female</fact1> and has <fact2>4 brothers</fact2> and <fact3>she also has 1 sister</fact3>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact3>Alice has 1 sister</fact3>, and <fact1>Alice is female</fact1>, this means her brother also has <fact3>1</fact3> sister plus <fact1>Alice</fact1> as a sister. Therefore, Alice's brother has <fact3>1</fact3> + <fact1>1</fact1> = 2 sisters. 
+Final_Answer: {2} 
+"
+205,Alice has 3 brothers and she also has 6 sisters. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 3 brothers</fact1> and <fact2>she also has 6 sisters</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact2>Alice has 6 sisters</fact2>, all of Alice's brothers must also have <fact2>6 sisters</fact2>. Therefore, Alice's brother has <fact2>6 sisters</fact2>.
+Final_Answer: {6} 
+"
+206,Alice has 2 sisters and she also has 4 brothers. How many sisters does Alice's brother have?,"Reformatted_Question: ""<fact1>Alice has 2 sisters</fact1> and <fact2>she also has 4 brothers</fact2>. How many sisters does Alice's brother have?""
+Answer_Reasoning: Since <fact1>Alice has 2 sisters</fact1>, and Alice is also female, this means there are a total of <fact1>2</fact1> + 1 = 3 sisters. Since they are all siblings, Alice's brother would also have 3 sisters. 
+Final_Answer: {3} 
+"
+207,Bob is male and has 3 sisters and he also has 6 brothers. How many brothers does Bob's sister have?,"Reformatted_Question: <fact1>Bob is male</fact1> and has <fact2>3 sisters</fact2> and he also has <fact3>6 brothers</fact3>. How many brothers does Bob's sister have? 
+
+Answer_Reasoning: Since <fact1>Bob is male</fact1>, and has <fact3>6 brothers</fact3>, his sisters will also have <fact3>6 brothers</fact3>. Therefore, Bob's sister has <fact3>6</fact3> brothers.
+
+Final_Answer: {6} 
+"

@@ -1,0 +1,11 @@
+Question: "Alice and Bob are sister and brother. Alice has 4 sisters and Bob has 1 brother. How many sisters does Bob have?"
+Answer_Reasoning: Since Alice is Bob's sister, we know that Bob has at least 1 sister. Since Alice has 4 sisters, these girls must also be Bob's sisters. Therefore, Bob has 1 + 4 = 5 sisters.
+Final_Answer: {5}
+
+Question: "Alice and Bob are sister and brother. Alice has 1 sister and Bob has 3 brothers. How many sisters does Bob have?"
+Answer_Reasoning: Given that Alice is Bob's sister, Bob has at least 1 sister. Additionally since Alice has 1 sister, this sister must also be Bob's sister. Therefore, Bob has 1 + 1 = 2 sisters.
+Final_Answer: {2}
+
+Question: "Alice has 7 brothers and she also has 3 sisters. How many brothers does Alice's sister have?"
+Answer_Reasoning: Since Alice has 7 brothers, all of Alice's sisters also have 7 brothers. Therefore, Alice's sister has 7 brothers.
+Final_Answer: {7}

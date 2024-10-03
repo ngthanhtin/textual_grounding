@@ -1,0 +1,14 @@
+Question: "Alice and Bob are sister and brother. Alice has 4 sisters and Bob has 1 brother. How many sisters does Bob have?"
+Reformatted_Question: "Alice and Bob are <fact1>sister</fact1> and <fact2>brother</fact2>. <fact3>Alice has 4 sisters</fact4> and <fact4>Bob has 1 brother</fact4>.
+Answer_Reasoning: Since <fact1>Alice is Bob's sister<fact1>, we know that Bob has at least 1 sister. Since <fact3>Alice has 4 sisters</fact3>, these girls must also be Bob's sisters. Therefore, Bob has <fact1>1</fact1> + <fact3>4</fact3> = 5 sisters.
+Final_Answer: {5}
+
+Question: "Alice and Bob are sister and brother. Alice has 1 sister and Bob has 3 brothers. How many sisters does Bob have?"
+Reformatted_Question: "Alice and Bob are <fact1>sister</fact1> and <fact2>brother</fact2>. <fact3>Alice has 1 sister</fact3> and <fact4>Bob has 3 brothers</fact4>. How many sisters does Bob have?"
+Answer_Reasoning: Given that <fact1>Alice is Bob's sister<fact1>, Bob has at least 1 sister. Additionally since <fact3>Alice has 1 sister</fact3>, this sister must also be Bob's sister. Therefore, Bob has <fact1>1</fact1> + <fact3>1</fact3> = 2 sisters.
+Final_Answer: {2}
+
+Question: "Alice has 7 brothers and she also has 3 sisters. How many brothers does Alice's sister have?"
+Reformatted_Question: "<fact1>Alice has 7 brothers</fact1> and <fact2>she also has 3 sisters</fact2>. How many brothers does Alice's sister have?"
+Answer_Reasoning: Since <fact1>Alice has 7 brothers</fact1>, all of Alice's sisters also have <fact1>7 brothers</fact1>. Therefore, Alice's sister has <fact1>7 brothers</fact1>.
+Final_Answer: {7}
