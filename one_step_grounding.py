@@ -1,4 +1,4 @@
-import os
+import os, re
 import random, json, argparse
 from tqdm import tqdm
 import pandas as pd
@@ -13,15 +13,17 @@ from google.api_core import retry
 # claude
 import anthropic
 # llama
-from transformers import (AutoModelForCausalLM, 
-                          AutoTokenizer, 
-                          BitsAndBytesConfig, 
-                          pipeline)
-import torch
-import torch.nn as nn
+# from transformers import (AutoModelForCausalLM, 
+#                           AutoTokenizer, 
+#                           BitsAndBytesConfig, 
+#                           pipeline)
+# import torch
+# import torch.nn as nn
 # gpt4
 from openai import OpenAI
 import openai
+# groq
+import groq
 
 random.seed(0)
 
@@ -31,7 +33,7 @@ def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used, answer_mo
     ids_can_be_answered = []
     questions_can_be_answered = []
     
-    if llm_model == 'llama2_7b':
+    if llm_model == 'llama_transformer':
         model_id = "/home/tin/projects/Llama-2-7b-chat-hf"
         compute_dtype = getattr(torch, "float16")
         bnb_config = BitsAndBytesConfig(
@@ -57,14 +59,23 @@ def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used, answer_mo
         tokenizer.padding_side = "right"
         
     for i, (id, q) in tqdm(enumerate(zip(ids, questions))):
-        if i == 1:
-            break
-        # prompt = f"{few_shot_prompt}\n{q}" # prompt 0
-        # prompt = f"{few_shot_prompt}\n{q}\nCan you help me answer the question and use <a></a> tags to highlight important information and its reference to the information in the question by using <ref></ref> tags." # prompt 1
-        # prompt = f"{q}\nCan you help me answer the question and use <a></a> tags to highlight important information and its reference to the information in the question by using <ref></ref> tags." # prompt zeroshot
         
-        last_sentence = extract_last_sentence(q)
-            
+        if args.dataset == 'commonsenseQA':
+            last_sentence_pattern = re.compile(r"Question:\s*(.*?)\s*([^.?!]*[.?!])\s*Answer Choices:", re.DOTALL)
+            match = last_sentence_pattern.search(q)
+            if match:
+                last_sentence = match.group(2)
+            else:
+                last_sentence = 'the question'
+        elif args.dataset == 'sports':
+            last_sentence = 'Is the following sentence plausible?'
+        else:
+            last_sentence = extract_last_sentence(q)
+        
+        if i == 1:
+            print(last_sentence)
+            break
+        
         if prompt_used == "fs":
             prompt = f"{few_shot_prompt}\n{q}"
         if prompt_used == "fs_inst":
@@ -80,6 +91,7 @@ def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used, answer_mo
                 #         Answer:"
             
                 # version 2 (ground in Q and A)
+                
                 prompt = f"{few_shot_prompt}\n{q}\nI want you to answer this question but your explanation should contain references referring back to the information in the question. To do that, first, re-generate the question with proper tags for key phrases, the key phrases that are most relevant to answering the question {last_sentence} and then generate your answers. The output format is as follow:\n\
                     Reformatted Question: \
                         Answer:"
@@ -105,12 +117,12 @@ def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used, answer_mo
             # prompt = f"{q}\nGive your answer by analyzing step by step, and give only numbers in the final answer. The output format is as follow:\n\
             #         Answer:\
             #             Final answer:"   
-        if llm_model == 'gemini':
+        if 'gemini' in llm_model:
             genai.configure(api_key=API_KEYS['gemini'])
             model_config = {
                 "temperature": 0,
                 }
-            model = genai.GenerativeModel('gemini-1.5-pro-002', 
+            model = genai.GenerativeModel(llm_model, 
                                           generation_config=model_config
                                           )
             try:
@@ -121,7 +133,7 @@ def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used, answer_mo
             except:
                 continue
             
-        elif llm_model == 'claude':
+        elif 'claude' in llm_model:
             client = anthropic.Anthropic(api_key=API_KEYS['claude'])
             try:
                 response = client.messages.create(
@@ -135,34 +147,34 @@ def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used, answer_mo
                 ids_can_be_answered.append(id)
             except:
                 continue
-        elif llm_model == 'gpt4':
+        elif 'gpt4' in llm_model:
             client = OpenAI(
                     api_key=API_KEYS['gpt4'],
                 )
-            # try:
-            response = client.chat.completions.create(
-                        model='gpt-4o-2024-08-06',
-                        messages=[{"role": "user", "content": prompt}],
-                        temperature=0.0,
-                        n=1,
-                        frequency_penalty=0,
-                        presence_penalty=0
-                    )
-            choices = response.choices
-            
-            completion_objs = [choice.message for choice in choices]
-            completions = [
-                completion.content for completion in completion_objs]
+            try:
+                response = client.chat.completions.create(
+                            model=llm_model,
+                            messages=[{"role": "user", "content": prompt}],
+                            temperature=0.0,
+                            n=1,
+                            frequency_penalty=0,
+                            presence_penalty=0
+                        )
+                choices = response.choices
+                
+                completion_objs = [choice.message for choice in choices]
+                completions = [
+                    completion.content for completion in completion_objs]
 
-            answers.append(completions[0])
-            questions_can_be_answered.append(q)
-            ids_can_be_answered.append(id)
-            # except:
-            #     continue
-        elif llm_model == 'llama2_7b':    
+                answers.append(completions[0])
+                questions_can_be_answered.append(q)
+                ids_can_be_answered.append(id)
+            except:
+                continue
+        elif llm_model == 'llama_transformer':    
             try:
                 pipe = pipeline(task="text-generation", 
-                            model=model, 
+                            model='/home/tin/projects/Llama-2-7b-chat-hf', 
                             tokenizer=tokenizer, 
                             max_new_tokens = 1024, 
                             # temperature = 0.0, # llama default temp: 0.75
@@ -173,18 +185,39 @@ def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used, answer_mo
                 questions_can_be_answered.append(q)
                 ids_can_be_answered.append(id)
             except:
-                print('abcd')
+                continue
+        elif llm_model == 'llama_groq':
+            client = groq.Groq(api_key=API_KEYS['groq'])
+            messages = [
+                    {"role": "system", "content": """I am a language model that can help you with your questions. I can provide you with information, answer questions, and help you with your problems. I am here to help you.
+            """ },
+                    {"role": "user", "content": prompt},
+                    {"role": "assistant", "content": "Let's think step by step."}
+                ]
+            try:
+                response = client.chat.completions.create(
+                                model="llama-3.1-70b-versatile",
+                                messages=messages,
+                                max_tokens=1024,
+                                temperature=0.0,
+                            )
+                response = response.choices[0].message.content
+                answers.append(response)
+                questions_can_be_answered.append(q)
+                ids_can_be_answered.append(id)
+            except:
                 continue
     
     return ids_can_be_answered, questions_can_be_answered, answers
 
 if __name__ == "__main__":
     arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument('--llm_model', type=str, default='gemini', help='The language model to query', choices=['gemini', 'claude', 'gpt4'])
-    arg_parser.add_argument('--dataset', type=str, default='GSM8K', help='The dataset to query', choices=['GSM8K', 'StrategyQA', 'p_GSM8K', 'AQUA', 'MultiArith', 'ASDiv', 'SVAMP'])
+    arg_parser.add_argument('--llm_model', type=str, default='gemini', help='The language model to query', choices=['gemini-1.5-pro-002', 'gemini-1.5-flash-002', 'claude', 'gpt-4o-2024-08-06', 'gpt-4o-mini-2024-07-18', 'llama_transformer', 'llama_groq'])
+    arg_parser.add_argument('--dataset', type=str, default='GSM8K', help='The dataset to query', choices=['GSM8K', 'StrategyQA', 'p_GSM8K', 'AQUA', 'MultiArith', 'ASDiv', 'SVAMP', 'commonsenseQA', 'date', 'sports', 'reclor', 'CLUTRR'])
     arg_parser.add_argument('--prompt_used', type=str, default='fs_inst', help='The prompt used to query the language model', choices=['zs', 'fs', 'fs_inst'])
     arg_parser.add_argument('--answer_mode', type=str, default='da', help='The answer mode', choices=['da', 'cot', 'grounding_cot'])
     arg_parser.add_argument('--save_answer', action='store_true')
+    arg_parser.add_argument('--data_mode', type=str, default='longest', help='The data mode', choices=['random', 'longest'])
     
     args = arg_parser.parse_args()
     
@@ -200,25 +233,16 @@ if __name__ == "__main__":
     # fewshot_prompt_path = f"prompt/{args.dataset}/fewshot_{prompt_design}_{version}.txt"
     # fewshot_prompt_path = f"prompt/{args.dataset}/fewshot_da.txt"
     if args.answer_mode in ['da', 'cot']:
-        if args.dataset in ['GSM8K', 'MultiArith', 'ASDiv']:
+        if args.dataset in ['GSM8K', 'MultiArith', 'ASDiv', 'p_GSM8K']:
             fewshot_prompt_path = f"prompt/GSM8K/fewshot_{args.answer_mode}.txt"
-        elif args.dataset == 'StrategyQA':
-            fewshot_prompt_path = f"prompt/StrategyQA/fewshot_{args.answer_mode}.txt"
-        elif args.dataset == 'SVAMP':
-            fewshot_prompt_path = f"prompt/SVAMP/fewshot_{args.answer_mode}.txt"
-        elif args.dataset == 'AQUA':
-            fewshot_prompt_path = f"prompt/AQUA/fewshot_{args.answer_mode}.txt"
+        elif args.dataset in ['StrategyQA', 'SVAMP', 'AQUA', 'commonsenseQA', 'date', 'sports', 'reclor', 'CLUTRR']:
+            fewshot_prompt_path = f"prompt/{args.dataset}/fewshot_{args.answer_mode}.txt"
             
     if args.answer_mode == 'grounding_cot':
-        if args.dataset in ['GSM8K', 'MultiArith', 'ASDiv']:
+        if args.dataset in ['GSM8K', 'MultiArith', 'ASDiv', 'p_GSM8K']:
             fewshot_prompt_path = f"prompt/GSM8K/fewshot_{prompt_design}_{version}.txt"
-        elif args.dataset == 'StrategyQA':
-            fewshot_prompt_path = f"prompt/StrategyQA/fewshot_{prompt_design}_{version}.txt"
-        elif args.dataset == 'SVAMP':
-            fewshot_prompt_path = f"prompt/SVAMP/fewshot_{prompt_design}_{version}.txt"
-        elif args.dataset == 'AQUA':
-            fewshot_prompt_path = f"prompt/AQUA/fewshot_{prompt_design}_{version}.txt"
-    
+        elif args.dataset in ['StrategyQA', 'SVAMP', 'AQUA', 'commonsenseQA', 'date', 'sports', 'reclor', 'CLUTRR']:
+            fewshot_prompt_path = f"prompt/{args.dataset}/fewshot_{prompt_design}_{version}.txt"
     
     # save path
     if args.answer_mode == 'grounding_cot':
@@ -229,7 +253,10 @@ if __name__ == "__main__":
         os.makedirs(f'results/{args.dataset}/{args.answer_mode}', exist_ok=True)
     
     #
-    save_path = save_path[:-4] + '_temp_0.csv'
+    if args.data_mode == 'random':
+        save_path = save_path[:-4] + '_temp_0_random.csv'
+    else:
+        save_path = save_path[:-4] + '_temp_0.csv'
     
     # read file grounding_prompt.txt
     with open(fewshot_prompt_path, 'r') as file:
@@ -253,31 +280,58 @@ if __name__ == "__main__":
         question_length = 78
     elif args.dataset == 'SVAMP':
         question_length = 199
-        
+    elif args.dataset == 'commonsenseQA':
+        question_length = 93
+    elif args.dataset == 'sports':
+        question_length = 48
+    elif args.dataset == 'date':
+        question_length = 105
+    
+    if args.data_mode == 'random':
+        question_length = 0
+    
     if args.dataset == 'p_GSM8K':
         questions = [x["new_question"] for x in random_data if len(x["new_question"]) >= question_length]
         ids = [x["index"] for x in random_data if len(x["new_question"]) >= question_length]
+    elif args.dataset == 'commonsenseQA':
+        questions, ids = [], []
+        for sample in random_data:
+            if len(sample['question']['stem']) >= question_length:
+                question = sample['question']['stem']
+                choices = sample['question']['choices']
+                answer_choices = ''
+                for choice in choices:
+                    answer_choices += "(" + choice['label'].lower() + ") " + choice['text'] + "\n"
+                questions.append(question + "\n" + answer_choices)
+                ids.append(sample['id'])
     else:
         questions = [x["question"] for x in random_data if len(x["question"]) >= question_length]
         ids = [x["id"] for x in random_data if len(x["question"]) >= question_length]
     
-    
     # ------------------------------
-    # read infered id
-    # infered_data = pd.read_csv(f'results/{args.dataset}/design_1_v4/fs_inst_{args.llm_model}_only_tag_in_A.csv')
-    # infered_ids = infered_data['id'].tolist()
-    # # remove questions and ids that have been infered, so we can infer the rest of the questions
-    # remaining_questions, remaining_ids = [], []
-    # for q, id in zip(questions, ids):
-    #     if id not in infered_ids:
-    #         remaining_questions.append(q)
-    #         remaining_ids.append(id)
-    # questions = remaining_questions
-    # ids = remaining_ids
+    if args.data_mode == 'random' and args.dataset != 'p_GSM8K':
+        # read infered id
+        if args.dataset in ['commonsenseQA', 'date', 'sports', 'reclor', 'CLUTRR']:
+            infered_data = pd.read_csv(f'results/{args.dataset}/cot/fs_inst_gemini-1.5-pro-002_temp_0.csv')
+        else:
+            infered_data = pd.read_csv(f'results/{args.dataset}/cot/fs_inst_gemini_temp_0.csv')
+        infered_ids = infered_data['id'].tolist()
+        # remove questions and ids that have been infered, so we can infer the rest of the questions
+        remaining_questions, remaining_ids = [], []
+        for q, id in zip(questions, ids):
+            if id not in infered_ids:
+                remaining_questions.append(q)
+                remaining_ids.append(id)
+        # get random 200 questions, ids
+        question_id_pairs = list(zip(remaining_questions, remaining_ids))
+        random_pairs = random.sample(question_id_pairs, min(200, len(question_id_pairs))) 
+        selected_questions, selected_ids = zip(*random_pairs)  # Unzips into two separate lists
+        questions = list(selected_questions)
+        ids = list(selected_ids)
+        
+        # questions = remaining_questions
+        # ids = remaining_ids
     
-    # print(len(questions))
-
-    # exit()    
     # ------------------------------
     ids_can_be_answered, questions_can_be_answered, answers = query_llm(args.llm_model, ids, questions, few_shot_prompt, args.prompt_used, args.answer_mode)
     
