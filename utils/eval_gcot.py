@@ -1,7 +1,8 @@
 
 # %%
 import pandas as pd
-from utils import extract_parts_1, calculate_iou, add_color_to_tags, extract_conclusion, extract_parts_only_answer, check_for_word, read_jsonl_file, parse_open_response
+from utils import extract_parts_1, calculate_iou, retrieve_gts
+#, add_color_to_tags, extract_conclusion, extract_parts_only_answer, check_for_word, read_jsonl_file, parse_open_response
 import argparse
 
 # %%
@@ -15,8 +16,6 @@ def compute_acc(questions, answers, gts, dataset, prefix):
     failed_follow_format_question = 0
     failed_follow_format_final_answer = 0
 
-    total_acc_mmlu = 0
-
     for i, (question, answer, gt) in enumerate(zip(questions, answers, gts)):
         original_answer = answer
         try:
@@ -28,12 +27,7 @@ def compute_acc(questions, answers, gts, dataset, prefix):
             continue
         iou, question_tags, answer_tags = calculate_iou(reformulated_question, extracted_answer)
         
-        pred_lists = parse_open_response(extracted_answer)
-        
-        if gt in pred_lists:
-            total_acc_mmlu += 1
-            
-        
+
         # if len(question_tags) == 0:
         #     failed_follow_format_question += 1
         #     continue
@@ -56,9 +50,9 @@ def compute_acc(questions, answers, gts, dataset, prefix):
         #     total_tag_answer_legth+= len(tag[1])
         # avg_len_grounding_answer+=total_tag_answer_legth/len(answer_tags)
         
-        if dataset == 'date':
+        if dataset in ['date', 'CLUTRR']:
             try:
-                answer = answer.split('{')[1].split('}')[0]
+                answer = answer.split('{')[-1].split('}')[0]
             except:
                 failed_follow_format_final_answer += 1
                 print(answer, gt)
@@ -140,30 +134,53 @@ def compute_acc(questions, answers, gts, dataset, prefix):
                 print(bool(answer), gt)
                 print('----')
         if dataset in ['AQUA', 'commonsenseQA']:
+            # try:
+            if '{' in answer:
+                conclusion = answer.split('{')[1].split('}')[0]
+            elif 'the answer is' in answer.lower():
+                conclusion = answer.lower().split('the answer is')[1].strip()
+            elif 'the correct answer is' in answer.lower():
+                conclusion = answer.lower().split('the correct answer is')[1].strip()
+            # try:
+            #     conclusion = answer.split('{')[1].split('}')[0]
+            # except:
+            #     try:
+            #         # if 'the answer is' in answer.lower():
+            #         #     answer = answer.lower().split('the answer is')[1].strip()
+            #         # elif 'the correct answer is' in answer.lower():
+            #         #     answer = answer.lower().split('the correct answer is')[1].strip()
+                        
+            #         conclusion = answer.lower().split('the answer is')[1].split('(')[1].split(')')[0]
+            #         # if answer[0] == '(':
+            #         #     answer = answer.split('(')[1].split(')')[0]
+            #         # else:
+            #         #     answer = answer[0]
+            #     except:
+            #         failed_follow_format_final_answer += 1
+            #         print(answer, gt)
+            #         print('----')
+            #         continue
             try:
-                answer = answer.split('{')[1].split('}')[0]
-            except:
-                try:
-                    answer = answer.lower().split('the answer is')[1].split('(')[1].split(')')[0]
-                    # if answer[0] == '(':
-                    #     answer = answer.split('(')[1].split(')')[0]
-                    # else:
-                    #     answer = answer[0]
-                except:
-                    failed_follow_format_final_answer += 1
-                    print(answer, gt)
-                    print('----')
-                    continue
-            try:
-                if answer[0] == 'A':
+                # if conclusion[0] == 'A':
+                #     conclusion = 'A'
+                # elif conclusion[0] == 'B':
+                #     conclusion = 'B'
+                # elif conclusion[0] == 'C':
+                #     conclusion = 'C'
+                # elif conclusion[0] == 'D':
+                #     conclusion = 'D'
+                # elif conclusion[0] == 'E':
+                #     conclusion = 'E'
+                
+                if 'A' in conclusion or 'a' in conclusion:
                     conclusion = 'A'
-                elif answer[0] == 'B':
+                elif 'B' in conclusion or 'b' in conclusion:
                     conclusion = 'B'
-                elif answer[0] == 'C':
+                elif 'C' in conclusion or 'c' in conclusion:
                     conclusion = 'C'
-                elif answer[0] == 'D':
+                elif 'D' in conclusion or 'd' in conclusion:
                     conclusion = 'D'
-                elif answer[0] == 'E':
+                elif 'E' in conclusion or 'e' in conclusion:
                     conclusion = 'E'
                     
                 if conclusion.lower() == gt.lower():
@@ -186,8 +203,6 @@ def compute_acc(questions, answers, gts, dataset, prefix):
     print("The number of failed to follow the format (question, final answer): ", failed_follow_format_question, failed_follow_format_final_answer)
     print(total_acc, len(questions)-failed_follow_format_question-failed_follow_format_final_answer)
     print("Accuracy: ", total_acc/(len(questions)-failed_follow_format_question-failed_follow_format_final_answer))
-
-    print("Accuracy MMLU: ", total_acc_mmlu/len(questions))
     # %%
     # print(avg_grounding_question/len(questions))
     # print(avg_grounding_answer/len(questions))
@@ -219,7 +234,7 @@ if __name__ == '__main__':
     else:
         df_path = f'../results/{args.dataset}/{args.answer_mode}/fs_inst_{args.llm_model}_temp_0.csv'
 
-
+    # df_path = f'../results/{args.dataset}/{args.answer_mode}/fs_inst_claude_temp_0.csv'
     if args.prompt_used in ['fs', 'fs_inst']:
         prefix = 'The answer is'
         prefix = 'The answer is'
@@ -228,14 +243,13 @@ if __name__ == '__main__':
         
     
     # read data
-    data = read_jsonl_file(data_path)
-    # read df
     df = pd.read_csv(df_path)
     questions = df['question'].tolist()
     answers = df['answer'].tolist()
     ids = df['id'].tolist()
-
-    print(len(df))
+    gts = retrieve_gts(data_path, ids, args.dataset)
+    
+    compute_acc(questions, answers, gts, args.dataset, prefix)
     #
     # test_df = pd.read_csv(f"/Users/tinnguyen/Downloads/LAB_PROJECTS/textual_grounding/results/{args.dataset}/design_1_v4/fs_inst_gemini_temp_0.csv")
     # test_ids = test_df['id'].tolist()
@@ -248,38 +262,5 @@ if __name__ == '__main__':
 
     # print(len(df), len(test_df))
     # %%
-    # read gt
-    gts = []
-    for id in ids:
-        for temp in data:
-            if args.dataset == 'p_GSM8K':
-                if temp['index'] == id:
-                    gt = temp['answer']
-                    gts.append(float(gt))
-            elif args.dataset == 'commonsenseQA':
-                if temp['id'] == id:
-                    gt = temp['answerKey']
-                    gts.append(gt)
-            else:
-                if temp['id'] == id:
-                    gt = temp['answer']
-                    if args.dataset in ['GSM8K', 'MultiArith', "SVAMP"]:
-                        gt = gt.split('####')[1].strip()
-                        if ',' in gt:
-                            gt = gt.replace(',', '')
-                        gts.append(float(gt))
-                    if args.dataset == 'date':
-                        gt = gt.split('####')[1].strip()
-                        gts.append(gt)
-                    if args.dataset == 'ASDiv':
-                        #if gt is list, convert it to string
-                        if type(gt) == list:
-                            gt = gt[0]
-                        gt = gt.replace(',', '')
-                        gts.append(float(gt))
-                    if args.dataset in ['StrategyQA', 'sports']:
-                        gts.append(gt)
-                    if args.dataset == 'AQUA':
-                        gts.append(gt)
                     
-    compute_acc(questions, answers, gts, args.dataset, prefix)
+    
