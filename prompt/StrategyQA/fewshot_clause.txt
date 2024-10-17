@@ -1,0 +1,51 @@
+Question: <fact1>At a presentation about post traumatic stress disorder</fact1>, <fact2>would Ariana Grande</fact2> <fact3>be a topic of relevance?</fact3>
+Answer: <fact2>Ariana Grande</fact2> was performing in Manchester in 2017 when explosives were set off in an act of terrorism.
+<fact2>Ariana Grande</fact2> has spoken openly about her trauma experience and her <fact1>PTSD</fact1> regarding the Manchester Bombing.
+So the answer is {true}.
+
+Question: <fact1>Has the Indian Ocean garbage patch</fact1> <fact2>not completed</fact2> <fact3>two full rotations of debris</fact3> <fact4>since its discovery?</fact4>
+Answer: The <fact1>Indian Ocean garbage patch</fact1> was discovered in 2010
+The Indian Ocean garbage patch takes 6 years to complete a <fact3>circulation</fact3> 
+So the answer is {true}.
+
+Question: <fact1>Was the Second Amendment</fact1> <fact2>to the United States Constitution</fact2> <fact3>written without consideration</fact3> <fact4>for black Americans?</fact4>
+Answer: The writers of the <fact2>Constitutional Amendments</fact2> did not view <fact4>black people</fact4> as legitimate human beings.
+The writers of the <fact2>Constitutional Amendments</fact2> believed that slavery benefited <fact2>black slaves</fact2>.
+The <fact2>Constitutional Amendments</fact2> were written for people that the writers considered human.
+So the answer is {true}.
+
+Question: <fact1>Are Doctors of Homeopathy</fact1> <fact2>more likely</fact2> <fact3>than Doctors of Internal Medicine</fact3> <fact4>to recommend Quartz as a treatment?</fact4>
+Answer: <fact1>Doctors of Homeopathy</fact1> are practitioners of "<fact1>alternative medicine</fact1>" 
+In <fact1>alternative medicine</fact1> practices, <fact4>Quartz</fact4> is believed to have powers.
+<fact3>Doctors of Internal Medicine</fact3> have completed a medical residency and do not recommend <fact1>alternative medicine</fact1>.
+So the answer is {true}.
+
+Question: <fact1>Is Benjamin Franklin</fact1> <fact2>a prime candidate</fact2> <fact3>to have his statues removed</fact3> <fact4>by Black Lives Matter movement?</fact4>
+Answer: The <fact4>Black Lives Matter movement</fact4> is a social movement advocating for racial equality.
+<fact1>Benjamin Franklin</fact1>, a famous founding father, has <fact3>his image on many monuments</fact3> and on American currency.
+Members of the <fact4>Black Lives Matter movement</fact4> petitioned for statues of Christopher Columbus to be removed due to his subjugation of Native Americans.
+<fact1>Benjamin Franklin's</fact1> 1730s newspaper, The Philadelphia Gazette, posted ads for black slaves.
+<fact1>Benjamin Franklin</fact1> owned two slaves, George and King, who worked as personal servants.
+So the answer is {true}.
+
+Question: <fact1>Does the United States Department of Education</fact1> <fact2>oversee services</fact2> <fact3>benefiting undocumented migrants?</fact3> 
+Answer: The <fact1>United States Department of Education</fact1> <fact2>oversees public education</fact2> across the United States.
+Public education is a service.
+Public education services are given to students of migrant families that may be <fact3>undocumented</fact3>.
+So the answer is {true}.
+
+Question: <fact1>Could Bernie Sanders</fact1> <fact2>visit the Metropolitan Museum of Art</fact2> <fact3>twenty times</fact3> <fact4>for under two hundred dollars?</fact4>
+Answer: <fact1>Bernie Sanders</fact1> is a senior citizen
+Senior citizens from outside NY, NJ, or CT must pay $17 per <fact2>visit</fact2>
+So the answer is {false}.
+
+Question: <fact1>Would Eric Clapton's mother</fact1> <fact2>hypothetically be unable</fact2> <fact3>to legally purchase cigarettes</fact3> <fact4>in the USA</fact4> <fact5>at his birth?</fact5>
+Answer: <fact1>Eric Clapton's mother</fact1> was 16 years old <fact5>at the time of his birth.</fact5>
+As of 2020, federal law required states comply with a <fact3>minimum age of 21 years for sale/purchase of tobacco products.</fact3>
+So the answer is {true}.
+
+Question: <fact1>Would a 900,000 pound net worth person</fact1> <fact2>be an American billionaire</fact2> <fact3>if they exchange currency</fact3> <fact4>June 2020?</fact4>
+Answer: The <fact3>exchange rate</fact3> in <fact4>June of 2020</fact4> between dollars and pounds is 1 Euro= 1.23 dollar.
+<fact1>900000 pounds</fact1> is equal to about <fact2>1,107,000.00</fact2>
+So the answer is {true}.
+

@@ -1,0 +1,54 @@
+Question: At a presentation about post traumatic stress disorder, would Ariana Grande be a topic of relevance?
+Reformatted Question: At a presentation about <fact1>post traumatic stress disorder</fact1>, would <fact2>Ariana Grande</fact2> be a topic of relevance?
+Answer: <fact2>Ariana Grande</fact2> was performing in Manchester in 2017 when explosives were set off in an act of terrorism.
+<fact2>Ariana Grande</fact2> has spoken openly about <fact1>her trauma experience</fact1> and <fact1>her PTSD</fact1> regarding the Manchester Bombing.
+So the answer is {true}.
+
+Question: Has the Indian Ocean garbage patch not completed two full rotations of debris since its discovery?
+Reformatted Question: Has the <fact1>Indian Ocean garbage patch</fact1> not completed <fact2>two full rotations of debris</fact2> since its discovery?
+Answer: The <fact1>Indian Ocean garbage patch</fact1> was discovered in 2010.
+The <fact1>Indian Ocean garbage patch</fact1> takes <fact2>6 years to complete a circulation</fact2>.
+So the answer is {true}.
+
+Question: Was the Second Amendment to the United States Constitution written without consideration for black Americans?
+Reformatted Question: Was the <fact1>Second Amendment to the United States Constitution</fact1> written without consideration for <fact2>black Americans</fact2>?
+Answer: The writers of the <fact1>Constitutional Amendments</fact1> did not view <fact2>black people</fact2> as legitimate human beings.
+The writers of the <fact1>Constitutional Amendments</fact1> believed that slavery benefited <fact2>black slaves</fact2>.
+The <fact1>Constitutional Amendments</fact1> were written for people that the writers considered human.
+So the answer is {true}.
+
+Question: Are Doctors of Homeopathy more likely than Doctors of Internal Medicine to recommend Quartz as a treatment?
+Reformatted Question: Are <fact1>Doctors of Homeopathy</fact1> more likely than <fact2>Doctors of Internal Medicine</fact2> to recommend <fact3>Quartz</fact3> as a treatment?
+Answer: <fact1>Doctors of Homeopathy</fact1> are practitioners of "alternative medicine."
+In <fact1>alternative medicine</fact1> practices, <fact3>Quartz</fact3> is believed to have powers.
+<fact2>Doctors of Internal Medicine</fact2> have completed a medical residency and do not recommend <fact1>alternative medicine</fact1>.
+So the answer is {true}.
+
+Question: Is Benjamin Franklin a prime candidate to have his statues removed by Black Lives Matter movement?
+Reformatted Question: Is <fact1>Benjamin Franklin</fact1> a prime candidate to have his statues removed by the <fact2>Black Lives Matter movement</fact2>?
+Answer: The <fact2>Black Lives Matter movement</fact2> is a social movement advocating for racial equality.
+<fact1>Benjamin Franklin</fact1>, a famous founding father, has his image on many monuments and on American currency.
+Members of the <fact2>Black Lives Matter movement</fact2> petitioned for statues of Christopher Columbus to be removed due to his subjugation of Native Americans.
+<fact1>Benjamin Franklin</fact1>'s 1730s newspaper, The Philadelphia Gazette, posted ads for black slaves.
+<fact1>Benjamin Franklin</fact1> owned two slaves, George and King, who worked as personal servants.
+So the answer is {true}.
+
+Question: Does the United States Department of Education oversee services benefiting undocumented migrants?
+Reformatted Question: Does the <fact1>United States Department of Education</fact1> oversee services benefiting <fact2>undocumented migrants</fact2>?
+Answer: The <fact1>United States Department of Education</fact1> oversees public education across the United States.
+Public education is a service.
+Public education services are given to students of migrant families that may be <fact2>undocumented</fact2>.
+So the answer is {true}.
+
+Question: Would Eric Clapton's mother hypothetically be unable to legally purchase cigarettes in the USA at his birth?
+Reformatted Question: Would <fact1>Eric Clapton's mother</fact1> hypothetically be unable to legally purchase <fact2>cigarettes</fact2> in the USA at his birth?
+Answer: <fact1>Eric Clapton's mother</fact1> was 16 years old at the time of his birth.
+As of 2020, federal law required states comply with a minimum age of 21 years for the sale/purchase of <fact2>tobacco products</fact2>.
+So the answer is {true}.
+
+Question: Would a 900,000 pound net worth person be an American billionaire if they exchange currency June 2020?
+Reformatted Question: Would a <fact1>900,000 pound net worth person</fact1> be an <fact2>American billionaire</fact2> if they exchange currency in <fact3>June 2020</fact3>?
+Answer: The exchange rate in <fact3>June of 2020</fact3> between dollars and pounds is 1 pound = 1.23 dollars.
+<fact1>900,000 pounds</fact1> is equal to about <fact2>1,107,000.00 dollars</fact2>.
+So the answer is {false}.
+
