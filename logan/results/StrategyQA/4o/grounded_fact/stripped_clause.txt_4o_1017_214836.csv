@@ -1,0 +1,766 @@
+id,question,answer
+0,<fact1>Is it common</fact1> <fact2>to see frost</fact2> <fact3>during some college commencements?</fact3>,"<fact1>It is common</fact1> for college commencements to occur in the spring, typically in May or June. However, in some regions, especially in the northern parts of the United States or other countries with colder climates, <fact2>frost</fact2> can still occur during these months. <fact3>Some college commencements</fact3> may take place in areas where late spring frosts are possible. Therefore, it is possible to see <fact2>frost</fact2> during <fact3>some college commencements</fact3>. 
+
+Final_Answer: {true}."
+1,<fact1>Hydrogen's atomic number</fact1> <fact2>squared</fact2> <fact3>exceeds</fact3> <fact4>number of Spice Girls</fact4>?,"<fact1>Hydrogen's atomic number</fact1> is 1.  
+<fact2>Squaring</fact2> this number results in 1.  
+The <fact4>number of Spice Girls</fact4> is 5.  
+1 does not <fact3>exceed</fact3> 5.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+2,<fact1>Would</fact1> <fact2>a pear</fact2> <fact3>sink</fact3> <fact4>in water?</fact4>,"A <fact2>pear</fact2> is a type of fruit that is denser than water. Objects that are denser than water will <fact3>sink</fact3> when placed in it. Therefore, a <fact2>pear</fact2> would <fact3>sink</fact3> in <fact4>water</fact4>. 
+
+Final_Answer: {true}."
+3,<fact1>Do hamsters</fact1> <fact2>provide food</fact2> <fact3>for any animals?</fact3>,"<fact1>Hamsters</fact1> are small rodents that can be prey for larger animals.  
+In the wild, <fact1>hamsters</fact1> may be hunted by birds of prey, snakes, and other carnivorous animals.  
+Therefore, <fact1>hamsters</fact1> can <fact2>provide food</fact2> <fact3>for some animals</fact3>.  
+Final_Answer: {true}."
+4,<fact1>Are all limbs</fact1> <fact2>required</fact2> <fact3>for jujutsu?</fact3>,"Jujutsu is a martial art that involves various techniques, including throws, joint locks, and strikes. While having all <fact1>limbs</fact1> can be advantageous for performing a wide range of techniques, it is not strictly <fact2>required</fact2> to have all <fact1>limbs</fact1> to practice or participate in <fact3>jujutsu</fact3>. Individuals with limb differences or disabilities can adapt techniques to suit their abilities. Therefore, the statement that all <fact1>limbs</fact1> are <fact2>required</fact2> for <fact3>jujutsu</fact3> is not accurate. 
+
+Final_Answer: {false}."
+5,<fact1>Could a llama</fact1> <fact2>birth twice</fact2> <fact3>during War in Vietnam</fact3> <fact4>(1945-46)?</fact4>,"Llamas have a gestation period of about 11.5 months, which means they can give birth approximately once a year. The <fact3>War in Vietnam</fact3> <fact4>(1945-46)</fact4> lasted for about one year. Given the gestation period of llamas, it would not be possible for a <fact1>llama</fact1> to <fact2>birth twice</fact2> during the <fact3>War in Vietnam</fact3> <fact4>(1945-46)</fact4>. 
+
+Final_Answer: {false}."
+6,<fact1>Does Linus Torvalds</fact1> <fact2>make money</fact2> <fact3>off of DirectX?</fact3>,"<fact1>Linus Torvalds</fact1> is the creator of the Linux kernel, which is an open-source operating system.  
+<fact3>DirectX</fact3> is a collection of application programming interfaces (APIs) for handling tasks related to multimedia, especially game programming and video, on Microsoft platforms.  
+<fact3>DirectX</fact3> is developed by Microsoft, and <fact1>Linus Torvalds</fact1> is not associated with its development or monetization.  
+Therefore, <fact1>Linus Torvalds</fact1> does not <fact2>make money</fact2> from <fact3>DirectX</fact3>.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+7,<fact1>Could Brooke Shields</fact1> <fact2>succeed</fact2> <fact3>at University of Pennsylvania?</fact3>,"<fact1>Brooke Shields</fact1> is a well-known actress and model who has demonstrated intelligence and dedication in her career. She graduated from Princeton University, which is an Ivy League institution like the <fact3>University of Pennsylvania</fact3>. Her academic background and experience suggest that she has the capability to <fact2>succeed</fact2> at another prestigious university such as the <fact3>University of Pennsylvania</fact3>. 
+
+Final_Answer: {true}."
+8,<fact1>Could a silverfish</fact1> <fact2>reach the top</fact2> <fact3>of the Empire State Building?</fact3>,"<fact1>Silverfish</fact1> are small, wingless insects that are known for their ability to crawl and climb on various surfaces. The <fact3>Empire State Building</fact3> is a tall skyscraper with a height of 1,454 feet, including its antenna. While <fact1>silverfish</fact1> can climb walls and other surfaces, the sheer height and structure of the <fact3>Empire State Building</fact3> would make it extremely challenging for a <fact1>silverfish</fact1> to <fact2>reach the top</fact2>. Additionally, the building's smooth exterior and lack of continuous surfaces suitable for climbing would further hinder a <fact1>silverfish's</fact1> ability to <fact2>reach the top</fact2>. Therefore, it is unlikely that a <fact1>silverfish</fact1> could <fact2>reach the top</fact2> of the <fact3>Empire State Building</fact3>. 
+
+Final_Answer: {false}."
+9,<fact1>Are the majority</fact1> <fact2>of Reddit users</fact2> <fact3>familiar with</fact3> <fact4>the Pledge of Allegiance?</fact4>,"<fact1>The majority</fact1> of <fact2>Reddit users</fact2> are from the United States, where the <fact4>Pledge of Allegiance</fact4> is commonly recited in schools and public events. Therefore, it is likely that a significant portion of <fact2>Reddit users</fact2> are <fact3>familiar with</fact3> the <fact4>Pledge of Allegiance</fact4>. However, Reddit is a global platform with users from various countries, so not all users may be familiar with it. Despite this, given the large American user base, it is reasonable to assume that <fact1>the majority</fact1> of <fact2>Reddit users</fact2> are <fact3>familiar with</fact3> the <fact4>Pledge of Allegiance</fact4>. 
+
+Final_Answer: {true}."
+10,<fact1>Do the anchors</fact1> <fact2>on Rede Globo</fact2> <fact3>speak Chinese?</fact3>,"<fact1>Rede Globo</fact1> is a major television network in Brazil.  
+The primary language spoken in Brazil is Portuguese, not <fact3>Chinese</fact3>.  
+<fact2>Anchors on Rede Globo</fact2> are likely to speak Portuguese as it is the language of the country and the network.  
+There is no indication that <fact2>anchors on Rede Globo</fact2> are required to speak <fact3>Chinese</fact3>.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+11,<fact1>Can</fact1> <fact2>Reiki</fact2> <fact3>be stored</fact3> <fact4>in a bottle?</fact4>,"<fact2>Reiki</fact2> is a form of energy healing that involves the transfer of universal energy through the palms of the practitioner to the patient. <fact2>Reiki</fact2> is not a physical substance but rather a practice or technique. <fact3>Storing</fact3> <fact2>Reiki</fact2> <fact4>in a bottle</fact4> is not possible because it is not a tangible entity that can be contained. Therefore, <fact2>Reiki</fact2> cannot <fact3>be stored</fact3> <fact4>in a bottle</fact4>. 
+
+Final_Answer: {false}."
+12,"<fact1>While viewing ""Scary Movie""</fact1> <fact2>is the viewer</fact2> <fact3>likely to experience</fact3> <fact4>an increase in adrenaline?</fact4>","<fact1>While viewing ""Scary Movie""</fact1>, the viewer is exposed to scenes designed to evoke fear and suspense. <fact2>The viewer</fact2> may experience physiological responses to these scenes. <fact3>Experiencing fear or suspense</fact3> can trigger the body's fight-or-flight response, which often results in <fact4>an increase in adrenaline.</fact4> Therefore, it is likely that <fact2>the viewer</fact2> will experience <fact4>an increase in adrenaline</fact4> <fact1>while viewing ""Scary Movie"".</fact1> 
+
+Final_Answer: {true}."
+13,<fact1>Would Marvel's Gateway</fact1> <fact2>be envious</fact2> <fact3>of the Doctor (Doctor Who)'s TARDIS machine?</fact3>,"<fact1>Marvel's Gateway</fact1> is a fictional character known for his ability to teleport himself and others across vast distances. <fact3>The Doctor's TARDIS machine</fact3> is a time-traveling spaceship that can travel anywhere in time and space. While both have teleportation capabilities, the TARDIS offers the additional ability to travel through time, which <fact1>Gateway</fact1> does not possess. This could potentially make <fact1>Gateway</fact1> <fact2>envious</fact2> of the TARDIS's unique capabilities. 
+
+Final_Answer: {true}."
+14,<fact1>Is material from an aloe plant</fact1> <fact2>sometimes enclosed</fact2> <fact3>in petroleum-derived products?</fact3>,"<fact1>Material from an aloe plant</fact1> is often used in skincare and cosmetic products.  
+<fact3>Petroleum-derived products</fact3> are commonly used as bases or carriers in these products.  
+Therefore, it is possible for <fact1>material from an aloe plant</fact1> to be <fact2>enclosed</fact2> in <fact3>petroleum-derived products</fact3>.  
+Final_Answer: {true}."
+15,<fact1>Could a bee hummingbird</fact1> <fact2>balance a scale</fact2> <fact3>with a single pea on it?</fact3>,"The <fact1>bee hummingbird</fact1> is the smallest bird in the world, weighing approximately 1.6 to 2 grams. A <fact3>single pea</fact3> typically weighs around 0.1 to 0.36 grams. Given that the weight of a <fact3>single pea</fact3> is significantly less than the weight of a <fact1>bee hummingbird</fact1>, it is possible for the <fact1>bee hummingbird</fact1> to <fact2>balance a scale</fact2> with a <fact3>single pea on it</fact3>. 
+
+Final_Answer: {true}."
+16,<fact1>Would a broadcast</fact1> <fact2>from Spirit</fact2> <fact3>make the news</fact3> <fact4>in 2020?</fact4>,"The <fact2>Spirit</fact2> rover was a robotic rover that was part of NASA's Mars Exploration Rover Mission. It was active on Mars from 2004 until it ceased communication in 2010. By <fact4>2020</fact4>, the <fact2>Spirit</fact2> rover had not been operational for a decade. Therefore, a <fact1>broadcast</fact1> from the <fact2>Spirit</fact2> rover would be highly unexpected and newsworthy, as it would indicate a significant and unforeseen event. Thus, a <fact1>broadcast</fact1> from <fact2>Spirit</fact2> would indeed <fact3>make the news</fact3> in <fact4>2020</fact4>. 
+
+Final_Answer: {true}."
+17,<fact1>Would characters</fact1> <fact2>in Harry Potter and the Philosopher's Stone</fact2> <fact3>be persecuted</fact3> <fact4>as pagans?</fact4>,"The <fact1>characters</fact1> in <fact2>Harry Potter and the Philosopher's Stone</fact2> are fictional and part of a fantasy world where magic is a central element. In the real world, <fact3>persecution</fact3> of individuals as <fact4>pagans</fact4> has historically occurred due to religious or cultural beliefs. However, the characters in the book are not real people and exist in a fictional universe where magic is accepted as normal. Therefore, they would not be subject to real-world <fact3>persecution</fact3> as <fact4>pagans</fact4>. 
+
+Final_Answer: {false}."
+18,<fact1>Can</fact1> <fact2>music</fact2> <fact3>be used</fact3> <fact4>as a weapon?</fact4>,"<fact2>Music</fact2> has been used in various contexts to influence behavior and emotions. <fact3>It can be used</fact3> to create psychological effects, such as stress or discomfort, which can be considered a form of <fact4>weaponization</fact4>. For example, loud or repetitive <fact2>music</fact2> has been used in military and law enforcement settings to disorient or disperse crowds. Therefore, <fact2>music</fact2> can indeed <fact3>be used</fact3> <fact4>as a weapon</fact4>. 
+
+Final_Answer: {true}."
+19,<fact1>Can Harry Potter</fact1> <fact2>book a flight</fact2> <fact3>on Asiana Airlines?</fact3>,"<fact1>Harry Potter</fact1> is a fictional character from a book series created by J.K. Rowling. <fact2>Booking a flight</fact2> is an action that can only be performed by real individuals. <fact3>Asiana Airlines</fact3> is a real airline company that operates flights for real passengers. Since <fact1>Harry Potter</fact1> is not a real person, he cannot <fact2>book a flight</fact2> on <fact3>Asiana Airlines</fact3>. 
+
+Final_Answer: {false}."
+20,<fact1>Karachi</fact1> <fact2>was a part</fact2> <fact3>of Alexander the Great's success</fact3>?,"<fact1>Karachi</fact1> is a city in present-day Pakistan.  
+<fact3>Alexander the Great's success</fact3> included the conquest of the Achaemenid Empire, which covered parts of modern-day Pakistan.  
+However, there is no historical evidence that <fact1>Karachi</fact1> specifically was a significant part of <fact3>Alexander the Great's success</fact3>.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+21,<fact1>Was Jackson Pollock</fact1> <fact2>trained by</fact2> <fact3>Leonardo da Vinci?</fact3>,"<fact1>Jackson Pollock</fact1> was an influential American painter known for his contributions to the abstract expressionist movement in the 20th century. <fact3>Leonardo da Vinci</fact3> was a renowned Italian polymath of the Renaissance period, who lived from 1452 to 1519. <fact1>Jackson Pollock</fact1> was born in 1912, long after <fact3>Leonardo da Vinci</fact3> had passed away. Therefore, it is not possible for <fact1>Jackson Pollock</fact1> to have been <fact2>trained by</fact2> <fact3>Leonardo da Vinci</fact3>. 
+
+Final_Answer: {false}."
+22,<fact1>Will The Exorcist</fact1> <fact2>stimulate</fact2> <fact3>limbic system?</fact3>,"<fact1>The Exorcist</fact1> is a horror film known for its intense and frightening scenes.  
+The <fact2>stimulation</fact2> of the <fact3>limbic system</fact3> is associated with emotional responses, particularly fear and anxiety.  
+Horror films like <fact1>The Exorcist</fact1> are designed to evoke strong emotional reactions, which can <fact2>stimulate</fact2> the <fact3>limbic system</fact3>.  
+So the answer is {true}.  
+
+Final_Answer: {true}."
+23,<fact1>Would World War II</fact1> <fact2>have been the same</fact2> <fact3>without Alan Turing?</fact3>,"<fact1>World War II</fact1> was significantly impacted by the work of <fact3>Alan Turing</fact3>, who played a crucial role in breaking the German Enigma code. This achievement is widely credited with shortening the war and saving countless lives. Without <fact3>Alan Turing's</fact3> contributions, the Allies might have faced greater challenges in intercepting and decoding German communications, potentially altering the course of <fact1>World War II</fact1>. Therefore, it is unlikely that <fact1>World War II</fact1> <fact2>would have been the same</fact2> without <fact3>Alan Turing</fact3>. 
+
+Final_Answer: {false}."
+24,<fact1>Would</fact1> <fact2>a sophist</fact2> <fact3>use</fact3> <fact4>an épée?</fact4>,"A <fact2>sophist</fact2> is a term used to describe a teacher of philosophy and rhetoric in ancient Greece, often associated with using clever but fallacious reasoning. An <fact4>épée</fact4> is a type of sword used in the sport of fencing. There is no direct connection between the profession or activities of a <fact2>sophist</fact2> and the use of an <fact4>épée</fact4>. Therefore, it is unlikely that a <fact2>sophist</fact2> would <fact3>use</fact3> an <fact4>épée</fact4> as part of their typical activities. 
+
+Final_Answer: {false}."
+25,<fact1>Did Dale Jr</fact1> <fact2>hug his dad</fact2> <fact3>after their last Daytona 500 together?</fact3>,"<fact1>Dale Jr</fact1> and his father, Dale Earnhardt Sr., both participated in the <fact3>Daytona 500</fact3> races. However, <fact1>Dale Jr</fact1> did not have the opportunity to <fact2>hug his dad</fact2> after their last <fact3>Daytona 500 together</fact3> because Dale Earnhardt Sr. tragically passed away in a crash during the 2001 Daytona 500. Therefore, <fact1>Dale Jr</fact1> could not have <fact2>hugged his dad</fact2> after that race. 
+
+Final_Answer: {false}."
+26,<fact1>Can citrus</fact1> <fact2>grow</fact2> <fact3>in Ulaanbaatar?</fact3>,"<fact1>Citrus</fact1> plants typically require a warm climate to <fact2>grow</fact2> successfully. <fact3>Ulaanbaatar</fact3>, the capital of Mongolia, experiences a cold, continental climate with long, harsh winters and short, mild summers. The average temperature in <fact3>Ulaanbaatar</fact3> is well below what is needed for <fact1>citrus</fact1> plants to thrive. Therefore, it is unlikely that <fact1>citrus</fact1> can <fact2>grow</fact2> naturally in <fact3>Ulaanbaatar</fact3> without controlled conditions such as a greenhouse. 
+
+Final_Answer: {false}."
+27,<fact1>Does New York Harbor</fact1> <fact2>sit on a craton</fact2> <fact3>without volcanic activity?</fact3>,"<fact1>New York Harbor</fact1> is located on the eastern coast of the United States.  
+A <fact2>craton</fact2> is a stable part of the continental crust that has not been affected by significant tectonic activity for a long period.  
+<fact1>New York Harbor</fact1> is not located on a <fact2>craton</fact2> but rather on the edge of the North American Plate.  
+<fact3>Volcanic activity</fact3> is typically associated with tectonic plate boundaries or hotspots.  
+<fact1>New York Harbor</fact1> does not experience <fact3>volcanic activity</fact3> as it is not near any active volcanic regions.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+28,<fact1>Can the Palace of Westminster</fact1> <fact2>tell time</fact2> <fact3>in the dark?</fact3>,"The <fact1>Palace of Westminster</fact1> is home to the famous clock tower known as Big Ben. The clock faces of Big Ben are illuminated, allowing it to <fact2>tell time</fact2> even <fact3>in the dark</fact3>. Therefore, the <fact1>Palace of Westminster</fact1> can indeed <fact2>tell time</fact2> <fact3>in the dark</fact3>. 
+
+Final_Answer: {true}."
+29,"<fact1>In teenagers and young adults with depression</fact1>, <fact2>are SSRI medications</fact2> <fact3>less safe</fact3> <fact4>than they are for adults?</fact4>","<fact2>SSRI medications</fact2> are commonly prescribed for <fact1>teenagers and young adults with depression</fact1> as well as for adults. However, there is evidence suggesting that <fact2>SSRI medications</fact2> may have different safety profiles in these age groups. <fact3>Less safe</fact3> outcomes, such as an increased risk of suicidal thoughts and behaviors, have been observed in <fact1>teenagers and young adults</fact1> compared to adults. Therefore, <fact2>SSRI medications</fact2> are considered <fact3>less safe</fact3> for <fact1>teenagers and young adults with depression</fact1> than they are for adults. 
+
+Final_Answer: {true}."
+30,<fact1>Does Marco Rubio</fact1> <fact2>have a close relationship</fact2> <fact3>with Allah?</fact3>,"<fact1>Marco Rubio</fact1> is a United States Senator from Florida and a practicing Roman Catholic.  
+<fact3>Allah</fact3> is the Arabic word for God in Islam.  
+<fact1>Marco Rubio</fact1> does not practice Islam, so he does not have a religious relationship with <fact3>Allah</fact3>.  
+Therefore, <fact1>Marco Rubio</fact1> does not have a <fact2>close relationship</fact2> with <fact3>Allah</fact3>.  
+Final_Answer: {false}."
+31,<fact1>Would Persephone</fact1> <fact2>be a good consultant</fact2> <fact3>to a landscape architect?</fact3>,"<fact1>Persephone</fact1> is a figure from Greek mythology, known as the goddess of spring and vegetation.  
+<fact1>Persephone's</fact1> association with nature and growth could make her <fact2>a good consultant</fact2> for matters related to plants and landscapes.  
+<fact3>Landscape architects</fact3> work with the design and planning of outdoor spaces, often involving plants and natural elements.  
+Given <fact1>Persephone's</fact1> connection to nature, she could provide valuable insights to a <fact3>landscape architect</fact3>.  
+So the answer is {true}."
+32,<fact1>Is Argon</fact1> <fact2>near Neon</fact2> <fact3>on the periodic table of elements?</fact3>,"<fact1>Argon</fact1> and <fact2>Neon</fact2> are both noble gases.  
+<fact1>Argon</fact1> is located in Group 18 of the <fact3>periodic table of elements</fact3>.  
+<fact2>Neon</fact2> is also located in Group 18 of the <fact3>periodic table of elements</fact3>.  
+<fact1>Argon</fact1> and <fact2>Neon</fact2> are adjacent to each other in the same group.  
+So the answer is {true}.  
+
+Final_Answer: {true}."
+33,<fact1>Did</fact1> <fact2>Thomas Greenhill's parents</fact2> <fact3>violate</fact3> <fact4>the concept of monogamy?</fact4>,"<fact2>Thomas Greenhill's parents</fact2> were individuals who lived in a time when <fact4>the concept of monogamy</fact4> was a societal norm. However, without specific historical evidence or records indicating that <fact2>Thomas Greenhill's parents</fact2> engaged in relationships outside of their marriage, it cannot be definitively stated that they <fact3>violated</fact3> <fact4>the concept of monogamy</fact4>. Therefore, based on the information provided, there is no evidence to support the claim that <fact2>Thomas Greenhill's parents</fact2> <fact3>violated</fact3> <fact4>the concept of monogamy</fact4>. 
+
+Final_Answer: {false}."
+34,<fact1>Would it</fact1> <fact2>be uncommon</fact2> <fact3>for a high schooler</fact3> <fact4>to use the yellow pages?</fact4>,"The <fact1>use of the yellow pages</fact1> has significantly declined with the rise of digital technology and the internet. <fact3>High schoolers</fact3> today are more likely to use online search engines and digital directories to find information. The <fact4>yellow pages</fact4> are considered outdated by many younger generations who have grown up with smartphones and the internet. Therefore, it <fact2>would be uncommon</fact2> for a <fact3>high schooler</fact3> to use the <fact4>yellow pages</fact4> in the current digital age. 
+
+Final_Answer: {true}."
+35,<fact1>Could an escapee</fact1> <fact2>swim nonstop</fact2> <fact3>from Alcatraz Island</fact3> <fact4>to Siberia?</fact4>,"<fact1>An escapee</fact1> attempting to <fact2>swim nonstop</fact2> from <fact3>Alcatraz Island</fact3> to <fact4>Siberia</fact4> would face insurmountable challenges. <fact3>Alcatraz Island</fact3> is located in San Francisco Bay, California, USA, while <fact4>Siberia</fact4> is a vast region in Russia, separated by thousands of miles of land and ocean. The distance and geographical barriers make it impossible for <fact1>an escapee</fact1> to <fact2>swim nonstop</fact2> between these two locations. 
+
+Final_Answer: {false}."
+36,<fact1>Would the Titanic</fact1> <fact2>be well preserved</fact2> <fact3>at the bottom</fact3> <fact4>of the Gulf of Finland?</fact4>,"The <fact1>Titanic</fact1> sank in the North Atlantic Ocean, where it currently rests. The <fact3>bottom</fact3> of the ocean where the Titanic is located is characterized by cold temperatures and high pressure, which have contributed to its gradual deterioration over time. The <fact4>Gulf of Finland</fact4> is part of the Baltic Sea, which has different environmental conditions, including lower salinity and different temperatures. These conditions could potentially affect the preservation of a shipwreck differently than the North Atlantic. However, the <fact1>Titanic</fact1> is not located in the <fact4>Gulf of Finland</fact4>, so its preservation state is not directly influenced by the conditions there. Therefore, the <fact2>preservation</fact2> of the Titanic is not related to the <fact4>Gulf of Finland</fact4>. 
+
+Final_Answer: {false}."
+37,<fact1>Could a snowy owl</fact1> <fact2>survive</fact2> <fact3>in the Sonoran?</fact3>,"<fact1>Snowy owls</fact1> are native to the Arctic regions and are adapted to cold environments.  
+<fact3>The Sonoran Desert</fact3> is a hot, arid environment with temperatures that can exceed 100 degrees Fahrenheit.  
+<fact1>Snowy owls</fact1> have thick plumage and are not naturally adapted to <fact3>desert conditions</fact3>.  
+<fact2>Survival</fact2> in such a drastically different climate would be challenging for a <fact1>snowy owl</fact1>.  
+So the answer is {false}."
+38,<fact1>Would a rabbi</fact1> <fact2>worship martyrs</fact2> <fact3>Ranavalona I killed?</fact3>,"<fact1>Rabbis</fact1> are Jewish religious leaders who follow the teachings and practices of Judaism. In Judaism, <fact2>worship</fact2> is directed towards God, and the religion does not typically involve the worship of martyrs or individuals. <fact3>Ranavalona I</fact3> was a queen of Madagascar known for her persecution of Christians during her reign in the 19th century. The martyrs <fact3>Ranavalona I killed</fact3> were primarily Christians, not Jews. Therefore, it is unlikely that a <fact1>rabbi</fact1> would <fact2>worship martyrs</fact2> associated with a different religious tradition. 
+
+Final_Answer: {false}."
+39,<fact1>Would an oil painter</fact1> <fact2>avoid reds</fact2> <fact3>from scale insects</fact3> <fact4>that live on a cactus?</fact4>,"<fact1>An oil painter</fact1> may use various pigments to achieve different colors in their artwork. <fact3>Reds from scale insects</fact3>, specifically cochineal insects, are a source of carmine dye, which is a natural red pigment. These <fact3>scale insects</fact3> are known to live on cacti, particularly the prickly pear cactus. <fact1>Oil painters</fact1> have historically used carmine and other natural pigments derived from insects and plants. Therefore, <fact1>an oil painter</fact1> would not necessarily <fact2>avoid reds</fact2> derived from <fact3>scale insects</fact3> that live on a cactus, as these pigments are commonly used in art. 
+
+Final_Answer: {false}."
+40,<fact1>Was the Second Amendment</fact1> <fact2>to the United States Constitution</fact2> <fact3>written without consideration</fact3> <fact4>for black Americans?</fact4>,"The <fact2>United States Constitution</fact2> was written in the late 18th century, a time when <fact4>black Americans</fact4> were largely enslaved and not considered equal citizens. The framers of the <fact2>Constitution</fact2> did not extend the same rights and considerations to <fact4>black Americans</fact4> as they did to white Americans. The <fact1>Second Amendment</fact1>, like other parts of the <fact2>Constitution</fact2>, was primarily concerned with the rights of white landowners and did not take into account the rights or status of <fact4>black Americans</fact4>. Therefore, it can be argued that the <fact1>Second Amendment</fact1> was <fact3>written without consideration</fact3> for <fact4>black Americans</fact4>. 
+
+Final_Answer: {true}."
+41,<fact1>Are all the elements</fact1> <fact2>plants need</fact2> <fact3>for photosynthesis</fact3> <fact4>present in</fact4> <fact5>atmosphere of Mars?</fact5>,"<fact1>Photosynthesis</fact1> requires elements such as carbon dioxide, water, and sunlight.  
+<fact5>The atmosphere of Mars</fact5> is composed mostly of carbon dioxide, which is one of the <fact2>elements plants need</fact2> for <fact3>photosynthesis</fact3>.  
+However, <fact5>the atmosphere of Mars</fact5> lacks sufficient water vapor, which is another essential element for <fact3>photosynthesis</fact3>.  
+Therefore, not all the <fact2>elements plants need</fact2> for <fact3>photosynthesis</fact3> are <fact4>present in</fact4> the <fact5>atmosphere of Mars</fact5>.  
+Final_Answer: {false}."
+42,<fact1>Can you</fact1> <fact2>find Bob Marley's face</fact2> <fact3>in most smoke shops?</fact3>,"<fact1>Bob Marley</fact1> is a cultural icon associated with reggae music and the Rastafarian movement. <fact1>Bob Marley's</fact1> image is often used in merchandise related to these themes. <fact3>Smoke shops</fact3> frequently sell items such as posters, clothing, and accessories that feature <fact2>Bob Marley's face</fact2> due to his association with cannabis culture. Therefore, it is common to <fact2>find Bob Marley's face</fact2> in <fact3>most smoke shops</fact3>. 
+
+Final_Answer: {true}."
+43,<fact1>Did Pablo Escobar's nickname collection</fact1> <fact2>outshine</fact2> <fact3>Robert Moses Grove's?</fact3>,"<fact1>Pablo Escobar</fact1> was a notorious Colombian drug lord known for his extensive criminal empire and influence. He was often referred to by various nicknames, including ""The King of Cocaine"" and ""El Patrón."" These nicknames were widely recognized and contributed to his infamous reputation.
+
+<fact3>Robert Moses Grove</fact3>, on the other hand, was a professional baseball player known as ""Lefty Grove."" While he was a successful pitcher and had a notable career in Major League Baseball, his nickname collection was not as extensive or as widely recognized as <fact1>Pablo Escobar's</fact1>.
+
+Given the notoriety and the number of nicknames associated with <fact1>Pablo Escobar</fact1>, it can be concluded that his nickname collection did indeed <fact2>outshine</fact2> <fact3>Robert Moses Grove's</fact3>.
+
+Final_Answer: {true}."
+44,<fact1>Has the Subway restaurant franchise</fact1> <fact2>had any connections</fact2> <fact3>with child abusers?</fact3>,"The <fact1>Subway restaurant franchise</fact1> was associated with Jared Fogle, who was a spokesperson for the company. Jared Fogle was convicted of <fact3>child abuse</fact3> and possession of child pornography. This connection between <fact1>Subway</fact1> and <fact3>child abusers</fact3> was widely publicized. Therefore, the <fact2>connection</fact2> between the <fact1>Subway restaurant franchise</fact1> and <fact3>child abusers</fact3> is established. 
+
+Final_Answer: {true}."
+45,<fact1>Does autopilot</fact1> <fact2>rely on</fact2> <fact3>fossil fuels?</fact3>,"<fact1>Autopilot</fact1> is a system used in various vehicles, such as airplanes and cars, to assist with navigation and control. <fact2>Autopilot</fact2> systems themselves do not inherently <fact2>rely on</fact2> <fact3>fossil fuels</fact3> for their operation. Instead, they rely on electronic systems, sensors, and software to function. However, the vehicles that use <fact1>autopilot</fact1> systems, such as airplanes and cars, often use <fact3>fossil fuels</fact3> as a source of energy for propulsion. The operation of the <fact1>autopilot</fact1> system is independent of the type of fuel used by the vehicle. Therefore, <fact1>autopilot</fact1> does not directly <fact2>rely on</fact2> <fact3>fossil fuels</fact3> for its operation. 
+
+Final_Answer: {false}."
+46,<fact1>Are psychiatric patients</fact1> <fact2>welcome to join</fact2> <fact3>the United States Air Force?</fact3>,"<fact1>Psychiatric patients</fact1> may face restrictions when attempting to <fact2>join</fact2> the <fact3>United States Air Force</fact3>. The <fact3>United States Air Force</fact3> has strict medical and mental health standards for enlistment. Individuals with certain mental health conditions or a history of psychiatric treatment may be disqualified from service. Therefore, <fact1>psychiatric patients</fact1> are generally not <fact2>welcome to join</fact2> the <fact3>United States Air Force</fact3>. 
+
+Final_Answer: {false}."
+47,<fact1>Does Nicole Kidman</fact1> <fact2>know any Scientologists?</fact2>,"<fact1>Nicole Kidman</fact1> was married to Tom Cruise, who is a well-known member of the Church of Scientology.  
+During her marriage to Tom Cruise, <fact1>Nicole Kidman</fact1> would have been in contact with other members of the Church of Scientology.  
+Therefore, it is likely that <fact1>Nicole Kidman</fact1> <fact2>knows Scientologists</fact2>.  
+Final_Answer: {true}."
+48,<fact1>Was John Lennon</fact1> <fact2>known to be</fact2> <fact3>a good friend</fact3> <fact4>to Sasha Obama?</fact4>,"<fact1>John Lennon</fact1> was a member of The Beatles and was tragically killed in 1980.  
+<fact4>Sasha Obama</fact4> was born in 2001, long after <fact1>John Lennon's</fact1> death.  
+Due to the difference in their lifetimes, <fact1>John Lennon</fact1> could not have been <fact3>a good friend</fact3> to <fact4>Sasha Obama</fact4>.  
+Final_Answer: {false}."
+49,<fact1>Would the tunnels</fact1> <fact2>at CERN</fact2> <fact3>fit onto</fact3> <fact4>the High Speed 1 rails?</fact4>,"The <fact1>tunnels</fact1> at <fact2>CERN</fact2> are part of the Large Hadron Collider, which is a circular tunnel with a circumference of about 27 kilometers. The <fact4>High Speed 1 rails</fact4> are a high-speed railway line in the United Kingdom, designed for trains and not for circular tunnels. The <fact1>tunnels</fact1> at <fact2>CERN</fact2> are specifically designed for particle acceleration and not for fitting onto railway tracks. Therefore, the <fact1>tunnels</fact1> at <fact2>CERN</fact2> would not <fact3>fit onto</fact3> the <fact4>High Speed 1 rails</fact4>. 
+
+Final_Answer: {false}."
+50,<fact1>Could an elephant</fact1> <fact2>easily defeat</fact2> <fact3>a male macaque?</fact3>,"<fact1>Elephants</fact1> are large and powerful animals, weighing several tons and possessing significant strength.  
+<fact3>Male macaques</fact3> are much smaller primates, typically weighing around 10-20 pounds.  
+Given the size and strength difference, <fact1>an elephant</fact1> could <fact2>easily defeat</fact2> <fact3>a male macaque</fact3> in a physical confrontation.  
+Final_Answer: {true}."
+51,<fact1>Do</fact1> <fact2>the Ubuntu people</fact2> <fact3>speak</fact3> <fact4>Ubuntu?</fact4>,"The <fact2>Ubuntu people</fact2> are not a recognized ethnic group or community. Instead, <fact4>Ubuntu</fact4> is a philosophical concept originating from the Bantu languages of Southern Africa, emphasizing community, sharing, and mutual caring for all. Therefore, there is no language called <fact4>Ubuntu</fact4> that the <fact2>Ubuntu people</fact2> would <fact3>speak</fact3>. 
+
+Final_Answer: {false}."
+52,<fact1>Is cycling</fact1> <fact2>a high-risk activity</fact2> <fact3>for pelvis fractures?</fact3>,"Cycling is a popular physical activity that involves riding a bicycle. While it is generally considered a healthy and low-impact exercise, it can also be associated with certain risks. <fact1>Cycling</fact1> can lead to injuries, especially if proper safety measures are not followed. However, <fact2>cycling</fact2> is not typically classified as a <fact2>high-risk activity</fact2> for <fact3>pelvis fractures</fact3>. Pelvis fractures are more commonly associated with high-impact activities or accidents, such as motor vehicle collisions or falls from significant heights. While cycling accidents can occur, resulting in various injuries, pelvis fractures are not among the most common injuries sustained by cyclists. Therefore, <fact1>cycling</fact1> is not considered a <fact2>high-risk activity</fact2> specifically for <fact3>pelvis fractures</fact3>. 
+
+Final_Answer: {false}."
+53,<fact1>Is a platypus</fact1> <fact2>immune</fact2> <fact3>from cholera?</fact3>,"The <fact1>platypus</fact1> is a unique mammal known for its distinct characteristics, such as laying eggs and having a duck-bill. However, there is no specific evidence or scientific research indicating that the <fact1>platypus</fact1> is <fact2>immune</fact2> to <fact3>cholera</fact3>. Cholera is a bacterial infection that primarily affects humans and is not commonly associated with wildlife. Therefore, without specific evidence, it cannot be concluded that the <fact1>platypus</fact1> is <fact2>immune</fact2> to <fact3>cholera</fact3>. 
+
+Final_Answer: {false}."
+54,<fact1>Would a moose</fact1> <fact2>hypothetically be too much</fact2> <fact3>for a minotaur</fact3> <fact4>to devour whole?</fact4>,"<fact1>A moose</fact1> is a large animal, with adult males weighing between 800 to 1,500 pounds.  
+<fact3>A minotaur</fact3> is a mythical creature, often depicted as having the body of a man and the head of a bull.  
+While <fact3>minotaurs</fact3> are fictional and their abilities are not clearly defined, the size and weight of <fact1>a moose</fact1> suggest it would be <fact2>too much</fact2> for even a large creature to <fact4>devour whole</fact4>.  
+So the answer is {true}."
+55,<fact1>Are there</fact1> <fact2>bones</fact2> <fact3>in an anchovy pizza?</fact3>,"<fact2>Bones</fact2> are typically found in anchovies, which are small fish. When anchovies are used as a topping on <fact3>anchovy pizza</fact3>, they often include small, edible <fact2>bones</fact2>. These <fact2>bones</fact2> are usually soft and can be consumed without issue. Therefore, it is common for <fact3>anchovy pizza</fact3> to contain <fact2>bones</fact2>. 
+
+Final_Answer: {true}."
+56,<fact1>Can a Bengal cat</fact1> <fact2>survive</fact2> <fact3>eating only pancakes?</fact3>,"A <fact1>Bengal cat</fact1> is a domesticated feline that requires a balanced diet to maintain health. <fact3>Pancakes</fact3> are primarily composed of carbohydrates and lack essential nutrients such as proteins, vitamins, and minerals that are necessary for a <fact1>cat's</fact1> survival. A diet consisting solely of <fact3>pancakes</fact3> would not provide the necessary nutrients for a <fact1>Bengal cat</fact1> to <fact2>survive</fact2> long-term. Therefore, a <fact1>Bengal cat</fact1> cannot <fact2>survive</fact2> eating only <fact3>pancakes</fact3>. 
+
+Final_Answer: {false}."
+57,<fact1>Can the original name</fact1> <fact2>of the zucchini</fact2> <fact3>be typed</fact3> <fact4>on the top row</fact4> <fact5>of a QWERTY keyboard?</fact5>,"The <fact1>original name</fact1> of the <fact2>zucchini</fact2> is ""zucchino"" in Italian. The <fact3>letters</fact3> in ""zucchino"" include ""z"", ""u"", ""c"", ""c"", ""h"", ""i"", ""n"", and ""o"". On a <fact5>QWERTY keyboard</fact5>, the <fact4>top row</fact4> consists of the letters ""Q"", ""W"", ""E"", ""R"", ""T"", ""Y"", ""U"", ""I"", ""O"", ""P"". The letters ""z"", ""c"", ""h"", and ""n"" are not present on the top row of a QWERTY keyboard. Therefore, the <fact3>original name</fact3> of the <fact2>zucchini</fact2> cannot be typed using only the <fact4>top row</fact4> of a <fact5>QWERTY keyboard</fact5>. 
+
+Final_Answer: {false}."
+58,<fact1>Does The Hague</fact1> <fact2>border</fact2> <fact3>multiple bodies of water?</fact3>,"The city of <fact1>The Hague</fact1> is located in the Netherlands. It is situated on the western coast of the country, bordering the North Sea. However, <fact1>The Hague</fact1> does not <fact2>border</fact2> any other significant <fact3>bodies of water</fact3> besides the North Sea. Therefore, it does not <fact2>border</fact2> <fact3>multiple bodies of water</fact3>. 
+
+Final_Answer: {false}."
+59,<fact1>Do</fact1> <fact2>people in middle school</fact2> <fact3>usually</fact3> <fact4>get breast exams?</fact4>,"<fact2>People in middle school</fact2> are typically between the ages of 11 and 14.  
+<fact4>Breast exams</fact4> are generally recommended for adults or individuals with specific health concerns.  
+<fact3>Usually</fact3>, routine <fact4>breast exams</fact4> are not performed on <fact2>people in middle school</fact2>.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+60,<fact1>Did people in Korea</fact1> <fact2>under Japanese Rule</fact2> <fact3>watch a lot of Iron Chef?</fact3>,"The television show Iron Chef originated in Japan and first aired in 1993. During the period of Japanese rule, which lasted from 1910 to 1945, television was not yet a common medium, and Iron Chef did not exist. Therefore, it would not have been possible for people in Korea under Japanese rule to watch Iron Chef. 
+
+Final_Answer: {false}."
+61,<fact1>Would a bald eagle</fact1> <fact2>deliver an urgent message</fact2> <fact3>before a B-52?</fact3>,"<fact1>Bald eagles</fact1> are birds of prey known for their speed and agility, but they are not typically used for delivering messages. <fact3>B-52</fact3> bombers are large military aircraft capable of flying at high speeds and covering long distances quickly. In terms of delivering an urgent message, a <fact3>B-52</fact3> would be much faster and more reliable than a <fact1>bald eagle</fact1>. Therefore, a <fact1>bald eagle</fact1> would not <fact2>deliver an urgent message</fact2> before a <fact3>B-52</fact3>. 
+
+Final_Answer: {false}."
+62,<fact1>Does Snoopy</fact1> <fact2>look like</fact2> <fact3>Chance</fact3> <fact4>from Homeward Bound?</fact4>,"<fact1>Snoopy</fact1> is a fictional beagle from the comic strip ""Peanuts"" created by Charles M. Schulz. <fact3>Chance</fact3> is a character from the movie ""Homeward Bound,"" and he is an American Bulldog. <fact2>Looking like</fact2> refers to having a similar appearance. <fact1>Snoopy</fact1> and <fact3>Chance</fact3> are different breeds of dogs with distinct physical characteristics. Therefore, <fact1>Snoopy</fact1> does not <fact2>look like</fact2> <fact3>Chance</fact3> from <fact4>Homeward Bound</fact4>. 
+
+Final_Answer: {false}."
+63,<fact1>Was Dioskourides</fact1> <fact2>a lapidary?</fact2>,"<fact1>Dioskourides</fact1> was a Greek physician, pharmacologist, and botanist. He is best known for his work ""De Materia Medica,"" which is a comprehensive text on herbal medicine and pharmacology. A <fact2>lapidary</fact2> is someone who cuts, polishes, or engraves stones and gems. There is no historical evidence or reference that <fact1>Dioskourides</fact1> was involved in the practice of <fact2>lapidary</fact2> work. His expertise was primarily in the field of medicine and pharmacology, not in the art of working with stones or gems. 
+
+So the answer is {false}."
+64,<fact1>Do</fact1> <fact2>most</fact2> <fact3>middle class families</fact3> <fact4>have</fact4> <fact5>butlers</fact5>?,"<fact2>Most</fact2> <fact3>middle class families</fact3> <fact4>do not have</fact4> <fact5>butlers</fact5> because employing a <fact5>butler</fact5> is typically associated with wealthier households. <fact3>Middle class families</fact3> generally have a moderate income and lifestyle, which often does not include the luxury of hiring full-time domestic staff like <fact5>butlers</fact5>. Therefore, it is uncommon for <fact2>most</fact2> <fact3>middle class families</fact3> to <fact4>have</fact4> <fact5>butlers</fact5>. 
+
+Final_Answer: {false}."
+65,<fact1>Was</fact1> <fact2>Hillary Clinton's deputy chief of staff</fact2> <fact3>in 2009</fact3> <fact4>baptised?</fact4>,"<fact2>Hillary Clinton's deputy chief of staff</fact2> <fact3>in 2009</fact3> was Huma Abedin.  
+<fact4>Baptism</fact4> is a Christian sacrament.  
+<fact2>Huma Abedin</fact2> was raised in a Muslim family and is known to practice Islam.  
+There is no public record or indication that <fact2>Huma Abedin</fact2> was <fact4>baptised</fact4>.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+66,<fact1>Does the New York Public Library</fact1> <fact2>sell</fact2> <fact3>Alpo products?</fact3>,"The <fact1>New York Public Library</fact1> is an institution focused on providing access to books, information, and cultural resources. It is not a retail establishment. <fact2>Selling</fact2> products, such as <fact3>Alpo products</fact3>, which are pet food items, is not within the typical scope of services or activities provided by a public library. Therefore, it is unlikely that the <fact1>New York Public Library</fact1> would <fact2>sell</fact2> <fact3>Alpo products</fact3>. 
+
+Final_Answer: {false}."
+67,<fact1>Did Solomon</fact1> <fact2>make up a bigger percentage</fact2> <fact3>of Islamic prophets</fact3> <fact4>than Kings of Judah?</fact4>,"<fact1>Solomon</fact1> is recognized as a prophet in Islam, and there are 25 prophets mentioned in the Quran, including <fact1>Solomon</fact1>.  
+<fact4>Kings of Judah</fact4> include a lineage of rulers from the tribe of Judah, with <fact1>Solomon</fact1> being one of them.  
+The total number of <fact4>Kings of Judah</fact4> is 20.  
+<fact1>Solomon</fact1> makes up 1/25 of the <fact3>Islamic prophets</fact3> and 1/20 of the <fact4>Kings of Judah</fact4>.  
+1/25 is smaller than 1/20.  
+So the answer is {false}."
+68,<fact1>Would Taylor Swift</fact1> <fact2>refer to Snoopy</fact2> <fact3>as oppa?</fact3>,"<fact3>Oppa</fact3> is a Korean term used by females to refer to an older brother or an older male friend. <fact1>Taylor Swift</fact1> is an American singer and songwriter, and there is no known connection between her and the use of the term <fact3>oppa</fact3> in relation to <fact2>Snoopy</fact2>. <fact2>Snoopy</fact2> is a fictional beagle from the comic strip ""Peanuts"" by Charles M. Schulz, and there is no cultural or personal context that would lead <fact1>Taylor Swift</fact1> to use the term <fact3>oppa</fact3> for <fact2>Snoopy</fact2>. 
+
+Final_Answer: {false}."
+69,<fact1>Did</fact1> <fact2>Confederate States Army</fact2> <fact3>influence</fact3> <fact4>West Point fashion?</fact4>,"The <fact2>Confederate States Army</fact2> was formed during the American Civil War, which took place from 1861 to 1865. <fact4>West Point</fact4>, officially known as the United States Military Academy, is a prestigious military academy that has been in operation since 1802. The <fact2>Confederate States Army</fact2> was composed of many officers who were graduates of <fact4>West Point</fact4>. However, the <fact4>West Point fashion</fact4> and traditions were established long before the Civil War and were influenced by various military traditions and practices. While some <fact2>Confederate States Army</fact2> officers may have had an impact on military tactics and strategies, the overall <fact4>West Point fashion</fact4> was not directly influenced by the <fact2>Confederate States Army</fact2> itself. 
+
+Final_Answer: {false}."
+70,<fact1>Does conservatism</fact1> <fact2>repulse</fact2> <fact3>Blaire White?</fact3>,"<fact3>Blaire White</fact3> is a well-known conservative political commentator and YouTuber.  
+<fact1>Conservatism</fact1> aligns with <fact3>Blaire White's</fact3> political views and beliefs.  
+Therefore, it is unlikely that <fact1>conservatism</fact1> would <fact2>repulse</fact2> <fact3>Blaire White</fact3>.  
+Final_Answer: {false}."
+71,<fact1>Do</fact1> <fact2>all parts</fact2> <fact3>of the aloe vera plant</fact3> <fact4>taste good?</fact4>,"The <fact3>aloe vera plant</fact3> is known for its medicinal properties, but not <fact2>all parts</fact2> of the plant are edible or palatable. The gel inside the leaves is often used in food and drinks, but the outer leaf and latex layer can be bitter and potentially harmful if consumed in large quantities. Therefore, not <fact2>all parts</fact2> of the <fact3>aloe vera plant</fact3> are considered to <fact4>taste good</fact4>. 
+
+Final_Answer: {false}."
+72,<fact1>Does</fact1> <fact2>an individual oceanographer</fact2> <fact3>study</fact3> <fact4>many sciences?</fact4>,"An <fact2>individual oceanographer</fact2> is a scientist who studies the ocean. The field of oceanography is interdisciplinary, meaning it involves <fact3>study</fact3> of various scientific disciplines. These disciplines can include biology, chemistry, geology, and physics, among others. Therefore, an <fact2>individual oceanographer</fact2> would indeed <fact3>study</fact3> <fact4>many sciences</fact4> as part of their work. 
+
+Final_Answer: {true}."
+73,<fact1>Did</fact1> <fact2>Kurt Cobain's</fact2> <fact3>music genre</fact3> <fact4>survive</fact4> <fact5>after his death?</fact5>,"<fact2>Kurt Cobain</fact2> was a leading figure in the <fact3>grunge music genre</fact3>. The <fact3>grunge music genre</fact3> continued to influence and inspire musicians and bands <fact4>after his death</fact4> in 1994. Bands like Pearl Jam and Soundgarden, which were part of the same movement, continued to produce music and maintain the genre's presence. Therefore, the <fact3>music genre</fact3> associated with <fact2>Kurt Cobain</fact2> did indeed <fact4>survive</fact4> <fact5>after his death</fact5>. 
+
+Final_Answer: {true}."
+74,<fact1>Did Immanuel Kant</fact1> <fact2>ever meet</fact2> <fact3>the 14th president of the United States?</fact3>,"<fact1>Immanuel Kant</fact1> was a German philosopher who lived from 1724 to 1804.  
+<fact3>The 14th president of the United States</fact3> was Franklin Pierce, who served from 1853 to 1857.  
+<fact1>Immanuel Kant</fact1> died before <fact3>the 14th president of the United States</fact3> took office.  
+Therefore, <fact1>Immanuel Kant</fact1> could not have <fact2>met</fact2> <fact3>the 14th president of the United States</fact3>.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+75,<fact1>Would eliminating competition</fact1> <fact2>in the Japanese bulk carrier market</fact2> <fact3>be profitable</fact3> <fact4>for a steel company?</fact4>,"The <fact1>elimination of competition</fact1> in any market can lead to increased market power and potential for higher profits. In the <fact2>Japanese bulk carrier market</fact2>, reducing competition could allow a company to control prices and increase revenue. A <fact4>steel company</fact4> could benefit from this if it supplies materials to the bulk carrier industry, as it might secure more contracts or negotiate better terms. Therefore, <fact3>eliminating competition</fact3> could indeed <fact3>be profitable</fact3> for a <fact4>steel company</fact4> involved in this market. 
+
+Final_Answer: {true}."
+76,<fact1>Would a geographer</fact1> <fact2>use biochemistry</fact2> <fact3>in their work?</fact3>,"A <fact1>geographer</fact1> studies the Earth's landscapes, environments, and the relationships between people and their environments. <fact2>Biochemistry</fact2> is the study of chemical processes within and relating to living organisms. While <fact1>geographers</fact1> may use various scientific methods and data in their work, <fact2>biochemistry</fact2> is not typically a primary focus or tool in the field of geography. Therefore, it is unlikely that a <fact1>geographer</fact1> would directly <fact2>use biochemistry</fact2> in their work. 
+
+Final_Answer: {false}."
+77,<fact1>Is most coffee</fact1> <fact2>produced</fact2> <fact3>South of the Equator?</fact3>,"<fact1>Coffee</fact1> is a tropical plant that thrives in warm climates. The majority of the world's <fact2>coffee production</fact2> occurs in countries located <fact3>South of the Equator</fact3>, such as Brazil, Vietnam, and Colombia. These countries are among the largest producers of <fact1>coffee</fact1> globally. Therefore, it is accurate to say that most <fact1>coffee</fact1> is <fact2>produced</fact2> <fact3>South of the Equator</fact3>. 
+
+Final_Answer: {true}."
+78,<fact1>Is it hard</fact1> <fact2>to get a BLT</fact2> <fact3>in Casablanca?</fact3>,"Casablanca is a major city in Morocco, where the predominant diet is influenced by Islamic dietary laws, which prohibit the consumption of pork. A <fact2>BLT</fact2> sandwich traditionally contains bacon, which is made from pork. Therefore, it might be challenging to find a <fact2>BLT</fact2> in a city like <fact3>Casablanca</fact3> where pork is not commonly consumed. However, it is not impossible, as some international or non-traditional restaurants might offer alternatives or variations. 
+
+Final_Answer: {true}."
+79,<fact1>Could</fact1> <fact2>largest ship</fact2> <fact3>from Voyages of Christopher Columbus</fact3> <fact4>haul</fact4> <fact5>Statue of Liberty?</fact5>,"The <fact2>largest ship</fact2> from the <fact3>Voyages of Christopher Columbus</fact3> was the Santa Maria. The Santa Maria was approximately 62 feet long and had a cargo capacity of about 100 tons. The <fact5>Statue of Liberty</fact5>, including its pedestal, weighs approximately 450,000 pounds (or 225 tons). The <fact4>haul</fact4> capacity of the Santa Maria is significantly less than the weight of the <fact5>Statue of Liberty</fact5>. Therefore, the <fact2>largest ship</fact2> from the <fact3>Voyages of Christopher Columbus</fact3> could not <fact4>haul</fact4> the <fact5>Statue of Liberty</fact5>. 
+
+Final_Answer: {false}."
+80,<fact1>Would Jolly Green Giant's largest monument</fact1> <fact2>look impressive</fact2> <fact3>next to Pyrenees?</fact3>,"The <fact1>Jolly Green Giant's largest monument</fact1> is a statue located in Blue Earth, Minnesota, and stands at 55 feet tall. The <fact3>Pyrenees</fact3> are a mountain range between France and Spain, with peaks reaching over 11,000 feet. Compared to the <fact3>Pyrenees</fact3>, the <fact1>Jolly Green Giant's largest monument</fact1> would not <fact2>look impressive</fact2> due to the vast difference in height and scale. 
+
+Final_Answer: {false}."
+81,<fact1>Did Karl Marx</fact1> <fact2>influence</fact2> <fact3>the communist party</fact3> <fact4>of China?</fact4>,"<fact1>Karl Marx</fact1> was a philosopher and economist known for his theories on socialism and communism. <fact2>His ideas</fact2> laid the foundation for many communist movements around the world. The <fact3>Communist Party</fact3> of China was heavily influenced by Marxist ideology, which is evident in their adoption of Marxist-Leninist principles. <fact4>The Communist Party of China</fact4> has consistently acknowledged Marxism as a guiding theory. Therefore, <fact1>Karl Marx</fact1> did indeed <fact2>influence</fact2> the <fact3>communist party</fact3> <fact4>of China</fact4>. 
+
+Final_Answer: {true}."
+82,<fact1>Does Soylent</fact1> <fact2>use Pea</fact2> <fact3>for their source of protein?</fact3>,"<fact1>Soylent</fact1> is a meal replacement product that is known for using various sources of protein. <fact2>Pea protein</fact2> is a common plant-based protein source used in many meal replacement products. <fact1>Soylent</fact1> has been known to use <fact2>pea protein</fact2> as one of its ingredients for its protein content. Therefore, it is accurate to say that <fact1>Soylent</fact1> does use <fact2>pea</fact2> for their source of protein. 
+
+Final_Answer: {true}."
+83,<fact1>Do most religious people</fact1> <fact2>in Quebec</fact2> <fact3>refer to the Quran?</fact3>,"<fact1>Most religious people</fact1> in <fact2>Quebec</fact2> are Christians, primarily following Catholicism.  
+The <fact3>Quran</fact3> is the holy book of Islam, not Christianity.  
+Therefore, it is unlikely that <fact1>most religious people</fact1> in <fact2>Quebec</fact2> would <fact3>refer to the Quran</fact3>.  
+Final_Answer: {false}."
+84,<fact1>Does Family Guy</fact1> <fact2>take place</fact2> <fact3>on the American West Coast?</fact3>,"<fact1>Family Guy</fact1> is an animated television show that <fact2>takes place</fact2> in the fictional town of Quahog, Rhode Island. Rhode Island is located on the American East Coast, not the <fact3>West Coast</fact3>. Therefore, the setting of <fact1>Family Guy</fact1> is not on the <fact3>American West Coast</fact3>. 
+
+Final_Answer: {false}."
+85,<fact1>Are lengths</fact1> <fact2>measured</fact2> <fact3>in metres</fact3> <fact4>in the UK?</fact4>,"<fact1>Lengths</fact1> are <fact2>measured</fact2> using the metric system in many countries, including the UK. The metric system uses <fact3>metres</fact3> as a standard unit of measurement for <fact1>lengths</fact1>. While the UK also uses the imperial system for certain applications, the metric system is officially recognized and used in various contexts, such as science, engineering, and trade. Therefore, <fact1>lengths</fact1> are indeed <fact2>measured</fact2> in <fact3>metres</fact3> <fact4>in the UK</fact4>. 
+
+Final_Answer: {true}."
+86,<fact1>Did the first Duke of Valentinois</fact1> <fact2>play a key role</fact2> <fact3>in the Hundred Years' War?</fact3>,"The <fact1>first Duke of Valentinois</fact1> was Cesare Borgia, who was granted the title by King Louis XII of France in 1498. The <fact3>Hundred Years' War</fact3> took place from 1337 to 1453, which is before the time of Cesare Borgia. Therefore, the <fact1>first Duke of Valentinois</fact1> could not have <fact2>played a key role</fact2> in the <fact3>Hundred Years' War</fact3> as he was not alive during that period. 
+
+Final_Answer: {false}."
+87,<fact1>Do gorillas</fact1> <fact2>fight with</fact2> <fact3>panda bears?</fact3>,"<fact1>Gorillas</fact1> and <fact3>panda bears</fact3> are native to different regions; <fact1>gorillas</fact1> are found in Africa, while <fact3>panda bears</fact3> are native to China.  
+<fact1>Gorillas</fact1> are generally herbivorous and peaceful animals, and they do not typically encounter <fact3>panda bears</fact3> in the wild.  
+There is no evidence or documented cases of <fact1>gorillas</fact1> engaging in <fact2>fights with</fact2> <fact3>panda bears</fact3>.  
+So the answer is {false}."
+88,<fact1>Was Christina Aguilera</fact1> <fact2>born in the forgotten borough?</fact2>,"<fact1>Christina Aguilera</fact1> was born in Staten Island, New York.  
+<fact2>The ""forgotten borough""</fact2> is a nickname often used to refer to Staten Island.  
+Therefore, <fact1>Christina Aguilera</fact1> was indeed <fact2>born in the forgotten borough</fact2>.  
+Final_Answer: {true}."
+89,<fact1>Is H's most common two letter pair partner</fact1> <fact2>a freebie</fact2> <fact3>in Wheel of Fortune bonus round?</fact3>,"The <fact1>most common two-letter pair partner for H</fact1> is ""TH"". In the <fact3>Wheel of Fortune bonus round</fact3>, contestants are given the letters R, S, T, L, N, and E as <fact2>freebies</fact2>. The letter ""H"" is not included in this set of <fact2>freebie</fact2> letters. Therefore, the <fact1>most common two-letter pair partner for H</fact1> is not <fact2>a freebie</fact2> in the <fact3>Wheel of Fortune bonus round</fact3>. 
+
+So the answer is {false}."
+90,<fact1>Can</fact1> <fact2>a quarter</fact2> <fact3>fit inside</fact3> <fact4>of a human kidney?</fact4>,"<fact2>A quarter</fact2> is a coin with a diameter of approximately 24.26 mm and a thickness of 1.75 mm. The <fact4>human kidney</fact4> is an organ that typically measures about 10-12 cm in length, 5-7.5 cm in width, and 2.5 cm in thickness. Given these dimensions, <fact2>a quarter</fact2> could <fact3>fit inside</fact3> the <fact4>human kidney</fact4> without exceeding its size. 
+
+Final_Answer: {true}."
+91,<fact1>Does the James Webb Space Telescope</fact1> <fact2>fail astronomer</fact2> <fact3>in locating planet Krypton?</fact3>,"The <fact1>James Webb Space Telescope</fact1> is a highly advanced space telescope designed to observe the universe in infrared wavelengths. <fact3>Planet Krypton</fact3> is a fictional planet from the Superman comic book series and does not exist in reality. Therefore, the <fact1>James Webb Space Telescope</fact1> cannot locate a non-existent planet like <fact3>planet Krypton</fact3>. Since <fact3>planet Krypton</fact3> is fictional, it is not a failure of the telescope or <fact2>astronomers</fact2> to not locate it. 
+
+Final_Answer: {true}."
+92,<fact1>Was P. G. Wodehouse's</fact1> <fact2>favorite book</fact2> <fact3>The Hunger Games?</fact3>,"<fact1>P. G. Wodehouse</fact1> was an English author known for his humorous and satirical writing style. <fact3>The Hunger Games</fact3> is a dystopian novel written by Suzanne Collins, published in 2008. <fact1>P. G. Wodehouse</fact1> passed away in 1975, which is long before <fact3>The Hunger Games</fact3> was published. Therefore, it is not possible for <fact1>P. G. Wodehouse's</fact1> <fact2>favorite book</fact2> to be <fact3>The Hunger Games</fact3>. 
+
+Final_Answer: {false}."
+93,<fact1>Should</fact1> <fact2>a finished website</fact2> <fact3>have</fact3> <fact4>lorem ipsum paragraphs?</fact4>,"<fact1>Should</fact1> <fact2>a finished website</fact2> <fact3>have</fact3> <fact4>lorem ipsum paragraphs?</fact4>
+
+<fact4>Lorem ipsum paragraphs</fact4> are placeholder text used in the design phase of a website to visualize how text will appear on the page. 
+
+<fact2>A finished website</fact2> is expected to have complete and meaningful content rather than placeholder text. 
+
+Therefore, <fact2>a finished website</fact2> should not <fact3>have</fact3> <fact4>lorem ipsum paragraphs</fact4> as it indicates incomplete content. 
+
+Final_Answer: {false}."
+94,<fact1>Did William Shakespeare</fact1> <fact2>read</fact2> <fact3>the Daily Mirror?</fact3>,"<fact1>William Shakespeare</fact1> lived from 1564 to 1616.  
+The <fact3>Daily Mirror</fact3> is a British newspaper that was first published in 1903.  
+<fact1>William Shakespeare</fact1> could not have <fact2>read</fact2> the <fact3>Daily Mirror</fact3> because it was not in existence during his lifetime.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+95,<fact1>Will more people</fact1> <fact2>go in and out</fact2> <fact3>of Taco Bell</fact3> <fact4>than a Roy Rogers</fact4> <fact5>each year?</fact5>,"<fact3>Taco Bell</fact3> is a popular fast-food chain known for its Mexican-inspired menu. <fact4>Roy Rogers</fact4> is a smaller fast-food chain with fewer locations compared to <fact3>Taco Bell</fact3>. Due to its larger number of locations and widespread popularity, it is likely that <fact1>more people</fact1> <fact2>go in and out</fact2> of <fact3>Taco Bell</fact3> than <fact4>Roy Rogers</fact4> <fact5>each year</fact5>. 
+
+Final_Answer: {true}."
+96,<fact1>Is it safe</fact1> <fact2>to wear sandals</fact2> <fact3>in snow?</fact3>,"Wearing <fact2>sandals</fact2> in <fact3>snow</fact3> is generally not <fact1>safe</fact1> because <fact2>sandals</fact2> do not provide adequate insulation or protection from the cold and wet conditions associated with <fact3>snow</fact3>. <fact2>Sandals</fact2> leave the feet exposed, increasing the risk of frostbite and slipping on icy surfaces. Therefore, it is not <fact1>safe</fact1> to wear <fact2>sandals</fact2> in <fact3>snow</fact3>. 
+
+Final_Answer: {false}."
+97,<fact1>Was Nikola Tesla's</fact1> <fact2>home country</fact2> <fact3>involved</fact3> <fact4>in the American Civil War?</fact4>,"<fact1>Nikola Tesla</fact1> was born in 1856 in the <fact2>Austrian Empire</fact2>, which is now part of modern-day Croatia. The <fact4>American Civil War</fact4> took place from 1861 to 1865. During this time, the <fact2>Austrian Empire</fact2> was not <fact3>involved</fact3> in the <fact4>American Civil War</fact4>. Therefore, <fact1>Tesla's home country</fact1> was not <fact3>involved</fact3> in the <fact4>American Civil War</fact4>. 
+
+Final_Answer: {false}."
+98,<fact1>Did Ada Lovelace</fact1> <fact2>die tragically young</fact2> <fact3>for her era?</fact3>,"<fact1>Ada Lovelace</fact1> was born in 1815 and died in 1852 at the age of 36. During the 19th century, the average life expectancy was significantly lower than it is today, but it was still higher than 36 years, especially for those in the upper classes who had better access to healthcare and living conditions. Therefore, dying at the age of 36 would be considered <fact2>tragically young</fact2> <fact3>for her era</fact3>. 
+
+Final_Answer: {true}."
+99,<fact1>Can</fact1> <fact2>an Asian black bear</fact2> <fact3>use</fact3> <fact4>chopsticks?</fact4>,"<fact2>Asian black bears</fact2> are wild animals and do not have the dexterity or understanding to <fact3>use</fact3> tools like <fact4>chopsticks</fact4>. <fact1>Chopsticks</fact1> require a level of fine motor skill and cognitive ability that <fact2>Asian black bears</fact2> do not possess. Therefore, it is not possible for <fact2>an Asian black bear</fact2> to <fact3>use</fact3> <fact4>chopsticks</fact4>. 
+
+Final_Answer: {false}."
+100,<fact1>Can someone</fact1> <fact2>sell their time</fact2> <fact3>through the Toronto Star?</fact3>,"The <fact3>Toronto Star</fact3> is a Canadian newspaper and media outlet. Newspapers and media outlets typically do not provide platforms for individuals to <fact2>sell their time</fact2> directly. Instead, they focus on delivering news, articles, and advertisements. Therefore, it is unlikely that someone can <fact2>sell their time</fact2> through the <fact3>Toronto Star</fact3> in a direct manner. 
+
+Final_Answer: {false}."
+101,<fact1>Were deaths</fact1> <fact2>from Apollo 13 mission</fact2> <fact3>eclipsed</fact3> <fact4>by other space missions?</fact4>,"The <fact2>Apollo 13 mission</fact2> is famously known for its successful failure, as the crew survived despite significant challenges. There were no <fact1>deaths</fact1> during the <fact2>Apollo 13 mission</fact2>. Other space missions, such as the Space Shuttle Challenger and Columbia disasters, resulted in fatalities. Therefore, <fact1>deaths</fact1> from the <fact2>Apollo 13 mission</fact2> could not have been <fact3>eclipsed</fact3> by <fact4>other space missions</fact4> because there were no deaths to begin with. 
+
+Final_Answer: {false}."
+102,<fact1>Can you purchase</fact1> <fact2>a dish with injera</fact2> <fact3>at Taco Bell?</fact3>,"Taco Bell is a fast-food chain known for its Mexican-inspired menu items. <fact2>Injera</fact2> is a traditional Ethiopian flatbread, which is not part of Taco Bell's menu offerings. <fact3>Taco Bell</fact3> does not serve Ethiopian cuisine, and therefore, you cannot purchase <fact2>a dish with injera</fact2> at <fact3>Taco Bell</fact3>. 
+
+Final_Answer: {false}."
+103,<fact1>Is xenophobia</fact1> <fact2>hypothetically unimportant</fact2> <fact3>between Saladin</fact3> <fact4>and Ali Askari?</fact4>,"<fact1>Xenophobia</fact1> refers to the fear or hatred of foreigners or strangers. <fact3>Saladin</fact3> was a Muslim military leader known for his role in the Crusades, particularly against Christian forces. <fact4>Ali Askari</fact4> is not a widely recognized historical figure, and there is no well-documented relationship or interaction between <fact3>Saladin</fact3> and <fact4>Ali Askari</fact4>. Given the historical context of the Crusades, <fact1>xenophobia</fact1> could have been a factor in the interactions between different cultural and religious groups. However, without specific historical evidence of interactions between <fact3>Saladin</fact3> and <fact4>Ali Askari</fact4>, it is difficult to definitively state that <fact1>xenophobia</fact1> was <fact2>unimportant</fact2> in their hypothetical relationship. 
+
+Final_Answer: {false}."
+104,<fact1>Does Sockington</fact1> <fact2>enjoy</fact2> <fact3>onions?</fact3>,"<fact1>Sockington</fact1> is a cat that became famous on social media.  
+Cats, in general, do not <fact2>enjoy</fact2> <fact3>onions</fact3> as they are toxic to them.  
+<fact3>Onions</fact3> can cause gastrointestinal upset and other health issues in cats.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+105,<fact1>Was Raphael's paintings</fact1> <fact2>influenced</fact2> <fact3>by the country of Guam?</fact3>,"<fact1>Raphael's paintings</fact1> were created during the Italian Renaissance, a period known for its focus on classical antiquity and humanism.  
+<fact3>Guam</fact3> is a Pacific island that was not known to Europeans during Raphael's time.  
+There is no historical evidence that <fact3>Guam</fact3> had any influence on <fact1>Raphael's paintings</fact1>.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+106,<fact1>Could</fact1> <fact2>Oscar Wilde</fact2> <fact3>have operated</fact3> <fact4>a motor vehicle?</fact4>,"<fact2>Oscar Wilde</fact2> was born in 1854 and died in 1900.  
+<fact4>Motor vehicles</fact4> were not widely available or commonly used until the early 20th century, after <fact2>Oscar Wilde's</fact2> death.  
+Therefore, it is unlikely that <fact2>Oscar Wilde</fact2> could have <fact3>operated</fact3> <fact4>a motor vehicle</fact4> during his lifetime.  
+Final_Answer: {false}."
+107,<fact1>Does ontology</fact1> <fact2>require</fact2> <fact3>a scalpel?</fact3>,"Ontology is a branch of metaphysics dealing with the nature of being, existence, or reality. It is a philosophical study and does not involve physical tools or instruments. A <fact3>scalpel</fact3> is a small and sharp knife used in surgery or dissection. Since ontology is a theoretical and conceptual discipline, it does not <fact2>require</fact2> the use of a <fact3>scalpel</fact3> or any physical tools. Therefore, the answer is {false}.
+
+Final_Answer: {false}."
+108,<fact1>Was King Arthur</fact1> <fact2>at the beheading</fact2> <fact3>of Anne Boleyn?</fact3>,"<fact3>Anne Boleyn</fact3> was beheaded in 1536.  
+<fact1>King Arthur</fact1> is a legendary figure who is said to have lived in the late 5th and early 6th centuries.  
+The timeline of <fact1>King Arthur</fact1> and <fact3>Anne Boleyn</fact3> do not overlap.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+109,<fact1>Would Alexander Graham Bell</fact1> <fact2>hypothetically support</fact2> <fact3>Nazi eugenics?</fact3>,"<fact1>Alexander Graham Bell</fact1> was an inventor and scientist known for his work on the telephone.  
+<fact1>Alexander Graham Bell</fact1> was also involved in the eugenics movement, advocating for the sterilization of individuals deemed ""unfit"" to propagate.  
+<fact3>Nazi eugenics</fact3> was a program that promoted the idea of racial purity and superiority, leading to horrific acts during World War II.  
+<fact1>Alexander Graham Bell's</fact1> involvement in eugenics suggests he might have shared some ideological similarities with <fact3>Nazi eugenics</fact3>, although he lived before the rise of the Nazi regime.  
+So the answer is {true}."
+110,<fact1>Was Harry Truman's presidency</fact1> <fact2>unaffected</fact2> <fact3>by the twenty-third Amendment</fact3> <fact4>to the US Constitution?</fact4>,"The <fact3>twenty-third Amendment</fact3> to the <fact4>US Constitution</fact4> was ratified in 1961. <fact1>Harry Truman's presidency</fact1> ended in 1953. Therefore, <fact1>Harry Truman's presidency</fact1> was <fact2>unaffected</fact2> by the <fact3>twenty-third Amendment</fact3> because it was ratified after his presidency had ended. 
+
+Final_Answer: {true}."
+111,"<fact1>Would the trees</fact1> <fact2>in Auburn, New York</fact2> <fact3>be changing colors</fact3> <fact4>in September?</fact4>","The <fact1>trees</fact1> in <fact2>Auburn, New York</fact2> are located in a region that experiences seasonal changes. In the northeastern United States, including <fact2>Auburn, New York</fact2>, the <fact1>trees</fact1> typically begin <fact3>changing colors</fact3> in the early fall. <fact4>September</fact4> is considered the beginning of the fall season, when many <fact1>trees</fact1> start to display autumn foliage. Therefore, it is likely that the <fact1>trees</fact1> in <fact2>Auburn, New York</fact2> would be <fact3>changing colors</fact3> in <fact4>September</fact4>. 
+
+Final_Answer: {true}."
+112,<fact1>Is Black Lives Matter</fact1> <fact2>connected with</fact2> <fact3>capsaicin?</fact3>,"The <fact1>Black Lives Matter</fact1> movement is a social movement advocating for racial equality and justice. <fact3>Capsaicin</fact3> is a compound found in chili peppers that is often used in pepper spray, which has been used by law enforcement during protests, including those organized by the <fact1>Black Lives Matter</fact1> movement. While <fact1>Black Lives Matter</fact1> is not directly <fact2>connected with</fact2> <fact3>capsaicin</fact3>, the compound has been relevant in the context of protests and law enforcement responses. 
+
+Final_Answer: {false}."
+113,<fact1>Was Achilles</fact1> <fact2>a direct descendent</fact2> <fact3>of Gaia?</fact3>,"<fact1>Achilles</fact1> is a character from Greek mythology.  
+<fact1>Achilles</fact1> is the son of Peleus and Thetis.  
+Thetis is a sea nymph and not a direct descendant of <fact3>Gaia</fact3>.  
+<fact3>Gaia</fact3> is a primordial deity in Greek mythology, representing the Earth.  
+While many Greek mythological figures can trace their lineage back to <fact3>Gaia</fact3>, <fact1>Achilles</fact1> is not directly descended from her.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+114,<fact1>Does Jerry Seinfeld</fact1> <fact2>hang out</fact2> <fact3>at the Budweiser Party Deck?</fact3>,"<fact1>Jerry Seinfeld</fact1> is a well-known comedian and actor, but there is no specific information or evidence to suggest that he <fact2>hangs out</fact2> <fact3>at the Budweiser Party Deck</fact3>. Without any direct references or public statements indicating his presence or frequent visits to the <fact3>Budweiser Party Deck</fact3>, it cannot be confirmed that he does so. 
+
+Final_Answer: {false}."
+115,<fact1>Can you</fact1> <fact2>hide a basketball</fact2> <fact3>in a sand cat's ear?</fact3>,"A <fact2>basketball</fact2> is a large object, typically around 9.5 inches in diameter. A <fact3>sand cat's ear</fact3> is very small, as sand cats are small wild cats adapted to desert environments. The size of a <fact2>basketball</fact2> is significantly larger than the size of a <fact3>sand cat's ear</fact3>. Therefore, it is physically impossible to <fact2>hide a basketball</fact2> in a <fact3>sand cat's ear</fact3>. 
+
+Final_Answer: {false}."
+116,<fact1>Could the Spice Girls</fact1> <fact2>compete against</fact2> <fact3>ŽRK Kumanovo?</fact3>,"<fact1>The Spice Girls</fact1> are a British pop girl group known for their music and performances.  
+<fact3>ŽRK Kumanovo</fact3> is a women's handball team based in Kumanovo, North Macedonia.  
+<fact1>The Spice Girls</fact1> are not athletes and do not participate in sports competitions.  
+<fact2>Competing against</fact2> <fact3>ŽRK Kumanovo</fact3> would require athletic skills and participation in a handball match.  
+Therefore, <fact1>The Spice Girls</fact1> would not be able to <fact2>compete against</fact2> <fact3>ŽRK Kumanovo</fact3> in a sports context.  
+Final_Answer: {false}."
+117,<fact1>Does the swastika</fact1> <fact2>have positive uses?</fact2>,"The <fact1>swastika</fact1> is an ancient symbol that has been used in various cultures around the world. In Hinduism, Buddhism, and Jainism, the <fact1>swastika</fact1> is a sacred symbol representing good fortune, prosperity, and auspiciousness. These are <fact2>positive uses</fact2> of the <fact1>swastika</fact1>. Despite its negative connotations in the Western world due to its association with the Nazi regime, the <fact1>swastika</fact1> continues to have <fact2>positive uses</fact2> in many cultural and religious contexts. 
+
+Final_Answer: {true}."
+118,<fact1>Was Black fly</fact1> <fact2>upstaged</fact2> <fact3>by another insect</fact3> <fact4>in Jeff Goldblum's 1986 film?</fact4>,"The 1986 film starring Jeff Goldblum is titled ""The Fly,"" which is about a scientist who transforms into a fly due to a teleportation experiment gone wrong. The film does not feature a <fact3>different insect</fact3> that <fact2>upstages</fact2> the <fact1>Black fly</fact1>. The focus remains on the transformation into a fly, and no other insect takes precedence in the storyline. Therefore, the <fact1>Black fly</fact1> was not <fact2>upstaged</fact2> by <fact3>another insect</fact3> in the film. 
+
+Final_Answer: {false}."
+119,<fact1>Did Linnaeus</fact1> <fact2>edit</fact2> <fact3>Darwin's draft</fact3> <fact4>of Origin of Species?</fact4>,"<fact1>Carl Linnaeus</fact1> was a Swedish botanist, physician, and zoologist who is known for formalizing the modern system of naming organisms called binomial nomenclature. <fact3>Charles Darwin's ""On the Origin of Species""</fact3> was published in 1859. <fact1>Linnaeus</fact1> died in 1778, which is well before <fact3>Darwin's draft</fact3> was written. Therefore, it would have been impossible for <fact1>Linnaeus</fact1> to <fact2>edit</fact2> <fact3>Darwin's draft</fact3> of <fact4>""Origin of Species""</fact4>. 
+
+Final_Answer: {false}."
+120,<fact1>Do</fact1> <fact2>all cancer patients</fact2> <fact3>get disability?</fact3>,"<fact2>Not all cancer patients</fact2> automatically qualify for <fact3>disability benefits</fact3>. Eligibility for <fact3>disability</fact3> depends on the severity of the condition and how it affects the individual's ability to work. The Social Security Administration evaluates each case individually to determine if a <fact2>cancer patient</fact2> meets the criteria for <fact3>disability</fact3>. Therefore, <fact1>not all</fact1> <fact2>cancer patients</fact2> receive <fact3>disability</fact3> benefits. 
+
+Final_Answer: {false}."
+121,<fact1>Did the death of Helen Palmer</fact1> <fact2>have a significant effect</fact2> <fact3>on Dr. Seuss?</fact3>,"<fact1>Helen Palmer</fact1> was the wife of <fact3>Dr. Seuss</fact3>, whose real name was Theodor Seuss Geisel. <fact1>Helen Palmer</fact1> passed away in 1967. Her death had a profound impact on <fact3>Dr. Seuss</fact3>, as they had been married for over 40 years. The loss of <fact1>Helen Palmer</fact1> deeply affected <fact3>Dr. Seuss</fact3>'s personal life and emotional well-being. 
+
+So the answer is {true}."
+122,<fact1>Can fish</fact1> <fact2>get Tonsillitis?</fact2>,"Fish do not have tonsils, which are lymphoid tissues found in the throat of mammals. Since <fact1>fish</fact1> lack tonsils, they cannot develop <fact2>tonsillitis</fact2>, which is an inflammation of the tonsils. Therefore, the condition of <fact2>tonsillitis</fact2> is not applicable to <fact1>fish</fact1>. 
+
+Final_Answer: {false}."
+123,<fact1>Would it be impossible</fact1> <fact2>to get to Burning Man</fact2> <fact3>on the Mayflower?</fact3>,"The <fact3>Mayflower</fact3> was a historic ship that transported the Pilgrims from England to the New World in 1620. The <fact3>Mayflower</fact3> no longer exists as a functioning vessel. <fact2>Burning Man</fact2> is an annual event held in the Black Rock Desert of Nevada. Given that the <fact3>Mayflower</fact3> is not operational and cannot be used for travel, it would indeed be <fact1>impossible</fact1> to get to <fact2>Burning Man</fact2> on the <fact3>Mayflower</fact3>. 
+
+Final_Answer: {true}."
+124,<fact1>Does Lupita Nyongo</fact1> <fact2>have citizenship</fact2> <fact3>in paternal Family</fact3> <fact4>of Barack Obama's origin country?</fact4>,"<fact1>Lupita Nyong'o</fact1> was born in Mexico City, Mexico, and is of Kenyan descent.  
+<fact2>She holds dual citizenship</fact2> in both Kenya and Mexico.  
+<fact4>Barack Obama's paternal family</fact4> is from Kenya.  
+Therefore, <fact1>Lupita Nyong'o</fact1> does <fact2>have citizenship</fact2> in the <fact4>country of Barack Obama's paternal family origin</fact4>.  
+Final_Answer: {true}."
+125,<fact1>Are there enough</fact1> <fact2>Johnny Cash records</fact2> <fact3>in the world</fact3> <fact4>to give one</fact4> <fact5>to each French citizen?</fact5>,"<fact2>Johnny Cash</fact2> was a prolific musician with a large discography, but the exact number of <fact2>Johnny Cash records</fact2> <fact3>in the world</fact3> is not precisely known. <fact5>Each French citizen</fact5> would require a significant number of records, as France has a population of approximately 67 million people. It is unlikely that there are enough <fact2>Johnny Cash records</fact2> <fact3>in the world</fact3> to provide <fact4>one</fact4> to <fact5>each French citizen</fact5>. 
+
+Final_Answer: {false}."
+126,<fact1>Could someone</fact1> <fact2>mistake the smell</fact2> <fact3>of your brussels sprouts</fact3> <fact4>for a fart?</fact4>,"The <fact2>smell</fact2> of <fact3>brussels sprouts</fact3> can be quite strong and distinctive. When cooked, <fact3>brussels sprouts</fact3> release sulfur compounds, which are similar to those found in <fact4>farts</fact4>. This similarity in odor can lead someone to <fact2>mistake the smell</fact2> of <fact3>brussels sprouts</fact3> for a <fact4>fart</fact4>. 
+
+Final_Answer: {true}."
+127,<fact1>Can Stone Cold Steve Austin</fact1> <fact2>apply his finisher</fact2> <fact3>to a mule deer?</fact3>,"<fact1>Stone Cold Steve Austin</fact1> is a professional wrestler known for his finishing move, the ""Stone Cold Stunner.""  
+<fact3>A mule deer</fact3> is a wild animal and not a human opponent in a wrestling match.  
+<fact2>Applying a wrestling finisher</fact2> like the ""Stone Cold Stunner"" is designed for human opponents in a controlled environment.  
+It is not practical or ethical to <fact2>apply a wrestling finisher</fact2> to <fact3>a mule deer</fact3>.  
+So the answer is {false}."
+128,<fact1>Is the Joker</fact1> <fact2>in a healthy</fact2> <fact3>romantic relationship?</fact3>,"The <fact1>Joker</fact1> is a fictional character known for his chaotic and villainous nature. In various portrayals, the <fact1>Joker</fact1> is often depicted as having a tumultuous and abusive relationship with Harley Quinn, which is not considered <fact2>healthy</fact2>. The <fact1>Joker's</fact1> behavior and actions are typically characterized by manipulation and violence, which are not conducive to a <fact2>healthy</fact2> <fact3>romantic relationship</fact3>. Therefore, based on the character's history and behavior, the <fact1>Joker</fact1> is not in a <fact2>healthy</fact2> <fact3>romantic relationship</fact3>. 
+
+Final_Answer: {false}."
+129,<fact1>Is the kayak</fact1> <fact2>a traditional boat</fact2> <fact3>in New Zealand?</fact3>,"The <fact1>kayak</fact1> is a type of boat traditionally used by the Inuit, Yupik, and Aleut peoples, primarily in the Arctic regions. It is not originally a <fact2>traditional boat</fact2> of the indigenous Maori people or other cultures native to <fact3>New Zealand</fact3>. In New Zealand, traditional boats include the waka, which are canoes used by the Maori. Therefore, the <fact1>kayak</fact1> is not considered a <fact2>traditional boat</fact2> in <fact3>New Zealand</fact3>. 
+
+Final_Answer: {false}."
+130,<fact1>Did Boris Yeltsin</fact1> <fact2>watch</fact2> <fact3>the 2008 Summer Olympics?</fact3>,"<fact1>Boris Yeltsin</fact1> was the first President of Russia, serving from 1991 to 1999.  
+<fact1>Boris Yeltsin</fact1> passed away in 2007.  
+The <fact3>2008 Summer Olympics</fact3> took place in Beijing, China.  
+Since <fact1>Boris Yeltsin</fact1> died before the <fact3>2008 Summer Olympics</fact3>, he could not have <fact2>watched</fact2> them.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+131,<fact1>Did the swallow</fact1> <fact2>play a role</fact2> <fact3>in a famous film</fact3> <fact4>about King Arthur?</fact4>,"The <fact1>swallow</fact1> is referenced in a comedic context in the film ""Monty Python and the Holy Grail,"" which is a <fact3>famous film</fact3> that humorously depicts the legend of <fact4>King Arthur</fact4>. In the film, there is a running joke about the airspeed velocity of an unladen <fact1>swallow</fact1>, which plays a significant comedic <fact2>role</fact2> in the movie. 
+
+Final_Answer: {true}."
+132,<fact1>Was Michael Crichton</fact1> <fact2>ever in danger</fact2> <fact3>of flunking out</fact3> <fact4>of Harvard</fact4> <fact5>as an undergraduate?</fact5>,"<fact1>Michael Crichton</fact1> was a well-known author and filmmaker, but he also attended <fact4>Harvard</fact4> as an undergraduate. During his time at <fact4>Harvard</fact4>, he faced academic challenges. <fact1>Michael Crichton</fact1> was known to have struggled with his grades and even changed his major from English to Biological Anthropology due to a conflict with a professor. This indicates that he was indeed <fact2>in danger</fact2> of <fact3>flunking out</fact3> of <fact4>Harvard</fact4> at some point during his undergraduate studies. 
+
+Final_Answer: {true}."
+133,<fact1>Was Surfing</fact1> <fact2>popular</fact2> <fact3>when pogs came out?</fact3>,"<fact1>Surfing</fact1> has been <fact2>popular</fact2> since the mid-20th century, especially in places like Hawaii and California.  
+<fact3>Pogs</fact3> became a popular game in the early 1990s.  
+During the 1990s, <fact1>surfing</fact1> continued to be a <fact2>popular</fact2> sport and cultural phenomenon.  
+So the answer is {true}.  
+
+Final_Answer: {true}."
+134,<fact1>Could a student</fact1> <fact2>at the University of Houston</fact2> <fact3>see a caracal</fact3> <fact4>on campus?</fact4>,"The <fact2>University of Houston</fact2> is located in an urban area in Houston, Texas. <fact3>Caracals</fact3> are wild cats native to Africa, the Middle East, Central Asia, and India, and are not typically found in urban environments or on university campuses in the United States. Therefore, it is unlikely that a <fact1>student</fact1> would <fact3>see a caracal</fact3> <fact4>on campus</fact4> at the <fact2>University of Houston</fact2>. 
+
+Final_Answer: {false}."
+135,<fact1>Did the Coen brothers</fact1> <fact2>ever collaborate</fact2> <fact3>with the Brothers Grimm?</fact3>,"The <fact1>Coen brothers</fact1> are American filmmakers known for their unique style and storytelling. The <fact3>Brothers Grimm</fact3>, on the other hand, were German authors and folklorists who lived in the 19th century, famous for collecting and publishing folklore and fairy tales. Given the historical timeline, the <fact1>Coen brothers</fact1> and the <fact3>Brothers Grimm</fact3> lived in entirely different eras, making it impossible for them to have <fact2>ever collaborated</fact2>. 
+
+Final_Answer: {false}."
+136,<fact1>Could</fact1> <fact2>a hundred thousand lolcats</fact2> <fact3>fit</fact3> <fact4>on a first generation iPhone?</fact4>,"The <fact4>first generation iPhone</fact4> was released in 2007 and had a storage capacity of up to 16GB. 
+
+A <fact2>lolcat</fact2> is typically an image with text, and the average size of a compressed image file can range from 50KB to 200KB. 
+
+If we assume an average size of 100KB per <fact2>lolcat</fact2>, then 100,000 <fact2>lolcats</fact2> would require approximately 10GB of storage space. 
+
+The <fact4>first generation iPhone</fact4> with 16GB of storage could potentially store 100,000 <fact2>lolcats</fact2> if the average size is around 100KB each. 
+
+So the answer is {true}."
+137,<fact1>Are monks</fact1> <fact2>forbidden</fact2> <fact3>from engaging</fact3> <fact4>in warfare?</fact4>,"<fact1>Monks</fact1> are often associated with religious orders that emphasize peace and non-violence.  
+Many religious traditions, such as Buddhism and Christianity, have teachings that <fact2>forbid</fact2> <fact3>engaging</fact3> in activities that involve harm or violence, including <fact4>warfare</fact4>.  
+Therefore, it is generally understood that <fact1>monks</fact1> are <fact2>forbidden</fact2> from participating in <fact4>warfare</fact4>.  
+Final_Answer: {true}."
+138,<fact1>Is</fact1> <fact2>the BBC World Service</fact2> <fact3>hosted</fact3> <fact4>in Europe?</fact4>,"The <fact2>BBC World Service</fact2> is an international broadcaster that is part of the British Broadcasting Corporation. The <fact2>BBC</fact2> is headquartered in London, which is located in the United Kingdom. The United Kingdom is a country in <fact4>Europe</fact4>. Therefore, the <fact2>BBC World Service</fact2> is <fact3>hosted</fact3> in <fact4>Europe</fact4>. 
+
+Final_Answer: {true}."
+139,<fact1>Would</fact1> <fact2>1996 leap year baby</fact2> <fact3>technically be</fact3> <fact4>1 year old</fact4> <fact5>in 2000?</fact5>,"A <fact2>1996 leap year baby</fact2> is born on February 29, 1996. Leap years occur every four years, so the next leap year after 1996 is <fact5>2000</fact5>. In non-leap years, February 29 does not exist, so a leap year baby would celebrate their birthday on March 1 in those years. By <fact5>2000</fact5>, the <fact2>1996 leap year baby</fact2> would have experienced four calendar years, making them <fact4>4 years old</fact4> in terms of actual years passed. Therefore, the <fact3>technical age</fact3> of the baby would not be <fact4>1 year old</fact4> in <fact5>2000</fact5>. 
+
+Final_Answer: {false}."
+140,<fact1>Did Clark Gable</fact1> <fact2>marry more women</fact2> <fact3>once</fact3> <fact4>than Richard Burton?</fact4>,"<fact1>Clark Gable</fact1> was married five times.  
+<fact4>Richard Burton</fact4> was married five times as well, but he married <fact2>Elizabeth Taylor</fact2> twice.  
+Therefore, <fact1>Clark Gable</fact1> did not <fact2>marry more women</fact2> <fact3>once</fact3> than <fact4>Richard Burton</fact4>.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+141,<fact1>Is one blast</fact1> <fact2>from double-barreled shotgun</fact2> <fact3>likely to kill</fact3> <fact4>all squid brains?</fact4>,"<fact1>One blast</fact1> from a <fact2>double-barreled shotgun</fact2> is a powerful discharge of pellets. However, <fact4>squid brains</fact4> are small and distributed throughout their bodies, making it difficult for <fact1>one blast</fact1> to effectively target and <fact3>kill all squid brains</fact3> simultaneously. Therefore, it is unlikely that <fact1>one blast</fact1> from a <fact2>double-barreled shotgun</fact2> would <fact3>kill all squid brains</fact3>. Final_Answer: {false}."
+142,<fact1>Do women</fact1> <fact2>often need</fact2> <fact3>new shoes</fact3> <fact4>during their pregnancy?</fact4>,"Pregnancy can cause changes in a woman's body, including swelling of the feet due to increased blood volume and fluid retention. This can lead to a need for <fact3>new shoes</fact3> as the feet may increase in size. Additionally, hormonal changes can cause ligaments to relax, potentially leading to a change in foot size or shape. Therefore, it is common for <fact1>women</fact1> to <fact2>often need</fact2> <fact3>new shoes</fact3> <fact4>during their pregnancy</fact4> to accommodate these changes. 
+
+Final_Answer: {true}."
+143,<fact1>Are some adherents</fact1> <fact2>to Christianity</fact2> <fact3>in China</fact3> <fact4>historic enemies</fact4> <fact5>of the Catholic Church?</fact5>,"<fact1>Some adherents</fact1> <fact2>to Christianity</fact2> <fact3>in China</fact3> may belong to Protestant denominations or other Christian groups that have historically had <fact4>conflicts</fact4> with the <fact5>Catholic Church</fact5>. These conflicts can be traced back to the Reformation and other historical events where Protestant groups opposed the Catholic Church. Therefore, it is possible that <fact1>some adherents</fact1> <fact2>to Christianity</fact2> <fact3>in China</fact3> could be considered <fact4>historic enemies</fact4> of the <fact5>Catholic Church</fact5>. 
+
+Final_Answer: {true}."
+144,<fact1>Is</fact1> <fact2>Chinese successor</fact2> <fact3>to Chevrolet Cruze</fact3> <fact4>name</fact4> <fact5>a town</fact5> <fact6>far from Milan?</fact6>,"The <fact2>Chinese successor</fact2> to the <fact3>Chevrolet Cruze</fact3> is called the <fact4>Chevrolet Monza</fact4>. The name <fact4>Monza</fact4> is derived from a <fact5>town</fact5> in Italy. The <fact5>town</fact5> of Monza is located near Milan, not <fact6>far from Milan</fact6>. Therefore, the <fact4>name</fact4> of the <fact2>Chinese successor</fact2> to the <fact3>Chevrolet Cruze</fact3> is not a <fact5>town</fact5> <fact6>far from Milan</fact6>. 
+
+Final_Answer: {false}."
+145,<fact1>Could the Dominican Order</fact1> <fact2>hypothetically defeat</fact2> <fact3>Blessed Gerard's order?</fact3>,"The <fact1>Dominican Order</fact1> is a Catholic religious order founded by Saint Dominic in the early 13th century. <fact3>Blessed Gerard's order</fact3> refers to the Order of Saint John, also known as the Knights Hospitaller, which was founded by Blessed Gerard in the 11th century. Both orders have historical significance and have been involved in various religious and military activities throughout history. However, the question of whether one order could <fact2>hypothetically defeat</fact2> the other is speculative and depends on numerous factors, such as the context of the conflict, the resources available to each order, and the time period in question. Without specific historical context or conditions, it is not possible to definitively determine the outcome of such a hypothetical scenario. Therefore, based on the information provided, the answer is not determinable. 
+
+Final_Answer: {false}."
+146,<fact1>Is a pottery kiln</fact1> <fact2>inappropriate for use</fact2> <fact3>with glass blowing?</fact3>,"A <fact1>pottery kiln</fact1> is designed specifically for firing ceramics and pottery, which involves different temperature ranges and heating methods compared to <fact3>glass blowing</fact3>. <fact3>Glass blowing</fact3> requires a furnace that can maintain a continuous high temperature suitable for melting glass, which is typically higher than the temperatures used in a <fact1>pottery kiln</fact1>. Therefore, a <fact1>pottery kiln</fact1> would be <fact2>inappropriate for use</fact2> with <fact3>glass blowing</fact3> due to these differences in temperature requirements and functionality. 
+
+Final_Answer: {true}."
+147,<fact1>Are there enough people</fact1> <fact2>in the Balkans</fact2> <fact3>to match</fact3> <fact4>the population of Japan?</fact4>,"The <fact4>population of Japan</fact4> is approximately 126 million people. The <fact2>Balkans</fact2> is a region in Southeast Europe that includes countries such as Albania, Bosnia and Herzegovina, Bulgaria, Croatia, Kosovo, Montenegro, North Macedonia, Romania, Serbia, and Slovenia. The combined <fact1>population of the Balkans</fact1> is significantly less than the <fact4>population of Japan</fact4>. Therefore, there are not enough people <fact1>in the Balkans</fact1> <fact3>to match</fact3> <fact4>the population of Japan</fact4>. 
+
+Final_Answer: {false}."
+148,<fact1>Could Steven Spielberg</fact1> <fact2>send emails</fact2> <fact3>as a child?</fact3>,"<fact1>Steven Spielberg</fact1> was born in 1946.  
+<fact2>Emails</fact2> were not invented until the 1970s.  
+Therefore, <fact1>Steven Spielberg</fact1> could not <fact2>send emails</fact2> <fact3>as a child</fact3>.  
+Final_Answer: {false}."
+149,<fact1>Was</fact1> <fact2>Charles Manson's body</fact2> <fact3>unwanted?</fact3>,"<fact2>Charles Manson's body</fact2> became a subject of legal disputes after his death in 2017. Multiple people, including his grandson, a pen pal, and a friend, claimed rights to <fact2>his body</fact2>. The legal battle over <fact2>Charles Manson's body</fact2> indicates that it was not <fact3>unwanted</fact3>, as there were several individuals who expressed interest in claiming it. 
+
+Final_Answer: {false}."
+150,<fact1>Would a Beaver's teeth</fact1> <fact2>rival</fact2> <fact3>that of a Smilodon?</fact3>,"<fact1>Beaver's teeth</fact1> are known for their ability to continuously grow and self-sharpen, allowing them to gnaw through wood effectively.  
+<fact3>Smilodon</fact3>, commonly known as the saber-toothed tiger, had long, curved canine teeth that were adapted for hunting and killing prey.  
+The size and function of <fact3>Smilodon's teeth</fact3> were significantly different from those of a <fact1>beaver</fact1>.  
+<fact2>Rival</fact2> implies a comparison in terms of size, strength, or function.  
+Given the distinct differences in purpose and structure, <fact1>beaver's teeth</fact1> do not <fact2>rival</fact2> the size or function of <fact3>Smilodon's teeth</fact3>.  
+Final_Answer: {false}."
+151,<fact1>Is dysphoria</fact1> <fact2>around one's pelvis</fact2> <fact3>treatable</fact3> <fact4>without surgery?</fact4>,"<fact1>Dysphoria</fact1> is a state of unease or dissatisfaction, often related to one's body or identity. <fact2>Dysphoria around one's pelvis</fact2> can be associated with gender dysphoria or body image issues. <fact3>Treatment</fact3> for such dysphoria can include therapy, hormone treatments, or other non-surgical interventions. Therefore, <fact3>dysphoria</fact3> <fact4>can be treated without surgery</fact4> through various methods. 
+
+Final_Answer: {true}."
+152,<fact1>Would members of Blue Lives Matter</fact1> <fact2>support every element</fact2> <fact3>of Grand Theft Auto III?</fact3>,"<fact1>Members of Blue Lives Matter</fact1> are known to support law enforcement and advocate for the protection of police officers.  
+<fact3>Grand Theft Auto III</fact3> is a video game that includes elements of crime, violence, and actions against law enforcement.  
+<fact2>Supporting every element</fact2> of <fact3>Grand Theft Auto III</fact3> would mean endorsing actions that are contrary to the values of <fact1>Blue Lives Matter</fact1>.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+153,<fact1>Can</fact1> <fact2>the Dalai Lama</fact2> <fact3>fit</fact3> <fact4>in a car?</fact4>,"<fact2>The Dalai Lama</fact2> is a human being.  
+<fact3>Humans can generally fit</fact3> <fact4>in a car</fact4>.  
+Therefore, <fact2>the Dalai Lama</fact2> can <fact3>fit</fact3> <fact4>in a car</fact4>.  
+Final_Answer: {true}."
+154,<fact1>Can actress Dafne Keen</fact1> <fact2>win the Eurovision Song Contest finals</fact2> <fact3>in 2020?</fact3>,"<fact1>Dafne Keen</fact1> is an actress known for her roles in films and television.  
+The <fact2>Eurovision Song Contest</fact2> is a music competition, not an acting competition.  
+Participants in the <fact2>Eurovision Song Contest</fact2> are typically singers or musical groups representing their countries.  
+<fact1>Dafne Keen</fact1> is not known for being a singer or participating in the <fact2>Eurovision Song Contest</fact2>.  
+Therefore, <fact1>Dafne Keen</fact1> could not <fact2>win the Eurovision Song Contest finals</fact2> <fact3>in 2020</fact3>.  
+Final_Answer: {false}."
+155,<fact1>Does United Airlines</fact1> <fact2>have a perfect operation record?</fact2>,"<fact1>United Airlines</fact1> is a major American airline that operates numerous flights daily.  
+It is highly unlikely for any airline, including <fact1>United Airlines</fact1>, to maintain <fact2>a perfect operation record</fact2> due to the complexity and scale of airline operations.  
+Airlines often face challenges such as weather disruptions, technical issues, and other unforeseen circumstances that can affect their operations.  
+Therefore, it is improbable that <fact1>United Airlines</fact1> has <fact2>a perfect operation record</fact2>.  
+Final_Answer: {false}."
+156,<fact1>Can</fact1> <fact2>United States Secretary of State</fact2> <fact3>do crimes</fact3> <fact4>in U.K.</fact4> <fact5>without being arrested?</fact5>,"The <fact2>United States Secretary of State</fact2> is a high-ranking government official. Diplomatic immunity is a principle of international law that provides foreign diplomats with protection from legal action in the host country. However, <fact3>committing crimes</fact3> does not automatically grant immunity from all legal consequences. The <fact4>U.K.</fact4> can declare a diplomat persona non grata and expel them. Therefore, while the <fact2>United States Secretary of State</fact2> may have some protections, they cannot <fact3>do crimes</fact3> in the <fact4>U.K.</fact4> <fact5>without being arrested</fact5> if diplomatic immunity is waived or they are expelled. 
+
+Final_Answer: {false}."
+157,<fact1>Is</fact1> <fact2>myocardial infarction</fact2> <fact3>a brain problem</fact3>?,"<fact2>Myocardial infarction</fact2> is commonly known as a heart attack.  
+<fact2>Myocardial infarction</fact2> occurs when blood flow to the heart is blocked.  
+<fact3>A brain problem</fact3> would involve issues related to the brain, not the heart.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+158,<fact1>Will Chick Fil A</fact1> <fact2>be open</fact2> <fact3>on Halloween</fact3> <fact4>2021?</fact4>,"<fact1>Chick Fil A</fact1> is a fast-food restaurant chain known for being closed on Sundays. However, <fact2>Chick Fil A</fact2> is typically open on most holidays, including <fact3>Halloween</fact3>. <fact4>In 2021</fact4>, Halloween fell on a Sunday, which is the day <fact1>Chick Fil A</fact1> is regularly closed. Therefore, <fact1>Chick Fil A</fact1> would not <fact2>be open</fact2> on <fact3>Halloween</fact3> <fact4>2021</fact4>. 
+
+Final_Answer: {false}."
+159,<fact1>Was</fact1> <fact2>Godfrey of Bouillon</fact2> <fact3>an Islamaphobe?</fact3>,"<fact2>Godfrey of Bouillon</fact2> was a leader of the First Crusade, which was a military expedition by Western Christianity to reclaim Jerusalem and other holy lands from Muslim control. The Crusades were marked by religious conflict between Christians and Muslims. <fact1>Godfrey</fact1> played a significant role in these events, which were driven by religious motivations and often involved hostility towards Muslims. Given the context of the Crusades and <fact2>Godfrey's</fact2> involvement, it is reasonable to consider that he held views that could be characterized as <fact3>Islamophobic</fact3> by today's standards. 
+
+Final_Answer: {true}."
+160,<fact1>Is an espresso</fact1> <fact2>likely</fact2> <fact3>to assuage fear?</fact3>,"<fact1>An espresso</fact1> is a type of coffee known for its high caffeine content. Caffeine is a stimulant that can increase alertness and energy levels. However, it is not typically associated with reducing anxiety or fear. In fact, caffeine can sometimes exacerbate feelings of anxiety or nervousness. Therefore, <fact1>an espresso</fact1> is not <fact2>likely</fact2> <fact3>to assuage fear</fact3>. 
+
+Final_Answer: {false}."
+161,<fact1>If you add water</fact1> <fact2>to rice pudding</fact2> <fact3>is it horchata?</fact3>,"<fact1>Horchata</fact1> is a traditional beverage made from ground rice, nuts, or seeds, and is typically sweetened and flavored with cinnamon or vanilla. <fact2>Rice pudding</fact2> is a dessert made from rice mixed with water or milk and other ingredients such as sugar and spices. <fact1>Adding water</fact1> to <fact2>rice pudding</fact2> does not transform it into <fact1>horchata</fact1>, as the preparation and ingredients differ significantly. Therefore, <fact3>adding water to rice pudding</fact3> does not make it <fact1>horchata</fact1>. 
+
+Final_Answer: {false}."
+162,<fact1>Did</fact1> <fact2>Bill Gates</fact2> <fact3>achieve</fact3> <fact4>Latin honors</fact4>?,"<fact2>Bill Gates</fact2> is a well-known entrepreneur and co-founder of Microsoft. He attended Harvard University but did not complete his degree. <fact3>Achieving</fact3> <fact4>Latin honors</fact4> typically requires completing a degree program with a high academic standing. Since <fact2>Bill Gates</fact2> did not graduate from Harvard, he did not receive <fact4>Latin honors</fact4>. 
+
+Final_Answer: {false}."
+163,<fact1>Was</fact1> <fact2>Superhero fiction</fact2> <fact3>invented</fact3> <fact4>in the digital format?</fact4>,"<fact2>Superhero fiction</fact2> is a genre that features characters with extraordinary abilities or powers. <fact3>Superhero fiction</fact3> was not <fact3>invented</fact3> in the <fact4>digital format</fact4>. It originated in comic books, which are a print medium. The first widely recognized superhero, Superman, debuted in Action Comics #1 in 1938, long before the advent of digital formats. Therefore, <fact2>superhero fiction</fact2> was <fact3>invented</fact3> in print, not in the <fact4>digital format</fact4>. 
+
+Final_Answer: {false}."
+164,<fact1>Are any animals</fact1> <fact2>in Chinese calendar</fact2> <fact3>Chordata?</fact3>,"The <fact2>Chinese calendar</fact2> includes a cycle of 12 animals, each representing a year. These animals are the rat, ox, tiger, rabbit, dragon, snake, horse, goat, monkey, rooster, dog, and pig. The <fact3>Chordata</fact3> is a phylum that includes animals with a notochord, such as vertebrates. Many of the animals in the <fact2>Chinese calendar</fact2>, such as the rat, ox, tiger, rabbit, horse, goat, monkey, rooster, dog, and pig, are vertebrates and therefore belong to the phylum <fact3>Chordata</fact3>. 
+
+So the answer is {true}."
+165,<fact1>Was Daniel</fact1> <fact2>thrown into the lion's den</fact2> <fact3>in the New Testament?</fact3>,"<fact1>Daniel</fact1> is a biblical figure known for being <fact2>thrown into the lion's den</fact2>. This event is recorded in the Book of Daniel, which is part of the Old Testament, not the <fact3>New Testament</fact3>. Therefore, the event of <fact1>Daniel</fact1> being <fact2>thrown into the lion's den</fact2> does not occur in the <fact3>New Testament</fact3>. 
+
+Final_Answer: {false}."
+166,<fact1>Will a 2020 elephant pregnancy</fact1> <fact2>last past next year</fact2> <fact3>with 4 solar eclipses?</fact3>,"An <fact1>elephant pregnancy</fact1> typically lasts about 22 months. A <fact1>pregnancy</fact1> starting in 2020 would likely extend into 2021. There were <fact3>4 solar eclipses</fact3> in 2020. Since the <fact1>pregnancy</fact1> would last into the next year, it would indeed <fact2>last past next year</fact2> with <fact3>4 solar eclipses</fact3> occurring in 2020. 
+
+Final_Answer: {true}."
+167,<fact1>Does the word swastika</fact1> <fact2>have meaning</fact2> <fact3>in Sanskrit?</fact3>,"The <fact1>word swastika</fact1> is derived from the ancient language of <fact3>Sanskrit</fact3>. In <fact3>Sanskrit</fact3>, the <fact1>word swastika</fact1> is composed of ""su,"" meaning ""good,"" and ""asti,"" meaning ""to be,"" which together <fact2>have the meaning</fact2> of ""well-being"" or ""good fortune."" Therefore, the <fact1>word swastika</fact1> does indeed <fact2>have meaning</fact2> in <fact3>Sanskrit</fact3>. 
+
+So the answer is {true}."
+168,<fact1>Did Sony</fact1> <fact2>definitively win</fact2> <fact3>the video game war</fact3> <fact4>against Sega?</fact4>,"<fact1>Sony</fact1> and <fact4>Sega</fact4> were major competitors in the <fact3>video game war</fact3> during the 1990s. <fact1>Sony's</fact1> PlayStation, released in 1994, became highly successful and outsold <fact4>Sega's</fact4> Saturn console. <fact4>Sega</fact4> eventually exited the console market after the failure of the Dreamcast, while <fact1>Sony</fact1> continued to dominate with subsequent PlayStation models. This indicates that <fact1>Sony</fact1> effectively won the <fact3>video game war</fact3> against <fact4>Sega</fact4>. 
+
+Final_Answer: {true}."
+169,<fact1>Would</fact1> <fact2>an ethics professor</fact2> <fact3>teach a class</fact3> <fact4>on Cezanne?</fact4>,"<fact2>An ethics professor</fact2> typically focuses on teaching subjects related to moral philosophy, ethical theories, and the application of ethics in various fields. <fact4>Cezanne</fact4> is a renowned post-impressionist painter known for his contributions to the art world. While <fact4>Cezanne</fact4>'s work may be discussed in the context of art history or aesthetics, it is not directly related to the primary focus of <fact2>an ethics professor</fact2>. Therefore, it is unlikely that <fact2>an ethics professor</fact2> would <fact3>teach a class</fact3> specifically on <fact4>Cezanne</fact4> unless it is in the context of discussing ethical issues in art. 
+
+Final_Answer: {false}."
+170,<fact1>Can a dolphin</fact1> <fact2>keep a diary?</fact2>,"<fact1>Dolphins</fact1> are intelligent marine mammals known for their cognitive abilities. However, <fact2>keeping a diary</fact2> involves writing or recording thoughts in a structured format, which requires the ability to write or use a tool for recording. Dolphins do not have the physical capability to write or use tools in a way that would allow them to <fact2>keep a diary</fact2>. Therefore, while dolphins are intelligent, they cannot perform the specific task of <fact2>keeping a diary</fact2>. 
+
+Final_Answer: {false}."
+171,<fact1>Would Columbus</fact1> <fact2>have discovered</fact2> <fact3>Durian trees</fact3> <fact4>during his 1492 expedition?</fact4>,"<fact1>Columbus</fact1> embarked on his first voyage in <fact4>1492</fact4> with the aim of finding a new route to Asia. <fact3>Durian trees</fact3> are native to Southeast Asia, particularly in countries like Malaysia, Indonesia, and Thailand. During his <fact4>1492 expedition</fact4>, <fact1>Columbus</fact1> traveled to the Caribbean, which is far from the native regions of <fact3>Durian trees</fact3>. Therefore, it is unlikely that <fact1>Columbus</fact1> would <fact2>have discovered</fact2> <fact3>Durian trees</fact3> during this expedition. 
+
+Final_Answer: {false}."
+172,<fact1>Can you</fact1> <fact2>carry</fact2> <fact3>a Chrysler</fact3> <fact4>in a laptop bag?</fact4>,"<fact3>A Chrysler</fact3> is a type of automobile, which is a large and heavy object. <fact4>A laptop bag</fact4> is designed to carry small, lightweight items such as laptops and accessories. <fact2>Carrying</fact2> an automobile like <fact3>a Chrysler</fact3> in <fact4>a laptop bag</fact4> is not feasible due to the size and weight differences. Therefore, <fact1>you</fact1> cannot <fact2>carry</fact2> <fact3>a Chrysler</fact3> in <fact4>a laptop bag</fact4>. 
+
+Final_Answer: {false}."
+173,<fact1>Has</fact1> <fact2>every astronaut</fact2> <fact3>survived</fact3> <fact4>their space journey?</fact4>,"<fact2>Astronauts</fact2> have been involved in various space missions since the 1960s.  
+There have been incidents where <fact2>astronauts</fact2> did not <fact3>survive</fact3> their missions, such as the Challenger and Columbia disasters.  
+Therefore, not <fact2>every astronaut</fact2> has <fact3>survived</fact3> <fact4>their space journey</fact4>.  
+Final_Answer: {false}."
+174,<fact1>Do members of the Supreme Court of the United States</fact1> <fact2>have longer terms</fact2> <fact3>than most senators?</fact3>,"<fact1>Members of the Supreme Court of the United States</fact1> are appointed for life terms, meaning they serve until they choose to retire, pass away, or are impeached and removed. <fact3>Most senators</fact3> in the United States serve six-year terms, with the possibility of being re-elected for additional terms. Therefore, <fact1>members of the Supreme Court of the United States</fact1> generally <fact2>have longer terms</fact2> than <fact3>most senators</fact3> due to their lifetime appointments. 
+
+Final_Answer: {true}."
+175,<fact1>Would Dante</fact1> <fact2>have hypothetically placed</fact2> <fact3>Nostradamus</fact3> <fact4>in 3rd Circle of Hell?</fact4>,"<fact1>Dante</fact1> is the author of ""The Divine Comedy,"" which describes the nine circles of Hell.  
+<fact4>The 3rd Circle of Hell</fact4> in Dante's ""Inferno"" is reserved for the sin of gluttony.  
+<fact3>Nostradamus</fact3> was a French astrologer and seer known for his prophecies.  
+There is no historical evidence or suggestion that <fact3>Nostradamus</fact3> was known for gluttony, which would be required for <fact1>Dante</fact1> to place him in the <fact4>3rd Circle of Hell</fact4>.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+176,<fact1>Was</fact1> <fact2>Mercedes-Benz</fact2> <fact3>associated</fact3> <fact4>with the Nazis?</fact4>,"<fact2>Mercedes-Benz</fact2> was a prominent German company during the time of the Nazi regime. During World War II, <fact2>Mercedes-Benz</fact2> was involved in the production of military vehicles and equipment for the German army. Additionally, the company used forced labor from concentration camps, which were part of the Nazi system. This historical involvement indicates that <fact2>Mercedes-Benz</fact2> was indeed <fact3>associated</fact3> <fact4>with the Nazis</fact4>. 
+
+Final_Answer: {true}."
+177,<fact1>Is Disneyland Paris</fact1> <fact2>the largest</fact2> <fact3>Disney resort?</fact3>,"<fact1>Disneyland Paris</fact1> is a popular <fact3>Disney resort</fact3> located in France. However, <fact2>the largest</fact2> <fact3>Disney resort</fact3> in the world is Walt Disney World Resort in Florida, USA. Walt Disney World Resort covers approximately 25,000 acres, making it significantly larger than <fact1>Disneyland Paris</fact1>, which covers about 4,800 acres. Therefore, <fact1>Disneyland Paris</fact1> is not <fact2>the largest</fact2> <fact3>Disney resort</fact3>. 
+
+Final_Answer: {false}."
+178,<fact1>Would a Rockette</fact1> <fact2>look odd</fact2> <fact3>with a moustache?</fact3>,"<fact1>A Rockette</fact1> is a member of a precision dance company known for their uniform appearance and synchronized performances. <fact2>Looking odd</fact2> would be contrary to the traditional image and expectations of <fact1>a Rockette</fact1>. <fact3>A moustache</fact3> is typically not part of the standard appearance for <fact1>Rockettes</fact1>, who are known for their clean and polished look. Therefore, <fact1>a Rockette</fact1> with <fact3>a moustache</fact3> would likely <fact2>look odd</fact2> compared to the usual presentation. 
+
+Final_Answer: {true}."
+179,<fact1>Can a sea turtle</fact1> <fact2>play tennis</fact2> <fact3>using a tennis racket?</fact3>,"<fact1>Sea turtles</fact1> are marine animals with flippers adapted for swimming, not for holding or manipulating objects like a <fact3>tennis racket</fact3>. <fact2>Playing tennis</fact2> requires the ability to grip and swing a racket, which is not possible for a <fact1>sea turtle</fact1> due to its anatomy. Therefore, a <fact1>sea turtle</fact1> cannot <fact2>play tennis</fact2> <fact3>using a tennis racket</fact3>. 
+
+Final_Answer: {false}."
+180,<fact1>Did Donald Trump</fact1> <fact2>come up with</fact2> <fact3>the idea</fact3> <fact4>for the New York Harbor?</fact4>,"<fact1>Donald Trump</fact1> is a former President of the United States and a businessman.  
+The <fact4>New York Harbor</fact4> is a natural harbor located at the mouth of the Hudson River in New York City.  
+The <fact4>New York Harbor</fact4> has been a significant geographical feature long before <fact1>Donald Trump</fact1> was born.  
+<fact2>Coming up with</fact2> the <fact3>idea</fact3> for a natural harbor is not possible as it is a naturally occurring feature.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+181,<fact1>Would it</fact1> <fact2>be unusual</fact2> <fact3>to use PayPal</fact3> <fact4>for drug deals?</fact4>,"Using <fact3>PayPal</fact3> for <fact4>drug deals</fact4> would <fact2>be unusual</fact2> because <fact3>PayPal</fact3> is a digital payment platform that monitors transactions for illegal activities, including <fact4>drug deals</fact4>. Additionally, <fact3>PayPal</fact3> transactions are traceable, which is not ideal for <fact4>drug deals</fact4> that typically require anonymity. Therefore, it would <fact2>be unusual</fact2> to use <fact3>PayPal</fact3> for such purposes. 
+
+Final_Answer: {true}."
+182,<fact1>Is it</fact1> <fact2>safe</fact2> <fact3>to eat</fact3> <fact4>kidney?</fact4>,"<fact4>Kidney</fact4> is an organ meat that is commonly consumed in various cuisines around the world. <fact3>Eating</fact3> organ meats, including <fact4>kidney</fact4>, can be <fact2>safe</fact2> when they are properly prepared and cooked. <fact1>It</fact1> is important to ensure that the <fact4>kidney</fact4> is fresh and sourced from healthy animals to minimize any health risks. Therefore, <fact1>it</fact1> is generally considered <fact2>safe</fact2> to <fact3>eat</fact3> <fact4>kidney</fact4> when these precautions are taken. 
+
+Final_Answer: {true}."
+183,<fact1>Do shrimp</fact1> <fact2>taste best</fact2> <fact3>when cooked</fact3> <fact4>for a long time?</fact4>,"<fact1>Shrimp</fact1> are delicate seafood that can become tough and rubbery if <fact3>cooked</fact3> <fact4>for a long time</fact4>. 
+
+<fact2>The best taste</fact2> of <fact1>shrimp</fact1> is achieved when they are <fact3>cooked</fact3> for a short period, just until they turn pink and opaque. 
+
+Therefore, <fact2>shrimp do not taste best</fact2> when <fact3>cooked</fact3> <fact4>for a long time</fact4>.
+
+Final_Answer: {false}."
+184,"<fact1>Hypothetically</fact1>, <fact2>will an African elephant</fact2> <fact3>be crushed</fact3> <fact4>by Hulk</fact4> <fact5>on its back?</fact5>","The <fact2>African elephant</fact2> is one of the largest land animals, weighing up to 14,000 pounds. The <fact4>Hulk</fact4> is a fictional character known for his immense strength and size, often depicted as being able to lift and crush extremely heavy objects. Given the <fact4>Hulk's</fact4> fictional strength, it is plausible that he could <fact3>crush</fact3> an <fact2>African elephant</fact2> if he were to apply his full strength <fact5>on its back</fact5>. Therefore, the hypothetical scenario suggests that the <fact2>African elephant</fact2> could indeed <fact3>be crushed</fact3> by the <fact4>Hulk</fact4>. 
+
+Final_Answer: {true}."
+185,<fact1>Does Rupert Murdoch's alma mater</fact1> <fact2>have more history</fact2> <fact3>than the USA?</fact3>,"<fact1>Rupert Murdoch's alma mater</fact1> is the University of Oxford, which was founded in 1096.  
+The <fact2>history</fact2> of the University of Oxford dates back to the 12th century.  
+The <fact3>USA</fact3> declared independence in 1776.  
+The University of Oxford has <fact2>more history</fact2> than the <fact3>USA</fact3> as it was established several centuries earlier.  
+Final_Answer: {true}."
+186,<fact1>Is Saturn</fact1> <fact2>named after</fact2> <fact3>king of gods</fact3> <fact4>in Greek mythology?</fact4>,"The planet <fact1>Saturn</fact1> is <fact2>named after</fact2> a deity from Roman mythology, not Greek mythology. In Roman mythology, Saturn is the god of agriculture and time. The <fact3>king of gods</fact3> in Greek mythology is Zeus, who is equivalent to the Roman god Jupiter, not Saturn. Therefore, <fact1>Saturn</fact1> is not <fact2>named after</fact2> the <fact3>king of gods</fact3> <fact4>in Greek mythology</fact4>. 
+
+Final_Answer: {false}."
+187,<fact1>Does</fact1> <fact2>American Independence Day</fact2> <fact3>occur</fact3> <fact4>during autumn</fact4>?,"<fact2>American Independence Day</fact2> is celebrated on July 4th each year.  
+<fact3>July 4th</fact3> falls in the summer season in the United States.  
+<fact4>Autumn</fact4> in the United States typically begins in late September.  
+Therefore, <fact2>American Independence Day</fact2> does not <fact3>occur</fact3> <fact4>during autumn</fact4>.  
+Final_Answer: {false}."
+188,"<fact1>Is Albany, Georgia</fact1> <fact2>the most populous</fact2> <fact3>US Albany?</fact3>","To determine if <fact1>Albany, Georgia</fact1> is <fact2>the most populous</fact2> <fact3>US Albany</fact3>, we need to compare its population with other cities named Albany in the United States. The most populous Albany in the US is Albany, New York, which has a significantly larger population than Albany, Georgia. Therefore, <fact1>Albany, Georgia</fact1> is not <fact2>the most populous</fact2> <fact3>US Albany</fact3>. 
+
+Final_Answer: {false}."
+189,<fact1>Are</fact1> <fact2>the founders</fact2> <fact3>of Skype</fact3> <fact4>from Asia?</fact4>,"The <fact2>founders</fact2> of <fact3>Skype</fact3> are Niklas Zennström and Janus Friis. Niklas Zennström is from Sweden, and Janus Friis is from Denmark. Both Sweden and Denmark are in Europe, not <fact4>Asia</fact4>. Therefore, the <fact2>founders</fact2> of <fact3>Skype</fact3> are not <fact4>from Asia</fact4>. 
+
+Final_Answer: {false}."
+190,<fact1>Are all Wednesdays</fact1> <fact2>in a year</fact2> <fact3>enough</fact3> <fact4>to read Bible</fact4> <fact5>15 times?</fact5>,"To determine if <fact1>all Wednesdays</fact1> <fact2>in a year</fact2> are <fact3>enough</fact3> <fact4>to read the Bible</fact4> <fact5>15 times</fact5>, we need to consider the number of Wednesdays in a year and the time it takes to read the Bible once.
+
+There are typically 52 weeks in a year, which means there are 52 Wednesdays. 
+
+The average time to read the entire Bible is approximately 70 hours. If we assume a person reads the Bible only on Wednesdays, they would need to read for about 1.35 hours each Wednesday to complete it once in a year.
+
+To read the Bible <fact5>15 times</fact5> in a year, a person would need to read it 15 times 70 hours, which equals 1,050 hours. 
+
+Dividing 1,050 hours by 52 Wednesdays gives approximately 20.19 hours per Wednesday. 
+
+Since it is not feasible to read for over 20 hours in a single day, <fact1>all Wednesdays</fact1> <fact2>in a year</fact2> are not <fact3>enough</fact3> <fact4>to read the Bible</fact4> <fact5>15 times</fact5>.
+
+Final_Answer: {false}."
+191,<fact1>Did the butler Eugene Allen</fact1> <fact2>retire</fact2> <fact3>the same year</fact3> <fact4>a centuries-old war ended?</fact4>,"<fact1>Eugene Allen</fact1> was a butler at the White House who <fact2>retired</fact2> in 1986.  
+The <fact4>centuries-old war</fact4> referred to is likely the Cold War, which ended in 1991.  
+Since <fact1>Eugene Allen</fact1> <fact2>retired</fact2> in 1986 and the <fact4>Cold War ended</fact4> in 1991, they did not occur in <fact3>the same year</fact3>.  
+Final_Answer: {false}."
+192,<fact1>Did the writer of Christmas Carol</fact1> <fact2>fast</fact2> <fact3>during Ramadan?</fact3>,"<fact1>The writer of Christmas Carol</fact1> is Charles Dickens.  
+There is no historical evidence or record that <fact1>Charles Dickens</fact1> <fact2>fasted</fact2> <fact3>during Ramadan</fact3>.  
+<fact1>Charles Dickens</fact1> was a Christian and lived in 19th-century England, where <fact3>Ramadan</fact3> was not widely observed.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+193,<fact1>Is entire Common Era</fact1> <fact2>minuscule</fact2> <fact3>to lifespan</fact3> <fact4>of some trees?</fact4>,"The <fact1>Common Era</fact1> began approximately 2,000 years ago. Some trees, such as the Great Basin Bristlecone Pine, have been known to live for over 4,800 years. Therefore, the <fact3>lifespan</fact3> of some trees is indeed longer than the <fact1>entire Common Era</fact1>. This makes the <fact1>Common Era</fact1> appear <fact2>minuscule</fact2> in comparison to the <fact3>lifespan</fact3> of these trees. 
+
+Final_Answer: {true}."
+194,<fact1>Is Tange Sazen</fact1> <fact2>hypothetically an ideal choice</fact2> <fact3>for a secretary job?</fact3>,"<fact1>Tange Sazen</fact1> is a fictional character from Japanese literature and film, known for being a one-eyed, one-armed samurai. <fact2>Hypothetically, an ideal choice</fact2> for a <fact3>secretary job</fact3> would require skills such as organization, communication, and administrative abilities. <fact1>Tange Sazen</fact1> is not depicted with these skills in the stories. Therefore, <fact1>Tange Sazen</fact1> would not be <fact2>hypothetically an ideal choice</fact2> for a <fact3>secretary job</fact3>. 
+
+Final_Answer: {false}."
+195,<fact1>Are Brussels sprouts</fact1> <fact2>particularly good</fact2> <fact3>for adrenal fatigue?</fact3>,"<fact1>Brussels sprouts</fact1> are a type of cruciferous vegetable known for their nutritional benefits.  
+<fact3>Adrenal fatigue</fact3> is a term used in alternative medicine to describe a condition purportedly caused by chronic stress leading to insufficient production of hormones by the adrenal glands.  
+There is no scientific evidence supporting the existence of <fact3>adrenal fatigue</fact3> as a medical condition, nor is there specific evidence that <fact1>Brussels sprouts</fact1> are <fact2>particularly good</fact2> for treating it.  
+While <fact1>Brussels sprouts</fact1> are nutritious and can be part of a healthy diet, they are not specifically known to address <fact3>adrenal fatigue</fact3>.  
+So the answer is {false}.  
+
+Final_Answer: {false}."
+196,<fact1>Does</fact1> <fact2>Adam Sandler</fact2> <fact3>skip</fact3> <fact4>celebrating</fact4> <fact5>Easter?</fact5>,"<fact2>Adam Sandler</fact2> is of Jewish descent and practices Judaism.  
+<fact5>Easter</fact5> is a Christian holiday celebrating the resurrection of Jesus Christ.  
+<fact2>Adam Sandler</fact2> typically celebrates Jewish holidays, such as Hanukkah, rather than Christian holidays like <fact5>Easter</fact5>.  
+So the answer is {true}.  
+
+Final_Answer: {true}."
+197,<fact1>Does March</fact1> <fact2>begin on the same day of the week</fact2> <fact3>as February</fact3> <fact4>during leap years?</fact4>,"In a <fact4>leap year</fact4>, <fact3>February</fact3> has 29 days. This means that <fact1>March</fact1> will start on the day of the week immediately following the day on which <fact3>February</fact3> ends. Therefore, <fact1>March</fact1> does not <fact2>begin on the same day of the week</fact2> as <fact3>February</fact3> during <fact4>leap years</fact4>. 
+
+Final_Answer: {false}."
+198,<fact1>Is Shiva's divine dance</fact1> <fact2>an ancient physical fitness pose?</fact2>,"The <fact1>Shiva's divine dance</fact1>, known as the ""Tandava,"" is a symbolic dance representing the cosmic cycles of creation and destruction, as well as the daily rhythm of birth and death. It is a spiritual and religious expression in Hinduism, rather than a <fact2>physical fitness pose</fact2>. The dance is deeply rooted in mythology and spirituality, not in physical fitness or exercise routines. 
+
+Final_Answer: {false}."
+199,<fact1>Was</fact1> <fact2>Land of Israel</fact2> <fact3>in possession</fact3> <fact4>of an Islamic empire</fact4> <fact5>in 16th century?</fact5>,"The <fact2>Land of Israel</fact2> was part of the Ottoman Empire, which was an <fact4>Islamic empire</fact4>, during the <fact5>16th century</fact5>. The Ottoman Empire controlled the region from 1517 until the early 20th century. Therefore, the <fact2>Land of Israel</fact2> was indeed <fact3>in possession</fact3> of an <fact4>Islamic empire</fact4> during the <fact5>16th century</fact5>. 
+
+Final_Answer: {true}."
