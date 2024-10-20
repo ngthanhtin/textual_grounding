@@ -1,7 +1,9 @@
+import yaml
 import os, re
 import random, json, argparse
 from tqdm import tqdm
 import pandas as pd
+import re
 
 from utils.keys import API_KEYS
 from utils.utils import read_jsonl_file, extract_last_sentence
@@ -13,61 +15,18 @@ from google.api_core import retry
 # claude
 import anthropic
 # llama
-# from transformers import (AutoModelForCausalLM, 
-#                           AutoTokenizer, 
-#                           BitsAndBytesConfig, 
-#                           pipeline)
-# import torch
-# import torch.nn as nn
+import groq
+from together import Together
 # gpt4
 from openai import OpenAI
 import openai
-# groq
-import groq
 
 random.seed(0)
-
-import re
-
-def extract_spartQA_question(text):
-    # Extract everything after the last sentence and before the choices
-    question_match = re.search(r'([A-Z].*\?)', text)
-    question = question_match.group(1) if question_match else None
-    
-    # Extract answer choices using regular expression
-    choices = re.findall(r'\(([a-d])\)\s([^(\n]+)', text)
-    
-    return question, choices
 
 def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used, answer_mode='da'):
     answers = []
     ids_can_be_answered = []
     questions_can_be_answered = []
-    
-    if llm_model == 'llama_transformer':
-        model_id = "/home/tin/projects/Llama-2-7b-chat-hf"
-        compute_dtype = getattr(torch, "float16")
-        bnb_config = BitsAndBytesConfig(
-            load_in_4bit=True, 
-            bnb_4bit_quant_type="nf4", 
-            bnb_4bit_compute_dtype=compute_dtype,
-            bnb_4bit_use_double_quant=True,
-        )
-        model = AutoModelForCausalLM.from_pretrained(
-            model_id,
-            device_map='cuda:7',
-            torch_dtype=compute_dtype,
-            quantization_config=bnb_config, 
-        )
-
-        model.config.use_cache = False
-        model.config.pretraining_tp = 1
-
-        tokenizer = AutoTokenizer.from_pretrained(model_id, 
-                                                trust_remote_code=True,
-                                                )
-        tokenizer.pad_token = tokenizer.eos_token
-        tokenizer.padding_side = "right"
         
     for i, (id, q) in tqdm(enumerate(zip(ids, questions))):
         
@@ -93,6 +52,7 @@ def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used, answer_mo
         
         if prompt_used == "fs":
             prompt = f"{few_shot_prompt}\n{q}"
+            
         if prompt_used == "fs_inst":
             if answer_mode == 'da':
                 prompt = f"{few_shot_prompt}\n{q}\nDo not generate your explaination, please give the answer only as follow:\n\
@@ -121,17 +81,12 @@ def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used, answer_mo
                 #     Reformatted Question: \
                 #         Answer:"
                 
-                # prompt = f"{few_shot_prompt}\n{q}\nI want you to answer this question. To do that, first, repeat the question, then generate your answers. The output format is as follow:\n\
-                #     Repeated Question: \
-                #         Answer:"
         if prompt_used == "zs":
             prompt = f"{q}\nI want you to answer this question but your explanation should contain references referring back to the information in the question. To do that, first, re-generate the question with proper tags (<fact1>, <fact2>, <fact3>, etc) for key phrases, the key phrases that are most relevant to answering the question {last_sentence}, and then generate your answers that also have the tag (<fact1>, <fact2>, <fact3>, etc) for the grounded information. Give your answer by analyzing step by step, and give your answer in curly brackets" + " {} in the final answer. The output format is as follow:\n\
                 Reformatted Question: \
                     Answer:\
                         Final answer:"   
-            # prompt = f"{q}\nGive your answer by analyzing step by step, and give only numbers in the final answer. The output format is as follow:\n\
-            #         Answer:\
-            #             Final answer:"   
+            
         if 'gemini' in llm_model:
             genai.configure(api_key=API_KEYS['gemini'])
             model_config = {
@@ -187,21 +142,6 @@ def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used, answer_mo
             ids_can_be_answered.append(id)
             # except:
             #     continue
-        elif llm_model == 'llama_transformer':    
-            try:
-                pipe = pipeline(task="text-generation", 
-                            model='/home/tin/projects/Llama-2-7b-chat-hf', 
-                            tokenizer=tokenizer, 
-                            max_new_tokens = 1024, 
-                            # temperature = 0.0, # llama default temp: 0.75
-                            do_sample=False,
-                        )
-                result = pipe(prompt)
-                answers.append(result[0]['generated_text'])
-                questions_can_be_answered.append(q)
-                ids_can_be_answered.append(id)
-            except:
-                continue
         elif llm_model == 'llama_groq':
             client = groq.Groq(api_key=API_KEYS['groq'])
             messages = [
@@ -229,7 +169,7 @@ def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used, answer_mo
 if __name__ == "__main__":
     arg_parser = argparse.ArgumentParser()
     arg_parser.add_argument('--llm_model', type=str, default='gemini', help='The language model to query', choices=['gemini-1.5-pro-002', 'gemini-1.5-flash-002', 'claude', 'gpt-4o-2024-08-06', 'gpt-4o-mini-2024-07-18', 'llama_transformer', 'llama_groq'])
-    arg_parser.add_argument('--dataset', type=str, default='GSM8K', help='The dataset to query', choices=['GSM8K', 'StrategyQA', 'p_GSM8K', 'AQUA', 'MultiArith', 'ASDiv', 'SVAMP', 'commonsenseQA', 'wikimultihopQA', 'date', 'sports', 'reclor', 'CLUTRR', 'object_counting', 'navigate', 'causal_judgement', 'logical_deduction_three_objects', 'logical_deduction_five_objects', 'logical_deduction_seven_objects', 'reasoning_about_colored_objects', 'GSM_Plus', 'GSM_IC', 'spartQA', 'last_letter_2', 'last_letter_4', 'coin', 'saycan'])
+    arg_parser.add_argument('--dataset', type=str, default='GSM8K', help='The dataset to query', choices=['GSM8K', 'StrategyQA', 'p_GSM8K', 'AQUA', 'MultiArith', 'ASDiv', 'SVAMP', 'commonsenseQA', 'wikimultihopQA', 'date', 'sports', 'reclor', 'CLUTRR', 'object_counting', 'navigate', 'causal_judgement', 'logical_deduction_three_objects', 'logical_deduction_five_objects', 'logical_deduction_seven_objects', 'reasoning_about_colored_objects', 'GSM_Plus', 'GSM_IC', 'spartQA', 'last_letter_2', 'last_letter_4', 'coin'])
     arg_parser.add_argument('--prompt_used', type=str, default='fs_inst', help='The prompt used to query the language model', choices=['zs', 'fs', 'fs_inst'])
     arg_parser.add_argument('--answer_mode', type=str, default='da', help='The answer mode', choices=['da', 'cot', 'grounding_cot'])
     arg_parser.add_argument('--save_answer', action='store_true')
@@ -240,117 +180,29 @@ if __name__ == "__main__":
     prompt_design = 'design_1'
     version = 'v4'
     
-    # data path
-    if args.dataset == 'p_GSM8K':
-        data_path = f'data/p_GSM8K/r-gsm.jsonl'
-    elif args.dataset in ['object_counting', 'navigate', 'causal_judgement', 'logical_deduction_three_objects', 'logical_deduction_five_objects', 'logical_deduction_seven_objects', 'reasoning_about_colored_objects']:
-        data_path = f'data/{args.dataset}/test.json'
-    elif args.dataset == 'wikimultihopQA':
-        data_path = f'data/wikimultihopQA/dev.json'
-    elif args.dataset == 'reclor':
-        data_path = f'data/reclor/val.json'
-    elif args.dataset == 'GSM_IC':
-        data_path = f'data/GSM_IC/GSM-IC_mstep.json'
-    elif args.dataset == 'last_letter_2':
-        data_path = f'data/last_letter/test_2_letter.json'
-    elif args.dataset == 'last_letter_4':
-        data_path = f'data/last_letter/test_4_letter.json'
-    elif args.dataset == 'coin':
-        data_path = f'data/coin/test.json'
-    else:
-        data_path = f'data/{args.dataset}/test.jsonl'
-    
-    # fewshot_prompt_path = f"prompt/{args.dataset}/fewshot_{prompt_design}_{version}.txt"
-    # fewshot_prompt_path = f"prompt/{args.dataset}/fewshot_da.txt"
-    if args.answer_mode in ['da', 'cot']:
-        if args.dataset in ['GSM8K', 'MultiArith', 'ASDiv', 'p_GSM8K', 'GSM_Plus', 'GSM_IC']:
-            fewshot_prompt_path = f"prompt/GSM8K/fewshot_{args.answer_mode}.txt"
-        elif args.dataset in ['last_letter_2', 'last_letter_4']:
-            fewshot_prompt_path = f"prompt/last_letter/fewshot_{args.answer_mode}.txt"
-        elif args.dataset in ['logical_deduction_three_objects', 'logical_deduction_five_objects', 'logical_deduction_seven_objects']:
-                fewshot_prompt_path = f"prompt/logical_deduction_seven_objects/fewshot_{args.answer_mode}.txt"
-        elif args.dataset in ['StrategyQA', 'SVAMP', 'AQUA', 'commonsenseQA', 'date', 'object_counting', 'sports', 'reclor', 'wikimultihopQA', 'CLUTRR', 'spartQA', 'coin', 'saycan']:
-            fewshot_prompt_path = f"prompt/{args.dataset}/fewshot_{args.answer_mode}.txt"
-        
+    # load config file
+    # data_path & fewshot_prompt_path & max_question_length
+    with open('configs/config.yaml', 'r') as f:
+        config = yaml.safe_load(f)
+    data_path = config['data_paths'][args.dataset]
+    fewshot_prompt_path = config['prompts'][args.answer_mode][args.dataset]
+    question_length = config['max_question_lengths'][args.dataset]
             
-    if args.answer_mode == 'grounding_cot':
-        if args.dataset in ['GSM8K', 'MultiArith', 'ASDiv', 'p_GSM8K', 'GSM_Plus', 'GSM_IC']:
-            fewshot_prompt_path = f"prompt/GSM8K/fewshot_{prompt_design}_{version}.txt"
-        elif args.dataset in ['last_letter_2', 'last_letter_4']:
-                fewshot_prompt_path = f"prompt/last_letter/fewshot_{prompt_design}_{version}.txt"
-        elif args.dataset in ['StrategyQA', 'SVAMP', 'AQUA', 'commonsenseQA', 'date', 'object_counting', 'sports', 'reclor', 'wikimultihopQA', 'CLUTRR', 'spartQA', 'coin', 'saycan']:
-            fewshot_prompt_path = f"prompt/{args.dataset}/fewshot_{prompt_design}_{version}.txt"
-        elif args.dataset in ['logical_deduction_three_objects', 'logical_deduction_five_objects', 'logical_deduction_seven_objects']:
-            fewshot_prompt_path = f"prompt/logical_deduction_seven_objects/fewshot_{prompt_design}_{version}.txt"
-            
-    # save path
-    if args.answer_mode == 'grounding_cot':
-        save_path = f'results/{args.dataset}/{prompt_design}_{version}/{args.prompt_used}_{args.llm_model}.csv'
-        os.makedirs(f'results/{args.dataset}/{prompt_design}_{version}', exist_ok=True)
-    if args.answer_mode in ['da', 'cot']:
-        save_path = f'results/{args.dataset}/{args.answer_mode}/{args.prompt_used}_{args.llm_model}.csv'
-        os.makedirs(f'results/{args.dataset}/{args.answer_mode}', exist_ok=True)
-    
-    #
-    if args.data_mode == 'random':
-        save_path = save_path[:-4] + '_temp_0_random.csv'
+    # read data
+    if 'jsonl' in data_path:
+        data = read_jsonl_file(data_path)
     else:
-        save_path = save_path[:-4] + '_temp_0.csv'
+        with open(data_path, 'r') as file:
+            data = json.load(file)
     
     # read file grounding_prompt.txt
     with open(fewshot_prompt_path, 'r') as file:
         few_shot_prompt = file.read()
         
-    # read data
-    if args.dataset in ['object_counting', 'navigate', 'causal_judgement', 'logical_deduction_three_objects', 'logical_deduction_five_objects', 'logical_deduction_seven_objects', 'reasoning_about_colored_objects', 'reclor', 'wikimultihopQA', 'GSM_IC', 'last_letter_2', 'last_letter_4', 'coin']:
-        with open(data_path, 'r') as file:
-            data = json.load(file)
-    else:
-        data = read_jsonl_file(data_path)
-    random_data = data
-    
-    if args.dataset == 'p_GSM8K':
-        question_length = 0
-    elif args.dataset == 'MultiArith':
-        question_length = 168
-    elif args.dataset == 'ASDiv':
-        question_length = 252
-    elif args.dataset == 'GSM8K':
-        question_length = 336
-    elif args.dataset == 'AQUA':
-        question_length = 200
-    elif args.dataset == 'StrategyQA':
-        question_length = 78
-    elif args.dataset == 'SVAMP':
-        question_length = 199
-    elif args.dataset == 'commonsenseQA':
-        question_length = 93
-    elif args.dataset == 'sports':
-        question_length = 48
-    elif args.dataset == 'date':
-        question_length = 105
-    elif args.dataset == 'CLUTRR':
-        question_length = 612
-    elif args.dataset in ['object_counting', 'navigate', 'causal_judgement', 'logical_deduction_three_objects', 'logical_deduction_five_objects', 'logical_deduction_seven_objects', 'reasoning_about_colored_objects']:
-        question_length = 0
-    elif args.dataset == 'GSM_Plus':
-        question_length = 0
-    elif args.dataset == 'GSM_IC':
-        question_length = 583 # 370: 2 step
-    elif args.dataset == 'wikimultihopQA':
-        question_length = 104
-    elif args.dataset == 'reclor':
-        question_length = 0
-    elif args.dataset == 'spartQA':
-        question_length = 1015
-    elif args.dataset == 'last_letter_2' or args.dataset == 'last_letter_4':
-        question_length = 0
-    elif args.dataset == 'coin':
-        question_length = 0
-    
     if args.data_mode == 'random':
         question_length = 0
     
+    random_data = data        
     if args.dataset == 'p_GSM8K':
         questions = [x["new_question"] for x in random_data if len(x["new_question"]) >= question_length]
         ids = [x["index"] for x in random_data if len(x["new_question"]) >= question_length]
@@ -407,14 +259,24 @@ if __name__ == "__main__":
         selected_questions, selected_ids = zip(*random_pairs)  # Unzips into two separate lists
         questions = list(selected_questions)
         ids = list(selected_ids)
-        
-        # questions = remaining_questions
-        # ids = remaining_ids
     
     # ------------------------------
     ids_can_be_answered, questions_can_be_answered, answers = query_llm(args.llm_model, ids, questions, few_shot_prompt, args.prompt_used, args.answer_mode)
     
     if args.save_answer:
+        # save path
+        if args.answer_mode in ['da', 'cot']:
+            save_path = f'results/{args.dataset}/{args.answer_mode}/{args.prompt_used}_{args.llm_model}.csv'
+            os.makedirs(f'results/{args.dataset}/{args.answer_mode}', exist_ok=True)
+        if args.answer_mode == 'grounding_cot':
+            save_path = f'results/{args.dataset}/{prompt_design}_{version}/{args.prompt_used}_{args.llm_model}.csv'
+            os.makedirs(f'results/{args.dataset}/{prompt_design}_{version}', exist_ok=True)
+        
+        if args.data_mode == 'random':
+            save_path = save_path[:-4] + '_temp_0_random.csv'
+        else:
+            save_path = save_path[:-4] + '_temp_0.csv'
+            
         # save answers and questions to csv file (the len of question and answer should be the same)
         df = pd.DataFrame({'id': ids_can_be_answered, 'question': questions_can_be_answered, 'answer': answers})
         df.to_csv(save_path, index=False)
