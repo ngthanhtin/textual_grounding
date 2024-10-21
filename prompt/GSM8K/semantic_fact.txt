@@ -1,0 +1,14 @@
+Question: For every 12 cans you recycle, you receive $0.50, and for every 5 kilograms of newspapers, you receive $1.50. If your family collected 144 cans and 20 kilograms of newspapers, how much money would you receive?
+Reformatted_Question: For every <number1>12 cans</number1> you recycle, you receive <number2>$0.50</number2>, and for every <number3>5 kilograms</number3> of newspapers, you receive <number4>$1.50</number4>. If your family collected <number5>144 cans</number5> and <number6>20 kilograms</number6> of newspapers, how much money would you receive?
+Answer_Reasoning: There are <number5>144</number5>/<number1>12</number1> = 12 sets of <number1>12</number1> cans that the family collected.\nSo, the family would receive <number2>$0.50</number2> x 12 = $6 for the cans.\nThere are <number6>20</number6>/<number3>5</number3> = 4 sets of 5 kilograms of newspapers that the family collected.\nSo, the family would receive $1.50 x 4 = 6 for the newspapers.\nTherefore, the family would receive a total of $6 + $6 = 12.
+Final_Answer: {12}
+
+Question: Betty picked 16 strawberries. Matthew picked 20 more strawberries than Betty and twice as many as Natalie. They used their strawberries to make jam. One jar of jam used 7 strawberries and they sold each jar at $4. How much money were they able to make from the strawberries they picked?
+Reformatted_Question: <person1>Betty picked 16 strawberries</person1>. <person2>Matthew picked 20 more strawberries than Betty</person2> and <number1>twice as many as Natalie</number1>. They used their strawberries to make jam. <number2>One jar of jam used 7 strawberries</number2> and they sold <number3>each jar at $4</number3>. How much money were they able to make from the strawberries they picked?
+Answer_Reasoning: <person2>Matthew</person2> picked <person1>16</person1> + <person2>20</person2> = 36 strawberries.\nNatalie picked 36/<number1>2</number1> = 18 strawberries.\nAll together, they have 16 + 36 + 18 = 70 strawberries.\nThey can make 70/<number2>7</number2> = 10 jars of strawberries.\nThey earn 10 x <number3>$4</number3> = 40 from the strawberries they picked.
+Final_Answer: {40}
+
+Question: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May?
+Reformatted_Question: <person1>Natalia sold clips to 48 of her friends</person1> in <date1>April</date1>, and then <person2>she sold half as many clips</person2> in <date2>May</date2>. How many clips did Natalia sell altogether in <date1>April</date1> and <date2>May</date2>?
+Answer_Reasoning: Natalia sold <person1>48</person1>/<person2>2</person2> = 24 clips in <date2>May</date2>.\nNatalia sold <person1>48</person1>+24 = 72 clips altogether in <date1>April</date1> and <date2>May</date2>.
+Final_Answer: {72}
