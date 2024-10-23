@@ -1,0 +1,35 @@
+id,question,answer
+225,"Donny can only drink water if it's at least 40 degrees. He has two mugs of water. One mug is 33 degrees. The other is an unknown temperature. If he pours 4 ounces of water from the 33-degree mug into his water bottle and one ounce from the other bottle, he is now able to drink the water.  At least how many degrees is the second bottle?","Reasoning Process:
+To determine the minimum temperature of the second mug, we need to ensure that the combined temperature of the water in the bottle is at least 40 degrees, as Donny can only drink water at this temperature or higher. The problem provides the temperature of the first mug (33 degrees) and the amount of water poured from each mug (4 ounces from the first mug and 1 ounce from the second mug). The key is to find the minimum temperature of the second mug that, when mixed with the 33-degree water, results in a combined temperature of at least 40 degrees.
+
+Key Facts:
+- ""Donny can only drink water if it's at least 40 degrees.""
+- ""One mug is 33 degrees.""
+- ""pours 4 ounces of water from the 33-degree mug""
+- ""one ounce from the other bottle""
+- ""he is now able to drink the water"""
+98,John hires a driving service to get him to work each day.  His work is 30 miles away and he has to go there and back each day.  He goes to work 5 days a week for 50 weeks a year.  He gets charged $2 per mile driven and he also gives his driver a $150 bonus per month.  How much does he pay a year for driving?,"Reasoning Process:
+To determine how much John pays a year for driving, we need to calculate the total cost based on the distance traveled and additional bonuses. The key components include the distance to work, the frequency of travel, the cost per mile, and the monthly bonus. The round-trip distance is 60 miles (30 miles each way), and he travels 5 days a week for 50 weeks. The cost per mile is $2, and there is a $150 bonus given each month.
+
+Key Facts:
+- ""His work is 30 miles away and he has to go there and back each day.""
+- ""He goes to work 5 days a week for 50 weeks a year.""
+- ""He gets charged $2 per mile driven.""
+- ""he also gives his driver a $150 bonus per month."""
+202,"Sally went to the seashore for vacation.  Her parents gave her $10 to buy whatever she wanted.  At the trinket shop, taffy was on sale for \""Buy 1 pound at $3, get 1 pound 1/2 off.\""  She scooped up 2 pounds.  She also bought a mixed bag of seashells for $1.50 and 4 magnets that were $0.25 each.  How much money does Sally have left?","Reasoning Process:
+To determine how much money Sally has left, we need to calculate the total cost of her purchases and subtract that from the $10 her parents gave her. The key components of this calculation include the cost of the taffy, the seashells, and the magnets. The taffy deal is ""Buy 1 pound at $3, get 1 pound 1/2 off,"" which means the second pound costs $1.50. Therefore, the total cost for 2 pounds of taffy is $4.50. The seashells cost $1.50, and the magnets cost $0.25 each, totaling $1.00 for 4 magnets. Adding these amounts gives the total spent, which is then subtracted from the initial $10 to find the remaining money.
+
+Key Facts:
+- ""Her parents gave her $10""
+- ""Buy 1 pound at $3, get 1 pound 1/2 off""
+- ""She scooped up 2 pounds""
+- ""seashells for $1.50""
+- ""4 magnets that were $0.25 each"""
+107,"Shawnda decides that her neighborhood kids could really use a bike inflation service. She decides the best way to charge is by the tire. Each tire costs 25 cents to inflate. On the first day, 5 people on bicycles came by to get both tires inflated. 3 people came by to get all their tricycle tires inflated. Finally, one person actually came by on a unicycle. How many dollars did she make that day?","Reasoning Process:
+To determine how much money Shawnda made, we need to calculate the total number of tires she inflated and then multiply by the cost per tire. The problem provides the number of people and the type of cycles they used, which allows us to calculate the total number of tires. Specifically, we need to consider the number of tires for bicycles, tricycles, and a unicycle. Each bicycle has 2 tires, each tricycle has 3 tires, and a unicycle has 1 tire. By multiplying the number of each type of cycle by the number of tires they have, we can find the total number of tires inflated. Finally, multiplying the total number of tires by the cost per tire (25 cents) will give us the total earnings in cents, which can then be converted to dollars.
+
+Key Facts:
+- ""Each tire costs 25 cents to inflate.""
+- ""5 people on bicycles came by to get both tires inflated.""
+- ""3 people came by to get all their tricycle tires inflated.""
+- ""one person actually came by on a unicycle."""

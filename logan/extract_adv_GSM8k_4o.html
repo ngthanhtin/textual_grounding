@@ -1,0 +1,62 @@
+
+    <div class='summary'>
+        <strong>Summary:</strong> Correct Answers: 0 / 2 (0.00%)
+    </div>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Question and Answer Highlights</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                background-color: #f0f0f0;
+            }
+            .container {
+                background-color: #ffffff;
+                padding: 20px;
+                margin-bottom: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            .question {
+                font-size: 1.2em;
+                margin-bottom: 10px;
+            }
+            .full-response, .final-answer, .ground-truth-answer {
+                margin-bottom: 10px;
+                white-space: pre-wrap; /* Add this line to preserve newlines */
+            }
+            .final-answer {
+                font-weight: bold;
+            }
+            .ground-truth-answer {
+                font-weight: bold;
+            }
+            /* Styles for the highlighted spans */
+            .highlighted {
+                padding: 2px 4px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            /* Styles for the summary section */
+            .summary {
+                background-color: #e0ffe0;
+                padding: 15px;
+                border: 2px solid #00cc00;
+                border-radius: 8px;
+                font-size: 1.2em;
+                margin-top: 30px;
+            }
+        </style>
+    </head>
+    <body>
+    <h1>Question and Answer Highlights</h1>
+    <div class='container'><div class='question'><strong>Question:</strong> Donny can only drink water if it's at least 40 degrees. He has two mugs of water. One mug is 33 degrees. The other is an unknown temperature. If he pours 4 ounces of water from the 33-degree mug into his water bottle and one ounce from the other bottle, he is now able to drink the water.  At least how many degrees is the second bottle?</div><div class='full-response'>Reasoning Process:<br>To determine the minimum temperature of the second mug, we need to understand the conditions under which Donny can drink the water. The key condition is that the water must be at least 40 degrees. We know that Donny pours 4 ounces of 33-degree water and 1 ounce from the second mug into his water bottle, and this mixture allows him to drink the water. Therefore, the combined temperature of the water in the bottle must be at least 40 degrees. We need to find the minimum temperature of the second mug that, when mixed with the 33-degree water, results in a mixture that is at least 40 degrees.<br><br>Key Facts:<br><span class="fact1" style="background-color: lightyellow; font-weight: bold;">Donny can only drink water if it's at least 40 degrees</span><br><span class="fact2" style="background-color: lightblue; font-weight: bold;">One mug is 33 degrees</span><br><span class="fact3" style="background-color: lightgreen; font-weight: bold;">pours 4 ounces of water from the 33-degree mug</span><br><span class="fact4" style="background-color: lightcoral; font-weight: bold;">one ounce from the other bottle</span><br><span class="fact5" style="background-color: lightcyan; font-weight: bold;">he is now able to drink the water</span><br>To find the minimum temperature of the second mug, we can use the key facts to set up an equation based on the condition that the final mixture must be at least 40 degrees.<br><br>Given:<br>- 4 ounces of 33-degree water<br>- 1 ounce of water from the second mug (let's call its temperature \( x \))<br><br>The equation for the average temperature of the mixture is:<br>\[<br>\frac{(4 \times 33) + (1 \times x)}{4 + 1} \geq 40<br>\]<br><br>Simplifying the equation:<br>\[<br>\frac{132 + x}{5} \geq 40<br>\]<br><br>Multiply both sides by 5:<br>\[<br>132 + x \geq 200<br>\]<br><br>Subtract 132 from both sides:<br>\[<br>x \geq 68<br>\]<br><br>Therefore, the minimum temperature of the second mug must be at least 68 degrees.</div><div class='final-answer'><strong>Final Answer:</strong> <span style='font-size:1.1em; color: red;'>5</span></div><div class='ground-truth-answer'><strong>Ground Truth Answer:</strong> 68</div></div>
+<div class='container'><div class='question'><strong>Question:</strong> John hires a driving service to get him to work each day.  His work is 30 miles away and he has to go there and back each day.  He goes to work 5 days a week for 50 weeks a year.  He gets charged $2 per mile driven and he also gives his driver a $150 bonus per month.  How much does he pay a year for driving?</div><div class='full-response'>Reasoning Process:<br>To determine how much John pays a year for driving, we need to calculate the total distance he travels in a year and the cost associated with that distance. The distance to work is 30 miles, and since he travels to and from work, the daily round trip is 60 miles. He works 5 days a week for 50 weeks, so the total number of days he travels is 250 days. The cost per mile is $2, so we need to multiply the total miles by this rate. Additionally, John gives his driver a $150 bonus per month, which needs to be added to the total annual cost.<br><br>Key Facts:<br><span class="fact1" style="background-color: lightyellow; font-weight: bold;">His work is 30 miles away</span><br><span class="fact2" style="background-color: lightblue; font-weight: bold;">he has to go there and back each day</span><br><span class="fact3" style="background-color: lightgreen; font-weight: bold;">He goes to work 5 days a week for 50 weeks a year</span><br><span class="fact4" style="background-color: lightcoral; font-weight: bold;">charged $2 per mile driven</span><br><span class="fact5" style="background-color: lightcyan; font-weight: bold;">$150 bonus per month</span><br>To calculate how much John pays a year for driving, we use the key facts:<br><br>1. **Daily Round Trip Distance**: Since his work is 30 miles away and he has to go there and back each day, the daily round trip is 60 miles (30 miles each way).<br><br>2. **Annual Work Days**: He goes to work 5 days a week for 50 weeks a year, which totals 250 days (5 days/week * 50 weeks).<br><br>3. **Total Annual Miles**: The total miles driven in a year is 60 miles/day * 250 days = 15,000 miles.<br><br>4. **Cost Per Mile**: He is charged $2 per mile driven. Therefore, the cost for the miles driven is 15,000 miles * $2/mile = $30,000.<br><br>5. **Monthly Bonus**: He gives his driver a $150 bonus per month. Over 12 months, this totals $150/month * 12 months = $1,800.<br><br>6. **Total Annual Cost**: Adding the cost of the miles driven and the annual bonus, John pays $30,000 + $1,800 = $31,800 a year for driving.</div><div class='final-answer'><strong>Final Answer:</strong> <span style='font-size:1.1em; color: red;'></span></div><div class='ground-truth-answer'><strong>Ground Truth Answer:</strong> 31800</div></div>
+
+    </body>
+    </html>
+    

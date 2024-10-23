@@ -1,0 +1,59 @@
+id,question,answer
+225,"Donny can only drink water if it's at least 40 degrees. He has two mugs of water. One mug is 33 degrees. The other is an unknown temperature. If he pours 4 ounces of water from the 33-degree mug into his water bottle and one ounce from the other bottle, he is now able to drink the water.  At least how many degrees is the second bottle?","Reasoning Process:
+To determine the minimum temperature of the second mug, we need to understand the conditions under which Donny can drink the water. The key condition is that the water must be at least 40 degrees. We know that Donny pours 4 ounces of 33-degree water and 1 ounce from the second mug into his water bottle, and this mixture allows him to drink the water. Therefore, the combined temperature of the water in the bottle must be at least 40 degrees. We need to find the minimum temperature of the second mug that, when mixed with the 33-degree water, results in a mixture that is at least 40 degrees.
+
+Key Facts:
+<fact1>Donny can only drink water if it's at least 40 degrees</fact1>
+<fact2>One mug is 33 degrees</fact2>
+<fact3>pours 4 ounces of water from the 33-degree mug</fact3>
+<fact4>one ounce from the other bottle</fact4>
+<fact5>he is now able to drink the water</fact5>
+To find the minimum temperature of the second mug, we can use the key facts to set up an equation based on the condition that the final mixture must be at least 40 degrees.
+
+Given:
+- 4 ounces of 33-degree water
+- 1 ounce of water from the second mug (let's call its temperature \( x \))
+
+The equation for the average temperature of the mixture is:
+\[
+\frac{(4 \times 33) + (1 \times x)}{4 + 1} \geq 40
+\]
+
+Simplifying the equation:
+\[
+\frac{132 + x}{5} \geq 40
+\]
+
+Multiply both sides by 5:
+\[
+132 + x \geq 200
+\]
+
+Subtract 132 from both sides:
+\[
+x \geq 68
+\]
+
+Therefore, the minimum temperature of the second mug must be at least 68 degrees."
+98,John hires a driving service to get him to work each day.  His work is 30 miles away and he has to go there and back each day.  He goes to work 5 days a week for 50 weeks a year.  He gets charged $2 per mile driven and he also gives his driver a $150 bonus per month.  How much does he pay a year for driving?,"Reasoning Process:
+To determine how much John pays a year for driving, we need to calculate the total distance he travels in a year and the cost associated with that distance. The distance to work is 30 miles, and since he travels to and from work, the daily round trip is 60 miles. He works 5 days a week for 50 weeks, so the total number of days he travels is 250 days. The cost per mile is $2, so we need to multiply the total miles by this rate. Additionally, John gives his driver a $150 bonus per month, which needs to be added to the total annual cost.
+
+Key Facts:
+<fact1>His work is 30 miles away</fact1>
+<fact2>he has to go there and back each day</fact2>
+<fact3>He goes to work 5 days a week for 50 weeks a year</fact3>
+<fact4>charged $2 per mile driven</fact4>
+<fact5>$150 bonus per month</fact5>
+To calculate how much John pays a year for driving, we use the key facts:
+
+1. **Daily Round Trip Distance**: Since his work is 30 miles away and he has to go there and back each day, the daily round trip is 60 miles (30 miles each way).
+
+2. **Annual Work Days**: He goes to work 5 days a week for 50 weeks a year, which totals 250 days (5 days/week * 50 weeks).
+
+3. **Total Annual Miles**: The total miles driven in a year is 60 miles/day * 250 days = 15,000 miles.
+
+4. **Cost Per Mile**: He is charged $2 per mile driven. Therefore, the cost for the miles driven is 15,000 miles * $2/mile = $30,000.
+
+5. **Monthly Bonus**: He gives his driver a $150 bonus per month. Over 12 months, this totals $150/month * 12 months = $1,800.
+
+6. **Total Annual Cost**: Adding the cost of the miles driven and the annual bonus, John pays $30,000 + $1,800 = $31,800 a year for driving."
