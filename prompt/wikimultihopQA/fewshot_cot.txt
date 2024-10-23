@@ -1,0 +1,63 @@
+Question: When did the director of film Hypocrite (Film) die?
+Answer: Follow up: Who directed the film Hypocrite?
+Intermediate answer: Miguel Morayta.
+Follow up: When did Miguel Morayta die?
+Intermediate answer: 19 June 2013.
+The answer is {19 June 2013}.
+        
+Question: Are both Kurram Garhi and Trojkrsti located in the same country?
+Answer: Follow up: In which country is Kurram Garhi located?
+Intermediate answer: Pakistan.
+Follow up: In which country is Trojkrsti located?
+Intermediate answer: Republic of Macedonia.
+The answer is {no}.
+            
+Question: Do director of film Coolie No. 1 (1995 Film) and director of film The Sensational Trial have the same nationality?
+Answer: Who directed the film Coolie No. 1 (1995 Film)?
+Intermediate answer: David Dhawan.
+Follow up: Who directed the film The Sensational Trial?
+Intermediate answer: Karl Freund.
+Follow up: What is the nationality of David Dhawan?
+Intermediate answer: India.
+Follow up: What is the nationality of Karl Freund?
+Intermediate answer: Germany.
+The answer is {no}.
+            
+Question: Who is Boraqchin (Wife Of Ögedei)'s father-in-law?
+Answer: Follow up: Who is the spouse of Boraqchin?
+Intermediate answer: Ögedei Khan.
+Follow up: Who is the father of Ögedei Khan?
+Intermediate answer: Genghis Khan.
+The answer is {Genghis Khan}.
+    
+Question: Who was born first out of Martin Hodge and Ivania Martinich?
+Answer: Follow up: When was Martin Hodge born?
+Intermediate answer: 4 February 1959.
+Follow up: When was Ivania Martinich born?
+Intermediate answer: 25 July 1995.
+The answer is {Martin Hodge}.
+    
+Question: When did the director of film Laughter In Hell die?
+Answer: Follow up: Who directed the film Laughter In Hell?
+Intermediate answer: Edward L. Cahn.
+Follow up: When did Edward L. Cahn die?
+Intermediate answer: August 25, 1963.
+The answer is {August 25, 1963}.
+
+Question: Which film has the director died later, The Gal Who Took the West or Twenty Plus Two?
+Answer: Follow up: Who directed the film Twenty Plus Two?
+Intermediate answer: Joseph M. Newman.
+Follow up: Who directed the film The Gal Who Took the West?
+Intermediate answer: Frederick de Cordova.
+Follow up: When did Joseph M. Newman die?
+Intermediate answer: January 23, 2006.
+Follow up: When did Fred de Cordova die?
+Intermediate answer: September 15, 2001.
+The answer is {Twenty Plus Two}.
+
+Question: Who is the grandchild of Krishna Shah (Nepalese Royal)?
+Answer: Follow up: Who is the child of Krishna Shah?
+Intermediate answer: Rudra Shah.
+Follow up: Who is the child of Rudra Shah?
+Intermediate answer: Prithvipati Shah.
+The answer is {Prithvipati Shah}.
