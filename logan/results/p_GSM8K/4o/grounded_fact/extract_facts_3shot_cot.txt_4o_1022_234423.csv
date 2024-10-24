@@ -1,0 +1,79 @@
+id,question,answer
+225,"Donny can only drink water if it's at least 40 degrees. He has two mugs of water. One mug is 33 degrees. The other is an unknown temperature. If he pours 4 ounces of water from the 33-degree mug into his water bottle and one ounce from the other bottle, he is now able to drink the water.  At least how many degrees is the second bottle?","### Fact Extraction Reasoning:
+To determine the minimum temperature of the second bottle, we need to focus on the conditions that allow Donny to drink the water. The key information includes the temperature requirement for Donny to drink water, the temperature of the first mug, and the mixing process that results in drinkable water. The essential facts are the minimum temperature requirement of 40 degrees, the temperature of the first mug at 33 degrees, and the mixing of 4 ounces from the first mug with 1 ounce from the second mug.
+
+### Key Facts:
+<fact1>Donny can only drink water if it's at least 40 degrees</fact1>
+<fact2>One mug is 33 degrees</fact2>
+<fact3>pours 4 ounces of water from the 33-degree mug</fact3>
+<fact4>one ounce from the other bottle</fact4>
+<fact5>he is now able to drink the water</fact5>
+
+### Reformatted Question:
+Donny can only drink water if <fact1>it's at least 40 degrees</fact1>. He has two mugs of water. <fact2>One mug is 33 degrees</fact2>. The other is an unknown temperature. If he <fact3>pours 4 ounces of water from the 33-degree mug</fact3> into his water bottle and <fact4>one ounce from the other bottle</fact4>, <fact5>he is now able to drink the water</fact5>. At least how many degrees is the second bottle?
+### Final Answer Reasoning
+<fact1>Donny can only drink water if it's at least 40 degrees</fact1>. He has two mugs of water. <fact2>One mug is 33 degrees</fact2>. The other is an unknown temperature. If he <fact3>pours 4 ounces of water from the 33-degree mug</fact3> into his water bottle and <fact4>one ounce from the other bottle</fact4>, <fact5>he is now able to drink the water</fact5>. To find the minimum temperature of the second bottle, we set up an equation for the final temperature of the mixture. The total volume of the mixture is 5 ounces. The contribution to the temperature from the 33-degree water is (4 ounces * 33 degrees) = 132 degree-ounces. Let x be the temperature of the second bottle. The contribution from the second bottle is (1 ounce * x degrees) = x degree-ounces. The average temperature of the mixture is (132 + x) / 5. Since Donny can drink the water, this average must be at least 40 degrees. Therefore, (132 + x) / 5 ≥ 40. Solving for x gives x ≥ 68. Thus, the minimum temperature of the second bottle is {68} degrees."
+98,John hires a driving service to get him to work each day.  His work is 30 miles away and he has to go there and back each day.  He goes to work 5 days a week for 50 weeks a year.  He gets charged $2 per mile driven and he also gives his driver a $150 bonus per month.  How much does he pay a year for driving?,"### Fact Extraction Reasoning:
+To determine how much John pays a year for driving, we need to focus on the details regarding the distance he travels, the cost per mile, and any additional charges. The key elements include the distance to work, the frequency of his trips, the cost per mile, and the monthly bonus he gives to his driver. These components will allow us to calculate the total annual cost.
+
+### Key Facts:
+<fact1>His work is 30 miles away</fact1>
+<fact2>he has to go there and back each day</fact2>
+<fact3>He goes to work 5 days a week</fact3>
+<fact4>for 50 weeks a year</fact4>
+<fact5>charged $2 per mile driven</fact5>
+<fact6>$150 bonus per month</fact6>
+
+### Reformatted Question:
+John hires a driving service to get him to work each day. <fact1>His work is 30 miles away</fact1> and <fact2>he has to go there and back each day</fact2>. <fact3>He goes to work 5 days a week</fact3> <fact4>for 50 weeks a year</fact4>. He gets <fact5>charged $2 per mile driven</fact5> and he also gives his driver a <fact6>$150 bonus per month</fact6>. How much does he pay a year for driving?
+### Final Answer Reasoning
+To calculate how much John pays a year for driving, we start by determining the total distance he travels annually. <fact1>His work is 30 miles away</fact1>, and <fact2>he has to go there and back each day</fact2>, making it a 60-mile round trip. He travels this distance <fact3>5 days a week</fact3> for <fact4>50 weeks a year</fact4>, resulting in a total of 60 miles/day * 5 days/week * 50 weeks/year = 15,000 miles per year.
+
+Next, we calculate the cost per mile. John is <fact5>charged $2 per mile driven</fact5>, so for 15,000 miles, the cost is 15,000 miles * $2/mile = $30,000.
+
+Additionally, John gives his driver a <fact6>$150 bonus per month</fact6>. Over 12 months, this amounts to 12 months * $150/month = $1,800.
+
+Adding these two amounts together, the total annual cost is $30,000 + $1,800 = $31,800.
+
+Therefore, John pays {31,800} a year for driving."
+202,"Sally went to the seashore for vacation.  Her parents gave her $10 to buy whatever she wanted.  At the trinket shop, taffy was on sale for \""Buy 1 pound at $3, get 1 pound 1/2 off.\""  She scooped up 2 pounds.  She also bought a mixed bag of seashells for $1.50 and 4 magnets that were $0.25 each.  How much money does Sally have left?","### Fact Extraction Reasoning:
+To determine how much money Sally has left, we need to calculate her total spending and subtract it from the amount her parents gave her. The essential information includes the initial amount of money Sally received, the cost of the taffy deal, the price of the seashells, and the cost of the magnets. The taffy deal is particularly important because it involves a discount that affects the total cost.
+
+### Key Facts:
+<fact1>Her parents gave her $10</fact1>
+<fact2>taffy was on sale for ""Buy 1 pound at $3, get 1 pound 1/2 off.""</fact2>
+<fact3>She scooped up 2 pounds</fact3>
+<fact4>mixed bag of seashells for $1.50</fact4>
+<fact5>4 magnets that were $0.25 each</fact5>
+
+### Reformatted Question:
+Sally went to the seashore for vacation. <fact1>Her parents gave her $10</fact1> to buy whatever she wanted. At the trinket shop, <fact2>taffy was on sale for ""Buy 1 pound at $3, get 1 pound 1/2 off.""</fact2> <fact3>She scooped up 2 pounds.</fact3> She also bought a <fact4>mixed bag of seashells for $1.50</fact4> and <fact5>4 magnets that were $0.25 each.</fact5> How much money does Sally have left?
+### Final Answer Reasoning
+<fact1>Her parents gave her $10</fact1> to spend. For the taffy, <fact2>taffy was on sale for ""Buy 1 pound at $3, get 1 pound 1/2 off.""</fact2> and <fact3>she scooped up 2 pounds</fact3>. This means she paid $3 for the first pound and $1.50 for the second pound (half off), totaling $4.50 for the taffy. She also bought a <fact4>mixed bag of seashells for $1.50</fact4> and <fact5>4 magnets that were $0.25 each</fact5>, which cost $1.00 in total for the magnets. Adding these expenses gives $4.50 (taffy) + $1.50 (seashells) + $1.00 (magnets) = $7.00. Subtracting this from the $10 she had initially, Sally has $10 - $7.00 = $3.00 left. Therefore, the answer is {3.00}."
+107,"Shawnda decides that her neighborhood kids could really use a bike inflation service. She decides the best way to charge is by the tire. Each tire costs 25 cents to inflate. On the first day, 5 people on bicycles came by to get both tires inflated. 3 people came by to get all their tricycle tires inflated. Finally, one person actually came by on a unicycle. How many dollars did she make that day?","### Fact Extraction Reasoning:
+To determine how much money Shawnda made, we need to calculate the total number of tires she inflated and then multiply by the cost per tire. The essential information includes the cost per tire, the number of people with bicycles and the number of tires they have, the number of people with tricycles and their tires, and the person with a unicycle.
+
+### Key Facts:
+<fact1>Each tire costs 25 cents to inflate</fact1>
+<fact2>5 people on bicycles came by to get both tires inflated</fact2>
+<fact3>3 people came by to get all their tricycle tires inflated</fact3>
+<fact4>one person actually came by on a unicycle</fact4>
+
+### Reformatted Question:
+Shawnda decides that her neighborhood kids could really use a bike inflation service. She decides the best way to charge is by the tire. <fact1>Each tire costs 25 cents to inflate</fact1>. On the first day, <fact2>5 people on bicycles came by to get both tires inflated</fact2>. <fact3>3 people came by to get all their tricycle tires inflated</fact3>. Finally, <fact4>one person actually came by on a unicycle</fact4>. How many dollars did she make that day?
+### Final Answer Reasoning
+To calculate how much money Shawnda made, we need to determine the total number of tires inflated and multiply by the cost per tire. According to <fact1>each tire costs 25 cents to inflate</fact1>. For the bicycles, <fact2>5 people on bicycles came by to get both tires inflated</fact2>, which means 5 people x 2 tires each = 10 tires. For the tricycles, <fact3>3 people came by to get all their tricycle tires inflated</fact3>, which means 3 people x 3 tires each = 9 tires. Finally, for the unicycle, <fact4>one person actually came by on a unicycle</fact4>, which means 1 tire. Adding these up gives a total of 10 + 9 + 1 = 20 tires. At 25 cents per tire, Shawnda made 20 x $0.25 = $5.00. Therefore, the answer is {5}."
+10,"While Joanne is gathering apples from her family's orchard, her sister comes outside to help her. Joanne gathers 30 apples from the tallest trees, half this amount from the shortest trees, and more apples from the average trees. Compared with Joanne, her sister gathers twice as many apples from the tallest trees and 3 times as many apples from the shortest trees. She doesn't take any from the average trees. If the sisters have gathered a combined total of 500 apples, how many apples did Joanne gather from the average trees?","### Fact Extraction Reasoning:
+To determine how many apples Joanne gathered from the average trees, we need to focus on the number of apples each sister gathered from the different types of trees and the total number of apples gathered. Joanne's contributions from the tallest and shortest trees are given directly, and her sister's contributions are described in relation to Joanne's. The total number of apples gathered by both sisters is also provided, which is crucial for calculating the number of apples Joanne gathered from the average trees.
+
+### Key Facts:
+<fact1>Joanne gathers 30 apples from the tallest trees</fact1>
+<fact2>half this amount from the shortest trees</fact2>
+<fact3>her sister gathers twice as many apples from the tallest trees</fact3>
+<fact4>3 times as many apples from the shortest trees</fact4>
+<fact5>combined total of 500 apples</fact5>
+
+### Reformatted Question:
+While Joanne is gathering apples from her family's orchard, her sister comes outside to help her. <fact1>Joanne gathers 30 apples from the tallest trees</fact1>, <fact2>half this amount from the shortest trees</fact2>, and more apples from the average trees. Compared with Joanne, <fact3>her sister gathers twice as many apples from the tallest trees</fact3> and <fact4>3 times as many apples from the shortest trees</fact4>. She doesn't take any from the average trees. If the sisters have gathered a <fact5>combined total of 500 apples</fact5>, how many apples did Joanne gather from the average trees?
+### Final Answer Reasoning
+<fact1>Joanne gathers 30 apples from the tallest trees</fact1>, and <fact2>half this amount from the shortest trees</fact2>, which means she gathers 15 apples from the shortest trees. Her sister gathers <fact3>twice as many apples from the tallest trees</fact3>, which is 60 apples, and <fact4>3 times as many apples from the shortest trees</fact4>, which is 45 apples. The total number of apples gathered by both sisters is <fact5>500 apples</fact5>. Therefore, the apples gathered by Joanne from the tallest and shortest trees are 30 + 15 = 45 apples. Her sister gathers 60 + 45 = 105 apples. Together, they gather 45 + 105 = 150 apples from the tallest and shortest trees. To find out how many apples Joanne gathered from the average trees, we subtract the apples gathered from the tallest and shortest trees from the total: 500 - 150 = 350 apples. Therefore, Joanne gathered {350} apples from the average trees."

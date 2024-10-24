@@ -1,0 +1,27 @@
+id,question,answer
+788,"John is raising money for a school trip. He has applied for help from the school, which has decided to cover half the cost of the trip. How much money is John missing if he has $50 and the trip costs $300?","### Fact Extraction Reasoning:
+To determine how much money John is missing for his school trip, we need to identify the total cost of the trip, the amount the school will cover, and how much John currently has. The trip's total cost is essential as it sets the target amount. The school's contribution, which is half of the trip's cost, reduces the amount John needs to raise. Finally, John's current savings are necessary to calculate the remaining amount he needs.
+
+### Key Facts:
+<fact1>trip costs $300</fact1>
+<fact2>school, which has decided to cover half the cost of the trip</fact2>
+<fact3>he has $50</fact3>
+
+### Reformatted Question:
+John is raising money for a school trip. He has applied for help from the <fact2>school, which has decided to cover half the cost of the trip</fact2>. How much money is John missing if he <fact3>has $50</fact3> and the <fact1>trip costs $300</fact1>?
+
+### Final Answer Reasoning
+The <fact1>trip costs $300</fact1>, and the <fact2>school, which has decided to cover half the cost of the trip</fact2>, will contribute $150. This means John needs to cover the remaining $150. Since he <fact3>has $50</fact3>, he is missing $100 to fully fund his trip. Therefore, the amount of money John is missing is {100}."
+861,Claire earns 1 girl scout badge every month.  It takes Amber twice as long to earn a badge than Claire.  Wendy earns three times the amount of badges as Claire in the same time frame.  How many more badges does Wendy earn compared to Amber in a 1 year time frame?,"### Fact Extraction Reasoning:
+To determine how many more badges Wendy earns compared to Amber in a year, we need to understand the rate at which each person earns badges. Claire's rate of earning badges is the baseline, as she earns 1 badge per month. Amber's rate is half of Claire's, meaning she earns a badge every two months. Wendy earns badges at three times Claire's rate, which means she earns 3 badges per month. These rates are essential to calculate the total number of badges each person earns in a year and to find the difference between Wendy's and Amber's totals.
+
+### Key Facts:
+<fact1>Claire earns 1 girl scout badge every month</fact1>
+<fact2>It takes Amber twice as long to earn a badge than Claire</fact2>
+<fact3>Wendy earns three times the amount of badges as Claire</fact3>
+
+### Reformatted Question:
+<fact1>Claire earns 1 girl scout badge every month</fact1>. <fact2>It takes Amber twice as long to earn a badge than Claire</fact2>. <fact3>Wendy earns three times the amount of badges as Claire</fact3> in the same time frame. How many more badges does Wendy earn compared to Amber in a 1 year time frame?
+
+### Final Answer Reasoning
+<fact1>Claire earns 1 girl scout badge every month</fact1>, which means she earns 12 badges in a year. <fact2>It takes Amber twice as long to earn a badge than Claire</fact2>, so Amber earns 1 badge every two months, resulting in 6 badges in a year. <fact3>Wendy earns three times the amount of badges as Claire</fact3>, so she earns 3 badges per month, totaling 36 badges in a year. To find how many more badges Wendy earns compared to Amber, we subtract Amber's total from Wendy's total: 36 - 6 = 30. Therefore, Wendy earns {30} more badges than Amber in a year."

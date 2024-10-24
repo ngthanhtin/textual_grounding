@@ -1,0 +1,21 @@
+id,question,answer
+216,"The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a branch, there are seven birds: an owl, a crow, a falcon, a cardinal, a hummingbird, a quail, and a hawk. The falcon is to the left of the crow. The quail is to the right of the cardinal. The hummingbird is to the right of the quail. The falcon is the second from the right. The hummingbird is to the left of the hawk. The owl is the third from the left.
+Options:
+(A) The owl is the leftmost
+(B) The crow is the leftmost
+(C) The falcon is the leftmost
+(D) The cardinal is the leftmost
+(E) The hummingbird is the leftmost
+(F) The quail is the leftmost
+(G) The hawk is the leftmost","### Fact Extraction Reasoning:
+To determine which bird is the leftmost, we need to analyze the positional relationships between the birds. The key facts involve the relative positions of the falcon, crow, quail, cardinal, hummingbird, hawk, and owl. Specifically, the position of the falcon being second from the right, the owl being third from the left, and the relative positions of the other birds will help us deduce the leftmost bird.
+
+### Key Facts:
+<fact1>The falcon is the second from the right</fact1>
+<fact2>The owl is the third from the left</fact2>
+
+### Reformatted Question:
+On a branch, there are seven birds: an owl, a crow, a falcon, a cardinal, a hummingbird, a quail, and a hawk. <fact1>The falcon is the second from the right</fact1>. <fact2>The owl is the third from the left</fact2>. Options: (A) The owl is the leftmost (B) The crow is the leftmost (C) The falcon is the leftmost (D) The cardinal is the leftmost (E) The hummingbird is the leftmost (F) The quail is the leftmost (G) The hawk is the leftmost
+
+### Final Answer Reasoning
+To determine the leftmost bird, we start by considering the positions of the birds. <fact1>The falcon is the second from the right</fact1>, which means there is only one bird to its right. <fact2>The owl is the third from the left</fact2>, indicating there are two birds to its left. Given these positions, the owl cannot be the leftmost bird. Since the falcon is second from the right, it cannot be the leftmost either. The leftmost bird must be one of the two birds to the left of the owl. Therefore, the cardinal, which is to the left of the quail, is the leftmost bird. Thus, the answer is {D}."

@@ -1,0 +1,72 @@
+id,question,answer
+216,"The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a branch, there are seven birds: an owl, a crow, a falcon, a cardinal, a hummingbird, a quail, and a hawk. The falcon is to the left of the crow. The quail is to the right of the cardinal. The hummingbird is to the right of the quail. The falcon is the second from the right. The hummingbird is to the left of the hawk. The owl is the third from the left.
+Options:
+(A) The owl is the leftmost
+(B) The crow is the leftmost
+(C) The falcon is the leftmost
+(D) The cardinal is the leftmost
+(E) The hummingbird is the leftmost
+(F) The quail is the leftmost
+(G) The hawk is the leftmost","To solve this problem, we need to arrange the seven birds on the branch according to the given conditions. Let's go through the conditions step by step:
+
+1. **The falcon is the second from the right.**
+   - This means the falcon is in the 6th position.
+
+2. **The falcon is to the left of the crow.**
+   - Since the falcon is in the 6th position, the crow must be in the 7th position.
+
+3. **The quail is to the right of the cardinal.**
+   - This means the cardinal must be to the left of the quail.
+
+4. **The hummingbird is to the right of the quail.**
+   - This means the quail must be to the left of the hummingbird.
+
+5. **The hummingbird is to the left of the hawk.**
+   - This means the hummingbird must be to the left of the hawk.
+
+6. **The owl is the third from the left.**
+   - This means the owl is in the 3rd position.
+
+Now, let's try to place the birds in order:
+
+- We know the falcon is in the 6th position and the crow is in the 7th position.
+- The owl is in the 3rd position.
+- The cardinal must be to the left of the quail, and the quail must be to the left of the hummingbird, which must be to the left of the hawk.
+
+Let's place the cardinal, quail, hummingbird, and hawk:
+
+- Since the owl is in the 3rd position, the first two positions are available for the cardinal and quail.
+- The cardinal can be in the 1st position, and the quail in the 2nd position.
+- The hummingbird must be to the right of the quail, so it can be in the 4th position.
+- The hawk must be to the right of the hummingbird, so it can be in the 5th position.
+
+Now, we have the following arrangement:
+
+1. Cardinal
+2. Quail
+3. Owl
+4. Hummingbird
+5. Hawk
+6. Falcon
+7. Crow
+
+This arrangement satisfies all the given conditions. Therefore, the leftmost bird is the cardinal.
+
+Final answer: {D}
+
+### Final Answer Reasoning
+
+<fact1>The falcon is the second from the right</fact1>, which places it in the 6th position. <fact2>The falcon is to the left of the crow</fact2>, so the crow must be in the 7th position. <fact3>The owl is the third from the left</fact3>, placing it in the 3rd position. <fact4>The quail is to the right of the cardinal</fact4>, and <fact5>the hummingbird is to the right of the quail</fact5>, which means the cardinal must be to the left of both the quail and the hummingbird. <fact6>The hummingbird is to the left of the hawk</fact6>, so the hawk must be to the right of the hummingbird. 
+
+Given these facts, we can arrange the birds as follows:
+1. Cardinal
+2. Quail
+3. Owl
+4. Hummingbird
+5. Hawk
+6. Falcon
+7. Crow
+
+This arrangement satisfies all the conditions, and the leftmost bird is the <fact7>cardinal</fact7>.
+
+Final answer: {D}"
