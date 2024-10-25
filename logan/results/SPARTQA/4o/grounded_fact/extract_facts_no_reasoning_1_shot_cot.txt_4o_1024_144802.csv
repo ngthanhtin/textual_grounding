@@ -1,0 +1,470 @@
+id,question,answer
+3459,"We have three blocks. Lets call them A, B and C. A medium black square is in block A. Block B is to the right of block A. It contains a small yellow circle and one big blue square. Below and to the right of the big blue square there is the small yellow circle. Finally, we have block C which is to the right of block B. It contains a small yellow square. The small yellow square is below and to the left of a big yellow square. The big yellow square is touching the right edge of this block. What is to the right of the circle? a small yellow square or a big yellow square which is touching the right edge of a block?
+0: small yellow square 
+1: big yellow square  which is touching the right edge of  a block 
+2: both of them
+3: none of them","### Key Facts:
+<fact1>block B is to the right of block A</fact1>
+<fact2>It contains a small yellow circle</fact2>
+<fact3>block C which is to the right of block B</fact3>
+<fact4>It contains a small yellow square</fact4>
+<fact5>The small yellow square is below and to the left of a big yellow square</fact5>
+<fact6>The big yellow square is touching the right edge of this block</fact6>
+
+### Reformatted Question:
+We have three blocks. Lets call them A, B and C. A medium black square is in block A. <fact1>Block B is to the right of block A</fact1>. <fact2>It contains a small yellow circle</fact2> and one big blue square. Below and to the right of the big blue square there is the small yellow circle. Finally, we have <fact3>block C which is to the right of block B</fact3>. <fact4>It contains a small yellow square</fact4>. <fact5>The small yellow square is below and to the left of a big yellow square</fact5>. <fact6>The big yellow square is touching the right edge of this block</fact6>. What is to the right of the circle? a small yellow square or a big yellow square which is touching the right edge of a block? 0: small yellow square 1: big yellow square which is touching the right edge of a block 2: both of them 3: none of them"
+1578,"There are two blocks, A and B. Block A is to the left of B. Block A contains three medium yellow squares. Medium yellow square number one is touching the bottom edge of this block. Below medium yellow square number three is medium yellow square number two. Below medium yellow square number three is medium yellow square number one. This shape is below the medium yellow square number two. Block B has two medium yellow squares. Below medium yellow square number two and medium yellow square number one there is a medium black square. Medium yellow square number one is below medium yellow square number two. Which object is below a medium yellow square? the shape that is touching the bottom edge of a block or medium yellow square number one?
+0: the shape that is touching the bottom edge of a block 
+1: medium yellow square  number one
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Medium yellow square number one is touching the bottom edge of this block</fact1>
+<fact2>Below medium yellow square number three is medium yellow square number two</fact2>
+<fact3>Below medium yellow square number three is medium yellow square number one</fact3>
+<fact4>Below medium yellow square number two and medium yellow square number one there is a medium black square</fact4>
+<fact5>Medium yellow square number one is below medium yellow square number two</fact5>
+
+### Reformatted Question:
+There are two blocks, A and B. Block A is to the left of B. Block A contains three medium yellow squares. <fact1>Medium yellow square number one is touching the bottom edge of this block</fact1>. <fact2>Below medium yellow square number three is medium yellow square number two</fact2>. <fact3>Below medium yellow square number three is medium yellow square number one</fact3>. This shape is below the medium yellow square number two. Block B has two medium yellow squares. <fact4>Below medium yellow square number two and medium yellow square number one there is a medium black square</fact4>. <fact5>Medium yellow square number one is below medium yellow square number two</fact5>. Which object is below a medium yellow square? the shape that is touching the bottom edge of a block or medium yellow square number one?
+0: the shape that is touching the bottom edge of a block 
+1: medium yellow square  number one
+2: both of them
+3: none of them"
+3105,"There are three blocks. We call them A, B and C. Block A contains one medium yellow square and a medium black square. Below the medium black square there is the medium yellow square. Block B is above block A. It has two medium yellow squares. Medium yellow square number one is below medium yellow square number two. Finally, there is block C to the left of block B. It has a medium blue square. Which object is below a medium yellow square? the medium black square or the blue shape?
+0: the medium black square 
+1: the blue shape
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block A contains one medium yellow square and a medium black square</fact1>
+<fact2>Below the medium black square there is the medium yellow square</fact2>
+<fact3>Block B is above block A</fact3>
+<fact4>It has two medium yellow squares</fact4>
+<fact5>Medium yellow square number one is below medium yellow square number two</fact5>
+<fact6>block C to the left of block B</fact6>
+<fact7>It has a medium blue square</fact7>
+
+### Reformatted Question:
+There are three blocks. We call them A, B and C. <fact1>Block A contains one medium yellow square and a medium black square</fact1>. <fact2>Below the medium black square there is the medium yellow square</fact2>. <fact3>Block B is above block A</fact3>. <fact4>It has two medium yellow squares</fact4>. <fact5>Medium yellow square number one is below medium yellow square number two</fact5>. Finally, there is <fact6>block C to the left of block B</fact6>. <fact7>It has a medium blue square</fact7>. Which object is below a medium yellow square? the medium black square or the blue shape? 0: the medium black square 1: the blue shape 2: both of them 3: none of them"
+1723,"We have three blocks, A, B and C. There is a medium yellow square in block A. To the left of block A there is block B which contains a small blue square and one big black triangle. The small blue square is far from, below and to the left of the big black triangle. Finally, we have block C. It is below block A. It has one medium black triangle, a small black triangle and a medium black circle. This block also has a small blue circle. Below the medium black triangle there is a big black square. The medium black triangle is to the right of the small black triangle. To the right of and near to the medium black circle there is the small black triangle. To the right of the black shape which is to the right of the medium black circle there is the big black square. What is to the right of the medium black circle? a medium black triangle or a medium yellow square?
+0: medium black triangle 
+1: medium yellow square 
+2: both of them
+3: none of them","### Key Facts:
+<fact1>To the right of and near to the medium black circle there is the small black triangle</fact1>
+
+### Reformatted Question:
+We have three blocks, A, B and C. There is a medium yellow square in block A. To the left of block A there is block B which contains a small blue square and one big black triangle. The small blue square is far from, below and to the left of the big black triangle. Finally, we have block C. It is below block A. It has one medium black triangle, a small black triangle and a medium black circle. This block also has a small blue circle. Below the medium black triangle there is a big black square. The medium black triangle is to the right of the small black triangle. <fact1>To the right of and near to the medium black circle there is the small black triangle</fact1>. To the right of the black shape which is to the right of the medium black circle there is the big black square. What is to the right of the medium black circle? a medium black triangle or a medium yellow square?"
+166,"We have three blocks. Lets call them A, B and C. One medium black square and a medium blue square are in block A. The medium black square is touching the bottom edge of this block. This object is below the medium blue square. To the right of block A we have block B which has two medium yellow squares. Medium yellow square number one is touching the bottom edge of this block. It is below medium yellow square number two. Above block A there is block C. It has two medium blue squares. Below medium blue square number two and a medium yellow square there is medium blue square number one. Below the medium yellow square there is medium blue square number two. Which object is above a medium square? medium yellow square number two or the medium yellow square that is in block C?
+0: medium yellow square  number two
+1: the medium yellow square  that is in block C
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Medium yellow square number two is touching the bottom edge of this block. It is below medium yellow square number two.</fact1>
+<fact2>Below the medium yellow square there is medium blue square number two.</fact2>
+
+### Reformatted Question:
+We have three blocks. Lets call them A, B and C. One medium black square and a medium blue square are in block A. The medium black square is touching the bottom edge of this block. This object is below the medium blue square. To the right of block A we have block B which has two medium yellow squares. <fact1>Medium yellow square number one is touching the bottom edge of this block. It is below medium yellow square number two.</fact1> Above block A there is block C. It has two medium blue squares. Below medium blue square number two and a medium yellow square there is medium blue square number one. <fact2>Below the medium yellow square there is medium blue square number two.</fact2> Which object is above a medium square? medium yellow square number two or the medium yellow square that is in block C?"
+1061,"There are three blocks, A, B and C. Block A is to the right of C. Block C is to the right of B. Block A has two medium yellow squares. There is also a medium black square in this block. Below medium yellow square number two and the medium black square there is medium yellow square number one. Below the medium black square there is medium yellow square number two. Block B has one medium blue square. And block C has a medium blue square. Which object is to the right of a medium blue square? medium yellow square number one or medium yellow square number two?
+0: medium yellow square  number one
+1: medium yellow square  number two
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block A is to the right of C</fact1>
+<fact2>Block C is to the right of B</fact2>
+<fact3>Block B has one medium blue square</fact3>
+<fact4>block C has a medium blue square</fact4>
+<fact5>Below medium yellow square number two and the medium black square there is medium yellow square number one</fact5>
+<fact6>Below the medium black square there is medium yellow square number two</fact6>
+
+### Reformatted Question:
+There are three blocks, A, B and C. <fact1>Block A is to the right of C</fact1>. <fact2>Block C is to the right of B</fact2>. Block A has two medium yellow squares. There is also a medium black square in this block. <fact5>Below medium yellow square number two and the medium black square there is medium yellow square number one</fact5>. <fact6>Below the medium black square there is medium yellow square number two</fact6>. <fact3>Block B has one medium blue square</fact3>. And <fact4>block C has a medium blue square</fact4>. Which object is to the right of a medium blue square? medium yellow square number one or medium yellow square number two? 0: medium yellow square number one 1: medium yellow square number two 2: both of them 3: none of them"
+2095,"There are three blocks. Lets call them A, B and C. Block A contains two medium blue squares. Medium blue square number one is below medium blue square number two and a medium black square. This shape is touching the bottom edge of this block. The medium black square is below medium blue square number two. Above block A there is block B which has three medium yellow squares. Medium yellow square number one is touching the bottom edge of this block. Medium yellow square number two is below medium yellow square number three. Medium yellow square number one is below medium yellow square number three and medium yellow square number two. To the right of block B there is block C. It has two medium blue squares. Below medium blue square number two there is medium blue square number one. Which object is above a medium blue square? medium yellow square number two or the medium yellow square that is touching the bottom edge of a block?
+0: medium yellow square  number two
+1: the medium yellow square  that is touching the bottom edge of a block 
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Medium blue square number one is below medium blue square number two</fact1>
+<fact2>Medium yellow square number two is below medium yellow square number three</fact2>
+
+### Reformatted Question:
+There are three blocks. Lets call them A, B and C. Block A contains two medium blue squares. <fact1>Medium blue square number one is below medium blue square number two</fact1> and a medium black square. This shape is touching the bottom edge of this block. The medium black square is below medium blue square number two. Above block A there is block B which has three medium yellow squares. Medium yellow square number one is touching the bottom edge of this block. <fact2>Medium yellow square number two is below medium yellow square number three</fact2>. Medium yellow square number one is below medium yellow square number three and medium yellow square number two. To the right of block B there is block C. It has two medium blue squares. Below medium blue square number two there is medium blue square number one. Which object is above a medium blue square? medium yellow square number two or the medium yellow square that is touching the bottom edge of a block?
+0: medium yellow square  number two
+1: the medium yellow square  that is touching the bottom edge of a block 
+2: both of them
+3: none of them"
+1991,"There are three blocks. Lets call them A, B and C. Block A is to the left of B. Block B is below C. Block A has one medium blue square. Block B has one medium blue square and one medium yellow square. This block also contains one medium black square. It is below the medium yellow square. The medium blue square is touching the bottom edge of this block. It is below the medium yellow square and the medium black square. And block C contains a medium yellow square. Which object is below a medium yellow square? the medium blue square that is touching the bottom edge of a block or the medium black square?
+0: the medium blue square  that is touching the bottom edge of a block 
+1: the medium black square 
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block B has one medium blue square and one medium yellow square.</fact1>
+<fact2>Block B also contains one medium black square. It is below the medium yellow square.</fact2>
+<fact3>The medium blue square is touching the bottom edge of this block. It is below the medium yellow square and the medium black square.</fact3>
+
+### Reformatted Question:
+There are three blocks. Lets call them A, B and C. Block A is to the left of B. <fact1>Block B has one medium blue square and one medium yellow square.</fact1> <fact2>Block B also contains one medium black square. It is below the medium yellow square.</fact2> <fact3>The medium blue square is touching the bottom edge of this block. It is below the medium yellow square and the medium black square.</fact3> And block C contains a medium yellow square. Which object is below a medium yellow square? the medium blue square that is touching the bottom edge of a block or the medium black square? 0: the medium blue square that is touching the bottom edge of a block 1: the medium black square 2: both of them 3: none of them"
+1659,"We have three blocks. We call them A, B and C. Block C is to the left of A. Block A is above B. Block A has one medium yellow square. Block B has a medium blue square and a medium black square. There is also a medium yellow square in this block. It is below the medium black square. The medium blue square is touching the bottom edge of this block. It is below the medium yellow square and the medium black square. And block C has one medium yellow square. Which object is below a medium yellow square? the medium yellow square which is in block B or the medium yellow square which is in block C?
+0: the medium yellow square  which is in block B
+1: the medium yellow square  which is in block C
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block B has a medium blue square</fact1>
+<fact2>medium blue square is touching the bottom edge of this block</fact2>
+<fact3>medium blue square is below the medium yellow square</fact3>
+
+### Reformatted Question:
+We have three blocks. We call them A, B and C. Block C is to the left of A. Block A is above B. Block A has one medium yellow square. Block B has a <fact1>medium blue square</fact1> and a medium black square. There is also a medium yellow square in this block. It is below the medium black square. The <fact2>medium blue square is touching the bottom edge of this block</fact2>. It is <fact3>below the medium yellow square</fact3> and the medium black square. And block C has one medium yellow square. Which object is below a medium yellow square? the medium yellow square which is in block B or the medium yellow square which is in block C?
+0: the medium yellow square  which is in block B
+1: the medium yellow square  which is in block C
+2: both of them
+3: none of them"
+3211,"There are two blocks. Lets call them A and B. Block A is above B. Block A has two medium yellow squares. Medium yellow square number one is below medium yellow square number two and a medium blue square.. Below medium yellow square number two is the medium blue square. Block B has one medium black square. There is also a medium yellow square touching the bottom edge of this block. The medium yellow square is below the medium black square. Which object is above a medium yellow square? the blue thing or the medium black square?
+0: the blue thing
+1: the medium black square 
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block A has two medium yellow squares</fact1>
+<fact2>Medium yellow square number one is below medium yellow square number two and a medium blue square</fact2>
+<fact3>Below medium yellow square number two is the medium blue square</fact3>
+<fact4>Block B has one medium black square</fact4>
+<fact5>medium yellow square touching the bottom edge of this block</fact5>
+<fact6>The medium yellow square is below the medium black square</fact6>
+
+### Reformatted Question:
+There are two blocks. Lets call them A and B. <fact1>Block A has two medium yellow squares</fact1>. <fact2>Medium yellow square number one is below medium yellow square number two and a medium blue square</fact2>. <fact3>Below medium yellow square number two is the medium blue square</fact3>. <fact4>Block B has one medium black square</fact4>. There is also a <fact5>medium yellow square touching the bottom edge of this block</fact5>. <fact6>The medium yellow square is below the medium black square</fact6>. Which object is above a medium yellow square? the blue thing or the medium black square?"
+3400,"There are two blocks, A and B. Block A contains a medium blue square. This block also has one medium black square. The medium black square is below the medium blue square. Above block A there is block B. It has a medium yellow square, a medium black square and a medium blue square. The medium yellow square is below the medium black square and the medium blue square. The medium black square is below the medium blue square. Which object is above a medium black square? the medium blue square that is in block B or the medium blue square that is in block A?
+0: the medium blue square  that is in block B
+1: the medium blue square  that is in block A
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block A contains a medium blue square</fact1>
+<fact2>block A also has one medium black square</fact2>
+<fact3>The medium black square is below the medium blue square</fact3>
+<fact4>block B. It has a medium yellow square, a medium black square and a medium blue square</fact4>
+<fact5>The medium black square is below the medium blue square</fact5>
+
+### Reformatted Question:
+There are two blocks, A and B. <fact1>Block A contains a medium blue square</fact1>. This <fact2>block also has one medium black square</fact2>. <fact3>The medium black square is below the medium blue square</fact3>. Above block A there is <fact4>block B. It has a medium yellow square, a medium black square and a medium blue square</fact4>. <fact5>The medium black square is below the medium blue square</fact5>. Which object is above a medium black square? the medium blue square that is in block B or the medium blue square that is in block A? 0: the medium blue square that is in block B 1: the medium blue square that is in block A 2: both of them 3: none of them"
+1243,"There are three blocks. We call them A, B and C. Blocks A and C are to the left of B. Block A contains two medium blue squares and two other medium black squares. Medium blue square number one is touching the bottom edge of this block. Medium blue square number two is below medium black square number one and medium black square number two. Below medium black square number two is medium black square number one. Below medium blue square number two and medium black square number one there is medium blue square number one. Block B contains one medium blue square. And block C has two medium black squares. Below medium black square number two is medium black square number one. Which object is below a medium black square? the medium blue square that is in block B or medium blue square number two?
+0: the medium blue square  that is in block B
+1: medium blue square  number two
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block A contains two medium blue squares</fact1>
+<fact2>medium blue square number two is below medium black square number one and medium black square number two</fact2>
+<fact3>Block B contains one medium blue square</fact3>
+
+### Reformatted Question:
+There are three blocks. We call them A, B and C. <fact1>Block A contains two medium blue squares</fact1> and two other medium black squares. Medium blue square number one is touching the bottom edge of this block. <fact2>Medium blue square number two is below medium black square number one and medium black square number two</fact2>. Below medium black square number two is medium black square number one. Below medium blue square number two and medium black square number one there is medium blue square number one. <fact3>Block B contains one medium blue square</fact3>. And block C has two medium black squares. Below medium black square number two is medium black square number one. Which object is below a medium black square? the medium blue square that is in block B or medium blue square number two? 0: the medium blue square that is in block B 1: medium blue square number two 2: both of them 3: none of them"
+1953,"There are three blocks. Lets call them A, B and C. There are two medium blue squares in block A. This block also contains a small blue square. This block also contains a medium black triangle. One big black square is also touching the bottom edge of this block. Medium blue square number one is to the left of and above medium blue square number two. Below the medium black triangle there is the small blue square. A small yellow circle is far from and above the big black square. Block B is above block A. It has one big yellow circle, one small blue circle and one medium blue triangle. This block also contains one small yellow square. The big yellow circle is to the left of and above the medium blue triangle. This object is near to the small blue circle which is to the left of, above and near to the medium blue triangle. To the right of block B there is block C. It contains two small black circles. It also contains one medium black square. Small black circle number one is below small black circle number two. The medium black square is below and to the right of small black circle number two. Which object is to the left of a small black circle? the small blue circle or the medium blue triangle?
+0: the small blue circle 
+1: the medium blue triangle 
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block B is above block A</fact1>
+<fact2>Block B ... has ... one medium blue triangle</fact2>
+<fact3>Block B ... has ... one small blue circle</fact3>
+<fact4>Block C ... contains two small black circles</fact4>
+<fact5>Small black circle number one is below small black circle number two</fact5>
+<fact6>The medium black square is below and to the right of small black circle number two</fact6>
+
+### Reformatted Question:
+<fact1>Block B is above block A</fact1>. It has one big yellow circle, <fact3>one small blue circle</fact3> and <fact2>one medium blue triangle</fact2>. This block also contains one small yellow square. The big yellow circle is to the left of and above the medium blue triangle. This object is near to the small blue circle which is to the left of, above and near to the medium blue triangle. To the right of block B there is block C. It <fact4>contains two small black circles</fact4>. It also contains one medium black square. <fact5>Small black circle number one is below small black circle number two</fact5>. <fact6>The medium black square is below and to the right of small black circle number two</fact6>. Which object is to the left of a small black circle? the small blue circle or the medium blue triangle?"
+1467,"We have three blocks, A, B and C. Block B is to the right of A. Block C is to the right of B. Block A contains a big blue circle, a medium blue circle and one big yellow triangle. This block also has one big black triangle. The big blue circle is to the left of the big black triangle. The medium blue circle is below a medium blue triangle and the big black triangle. The big yellow triangle is touching the bottom edge of this block. It is below the big black triangle. This shape is below the medium blue triangle. Block B contains a small blue square, one big black square and a medium blue triangle. The small blue square is to the right of the medium blue triangle and the big black square. Block C contains a medium yellow triangle. What is to the right of the medium blue circle? a medium yellow triangle or a big black square?
+0: medium yellow triangle 
+1: big black square 
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block B is to the right of A</fact1>
+<fact2>Block C is to the right of B</fact2>
+<fact3>Block A contains a big blue circle, a medium blue circle and one big yellow triangle</fact3>
+<fact4>Block B contains a small blue square, one big black square and a medium blue triangle</fact4>
+<fact5>Block C contains a medium yellow triangle</fact5>
+
+### Reformatted Question:
+We have three blocks, A, B and C. <fact1>Block B is to the right of A</fact1>. <fact2>Block C is to the right of B</fact2>. <fact3>Block A contains a big blue circle, a medium blue circle and one big yellow triangle</fact3>. This block also has one big black triangle. The big blue circle is to the left of the big black triangle. The medium blue circle is below a medium blue triangle and the big black triangle. The big yellow triangle is touching the bottom edge of this block. It is below the big black triangle. This shape is below the medium blue triangle. <fact4>Block B contains a small blue square, one big black square and a medium blue triangle</fact4>. The small blue square is to the right of the medium blue triangle and the big black square. <fact5>Block C contains a medium yellow triangle</fact5>. What is to the right of the medium blue circle? a medium yellow triangle or a big black square?"
+2390,"We have three blocks, A, B and C. Block B is below blocks A and C. Block A has two medium blue squares and two other medium black squares. Medium blue square number one is touching the bottom edge of this block. Medium blue square number two is below medium black square number two and medium black square number one. Medium black square number one is below medium black square number two. Below medium black square number one and medium blue square number two there is medium blue square number one. Block B has a medium yellow square. And block C contains two medium yellow squares. Medium yellow square number one is below medium yellow square number two. A medium black square is touching the bottom edge of this block. It is below medium yellow square number two. This object is below medium yellow square number one. Which object is above a medium blue square? the medium black square which is touching the bottom edge of a block or medium black square number one?
+0: the medium black square  which is touching the bottom edge of a block 
+1: medium black square  number one
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Medium blue square number two is below medium black square number two and medium black square number one</fact1>
+<fact2>Medium black square number one is below medium black square number two</fact2>
+<fact3>A medium black square is touching the bottom edge of this block. It is below medium yellow square number two</fact3>
+
+### Reformatted Question:
+We have three blocks, A, B and C. Block B is below blocks A and C. Block A has two medium blue squares and two other medium black squares. Medium blue square number one is touching the bottom edge of this block. <fact1>Medium blue square number two is below medium black square number two and medium black square number one</fact1>. <fact2>Medium black square number one is below medium black square number two</fact2>. Below medium black square number one and medium blue square number two there is medium blue square number one. Block B has a medium yellow square. And block C contains two medium yellow squares. Medium yellow square number one is below medium yellow square number two. <fact3>A medium black square is touching the bottom edge of this block. It is below medium yellow square number two</fact3>. This object is below medium yellow square number one. Which object is above a medium blue square? the medium black square which is touching the bottom edge of a block or medium black square number one?"
+895,"We have three blocks, A, B and C. Block C is to the left of block B and above block A. Block A has a medium blue square. Block B has one medium blue square. And block C has two medium black squares. Medium black square number one is below medium black square number two. Below medium black square number two is a medium blue square. This shape is below medium black square number one. Which object is above a medium blue square? medium black square number two or medium black square number one?
+0: medium black square  number two
+1: medium black square  number one
+2: both of them
+3: none of them","### Key Facts:
+<fact1>medium black square number one is below medium black square number two</fact1>
+<fact2>Below medium black square number two is a medium blue square</fact2>
+
+### Reformatted Question:
+We have three blocks, A, B and C. Block C is to the left of block B and above block A. Block A has a medium blue square. Block B has one medium blue square. And block C has two medium black squares. <fact1>Medium black square number one is below medium black square number two</fact1>. <fact2>Below medium black square number two is a medium blue square</fact2>. This shape is below medium black square number one. Which object is above a medium blue square? medium black square number two or medium black square number one?"
+2068,"We have three blocks. Lets call them A, B and C. Block A contains a medium yellow square and a big blue triangle. It also contains a big blue square. The big blue square is below the big blue triangle. The medium yellow square is to the right of the big blue triangle. Near to the yellow object which is to the right of the big blue triangle there is the big blue square. Block B is to the right of block A. It has one medium yellow square and a small blue circle. The medium yellow square is below the small blue circle. Finally, we have block C below block A. It contains a small blue circle. Which object is to the left of a medium yellow square? the small blue circle that is in block B or the small blue circle that is in block C?
+0: the small blue circle  that is in block B
+1: the small blue circle  that is in block C
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block B is to the right of block A</fact1>
+<fact2>It has one medium yellow square and a small blue circle</fact2>
+<fact3>The medium yellow square is below the small blue circle</fact3>
+<fact4>block C below block A</fact4>
+<fact5>It contains a small blue circle</fact5>
+
+### Reformatted Question:
+We have three blocks. Lets call them A, B and C. Block A contains a medium yellow square and a big blue triangle. It also contains a big blue square. The big blue square is below the big blue triangle. The medium yellow square is to the right of the big blue triangle. Near to the yellow object which is to the right of the big blue triangle there is the big blue square. <fact1>Block B is to the right of block A</fact1>. <fact2>It has one medium yellow square and a small blue circle</fact2>. <fact3>The medium yellow square is below the small blue circle</fact3>. Finally, we have <fact4>block C below block A</fact4>. <fact5>It contains a small blue circle</fact5>. Which object is to the left of a medium yellow square? the small blue circle that is in block B or the small blue circle that is in block C? 0: the small blue circle that is in block B 1: the small blue circle that is in block C 2: both of them 3: none of them"
+571,"We have three blocks, A, B and C. Two medium black squares are in block A. This block also contains a medium yellow square. This shape is below medium black square number two. Medium black square number one is below the medium yellow square and medium black square number two. Above block A there is block B. It has one medium blue square. Finally, we have block C which is below block B. It has one medium yellow square and a medium blue square. This block also has a medium black square. Below the medium black square and the medium blue square is the medium yellow square. Below the medium black square is the medium blue square. Which object is below a medium blue square? the medium black square that is in block C or medium black square number two?
+0: the medium black square  that is in block C
+1: medium black square  number two
+2: both of them
+3: none of them","### Key Facts:
+<fact1>block C which is below block B</fact1>
+<fact2>block C ... has one medium yellow square and a medium blue square</fact2>
+<fact3>block C ... also has a medium black square</fact3>
+<fact4>Below the medium black square and the medium blue square is the medium yellow square</fact4>
+<fact5>Below the medium black square is the medium blue square</fact5>
+<fact6>block A ... Two medium black squares</fact6>
+<fact7>medium black square number two</fact7>
+
+### Reformatted Question:
+We have three blocks, A, B and C. <fact6>Two medium black squares</fact6> are in block A. This block also contains a medium yellow square. This shape is below <fact7>medium black square number two</fact7>. Medium black square number one is below the medium yellow square and medium black square number two. Above block A there is block B. It has one medium blue square. Finally, we have <fact1>block C which is below block B</fact1>. <fact2>It has one medium yellow square and a medium blue square</fact2>. This block <fact3>also has a medium black square</fact3>. <fact4>Below the medium black square and the medium blue square is the medium yellow square</fact4>. <fact5>Below the medium black square is the medium blue square</fact5>. Which object is below a medium blue square? the medium black square that is in block C or medium black square number two?"
+1155,"We have three blocks. Lets call them A, B and C. Block C is to the left of A and block B is to the left of C. Block A has a medium yellow square. Block B has a medium yellow square and one medium black square. Below the medium black square is the medium yellow square. Block C has a medium blue square and a medium black square. The medium blue square is touching the bottom edge of this block. It is below the medium black square. Which object is to the right of a medium square? the medium black square that is in block B or the medium black square that is in block C?
+0: the medium black square  that is in block B
+1: the medium black square  that is in block C
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block C is to the left of A</fact1>
+<fact2>Block B is to the left of C</fact2>
+<fact3>Block A has a medium yellow square</fact3>
+<fact4>Block B has a medium yellow square and one medium black square</fact4>
+<fact5>Block C has a medium blue square and a medium black square</fact5>
+
+### Reformatted Question:
+We have three blocks. <fact1>Block C is to the left of A</fact1> and <fact2>Block B is to the left of C</fact2>. <fact3>Block A has a medium yellow square</fact3>. <fact4>Block B has a medium yellow square and one medium black square</fact4>. Below the medium black square is the medium yellow square. <fact5>Block C has a medium blue square and a medium black square</fact5>. The medium blue square is touching the bottom edge of this block. It is below the medium black square. Which object is to the right of a medium square? the medium black square that is in block B or the medium black square that is in block C?"
+573,"We have three blocks, A, B and C. Two medium blue squares are in block A. It also contains one medium yellow square. The medium yellow square is below medium blue square number one and medium blue square number two. Below medium blue square number two there is medium blue square number one. Then, we have block B which has a medium blue square and one medium yellow square. Below the medium yellow square there is the medium blue square. Block C is above block A and to the left of block B. It has a medium black square. The medium black square is below a medium yellow square. What is below the black shape? a thing which is touching the bottom edge of a block or a medium yellow square that is in block B?
+0: thing which is touching the bottom edge of a block 
+1: medium yellow square  that is in block B
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block C is above block A and to the left of block B</fact1>
+<fact2>It has a medium black square</fact2>
+<fact3>The medium black square is below a medium yellow square</fact3>
+
+### Reformatted Question:
+We have three blocks, A, B and C. Two medium blue squares are in block A. It also contains one medium yellow square. The medium yellow square is below medium blue square number one and medium blue square number two. Below medium blue square number two there is medium blue square number one. Then, we have block B which has a medium blue square and one medium yellow square. Below the medium yellow square there is the medium blue square. <fact1>Block C is above block A and to the left of block B</fact1>. <fact2>It has a medium black square</fact2>. <fact3>The medium black square is below a medium yellow square</fact3>. What is below the black shape? a thing which is touching the bottom edge of a block or a medium yellow square that is in block B?
+0: thing which is touching the bottom edge of a block 
+1: medium yellow square  that is in block B
+2: both of them
+3: none of them"
+3096,"There are two blocks. We call them A and B. Block A is to the left of B. Block A contains one medium blue triangle and a small yellow square. There is also a small black circle in this block. Above and to the left of the small yellow square is the medium blue triangle. A medium black circle is far from, above and to the left of the small yellow square. Block B has two medium yellow squares. Medium yellow square number one is to the left of and below medium yellow square number two. It also has one medium black circle. This object is below medium yellow square number two. It also contains a big blue square. Below and near to the big blue square is the medium black circle. To the left of the black object which is below the big blue square there is medium yellow square number one. Which object is below a big object? the medium black circle which is in block A or the thing that is touching the bottom edge of a block?
+0: the medium black circle  which is in block A
+1: the thing that is touching the bottom edge of a block 
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block B has two medium yellow squares</fact1>
+<fact2>It also has one medium black circle</fact2>
+<fact3>It also contains a big blue square</fact3>
+<fact4>Below and near to the big blue square is the medium black circle</fact4>
+
+### Reformatted Question:
+There are two blocks. We call them A and B. Block A is to the left of B. Block A contains one medium blue triangle and a small yellow square. There is also a small black circle in this block. Above and to the left of the small yellow square is the medium blue triangle. A medium black circle is far from, above and to the left of the small yellow square. <fact1>Block B has two medium yellow squares</fact1>. <fact2>It also has one medium black circle</fact2>. <fact3>It also contains a big blue square</fact3>. <fact4>Below and near to the big blue square is the medium black circle</fact4>. To the left of the black object which is below the big blue square there is medium yellow square number one. Which object is below a big object? the medium black circle which is in block A or the thing that is touching the bottom edge of a block?"
+389,"We have two blocks, A and B. Block A is below B. Block A has a medium yellow square and a big blue triangle. The medium yellow square is to the left of and above the big blue triangle. Block B has two small blue circles. Below and to the right of small blue circle number two is small blue circle number one. A small black circle is below small blue circle number two. What is above the blue triangle? a medium yellow square or a small blue circle?
+0: medium yellow square 
+1: small blue circle 
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block A has a medium yellow square and a big blue triangle</fact1>
+<fact2>The medium yellow square is to the left of and above the big blue triangle</fact2>
+
+### Reformatted Question:
+We have two blocks, A and B. <fact1>Block A has a medium yellow square and a big blue triangle</fact1>. <fact2>The medium yellow square is to the left of and above the big blue triangle</fact2>. Block B has two small blue circles. Below and to the right of small blue circle number two is small blue circle number one. A small black circle is below small blue circle number two. What is above the blue triangle? a medium yellow square or a small blue circle? 0: medium yellow square 1: small blue circle 2: both of them 3: none of them"
+2533,"We have two blocks. We call them A and B. Block A is to the right of B. Block A contains three medium blue squares. A medium yellow square is touching the bottom edge of this block. Medium blue square number one is below medium blue square number two which is below medium blue square number three. The medium yellow square is below medium blue square number two , medium blue square number one and medium blue square number three. Block B has a medium yellow square. Which object is to the right of a medium yellow square? medium blue square number one or medium blue square number two?
+0: medium blue square  number one
+1: medium blue square  number two
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block A is to the right of B</fact1>
+<fact2>Block A contains three medium blue squares</fact2>
+<fact3>A medium yellow square is touching the bottom edge of this block</fact3>
+<fact4>Medium blue square number one is below medium blue square number two which is below medium blue square number three</fact4>
+<fact5>The medium yellow square is below medium blue square number two , medium blue square number one and medium blue square number three</fact5>
+<fact6>Block B has a medium yellow square</fact6>
+
+### Reformatted Question:
+We have two blocks. <fact1>Block A is to the right of B</fact1>. <fact2>Block A contains three medium blue squares</fact2>. <fact3>A medium yellow square is touching the bottom edge of this block</fact3>. <fact4>Medium blue square number one is below medium blue square number two which is below medium blue square number three</fact4>. <fact5>The medium yellow square is below medium blue square number two , medium blue square number one and medium blue square number three</fact5>. <fact6>Block B has a medium yellow square</fact6>. Which object is to the right of a medium yellow square? medium blue square number one or medium blue square number two? 0: medium blue square number one 1: medium blue square number two 2: both of them 3: none of them"
+3275,"We have three blocks. Lets call them A, B and C. Block B is above block A and to the right of block C. Block A contains one medium black square. Block B contains two medium black squares. This block also has a medium blue square. Below medium black square number two and medium black square number one is the medium blue square. Below medium black square number two is medium black square number one. Block C contains a medium black square and a medium yellow square. Below the medium yellow square is the medium black square. Which object is below a medium black square? the yellow shape or the blue thing that is touching the bottom edge of a block?
+0: the yellow shape
+1: the blue thing that is touching the bottom edge of a block 
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block B contains two medium black squares</fact1>
+<fact2>Block B contains a medium blue square</fact2>
+<fact3>Below medium black square number two and medium black square number one is the medium blue square</fact3>
+<fact4>Block C contains a medium black square and a medium yellow square</fact4>
+<fact5>Below the medium yellow square is the medium black square</fact5>
+
+### Reformatted Question:
+We have three blocks. Lets call them A, B and C. Block B is above block A and to the right of block C. Block A contains one medium black square. <fact1>Block B contains two medium black squares</fact1>. <fact2>Block B contains a medium blue square</fact2>. <fact3>Below medium black square number two and medium black square number one is the medium blue square</fact3>. <fact4>Block C contains a medium black square and a medium yellow square</fact4>. <fact5>Below the medium yellow square is the medium black square</fact5>. Which object is below a medium black square? the yellow shape or the blue thing that is touching the bottom edge of a block?
+0: the yellow shape
+1: the blue thing that is touching the bottom edge of a block 
+2: both of them
+3: none of them"
+1027,"There are three blocks, A, B and C. Block C is below blocks A and B. Block A has a medium blue square. Block B contains one medium yellow square. Block C has two medium yellow squares. Medium yellow square number one is touching the bottom edge of this block. Below a medium black square there is medium yellow square number two. Below medium yellow square number two and the medium black square there is medium yellow square number one. Which object is below a medium yellow square? medium yellow square number two or the object that is touching the bottom edge of a block?
+0: medium yellow square  number two
+1: the object that is touching the bottom edge of a block 
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block C has two medium yellow squares</fact1>
+<fact2>Medium yellow square number one is touching the bottom edge of this block</fact2>
+<fact3>Below a medium black square there is medium yellow square number two</fact3>
+
+### Reformatted Question:
+There are three blocks, A, B and C. Block C is below blocks A and B. Block A has a medium blue square. Block B contains one medium yellow square. <fact1>Block C has two medium yellow squares</fact1>. <fact2>Medium yellow square number one is touching the bottom edge of this block</fact2>. <fact3>Below a medium black square there is medium yellow square number two</fact3>. Below medium yellow square number two and the medium black square there is medium yellow square number one. Which object is below a medium yellow square? medium yellow square number two or the object that is touching the bottom edge of a block?"
+2182,"We have three blocks. Lets call them A, B and C. Two medium black squares are in block A. Medium black square number one is touching the bottom edge of this block. It is below medium black square number two. To the left of block A there is block B. It contains two medium blue squares. Below medium blue square number two is medium blue square number one. There is also a medium black square in this block. The medium black square is below medium blue square number one and medium blue square number two. To the left of block B there is block C. It contains one medium black square. Which object is to the right of a medium black square? the medium black square that is touching the bottom edge of a block or medium black square number two?
+0: the medium black square  that is touching the bottom edge of a block 
+1: medium black square  number two
+2: both of them
+3: none of them","### Key Facts:
+<fact1>medium black square number one is touching the bottom edge of this block</fact1>
+<fact2>medium black square number one is below medium black square number two</fact2>
+<fact3>block A</fact3>
+<fact4>block B</fact4>
+<fact5>block C</fact5>
+<fact6>block B. It contains two medium blue squares</fact6>
+<fact7>medium black square is below medium blue square number one and medium blue square number two</fact7>
+
+### Reformatted Question:
+We have three blocks. Lets call them <fact3>A</fact3>, <fact4>B</fact4> and <fact5>C. Two medium black squares are in block A. <fact1>Medium black square number one is touching the bottom edge of this block</fact1>. It is <fact2>below medium black square number two</fact2>. To the left of block A there is block B. <fact6>It contains two medium blue squares</fact6>. Below medium blue square number two is medium blue square number one. There is also a medium black square in this block. The <fact7>medium black square is below medium blue square number one and medium blue square number two</fact7>. To the left of block B there is block C. It contains one medium black square. Which object is to the right of a medium black square? the <fact1>medium black square that is touching the bottom edge of a block</fact1> or <fact2>medium black square number two</fact2>?"
+2889,"There are two blocks. Lets call them A and B. There is one medium yellow square in block A. To the right of block A there is block B which contains three medium yellow squares. There is also one medium black square in this block. It is below medium yellow square number three. Medium yellow square number one is below medium yellow square number three , the medium black square and medium yellow square number two. Below medium yellow square number three is medium yellow square number two. Which object is to the right of a medium yellow square? medium yellow square number two or medium yellow square number three?
+0: medium yellow square  number two
+1: medium yellow square  number three
+2: both of them
+3: none of them","### Key Facts:
+<fact1>There is one medium yellow square in block A.</fact1>
+<fact2>To the right of block A there is block B which contains three medium yellow squares.</fact2>
+<fact3>Below medium yellow square number three is medium yellow square number two.</fact3>
+
+### Reformatted Question:
+There are two blocks. <fact1>There is one medium yellow square in block A.</fact1> <fact2>To the right of block A there is block B which contains three medium yellow squares.</fact2> There is also one medium black square in this block. It is below medium yellow square number three. Medium yellow square number one is below medium yellow square number three, the medium black square and medium yellow square number two. <fact3>Below medium yellow square number three is medium yellow square number two.</fact3> Which object is to the right of a medium yellow square? medium yellow square number two or medium yellow square number three? 0: medium yellow square number two 1: medium yellow square number three 2: both of them 3: none of them"
+3319,"We have three blocks. We call them A, B and C. Block A is to the right of C. Block C is below B. Block A contains two medium yellow squares. Medium yellow square number one is below medium yellow square number two. Block B contains a medium black square. It also has a medium yellow square. Below the medium black square there is the medium yellow square. Block C has one medium blue square, one medium black square and a medium yellow square. The medium blue square is below the medium black square and the medium yellow square. Below the medium yellow square is the medium black square. Which object is to the left of a medium yellow square? the medium yellow square that is in block C or the medium yellow square that is touching the bottom edge of a block?
+0: the medium yellow square  that is in block C
+1: the medium yellow square  that is touching the bottom edge of a block 
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block A is to the right of C</fact1>
+<fact2>Block C is below B</fact2>
+<fact3>Block A contains two medium yellow squares</fact3>
+<fact4>Block B contains a medium black square</fact4>
+<fact5>Below the medium black square there is the medium yellow square</fact5>
+<fact6>Block C has one medium blue square, one medium black square and a medium yellow square</fact6>
+<fact7>The medium blue square is below the medium black square and the medium yellow square</fact7>
+<fact8>Below the medium yellow square is the medium black square</fact8>
+
+### Reformatted Question:
+We have three blocks. <fact1>Block A is to the right of C</fact1>. <fact2>Block C is below B</fact2>. <fact3>Block A contains two medium yellow squares</fact3>. Medium yellow square number one is below medium yellow square number two. <fact4>Block B contains a medium black square</fact4>. <fact5>Below the medium black square there is the medium yellow square</fact5>. <fact6>Block C has one medium blue square, one medium black square and a medium yellow square</fact6>. <fact7>The medium blue square is below the medium black square and the medium yellow square</fact7>. <fact8>Below the medium yellow square is the medium black square</fact8>. Which object is to the left of a medium yellow square? the medium yellow square that is in block C or the medium yellow square that is touching the bottom edge of a block?
+0: the medium yellow square that is in block C
+1: the medium yellow square that is touching the bottom edge of a block 
+2: both of them
+3: none of them"
+2466,"There are three blocks, A, B and C. Blocks B and A are to the right of C. Block A has one medium blue square. Block B has one medium blue square. It also contains a medium black square. Below the medium black square there is the medium blue square. Block C has two medium blue squares. Medium blue square number one is below medium blue square number two. What is to the left of the black thing? a medium blue square number two or a medium blue square that is in block B?
+0: medium blue square  number two
+1: medium blue square  that is in block B
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Blocks B and A are to the right of C</fact1>
+<fact2>Block B has one medium blue square</fact2>
+<fact3>Block B...contains a medium black square</fact3>
+<fact4>Below the medium black square there is the medium blue square</fact4>
+
+### Reformatted Question:
+There are three blocks, A, B and C. <fact1>Blocks B and A are to the right of C</fact1>. <fact2>Block B has one medium blue square</fact2>. It also <fact3>contains a medium black square</fact3>. <fact4>Below the medium black square there is the medium blue square</fact4>. Block C has two medium blue squares. Medium blue square number one is below medium blue square number two. What is to the left of the black thing? a medium blue square number two or a medium blue square that is in block B?
+0: medium blue square  number two
+1: medium blue square  that is in block B
+2: both of them
+3: none of them"
+602,"There are three blocks. We call them A, B and C. Block B is to the right of C. Block C is below A. Block A contains two medium blue squares. Below medium blue square number two there is medium blue square number one. Block B contains one medium blue square. Block C has two medium black squares. Medium black square number one is touching the bottom edge of this block. This object is below medium black square number two. Which object is above a medium black square? medium blue square number two or the medium blue square which is in block B?
+0: medium blue square  number two
+1: the medium blue square  which is in block B
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block C has two medium black squares</fact1>
+<fact2>Medium black square number one is touching the bottom edge of this block</fact2>
+<fact3>This object is below medium black square number two</fact3>
+<fact4>Block A contains two medium blue squares</fact4>
+<fact5>Below medium blue square number two there is medium blue square number one</fact5>
+<fact6>Block B contains one medium blue square</fact6>
+
+### Reformatted Question:
+There are three blocks. We call them A, B and C. Block B is to the right of C. Block C is below A. <fact4>Block A contains two medium blue squares</fact4>. <fact5>Below medium blue square number two there is medium blue square number one</fact5>. <fact6>Block B contains one medium blue square</fact6>. <fact1>Block C has two medium black squares</fact1>. <fact2>Medium black square number one is touching the bottom edge of this block</fact2>. <fact3>This object is below medium black square number two</fact3>. Which object is above a medium black square? medium blue square number two or the medium blue square which is in block B?
+0: medium blue square  number two
+1: the medium blue square  which is in block B
+2: both of them
+3: none of them"
+1271,"We have two blocks. Lets call them A and B. Block A has one big blue triangle, one medium black circle and one big black circle. This block also has one big yellow circle. The big blue triangle is below the medium black circle , the big yellow circle and the big black circle. The medium black circle is touching the right edge of this block. It is below the big yellow circle. Block B is above block A. It has a big yellow triangle. What is below the big yellow triangle? a big black circle or a big yellow circle?
+0: big black circle 
+1: big yellow circle 
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block A has one big blue triangle, one medium black circle and one big black circle. This block also has one big yellow circle.</fact1>
+<fact2>The big blue triangle is below the medium black circle , the big yellow circle and the big black circle.</fact2>
+<fact3>Block B is above block A. It has a big yellow triangle.</fact3>
+
+### Reformatted Question:
+We have two blocks. <fact1>Block A has one big blue triangle, one medium black circle and one big black circle. This block also has one big yellow circle.</fact1> <fact2>The big blue triangle is below the medium black circle , the big yellow circle and the big black circle.</fact2> The medium black circle is touching the right edge of this block. It is below the big yellow circle. <fact3>Block B is above block A. It has a big yellow triangle.</fact3> What is below the big yellow triangle? a big black circle or a big yellow circle? 0: big black circle 1: big yellow circle 2: both of them 3: none of them"
+405,"We have three blocks, A, B and C. One medium black square is in block A. Then, there is block B which contains a medium black square. A medium blue square is below the medium black square. Finally, to the left of block B we have block C. It is to the right of block A. It contains a medium yellow square and one medium black square. Below the medium black square is the medium yellow square. What is to the left of the blue shape? a medium black square that is in block B or a medium black square that is in block A?
+0: medium black square  that is in block B
+1: medium black square  that is in block A
+2: both of them
+3: none of them","### Key Facts:
+<fact1>block B which contains a medium black square</fact1>
+<fact2>A medium blue square is below the medium black square</fact2>
+
+### Reformatted Question:
+We have three blocks, A, B and C. One medium black square is in block A. Then, there is <fact1>block B which contains a medium black square</fact1>. <fact2>A medium blue square is below the medium black square</fact2>. Finally, to the left of block B we have block C. It is to the right of block A. It contains a medium yellow square and one medium black square. Below the medium black square is the medium yellow square. What is to the left of the blue shape? a medium black square that is in block B or a medium black square that is in block A? 0: medium black square that is in block B 1: medium black square that is in block A 2: both of them 3: none of them"
+2990,"There are two blocks. Lets call them A and B. Block A is to the left of B. Block A has a medium black triangle. Block B contains a medium black triangle and a big blue triangle. The big blue triangle is touching the bottom edge of this block. This block also has a big black triangle. This block also has a medium blue circle. The medium black triangle is touching the bottom edge of this block. The big black triangle is touching the right edge of this block. Below and touching the medium blue circle there is the medium black triangle. This shape is below the big black triangle. It is to the left of the big blue triangle. Below the big black triangle is the big blue triangle. Which object is to the right of a medium black triangle? the medium circle or the big blue triangle?
+0: the medium circle 
+1: the big blue triangle 
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block B contains a medium black triangle and a big blue triangle</fact1>
+<fact2>Below and touching the medium blue circle there is the medium black triangle</fact2>
+<fact3>Below the big black triangle is the big blue triangle</fact3>
+
+### Reformatted Question:
+There are two blocks. Lets call them A and B. Block A is to the left of B. <fact1>Block B contains a medium black triangle and a big blue triangle</fact1>. The big blue triangle is touching the bottom edge of this block. This block also has a big black triangle. This block also has a medium blue circle. The medium black triangle is touching the bottom edge of this block. The big black triangle is touching the right edge of this block. <fact2>Below and touching the medium blue circle there is the medium black triangle</fact2>. This shape is below the big black triangle. It is to the left of the big blue triangle. <fact3>Below the big black triangle is the big blue triangle</fact3>. Which object is to the right of a medium black triangle? the medium circle or the big blue triangle?
+0: the medium circle 
+1: the big blue triangle 
+2: both of them
+3: none of them"
+303,"We have two blocks. Lets call them A and B. There are one medium blue square and a medium black square in block A. The medium blue square is touching the bottom edge of this block. It is below the medium black square. Below block A is block B. It contains two medium yellow squares. Medium yellow square number one is below a medium blue square and medium yellow square number two. Below the medium blue square is medium yellow square number two. A medium black square is below the medium blue square and medium yellow square number two. Which object is below a medium yellow square? the medium black square that is in block B or the medium black square that is in block A?
+0: the medium black square  that is in block B
+1: the medium black square  that is in block A
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Below block A is block B</fact1>
+<fact2>Below the medium blue square is medium yellow square number two</fact2>
+<fact3>A medium black square is below the medium blue square and medium yellow square number two</fact3>
+
+### Reformatted Question:
+We have two blocks. Lets call them A and B. There are one medium blue square and a medium black square in block A. The medium blue square is touching the bottom edge of this block. It is below the medium black square. <fact1>Below block A is block B</fact1>. It contains two medium yellow squares. Medium yellow square number one is below a medium blue square and medium yellow square number two. <fact2>Below the medium blue square is medium yellow square number two</fact2>. <fact3>A medium black square is below the medium blue square and medium yellow square number two</fact3>. Which object is below a medium yellow square? the medium black square that is in block B or the medium black square that is in block A?
+0: the medium black square  that is in block B
+1: the medium black square  that is in block A
+2: both of them
+3: none of them"
+3484,"There are two blocks, A and B. Block A has a medium blue square and a big black square. To the left of and above the big black square which is below and to the right of a big blue circle is the medium blue square. Block B is above block A. It contains one small black circle. It also contains one medium black square. Below the small black circle is the medium black square. Which object is below a medium black square? the medium blue square or the big black square?
+0: the medium blue square 
+1: the big black square 
+2: both of them
+3: none of them","### Key Facts:
+<fact1>Block A has a medium blue square and a big black square</fact1>
+<fact2>Block B is above block A</fact2>
+<fact3>It contains one small black circle</fact3>
+<fact4>It also contains one medium black square</fact4>
+<fact5>Below the small black circle is the medium black square</fact5>
+
+### Reformatted Question:
+There are two blocks, A and B. <fact1>Block A has a medium blue square and a big black square</fact1>. To the left of and above the big black square which is below and to the right of a big blue circle is the medium blue square. <fact2>Block B is above block A</fact2>. <fact3>It contains one small black circle</fact3>. <fact4>It also contains one medium black square</fact4>. <fact5>Below the small black circle is the medium black square</fact5>. Which object is below a medium black square? the medium blue square or the big black square? 0: the medium blue square 1: the big black square 2: both of them 3: none of them"
