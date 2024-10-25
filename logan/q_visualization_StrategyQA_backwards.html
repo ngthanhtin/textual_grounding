@@ -1,0 +1,168 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Questions and Answers Visualization</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                background-color: #f9f9f9;
+            }
+            .container {
+                background-color: #ffffff;
+                padding: 20px 25px;
+                margin-bottom: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
+            .response, .answer {
+                flex: 1;
+            }
+            .response-header, .answer-header {
+                font-size: 1.2em;
+                margin-bottom: 10px;
+                color: #333333;
+                border-bottom: 2px solid #e0e0e0;
+                padding-bottom: 5px;
+            }
+            .response-body, .answer-body {
+                font-size: 1.1em;
+                line-height: 1.6;
+                white-space: pre-wrap; /* Preserve line breaks */
+            }
+            .final-answer {
+                display: inline-block;
+                margin-top: 15px;
+                padding: 10px;
+                background-color: #e6f7ff;
+                border-left: 4px solid #1890ff;
+                font-weight: bold;
+                border-radius: 3px;
+            }
+            /* Styles for the highlighted spans */
+            .highlighted {
+                padding: 2px 4px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .container {
+                    flex-direction: column;
+                }
+            }
+            .answer-body {
+                margin-top: 15rem;
+            }
+        </style>
+    </head>
+    <body>
+    <h1>Questions and Answers Visualization</h1>
+    <div class="summary">
+        <strong>Total Pairs:</strong> 8
+    </div>
+    <hr>
+    <div class='container'><div class='response'><div class='response-header'><strong>Response 1:</strong></div><div class='response-body'>### Fact Extraction Reasoning:
+The question is asking if Ariana Grande would be relevant in a discussion about PTSD. The answer provides information about her experience with trauma and PTSD related to the Manchester Bombing. Therefore, the key facts to extract are her performance in Manchester in 2017 and her experience with PTSD due to the bombing.
+
+### Reformatted Text
+Answer: <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Ariana Grande was performing in Manchester in 2017</span> when explosives were set off in an act of terrorism.
+Ariana Grande has spoken openly about her <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">trauma experience and her PTSD regarding the Manchester Bombing</span>.
+So the answer is <span class="final-answer">true</span>.
+Question: At a presentation about <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">post traumatic stress disorder</span>, would <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Ariana Grande</span> be a topic of relevance?</div></div><div class='answer'><div class='answer-header'><strong>Answer 1:</strong></div><div class='answer-body'>Question: At a presentation about post traumatic stress disorder, would Ariana Grande be a topic of relevance?
+Reformatted Question: At a presentation about <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">post traumatic stress disorder</span>, would <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">Ariana Grande</span> be a topic of relevance?
+Answer: <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">Ariana Grande</span> was performing in Manchester in 2017 when explosives were set off in an act of terrorism.
+<span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">Ariana Grande</span> has spoken openly about <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">her trauma experience</span> and <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">her PTSD</span> regarding the Manchester Bombing.
+So the answer is <span class="final-answer">true</span>.</div></div></div>
+<div class='container'><div class='response'><div class='response-header'><strong>Response 2:</strong></div><div class='response-body'>### Fact Extraction Reasoning:
+To answer the question about whether the Indian Ocean garbage patch has not completed two full rotations since its discovery, we need to focus on the year of discovery and the time it takes for one full rotation. The key facts are the discovery year (2010) and the time for one rotation (6 years). These facts are essential to determine if two rotations (12 years) have been completed by the current year.
+
+### Reformatted Text
+Answer: The <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Indian Ocean garbage patch</span> was <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">discovered in 2010</span>. The Indian Ocean garbage patch takes <span class="fact3" style="background-color: lightgreen; font-weight: bold; border-radius: 3px;">6 years to complete a circulation</span>. So the answer is <span class="final-answer">true</span>.
+
+Question: Has the <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Indian Ocean garbage patch</span> not completed two full rotations of debris since its <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">discovery</span>?</div></div><div class='answer'><div class='answer-header'><strong>Answer 2:</strong></div><div class='answer-body'>Question: Has the Indian Ocean garbage patch not completed two full rotations of debris since its discovery?
+Reformatted Question: Has the <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Indian Ocean garbage patch</span> not completed <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">two full rotations of debris</span> since its discovery?
+Answer: The <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Indian Ocean garbage patch</span> was discovered in 2010.
+The <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Indian Ocean garbage patch</span> takes <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">6 years to complete a circulation</span>.
+So the answer is <span class="final-answer">true</span>.</div></div></div>
+<div class='container'><div class='response'><div class='response-header'><strong>Response 3:</strong></div><div class='response-body'>### Fact Extraction Reasoning:
+The question asks if the Second Amendment was written without consideration for black Americans. The answer provides reasoning that the writers of the Constitutional Amendments did not view black people as legitimate human beings and believed slavery benefited black slaves. These points are essential to understanding the lack of consideration for black Americans in the writing of the amendments. Therefore, these are the key facts to extract.
+
+### Reformatted Text
+Answer: The <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">writers of the Constitutional Amendments did not view black people as legitimate human beings</span>. The <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">writers of the Constitutional Amendments believed that slavery benefited black slaves</span>. The Constitutional Amendments were written for people that the writers considered human. So the answer is <span class="final-answer">true</span>.
+
+Question: Was the Second Amendment to the United States Constitution written without consideration for <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">black Americans</span>?</div></div><div class='answer'><div class='answer-header'><strong>Answer 3:</strong></div><div class='answer-body'>Question: Was the Second Amendment to the United States Constitution written without consideration for black Americans?
+Reformatted Question: Was the <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Second Amendment to the United States Constitution</span> written without consideration for <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">black Americans</span>?
+Answer: The writers of the <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Constitutional Amendments</span> did not view <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">black people</span> as legitimate human beings.
+The writers of the <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Constitutional Amendments</span> believed that slavery benefited <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">black slaves</span>.
+The <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Constitutional Amendments</span> were written for people that the writers considered human.
+So the answer is <span class="final-answer">true</span>.</div></div></div>
+<div class='container'><div class='response'><div class='response-header'><strong>Response 4:</strong></div><div class='response-body'>### Fact Extraction Reasoning:
+To determine if Doctors of Homeopathy are more likely than Doctors of Internal Medicine to recommend Quartz as a treatment, we need to focus on the information about each type of doctor and their stance on alternative medicine. The key facts are that Doctors of Homeopathy are associated with "alternative medicine" and that Quartz is believed to have powers in alternative medicine practices. Additionally, Doctors of Internal Medicine do not recommend alternative medicine. These points are essential to answering the question.
+
+### Reformatted Text
+Answer: <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Doctors of Homeopathy are practitioners of "alternative medicine"</span>. In alternative medicine practices, <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">Quartz is believed to have powers</span>. <span class="fact3" style="background-color: lightgreen; font-weight: bold; border-radius: 3px;">Doctors of Internal Medicine have completed a medical residency and do not recommend alternative medicine</span>. So the answer is <span class="final-answer">true</span>.
+
+Question: Are <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Doctors of Homeopathy</span> more likely than <span class="fact3" style="background-color: lightgreen; font-weight: bold; border-radius: 3px;">Doctors of Internal Medicine</span> to recommend <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">Quartz</span> as a treatment?</div></div><div class='answer'><div class='answer-header'><strong>Answer 4:</strong></div><div class='answer-body'>Question: Are Doctors of Homeopathy more likely than Doctors of Internal Medicine to recommend Quartz as a treatment?
+Reformatted Question: Are <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Doctors of Homeopathy</span> more likely than <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">Doctors of Internal Medicine</span> to recommend <span class="fact3" style="background-color: lightgreen; font-weight: bold; border-radius: 3px;">Quartz</span> as a treatment?
+Answer: <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Doctors of Homeopathy</span> are practitioners of "alternative medicine."
+In <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">alternative medicine</span> practices, <span class="fact3" style="background-color: lightgreen; font-weight: bold; border-radius: 3px;">Quartz</span> is believed to have powers.
+<span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">Doctors of Internal Medicine</span> have completed a medical residency and do not recommend <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">alternative medicine</span>.
+So the answer is <span class="final-answer">true</span>.</div></div></div>
+<div class='container'><div class='response'><div class='response-header'><strong>Response 5:</strong></div><div class='response-body'>### Fact Extraction Reasoning:
+The question asks if Benjamin Franklin is a prime candidate to have his statues removed by the Black Lives Matter movement. The answer provides several pieces of information, but the key facts that directly relate to the question are those that connect Benjamin Franklin to actions or symbols that the Black Lives Matter movement might oppose. Specifically, the movement's actions against statues of historical figures who subjugated others and Franklin's involvement with slavery are relevant. Therefore, the essential facts are the Black Lives Matter movement's actions regarding statues and Franklin's history with slavery.
+
+### Reformatted Text
+Answer: The <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Black Lives Matter movement</span> is a social movement advocating for racial equality. <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">Members of the Black Lives Matter movement petitioned for statues of Christopher Columbus to be removed due to his subjugation of Native Americans</span>. Benjamin Franklin's 1730s newspaper, The Philadelphia Gazette, <span class="fact3" style="background-color: lightgreen; font-weight: bold; border-radius: 3px;">posted ads for black slaves</span>. <span class="fact4" style="background-color: lightcoral; font-weight: bold; border-radius: 3px;">Benjamin Franklin owned two slaves, George and King, who worked as personal servants</span>. So the answer is <span class="final-answer">true</span>.
+
+Question: Is <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Benjamin Franklin</span> a prime candidate to have his statues removed by <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Black Lives Matter movement</span>? <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">Members of the Black Lives Matter movement petitioned for statues of Christopher Columbus to be removed due to his subjugation of Native Americans</span>. <span class="fact3" style="background-color: lightgreen; font-weight: bold; border-radius: 3px;">Benjamin Franklin's 1730s newspaper, The Philadelphia Gazette, posted ads for black slaves</span>. <span class="fact4" style="background-color: lightcoral; font-weight: bold; border-radius: 3px;">Benjamin Franklin owned two slaves, George and King, who worked as personal servants</span>.</div></div><div class='answer'><div class='answer-header'><strong>Answer 5:</strong></div><div class='answer-body'>Question: Is Benjamin Franklin a prime candidate to have his statues removed by Black Lives Matter movement?
+Reformatted Question: Is <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Benjamin Franklin</span> a prime candidate to have his statues removed by the <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">Black Lives Matter movement</span>?
+Answer: The <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">Black Lives Matter movement</span> is a social movement advocating for racial equality.
+<span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Benjamin Franklin</span>, a famous founding father, has his image on many monuments and on American currency.
+Members of the <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">Black Lives Matter movement</span> petitioned for statues of Christopher Columbus to be removed due to his subjugation of Native Americans.
+<span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Benjamin Franklin</span>'s 1730s newspaper, The Philadelphia Gazette, posted ads for black slaves.
+<span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Benjamin Franklin</span> owned two slaves, George and King, who worked as personal servants.
+So the answer is <span class="final-answer">true</span>.</div></div></div>
+<div class='container'><div class='response'><div class='response-header'><strong>Response 6:</strong></div><div class='response-body'>### Fact Extraction Reasoning:
+The question asks whether public education services are provided to students of migrant families that may be undocumented. The answer confirms this by stating that public education services are indeed given to such students. Therefore, the key fact to extract is the statement about public education services being provided to students of migrant families that may be undocumented.
+
+### Reformatted Text:
+Answer: The United States Department of Education oversees public education across the United States. Public education is a service. <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Public education services are given to students of migrant families that may be undocumented.</span> So the answer is <span class="final-answer">true</span>.
+
+Question: Are <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">public education services given to students of migrant families that may be undocumented</span>?</div></div><div class='answer'><div class='answer-header'><strong>Answer 6:</strong></div><div class='answer-body'>Question: Does the United States Department of Education oversee services benefiting undocumented migrants?
+Reformatted Question: Does the <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">United States Department of Education</span> oversee services benefiting <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">undocumented migrants</span>?
+Answer: The <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">United States Department of Education</span> oversees public education across the United States.
+Public education is a service.
+Public education services are given to students of migrant families that may be <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">undocumented</span>.
+So the answer is <span class="final-answer">true</span>.</div></div></div>
+<div class='container'><div class='response'><div class='response-header'><strong>Response 7:</strong></div><div class='response-body'>### Fact Extraction Reasoning:
+To determine if Bernie Sanders could visit the Metropolitan Museum of Art twenty times for under two hundred dollars, we need to know the cost per visit for him. The answer provides the necessary information: Bernie Sanders is a senior citizen, and senior citizens from outside NY, NJ, or CT must pay $17 per visit. This information is essential to calculate the total cost for twenty visits and determine if it is under two hundred dollars.
+
+### Reformatted Text
+Answer: <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Bernie Sanders is a senior citizen</span>
+<span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">Senior citizens from outside NY, NJ, or CT must pay $17 per visit</span>
+So the answer is <span class="final-answer">false</span>.
+
+Question: Could <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Bernie Sanders</span> visit the Metropolitan Museum of Art twenty times for under two hundred dollars? <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">Senior citizens from outside NY, NJ, or CT must pay $17 per visit</span></div></div><div class='answer'><div class='answer-header'><strong>Answer 7:</strong></div><div class='answer-body'>missing GT</div></div></div>
+<div class='container'><div class='response'><div class='response-header'><strong>Response 8:</strong></div><div class='response-body'>### Fact Extraction Reasoning:
+To determine if Eric Clapton's mother would be unable to legally purchase cigarettes in the USA at his birth, we need to focus on two key pieces of information: the age of Eric Clapton's mother at the time of his birth and the legal age requirement for purchasing tobacco products in the USA. The answer provides both of these facts, which are essential to answering the question.
+
+### Reformatted Text
+Answer: <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Eric Clapton's mother was 16 years old at the time of his birth</span>.
+As of 2020, <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">federal law required states comply with a minimum age of 21 years for sale/purchase of tobacco products</span>.
+So the answer is <span class="final-answer">true</span>.
+
+Question: Would <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Eric Clapton's mother hypothetically be unable to legally purchase cigarettes in the USA at his birth</span>? <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">As of 2020, federal law required states comply with a minimum age of 21 years for sale/purchase of tobacco products</span>.</div></div><div class='answer'><div class='answer-header'><strong>Answer 8:</strong></div><div class='answer-body'>Question: Would Eric Clapton's mother hypothetically be unable to legally purchase cigarettes in the USA at his birth?
+Reformatted Question: Would <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Eric Clapton's mother</span> hypothetically be unable to legally purchase <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">cigarettes</span> in the USA at his birth?
+Answer: <span class="fact1" style="background-color: lightyellow; font-weight: bold; border-radius: 3px;">Eric Clapton's mother</span> was 16 years old at the time of his birth.
+As of 2020, federal law required states comply with a minimum age of 21 years for the sale/purchase of <span class="fact2" style="background-color: lightblue; font-weight: bold; border-radius: 3px;">tobacco products</span>.
+So the answer is <span class="final-answer">true</span>.</div></div></div>
+
+    </body>
+    </html>
+    
