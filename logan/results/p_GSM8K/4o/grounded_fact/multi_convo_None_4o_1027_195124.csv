@@ -1,0 +1,131 @@
+id,question,answer
+225,"Donny can only drink water if it's at least 40 degrees. He has two mugs of water. One mug is 33 degrees. The other is an unknown temperature. If he pours 4 ounces of water from the 33-degree mug into his water bottle and one ounce from the other bottle, he is now able to drink the water.  At least how many degrees is the second bottle?","### Fact Extraction Reasoning:
+To determine the minimum temperature of the second bottle, we need to focus on the conditions that allow Donny to drink the water. The key facts are the temperature requirement for Donny to drink water, the temperature of the first mug, and the fact that after mixing water from both mugs, the water is drinkable.
+
+### Key Facts:
+<fact1>Donny can only drink water if it's at least 40 degrees</fact1>
+<fact2>One mug is 33 degrees</fact2>
+<fact3>he is now able to drink the water</fact3>
+
+### Reformatted Question:
+<fact1>Donny can only drink water if it's at least 40 degrees</fact1>. He has two mugs of water. <fact2>One mug is 33 degrees</fact2>. The other is an unknown temperature. If he pours 4 ounces of water from the 33-degree mug into his water bottle and one ounce from the other bottle, <fact3>he is now able to drink the water</fact3>. At least how many degrees is the second bottle?
+--------------- End of Conversation ---------------
+<fact1>Donny can only drink water if it's at least 40 degrees</fact1>. He has two mugs of water. <fact2>One mug is 33 degrees</fact2>. The other is an unknown temperature. If he pours 4 ounces of water from the 33-degree mug into his water bottle and one ounce from the other bottle, <fact3>he is now able to drink the water</fact3>. At least how many degrees is the second bottle?
+--------------- Extracted Question ---------------
+
+To solve this problem, we need to determine the minimum temperature of the unknown bottle such that the mixture of water from both mugs is at least 40 degrees, allowing Donny to drink it.
+
+1. **Understanding the Requirement:**
+   - <fact1>Donny can only drink water if it's at least 40 degrees</fact1>.
+
+2. **Water from the First Mug:**
+   - <fact2>One mug is 33 degrees</fact2>.
+   - Donny pours 4 ounces from this mug.
+
+3. **Water from the Second Mug:**
+   - The temperature of the second mug is unknown.
+   - Donny pours 1 ounce from this mug.
+
+4. **Resulting Mixture:**
+   - The total volume of the mixture is 4 ounces from the first mug and 1 ounce from the second mug, totaling 5 ounces.
+   - <fact3>He is now able to drink the water</fact3>, meaning the mixture must be at least 40 degrees.
+
+5. **Setting Up the Equation:**
+   - Let \( T \) be the temperature of the second mug.
+   - The average temperature of the mixture is given by the formula:
+     \[
+     \frac{(4 \times 33) + (1 \times T)}{5} \geq 40
+     \]
+
+6. **Solving the Equation:**
+   - Calculate the contribution from the first mug: \( 4 \times 33 = 132 \).
+   - Set up the inequality:
+     \[
+     \frac{132 + T}{5} \geq 40
+     \]
+   - Multiply both sides by 5 to clear the fraction:
+     \[
+     132 + T \geq 200
+     \]
+   - Solve for \( T \):
+     \[
+     T \geq 200 - 132
+     \]
+     \[
+     T \geq 68
+     \]
+
+Therefore, the minimum temperature of the second bottle must be at least 68 degrees for Donny to be able to drink the water. The answer is {68}."
+98,John hires a driving service to get him to work each day.  His work is 30 miles away and he has to go there and back each day.  He goes to work 5 days a week for 50 weeks a year.  He gets charged $2 per mile driven and he also gives his driver a $150 bonus per month.  How much does he pay a year for driving?,"### Fact Extraction Reasoning:
+To determine how much John pays a year for driving, we need to focus on the distance he travels, the frequency of his trips, the cost per mile, and the additional monthly bonus. These elements are essential for calculating the total annual cost.
+
+### Key Facts:
+<fact1>His work is 30 miles away</fact1>
+<fact2>he has to go there and back each day</fact2>
+<fact3>He goes to work 5 days a week</fact3>
+<fact4>for 50 weeks a year</fact4>
+<fact5>charged $2 per mile driven</fact5>
+<fact6>$150 bonus per month</fact6>
+
+### Reformatted Question:
+John hires a driving service to get him to work each day. <fact1>His work is 30 miles away</fact1> and <fact2>he has to go there and back each day</fact2>. <fact3>He goes to work 5 days a week</fact3> <fact4>for 50 weeks a year</fact4>. He gets <fact5>charged $2 per mile driven</fact5> and he also gives his driver a <fact6>$150 bonus per month</fact6>. How much does he pay a year for driving?
+--------------- End of Conversation ---------------
+John hires a driving service to get him to work each day. <fact1>His work is 30 miles away</fact1> and <fact2>he has to go there and back each day</fact2>. <fact3>He goes to work 5 days a week</fact3> <fact4>for 50 weeks a year</fact4>. He gets <fact5>charged $2 per mile driven</fact5> and he also gives his driver a <fact6>$150 bonus per month</fact6>. How much does he pay a year for driving?
+--------------- Extracted Question ---------------
+
+To determine how much John pays a year for driving, we need to calculate both the cost of the miles driven and the monthly bonuses.
+
+Step 1: Calculate the total miles driven per year.
+- John travels to work and back each day, so he drives <fact1>30 miles</fact1> each way, which is <fact2>60 miles per day</fact2>.
+- He works <fact3>5 days a week</fact3>, so he drives 60 miles/day * 5 days/week = 300 miles/week.
+- He works <fact4>for 50 weeks a year</fact4>, so he drives 300 miles/week * 50 weeks/year = 15,000 miles/year.
+
+Step 2: Calculate the cost of the miles driven.
+- John is charged <fact5>$2 per mile driven</fact5>.
+- Therefore, the cost for the miles driven is 15,000 miles/year * $2/mile = $30,000/year.
+
+Step 3: Calculate the total bonus paid per year.
+- John gives his driver a <fact6>$150 bonus per month</fact6>.
+- There are 12 months in a year, so the total bonus is $150/month * 12 months/year = $1,800/year.
+
+Step 4: Calculate the total cost per year.
+- The total cost is the sum of the cost of the miles driven and the bonuses.
+- Total cost = $30,000 (miles) + $1,800 (bonuses) = $31,800.
+
+Therefore, John pays a total of {31,800} per year for driving."
+202,"Sally went to the seashore for vacation.  Her parents gave her $10 to buy whatever she wanted.  At the trinket shop, taffy was on sale for \""Buy 1 pound at $3, get 1 pound 1/2 off.\""  She scooped up 2 pounds.  She also bought a mixed bag of seashells for $1.50 and 4 magnets that were $0.25 each.  How much money does Sally have left?","### Fact Extraction Reasoning:
+To determine how much money Sally has left, we need to know the total amount of money she started with and the cost of each item she purchased. The key facts include the initial amount of money given by her parents, the cost of the taffy deal, the cost of the seashells, and the cost of the magnets.
+
+### Key Facts:
+<fact1>Her parents gave her $10</fact1>
+<fact2>taffy was on sale for ""Buy 1 pound at $3, get 1 pound 1/2 off.""</fact2>
+<fact3>mixed bag of seashells for $1.50</fact3>
+<fact4>4 magnets that were $0.25 each</fact4>
+
+### Reformatted Question:
+Sally went to the seashore for vacation. <fact1>Her parents gave her $10</fact1> to buy whatever she wanted. At the trinket shop, <fact2>taffy was on sale for ""Buy 1 pound at $3, get 1 pound 1/2 off.""</fact2> She scooped up 2 pounds. She also bought a <fact3>mixed bag of seashells for $1.50</fact3> and <fact4>4 magnets that were $0.25 each</fact4>. How much money does Sally have left?
+--------------- End of Conversation ---------------
+Sally went to the seashore for vacation. <fact1>Her parents gave her $10</fact1> to buy whatever she wanted. At the trinket shop, <fact2>taffy was on sale for ""Buy 1 pound at $3, get 1 pound 1/2 off.""</fact2> She scooped up 2 pounds. She also bought a <fact3>mixed bag of seashells for $1.50</fact3> and <fact4>4 magnets that were $0.25 each</fact4>. How much money does Sally have left?
+--------------- Extracted Question ---------------
+
+To determine how much money Sally has left, we need to calculate her total spending and subtract it from the amount her parents gave her.
+
+1. **Initial Amount**: Sally's parents gave her <fact1>$10</fact1>.
+
+2. **Cost of Taffy**: The taffy was on sale for <fact2>""Buy 1 pound at $3, get 1 pound 1/2 off.""</fact2> Sally bought 2 pounds. 
+   - The first pound costs $3.
+   - The second pound is half off, so it costs $1.50.
+   - Total cost for 2 pounds of taffy = $3 + $1.50 = $4.50.
+
+3. **Cost of Seashells**: Sally bought a <fact3>mixed bag of seashells for $1.50</fact3>.
+
+4. **Cost of Magnets**: Sally bought <fact4>4 magnets that were $0.25 each</fact4>.
+   - Total cost for magnets = 4 x $0.25 = $1.00.
+
+5. **Total Spending**: Add up the costs of the items Sally bought.
+   - Total cost = $4.50 (taffy) + $1.50 (seashells) + $1.00 (magnets) = $7.00.
+
+6. **Money Left**: Subtract the total spending from the initial amount.
+   - Money left = $10 - $7.00 = $3.00.
+
+Therefore, Sally has {3} dollars left."
