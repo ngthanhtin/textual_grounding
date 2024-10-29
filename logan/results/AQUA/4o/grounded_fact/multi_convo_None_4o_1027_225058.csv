@@ -399,7 +399,7 @@ To determine how much B bottles will cost in dollars, we need to first understan
 3. **Convert cents to dollars**:  
    Since there are 100 cents in a dollar, we convert the cost from cents to dollars by dividing by 100. Therefore, the cost in dollars is (AB/27) / 100 = AB/2700 dollars.
 
-Thus, the cost of B bottles in dollars is given by the expression AB/2700. Therefore, the correct answer is {A)AB/2700}.","If <fact1>27 bottles of soda cost A cents</fact1>, how much will B bottles cost in dollars?"
+Thus, the cost of B bottles in dollars is given by the expression AB/2700. Therefore, the correct answer is {A)AB/2700}.","If <fact1>27 bottles of soda cost A cents</fact1>, how much will B bottles cost in dollars? # Answer option: ['A)AB/2700', 'B)27/AB', 'C)AB/270', 'D)2700/AB', 'E)100AB/27']"
 200,"The difference between simple interest and C.I. at the same rate for Rs.5000 for 2 years in Rs.72. The rate of interest is?
 # Answer option: ['A)10%', 'B)12%', 'C)6%', 'D)8%', 'E)4%']","### Fact Extraction Reasoning:
 To determine the rate of interest, we need to focus on the principal amount, the time period, and the difference between the simple interest and compound interest. These are the essential elements required to solve the problem.
