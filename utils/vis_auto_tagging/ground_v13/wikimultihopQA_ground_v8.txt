@@ -1,0 +1,24 @@
+Tagged Question: When did the <fact1>director of film Hypocrite (Film)</fact1> <fact2>die</fact2>?
+Tagged Answer: Follow up: Who directed the film Hypocrite? Intermediate answer: Miguel Morayta. Follow up: When did Miguel Morayta die? Intermediate answer: 19 June 2013. The answer is {19 June 2013}.
+
+Tagged Question: Are both <fact1>Kurram Garhi</fact1> and <fact2>Trojkrsti</fact2> located in the <fact3>same country</fact3>?
+Tagged Answer: Follow up: In which country is <fact1>Kurram Garhi</fact1> located? Intermediate answer: Pakistan. Follow up: In which country is <fact2>Trojkrsti</fact2> located? Intermediate answer: Republic of Macedonia. The answer is {no}.
+
+Tagged Question: Do <fact1>director of film Coolie No. 1 (1995 Film)</fact1> and <fact2>director of film The Sensational Trial</fact2> have the <fact3>same nationality</fact3>?
+Tagged Answer: Who directed the film <fact1>Coolie No. 1 (1995 Film)</fact1>? Intermediate answer: David Dhawan. Follow up: Who directed the film <fact2>The Sensational Trial</fact2>? Intermediate answer: Karl Freund. Follow up: What is the nationality of David Dhawan? Intermediate answer: India. Follow up: What is the nationality of Karl Freund? Intermediate answer: Germany. The answer is {no}.
+
+Tagged Question: Who is <fact1>Boraqchin (Wife Of Ögedei)</fact1>'s <fact2>father-in-law</fact2>?
+Tagged Answer: Follow up: Who is the spouse of <fact1>Boraqchin</fact1>? Intermediate answer: Ögedei Khan. Follow up: Who is the <fact2>father</fact2> of Ögedei Khan? Intermediate answer: Genghis Khan. The answer is {Genghis Khan}.
+
+Tagged Question: Who was born first out of <fact1>Martin Hodge</fact1> and <fact2>Ivania Martinich</fact2>?
+Tagged Answer: Follow up: When was <fact1>Martin Hodge</fact1> born? Intermediate answer: 4 February 1959. Follow up: When was <fact2>Ivania Martinich</fact2> born? Intermediate answer: 25 July 1995. The answer is {Martin Hodge}.
+
+Tagged Question: When did the <fact1>director of film Laughter In Hell</fact1> <fact2>die</fact2>?
+Tagged Answer: Follow up: Who <fact1>directed the film Laughter In Hell</fact1>? Intermediate answer: Edward L. Cahn. Follow up: When did Edward L. Cahn <fact2>die</fact2>? Intermediate answer: August 25, 1963. The answer is {August 25, 1963}.
+
+Tagged Question: Which film has the <fact3>director died later</fact3>, <fact1>The Gal Who Took the West</fact1> or <fact2>Twenty Plus Two</fact2>?
+Tagged Answer: Follow up: Who directed the film <fact2>Twenty Plus Two</fact2>? Intermediate answer: Joseph M. Newman. Follow up: Who directed the film <fact1>The Gal Who Took the West</fact1>? Intermediate answer: Frederick de Cordova. Follow up: When did Joseph M. Newman die? Intermediate answer: January 23, 2006. Follow up: When did Fred de Cordova die? Intermediate answer: September 15, 2001. The answer is {Twenty Plus Two}.
+
+Tagged Question: Who is the <fact1>grandchild</fact1> of <fact2>Krishna Shah (Nepalese Royal)</fact2>?
+Tagged Answer: Follow up: Who is the child of <fact2>Krishna Shah</fact2>? Intermediate answer: Rudra Shah. Follow up: Who is the child of Rudra Shah? Intermediate answer: Prithvipati Shah. The answer is {Prithvipati Shah}.
+
