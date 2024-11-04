@@ -1,0 +1,61 @@
+id,question,answer
+3459,"We have three blocks. Lets call them A, B and C. A medium black square is in block A. <data1>Block B is to the right of block A</data1>. <data2>It contains a small yellow circle</data2> and one big blue square. <data3>Below and to the right of the big blue square there is the small yellow circle</data3>. Finally, we have <data4>block C which is to the right of block B</data4>. <data5>It contains a small yellow square</data5>. <data6>The small yellow square is below and to the left of a big yellow square</data6>. <data7>The big yellow square is touching the right edge of this block</data7>. What is to the right of the circle? a small yellow square or a big yellow square which is touching the right edge of a block? 0: small yellow square 1: big yellow square which is touching the right edge of a block 2: both of them 3: none of them","We have three blocks. Lets call them A, B and C. A medium black square is in block A. <data1>Block B is to the right of block A</data1>. <data2>It contains a small yellow circle</data2> and one big blue square. <data3>Below and to the right of the big blue square there is the small yellow circle</data3>. Finally, we have <data4>block C which is to the right of block B</data4>. <data5>It contains a small yellow square</data5>. <data6>The small yellow square is below and to the left of a big yellow square</data6>. <data7>The big yellow square is touching the right edge of this block</data7>. What is to the right of the circle? a small yellow square or a big yellow square which is touching the right edge of a block? 0: small yellow square 1: big yellow square which is touching the right edge of a block 2: both of them 3: none of them
+--------------- Extracted Question ---------------
+
+To determine what is to the right of the circle, let's analyze the information step by step:
+
+1. We have three blocks: A, B, and C. 
+2. <data1>Block B is to the right of block A</data1>. 
+3. <data2>Block B contains a small yellow circle</data2> and one big blue square. 
+4. <data3>Below and to the right of the big blue square there is the small yellow circle</data3>. This means the circle is positioned such that it is below and to the right of the big blue square within Block B.
+5. <data4>Block C is to the right of block B</data4>. 
+6. <data5>Block C contains a small yellow square</data5>. 
+7. <data6>The small yellow square is below and to the left of a big yellow square</data6>. 
+8. <data7>The big yellow square is touching the right edge of this block</data7>.
+
+Now, let's visualize the arrangement:
+
+- In Block B, the small yellow circle is positioned below and to the right of the big blue square.
+- Block C, which is to the right of Block B, contains a small yellow square and a big yellow square. The small yellow square is below and to the left of the big yellow square, and the big yellow square is touching the right edge of Block C.
+
+Since Block C is to the right of Block B, and the big yellow square in Block C is touching the right edge of Block C, the big yellow square is the rightmost object in Block C. Therefore, when considering what is to the right of the small yellow circle in Block B, the big yellow square in Block C is the object that is to the right of the circle.
+
+Thus, the answer is {1}."
+1578,"There are two blocks, A and B. Block A is to the left of B. Block A contains three medium yellow squares. <data1>Below medium yellow square number three is medium yellow square number two</data1>. <data2>Below medium yellow square number three is medium yellow square number one</data2>. This shape is below the medium yellow square number two. Block B has two medium yellow squares. <data3>Below medium yellow square number two and medium yellow square number one there is a medium black square</data3>. <data4>Medium yellow square number one is below medium yellow square number two</data4>. Which object is below a medium yellow square? the shape that is touching the bottom edge of a block or medium yellow square number one?
+0: the shape that is touching the bottom edge of a block 
+1: medium yellow square number one
+2: both of them
+3: none of them","There are two blocks, A and B. Block A is to the left of B. Block A contains three medium yellow squares. <data1>Below medium yellow square number three is medium yellow square number two</data1>. <data2>Below medium yellow square number three is medium yellow square number one</data2>. This shape is below the medium yellow square number two. Block B has two medium yellow squares. <data3>Below medium yellow square number two and medium yellow square number one there is a medium black square</data3>. <data4>Medium yellow square number one is below medium yellow square number two</data4>. Which object is below a medium yellow square? the shape that is touching the bottom edge of a block or medium yellow square number one?
+0: the shape that is touching the bottom edge of a block 
+1: medium yellow square number one
+2: both of them
+3: none of them
+--------------- Extracted Question ---------------
+
+To determine which object is below a medium yellow square, let's analyze the information provided:
+
+1. In Block A:
+   - <data1>Below medium yellow square number three is medium yellow square number two</data1>.
+   - <data2>Below medium yellow square number three is medium yellow square number one</data2>.
+   - This shape is below the medium yellow square number two.
+
+   From this, we understand that medium yellow square number three is at the top, with medium yellow square number two directly below it, and medium yellow square number one below medium yellow square number three. Additionally, there is a shape below medium yellow square number two.
+
+2. In Block B:
+   - <data3>Below medium yellow square number two and medium yellow square number one there is a medium black square</data3>.
+   - <data4>Medium yellow square number one is below medium yellow square number two</data4>.
+
+   This indicates that in Block B, medium yellow square number two is above medium yellow square number one, and both are above a medium black square.
+
+Now, let's address the question: Which object is below a medium yellow square? The options are:
+0: the shape that is touching the bottom edge of a block 
+1: medium yellow square number one
+2: both of them
+3: none of them
+
+- In Block A, the shape below medium yellow square number two is touching the bottom edge of Block A.
+- In Block B, the medium black square is below both medium yellow square number two and medium yellow square number one.
+
+Therefore, both the shape that is touching the bottom edge of a block (in Block A) and medium yellow square number one (in Block B) are below medium yellow squares.
+
+The correct answer is {2}."

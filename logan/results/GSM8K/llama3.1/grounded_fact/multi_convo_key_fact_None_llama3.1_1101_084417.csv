@@ -1,0 +1,3 @@
+id,question,answer
+788,"John is raising money for a school trip. He has applied for help from the <key_fact2>school, which has decided to cover half the cost of the trip</key_fact2>. How much money is John missing if <key_fact3>he has $50</key_fact3> and the <key_fact1>trip costs $300</key_fact1>?",
+861,<key_fact1>Claire earns 1 girl scout badge every month</key_fact1>. <key_fact2>It takes Amber twice as long to earn a badge than Claire</key_fact2>. <key_fact3>Wendy earns three times the amount of badges as Claire in the same time frame</key_fact3>. How many more badges does Wendy earn compared to Amber in a 1 year time frame?,

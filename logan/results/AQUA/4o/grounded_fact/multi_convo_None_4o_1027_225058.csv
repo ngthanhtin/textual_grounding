@@ -976,7 +976,7 @@ To determine how far Bill can travel on a windy day in 21 minutes, we need to ca
    - On a windy day, Bill's speed is 11 mph, and he travels for 0.35 hours.
    - Therefore, the distance he can travel is \(11 \times 0.35 = 3.85\) miles.
 
-Thus, Bill can travel 3.85 miles on a windy day in 21 minutes. The answer is {D}.","On a normal day <fact1>Bill usually averages about 15 mph</fact1> when riding his bicycle. <fact2>On a windy day, his speed is reduced by 4 mph</fact2>. How far can Bill travel on a windy day in <fact3>21 minutes</fact3>? Round to the nearest hundredth."
+Thus, Bill can travel 3.85 miles on a windy day in 21 minutes. The answer is {D}.","On a normal day <fact1>Bill usually averages about 15 mph</fact1> when riding his bicycle. <fact2>On a windy day, his speed is reduced by 4 mph</fact2>. How far can Bill travel on a windy day in <fact3>21 minutes</fact3>? Round to the nearest hundredth.# Answer option: ['A)2 miles', 'B)2.25 miles', 'C)3.25 miles', 'D)3.85 miles', 'E)2.85 miles']"
 158,"At an election meeting 10 speakers are to address the meeting. The only protocol to be observed is that whenever they speak the pm should speak before the mp and the mp should speak before the mla. In how many ways can the meeting be held?
 # Answer option: ['A)10!/3', 'B)10!/6', 'C)10!/2', 'D)10!/4', 'E)10!/5']","### Fact Extraction Reasoning:
 The question involves determining the number of ways 10 speakers can address a meeting while following a specific protocol. The essential information needed to solve this problem is the order in which the pm, mp, and mla must speak. This order constraint is crucial for calculating the permutations of the speakers.

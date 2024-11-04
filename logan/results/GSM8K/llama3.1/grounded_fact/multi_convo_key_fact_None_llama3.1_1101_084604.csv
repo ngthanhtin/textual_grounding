@@ -1,0 +1,27 @@
+id,question,answer
+788,"John is raising money for a school trip. He has applied for help from the <key_fact2>school, which has decided to cover half the cost of the trip</key_fact2>. How much money is John missing if <key_fact3>he has $50</key_fact3> and the <key_fact1>trip costs $300</key_fact1>?","John is raising money for a school trip. He has applied for help from the <key_fact2>school, which has decided to cover half the cost of the trip</key_fact2>. How much money is John missing if <key_fact3>he has $50</key_fact3> and the <key_fact1>trip costs $300</key_fact1>?
+--------------- Extracted Question ---------------
+
+To find out how much money John is missing, we need to determine how much of the trip cost he still needs to cover.
+
+The school will cover half the cost of the trip. Since the trip costs $300, half of that would be:
+
+$300 / 2 = $150
+
+This means the school will contribute $150 towards the trip.
+
+John has already saved $50, so we need to find out how much more he needs to raise to cover his share of the remaining cost.
+
+The total cost of the trip is $300, and the school is covering $150. This leaves:
+
+$300 - $150 = $150
+
+as the amount John still needs to cover.
+
+Since John has already saved $50, we subtract this from the remaining amount he needs to cover:
+
+$150 - $50 = $100
+
+Therefore, John is missing $100.
+
+The answer is {100}."

@@ -1,0 +1,65 @@
+id,question,answer,extracted_question
+225,"<data1>Donny can only drink water if it's at least 40 degrees</data1>. He has two mugs of water. <data2>One mug is 33 degrees</data2>. The other is an unknown temperature. If he <data3>pours 4 ounces of water from the 33-degree mug</data3> into his water bottle and <data4>one ounce from the other bottle</data4>, <data5>he is now able to drink the water</data5>. At least how many degrees is the second bottle?","<data1>Donny can only drink water if it's at least 40 degrees</data1>. He has two mugs of water. <data2>One mug is 33 degrees</data2>. The other is an unknown temperature. If he <data3>pours 4 ounces of water from the 33-degree mug</data3> into his water bottle and <data4>one ounce from the other bottle</data4>, <data5>he is now able to drink the water</data5>. At least how many degrees is the second bottle?
+--------------- Extracted Question ---------------
+
+To solve this problem, we need to determine the minimum temperature of the second bottle that allows Donny to drink the water, given the conditions.
+
+1. **Understanding the Requirement:**
+   - <data1>Donny can only drink water if it's at least 40 degrees</data1>. This means the final mixture in the water bottle must be at least 40 degrees.
+
+2. **Details of the Water Mugs:**
+   - <data2>One mug is 33 degrees</data2>. This is the temperature of the first mug.
+   - The temperature of the second mug is unknown, and we need to find the minimum temperature that makes the final mixture at least 40 degrees.
+
+3. **Mixing the Water:**
+   - <data3>He pours 4 ounces of water from the 33-degree mug</data3>. This means 4 ounces of 33-degree water is added to the bottle.
+   - <data4>One ounce from the other bottle</data4> is added. This means 1 ounce of water from the second mug is added to the bottle.
+
+4. **Final Condition:**
+   - <data5>He is now able to drink the water</data5>. This implies the final temperature of the mixture is at least 40 degrees.
+
+5. **Calculating the Minimum Temperature:**
+   - Let \( T \) be the temperature of the second mug.
+   - The total volume of the mixture is 4 ounces from the first mug and 1 ounce from the second mug, totaling 5 ounces.
+   - The equation for the final temperature \( T_f \) of the mixture is:
+     \[
+     T_f = \frac{(4 \times 33) + (1 \times T)}{5}
+     \]
+   - We need \( T_f \geq 40 \).
+
+6. **Solving the Equation:**
+   \[
+   \frac{(4 \times 33) + (1 \times T)}{5} \geq 40
+   \]
+   \[
+   132 + T \geq 200
+   \]
+   \[
+   T \geq 68
+   \]
+
+Therefore, the minimum temperature of the second bottle must be at least 68 degrees for Donny to be able to drink the water. The answer is {68}.","40 degrees</data1>. He has two mugs of water. <data2>One mug is 33 degrees</data2>. The other is an unknown temperature. If he <data3>pours 4 ounces of water from the 33-degree mug</data3> into his water bottle and <data4>one ounce from the other bottle</data4>, <data5>he is now able to drink the water</data5>. At least how many degrees is the second bottle?"
+98,John hires a driving service to get him to work each day. <data1>His work is 30 miles away</data1> and <data2>he has to go there and back each day</data2>. <data3>He goes to work 5 days a week</data3> <data4>for 50 weeks a year</data4>. He gets <data5>charged $2 per mile driven</data5> and he also gives his driver a <data6>$150 bonus per month</data6>. How much does he pay a year for driving?,"John hires a driving service to get him to work each day. <data1>His work is 30 miles away</data1> and <data2>he has to go there and back each day</data2>. <data3>He goes to work 5 days a week</data3> <data4>for 50 weeks a year</data4>. He gets <data5>charged $2 per mile driven</data5> and he also gives his driver a <data6>$150 bonus per month</data6>. How much does he pay a year for driving?
+--------------- Extracted Question ---------------
+
+To determine how much John pays a year for driving, we need to calculate the total cost based on the given data.
+
+1. **Calculate the total miles driven per day:**
+   - John's work is <data1>30 miles away</data1>, and he has to go there and back each day, so he drives 30 * 2 = 60 miles per day.
+
+2. **Calculate the total miles driven per week:**
+   - He goes to work <data3>5 days a week</data3>, so he drives 60 miles/day * 5 days/week = 300 miles per week.
+
+3. **Calculate the total miles driven per year:**
+   - He works <data4>50 weeks a year</data4>, so he drives 300 miles/week * 50 weeks/year = 15,000 miles per year.
+
+4. **Calculate the cost of driving per year:**
+   - He is charged <data5>$2 per mile driven</data5>, so the cost for the miles driven is 15,000 miles * $2/mile = $30,000.
+
+5. **Calculate the total bonus given per year:**
+   - He gives his driver a <data6>$150 bonus per month</data6>. There are 12 months in a year, so the total bonus is $150/month * 12 months = $1,800.
+
+6. **Calculate the total cost per year:**
+   - The total cost per year is the sum of the cost of driving and the bonus: $30,000 + $1,800 = $31,800.
+
+Therefore, John pays a total of {31,800} per year for driving.",ch day. <data1>His work is 30 miles away</data1> and <data2>he has to go there and back each day</data2>. <data3>He goes to work 5 days a week</data3> <data4>for 50 weeks a year</data4>. He gets <data5>charged $2 per mile driven</data5> and he also gives his driver a <data6>$150 bonus per month</data6>. How much does he pay a year for driving?
