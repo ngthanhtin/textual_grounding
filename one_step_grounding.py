@@ -1,29 +1,15 @@
-import yaml
-import os, re
-import random, json, argparse
+
+import yaml, os, re, random, json
 from tqdm import tqdm
 import pandas as pd
-import re
 
-from utils.keys import API_KEYS
+from arg_parser import get_common_args
 from utils.utils import read_jsonl_file, extract_last_sentence
-
-# gemini
-import google.generativeai as genai
-from google.generativeai.types import RequestOptions
-from google.api_core import retry
-# claude
-import anthropic
-# llama
-import groq
-from together import Together
-# gpt4
-from openai import OpenAI
-import openai
+from agents.api_agents import api_agent
 
 random.seed(0)
 
-def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used, answer_mode='da'):
+def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used, temperature=0.0, answer_mode='da'):
     answers = []
     ids_can_be_answered = []
     questions_can_be_answered = []
@@ -86,106 +72,50 @@ def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used, answer_mo
                 Reformatted Question: \
                     Answer:\
                         Final answer:"   
-            
-        if 'gemini' in llm_model:
-            genai.configure(api_key=API_KEYS['gemini'])
-            model_config = {
-                "temperature": 0,
-                }
-            model = genai.GenerativeModel(llm_model, 
-                                          generation_config=model_config
-                                          )
-            try:
-                response = model.generate_content(prompt, request_options=RequestOptions(retry=retry.Retry(initial=10, multiplier=2, maximum=60, timeout=60)))
-                answers.append(response.text)
-                questions_can_be_answered.append(q)
-                ids_can_be_answered.append(id)
-            except:
-                continue
-            
-        elif 'claude' in llm_model:
-            client = anthropic.Anthropic(api_key=API_KEYS['claude'])
-            try:
-                response = client.messages.create(
-                    model="claude-3-5-sonnet-20240620",
-                    max_tokens=1024,
-                    temperature = 0.0,
-                    messages=[{"role": "user", "content": prompt}]
-                )
-                answers.append(response.content[0].text)
-                questions_can_be_answered.append(q)
-                ids_can_be_answered.append(id)
-            except:
-                continue
-        elif 'gpt-4' in llm_model:
-            print('using gpt4')
-            client = OpenAI(
-                    api_key=API_KEYS['gpt4'],
-                )
-            # try:
-            response = client.chat.completions.create(
-                        model=llm_model,
-                        messages=[{"role": "user", "content": prompt}],
-                        temperature=0.0,
-                        n=1,
-                        frequency_penalty=0,
-                        presence_penalty=0
-                    )
-            choices = response.choices
-            
-            completion_objs = [choice.message for choice in choices]
-            completions = [
-                completion.content for completion in completion_objs]
-
-            answers.append(completions[0])
+        
+        
+        response = api_agent(llm_model, prompt, temperature=temperature)
+        if response is not None:
+            answers.append(response)
             questions_can_be_answered.append(q)
             ids_can_be_answered.append(id)
-            # except:
-            #     continue
-        elif llm_model == 'llama_groq':
-            client = groq.Groq(api_key=API_KEYS['groq'])
-            messages = [
-                    {"role": "system", "content": """I am a language model that can help you with your questions. I can provide you with information, answer questions, and help you with your problems. I am here to help you.
-            """ },
-                    {"role": "user", "content": prompt},
-                    {"role": "assistant", "content": "Let's think step by step."}
-                ]
-            try:
-                response = client.chat.completions.create(
-                                model="llama-3.1-70b-versatile",
-                                messages=messages,
-                                max_tokens=1024,
-                                temperature=0.0,
-                            )
-                response = response.choices[0].message.content
-                answers.append(response)
-                questions_can_be_answered.append(q)
-                ids_can_be_answered.append(id)
-            except:
-                continue
+        else:
+            continue
     
     return ids_can_be_answered, questions_can_be_answered, answers
 
 if __name__ == "__main__":
-    arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument('--llm_model', type=str, default='gemini', help='The language model to query', choices=['gemini-1.5-pro-002', 'gemini-1.5-flash-002', 'claude', 'gpt-4o-2024-08-06', 'gpt-4o-mini-2024-07-18', 'llama_transformer', 'llama_groq'])
-    arg_parser.add_argument('--dataset', type=str, default='GSM8K', help='The dataset to query', choices=['GSM8K', 'StrategyQA', 'p_GSM8K', 'AQUA', 'MultiArith', 'ASDiv', 'SVAMP', 'commonsenseQA', 'wikimultihopQA', 'date', 'sports', 'reclor', 'CLUTRR', 'object_counting', 'navigate', 'causal_judgement', 'logical_deduction_three_objects', 'logical_deduction_five_objects', 'logical_deduction_seven_objects', 'reasoning_about_colored_objects', 'GSM_Plus', 'GSM_IC', 'spartQA', 'last_letter_2', 'last_letter_4', 'coin'])
-    arg_parser.add_argument('--prompt_used', type=str, default='fs_inst', help='The prompt used to query the language model', choices=['zs', 'fs', 'fs_inst'])
-    arg_parser.add_argument('--answer_mode', type=str, default='da', help='The answer mode', choices=['da', 'cot', 'grounding_cot'])
-    arg_parser.add_argument('--save_answer', action='store_true')
-    arg_parser.add_argument('--data_mode', type=str, default='longest', help='The data mode', choices=['random', 'longest'])
     
+    arg_parser = get_common_args()  # Get the common arguments
     args = arg_parser.parse_args()
     
     prompt_design = 'design_1'
     version = 'v4'
     
+    # save path
+    save_result_folder = 'results_auto_tagging'
+    if args.answer_mode in ['da', 'cot']:
+        save_path = f'{save_result_folder}/{args.dataset}/{args.answer_mode}/{args.prompt_used}_{args.llm_model}.csv'
+        os.makedirs(f'{save_result_folder}/{args.dataset}/{args.answer_mode}', exist_ok=True)
+    if args.answer_mode == 'grounding_cot':
+        save_path = f'{save_result_folder}/{args.dataset}/{prompt_design}_{version}/{args.prompt_used}_{args.llm_model}.csv'
+        os.makedirs(f'{save_result_folder}/{args.dataset}/{prompt_design}_{version}', exist_ok=True)
+    
+    str_temperature = str(args.temperature).replace('.', '')
+    if args.data_mode == 'random':
+        save_path = save_path[:-4] + f'_temp_{str_temperature}_random.csv'
+    else:
+        save_path = save_path[:-4] + f'_temp_{str_temperature}_longest.csv'
+            
     # load config file
     # data_path & fewshot_prompt_path & max_question_length
     with open('configs/config.yaml', 'r') as f:
         config = yaml.safe_load(f)
-    data_path = config['data_paths'][args.dataset]
-    fewshot_prompt_path = config['prompts'][args.answer_mode][args.dataset]
+    base_data_path = config["base_data_path"]
+    data_path = os.path.join(base_data_path, config['data_paths'][args.dataset])
+    base_prompt_path = config["base_prompt_path"]
+    base_prompt_path = 'prompt_auto_tagging/'
+    fewshot_prompt_path = os.path.join(base_prompt_path, config['prompts'][args.answer_mode][args.dataset])
     question_length = config['max_question_lengths'][args.dataset]
             
     # read data
@@ -237,15 +167,13 @@ if __name__ == "__main__":
         else:
             ids = [x["id"] for x in random_data if len(x["question"]) >= question_length]
     
-    # print(len(questions))
-    # exit()
     # ------------------------------
     if args.data_mode == 'random' and args.dataset != 'p_GSM8K':
         # read infered id
         if args.dataset in ['commonsenseQA', 'date', 'sports', 'reclor', 'CLUTRR']:
-            infered_data = pd.read_csv(f'results/{args.dataset}/cot/fs_inst_gemini-1.5-pro-002_temp_0.csv')
+            infered_data = pd.read_csv(f'{save_result_folder}/{args.dataset}/cot/fs_inst_gemini-1.5-pro-002_temp_0.csv')
         else:
-            infered_data = pd.read_csv(f'results/{args.dataset}/cot/fs_inst_gemini-1.5-flash-002_temp_0.csv')
+            infered_data = pd.read_csv(f'{save_result_folder}/{args.dataset}/cot/fs_inst_gemini-1.5-flash-002_temp_0.csv')
         infered_ids = infered_data['id'].tolist()
         # remove questions and ids that have been infered, so we can infer the rest of the questions
         remaining_questions, remaining_ids = [], []
@@ -261,22 +189,9 @@ if __name__ == "__main__":
         ids = list(selected_ids)
     
     # ------------------------------
-    ids_can_be_answered, questions_can_be_answered, answers = query_llm(args.llm_model, ids, questions, few_shot_prompt, args.prompt_used, args.answer_mode)
+    ids_can_be_answered, questions_can_be_answered, answers = query_llm(args.llm_model, ids, questions, few_shot_prompt, args.prompt_used, args.temperature, args.answer_mode)
     
-    if args.save_answer:
-        # save path
-        if args.answer_mode in ['da', 'cot']:
-            save_path = f'results/{args.dataset}/{args.answer_mode}/{args.prompt_used}_{args.llm_model}.csv'
-            os.makedirs(f'results/{args.dataset}/{args.answer_mode}', exist_ok=True)
-        if args.answer_mode == 'grounding_cot':
-            save_path = f'results/{args.dataset}/{prompt_design}_{version}/{args.prompt_used}_{args.llm_model}.csv'
-            os.makedirs(f'results/{args.dataset}/{prompt_design}_{version}', exist_ok=True)
-        
-        if args.data_mode == 'random':
-            save_path = save_path[:-4] + '_temp_0_random.csv'
-        else:
-            save_path = save_path[:-4] + '_temp_0.csv'
-            
+    if args.save_answer:    
         # save answers and questions to csv file (the len of question and answer should be the same)
         df = pd.DataFrame({'id': ids_can_be_answered, 'question': questions_can_be_answered, 'answer': answers})
         df.to_csv(save_path, index=False)
