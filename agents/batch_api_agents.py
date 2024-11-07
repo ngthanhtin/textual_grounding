@@ -72,10 +72,10 @@ def prepare_batch_input(llm_model, ids, prompts, temperature=1.0, max_tokens=102
     
     return tasks
     
-def api_agent(llm_model, questions, ids, few_shot_prompt, instruction, temperature=1.0, max_tokens=1024, batch_output_file='batch_input.jsonl', result_file='results.jsonl'):
+def batch_api_agent(llm_model, ids, prompts, temperature=1.0, max_tokens=1024, batch_output_file='batch_input.jsonl', result_file='results.jsonl'):
     
     # Creating an array of json tasks
-    tasks = prepare_batch_input(llm_model, questions, ids, few_shot_prompt, instruction, temperature, max_tokens, batch_output_file)
+    tasks = prepare_batch_input(llm_model, ids, prompts, temperature, max_tokens, batch_output_file)
         
     if 'gpt-4' in llm_model:
         client = OpenAI(
