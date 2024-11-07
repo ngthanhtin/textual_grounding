@@ -17,12 +17,11 @@ import openai
 import random, json
 random.seed(0)
 
-def prepare_batch_input(llm_model, questions, ids, few_shot_prompt, instruction, temperature=1.0, max_tokens=1024, batch_output_file='batch_output.jsonl'):
+def prepare_batch_input(llm_model, ids, prompts, temperature=1.0, max_tokens=1024, batch_output_file='batch_output.jsonl'):
     tasks = []
     
     if 'gpt-4' in llm_model:
-        for index, q in zip(ids, questions):
-            prompt = f"{few_shot_prompt}\n{q}\n{instruction}"
+        for index, prompt in zip(ids, prompts):
             
             task = {
                 "custom_id": f"task-{index}",
@@ -55,8 +54,7 @@ def prepare_batch_input(llm_model, questions, ids, few_shot_prompt, instruction,
     elif 'gemini' in llm_model:
         pass
     elif 'claude' in llm_model:
-        for index, q in zip(ids, questions):
-            prompt = f"{few_shot_prompt}\n{q}\n{instruction}"
+        for index, prompt in zip(ids, prompts):
             tasks = [Request(
                 custom_id=f"task-{index}",
                 params=MessageCreateParamsNonStreaming(
