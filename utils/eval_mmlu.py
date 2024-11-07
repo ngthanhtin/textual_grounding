@@ -23,13 +23,18 @@ def parse_multi_choice_response(response, all_choices, index2ans):
     index_ans = True
     ans_with_brack = False
     candidates = []
-    for choice in all_choices:  # e.g., (A) (B) (C) (D)
+    
+    response = response.lower()
+    all_choices = [choice.lower() for choice in all_choices]
+            
+    for choice in all_choices:  # e.g., (A) (B) (C) (D), (a), (b), (c), (d)
         if f'({choice})' in response:
             candidates.append(choice)
             ans_with_brack = True
-        if '{' + f'{choice}' + '}' in response:
+        elif '{' + f'{choice}' + '}' in response:
             candidates.append(choice)
             ans_with_brack = True
+            
 
     if len(candidates) == 0:
         for choice in all_choices: # e.g., A B C D
@@ -293,11 +298,33 @@ def compute_acc(questions, answers, gts, dataset):
                 print("====================================")
         elif dataset in ['AQUA']:
             index2ans = parse_options(question)
+            # remove ' in index2ans
+            index2ans = {key: value.replace("'", "") for key, value in index2ans.items()}
+            
             all_choices = list(index2ans.keys())
             pred_index = parse_multi_choice_response(answer, all_choices, index2ans)
             
-            if pred_index == gt:
+            gt_number  = index2ans[gt]
+            
+            if pred_index.lower() == gt.lower():
                 total_acc += 1
+            else:
+                # Regular expression to capture the answer option
+                match = re.search(r"\*\*(.*?)\*\*", answer)
+                if match:
+                    answer_option = match.group(1)
+                    if gt.lower() in answer_option.lower():
+                        total_acc += 1
+                    else:
+                        print('Answer: ', answer[-100:], 'GT: ', gt, gt_number)
+                        print('------------------------------------')
+                else:    
+                    if gt_number in answer[-50:]:
+                        total_acc += 1
+                    else:
+                        print('Answer: ', answer[-100:], 'GT: ', gt, gt_number)
+                        print('------------------------------------')
+             
         
         elif dataset in ['date', 'CLUTRR', 'wikimultihopQA']:
             conclusion = answer.split('{')[-1].split('}')[0]

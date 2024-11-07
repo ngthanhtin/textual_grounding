@@ -7,6 +7,7 @@ declare -A llm_models_dict=(
     ["3"]="gpt-4o-mini-2024-07-18"
     ["4"]="gpt-4o-2024-08-06"
     ["5"]="claude"
+    ["6"]="llama_sambanova"
 )
 
 # Define datasets_dict
@@ -72,11 +73,11 @@ dataset="${datasets_dict[$dataset_key]}"
 # Print the combination being run for logging purposes
 # echo "Running eval_da_and_cot.py for model: $llm_model and dataset: $dataset"
 
-python eval_da_and_cot.py --llm_model "$llm_model" --data_mode longest --answer_mode cot --dataset "$dataset"
-python eval_da_and_cot.py --llm_model "$llm_model" --data_mode longest --answer_mode grounding_cot --dataset "$dataset"
+# python eval_da_and_cot.py --llm_model "$llm_model" --data_mode longest --answer_mode cot --dataset "$dataset"
+# python eval_da_and_cot.py --llm_model "$llm_model" --data_mode longest --answer_mode grounding_cot --dataset "$dataset"
 
-# python eval_mmlu.py --llm_model "$llm_model" --data_mode longest --answer_mode cot --dataset "$dataset"
-# python eval_mmlu.py --llm_model "$llm_model" --data_mode longest --answer_mode grounding_cot --dataset "$dataset"
+python eval_mmlu.py --llm_model "$llm_model" --data_mode longest --answer_mode cot --dataset "$dataset"
+python eval_mmlu.py --llm_model "$llm_model" --data_mode longest --answer_mode grounding_cot --dataset "$dataset"
 
 # echo "Running eval_gcot.py for model: $llm_model and dataset: $dataset"
 # python eval_gcot.py --llm_model "$llm_model" --data_mode longest --dataset "$dataset"
