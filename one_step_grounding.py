@@ -5,74 +5,92 @@ import pandas as pd
 
 from arg_parser import get_common_args
 from utils.utils import read_jsonl_file, extract_last_sentence
-from agents.api_agents import api_agent
+from agents.api_agents import api_agent, batch_api_agent
 
 random.seed(0)
 
-def query_llm(llm_model, ids, questions, few_shot_prompt, prompt_used, temperature=0.0, answer_mode='da'):
+def create_prompt(question, dataset, prompt_used, few_shot_prompt, answer_mode):
+    if dataset in ['commonsenseQA']:
+        last_sentence_pattern = re.compile(r"Question:\s*(.*?)\s*([^.?!]*[.?!])\s*Answer Choices:", re.DOTALL)
+        match = last_sentence_pattern.search(question)
+        if match:
+            last_sentence = match.group(2)
+        else:
+            last_sentence = 'the question'
+    elif dataset == 'sports':
+        last_sentence = 'Is the following sentence plausible?'
+    elif dataset == 'reclor':
+        last_sentence = 'Choose the correct answer.'
+    elif dataset == 'spartQA':
+        last_sentence = ""
+    else:
+        last_sentence = extract_last_sentence(question)
+    
+    if prompt_used == "fs":
+        prompt = f"{few_shot_prompt}\n{q}"
+        
+    if prompt_used == "fs_inst":
+        if answer_mode == 'da':
+            prompt = f"{few_shot_prompt}\n{q}\nDo not generate your explaination, please give the answer only as follow:\n\
+                Answer:."
+        if answer_mode == 'cot':
+            prompt = f"{few_shot_prompt}\n{q}\nPlease generate your explanation first, then generate the final answer in the bracket as follow:\n" +"Answer: {}"
+        if answer_mode == 'grounding_cot':
+            #(ground in Q and A)
+            instruction = f"I want you to answer this question but your explanation should contain references referring back to the information in the question. To do that, first, re-generate the question with proper tags for key phrases, the key phrases that are most relevant to answering the question {last_sentence} and then generate your answers. The output format is as follow:\n\
+                Reformatted Question: \
+                    Answer:"
+                    
+            #(ground in Q only)
+            # instruction = "I want you to answer this question. To do that, first, re-generate the question with proper tags for key phrases, the key phrases that are most relevant to answering the question {last_sentence}, and then generate your answers. The output format is as follow:\n\
+            #     Reformatted Question: \
+            #         Answer:"
+                    
+            # (ground in A only)
+            # instruction = f"I want you to answer this question but your explanation should contain references referring back to the information in the question. To do that, first, repeat the question and then, generate your answers with proper tags for key phrases, the key phrases that are most relevant to answering the question {last_sentence}. The output format is as follow:\n\
+            #     Reformatted Question: \
+            #         Answer:"
+            
+            prompt = f"{few_shot_prompt}\n{q}\n{instruction}"
+            
+    if prompt_used == "zs":
+        instruction = "I want you to answer this question but your explanation should contain references referring back to the information in the question. To do that, first, re-generate the question with proper tags (<fact1>, <fact2>, <fact3>, etc) for key phrases, the key phrases that are most relevant to answering the question {last_sentence}, and then generate your answers that also have the tag (<fact1>, <fact2>, <fact3>, etc) for the grounded information. Give your answer by analyzing step by step, and give your answer in curly brackets" + " {} in the final answer. The output format is as follow:\n\
+            Reformatted Question: \
+                Answer:\
+                    Final answer:"
+                    
+        prompt = f"{q}\n{instruction}"
+    
+    return prompt
+    
+def batch_query_llm(llm_model, ids, questions, dataset, few_shot_prompt, prompt_used, temperature=1.0, answer_mode='da'):
+    prompts = []
+    ids = []
+    for i, (id, q) in tqdm(enumerate(zip(ids, questions))):
+        prompt = create_prompt(q, dataset, prompt_used, few_shot_prompt, answer_mode)
+        prompts.append(prompt)
+        ids.append(id)
+        
+    batch_output_file = f'batch_request/{dataset}/records.jsonl'
+    os.makedirs(f'batch_request/{dataset}', exist_ok=True)
+    result_file = f'batch_request/{args.dataset}/{answer_mode}/{prompt_used}_{llm_model}.jsonl'
+    os.makedirs(f'batch_request/{args.dataset}/{answer_mode}', exist_ok=True)
+    
+    batch_api_agent(llm_model, ids, prompts, temperature=temperature, batch_output_file=batch_output_file, result_file=result_file)
+    
+
+def query_llm(llm_model, ids, questions, dataset, few_shot_prompt, prompt_used, temperature=1.0, answer_mode='da'):
     answers = []
     ids_can_be_answered = []
     questions_can_be_answered = []
-        
+    
     for i, (id, q) in tqdm(enumerate(zip(ids, questions))):
         
-        if args.dataset in ['commonsenseQA']:
-            last_sentence_pattern = re.compile(r"Question:\s*(.*?)\s*([^.?!]*[.?!])\s*Answer Choices:", re.DOTALL)
-            match = last_sentence_pattern.search(q)
-            if match:
-                last_sentence = match.group(2)
-            else:
-                last_sentence = 'the question'
-        elif args.dataset == 'sports':
-            last_sentence = 'Is the following sentence plausible?'
-        elif args.dataset == 'reclor':
-            last_sentence = 'Choose the correct answer.'
-        elif args.dataset == 'spartQA':
-            last_sentence = ""
-        else:
-            last_sentence = extract_last_sentence(q)
+        prompt = create_prompt(q, dataset, prompt_used, few_shot_prompt, answer_mode)
         
         # if i == 1:
         #     print(last_sentence)
         #     break
-        
-        if prompt_used == "fs":
-            prompt = f"{few_shot_prompt}\n{q}"
-            
-        if prompt_used == "fs_inst":
-            if answer_mode == 'da':
-                prompt = f"{few_shot_prompt}\n{q}\nDo not generate your explaination, please give the answer only as follow:\n\
-                    Answer:."
-            if answer_mode == 'cot':
-                prompt = f"{few_shot_prompt}\n{q}\nPlease generate your explanation first, then generate the final answer in the bracket as follow:\n" +"Answer: {}"
-            if answer_mode == 'grounding_cot':
-                # version 1
-                # prompt = f"{few_shot_prompt}\n{q}\nI want you to answer this question but your explanation should contain references referring back to the information in the question. To do that, first, re-generate the question with proper tags and then generate your answers. The output format is as follow:\n\
-                #     Reformatted Question: \
-                #         Answer:"
-            
-                # version 2 (ground in Q and A)
-                
-                prompt = f"{few_shot_prompt}\n{q}\nI want you to answer this question but your explanation should contain references referring back to the information in the question. To do that, first, re-generate the question with proper tags for key phrases, the key phrases that are most relevant to answering the question {last_sentence} and then generate your answers. The output format is as follow:\n\
-                    Reformatted Question: \
-                        Answer:"
-                
-                # version 3 (ground in Q only)
-                # prompt = f"{few_shot_prompt}\n{q}\nI want you to answer this question. To do that, first, re-generate the question with proper tags for key phrases, the key phrases that are most relevant to answering the question {last_sentence}, and then generate your answers. The output format is as follow:\n\
-                #     Reformatted Question: \
-                #         Answer:"
-                        
-                # version 4 (ground in A only)
-                # prompt = f"{few_shot_prompt}\n{q}\nI want you to answer this question but your explanation should contain references referring back to the information in the question. To do that, first, repeat the question and then, generate your answers with proper tags for key phrases, the key phrases that are most relevant to answering the question {last_sentence}. The output format is as follow:\n\
-                #     Reformatted Question: \
-                #         Answer:"
-                
-        if prompt_used == "zs":
-            prompt = f"{q}\nI want you to answer this question but your explanation should contain references referring back to the information in the question. To do that, first, re-generate the question with proper tags (<fact1>, <fact2>, <fact3>, etc) for key phrases, the key phrases that are most relevant to answering the question {last_sentence}, and then generate your answers that also have the tag (<fact1>, <fact2>, <fact3>, etc) for the grounded information. Give your answer by analyzing step by step, and give your answer in curly brackets" + " {} in the final answer. The output format is as follow:\n\
-                Reformatted Question: \
-                    Answer:\
-                        Final answer:"   
-        
         
         response = api_agent(llm_model, prompt, temperature=temperature)
         if response is not None:
@@ -132,6 +150,7 @@ if __name__ == "__main__":
     if args.data_mode == 'random':
         question_length = 0
     
+    question_length = 0
     random_data = data        
     if args.dataset == 'p_GSM8K':
         questions = [x["new_question"] for x in random_data if len(x["new_question"]) >= question_length]
@@ -156,17 +175,22 @@ if __name__ == "__main__":
     elif args.dataset == 'GSM_IC':
         questions = [x['new_question'] for x in random_data if len(x["new_question"]) >= question_length]
         ids = [i for i in range(len(questions))]
+    elif args.dataset == 'GSM8K_Hard':
+        questions = [x['question'] for x in random_data if len(x["question"]) >= question_length]
+        ids = [i for i in range(len(questions))]
     else:
         questions = [x["question"] for x in random_data if len(x["question"]) >= question_length]
         if args.dataset == 'GSM_Plus':
             ids = [i for i in range(len(questions))]
-        if args.dataset in ['coin', 'last_letter_2', 'last_letter_4']:
+        elif args.dataset in ['coin', 'last_letter_2', 'last_letter_4']:
             ids = [i for i in range(len(questions))]
         elif args.dataset == 'wikimultihopQA':
             ids = [x["_id"] for x in random_data if len(x["question"]) >= question_length]
         else:
             ids = [x["id"] for x in random_data if len(x["question"]) >= question_length]
     
+    # print(len(questions))
+    # exit()
     # ------------------------------
     if args.data_mode == 'random' and args.dataset != 'p_GSM8K':
         # read infered id
@@ -189,7 +213,10 @@ if __name__ == "__main__":
         ids = list(selected_ids)
     
     # ------------------------------
-    ids_can_be_answered, questions_can_be_answered, answers = query_llm(args.llm_model, ids, questions, few_shot_prompt, args.prompt_used, args.temperature, args.answer_mode)
+    if not args.batch_request:
+        ids_can_be_answered, questions_can_be_answered, answers = query_llm(args.llm_model, ids, questions, args.dataset, few_shot_prompt, args.prompt_used, args.temperature, args.answer_mode)
+    else:
+        batch_query_llm(args.llm_model, ids, questions, args.dataset, few_shot_prompt, args.prompt_used, args.temperature, args.answer_mode)
     
     if args.save_answer:    
         # save answers and questions to csv file (the len of question and answer should be the same)
