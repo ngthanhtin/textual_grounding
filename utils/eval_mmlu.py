@@ -364,7 +364,7 @@ if __name__ == '__main__':
     # data_path
     with open('../configs/config.yaml', 'r') as f:
         config = yaml.safe_load(f)
-    base_data_path = config['base_data_path']
+    base_data_path = '/Users/log/Github/textual_grounding/data/'
     data_path = os.path.join(base_data_path, config['data_paths'][args.dataset])
 
     result_folder = '../results_auto_tagging'
@@ -376,7 +376,8 @@ if __name__ == '__main__':
     if args.data_mode == 'random':
         df_path = f'{result_folder}/{args.dataset}/{answer_mode}/fs_inst_{args.llm_model}_temp_10_random.csv'
     else:
-        df_path = f'{result_folder}/{args.dataset}/{answer_mode}/fs_inst_{args.llm_model}_temp_10_longest.csv'
+        # df_path = f'{result_folder}/{args.dataset}/{answer_mode}/fs_inst_{args.llm_model}_temp_10_longest.csv'
+        df_path = f'/Users/log/Github/textual_grounding/logan/results/final/VanillaCoT/AQUA/llama3.18b/zero_shot_vanilla_cot_None_AQUA_llama3.18b.csv'
 
     # df_path = f'../results/{args.dataset}/cot/fs_inst_claude_temp_0.csv'
 
