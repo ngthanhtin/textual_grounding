@@ -6684,3 +6684,128 @@ So, Lewis pays {527,532} dollars as rent during the harvest season."
 So, each book cost $3. 
 
 {3}"
+913,David did 51 push-ups in gym class today. David did 49 more push-ups than Zachary. How many push-ups did Zachary and David do altogether?,"To find out how many push-ups Zachary and David did altogether, we need to know how many push-ups Zachary did. 
+
+Since David did 51 push-ups and he did 49 more push-ups than Zachary, we can subtract 49 from 51 to find out how many push-ups Zachary did. 
+
+51 (David's push-ups) - 49 = 2
+
+So Zachary did 2 push-ups. 
+
+Now, we need to add the number of push-ups David did and the number of push-ups Zachary did to find out how many push-ups they did altogether.
+
+51 (David's push-ups) + 2 (Zachary's push-ups) = 53
+
+Therefore, Zachary and David did {53} push-ups altogether."
+444,"2 red peaches, 6 yellow peaches and 14 green peaches are in the basket. How many more green peaches than yellow peaches are in the basket?","To find the difference between the number of green peaches and yellow peaches, we need to subtract the number of yellow peaches from the number of green peaches.
+
+Number of green peaches: 14
+Number of yellow peaches: 6
+
+Difference = Number of green peaches - Number of yellow peaches
+Difference = 14 - 6
+Difference = 8
+
+So, there are 8 more green peaches than yellow peaches in the basket. 
+
+{8}"
+625,Robin's hair was 14 inches long. It grew by 8 inches. Then he cut off 20 inches. How long is his hair now?,"To find the length of Robin's hair, we need to follow the steps:
+
+1. Robin's hair was initially 14 inches long.
+2. It grew by 8 inches, so now it's 14 + 8 = 22 inches long.
+3. Then, he cut off 20 inches from his hair. 
+
+Now, we need to subtract 20 inches from 22 inches to find the final length of his hair.
+
+22 - 20 = 2
+
+So, the length of Robin's hair now is {2} inches."
+655,"Jake has 6 fewer peaches than Steven. Steven has 18 more peaches than Jill. If jill has 5 peaches, how many peaches does Jake have?","To find out how many peaches Jake has, we need to follow the information step by step:
+
+1. Jill has 5 peaches.
+2. Steven has 18 more peaches than Jill. 
+   So, Steven has 5 + 18 = 23 peaches.
+3. Jake has 6 fewer peaches than Steven.
+   So, Jake has 23 - 6 = 17 peaches.
+
+Therefore, {17}."
+626,Edward spent $ 16 to buy 92 books each book costing him the same amount of money. Now he has $ 6. How much did Edward have before he spent his money?,"To find out how much Edward had before he spent his money, we need to determine the cost of each book and then calculate the total amount he had initially.
+
+1. First, we find the cost of each book by dividing the total amount spent by the number of books: 
+   Cost per book = Total amount spent / Number of books
+   Cost per book = $16 / 92
+   Cost per book = $0.1739 (approximately)
+
+2. Since the cost of each book is the same, we can multiply the cost per book by the number of books to find the total amount spent: 
+   Total amount spent = Cost per book * Number of books
+   Total amount spent = $0.1739 * 92
+   Total amount spent ≈ $16
+
+3. We are given that Edward spent $16 and had $6 left. So, the total amount he had initially is the sum of the amount he spent and the amount he has left:
+   Total initial amount = Total amount spent + Amount left
+   Total initial amount = $16 + $6
+   Total initial amount = $22
+
+Therefore, {Edward had $22 before he spent his money}."
+888,"They decided to hold the party in their backyard. If they have 5 sets of tables and each set has 10 chairs, how many more chairs than tables do they have?","To find the number of chairs and tables, we need to multiply the number of sets by the number of chairs per set and the number of tables per set.
+
+Number of tables: 5 sets * 1 table/set = 5 tables
+Number of chairs: 5 sets * 10 chairs/set = 50 chairs
+
+Now, we need to find the difference between the number of chairs and tables. 
+Difference = Number of chairs - Number of tables
+Difference = 50 - 5
+Difference = 45
+
+So, they have {45} more chairs than tables."
+324,Edward spent $ 6 to buy books and $ 16 to buy pens. Now he has $ 19. How much did Edward have before he spent his money?,"Let's break down the problem step by step:
+
+1. Edward spent $6 on books and $16 on pens. 
+   So, the total amount he spent is $6 + $16 = $22.
+
+2. After spending $22, Edward has $19 left.
+   This means he had $19 + $22 = $41 before spending his money.
+
+So, the amount Edward had before he spent his money is {41}."
+193,Last week Fred had 19 dollars and Jason had 16 dollars. They washed cars over the weekend and now Fred has 40 dollars and Jason has 69 dollars. How much money did Fred earn over the weekend?,"To find out how much money Fred earned over the weekend, we need to subtract the amount of money he had last week from the amount of money he has now.
+
+Last week, Fred had 19 dollars.
+Now, Fred has 40 dollars.
+
+So, the amount of money Fred earned over the weekend is: 
+40 (now) - 19 (last week) = 21 dollars.
+
+Therefore, {21}."
+603,"Bobby had 22 pieces of candy. He ate some pieces of candy. Then he ate 5 more. If he still has 8 pieces of candy left, how many pieces of candy had he eaten at the start?","Let's break down the problem step by step:
+
+1. Bobby initially had 22 pieces of candy.
+2. He ate some pieces of candy, but we don't know how many yet. Let's call this number 'x'.
+3. After eating 'x' pieces, he had some candy left.
+4. Then, he ate 5 more pieces.
+5. After eating 5 more pieces, he had 8 pieces of candy left.
+
+To find out how many pieces of candy he had eaten at the start, we need to find out how many pieces he had left before eating the 5 additional pieces.
+
+Let's call the number of pieces he had left before eating the 5 additional pieces 'y'. We know that 'y + 5 = 8', because after eating 5 more pieces, he had 8 pieces left.
+
+So, 'y = 8 - 5 = 3'.
+
+Now, we know that 'y' is the number of pieces he had left after eating 'x' pieces. We also know that 'y + x = 22', because he initially had 22 pieces.
+
+So, '3 + x = 22'.
+
+To find 'x', we need to subtract 3 from both sides: 'x = 22 - 3 = 19'.
+
+Therefore, Bobby had eaten 19 pieces of candy at the start. 
+
+{19}"
+504,Bobby had 20 pieces of candy. He ate 34 pieces of candy. Then he ate 18 more. How many pieces of candy did Bobby eat?,"To find out how many pieces of candy Bobby ate, we need to add the number of pieces he ate in each step.
+
+Step 1: Bobby ate 34 pieces of candy.
+Step 2: Then, he ate 18 more pieces of candy.
+
+To find the total number of pieces Bobby ate, we add 34 and 18.
+
+34 + 18 = 52
+
+So, Bobby ate {52} pieces of candy."

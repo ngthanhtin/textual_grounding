@@ -4885,3 +4885,111 @@ So, {5} pictures were in each of the albums."
    Total amount earned = $90
 
 Therefore, Megan earned { $90 }."
+268,"Isabel was selling her necklaces at a garage sale. She sold 3 bead necklaces and 3 gem stone necklaces. If each necklace cost 6 dollars, how much money did she earn?","To find out how much money Isabel earned, we need to follow these steps:
+
+1. Calculate the total number of necklaces sold: 
+   Isabel sold 3 bead necklaces and 3 gemstone necklaces. 
+   Total necklaces sold = 3 + 3 = 6
+
+2. Calculate the total amount earned from selling the necklaces:
+   Each necklace costs 6 dollars. 
+   Total amount earned = Total necklaces sold * Cost per necklace
+   Total amount earned = 6 * 6
+   Total amount earned = 36
+
+So, Isabel earned {36} dollars."
+39,"Edward was trying to expand his game collection. He bought 41 games from a friend and bought 14 more at a garage sale. If 31 of the games didn't work, how many good games did he end up with?","To find the number of good games Edward ended up with, we need to first calculate the total number of games he bought and then subtract the number of games that didn't work.
+
+1. Calculate the total number of games Edward bought:
+   Edward bought 41 games from a friend and 14 more at a garage sale.
+   Total number of games = 41 + 14 = 55
+
+2. Calculate the number of good games:
+   Out of the total number of games, 31 didn't work.
+   Number of good games = Total number of games - Number of games that didn't work
+   Number of good games = 55 - 31 = 24
+
+So, {24}."
+278,"Chloe was playing a video game where she scores 9 points for each treasure she finds. If she found 6 treasures on the first level and 3 on the second, what would her score be?","To find Chloe's score, we need to calculate the points she earned from each level and then add them together.
+
+1. First, we find the points Chloe earned from the first level: 
+   She found 6 treasures and each treasure is worth 9 points. 
+   So, points from the first level = 6 * 9 = 54
+
+2. Next, we find the points Chloe earned from the second level:
+   She found 3 treasures and each treasure is worth 9 points.
+   So, points from the second level = 3 * 9 = 27
+
+3. Now, we add the points from both levels to find Chloe's total score:
+   Total score = points from the first level + points from the second level
+   Total score = 54 + 27 = 81
+
+So, Chloe's score is {81}."
+537,Kaleb was selling his old games. He started out with 76 but sold 46 of them. He packed the rest up putting 5 games into each box. How many boxes did he have to use?,"To find out how many boxes Kaleb had to use, we need to follow these steps:
+
+1. Calculate the number of games Kaleb had left after selling 46:
+   Initial number of games = 76
+   Number of games sold = 46
+   Number of games left = 76 - 46 = 30
+
+2. Calculate the number of boxes needed to pack the remaining games:
+   Number of games left = 30
+   Number of games per box = 5
+   Number of boxes needed = 30 / 5 = 6
+
+So, Kaleb had to use {6} boxes."
+322,"Gwen and her friends were recycling paper for their class. For every 3 pounds they recycled they earned one point. If Gwen recycled 5 pounds and her friends recycled 13 pounds, how many points did they earn?","To find the total points earned, we need to calculate the points earned by Gwen and her friends separately and then add them together.
+
+1. Gwen recycled 5 pounds. Since they earn 1 point for every 3 pounds, we need to divide 5 by 3 to find out how many points Gwen earned:
+   5 / 3 = 1.67 (round down to 1 since you can't earn a fraction of a point)
+
+2. Gwen's friends recycled 13 pounds. We do the same calculation as above:
+   13 / 3 = 4.33 (round down to 4 since you can't earn a fraction of a point)
+
+3. Now we add the points earned by Gwen and her friends:
+   1 (Gwen's points) + 4 (friends' points) = 5 points
+
+So, they earned {5} points."
+12,"While on vacation, Debby took 24 pictures at the zoo and 12 at the museum. If she later deleted 14 of the pictures, how many pictures from her vacation did she still have?","To find out how many pictures Debby still had, we need to first find out how many pictures she took in total. 
+
+Step 1: Calculate the total number of pictures Debby took.
+Total pictures = Pictures at the zoo + Pictures at the museum
+Total pictures = 24 + 12
+Total pictures = 36
+
+Step 2: Subtract the number of pictures Debby deleted from the total number of pictures she took.
+Pictures left = Total pictures - Pictures deleted
+Pictures left = 36 - 14
+Pictures left = 22
+
+Therefore, Debby still had {22} pictures from her vacation."
+381,"Paul had saved up 3 dollars. If he received another 7 dollars for his allowance, how many 5 dollar toys could he buy?","To find out how many 5 dollar toys Paul can buy, we need to calculate the total amount of money he has and then divide it by the cost of each toy.
+
+Step 1: Calculate the total amount of money Paul has.
+Paul initially had 3 dollars. He received 7 dollars for his allowance. 
+Total money = 3 + 7 = 10 dollars.
+
+Step 2: Determine how many 5 dollar toys Paul can buy.
+To find out how many toys Paul can buy, we need to divide the total amount of money he has by the cost of each toy.
+Number of toys = Total money / Cost of each toy
+= 10 / 5
+= 2
+
+So, Paul can buy {2} 5 dollar toys."
+46,"Dave had to wash 9 short sleeve shirts and 27 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash?","To find out how many shirts Dave did not wash, we need to know the total number of shirts and the number of shirts he washed.
+
+1. Total number of shirts = 9 short sleeve shirts + 27 long sleeve shirts = 36 shirts
+2. Number of shirts Dave washed = 20 shirts
+3. To find out how many shirts Dave did not wash, we subtract the number of shirts he washed from the total number of shirts: 
+   36 shirts (total) - 20 shirts (washed) = 16 shirts
+
+So, {16} shirts were not washed."
+222,"There were 2 friends playing a video game online when 2 more players joined the game. If each player had 6 lives, how many lives did they have total?","To find the total number of lives, we need to consider all the players in the game. 
+
+Initially, there were 2 friends playing. Each of them had 6 lives, so the total number of lives from these 2 friends is 2 * 6 = 12 lives.
+
+Then, 2 more players joined the game. Each of them also had 6 lives, so the total number of lives from these 2 new players is 2 * 6 = 12 lives.
+
+Now, we add the total number of lives from the initial 2 friends and the 2 new players: 12 + 12 = 24 lives.
+
+Therefore, the total number of lives in the game is {24}."
