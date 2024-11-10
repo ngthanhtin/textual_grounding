@@ -18,6 +18,10 @@ import time
 import logging
 import csv
 
+import anthropic
+from anthropic.types.beta.message_create_params import MessageCreateParamsNonStreaming
+from anthropic.types.beta.messages.batch_create_params import Request
+
 
 import random, json
 random.seed(0)
@@ -60,26 +64,65 @@ def prepare_batch_input(llm_model, ids, prompts, temperature=1.0, max_tokens=102
     elif 'gemini' in llm_model:
         pass
     elif 'claude' in llm_model:
+        # Create a list of requests instead of a dictionary
+        requests = []
         for index, prompt in zip(ids, prompts):
-            tasks = [Request(
-                custom_id=f"task-{index}",
-                params=MessageCreateParamsNonStreaming(
-                model="claude-3-5-sonnet-20240620",
-                max_tokens=max_tokens,
-                messages=[
-                    {
-                    "role": "user",
-                    "content": prompt,
-                    }
-                    ]
-            ))]
+            request = {
+                "custom_id": f"{index}",
+                "params": {
+                    "model": llm_model,
+                    "max_tokens": max_tokens,
+                    "messages": [{
+                        "role": "user",
+                        "content": prompt,
+                    }]
+                }
+            }
+            requests.append(request)
+
+        # Save the requests to file if needed
+        with open(batch_output_file, 'w') as f:
+            json.dump(requests, f)
             
-            tasks.append(task)
+        return requests
+
+def process_claude_batch_results(batch_id: str, client: anthropic.Anthropic, 
+                               output_csv_file: str) -> None:
+    results_data = []
     
-    return tasks
+    # Stream results and process each result
+    for result in client.beta.messages.batches.results(batch_id):
+        result_entry = {
+            'id': result.custom_id,
+            'prompt': '',  # Will need to be filled in from original prompts
+            'answer': ''
+        }
+        
+        if result.result.type == "succeeded":
+            # Extract the assistant's message content
+            content = result.result.message.content
+            if isinstance(content, list):
+                # Combine all text content if there are multiple parts
+                result_entry['answer'] = ' '.join(
+                    part.text for part in content 
+                    if hasattr(part, 'text')
+                )
+            else:
+                result_entry['answer'] = str(content)
+        else:
+            result_entry['answer'] = f"Error: {result.result.type}"
+            
+        results_data.append(result_entry)
+    
+    # Write results to CSV
+    with open(output_csv_file, 'w', newline='', encoding='utf-8') as csvfile:
+        fieldnames = ['id', 'prompt', 'answer']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for entry in results_data:
+            writer.writerow(entry)
 
 def combine_results_to_csv(batch_input_file, batch_result_file, output_csv_file):
-    """Combines batch input and results into a single CSV file."""
     id_prompt_map = {}
     
     # Read batch input to map custom_id to prompt
@@ -138,18 +181,16 @@ def batch_api_agent(
         combined_csv_file_path = batch_results_file.replace('.jsonl', '.csv')
         
         # Prepare the batch input file
-        prepare_batch_input(llm_model, ids, prompts, temperature, max_tokens, batch_output_file)
+        tasks = prepare_batch_input(llm_model, ids, prompts, temperature, max_tokens, batch_output_file)
         logging.info(f"Batch input file created at: {batch_output_file}")
 
-        # Initialize OpenAI client
-        openai.api_key = os.getenv('OPENAI_API_KEY')
-        if not openai.api_key:
-            raise EnvironmentError("OPENAI_API_KEY environment variable is not set.")
-        
-        client = OpenAI()
-        logging.info("OpenAI client initialized.")
-
         if 'gpt-4' in llm_model:
+            # Initialize OpenAI client
+            openai.api_key = os.getenv('OPENAI_API_KEY')
+            if not openai.api_key:
+                raise EnvironmentError("OPENAI_API_KEY environment variable is not set.")
+            client = OpenAI()
+            logging.info("OpenAI client initialized.")
             # Upload the batch input file
             with open(batch_output_file, "rb") as f:
                 batch_file = client.files.create(file=f, purpose="batch")
@@ -199,19 +240,90 @@ def batch_api_agent(
             pass
         
         elif 'claude' in llm_model:
-            # client = anthropic.Anthropic(api_key=API_KEYS['claude'])
-            message_batch = client.beta.messages.batches.create(
-            requests=tasks
-            )
+            try:
+                client = anthropic.Anthropic()
+                # Create batch request
+                print(tasks)
+                print()
+                message_batch = client.beta.messages.batches.create(requests=tasks)
+                message_id = message_batch.id
+                
+                logging.info(f"Created batch with ID: {message_id}")
+                
+
+                # Poll for batch completion
+                wait_time = 0
+                while wait_time < max_wait_time:
+                    message_batch = client.beta.messages.batches.retrieve(message_id)
+                    
+                    if message_batch.processing_status == "completed":
+                        break
+                    elif message_batch.processing_status == "failed":
+                        raise Exception(f"Batch processing failed: {message_batch.error}")
+                    
+                    time.sleep(poll_interval)
+                    wait_time += poll_interval
+                    logging.info(f"Batch Status: {message_batch.processing_status} - Time elapsed: {wait_time}s")
+                
+                if wait_time >= max_wait_time:
+                    raise TimeoutError(f"Batch processing did not complete within {max_wait_time} seconds")
+                
+                # Process results
+                with open(batch_results_file, 'w') as file:
+                    for result in client.beta.messages.batches.results(message_id):
+                        match result.result.type:
+                            case "succeeded":
+                                logging.info(f"Success for {result.custom_id}")
+                                file.write(f"SUCCESS\t{result.custom_id}\t{result.result.message.content}\n")
+                            case "errored":
+                                error_type = result.result.error.type
+                                error_message = result.result.error.message
+                                if error_type == "invalid_request":
+                                    logging.error(f"Validation error for {result.custom_id}: {error_message}")
+                                else:
+                                    logging.error(f"Server error for {result.custom_id}: {error_message}")
+                                file.write(f"ERROR\t{result.custom_id}\t{error_type}: {error_message}\n")
+                            case "expired":
+                                logging.warning(f"Request expired for {result.custom_id}")
+                                file.write(f"EXPIRED\t{result.custom_id}\n")
+            except Exception as e:
+                logging.error(f"Error processing batch: {str(e)}")
+                raise 
+
+            logging.info(f"Batch results saved to: {batch_results_file}")
             
-            print(message_batch)
-            message_batch = client.beta.messages.batches.retrieve("msgbatch_01HkcTjaV5uDC8jWR4ZsDV8d",)
+            process_claude_batch_results(batch_output_file, batch_results_file, combined_csv_file_path)
+        # elif 'claude' in llm_model:
+        #     client = anthropic.Anthropic()
             
-            # Stream results file in memory-efficient chunks, processing one at a time
-            for result in client.beta.messages.batches.results(message_batch.id):
-                result = result.custom_id
-                with open(result_file, 'a') as file:
-                    file.write(result)
+        #     # Prepare batch requests
+        #     tasks = prepare_batch_input(llm_model, ids, prompts, temperature, max_tokens)
+            
+        #     # Create batch
+        #     message_batch = client.beta.messages.batches.create(requests=tasks)
+        #     batch_id = message_batch.id
+        #     logging.info(f"Created Claude batch with ID: {batch_id}")
+            
+        #     # Poll for completion
+        #     start_time = time.time()
+        #     while True:
+        #         batch_status = client.beta.messages.batches.retrieve(batch_id)
+        #         logging.info(f"Batch status: {batch_status.processing_status}")
+                
+        #         if batch_status.processing_status == "succeeded":
+        #             logging.info("Batch processing completed")
+        #             break
+                    
+        #         # Check for timeout
+        #         if time.time() - start_time > max_wait_time:
+        #             raise TimeoutError("Batch processing exceeded maximum wait time")
+                
+        #         time.sleep(poll_interval)
+            
+        #     # Process results
+        #     output_csv_file = f"claude_batch_results_{batch_id}.csv"
+        #     process_claude_batch_results(batch_output_file, batch_results_file, combined_csv_file_path)
+        #     logging.info(f"Results saved to {output_csv_file}")
     except Exception as e:
         logging.error(f"An error occurred in batch_api_agent: {str(e)}")
         raise  # Re-raise the exception after logging
