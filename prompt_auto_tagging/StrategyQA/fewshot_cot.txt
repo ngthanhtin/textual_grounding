@@ -1,0 +1,51 @@
+Question: At a presentation about post traumatic stress disorder, would Ariana Grande be a topic of relevance?
+Answer: Ariana Grande was performing in Manchester in 2017 when explosives were set off in an act of terrorism.
+Ariana Grande has spoken openly about her trauma experience and her PTSD regarding the Manchester Bombing.
+So the answer is {true}.
+
+Question: Has the Indian Ocean garbage patch not completed two full rotations of debris since its discovery?
+Answer: The Indian Ocean garbage patch was discovered in 2010
+The Indian Ocean garbage patch takes 6 years to complete a circulation 
+So the answer is {true}.
+
+Question: Was the Second Amendment to the United States Constitution written without consideration for black Americans?
+Answer: The writers of the Constitutional Amendments did not view black people as legitimate human beings.
+The writers of the Constitutional Amendments believed that slavery benefited black slaves.
+The Constitutional Amendments were written for people that the writers considered human.
+So the answer is {true}.
+
+Question: Are Doctors of Homeopathy more likely than Doctors of Internal Medicine to recommend Quartz as a treatment?
+Answer: Doctors of Homeopathy are practitioners of "alternative medicine" 
+In alternative medicine practices, Quartz is believed to have powers.
+Doctors of Internal Medicine have completed a medical residency and do not recommend alternative medicine.
+So the answer is {true}.
+
+Question: Is Benjamin Franklin a prime candidate to have his statues removed by Black Lives Matter movement?
+Answer: The Black Lives Matter movement is a social movement advocating for racial equality.
+Benjamin Franklin, a famous founding father, has his image on many monuments and on American currency.
+Members of the Black Lives Matter movement petitioned for statues of Christopher Columbus to be removed due to his subjugation of Native Americans.
+Benjamin Franklin's 1730s newspaper, The Philadelphia Gazette, posted ads for black slaves.
+Benjamin Franklin owned two slaves, George and King, who worked as personal servants.
+So the answer is {true}.
+
+Question: Does the United States Department of Education oversee services benefiting undocumented migrants? 
+Answer: The United States Department of Education oversees public education across the United States.
+Public education is a service.
+Public education services are given to students of migrant families that may be undocumented.
+So the answer is {true}.
+
+Question: Could Bernie Sanders visit the Metropolitan Museum of Art twenty times for under two hundred dollars?
+Answer: Bernie Sanders is a senior citizen
+Senior citizens from outside NY, NJ, or CT must pay $17 per visit
+So the answer is {false}.
+
+Question: Would Eric Clapton's mother hypothetically be unable to legally purchase cigarettes in the USA at his birth?
+Answer: Eric Clapton's mother was 16 years old at the time of his birth.
+As of 2020, federal law required states comply with a minimum age of 21 years for sale/purchase of tobacco products.
+So the answer is {true}.
+
+Question: Would a 900,000 pound net worth person be an American billionaire if they exchange currency June 2020?
+Answer: The exchange rate in June of 2020 between dollars and pounds is 1 Euro= 1.23 dollar.
+900000 pounds is equal to about 1,107,000.00
+So the answer is {true}.
+

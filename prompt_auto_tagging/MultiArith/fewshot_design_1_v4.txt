@@ -8,13 +8,13 @@ Question: A painter needed to paint <fact1>12 rooms</fact1> in a building. Each 
 Answer: The painter has <fact1>12 rooms</fact1> to paint, and he’s already done <fact3>5 rooms</fact3>, so 7 rooms are left. At <fact2>7 hours</fact2> per room, he’ll need 7×<fact2>7</fact2>=49 more hours. The answer is {49}.
 
 Question: While on vacation, Debby took <fact1>24 pictures at the zoo</fact1> and <fact2>12 at the museum</fact2>. If she later deleted <fact3>14 of the pictures</fact3>, how many pictures from her vacation did she still have?
-Answer: <fact1>Debby took 24 pictures at the zoo</fact1> and <fact2>12 at the museum</fact2>, totaling <fact1>24</fact1>+<fact2>12</fact2>=36 pictures. After deleting <fact3>14</fact3>, she has 36−<fact3>14</fact3>=22 pictures left. The answer is {22}.
+Answer: Debby took <fact1>24 pictures at the zoo</fact1> and <fact2>12 at the museum</fact2>, totaling <fact1>24</fact1>+<fact2>12</fact2>=36 pictures. After deleting <fact3>14</fact3>, she has 36−<fact3>14</fact3>=22 pictures left. The answer is {22}.
 
 Question: For Halloween, Robin scored <fact1>23 pieces of candy</fact1>. She ate <fact2>7 pieces the first night</fact2>, and then her sister gave her <fact3>21 more pieces</fact3>. How many pieces of candy does Robin have now?
-Answer: <fact1>Robin started with 23 pieces of candy</fact1> and <fact2>ate 7</fact2>, leaving 23−7=16 pieces. <fact3>Her sister gave her 21 more</fact3>, so now she has 16+<fact3>21</fact3>=37 pieces. The answer is {37}.
+Answer: Robin started with <fact1>23 pieces of candy</fact1> and <fact2>ate 7</fact2>, leaving 23−7=16 pieces. Her sister gave her <fact3>21 more</fact3>, so now she has 16+<fact3>21</fact3>=37 pieces. The answer is {37}.
 
 Question: Katie was selling her necklaces at a garage sale. She sold <fact1>4 bead necklaces</fact1> and <fact2>3 gem stone necklaces</fact2>. <fact3>If each necklace cost 3 dollars</fact3>, how much money did she earn?
-Answer: <fact1>Katie sold 4 bead necklaces</fact1> and <fact2>3 gemstone necklaces</fact2>, making 4+3=7 necklaces total. At <fact3>$3 each</fact3>, she earned 7×<fact3>3</fact3>=21 dollars. The answer is {21}.
+Answer: Katie sold <fact1>4 bead necklaces</fact1> and <fact2>3 gemstone necklaces</fact2>, making 4+3=7 necklaces total. At <fact3>$3 each</fact3>, she earned 7×<fact3>3</fact3>=21 dollars. The answer is {21}.
 
 Question: A trivia team had <fact1>12 members total</fact1>, but during a game <fact2>4 members didn't show up</fact2>. If each member that did show up scored <fact3>8 points</fact3>, how many points were scored total?
 Answer: The trivia team had <fact1>12 members</fact1>, but <fact2>4 didn’t show up</fact2>, so 8 members played. If each scored <fact3>8 points</fact3>, the team scored 8×<fact3>8</fact3>=64 points in total. The answer is {64}.

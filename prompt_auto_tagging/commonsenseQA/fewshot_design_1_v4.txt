@@ -1,0 +1,21 @@
+Question: Sammy was a <fact1>union member</fact1>. He had to be. It was the only way to <fact2>advance</fact2> in his <fact3>profession</fact3>. What was his profession? Answer Choices: (a) workplace (b) science (c) algebra (d) province (e) construction business
+Answer: <fact3>Construction business</fact3> is a profession in which a <fact1>union member</fact1> is required. Workplace is not a <fact3>profession</fact3>. Science is a subject and not a <fact3>profession</fact3>. Algebra is not a <fact3>profession</fact3>. Province is not a correct option. The answer is {E}.
+
+Question: <fact1>Google Maps</fact1> and other <fact2>highway and street GPS services</fact2> have replaced what? Answer Choices: (a) united states (b) mexico (c) countryside (d) atlas (e) oceans
+Answer: Due to <fact1>Google maps</fact1>, other <fact2>highway and street GPS services</fact2> Atlas has been replaced since they provide better and more accurate data. Other options are places or locations which cannot be replaced by a service like <fact2>GPS</fact2>. The answer is {D}.
+
+Question: The <fact1>fox</fact1> walked from the <fact2>city</fact2> into the <fact3>forest</fact3>, what was it looking for? Answer Choices: (a) pretty flowers (b) hen house (c) natural habitat (d) storybook (e) dense forest
+Answer: The <fact1>fox</fact1> walked from the <fact2>city</fact2> into the <fact3>forest</fact3> looking for its <fact3>natural habitat</fact3> since <fact3>forests</fact3> are one of the main <fact3>natural habitats</fact3> of <fact1>foxes</fact1>. <fact1>Foxes</fact1> neither look for pretty flowers nor storybooks. Hen houses aren't in <fact3>forests</fact3>. <fact3>Dense forest</fact3> is not the only <fact3>forest</fact3> <fact1>foxes</fact1> inhabit. The answer is {C}.
+
+Question: What is it called when you <fact1>slowly cook</fact1> using a <fact2>grill</fact2>? Answer Choices: (a) backyard (b) restaurant (c) crockpot (d) neighbor's house (e) barbeque
+Answer: Barbeque is a way of <fact1>cooking</fact1> done <fact1>slowly</fact1> under heat on a <fact2>grill</fact2>. All the other options are not a way of cooking. The answer is {E}.
+
+Question: What would you do if you want to be able to <fact1>earn money</fact1>? Answer Choices: (a) apply for job (b) stand in line (c) take care of proposals (d) pass course (e) play the lottery
+Answer: If a person aims to <fact1>earn money</fact1>, they can <fact1>apply for a job</fact1>. When they work, they <fact1>earn money</fact1> for their work. All the other options are irrelevant. The answer is {A}.
+
+Question: What <fact1>home entertainment equipment</fact1> requires <fact2>cable</fact2>? Answer Choices: (a) radio shack (b) substation (c) cabinet (d) television (e) desk
+Answer: <fact2>Cable</fact2> can be fixed to a <fact1>television</fact1> and not to a desk. <fact1>Television</fact1> is a <fact1>home entertainment equipment</fact1> unlike radio shack, cabinet and a substation. The answer is {D}.
+
+Question: Of all the rooms in <fact1>a house</fact1> it was his favorite, the aromas always drew him to the what? Answer Choices: (a) yard (b) basement (c) kitchen (d) living room (e) garden
+Answer: Different food prepared in the <fact1>kitchen</fact1> gives a good aroma or a distinctive, typically pleasant smell. The <fact1>kitchen</fact1> is the place where he can eat good food, and that’s why it could be his favorite. The yard is not a room and is outside the <fact1>house</fact1>. The yard doesn’t give aroma. The basement doesn’t give aroma. The living room cannot give aroma. The garden is not a room and is not in the <fact1>house</fact1>. It cannot give aroma. The answer is {C}.
+
