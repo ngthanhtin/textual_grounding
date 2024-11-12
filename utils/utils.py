@@ -338,13 +338,15 @@ def retrieve_gts(data_path, ids, dataset):
     ids: ids of the predictions (list)
     dataset: which dataset to retrieve the ground truth
     """
+    print(data_path)
     data = read_jsonl_file(data_path)
     # read gt
     gts = []
     for id in ids:
         for temp in data:
             if dataset == 'p_GSM8K':
-                if temp['index'] == id:
+                # if temp['index'] == id:
+                if temp['id'] == id:
                     gt = temp['answer']
                     gts.append(float(gt))
             elif dataset == 'commonsenseQA':
