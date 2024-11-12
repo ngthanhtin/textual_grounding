@@ -14,9 +14,9 @@ Question: Shawn has <fact1>five toys</fact1>. For Christmas, he got <fact2>two t
 Answer: He has <fact1>5 toys</fact1>. He got <fact2>2 from mom</fact2>, so after that he has <fact1>5</fact1> + <fact2>2</fact2> = 7 toys. Then he got <fact2>2 more from dad</fact2>, so in total he has 7 + <fact2>2</fact2> = 9 toys. The answer is {9}.
 
 Question: There were <fact1>nine computers</fact1> in the server room. <fact2>Five more computers</fact2> were installed <fact3>each day</fact3>, from <fact4>Monday to Thursday</fact4>. How many computers are now in the server room?
-Answer: There are <fact4>4 days from Monday to Thursday</fact4>. <fact2>5 computers were added each day</fact2>. That means in total <fact4>4</fact4> * <fact2>5</fact2> = 20 computers were added. There were <fact1>9 computers</fact1> in the beginning, so now there are <fact1>9</fact1> + 20 = 29 computers. The answer is {29}.
+Answer: There are <fact4>4 days from Monday to Thursday</fact4>. <fact2>5 computers</fact2> were added <fact3>each day</fact3>. That means in total <fact4>4</fact4> * <fact2>5</fact2> = 20 computers were added. There were <fact1>9 computers</fact1> in the beginning, so now there are <fact1>9</fact1> + 20 = 29 computers. The answer is {29}.
 
-Question: Michael had <fact1>58 golf balls</fact1>. On <fact2>Tuesday</fact2>, he lost <fact3>23 golf balls</fact3>. On <fact4>Wednesday</fact4>, he lost <fact5>2 more</fact5>. How many golf balls did he have at the <fact6>end of Wednesday</fact6>?
+Question: Michael had <fact1>58 golf balls</fact1>. On <fact2>Tuesday</fact2>, he lost <fact3>23 golf balls</fact3>. On <fact4>Wednesday</fact4>, he lost <fact5>2 more</fact5>. How many golf balls did he have at the end of Wednesday?
 Answer: Michael initially had <fact1>58 balls</fact1>. He lost <fact3>23</fact3> on <fact2>Tuesday</fact2>, so after that he has <fact1>58</fact1> - <fact3>23</fact3> = 35 balls. On <fact4>Wednesday</fact4> he lost <fact5>2 more</fact5> so now he has 35 - <fact5>2</fact5> = 33 balls. The answer is {33}.
 
 Question: Olivia has <fact1>$23</fact1>. She bought <fact2>five bagels</fact2> for <fact3>$3 each</fact3>. How much money does she have left?

@@ -71,14 +71,8 @@ fi
 # Extract the specific llm_model and dataset
 llm_model="${llm_models_dict[$model_key]}"
 dataset="${datasets_dict[$dataset_key]}"
-echo "Running for model: $llm_model and dataset: $dataset"
 
-# python eval_da_and_cot.py --llm_model "$llm_model" --data_mode longest --answer_mode cot --dataset "$dataset"
-# python eval_da_and_cot.py --llm_model "$llm_model" --data_mode longest --answer_mode grounding_cot --dataset "$dataset"
+python one_step_visualize.py --dataset "$dataset" --llm_model "$llm_model" --save_html --answer_mode grounding_cot --check_correct
 
-# python eval_gcot.py --llm_model "$llm_model" --data_mode longest --dataset "$dataset"
-
-
-python eval_mmlu.py --llm_model "$llm_model" --data_mode longest --answer_mode cot --dataset "$dataset"
-python eval_mmlu.py --llm_model "$llm_model" --data_mode longest --answer_mode grounding_cot --dataset "$dataset"
+python one_step_visualize.py --dataset "$dataset" --llm_model "$llm_model" --save_html --answer_mode grounding_cot
 

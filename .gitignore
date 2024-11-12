@@ -3,16 +3,10 @@ utils/keys.py
 utils/__pycache__/
 utils/one_step_to_two_step.py
 
-data/AQUA
-data/ASDiv
 data/CLUTRR
-data/date
 data/infinityMath
-data/MultiArith
 data/saycan
 data/sports
-data/StrategyQA
-data/SVAMP
 
 prompt/GSM8K/fewshot_design_0.txt
 prompt/GSM8K/fewshot_design_1_v1.txt

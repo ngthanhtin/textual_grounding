@@ -12,7 +12,7 @@ from together import Together
 from openai import OpenAI
 import openai
 
-import random
+import random, time
 from tqdm import tqdm
 random.seed(0)
 
@@ -114,5 +114,50 @@ def api_agent(llm_model, prompt, temperature=1.0):
                         )
             response = response.choices[0].message.content
             return response
+        except:
+            return None
+    elif llm_model == 'llama_sambanova_70b':
+        client = openai.OpenAI(
+            api_key=API_KEYS['sambanova'],
+            base_url="https://api.sambanova.ai/v1",
+        )
+        try:
+            response = client.chat.completions.create(
+                model='Meta-Llama-3.1-70B-Instruct',
+                    messages=[
+                        {
+                            "role": "user",
+                            "content": prompt,
+                        }
+                    ],
+                temperature=0.6, # Meta default
+                top_p = 0.9, # Meta default
+                max_tokens=1024
+            )
+            time.sleep(2)  # Pause execution for 2 seconds
+            return response.choices[0].message.content
+        except:
+            return None
+    
+    elif llm_model == 'llama_sambanova_8b':
+        client = openai.OpenAI(
+            api_key=API_KEYS['sambanova'],
+            base_url="https://api.sambanova.ai/v1",
+        )
+        try:
+            response = client.chat.completions.create(
+                model='Meta-Llama-3.1-8B-Instruct',
+                    messages=[
+                        {
+                            "role": "user",
+                            "content": prompt,
+                        }
+                    ],
+                temperature=0.6, # Meta default
+                top_p = 0.9, # Meta default
+                max_tokens=1024
+            )
+            time.sleep(2)  # Pause execution for 2 seconds
+            return response.choices[0].message.content
         except:
             return None
