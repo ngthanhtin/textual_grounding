@@ -148,10 +148,54 @@ def compute_acc(questions, answers, gts, dataset):
                     print("Answer: ", extracted_answer[-100:], 'GT: ', gt)
                     print("====================================")
                 
+        
+        elif dataset in ['StrategyQA']:
+            try:
+                answer = answer.split('{')[1].split('}')[0]
+            except:
+                try:                    
+                    if any(x in answer.lower() for x in [' no ', ' no.', ' false ', 'false.', ' 0 ', ' 0.']):
+                        if bool(gt) == False:
+                            total_acc += 1
+                            continue
+                    elif any(x in answer.lower() for x in [' yes ', ' yes.', ' true ', 'true.', ' 1 ', ' 1.']):
+                        if bool(gt) == True:
+                            total_acc += 1
+                            continue
+                    else:
+                        print(answer, gt)
+                except:
+                    continue
+            if answer.lower() in ['yes', 'true', '1']:
+                answer = True
+            elif answer.lower() in ['no', 'false', '0']:
+                answer = False
+            if bool(answer) == bool(gt):
+                total_acc += 1
+            else:
+                print(bool(answer), gt)
+                print('----')
+                
+            # if 'Answer: ' in answer:
+            #     answer = answer.split('Answer: ')[-1].strip()
+                
+            # extracted_answer = answer.split('{')[-1].split('}')[0]
+            # extracted_answer = extracted_answer.replace(":", "").replace("{", "").replace("}", "")
+            
+            # if extracted_answer.lower() in ['yes', 'true', '1']:
+            #     extracted_answer = True
+            # elif extracted_answer.lower() in ['no', 'false', '0']:
+            #     extracted_answer = False
+            
+            # if bool(extracted_answer) == bool(gt):
+            #     total_acc += 1
+            # else:
+            #     print("Answer: ", extracted_answer, 'GT: ', gt)
+            #     print('------------------------------------')
                 
              
-    
-        elif dataset in ['date', 'CLUTRR', 'wikimultihopQA']:
+
+        elif dataset in ['date', 'wikimultihopQA']:
             conclusion = answer.split('{')[-1].split('}')[0]
             
             if conclusion.lower() == gt.lower():
@@ -163,20 +207,8 @@ def compute_acc(questions, answers, gts, dataset):
                     print("Question: ", question, "Answer: ", answer[-100:], 'GT: ', gt)
                     print("====================================")
         
-        elif dataset in ['gpqa']:
-            conclusion = answer.split('{')[-1].split('}')[0]
-            
-            try:
-                if float(conclusion) == float(gt):
-                    total_acc += 1
-                else:
-                    print("Question: ", question, "Answer: ", answer[-100:], 'GT: ', gt)
-                    print("====================================")
-            except:
-                continue
+        
                 
-    # print("The number of failed to follow the format (question, final answer): ", failed_follow_format_question, failed_follow_format_final_answer)
-    # print(total_iou/len(questions))
     print(total_acc, len(questions)-failed_follow_format_question-failed_follow_format_final_answer)
     # print("Accuracy: ", total_acc/len(questions))
     print("Accuracy: ", total_acc/(len(questions) - failed_follow_format_question - failed_follow_format_final_answer))
