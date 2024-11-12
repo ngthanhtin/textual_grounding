@@ -12,6 +12,8 @@ from utils import retrieve_gts
 
 from mmlu import parse_open_response, parse_multi_choice_response, parse_options, check_math_answer
 
+from utils import read_jsonl_file
+
 def compute_acc(questions, answers, gts, dataset):
 
     # Append each question and its highlighted answer to the HTML content
@@ -77,11 +79,41 @@ def compute_acc(questions, answers, gts, dataset):
             except:
                 continue
                 
-    print("The number of failed to follow the format (question, final answer): ", failed_follow_format_question, failed_follow_format_final_answer)
+    # print("The number of failed to follow the format (question, final answer): ", failed_follow_format_question, failed_follow_format_final_answer)
     # print(total_iou/len(questions))
     print(total_acc, len(questions)-failed_follow_format_question-failed_follow_format_final_answer)
     # print("Accuracy: ", total_acc/len(questions))
     print("Accuracy: ", total_acc/(len(questions) - failed_follow_format_question - failed_follow_format_final_answer))
+
+def compute_acc_gsm_plus(questions, answers, gts):
+
+    # load original dataset
+    data = read_jsonl_file('../data/GSM_Plus/test.jsonl')
+
+    perturb_dict = {}
+    for row in data:
+        question = row['question']
+        perturbation_type = row['perturbation_type']
+        
+        if perturbation_type not in perturb_dict:
+            perturb_dict[perturbation_type] = 0
+        else:
+            perturb_dict[perturbation_type] += 1
+    print(perturb_dict)
+
+    acc_perturb_dict = {k: 0 for k in perturb_dict.keys()}
+
+    for row in data:
+        question = row['question']
+        perturbation_type = row['perturbation_type']
+
+        for i, (generated_question, answer, gt) in enumerate(zip(questions, answers, gts)):
+            if generated_question == question:
+                acc_perturb_dict[perturbation_type] += check_math_answer(answer, gt)
+                break
+    
+    for k, v in acc_perturb_dict.items():
+        print(f'{k}: {v/perturb_dict[k]}')
 
 if __name__ == '__main__':
     arg_parser = get_common_args()
@@ -106,7 +138,7 @@ if __name__ == '__main__':
     else:
         df_path = f'{result_folder}/{args.dataset}/{answer_mode}/fs_inst_{args.llm_model}_temp_10_longest.csv'
 
-    # df_path = f'../results/{args.dataset}/cot/fs_inst_claude_temp_0.csv'
+    
 
     df = pd.read_csv(df_path)
     questions = df['question'].tolist()
@@ -124,4 +156,10 @@ if __name__ == '__main__':
 
     gts = retrieve_gts(data_path, ids, args.dataset)
     
-    compute_acc(questions, answers, gts, args.dataset)
+    # 
+    
+    if args.dataset == 'GSM_Plus':
+        compute_acc_gsm_plus(questions, answers, gts)
+        # compute_acc(questions, answers, gts, args.dataset)
+    else:
+        compute_acc(questions, answers, gts, args.dataset)
