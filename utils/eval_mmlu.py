@@ -14,18 +14,22 @@ from mmlu import parse_open_response, parse_multi_choice_response, parse_options
 from utils import read_jsonl_file
 
 def compute_acc(questions, answers, gts, dataset):
-
     # Append each question and its highlighted answer to the HTML content
     total_acc = 0
     failed_follow_format_question = 0
     failed_follow_format_final_answer = 0
-
+    # print(f"questions: {questions}")
+    # print(f"answers: {answers}")
+    # print(f"gts: {gts}")
+    print("Dataset: ", dataset)
     for i, (question, answer, gt) in enumerate(zip(questions, answers, gts)):
+        # print("Dataset: ", dataset) 
+        # print("Question: ", question, "Answer: ", answer, 'GT: ', gt)
         if dataset in ['GSM8K', 'p_GSM8K', 'MultiArith', 'SVAMP', 'ASDiv', 'GSM8K_Hard', 'GSM_Plus']:
             total_acc += check_math_answer(answer, gt)
             
-        elif dataset in ['AQUA']:
-            index2ans = parse_options(question)
+        elif dataset in ['AQUA', 'reasoning_about_colored_objects', 'logical_deduction_seven_objects']:
+            index2ans = parse_options(question, dataset)
             # remove ' in index2ans
             index2ans = {key: value.replace("'", "") for key, value in index2ans.items()}
             
@@ -40,6 +44,10 @@ def compute_acc(questions, answers, gts, dataset):
                     total_acc += 1
                     # print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
                     # print('------------------------------------')
+                else:
+                    # print('Incorrect Answer: ', answer[-200:], 'GT: ', gt, gt_number)
+                    # print('------------------------------------')
+                    pass
             except:
                 
                 if 'The closest answer option is' in answer:
@@ -65,54 +73,55 @@ def compute_acc(questions, answers, gts, dataset):
                         # print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
                         # print('------------------------------------')
                     else:
-                        print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                        print('------------------------------------')
+                        # print('incorrect Answer: ', answer[-200:], 'GT: ', gt, gt_number)
+                        # print('------------------------------------')
+                        pass
 
     
-        elif dataset in ['reasoning_about_colored_objects', 'logical_deduction_seven_objects']:
-            try:
-                extracted_answer = answer.split('{')[-1].split('}')[0]
-                if gt in extracted_answer:
-                    total_acc += 1
-                    print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                    print('------------------------------------')
-                else:
-                    print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                    print('------------------------------------')
-            except:
-                try:
-                    extracted_answer = answer.split('(')[-1].split(')')[0]
-                    if gt in extracted_answer:
-                        total_acc += 1
-                        print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                        print('------------------------------------')
-                    else:
-                        print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                        print('------------------------------------')
-                except:
-                    if 'The closest answer option is' in answer:
-                        extracted_answer = answer.split('The closest answer option is')[-1]
-                    elif'The correct answer is' in answer:
-                        extracted_answer = answer.split('The correct answer is')[-1]
-                    elif 'Therefore, the answer is' in answer:
-                        extracted_answer = answer.split('Therefore, the answer is')[-1]
-                    elif 'Therefore the answer is' in answer:
-                        extracted_answer = answer.split('Therefore the answer is')[-1]
-                    else:
-                        extracted_answer = answer[-200:]
+        # elif dataset in ['reasoning_about_colored_objects', 'logical_deduction_seven_objects']:
+        #     try:
+        #         extracted_answer = answer.split('{')[-1].split('}')[0]
+        #         if gt in extracted_answer:
+        #             total_acc += 1
+        #             # print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
+        #             # print('------------------------------------')
+        #         else:
+        #             # print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
+        #             # print('------------------------------------')
+        #     except:
+        #         try:
+        #             extracted_answer = answer.split('(')[-1].split(')')[0]
+        #             if gt in extracted_answer:
+        #                 total_acc += 1
+        #                 print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
+        #                 print('------------------------------------')
+        #             else:
+        #                 print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
+        #                 print('------------------------------------')
+        #         except:
+        #             if 'The closest answer option is' in answer:
+        #                 extracted_answer = answer.split('The closest answer option is')[-1]
+        #             elif'The correct answer is' in answer:
+        #                 extracted_answer = answer.split('The correct answer is')[-1]
+        #             elif 'Therefore, the answer is' in answer:
+        #                 extracted_answer = answer.split('Therefore, the answer is')[-1]
+        #             elif 'Therefore the answer is' in answer:
+        #                 extracted_answer = answer.split('Therefore the answer is')[-1]
+        #             else:
+        #                 extracted_answer = answer[-200:]
                     
-                    pattern = r"(?i)([A-G])\)?[\s-]*\{?([^\{\}\(\)]+?)\}?(?=\s*[\(\{\[]?[A-G]\)?]|$)"
-                    matches = re.findall(pattern, extracted_answer)
+        #             pattern = r"(?i)([A-G])\)?[\s-]*\{?([^\{\}\(\)]+?)\}?(?=\s*[\(\{\[]?[A-G]\)?]|$)"
+        #             matches = re.findall(pattern, extracted_answer)
 
-                    # Loop through matches and format them
-                    for label, extracted_answer in matches:
-                        if gt.upper() == label:
-                            total_acc += 1
-                            print('Answer: ', answer[-200:], 'GT: ', gt)
-                            print('------------------------------------')
-                        else:
-                            print('Answer: ', answer[-200:], 'GT: ', gt)
-                            print('------------------------------------')
+        #             # Loop through matches and format them
+        #             for label, extracted_answer in matches:
+        #                 if gt.upper() == label:
+        #                     total_acc += 1
+        #                     print('Answer: ', answer[-200:], 'GT: ', gt)
+        #                     print('------------------------------------')
+        #                 else:
+        #                     print('Answer: ', answer[-200:], 'GT: ', gt)
+        #                     print('------------------------------------')
                 
                 
              

@@ -260,18 +260,28 @@ def calculate_ins_level_acc(results: Dict):
         return 0
     return acc / ins_num
 
-def parse_options(question):
+def parse_options(question, dataset=""):
     """
     return index to answer option
     """
     # Extract the answer options part using regular expression
-    options_text = re.search(r"# Answer option: \[(.*?)\]", question).group(1)
-
-    # Find each option and answer pair
-    options = re.findall(r"([A-E])\)([^,]+)", options_text)
-
-    # Convert the list of tuples into a dictionary
-    answer_dict = {option: answer for option, answer in options}
+    if dataset == "AQUA":
+        options_text = re.search(r"# Answer option: \[(.*?)\]", question).group(1)
+        # Find each option and answer pair
+        options = re.findall(r"([A-E])\)([^,]+)", options_text)
+        # Convert the list of tuples into a dictionary
+        answer_dict = {option: answer for option, answer in options}
+    elif dataset in ["logical_deduction_seven_objects", "reasoning_about_colored_objects"]:
+        options_section = question.split("Options:\n")[1]
+    
+        # Parse each option line
+        answer_dict = {}
+        for line in options_section.split("\n"):
+            if line:  # Skip empty lines
+                # Extract letter and text from format (A) red
+                letter = line[1]  # Get the letter between parentheses
+                text = line[4:].strip()  # Get the text after the closing parenthesis
+                answer_dict[letter] = text
 
     return answer_dict
 

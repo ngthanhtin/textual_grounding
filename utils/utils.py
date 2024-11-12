@@ -338,16 +338,25 @@ def retrieve_gts(data_path, ids, dataset):
     ids: ids of the predictions (list)
     dataset: which dataset to retrieve the ground truth
     """
-    print(data_path)
-    data = read_jsonl_file(data_path)
+    if data_path.endswith('.json'):
+        with open(data_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    else:
+        data = read_jsonl_file(data_path)
     # read gt
+    # print(data)
     gts = []
+    # print(ids)
     for id in ids:
         for temp in data:
+            # print(temp)
+            # print(f"temp[id]: {temp['id']}, id: {id}")
             if dataset == 'p_GSM8K':
                 # if temp['index'] == id:
                 if temp['id'] == id:
+                    
                     gt = temp['answer']
+                    print(gt)
                     gts.append(float(gt))
             elif dataset == 'commonsenseQA':
                 if temp['id'] == id:
@@ -355,6 +364,7 @@ def retrieve_gts(data_path, ids, dataset):
                     gts.append(gt)
             else:
                 if temp['id'] == id:
+                    # print(temp)
                     gt = temp['answer']
                     if dataset in ['GSM8K', 'p_GSM8K', 'MultiArith', 'SVAMP']:
                         gt = gt.split('####')[1].strip()
@@ -376,6 +386,8 @@ def retrieve_gts(data_path, ids, dataset):
                     if dataset in ['StrategyQA', 'sports']:
                         gts.append(gt)
                     if dataset == 'AQUA':
+                        gts.append(gt)
+                    else:
                         gts.append(gt)
     
     return gts
