@@ -30,31 +30,11 @@ def compute_acc(questions, answers, gts, dataset):
             # remove ' in index2ans
             index2ans = {key: value.replace("'", "") for key, value in index2ans.items()}
             
-            all_choices = list(index2ans.keys())
+            # all_choices = list(index2ans.keys())
             # pred_index = parse_multi_choice_response(answer, all_choices, index2ans)
             
             gt_number  = index2ans[gt]
             
-            # if pred_index.lower() == gt.lower():
-            #     total_acc += 1
-            # else:
-                # Regular expression to capture the answer option
-                # match = re.search(r"\*\*(.*?)\*\*", answer)
-                # if match:
-                #     answer_option = match.group(1)
-                #     if gt.lower() in answer_option.lower():
-                #         total_acc += 1
-                #     # else:
-                #     #     print('Answer: ', answer[-100:], 'GT: ', gt, gt_number)
-                #     #     print('------------------------------------')
-                # else:    
-                #     if gt_number in answer[-50:]:
-                #         total_acc += 1
-                #     # else:
-                #     #     print('Answer: ', answer[-100:], 'GT: ', gt, gt_number)
-                #     #     print('------------------------------------')
-                    
-                # Find all matches in the text
             try:
                 extracted_answer = answer.split('{')[-1].split('}')[0]
                 if gt.upper() in extracted_answer or gt_number in extracted_answer:
