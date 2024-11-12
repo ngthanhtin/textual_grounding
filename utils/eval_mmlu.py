@@ -14,6 +14,22 @@ from mmlu import parse_open_response, parse_multi_choice_response, parse_options
 
 from utils import read_jsonl_file
 
+def extract_options_to_dict(text):
+    # Regular expression to match the pattern of options
+    pattern = r"\(([A-F])\)\s+(.+)"
+    
+    # Find all matches in the text
+    matches = re.findall(pattern, text)
+    
+    # Initialize a dictionary to store the options
+    options_dict = {}
+    
+    # Loop through matches and populate the dictionary
+    for label, description in matches:
+        options_dict[label] = description.strip()
+
+    return options_dict
+
 def compute_acc(questions, answers, gts, dataset):
 
     # Append each question and its highlighted answer to the HTML content
@@ -69,28 +85,21 @@ def compute_acc(questions, answers, gts, dataset):
                         print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
                         print('------------------------------------')
 
-    
-        elif dataset in ['reasoning_about_colored_objects', 'logical_deduction_seven_objects']:
-            try:
-                extracted_answer = answer.split('{')[-1].split('}')[0]
-                if gt in extracted_answer:
+        elif dataset in ['logical_deduction_seven_objects', 'reasoning_about_colored_objects']:
+            options_dict = extract_options_to_dict(question)
+
+            if 'Answer: ' in answer:
+                answer = answer.split('Answer: ')[-1].strip()
+            
+            if len(answer) < 10: # Sometimes it answers the option directly.
+                if gt in answer:
                     total_acc += 1
-                    print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                    print('------------------------------------')
-                else:
-                    print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                    print('------------------------------------')
-            except:
-                try:
-                    extracted_answer = answer.split('(')[-1].split(')')[0]
-                    if gt in extracted_answer:
-                        total_acc += 1
-                        print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                        print('------------------------------------')
-                    else:
-                        print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                        print('------------------------------------')
-                except:
+                    continue
+                
+            extracted_answer = answer.split('{')[-1].split('}')[0]    
+            if extracted_answer == answer: # can not extract
+                extracted_answer = answer.split('(')[-1].split(')')[0]
+                if extracted_answer == answer: # can not extract  
                     if 'The closest answer option is' in answer:
                         extracted_answer = answer.split('The closest answer option is')[-1]
                     elif'The correct answer is' in answer:
@@ -102,6 +111,17 @@ def compute_acc(questions, answers, gts, dataset):
                     else:
                         extracted_answer = answer[-200:]
                     
+                    # check if description in the extracted answer
+                    extracted_answer = extracted_answer.replace("*", "")
+                    is_exists = False
+                    for option, description in options_dict.items():
+                        if description.lower() in extracted_answer.lower():
+                            total_acc += 1
+                            is_exists = True
+                            break
+                    if is_exists:
+                        continue
+                    
                     pattern = r"(?i)([A-G])\)?[\s-]*\{?([^\{\}\(\)]+?)\}?(?=\s*[\(\{\[]?[A-G]\)?]|$)"
                     matches = re.findall(pattern, extracted_answer)
 
@@ -109,11 +129,24 @@ def compute_acc(questions, answers, gts, dataset):
                     for label, extracted_answer in matches:
                         if gt.upper() == label:
                             total_acc += 1
-                            print('Answer: ', answer[-200:], 'GT: ', gt)
-                            print('------------------------------------')
-                        else:
-                            print('Answer: ', answer[-200:], 'GT: ', gt)
-                            print('------------------------------------')
+                        #     print('Answer: ', answer[-200:], 'GT: ', gt)
+                        #     print('------------------------------------')
+                        # else:
+                        #     print('Answer: ', answer[-200:], 'GT: ', gt)
+                        #     print('------------------------------------')
+                    
+                else:
+                    if gt in extracted_answer:
+                        total_acc += 1
+                    else:
+                        print("Answer: ", extracted_answer[-100:], 'GT: ', gt)
+                        print("====================================")
+            else:
+                if gt in extracted_answer:
+                    total_acc += 1
+                else:
+                    print("Answer: ", extracted_answer[-100:], 'GT: ', gt)
+                    print("====================================")
                 
                 
              
