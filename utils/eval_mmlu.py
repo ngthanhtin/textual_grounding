@@ -29,31 +29,94 @@ def compute_acc(questions, answers, gts, dataset):
             # remove ' in index2ans
             index2ans = {key: value.replace("'", "") for key, value in index2ans.items()}
             
-            all_choices = list(index2ans.keys())
-            pred_index = parse_multi_choice_response(answer, all_choices, index2ans)
+            # all_choices = list(index2ans.keys())
+            # pred_index = parse_multi_choice_response(answer, all_choices, index2ans)
             
             gt_number  = index2ans[gt]
             
-            if pred_index.lower() == gt.lower():
-                total_acc += 1
-            else:
-                # Regular expression to capture the answer option
-                match = re.search(r"\*\*(.*?)\*\*", answer)
-                if match:
-                    answer_option = match.group(1)
-                    if gt.lower() in answer_option.lower():
+            try:
+                extracted_answer = answer.split('{')[-1].split('}')[0]
+                if gt.upper() in extracted_answer or gt_number in extracted_answer:
+                    total_acc += 1
+                    # print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
+                    # print('------------------------------------')
+            except:
+                
+                if 'The closest answer option is' in answer:
+                    extracted_answer = answer.split('The closest answer option is')[-1]
+                elif'The correct answer is' in answer:
+                    extracted_answer = answer.split('The correct answer is')[-1]
+                elif 'Therefore, the answer is' in answer:
+                    extracted_answer = answer.split('Therefore, the answer is')[-1]
+                elif 'Therefore the answer is' in answer:
+                    extracted_answer = answer.split('Therefore the answer is')[-1]
+                else:
+                    extracted_answer = answer[-200:]
+                # if gt.upper() == label or gt_number in extracted_answer:
+                #     total_acc += 1
+                # else:
+                pattern = r"(?i)([A-G])\)?[\s-]*\{?([^\{\}\(\)]+?)\}?(?=\s*[\(\{\[]?[A-G]\)?]|$)"
+                matches = re.findall(pattern, extracted_answer)
+
+                # Loop through matches and format them
+                for label, extracted_answer in matches:
+                    if gt.upper() == label or gt_number in extracted_answer:
                         total_acc += 1
-                    # else:
-                    #     # print('Answer: ', answer[-100:], 'GT: ', gt, gt_number)
-                    #     print('------------------------------------')
-                else:    
-                    if gt_number in answer[-50:]:
+                        # print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
+                        # print('------------------------------------')
+                    else:
+                        print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
+                        print('------------------------------------')
+
+    
+        elif dataset in ['reasoning_about_colored_objects', 'logical_deduction_seven_objects']:
+            try:
+                extracted_answer = answer.split('{')[-1].split('}')[0]
+                if gt in extracted_answer:
+                    total_acc += 1
+                    print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
+                    print('------------------------------------')
+                else:
+                    print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
+                    print('------------------------------------')
+            except:
+                try:
+                    extracted_answer = answer.split('(')[-1].split(')')[0]
+                    if gt in extracted_answer:
                         total_acc += 1
-                    # else:
-                    #     # print('Answer: ', answer[-100:], 'GT: ', gt, gt_number)
-                    #     print('------------------------------------')
+                        print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
+                        print('------------------------------------')
+                    else:
+                        print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
+                        print('------------------------------------')
+                except:
+                    if 'The closest answer option is' in answer:
+                        extracted_answer = answer.split('The closest answer option is')[-1]
+                    elif'The correct answer is' in answer:
+                        extracted_answer = answer.split('The correct answer is')[-1]
+                    elif 'Therefore, the answer is' in answer:
+                        extracted_answer = answer.split('Therefore, the answer is')[-1]
+                    elif 'Therefore the answer is' in answer:
+                        extracted_answer = answer.split('Therefore the answer is')[-1]
+                    else:
+                        extracted_answer = answer[-200:]
+                    
+                    pattern = r"(?i)([A-G])\)?[\s-]*\{?([^\{\}\(\)]+?)\}?(?=\s*[\(\{\[]?[A-G]\)?]|$)"
+                    matches = re.findall(pattern, extracted_answer)
+
+                    # Loop through matches and format them
+                    for label, extracted_answer in matches:
+                        if gt.upper() == label:
+                            total_acc += 1
+                            print('Answer: ', answer[-200:], 'GT: ', gt)
+                            print('------------------------------------')
+                        else:
+                            print('Answer: ', answer[-200:], 'GT: ', gt)
+                            print('------------------------------------')
+                
+                
              
-        
+    
         elif dataset in ['date', 'CLUTRR', 'wikimultihopQA']:
             conclusion = answer.split('{')[-1].split('}')[0]
             
