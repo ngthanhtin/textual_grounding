@@ -1,4 +1,3 @@
-base_data_path: "data/"
 data_paths:
   GSM8K: "GSM8K/test.jsonl"
   AQUA: "AQUA/test.jsonl"
@@ -29,6 +28,7 @@ data_paths:
   word_sorting: "word_sorting/test.json"
   tracking_shuffled_objects_seven_objects: "tracking_shuffled_objects_seven_objects/test.json"
   gpqa: "gpqa/test.json"
+  GSM8K_Hard: "GSM8K_Hard/test.jsonl"
 
 max_question_lengths:
   GSM8K: 336
@@ -37,11 +37,11 @@ max_question_lengths:
   ASDiv: 252
   SVAMP: 199
   p_GSM8K: 0
-  GSM_Plus: 0
+  GSM_Plus: 450
   GSM_IC: 583 # 370: 2 step
-  strategyQA: 78 
+  StrategyQA: 78 #78 
   wikimultihopQA: 104
-  commonsenseQA: 93
+  commonsenseQA: 167 # 93
   date: 105
   spartQA: 1015
   sports: 48
@@ -60,8 +60,8 @@ max_question_lengths:
   word_sorting: 0
   tracking_shuffled_objects_seven_objects: 0
   gpqa: 0
+  GSM8K_Hard: 336
 
-base_prompt_path: "prompt/"
 prompts:
   da:
     GSM8K: "GSM8K/fewshot_da.txt"
@@ -72,7 +72,7 @@ prompts:
     p_GSM8K: "GSM8K/fewshot_da.txt"
     GSM_Plus: "GSM8K/fewshot_da.txt"
     GSM_IC: "GSM8K/fewshot_da.txt"
-    strategyQA: "strategyQA/fewshot_da.txt"
+    StrategyQA: "StrategyQA/fewshot_da.txt"
     wikimultihopQA: "wikimultihopQA/fewshot_da.txt"
     commonsenseQA: "commonsenseQA/fewshot_da.txt"
     date: "date/fewshot_da.txt"
@@ -93,6 +93,7 @@ prompts:
     word_sorting: "word_sorting/fewshot_da.txt"
     tracking_shuffled_objects_seven_objects: "tracking_shuffled_objects_seven_objects/fewshot_da.txt"
     gpqa: "GSM8K/fewshot_da.txt"
+    GSM8K_Hard: "GSM8K_Hard/fewshot_da.txt"
 
   cot:
     GSM8K: "GSM8K/fewshot_cot.txt"
@@ -103,7 +104,7 @@ prompts:
     p_GSM8K: "GSM8K/fewshot_cot.txt"
     GSM_Plus: "GSM8K/fewshot_cot.txt"
     GSM_IC: "GSM8K/fewshot_cot.txt"
-    strategyQA: "strategyQA/fewshot_cot.txt"
+    StrategyQA: "StrategyQA/fewshot_cot.txt"
     wikimultihopQA: "wikimultihopQA/fewshot_cot.txt"
     commonsenseQA: "commonsenseQA/fewshot_cot.txt"
     date: "date/fewshot_cot.txt"
@@ -124,6 +125,7 @@ prompts:
     word_sorting: "word_sorting/fewshot_cot.txt"
     tracking_shuffled_objects_seven_objects: "tracking_shuffled_objects_seven_objects/fewshot_cot.txt"
     gpqa: "GSM8K/fewshot_cot.txt"
+    GSM8K_Hard: "GSM8K_Hard/fewshot_cot.txt"
   
   grounding_cot:
     GSM8K: "GSM8K/fewshot_design_1_v4.txt"
@@ -134,7 +136,7 @@ prompts:
     p_GSM8K: "GSM8K/fewshot_design_1_v4.txt"
     GSM_Plus: "GSM8K/fewshot_design_1_v4.txt"
     GSM_IC: "GSM8K/fewshot_design_1_v4.txt"
-    strategyQA: "strategyQA/fewshot_design_1_v4.txt"
+    StrategyQA: "StrategyQA/fewshot_design_1_v4.txt"
     wikimultihopQA: "wikimultihopQA/fewshot_design_1_v4.txt"
     commonsenseQA: "commonsenseQA/fewshot_design_1_v4.txt"
     date: "date/fewshot_design_1_v4.txt"
@@ -155,3 +157,4 @@ prompts:
     word_sorting: "word_sorting/fewshot_design_1_v4.txt"
     tracking_shuffled_objects_seven_objects: "tracking_shuffled_objects_seven_objects/fewshot_design_1_v4.txt"
     gpqa: "GSM8K/fewshot_design_1_v4.txt"
+    GSM8K_Hard: "GSM8K_Hard/fewshot_design_1_v4.txt"
