@@ -1,0 +1,36 @@
+Question: I have a flute, a piano, a trombone, four stoves, a violin, an accordion, a clarinet, a drum, two lamps, and a trumpet. How many musical instruments do I have?
+Answer: Let's count the musical instruments you have:
+1 Flute, 1 Piano, 1 Trombone, 1 Violin, 1 Accordion, 1 Clarinet, 1 Drum, 1 Trumpet.
+So, you have 8 musical instruments.
+The answer is {8}.
+
+Question: I have two couches, a toaster, two chairs, four microwaves, a table, and a lamp. How many objects do I have?
+Answer: Total number of objects: 2 couches + 1 toaster + 2 chairs + 4 microwaves + 1 table + 1 lamp = 11 objects.
+The answer is {11}.
+
+Question: I have a trombone, an accordion, four clarinets, and a trumpet. How many musical instruments do I have?
+Answer: Total number of instruments: 1 trombone + 1 accordion + 4 clarinets + 1 trumpet = 7 instruments.
+The answer is {7}.
+
+Question: I have an oven, a table, a lamp, three couches, a toaster, a microwave, and a bed. How many objects do I have?
+Answer: Total number of objects: 1 oven + 1 table + 1 lamp + 3 couches + 1 toaster + 1 microwave + 1 bed = 9 objects.
+The answer is {9}.
+
+Question: I have a trumpet, a drum, a piano, a flute, and two trombones. How many musical instruments do I have?
+Answer: Total number of musical instruments: 1 trumpet + 1 drum + 1 piano + 1 flute + 2 trombones = 6 instruments.
+The answer is {6}.
+
+Question: I have four pianos, four snails, three chickens, a pig, a dog, and two cows. How many animals do I have?
+Answer: Total number of animals: 4 snails + 3 chickens + 1 pig + 1 dog + 2 cows = 11 animals.
+The answer is {11}.
+
+Question: I have two stalks of celery, a carrot, a lettuce head, and an onion. How many vegetables do I have?
+Answer: Total number of vegetables: 2 stalks of celery + 1 carrot + 1 lettuce + 1 onion = 5 vegetables.
+The answer is {5}.
+
+Question: I have a chair, a table, a couch, a stove, a car, a lamp, and a fridge. How many objects do I have?
+Answer: Total number of objects: 1 chair + 1 table + 1 couch + 1 stove + 1 car + 1 lamp + 1 fridge = 7 objects.
+The answer is {7}.
+
+
+

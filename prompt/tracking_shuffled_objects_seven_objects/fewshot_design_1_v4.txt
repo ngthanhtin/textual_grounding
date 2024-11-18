@@ -1,0 +1,71 @@
+Question: Alice, Bob, and Claire are playing a game. At the start of the game, they are each holding a ball: Alice has a yellow ball, Bob has a blue ball, and Claire has a pink ball.
+As the game progresses, pairs of players trade balls. First, Claire and Alice swap balls. Then, Alice and Bob swap balls. Finally, Claire and Bob swap balls. At the end of the game, Bob has the
+Options:
+(A) yellow ball
+(B) blue ball
+(C) pink ball
+Reformatted Question: Alice, Bob, and Claire are playing a game. At the start of the game, they are each holding a ball: <fact1>Alice has a yellow ball</fact1>, <fact2>Bob has a blue ball</fact2>, and <fact3>Claire has a pink ball</fact3>.
+As the game progresses, pairs of players trade balls.
+First, <fact4>Claire and Alice swap balls</fact4>.
+Then, <fact5>Alice and Bob swap balls</fact5>.
+Finally, <fact6>Claire and Bob swap balls</fact6>.
+At the end of the game, Bob has the
+Options:
+(A) yellow ball
+(B) blue ball
+(C) pink ball
+Answer: Let's think step by step.
+(0) At the start: <fact1>Alice: yellow</fact1>, <fact2>Bob: blue</fact2>, <fact3>Claire: pink</fact3>.
+(1) <fact4>Claire and Alice swap balls</fact4>: Alice: pink, Bob: blue, Claire: yellow.
+(2) <fact5>Alice and Bob swap balls</fact5>: Alice: blue, Bob: pink, Claire: yellow.
+(3) <fact6>Claire and Bob swap balls</fact6>: Alice: blue, Bob: yellow, Claire: pink.
+At the end of the game, Bob has the yellow ball.
+The answer is {A}.
+
+Question: Alice, Bob, and Claire are playing a game. At the start of the game, they are each holding a ball: Alice has a white ball, Bob has a purple ball, and Claire has a pink ball.
+As the game progresses, pairs of players trade balls. First, Bob and Alice swap balls. Then, Bob and Claire swap balls. Finally, Bob and Alice swap balls. At the end of the game, Alice has the
+Options:
+(A) white ball
+(B) purple ball
+(C) pink ball
+Reformatted Question: Alice, Bob, and Claire are playing a game. At the start of the game, they are each holding a ball: <fact1>Alice has a white ball</fact1>, <fact2>Bob has a purple ball</fact2>, and <fact3>Claire has a pink ball</fact3>.
+As the game progresses, pairs of players trade balls.
+First, <fact4>Bob and Alice swap balls</fact4>.
+Then, <fact5>Bob and Claire swap balls</fact5>.
+Finally, <fact6>Bob and Alice swap balls</fact6>.
+At the end of the game, Alice has the
+Options:
+(A) white ball
+(B) purple ball
+(C) pink ball
+Answer: Let's think step by step.
+(0) At the start: <fact1>Alice: white</fact1>, <fact2>Bob: purple</fact2>, <fact3>Claire: pink</fact3>.
+(1) <fact4>Bob and Alice swap balls</fact4>: Alice: purple, Bob: white, Claire: pink.
+(2) <fact5>Bob and Claire swap balls</fact5>: Alice: purple, Bob: pink, Claire: white.
+(3) <fact6>Bob and Alice swap balls</fact6>: Alice: pink, Bob: purple, Claire: white.
+At the end of the game, Alice has the pink ball.
+The answer is {C}.
+
+Question: Alice, Bob, and Claire are dancers at a square dance. At the start of a song, they each have a partner: Alice is dancing with Lola, Bob is dancing with Rodrigo, and Claire is dancing with Patrick.
+Throughout the song, the dancers often trade partners. First, Alice and Bob switch partners. Then, Claire and Bob switch partners. Finally, Bob and Alice switch partners. At the end of the dance, Alice is dancing with
+Options:
+(A) Lola
+(B) Rodrigo
+(C) Patrick
+Reformatted Question: Alice, Bob, and Claire are dancers at a square dance. At the start of a song, they each have a partner: <fact1>Alice is dancing with Lola</fact1>, <fact2>Bob is dancing with Rodrigo</fact2>, and <fact3>Claire is dancing with Patrick</fact3>.
+Throughout the song, the dancers often trade partners.
+First, <fact4>Alice and Bob switch partners</fact4>.
+Then, <fact5>Claire and Bob switch partners</fact5>.
+Finally, <fact6>Bob and Alice switch partners</fact6>.
+At the end of the dance, Alice is dancing with
+Options:
+(A) Lola
+(B) Rodrigo
+(C) Patrick
+Answer: Let's think step by step.
+(0) At the start: <fact1>Alice: Lola</fact1>, <fact2>Bob: Rodrigo</fact2>, <fact3>Claire: Patrick</fact3>.
+(1) <fact4>Alice and Bob switch partners</fact4>: Alice: Rodrigo, Bob: Lola, Claire: Patrick.
+(2) <fact5>Claire and Bob switch partners</fact5>: Alice: Rodrigo, Bob: Patrick, Claire: Lola.
+(3) <fact6>Bob and Alice switch partners</fact6>: Alice: Patrick, Bob: Rodrigo, Claire: Lola.
+At the end of the dance, Alice is dancing with Patrick.
+The answer is {C}.

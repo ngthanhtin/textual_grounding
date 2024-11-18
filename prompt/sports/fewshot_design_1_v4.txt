@@ -1,0 +1,59 @@
+Question: Is the following sentence plausible? “Kyle Palmieri was called for slashing.”
+Reformatted Question: Is the following sentence plausible? “<fact1>Kyle Palmieri</fact1> was <fact2>called for slashing</fact2>.”
+Answer: <fact1>Kyle Palmieri</fact1> is a hockey player.
+Being <fact2>called for slashing</fact2> is part of hockey.
+So the answer is {true}.
+
+Question: Is the following sentence plausible? “Joao Moutinho caught the screen pass in the NFC championship.”
+Reformatted Question: Is the following sentence plausible? “<fact1>Joao Moutinho</fact1> caught the screen pass in the <fact2>NFC championship</fact2>.”
+Answer: <fact1>Joao Moutinho</fact1> is a soccer player.
+The <fact2>NFC championship</fact2> is part of American football, not soccer.
+So the answer is {false}.
+
+Question: Is the following sentence plausible? “Carson Wentz set the pick and roll.”
+Reformatted Question: Is the following sentence plausible? “<fact1>Carson Wentz</fact1> set the <fact2>pick and roll</fact2>.”
+Answer: <fact1>Carson Wentz</fact1> is an American football player.
+<fact2>Pick and roll</fact2> is part of basketball, not football.
+So the answer is {false}.
+
+Question: Is the following sentence plausible? “Jonas Valanciunas beat the buzzer.”
+Reformatted Question: Is the following sentence plausible? “<fact1>Jonas Valanciunas</fact1> <fact2>beat the buzzer</fact2>.”
+Answer: <fact1>Jonas Valanciunas</fact1> is a basketball player.
+<fact2>Beating the buzzer</fact2> is part of basketball.
+So the answer is {true}.
+
+Question: Is the following sentence plausible? “Jamal Murray was perfect from the line.”
+Reformatted Question: Is the following sentence plausible? “<fact1>Jamal Murray</fact1> was <fact2>perfect from the line</fact2>.”
+Answer: <fact1>Jamal Murray</fact1> is a basketball player.
+Being <fact2>perfect from the line</fact2> is part of basketball.
+So the answer is {true}.
+
+Question: Is the following sentence plausible? “Sam Darnold passed the puck.”
+Reformatted Question: Is the following sentence plausible? “<fact1>Sam Darnold</fact1> <fact2>passed the puck</fact2>.”
+Answer: <fact1>Sam Darnold</fact1> is an American football player.
+<fact2>Passing the puck</fact2> is part of hockey, not football.
+So the answer is {false}.
+
+Question: Is the following sentence plausible? “Draymond Green threw a touchdown.”
+Reformatted Question: Is the following sentence plausible? “<fact1>Draymond Green</fact1> <fact2>threw a touchdown</fact2>.”
+Answer: <fact1>Draymond Green</fact1> is a basketball player.
+<fact2>Throwing a touchdown</fact2> is part of football, not basketball.
+So the answer is {false}.
+
+Question: Is the following sentence plausible? “Malcolm Brogdon banked the shot in.”
+Reformatted Question: Is the following sentence plausible? “<fact1>Malcolm Brogdon</fact1> <fact2>banked the shot in</fact2>.”
+Answer: <fact1>Malcolm Brogdon</fact1> is a basketball player.
+<fact2>Banking the shot in</fact2> is part of basketball.
+So the answer is {true}.
+
+Question: Is the following sentence plausible? “Liam Hendricks hit a double in the World Series.”
+Reformatted Question: Is the following sentence plausible? “<fact1>Liam Hendricks</fact1> <fact2>hit a double in the World Series</fact2>.”
+Answer: <fact1>Liam Hendricks</fact1> is a baseball player.
+<fact2>Hitting a double</fact2> is part of baseball.
+So the answer is {true}.
+
+Question: Is the following sentence plausible? “Sonny Gray was out at second.”
+Reformatted Question: Is the following sentence plausible? “<fact1>Sonny Gray</fact1> was <fact2>out at second</fact2>.”
+Answer: <fact1>Sonny Gray</fact1> is a baseball player.
+Being <fact2>out at second</fact2> is part of baseball.
+So the answer is {true}.

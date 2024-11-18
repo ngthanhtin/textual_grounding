@@ -1,0 +1,23 @@
+Question: Take the last letters of each words in \"Whitney Erika Tj Benito\" and concatenate them.
+Answer: The last letter of "Whitney" is "y". The last letter of "Erika" is "a". The last letter of "Tj" is "j". The last letter of "Benito" is "o". Concatenate the last letters: "y", "a", "j", "o".
+The answer is {yajo}.
+
+Question: Take the last letters of each words in \"Lucky Mireya Jj Kc\" and concatenate them.
+Answer: The last letter of "Lucky" is "y". The last letter of "Mireya" is "a". The last letter of "Jj" is "j". The last letter of "Kc" is "c". Concatenate the last letters: "y", "a", "j", "c".
+The answer is {yajc}.
+
+Question: Take the last letters of each words in \"Caleb Chase Eleazar Chanel\" and concatenate them.
+Answer: The last letter of "Caleb" is "b". The last letter of "Chase" is "e". The last letter of "Eleazar" is "r". The last letter of "Chanel" is "l". Concatenate the last letters: "b", "e", "r", "l".
+The answer is {berl}.
+
+Question: Take the last letters of each words in \"Silvia Carolina Stan Chuck\" and concatenate them.
+Answer: The last letter of "Silvia" is "a". The last letter of "Carolina" is "a". The last letter of "Stan" is "n". The last letter of "Chuck" is "k". Concatenate the last letters: "a", "a", "n", "k".
+The answer is {aank}.
+
+Question: Take the last letters of the words in \"Jim Amanda\" and concatenate them.
+Answer: The last letter of "Jim" is "m". The last letter of "Amanda" is "a". Concatenate the last letters: "m", "a".
+The answer is {ma}.
+
+Question: Take the last letters of the words in \"William Amber\" and concatenate them.
+Answer: The last letter of "William" is "m". The last letter of "Amber" is "r". Concatenate the last letters: "m", "r".
+The answer is {mr}.

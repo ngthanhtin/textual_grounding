@@ -1,0 +1,35 @@
+Question: I have a flute, a piano, a trombone, four stoves, a violin, an accordion, a clarinet, a drum, two lamps, and a trumpet. How many musical instruments do I have?
+Reformatted Question: I have <fact1>a flute</fact1>, <fact2>a piano</fact2>, <fact3>a trombone</fact3>, four stoves, <fact4>a violin</fact4>, <fact5>an accordion</fact5>, <fact6>a clarinet</fact6>, <fact7>a drum</fact7>, two lamps, and <fact8>a trumpet</fact8>. How many musical instruments do I have?
+Answer: Let's count the musical instruments you have: <fact1>1 flute</fact1>, <fact2>1 piano</fact2>, <fact3>1 trombone</fact3>, <fact4>1 violin</fact4>, <fact5>1 accordion</fact5>, <fact6>1 clarinet</fact6>, <fact7>1 drum</fact7>, <fact8>1 trumpet</fact8>. So, you have 8 musical instruments. The answer is {8}.
+
+
+Question: I have two couches, a toaster, two chairs, four microwaves, a table, and a lamp. How many objects do I have?
+Reformatted Question: I have <fact1>two couches</fact1>, <fact2>a toaster</fact2>, <fact3>two chairs</fact3>, <fact4>four microwaves</fact4>, <fact5>a table</fact5>, and <fact6>a lamp</fact6>. How many objects do I have?
+Answer: Total number of objects: <fact1>2 couches</fact1> + <fact2>1 toaster</fact2> + <fact3>2 chairs</fact3> + <fact4>4 microwaves</fact4> + <fact5>1 table</fact5> + <fact6>1 lamp</fact6> = 11 objects. The answer is {11}.
+
+Question: I have a trombone, an accordion, four clarinets, and a trumpet. How many musical instruments do I have?
+Reformatted Question: I have <fact1>a trombone</fact1>, <fact2>an accordion</fact2>, <fact3>four clarinets</fact3>, and <fact4>a trumpet</fact4>. How many musical instruments do I have?
+Answer: Total number of musical instruments: <fact1>1 trombone</fact1> + <fact2>1 accordion</fact2> + <fact3>4 clarinets</fact3> + <fact4>1 trumpet</fact4> = 7 instruments. The answer is {7}.
+
+Question: I have an oven, a table, a lamp, three couches, a toaster, a microwave, and a bed. How many objects do I have?
+Reformatted Question: I have <fact1>an oven</fact1>, <fact2>a table</fact2>, <fact3>a lamp</fact3>, <fact4>three couches</fact4>, <fact5>a toaster</fact5>, <fact6>a microwave</fact6>, and <fact7>a bed</fact7>. How many objects do I have?
+Answer: Total number of objects: <fact1>1 oven</fact1> + <fact2>1 table</fact2> + <fact3>1 lamp</fact3> + <fact4>3 couches</fact4> + <fact5>1 toaster</fact5> + <fact6>1 microwave</fact6> + <fact7>1 bed</fact7> = 9 objects. The answer is {9}.
+
+Question: I have a trumpet, a drum, a piano, a flute, and two trombones. How many musical instruments do I have?
+Reformatted Question: I have <fact1>a trumpet</fact1>, <fact2>a drum</fact2>, <fact3>a piano</fact3>, <fact4>a flute</fact4>, and <fact5>two trombones</fact5>. How many musical instruments do I have?
+Answer: Total number of <fact6>musical instruments</fact6>: <fact1>1 trumpet</fact1> + <fact2>1 drum</fact2> + <fact3>1 piano</fact3> + <fact4>1 flute</fact4> + <fact5>2 trombones</fact5> = 6 instruments. The answer is {6}.
+
+Question: I have four pianos, four snails, three chickens, a pig, a dog, and two cows. How many animals do I have?
+Reformatted Question: I have four pianos, <fact1>four snails</fact1>, <fact2>three chickens</fact2>, <fact3>a pig</fact3>, <fact4>a dog</fact4>, and <fact5>two cows</fact5>. How many animals do I have?
+Answer: Total number of animals: <fact1>4 snails</fact1> + <fact2>3 chickens</fact2> + <fact3>1 pig</fact3> + <fact4>1 dog</fact4> + <fact5>2 cows</fact5> = 11 animals. The answer is {11}.
+
+Question: I have two stalks of celery, a carrot, a lettuce head, and an onion. How many vegetables do I have?
+Reformatted Question: I have <fact1>two stalks of celery</fact1>, <fact2>a carrot</fact2>, <fact3>a lettuce head</fact3>, and <fact4>an onion</fact4>. How many vegetables do I have?
+Answer: Total number of vegetables: <fact1>2 stalks of celery</fact1> + <fact2>1 carrot</fact2> + <fact3>1 lettuce</fact3> + <fact4>1 onion</fact4> = 5 vegetables. The answer is {5}.
+
+Question: I have a chair, a table, a couch, a stove, a car, a lamp, and a fridge. How many objects do I have?
+Reformatted Question 8: I have <fact1>a chair</fact1>, <fact2>a table</fact2>, <fact3>a couch</fact3>, <fact4>a stove</fact4>, <fact5>a car</fact5>, <fact6>a lamp</fact6>, and <fact7>a fridge</fact7>. How many objects do I have?
+Answer: Total number of <fact8>objects</fact8>: <fact1>1 chair</fact1> + <fact2>1 table</fact2> + <fact3>1 couch</fact3> + <fact4>1 stove</fact4> + <fact5>1 car</fact5> + <fact6>1 lamp</fact6> + <fact7>1 fridge</fact7> = 7 objects. The answer is {7}.
+
+
+

@@ -1,0 +1,31 @@
+Question: If you follow these instructions, do you return to the starting point? Always face forward. Take 1 step right. Take 3 steps left. Take 2 steps right. Options: - Yes - No
+Answer: Starting from the original point, you first take 1 step right. Then, you take 3 steps left, which moves you 2 steps left from the starting point. Finally, taking 2 steps right brings you to the starting point. Therefore, you return to the starting point.
+The answer is {yes}.
+
+Question: If you follow these instructions, do you return to the starting point? Always face forward. Take 1 step forward. Take 10 steps left. Take 4 steps forward. Options: - Yes - No
+Answer: You take 1 step forward, moving you 1 step ahead of the starting point. Then you take 10 steps left, moving far to the left. Finally, taking 4 steps forward moves you even further from the starting point. Hence, you do not return to the starting point.
+The answer is {no}.
+
+Question: If you follow these instructions, do you return to the starting point? Take 1 step. Take 5 steps. Turn around. Turn around. Turn around. Take 6 steps. Options: - Yes - No
+Answer:  You take a total of 6 steps forward. Then, you turn around three times, leaving you facing backward. Taking 6 steps backward after this returns you exactly to your starting point.
+The answer is {yes}.
+
+Question: If you follow these instructions, do you return to the starting point? Take 9 steps. Turn left. Turn left. Take 5 steps. Take 4 steps. Turn left. Turn left. Options: - Yes - No
+Answer: You first take 9 steps forward. Then, you turn left twice, making you face backward. Taking 5 steps brings you back towards the starting point but not completely. After taking 4 more steps and turning left twice again, you return to the same path and back to the starting point.
+The answer is {yes}.
+
+Question: If you follow these instructions, do you return to the starting point? Take 3 steps. Turn left. Turn left. Turn around. Take 5 steps. Turn around. Take 5 steps. Options: - Yes - No
+Answer: After taking 3 steps forward, you turn left twice and then turn around, bringing you back to your original direction. You then take 5 steps forward and turn around again, returning 5 steps. However, this leaves you 3 steps away from the starting point.
+The answer is {no}.
+
+Question: If you follow these instructions, do you return to the starting point? Always face forward. Take 8 steps backward. Take 2 steps backward. Take 10 steps forward. Options: - Yes - No
+Answer: First, you take 8 steps backward. Then you take an additional 2 steps backward, moving you 10 steps away from the starting point. Finally, taking 10 steps forward brings you back to the original point.
+The answer is {yes}.
+
+Question: If you follow these instructions, do you return to the starting point? Always face forward. Take 6 steps left. Take 3 steps backward. Take 3 steps left. Options: - Yes - No
+Answer: You first take 6 steps left. Then, taking 3 steps backward doesn’t affect the horizontal position. After this, taking 3 more steps left moves you further away from the starting point. Hence, you do not return to the starting point.
+The answer is {no}.
+
+Question: If you follow these instructions, do you return to the starting point? Take 7 steps. Turn around. Take 7 steps. Turn left. Turn around. Turn around. Turn left. Options: - Yes - No
+Answer: You take 7 steps forward. After turning around and taking 7 steps back, you return to the starting point. Turning left twice more does not change your position, as it is purely a directional change. Therefore, you remain at the starting point.
+The answer is {yes}.

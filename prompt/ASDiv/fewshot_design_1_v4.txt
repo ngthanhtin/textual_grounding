@@ -1,0 +1,50 @@
+Question: There are <fact1>15 trees</fact1> in the grove. Grove workers will plant trees in the grove today. After they are done, there will be <fact2>21 trees</fact2>. How many trees did the grove workers plant today?
+Answer: We start with <fact1>15 trees</fact1>.
+Later we have <fact2>21 trees</fact2>.
+The difference must be the number of trees they planted.
+So, they must have planted <fact2>21</fact2> - <fact1>15</fact1> = 6 trees.
+The answer is {6}.
+
+Question: If there are <fact1>3 cars</fact1> in the parking lot and <fact2>2 more cars</fact2> arrive, how many cars are in the parking lot?
+Answer: There are <fact1>3 cars</fact1> in the parking lot already.
+<fact2>2 more</fact2> arrive.
+Now there are <fact1>3</fact1> + <fact2>2</fact2> = 5 cars.
+The answer is {5}.
+
+Question: <fact1>Leah had 32 chocolates</fact1> and her <fact2>sister had 42 chocolates</fact2>. If they ate <fact3>35</fact3>, how many pieces do they have left in total?
+Answer: <fact1>Leah had 32 chocolates</fact1> and <fact2>Leah's sister had 42 chocolates</fact2>.
+That means there were originally <fact1>32</fact1> + <fact2>42</fact2> = 74 chocolates.
+<fact3>35 have been eaten</fact3>.
+So in total they still have 74 - <fact3>35</fact3> = 39 chocolates.
+The answer is {39}.
+
+Question: <fact1>Jason had 20 lollipops</fact1>. He gave Denny some lollipops. Now <fact2>Jason has 12 lollipops</fact2>. How many lollipops did Jason give to Denny?
+Answer: <fact1>Jason had 20 lollipops</fact1>.
+Since he only has <fact2>12</fact2> now, he must have given the rest to Denny.
+The number of lollipops he has given to Denny must have been <fact1>20</fact1> - <fact2>12</fact2> = 8 lollipops.
+The answer is {8}.
+
+Question: Shawn has <fact1>five toys</fact1>. For Christmas, he got <fact2>two toys each from his mom and dad</fact2>. How many toys does he have now?
+Answer: He has <fact1>5 toys</fact1>.
+He got <fact2>2 from mom</fact2>, so after that he has <fact1>5</fact1> + <fact2>2</fact2> = 7 toys.
+Then he got <fact2>2 more from dad</fact2>, so in total he has 7 + <fact2>2</fact2> = 9 toys.
+The answer is {9}.
+
+Question: There were <fact1>nine computers</fact1> in the server room. <fact2>Five more computers</fact2> were installed each day, from <fact3>Monday to Thursday</fact3>. How many computers are now in the server room?
+Answer: There are <fact3>4 days</fact3> from <fact3>Monday to Thursday</fact3>.
+<fact2>5 computers</fact2> were added each day.
+That means in total <fact3>4</fact3> * <fact2>5</fact2> = 20 computers were added.
+There were <fact1>9 computers</fact1> in the beginning, so now there are <fact1>9</fact1> + 20 = 29 computers.
+The answer is {29}.
+
+Question: Michael had <fact1>58 golf balls</fact1>. On <fact2>Tuesday, he lost 23 golf balls</fact2>. On <fact3>Wednesday, he lost 2 more</fact3>. How many golf balls did he have at the end of <fact5>Wednesday</fact5>?
+Answer: Michael initially had <fact1>58 balls</fact1>.
+He lost <fact2>23 on Tuesday</fact2>, so after that he has 58 - <fact2>23</fact2> = 35 balls.
+On <fact3>Wednesday he lost 2 more</fact3>, so now he has 35 - <fact3>2</fact3> = 33 balls.
+The answer is {33}.
+
+Question: Olivia has <fact1>$23</fact1>. She bought <fact2>five bagels</fact2> for <fact3>$3 each</fact3>. How much money does she have left?
+Answer: She bought <fact2>5 bagels</fact2> for <fact3>$3 each</fact3>.
+This means she spent <fact2>5</fact2> * <fact3>$3</fact3> = $15 on the bagels.
+She had <fact1>$23</fact1> in beginning, so now she has <fact1>$23</fact1> - $15 = $8.
+The answer is {8}.

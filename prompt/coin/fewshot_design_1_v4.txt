@@ -1,0 +1,29 @@
+Question: A coin is heads up. roxas does not flip the coin. scheideman does not flip the coin.  Is the coin still heads up? Flip means reverse.
+Reformatted Question: <fact1>A coin is heads up</fact1>. <fact2>roxas does not flip the coin</fact2>. <fact3>scheideman does not flip the coin</fact3>.  Is the coin still heads up? Flip means reverse.
+Answer: <fact1>The coin started out being heads up</fact1>. <fact2>Roxas does not flip the coin</fact2>, which means the coin remains in the same position. <fact3>Scheideman also does not flip the coin</fact3>, so again, there is no change in the coin's orientation. Since <fact2><fact3>neither Roxas nor Scheideman flipped the coin </fact3></fact2> (which would reverse its position), the coin remains heads up.
+The answer is {yes}.
+
+Question: A coin is heads up. Aluino flips the coin. Arthor flips the coin. Is the coin still heads up? Flip means reverse.
+Reformatted Question: <fact1>A coin is heads up</fact1>. <fact2>Aluino flips the coin</fact2>. <fact3>Arthor flips the coin</fact3>. Is the coin still heads up? Flip means reverse.
+Answer: <fact1>The coin started out being heads up</fact1>. Then, <fact2>Aluino flipped the coin, reversing its side</fact2>. After that, <fact3>Arthor also flipped the coin, reversing its side again</fact3>. Is the coin facing heads up now? Considering the action of flipping the coin means to reverse its side, after two flips, the coin would indeed be back in its original position. So, the coin is still heads up.
+The answer is {yes}.
+
+Question: A coin is heads up. mykena flips the coin. shirlene flips the coin.  Is the coin still heads up? Flip means reverse.
+Reformatted Question: <fact1>A coin is heads up</fact1>. <fact2>mykena flips the coin</fact2>. <fact3>shirlene flips the coin</fact3>.  Is the coin still heads up? Flip means reverse.
+Answer: <fact1>The coin started out being heads up</fact1>. Then, <fact2>Mykena flips the coin, which reverses the side, meaning the coin is now tails up</fact2>. <fact3>Shirlene flips the coin again, reversing it back to heads up</fact3>. After two flips, the coin returns to its original position.
+The answer is {yes}.
+
+Question: A coin is heads up. vijender does not flip the coin. bloodgood flips the coin.  Is the coin still heads up? Flip means reverse.
+Reformatted Question: <fact1>A coin is heads up</fact1>. <fact2>vijender does not flip the coin</fact2>. <fact3>bloodgood flips the coin</fact3>.  Is the coin still heads up? Flip means reverse.
+Answer: <fact1>The coin started heads up</fact1>. <fact2>Vijender did not flip the coin, so the coin remains heads up</fact2>. <fact3>Bloodgood then flips the coin, reversing its side</fact3>. After Bloodgood's flip, the coin is now tails up.
+The answer is {no}.
+
+Question: A coin is heads up. eklavya flips the coin. kydon does not flip the coin.  Is the coin still heads up? Flip means reverse.
+Reformatted Question: <fact1>A coin is heads up</fact1>. <fact2>eklavya flips the coin</fact2>. <fact3>kydon does not flip the coin</fact3>.  Is the coin still heads up? Flip means reverse.
+Answer: <fact1>The coin started heads up</fact1>. <fact2>Eklavya flips the coin, reversing its side to tails up</fact2>. <fact3>Kydon does not flip the coin, so it stays tails up</fact3>.
+The answer is {no}.
+
+Question: A coin is heads up. taeo flips the coin. luana does not flip the coin.  Is the coin still heads up? Flip means reverse.
+Reformatted Question: <fact1>A coin is heads up</fact1>. <fact2>taeo flips the coin</fact2>. <fact3>luana does not flip the coin</fact3>. Is the coin still heads up? Flip means reverse.
+Answer: <fact1>The coin started heads up</fact1>. <fact2>Taeo flips the coin, reversing its side to tails up</fact2>. <fact3>Luana does not flip the coin, so it stays tails up</fact3>.
+The answer is {no}.

@@ -1,0 +1,60 @@
+Question: [Jason] always had some great adventure planned for his granddaughter [Guillermina] when she came to visit. So, naturally, when [Myrna] told her daughter [Guillermina] that they would be going to visit [Jason] she could hardly contain herself. How is [Jason] related to [Myrna]?
+Reformatted Question: <fact1>[Jason]</fact1> always had some great adventure planned for his granddaughter <fact2>[Guillermina]</fact2> when she came to visit. So, naturally, when <fact3>[Myrna]</fact3> told her daughter <fact2>[Guillermina]</fact2> that they would be going to visit <fact1>[Jason]</fact1>, she could hardly contain herself. How is <fact1>[Jason]</fact1> related to <fact3>[Myrna]</fact3>?
+Answer: <fact1>[Jason]</fact1> is <fact2>[Guillermina]'s</fact2> grandfather.
+<fact2>[Guillermina]</fact2> is <fact3>[Myrna]'s</fact3> daughter.
+Therefore, <fact1>[Jason]</fact1> is <fact3>[Myrna]'s</fact3> father.
+The answer is {father}.
+
+Question: [Gabrielle] drove her daughter [Dorothy] to the hospital. [Dorothy]'s son [Vincent] showed up shortly after. How is [Vincent] related to [Gabrielle]?
+Reformatted Question: <fact1>[Gabrielle]</fact1> drove her daughter <fact2>[Dorothy]</fact2> to the hospital. <fact2>[Dorothy]</fact2>'s son <fact3>[Vincent]</fact3> showed up shortly after. How is <fact3>[Vincent]</fact3> related to <fact1>[Gabrielle]</fact1>?
+Answer: <fact3>[Vincent]</fact3> is <fact2>[Dorothy]'s</fact2> son.
+<fact2>[Dorothy]</fact2> is <fact1>[Gabrielle]'s</fact1> daughter.
+Therefore, <fact3>[Vincent]</fact3> is <fact1>[Gabrielle]'s</fact1> grandson.
+The answer is {grandson}.
+
+Question: [Dorothy] took her daughter [Michelle] and her mother [Gabrielle] car shopping. How is [Michelle] related to [Gabrielle]?
+Reformatted Question: <fact1>[Dorothy]</fact1> took her daughter <fact2>[Michelle]</fact2> and her mother <fact3>[Gabrielle]</fact3> car shopping. How is <fact2>[Michelle]</fact2> related to <fact3>[Gabrielle]</fact3>?
+Answer: <fact2>[Michelle]</fact2> is <fact1>[Dorothy]'s</fact1> daughter.
+<fact1>[Dorothy]</fact1> is <fact3>[Gabrielle]'s</fact3> daughter.
+Therefore, <fact2>[Michelle]</fact2> is <fact3>[Gabrielle]'s</fact3> granddaughter.
+The answer is {granddaughter}.
+
+Question: [Teresa] and her brother [Ellis] were having a wonderful time at Disneyland. [Ellis] asked his grandmother, [Molly], to read him a bedtime story. [Molly] read him Hansel & Gretel, which the boy always loved. [Sandra] is married to Thomas and when she was 24, the couple welcomed [Teresa] into the world. How is [Molly] related to [Sandra]?
+Reformatted Question: <fact1>[Teresa]</fact1> and her brother <fact2>[Ellis]</fact2> were having a wonderful time at Disneyland. <fact2>[Ellis]</fact2> asked his grandmother, <fact3>[Molly]</fact3>, to read him a bedtime story. <fact3>[Molly]</fact3> read him Hansel & Gretel, which the boy always loved. <fact4>[Sandra]</fact4> is married to Thomas, and when she was 24, the couple welcomed <fact1>[Teresa]</fact1> into the world. How is <fact3>[Molly]</fact3> related to <fact4>[Sandra]</fact4>?
+Answer: <fact3>[Molly]</fact3> is <fact2>[Ellis]'s</fact2> grandmother.
+<fact2>[Ellis]</fact2> is <fact1>[Teresa]'s</fact1> brother.
+<fact1>[Teresa]</fact1> is <fact4>[Sandra]'s</fact4> daughter.
+Therefore, <fact3>[Molly]</fact3> is <fact4>[Sandra]'s</fact4> mother.
+The answer is {mother}.
+
+Question: [Carlos] and his sister, [Annie], went shopping. [Annie] asked her mom [Valerie] if she wanted anything, but [Valerie] said no. [Carlos] is [Clarence]'s Brother. How is [Valerie] related to [Clarence]?
+Reformatted Question: <fact1>[Carlos]</fact1> and his sister, <fact2>[Annie]</fact2>, went shopping. <fact2>[Annie]</fact2> asked her mom <fact3>[Valerie]</fact3> if she wanted anything, but <fact3>[Valerie]</fact3> said no. <fact1>[Carlos]</fact1> is <fact4>[Clarence]'s</fact4> brother. How is <fact3>[Valerie]</fact3> related to <fact4>[Clarence]</fact4>?
+Answer: <fact3>[Valerie]</fact3> is <fact2>[Annie]'s</fact2> mother.
+<fact2>[Annie]</fact2> is <fact1>[Carlos]'s</fact1> sister.
+<fact1>[Carlos]</fact1> is <fact4>[Clarence]'s</fact4> brother.
+Therefore, <fact3>[Valerie]</fact3> is <fact4>[Clarence]'s</fact4> mother.
+The answer is {mother}.
+
+Question: [James] is happy that his daughter is doing so well. Her name is [Enedina]. [James] and his daughter [Teresa] spent Father's Day together. [Teresa] took her dad out to a sports bar, and they had a great time watching football and drinking beer there. [Enedina] went to the opera with her grandfather [Stanley]. How is [Teresa] related to [Stanley]?
+Reformatted Question: <fact1>[James]</fact1> is happy that his daughter is doing so well. Her name is <fact2>[Enedina]</fact2>. <fact1>[James]</fact1> and his daughter <fact3>[Teresa]</fact3> spent Father's Day together. <fact3>[Teresa]</fact3> took her dad out to a sports bar, and they had a great time watching football and drinking beer there. <fact2>[Enedina]</fact2> went to the opera with her grandfather <fact4>[Stanley]</fact4>. How is <fact3>[Teresa]</fact3> related to <fact4>[Stanley]</fact4>?
+Answer: <fact3>[Teresa]</fact3> is <fact1>[James]'s</fact1> daughter.
+<fact1>[James]</fact1> is <fact2>[Enedina]'s</fact2> father.
+<fact2>[Enedina]</fact2> is <fact4>[Stanley]'s</fact4> granddaughter.
+Therefore, <fact3>[Teresa]</fact3> is <fact4>[Stanley]'s</fact4> granddaughter.
+The answer is {granddaughter}.
+
+Question: [Carlos] and his wife [Venita] are going to be at the play. [Carlos] went to visit his sister [Elizabeth] to the hospital last week. [Elizabeth] 'father, [Alan], recently went back to school. How is [Alan] related to [Venita]?
+Reformatted Question: <fact1>[Carlos]</fact1> and his wife <fact2>[Venita]</fact2> are going to be at the play. <fact1>[Carlos]</fact1> went to visit his sister <fact3>[Elizabeth]</fact3> at the hospital last week. <fact3>[Elizabeth]'s</fact3> father, <fact4>[Alan]</fact4>, recently went back to school. How is <fact4>[Alan]</fact4> related to <fact2>[Venita]</fact2>?
+Answer: <fact4>[Alan]</fact4> is <fact3>[Elizabeth]'s</fact3> father.
+<fact3>[Elizabeth]</fact3> is <fact1>[Carlos]'s</fact1> sister.
+<fact1>[Carlos]</fact1> is <fact2>[Venita]'s</fact2> husband.
+Therefore, <fact4>[Alan]</fact4> is <fact2>[Venita]'s</fact2> father-in-law.
+The answer is {father-in-law}.
+
+Question: [Elliott] is excited to cheer on his brother [James] in the homecoming game tonight. [Alan] love his brother [Elliott]. They are always playing together. [Alan] loves his daughter [Annie]. How is [Annie] related to [James]?
+Reformatted Question: <fact1>[Elliott]</fact1> is excited to cheer on his brother <fact2>[James]</fact2> in the homecoming game tonight. <fact3>[Alan]</fact3> loves his brother <fact1>[Elliott]</fact1>. They are always playing together. <fact3>[Alan]</fact3> loves his daughter <fact4>[Annie]</fact4>. How is <fact4>[Annie]</fact4> related to <fact2>[James]</fact2>?
+Answer: <fact4>[Annie]</fact4> is <fact3>[Alan]'s</fact3> daughter.
+<fact3>[Alan]</fact3> is <fact1>[Elliott]'s</fact1> brother.
+<fact1>[Elliott]</fact1> is <fact2>[James]'s</fact2> brother.
+Therefore, <fact4>[Annie]</fact4> is <fact2>[James]'s</fact2> niece.
+The answer is {niece}.

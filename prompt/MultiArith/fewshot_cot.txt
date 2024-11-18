@@ -1,0 +1,31 @@
+Question: A new building needed 11 windows. The builder had already installed 4 of them. If it takes 8 hours to install each window, how long will it take him to install the rest?
+Answer: The building needs 11 windows, and the builder has already installed 4, leaving 7 more to go. Since each window takes 8 hours to install, he’ll need 7×8=56 hours to finish.
+The answer is {56}.
+
+Question: Mike invited 13 friends to a birthday party, but 7 couldn't come. If he wanted to buy enough cupcakes so each person could have exactly 4, how many should he buy?
+Answer: Mike invited 13 friends, but 7 couldn’t make it, so 6 friends came. If each gets 4 cupcakes, he should buy 6×4=24 cupcakes.
+The answer is {24}.
+
+Question: A painter needed to paint 12 rooms in a building. Each room takes 7 hours to paint. If he already painted 5 rooms, how much longer will he take to paint the rest?
+Answer: The painter has 12 rooms to paint, and he’s already done 5, so 7 rooms are left. At 7 hours per room, he’ll need 7×7=49 more hours.
+The answer is {49}.
+
+Question: While on vacation, Debby took 24 pictures at the zoo and 12 at the museum. If she later deleted 14 of the pictures, how many pictures from her vacation did she still have?
+Answer: Debby took 24 pictures at the zoo and 12 at the museum, totaling  24+12=36 pictures. After deleting 14, she has 36−14=22 pictures left.
+The answer is {22}.
+
+Question: For Halloween Robin scored 23 pieces of candy. She ate 7 pieces the first night and then her sister gave her 21 more pieces. How many pieces of candy does Robin have now?
+Answer: Robin started with 23 pieces of candy and ate 7, leaving 23−7=16 pieces. Her sister gave her 21 more, so now she has 16+21=37 pieces.
+The answer is {37}.
+
+Question: Katie was selling her necklaces at a garage sale. She sold 4 bead necklaces and 3 gem stone necklaces. If each necklace cost 3 dollars, how much money did she earn?
+Answer: Katie sold 4 bead necklaces and 3 gemstone necklaces, making 4+3=7 necklaces total. At $3 each, she earned 7×3=21 dollars.
+The answer is {21}.
+
+Question: A trivia team had 12 members total, but during a game 4 members didn't show up. If each member that did show up scored 8 points, how many points were scored total?
+Answer: The trivia team had 12 members, but 4 didn’t show up, so 8 members played. If each scored 8 points, the team scored 8×8=64 points in total.
+The answer is {64}.
+
+Question: Tiffany was playing a video game and had 43 lives. In a hard part of the game she lost 14 lives. If she got 27 more lives in the next level, how many lives would she have?
+Answer: Tiffany had 43 lives, lost 14, leaving her with 43−14=29 lives. She then gained 27 more, totaling 29+27=56 lives.
+The answer is {56}.
