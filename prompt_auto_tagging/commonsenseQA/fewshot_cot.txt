@@ -1,0 +1,23 @@
+Question: Sammy was a union member. He had to be. It was the only way to advance in his profession. What was his profession? Answer Choices: (a) workplace (b) science (c) algebra (d) province (e) construction business
+Answer: The construction business is a profession in which a union member is required. A workplace is not a profession. Science is a subject and not usually referred to as a profession. Algebra is not a profession. A province is also not a profession. The answer is {E}.
+
+Question: Google Maps and other highway and street GPS services have replaced what? Answer Choices: (a) united states (b) mexico (c) countryside (d) atlas (e) oceans
+Answer: Google maps, and highway and street GPS services have replaced Atlases since they provide better and more accurate data. Other options are places or locations which cannot be replaced by a service like GPS. The answer is {D}.
+
+Question: The fox walked from the city into the forest, what was it looking for? Answer Choices: (a) pretty flowers (b) hen house (c) natural habitat (d) storybook (e) dense forest
+Answer: Foxes neither want pretty flowers nor storybooks. Hen houses aren't in forests. The fox walked from the city into the forest looking for its natural habitat since forests are one of the main natural habitats of foxes. The answer is {C}.
+
+Question: What is it called when you slowly cook using a grill? Answer Choices: (a) backyard (b) restaurant (c) crockpot (d) neighbor's house (e) barbeque
+Answer: A backyard is not a way of cooking slowly. A restaurant can cook slowly with a grill, but a restaurant is a location, not a method.  A crockpot can be used for cooking, but it does not involve a grill. A neighbor's house is not a way to cook slowly. Barbeque is a way of cooking done slowly under heat on a grill. The answer is {E}.
+
+Question: What would you do if you want to be able to earn money? Answer Choices: (a) apply for job (b) stand in line (c) take care of proposals (d) pass course (e) play the lottery
+Answer: Options B, C and D all do not involve options that will earn money. Playing the lottery does have the chance to be profitable, but it is not a reliable method for people wanting to earn money. The answer is {A}.
+
+Question: What home entertainment equipment requires cable? Answer Choices: (a) radio shack (b) substation (c) cabinet (d) television (e) desk
+Answer: Cable can be fixed to a television. Additionally, radio shack, substations, cabinets, and desks are not home entertainment equipment. The answer is {D}.
+
+Question: Of all the rooms in a house it was his favorite, the aromas always drew him to the what? Answer Choices: (a) yard (b) basement (c) kitchen (d) living room (e) garden
+Answer: A yard, basement and garden are not rooms in a house. Different food prepared in the kitchen gives a pleasant aroma. A living room does not typically give an aroma. The answer is {C}.
+
+Question: When a person has to make large quantities of food at once, what kitchen device do they likely use? Answer Choices: (a) microwave (b) blender (c) toaster (d) oven (e) mixer
+Answer: An oven is often used to make large quantities of food at once, as it has a larger capacity and can cook multiple food items together. A microwave, blender, toaster, and mixer are used for smaller quantities or specific types of food, not for large-batch cooking. The answer is {D}.
