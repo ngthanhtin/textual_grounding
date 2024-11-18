@@ -12925,3 +12925,39 @@ However, this ordering is not correct since the station wagon is the third-newes
    3. The convertible
    4. The sedan
    5. The station wagon (third-newest) is incorrect; it should be the third-newest, so the correct order is:"
+17,"The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. On a shelf, there are seven books: a green book, a brown book, a white book, a black book, an orange book, a purple book, and a yellow book. The purple book is to the left of the yellow book. The green book is to the left of the white book. The brown book is to the right of the yellow book. The white book is the fourth from the left. The green book is to the right of the orange book. The black book is the second from the left.
+Options:
+(A) The green book is the leftmost
+(B) The brown book is the leftmost
+(C) The white book is the leftmost
+(D) The black book is the leftmost
+(E) The orange book is the leftmost
+(F) The purple book is the leftmost
+(G) The yellow book is the leftmost","To determine the order of the books, let's analyze the given information step by step.
+
+1. The white book is the fourth from the left.
+   - _ _ _ W _ _ _
+
+2. The green book is to the left of the white book.
+   - _ _ G W _ _ _
+
+3. The green book is to the right of the orange book.
+   - _ O G W _ _ _
+
+4. The black book is the second from the left.
+   - _ B O G W _ _ _
+
+5. The purple book is to the left of the yellow book.
+   - Since the white book is the fourth, the purple and yellow books must be to the right of the white book.
+   - _ B O G W P Y _
+
+6. The brown book is to the right of the yellow book.
+   - _ B O G W P Y B
+
+Now we have the order of all the books. The leftmost book is the black book, which is the second from the left according to the given information, but considering the position of the orange book, the black book cannot be the leftmost. 
+
+However, there is an empty space left at the beginning, which should be filled by one of the remaining options. Based on the given options, only the orange book fits in the given order.
+
+So, the leftmost book is the orange book.
+
+{E}"

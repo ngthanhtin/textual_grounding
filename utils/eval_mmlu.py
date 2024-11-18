@@ -45,6 +45,8 @@ def compute_acc(questions, answers, gts, dataset):
                     # print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
                     # print('------------------------------------')
                 else:
+                    # print('------------------------------------')
+                    # print(question)
                     # print('Incorrect Answer: ', answer[-200:], 'GT: ', gt, gt_number)
                     # print('------------------------------------')
                     pass
@@ -212,8 +214,8 @@ def evaluate_model(llm_model: str, data_mode: str, answer_mode: str, dataset: st
     
 
     df = pd.read_csv(df_path)
-    # questions = df['question'].tolist()
-    questions = df['prompt'].tolist()
+    questions = df['question'].tolist()
+    # questions = df['prompt'].tolist()
     answers = df['answer'].tolist()
     ids = df['id'].tolist()
     
