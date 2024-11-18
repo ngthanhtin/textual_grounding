@@ -5,8 +5,8 @@ from google.generativeai.types import RequestOptions
 from google.api_core import retry
 # claude
 import anthropic
-from anthropic.types.beta.message_create_params import MessageCreateParamsNonStreaming
-from anthropic.types.beta.messages.batch_create_params import Request
+# from anthropic.types.beta.message_create_params import MessageCreateParamsNonStreaming
+# from anthropic.types.beta.messages.batch_create_params import Request
 # llama
 import groq
 from together import Together
@@ -14,7 +14,7 @@ from together import Together
 from openai import OpenAI
 import openai
 
-import random, json
+import random, json, os
 random.seed(0)
 
 def prepare_batch_input(llm_model, ids, prompts, temperature=1.0, max_tokens=1024, batch_output_file='batch_output.jsonl'):
@@ -75,7 +75,15 @@ def prepare_batch_input(llm_model, ids, prompts, temperature=1.0, max_tokens=102
 def batch_api_agent(llm_model, ids, prompts, temperature=1.0, max_tokens=1024, batch_output_file='batch_input.jsonl', result_file='results.jsonl'):
     
     # Creating an array of json tasks
-    tasks = prepare_batch_input(llm_model, ids, prompts, temperature, max_tokens, batch_output_file)
+    # check if batch_output_file exists
+    if not os.path.exists(batch_output_file):
+        tasks = prepare_batch_input(llm_model, ids, prompts, temperature, max_tokens, batch_output_file)
+    else: # read jsonl file into a list
+        tasks = [] 
+        with open(batch_output_file, 'r') as file:
+            for line in file:
+                json_obj = json.loads(line)  # Parse the JSON data from the line
+                tasks.append(json_obj)
         
     if 'gpt-4' in llm_model:
         client = OpenAI(
@@ -83,17 +91,13 @@ def batch_api_agent(llm_model, ids, prompts, temperature=1.0, max_tokens=1024, b
             )
         
         batch_file = client.files.create(file=open(batch_output_file, "rb"), purpose="batch")
+        
         batch_job = client.batches.create(
         input_file_id=batch_file.id,
         endpoint="/v1/chat/completions",
         completion_window="24h"
         )
         print("Batch job id:", batch_job.id)
-        
-        result_file_id = batch_job.output_file_id
-        result = client.files.content(result_file_id).content
-        with open(result_file, 'wb') as file:
-            file.write(result)
         
     elif 'gemini' in llm_model:
         pass

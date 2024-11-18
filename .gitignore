@@ -19,3 +19,8 @@ utils/eval_results/
 run.sh
 test.py
 
+results/
+results_auto_tagging/
+agents/__pycache__/
+__pycache__/
+prompt/

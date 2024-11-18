@@ -59,7 +59,8 @@ def api_agent(llm_model, prompt, temperature=1.0):
                         temperature=temperature,
                         n=1,
                         frequency_penalty=0,
-                        presence_penalty=0
+                        presence_penalty=0,
+                        max_tokens=10
                     )
             choices = response.choices
         
@@ -138,7 +139,28 @@ def api_agent(llm_model, prompt, temperature=1.0):
             return response.choices[0].message.content
         except:
             return None
-    
+    elif llm_model == 'llama_sambanova_405b':
+        client = openai.OpenAI(
+            api_key=API_KEYS['sambanova'],
+            base_url="https://api.sambanova.ai/v1",
+        )
+        try:
+            response = client.chat.completions.create(
+                model='Meta-Llama-3.1-405B-Instruct',
+                    messages=[
+                        {
+                            "role": "user",
+                            "content": prompt,
+                        }
+                    ],
+                temperature=0.6, # Meta default
+                top_p = 0.9, # Meta default
+                max_tokens=1024
+            )
+            time.sleep(2)  # Pause execution for 2 seconds
+            return response.choices[0].message.content
+        except:
+            return None
     elif llm_model == 'llama_sambanova_8b':
         client = openai.OpenAI(
             api_key=API_KEYS['sambanova'],
