@@ -4,6 +4,7 @@ import random
 random.seed(42)
 import numpy as np
 import re
+from utils import read_jsonl_file
 # ----------- Process Multi-choice -------------
 def parse_multi_choice_response(response, all_choices, index2ans):
     """
@@ -275,18 +276,21 @@ def parse_options(question):
 
     return answer_dict
 
-def check_math_answer(answer, gt):
+######## END OF MMLU EVALUATORS ##########
+
+def check_math_answer(answer, gt, verbose=False):
     acc = 0
+    
     try:
         extracted_answer = answer.split('{')[-1].split('}')[0]
         extracted_answer = extracted_answer.replace(":", "").replace("*", "").replace("$", "").replace(",", "").replace("{", "").replace("}", "").replace("€", "").replace('%', '')
         extracted_answer = extracted_answer.strip()
-    
-        if float(extracted_answer) == float(gt):
+        if float(gt) == float(extracted_answer):
             acc += 1
-        # else:
-        #     print("Answer: ", answer[-100:], 'GT: ', gt)
-        #     print("====================================")
+        else:
+            if verbose:
+                print("Answer: ", answer[-100:], 'GT: ', gt)
+                print("====================================")
     except:
         extracted_answer = answer.split('{')[-1].split('}')[0]
         extracted_answer = extracted_answer.replace(":", "").replace("*", "").replace("$", "").replace(",", "").replace("{", "").replace("}", "").replace("€", "").replace('%', '')
@@ -295,8 +299,278 @@ def check_math_answer(answer, gt):
         pred_list = parse_open_response(extracted_answer)
         if gt in pred_list:
             acc += 1
+        else:
+            if verbose:
+                print("Answer 2: ", extracted_answer[-100:], 'GT: ', gt)
+                print("====================================")
+    
+    return acc
+
+def compute_acc_gsm_plus(questions, answers, gts):
+    # load original dataset
+    data = read_jsonl_file('../data/GSM_Plus/test.jsonl')
+
+    perturb_dict = {}
+    for row in data:
+        question = row['question']
+        perturbation_type = row['perturbation_type']
+        
+        if perturbation_type not in perturb_dict:
+            perturb_dict[perturbation_type] = 0
+        else:
+            perturb_dict[perturbation_type] += 1
+    print(perturb_dict)
+
+    acc_perturb_dict = {k: 0 for k in perturb_dict.keys()}
+
+    for row in data:
+        question = row['question']
+        perturbation_type = row['perturbation_type']
+
+        for i, (generated_question, answer, gt) in enumerate(zip(questions, answers, gts)):
+            if generated_question == question:
+                acc_perturb_dict[perturbation_type] += check_math_answer(answer, gt)
+                break
+    
+    for k, v in acc_perturb_dict.items():
+        print(f'{k}: {v/perturb_dict[k]}')
+        
+def check_asdiv_answer(answer, gt, verbose=False):
+    acc = 0
+    try:
+        extracted_answer = answer.split('{')[-1].split('}')[0]
+        extracted_answer = extracted_answer.replace(":", "").replace("*", "").replace("$", "").replace(",", "").replace("{", "").replace("}", "").replace("€", "").replace('%', '')
+        extracted_answer = extracted_answer.strip()
+        if float(gt)-1 == float(extracted_answer):
+            acc += 1
+        elif float(extracted_answer) == float(gt) or \
+            float(extracted_answer)*100 == float(gt) or \
+                float(extracted_answer) == float(gt)*100:
+            acc += 1
+        else:
+            if verbose:
+                print("Answer 1: ", answer[-100:], 'GT: ', gt)
+                print("====================================")
+    except:
+        extracted_answer = answer.split('{')[-1].split('}')[0]
+        extracted_answer = extracted_answer.replace(":", "").replace("*", "").replace("$", "").replace(",", "").replace("{", "").replace("}", "").replace("€", "").replace('%', '')
+        extracted_answer = extracted_answer.strip()
+        
+        pred_list = parse_open_response(extracted_answer)
+        if gt in pred_list:
+            acc += 1
+        else:
+            if str(int(gt)) in extracted_answer:
+                acc += 1
+            else:
+                if verbose:
+                    print("Answer 2: ", extracted_answer[-100:], 'GT: ', gt)
+                    print("====================================")
+    return acc
+
+def check_aqua_answer(question, answer, gt, verbose=False):
+    acc = 0
+    index2ans = parse_options(question)
+    # remove ' in index2ans
+    index2ans = {key: value.replace("'", "") for key, value in index2ans.items()}
+    
+    # all_choices = list(index2ans.keys())
+    # pred_index = parse_multi_choice_response(answer, all_choices, index2ans)
+    
+    gt_number  = index2ans[gt]
+    
+    try:
+        extracted_answer = answer.split('{')[-1].split('}')[0]
+        if gt.upper() in extracted_answer or gt_number in extracted_answer:
+            acc += 1
+        else:
+            if verbose:
+                print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
+                print('------------------------------------')
+    except:
+        
+        if 'The closest answer option is' in answer:
+            extracted_answer = answer.split('The closest answer option is')[-1]
+        elif'The correct answer is' in answer:
+            extracted_answer = answer.split('The correct answer is')[-1]
+        elif 'Therefore, the answer is' in answer:
+            extracted_answer = answer.split('Therefore, the answer is')[-1]
+        elif 'Therefore the answer is' in answer:
+            extracted_answer = answer.split('Therefore the answer is')[-1]
+        else:
+            extracted_answer = answer[-200:]
+        # if gt.upper() == label or gt_number in extracted_answer:
+        #     total_acc += 1
         # else:
-        #     print("Answer: ", answer[-100:], 'GT: ', gt)
-        #     print("====================================")
+        pattern = r"(?i)([A-G])\)?[\s-]*\{?([^\{\}\(\)]+?)\}?(?=\s*[\(\{\[]?[A-G]\)?]|$)"
+        matches = re.findall(pattern, extracted_answer)
+
+        # Loop through matches and format them
+        for label, extracted_answer in matches:
+            if gt.upper() == label or gt_number in extracted_answer:
+                acc += 1
+                break
+            else:
+                if verbose:
+                    print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
+                    print('------------------------------------')
+                    
+    return acc
+
+
+def check_bool_answer(answer, gt, verbose=False):
+    acc = 0
+    try:
+        answer = answer.split('{')[1].split('}')[0]
+    except:
+        try:
+            if 'the answer is no' in answer.lower():
+                if bool(gt) == False:
+                    acc += 1
+                    return acc
+            if 'the answer is yes' in answer.lower():
+                if bool(gt) == True:
+                    acc += 1
+                    return acc
+            if 'yes,' in answer.lower():
+                if bool(gt) == True:
+                    acc += 1
+                    return acc
+            if 'no,' in answer.lower():
+                if bool(gt) == False:
+                    acc += 1
+                    return acc
+            if any(x in answer.lower() for x in [' no ', ' no.', ' false ', 'false.', ' 0 ', ' 0.']):
+                if bool(gt) == False:
+                    acc += 1
+                    return acc
+            elif any(x in answer.lower() for x in [' yes ', ' yes.', ' true ', 'true.', ' 1 ', ' 1.']):
+                if bool(gt) == True:
+                    acc += 1
+                    return acc
+            else:
+                if verbose:
+                    print("Answer: ", answer, "GT: ", gt)
+                    print('-----')
+        except:
+            return 0
+    
+    if answer.lower() in ['yes', 'true', '1']:
+        answer = True
+    elif answer.lower() in ['no', 'false', '0']:
+        answer = False
+    if bool(answer) == bool(gt):
+        acc += 1
+    
+    else:
+        if verbose:
+            print("Answer: ", answer, "GT: ", gt)
+            print('-----')
+        
+    return acc
+
+def check_exact_match_answer(answer, gt, verbose=False):
+    """
+    works for date, wikimultihopQA
+    """
+    acc = 0
+    conclusion = answer.split('{')[-1].split('}')[0]
+            
+    if conclusion.lower() == gt.lower():
+        acc += 1
+    else:
+        if  gt.lower() in answer.lower():
+            acc += 1
+        else:
+            if verbose:
+                print("Answer: ", answer[-100:], 'GT: ', gt)
+                print("====================================")
+    
+    return acc
+
+def check_multiple_choice_answer(question, answer, gt, verbose=False):
+    """
+    works for ['logical_deduction_seven_objects', 'reasoning_about_colored_objects', 'commonsenseQA']
+    """
+    
+    def extract_options_to_dict(text):
+        # Regular expression to match the pattern of options
+        pattern = r"\(([A-F])\)\s+(.+)"
+        
+        # Find all matches in the text
+        matches = re.findall(pattern, text)
+        
+        # Initialize a dictionary to store the options
+        options_dict = {}
+        
+        # Loop through matches and populate the dictionary
+        for label, description in matches:
+            options_dict[label] = description.strip()
+
+        return options_dict
+
+    acc = 0
+    options_dict = extract_options_to_dict(question)
+
+    if 'Answer: ' in answer:
+        answer = answer.split('Answer: ')[-1].strip()
+    
+    if len(answer) < 10: # Sometimes it answers the option directly.
+        if gt.lower() in answer.lower():
+            acc += 1
+            return acc
+        
+    extracted_answer = answer.split('{')[-1].split('}')[0]    
+    if extracted_answer == answer: # can not extract
+        extracted_answer = answer.split('(')[-1].split(')')[0]
+        if extracted_answer == answer: # can not extract  
+            if 'The closest answer option is' in answer:
+                extracted_answer = answer.split('The closest answer option is')[-1]
+            elif'The correct answer is' in answer:
+                extracted_answer = answer.split('The correct answer is')[-1]
+            elif 'Therefore, the answer is' in answer:
+                extracted_answer = answer.split('Therefore, the answer is')[-1]
+            elif 'Therefore the answer is' in answer:
+                extracted_answer = answer.split('Therefore the answer is')[-1]
+            else:
+                extracted_answer = answer[-200:]
+            
+            # check if description in the extracted answer
+            extracted_answer = extracted_answer.replace("*", "")
+            is_exists = False
+            for option, description in options_dict.items():
+                if description.lower() in extracted_answer.lower():
+                    acc += 1
+                    is_exists = True
+                    break
+            if is_exists:
+                return acc
+            
+            pattern = r"(?i)([A-G])\)?[\s-]*\{?([^\{\}\(\)]+?)\}?(?=\s*[\(\{\[]?[A-G]\)?]|$)"
+            matches = re.findall(pattern, extracted_answer)
+
+            # Loop through matches and format them
+            for label, extracted_answer in matches:
+                if gt.upper() == label:
+                    acc += 1
+                else:
+                    if verbose:
+                        print('Answer: ', answer[-200:], 'GT: ', gt)
+                        print('------------------------------------')
+            
+        else:
+            if gt.lower() in extracted_answer.lower():
+                acc += 1
+            else:
+                if verbose:
+                    print("Answer: ", extracted_answer[-100:], 'GT: ', gt)
+                    print("====================================")
+    else:
+        if gt.lower() in extracted_answer.lower():
+            acc += 1
+        else:
+            if verbose:
+                print("Answer: ", extracted_answer[-100:], 'GT: ', gt)
+                print("====================================")
     
     return acc

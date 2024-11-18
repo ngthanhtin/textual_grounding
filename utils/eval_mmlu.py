@@ -10,238 +10,35 @@ import pandas as pd
 from arg_parser import get_common_args
 from utils import retrieve_gts
 
-from mmlu import parse_open_response, parse_multi_choice_response, parse_options, check_math_answer
+from mmlu import parse_open_response, parse_multi_choice_response, check_math_answer, check_aqua_answer, check_asdiv_answer, check_bool_answer, check_exact_match_answer, compute_acc_gsm_plus, check_multiple_choice_answer
 
 from utils import read_jsonl_file
 
-def extract_options_to_dict(text):
-    # Regular expression to match the pattern of options
-    pattern = r"\(([A-F])\)\s+(.+)"
-    
-    # Find all matches in the text
-    matches = re.findall(pattern, text)
-    
-    # Initialize a dictionary to store the options
-    options_dict = {}
-    
-    # Loop through matches and populate the dictionary
-    for label, description in matches:
-        options_dict[label] = description.strip()
 
-    return options_dict
-
-def compute_acc(questions, answers, gts, dataset):
+def compute_acc(questions, answers, gts, dataset, tested_questions=None):
 
     # Append each question and its highlighted answer to the HTML content
     total_acc = 0
-    failed_follow_format_question = 0
-    failed_follow_format_final_answer = 0
-
-    for i, (question, answer, gt) in enumerate(zip(questions, answers, gts)):
-        if dataset in ['GSM8K', 'p_GSM8K', 'MultiArith', 'SVAMP', 'ASDiv', 'GSM8K_Hard', 'GSM_Plus']:
-            total_acc += check_math_answer(answer, gt)
-            
-        elif dataset in ['AQUA']:
-            index2ans = parse_options(question)
-            # remove ' in index2ans
-            index2ans = {key: value.replace("'", "") for key, value in index2ans.items()}
-            
-            # all_choices = list(index2ans.keys())
-            # pred_index = parse_multi_choice_response(answer, all_choices, index2ans)
-            
-            gt_number  = index2ans[gt]
-            
-            try:
-                extracted_answer = answer.split('{')[-1].split('}')[0]
-                if gt.upper() in extracted_answer or gt_number in extracted_answer:
-                    total_acc += 1
-                    # print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                    # print('------------------------------------')
-            except:
-                
-                if 'The closest answer option is' in answer:
-                    extracted_answer = answer.split('The closest answer option is')[-1]
-                elif'The correct answer is' in answer:
-                    extracted_answer = answer.split('The correct answer is')[-1]
-                elif 'Therefore, the answer is' in answer:
-                    extracted_answer = answer.split('Therefore, the answer is')[-1]
-                elif 'Therefore the answer is' in answer:
-                    extracted_answer = answer.split('Therefore the answer is')[-1]
-                else:
-                    extracted_answer = answer[-200:]
-                # if gt.upper() == label or gt_number in extracted_answer:
-                #     total_acc += 1
-                # else:
-                pattern = r"(?i)([A-G])\)?[\s-]*\{?([^\{\}\(\)]+?)\}?(?=\s*[\(\{\[]?[A-G]\)?]|$)"
-                matches = re.findall(pattern, extracted_answer)
-
-                # Loop through matches and format them
-                for label, extracted_answer in matches:
-                    if gt.upper() == label or gt_number in extracted_answer:
-                        total_acc += 1
-                        # print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                        # print('------------------------------------')
-                    else:
-                        print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                        print('------------------------------------')
-
-        elif dataset in ['logical_deduction_seven_objects', 'reasoning_about_colored_objects']:
-            options_dict = extract_options_to_dict(question)
-
-            if 'Answer: ' in answer:
-                answer = answer.split('Answer: ')[-1].strip()
-            
-            if len(answer) < 10: # Sometimes it answers the option directly.
-                if gt in answer:
-                    total_acc += 1
-                    continue
-                
-            extracted_answer = answer.split('{')[-1].split('}')[0]    
-            if extracted_answer == answer: # can not extract
-                extracted_answer = answer.split('(')[-1].split(')')[0]
-                if extracted_answer == answer: # can not extract  
-                    if 'The closest answer option is' in answer:
-                        extracted_answer = answer.split('The closest answer option is')[-1]
-                    elif'The correct answer is' in answer:
-                        extracted_answer = answer.split('The correct answer is')[-1]
-                    elif 'Therefore, the answer is' in answer:
-                        extracted_answer = answer.split('Therefore, the answer is')[-1]
-                    elif 'Therefore the answer is' in answer:
-                        extracted_answer = answer.split('Therefore the answer is')[-1]
-                    else:
-                        extracted_answer = answer[-200:]
-                    
-                    # check if description in the extracted answer
-                    extracted_answer = extracted_answer.replace("*", "")
-                    is_exists = False
-                    for option, description in options_dict.items():
-                        if description.lower() in extracted_answer.lower():
-                            total_acc += 1
-                            is_exists = True
-                            break
-                    if is_exists:
-                        continue
-                    
-                    pattern = r"(?i)([A-G])\)?[\s-]*\{?([^\{\}\(\)]+?)\}?(?=\s*[\(\{\[]?[A-G]\)?]|$)"
-                    matches = re.findall(pattern, extracted_answer)
-
-                    # Loop through matches and format them
-                    for label, extracted_answer in matches:
-                        if gt.upper() == label:
-                            total_acc += 1
-                        #     print('Answer: ', answer[-200:], 'GT: ', gt)
-                        #     print('------------------------------------')
-                        # else:
-                        #     print('Answer: ', answer[-200:], 'GT: ', gt)
-                        #     print('------------------------------------')
-                    
-                else:
-                    if gt in extracted_answer:
-                        total_acc += 1
-                    else:
-                        print("Answer: ", extracted_answer[-100:], 'GT: ', gt)
-                        print("====================================")
-            else:
-                if gt in extracted_answer:
-                    total_acc += 1
-                else:
-                    print("Answer: ", extracted_answer[-100:], 'GT: ', gt)
-                    print("====================================")
-                
-        
-        elif dataset in ['StrategyQA']:
-            try:
-                answer = answer.split('{')[1].split('}')[0]
-            except:
-                try:                    
-                    if any(x in answer.lower() for x in [' no ', ' no.', ' false ', 'false.', ' 0 ', ' 0.']):
-                        if bool(gt) == False:
-                            total_acc += 1
-                            continue
-                    elif any(x in answer.lower() for x in [' yes ', ' yes.', ' true ', 'true.', ' 1 ', ' 1.']):
-                        if bool(gt) == True:
-                            total_acc += 1
-                            continue
-                    else:
-                        print(answer, gt)
-                except:
-                    continue
-            if answer.lower() in ['yes', 'true', '1']:
-                answer = True
-            elif answer.lower() in ['no', 'false', '0']:
-                answer = False
-            if bool(answer) == bool(gt):
-                total_acc += 1
-            else:
-                print(bool(answer), gt)
-                print('----')
-                
-            # if 'Answer: ' in answer:
-            #     answer = answer.split('Answer: ')[-1].strip()
-                
-            # extracted_answer = answer.split('{')[-1].split('}')[0]
-            # extracted_answer = extracted_answer.replace(":", "").replace("{", "").replace("}", "")
-            
-            # if extracted_answer.lower() in ['yes', 'true', '1']:
-            #     extracted_answer = True
-            # elif extracted_answer.lower() in ['no', 'false', '0']:
-            #     extracted_answer = False
-            
-            # if bool(extracted_answer) == bool(gt):
-            #     total_acc += 1
-            # else:
-            #     print("Answer: ", extracted_answer, 'GT: ', gt)
-            #     print('------------------------------------')
-                
-             
-
-        elif dataset in ['date', 'wikimultihopQA']:
-            conclusion = answer.split('{')[-1].split('}')[0]
-            
-            if conclusion.lower() == gt.lower():
-                total_acc += 1
-            else:
-                if  gt.lower() in answer.lower():
-                    total_acc += 1
-                else:
-                    print("Question: ", question, "Answer: ", answer[-100:], 'GT: ', gt)
-                    print("====================================")
-        
-        
-                
-    print(total_acc, len(questions)-failed_follow_format_question-failed_follow_format_final_answer)
-    # print("Accuracy: ", total_acc/len(questions))
-    print("Accuracy: ", total_acc/(len(questions) - failed_follow_format_question - failed_follow_format_final_answer))
-
-def compute_acc_gsm_plus(questions, answers, gts):
-
-    # load original dataset
-    data = read_jsonl_file('../data/GSM_Plus/test.jsonl')
-
-    perturb_dict = {}
-    for row in data:
-        question = row['question']
-        perturbation_type = row['perturbation_type']
-        
-        if perturbation_type not in perturb_dict:
-            perturb_dict[perturbation_type] = 0
-        else:
-            perturb_dict[perturbation_type] += 1
-    print(perturb_dict)
-
-    acc_perturb_dict = {k: 0 for k in perturb_dict.keys()}
-
-    for row in data:
-        question = row['question']
-        perturbation_type = row['perturbation_type']
-
-        for i, (generated_question, answer, gt) in enumerate(zip(questions, answers, gts)):
-            if generated_question == question:
-                acc_perturb_dict[perturbation_type] += check_math_answer(answer, gt)
-                break
+    number_non_gts = 0
     
-    for k, v in acc_perturb_dict.items():
-        print(f'{k}: {v/perturb_dict[k]}')
+    for i, (question, answer, gt) in enumerate(zip(questions, answers, gts)):
+        if dataset == 'ASDiv':
+            total_acc += check_asdiv_answer(answer, gt)
+        if dataset in ['GSM8K', 'p_GSM8K', 'MultiArith', 'SVAMP', 'GSM8K_Hard', 'GSM_Plus']:
+            total_acc += check_math_answer(answer, gt)
+        elif dataset in ['AQUA']:
+            total_acc += check_aqua_answer(answer, gt)
+        elif dataset in ['StrategyQA']:
+            total_acc += check_bool_answer(answer, gt)
+        elif dataset in ['date', 'wikimultihopQA']:
+            total_acc += check_exact_match_answer(answer, gt)
+                    
+        elif dataset in ['logical_deduction_seven_objects', 'reasoning_about_colored_objects', 'commonsenseQA']:
+            total_acc += check_multiple_choice_answer(answer, gt)
+                
+    print(total_acc, len(questions)-number_non_gts)
+    print("Number of non-gts: ", number_non_gts)
+    print("Accuracy: ", total_acc/(len(questions)-number_non_gts))
 
 if __name__ == '__main__':
     arg_parser = get_common_args()
@@ -251,43 +48,88 @@ if __name__ == '__main__':
     # data_path
     with open('../configs/config.yaml', 'r') as f:
         config = yaml.safe_load(f)
-    base_data_path = config['base_data_path']
+    base_data_path = args.base_data_path
     data_path = os.path.join(base_data_path, config['data_paths'][args.dataset])
     
     data_path = f'../{data_path}'
-    result_folder = '../results_auto_tagging'
+    base_result_path = f'../{args.base_result_path}'
+    base_result_path = '../results_auto_tagging'
     
     answer_mode = args.answer_mode
     if args.answer_mode == 'grounding_cot':
         answer_mode = 'design_1_v4'
         
     if args.data_mode == 'random':
-        df_path = f'{result_folder}/{args.dataset}/{answer_mode}/fs_inst_{args.llm_model}_temp_10_random.csv'
+        df_path = f'{base_result_path}/{args.dataset}/{answer_mode}/fs_inst_{args.llm_model}_temp_10_random.csv'
     else:
-        df_path = f'{result_folder}/{args.dataset}/{answer_mode}/fs_inst_{args.llm_model}_temp_10_longest.csv'
+        df_path = f'{base_result_path}/{args.dataset}/{answer_mode}/fs_inst_{args.llm_model}_temp_10_longest.csv'
 
     
-
-    df = pd.read_csv(df_path)
-    questions = df['question'].tolist()
-    answers = df['answer'].tolist()
-    ids = df['id'].tolist()
+    # batch request eval only supports gpt-4o now
+    if not args.batch_request:
+        df = pd.read_csv(df_path)
+        questions = df['question'].tolist()
+        answers = df['answer'].tolist()
+        ids = df['id'].tolist()
+    else:
+        df = pd.read_csv(f'../results_auto_tagging/{args.dataset}/cot/fs_inst_gemini-1.5-pro-002_temp_10_longest.csv')
+        questions = df['question'].tolist()
+        answers = df['answer'].tolist()
+        ids = df['id'].tolist()
+        
+        batch_output_file = f'../batch_request/{args.dataset}/{args.answer_mode}/batch.jsonl'
+        # read jsonl file
+        data = read_jsonl_file(batch_output_file)
+        answers = []
+        for row in data:
+            response = row['response']['body']['choices'][0]['message']['content']
+            answers.append(response)
     
-    ###
-    # questions = questions[:400]
-    # answers = answers[:400]
-    # ids = ids[:400]
-    ###
-    if answer_mode == 'design_1_v4':
-        # remove all the tags in the answer
-        answers = [re.sub(r'</?fact\d+>', '', text) for text in answers]
+    # get ids of longest questions
+    tested_questions = []
+    tested_answers = []
+    tested_ids = []
+    
+    if args.data_mode == 'longest':
+        question_length = config['max_question_lengths'][args.dataset]
+        for q, a, id in zip(questions, answers, ids):
+            if len(q) >= question_length:
+                tested_questions.append(q)
+                tested_answers.append(a)
+                tested_ids.append(id)
+    else: # random
+        if len(questions) > 200:
+            question_length = config['max_question_lengths'][args.dataset]
+            
+            longest_questions = [q for q in questions if len(q) >= question_length]
+            tested_questions = []
+            for q, a, id in zip(questions, answers, ids):
+                if q not in longest_questions:
+                    tested_questions.append(q)
+                    tested_answers.append(a)
+                    tested_ids.append(id)
+            
+            # Randomly select 200 unique indices from the lists
+            indices = random.sample(range(len(tested_questions)), 200)
 
+            # Create subsets based on the selected indices
+            tested_questions = [tested_questions[i] for i in indices]
+            tested_answers = [tested_answers[i] for i in indices]
+            tested_ids = [tested_ids[i] for i in indices]
+        else:
+            tested_questions = questions
+            tested_answers = answers
+            tested_ids = ids
+    
+    print("Length of tested question: ", len(tested_questions))
+    questions = tested_questions
+    answers = tested_answers
+    ids = tested_ids
+    
     gts = retrieve_gts(data_path, ids, args.dataset)
     
-    # 
-    
     if args.dataset == 'GSM_Plus':
-        compute_acc_gsm_plus(questions, answers, gts)
-        # compute_acc(questions, answers, gts, args.dataset)
+        # compute_acc_gsm_plus(questions, answers, gts)
+        compute_acc(questions, answers, gts, args.dataset, tested_questions=tested_questions)
     else:
-        compute_acc(questions, answers, gts, args.dataset)
+        compute_acc(questions, answers, gts, args.dataset, tested_questions=tested_questions)
