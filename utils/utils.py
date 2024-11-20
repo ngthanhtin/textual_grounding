@@ -338,11 +338,12 @@ def retrieve_gts(data_path, ids, dataset):
     ids: ids of the predictions (list)
     dataset: which dataset to retrieve the ground truth
     """
+    # print(data_path)
     if data_path.endswith('.json'):
         with open(data_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
     else:
-        data = read_jsonl_file(data_path)
+        data = read_jsonl_file(data_path)   
     # read gt
     # print(data)
     gts = []
@@ -356,7 +357,7 @@ def retrieve_gts(data_path, ids, dataset):
                 if temp['id'] == id:
                     
                     gt = temp['answer']
-                    print(gt)
+                    # print(gt)
                     gts.append(float(gt))
             elif dataset == 'commonsenseQA':
                 if temp['id'] == id:
@@ -371,23 +372,24 @@ def retrieve_gts(data_path, ids, dataset):
                         if ',' in gt:
                             gt = gt.replace(',', '')
                         gts.append(float(gt))
-                    if dataset == 'CLUTRR':
+                    elif dataset == 'CLUTRR':
                         gt = gt.split('####')[1].strip()
                         gts.append(gt)
-                    if dataset == 'date':
+                    elif dataset == 'date':
                         gt = gt.split('####')[1].strip()
                         gts.append(gt)
-                    if dataset == 'ASDiv':
+                    elif dataset == 'ASDiv':
                         #if gt is list, convert it to string
                         if type(gt) == list:
                             gt = gt[0]
                         gt = gt.replace(',', '')
                         gts.append(float(gt))
-                    if dataset in ['StrategyQA', 'sports']:
+                    elif dataset in ['StrategyQA', 'sports']:
                         gts.append(gt)
-                    if dataset == 'AQUA':
+                    elif dataset == 'AQUA':
                         gts.append(gt)
                     else:
                         gts.append(gt)
-    
+                    # print(temp['id'], id, gt)
+    # print(gts)
     return gts

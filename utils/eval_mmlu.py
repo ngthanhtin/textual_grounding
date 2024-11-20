@@ -25,10 +25,10 @@ def compute_acc(questions, answers, gts, dataset):
     for i, (question, answer, gt) in enumerate(zip(questions, answers, gts)):
         # print("Dataset: ", dataset) 
         # print("Question: ", question, "Answer: ", answer, 'GT: ', gt)
-        if dataset in ['GSM8K', 'p_GSM8K', 'MultiArith', 'SVAMP', 'ASDiv', 'GSM8K_Hard', 'GSM_Plus']:
+        if dataset in ['GSM8K', 'p_GSM8K', 'MultiArith', 'SVAMP', 'ASDiv', 'GSM8K_Hard', 'GSM_Plus', 'SPARTQA']:
             total_acc += check_math_answer(answer, gt)
             
-        elif dataset in ['AQUA', 'reasoning_about_colored_objects', 'logical_deduction_seven_objects']:
+        elif dataset in ['AQUA', 'reasoning_about_colored_objects', 'logical_deduction_seven_objects', 'commonsenseQA']:
             index2ans = parse_options(question, dataset)
             # remove ' in index2ans
             index2ans = {key: value.replace("'", "") for key, value in index2ans.items()}
@@ -45,10 +45,11 @@ def compute_acc(questions, answers, gts, dataset):
                     # print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
                     # print('------------------------------------')
                 else:
-                    # print('------------------------------------')
-                    # print(question)
+                    print('------------------------------------')
+                    print(question)
                     # print('Incorrect Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                    # print('------------------------------------')
+                    print('GT: ', gt, gt_number)
+                    print('------------------------------------')
                     pass
             except:
                 
@@ -156,7 +157,8 @@ def compute_acc(questions, answers, gts, dataset):
     # print(total_iou/len(questions))
     print(total_acc, len(questions)-failed_follow_format_question-failed_follow_format_final_answer)
     # print("Accuracy: ", total_acc/len(questions))
-    print("Accuracy: ", total_acc/(len(questions) - failed_follow_format_question - failed_follow_format_final_answer))
+    result = total_acc/(len(questions))
+    print("Accuracy: ", round(result, 4)*100)
     print("------------------------------------")
 
 def compute_acc_gsm_plus(questions, answers, gts):
@@ -231,6 +233,7 @@ def evaluate_model(llm_model: str, data_mode: str, answer_mode: str, dataset: st
     gts = retrieve_gts(data_path, ids, dataset)
     
     # 
+    # print(len(questions), len(answers), len(gts), len(ids))
     
     if dataset == 'GSM_Plus':
         compute_acc_gsm_plus(questions, answers, gts)

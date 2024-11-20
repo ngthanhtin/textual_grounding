@@ -258,7 +258,8 @@ def calculate_ins_level_acc(results: Dict):
         ins_num += cat_results['num_example']
     if ins_num == 0:
         return 0
-    return acc / ins_num
+    result = (acc / ins_num).round(4)
+    return result*100
 
 def parse_options(question, dataset=""):
     """
@@ -282,6 +283,25 @@ def parse_options(question, dataset=""):
                 letter = line[1]  # Get the letter between parentheses
                 text = line[4:].strip()  # Get the text after the closing parenthesis
                 answer_dict[letter] = text
+    if dataset in ["commonsenseQA"]:
+        try:
+            # options_section = question.split("\n")[1]
+            options_section = question[question.find("\n") + 1:]
+
+            # print(options_section)
+        except:
+            print("ERROR")
+            print(question)
+
+        # Parse each option line
+        answer_dict = {}
+        for line in options_section.split("\n"):
+            if line:  # Skip empty lines
+                # Extract letter and text from format (A) red
+                letter = line[0]  # Get the letter between parentheses
+                text = line[3:].strip()  # Get the text after the closing parenthesis
+                answer_dict[letter] = text
+        # print(answer_dict)
 
     return answer_dict
 
