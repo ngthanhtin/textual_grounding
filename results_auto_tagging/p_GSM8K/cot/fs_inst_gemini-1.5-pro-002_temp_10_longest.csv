@@ -1,0 +1,1657 @@
+id,question,answer
+0,"Carmen goes to an auction to win an antique desk. The bids on the desk rise by $50 each time and 3 other people each bid once. She accepts the opening bid of $200 and continues bidding until she wins. Carmen bids after each of the 3 other people and eventually wins. How much money, in dollars, does the desk cost her?","Explanation:
+Since 3 other people bid on the desk and the bids increase by $50 each time, the price increased by 3*$50 = $150 from the other bidders. 
+This makes the price of the desk $200 + $150 = $350 before Carmen makes the winning bid.
+Since Carmen bids after each of the other people, she makes the winning bid, increasing the price by another $50.
+Therefore, the desk costs Carmen $350 + $50 = $400.
+Answer: {400} 
+"
+1,"Steve loves playing video games.  His parents get him a console along with 5 games for his birthday.  For the third year he buys 4 games a month as he has a new part-time job that makes him more money.  He also gets 5 games for Christmas every year.  He saves up enough money to buy 1 game per month for a year, and then the second year he starts buying 2 games a month.  How many games does Steve have after 3 years?","Explanation: Steve gets 5 games for his birthday + 4 games/month * 12 months/year = 53 games in year 1.
+In year 2 Steve gets 53 games + 5 christmas games + 1 game/month * 12 months = 70 games.
+In year 3 Steve gets 70 games + 5 Christmas games + 2 games/month * 12 months = 99 games
+Total after 3 years is 53 + 70 + 99 = 222 games
+Answer: {222} 
+"
+2,"Billy is peeling and cutting potatoes in preparation for making potato salad for his big family reunion barbecue. It's a big event, so he has 60 potatoes to get through. It takes Billy about a minute and a half to peel a potato, but only about 5 seconds to cut it up. The potatoes are roughly the same size, so it takes about the same amount of time to peel and cut each one. How long will it take Billy to finish prepping the potatoes?","Explanation: First find the total time in minutes it takes to peel one potato: 1 minute/potato + 30 seconds/potato / 60 seconds/minute = 1.5 minutes/potato
+Then multiply that rate by the total number of potatoes to find the total peeling time: 1.5 minutes/potato * 60 potatoes = 90 minutes
+Then divide the number of seconds it takes to cut one potato by the number of seconds in a minute to find how much of a minute it takes to cut each potato: 5 seconds / 60 seconds/minute = 1/12 minute
+Then multiply that rate by the total number of potatoes to find the total cutting time: 1/12 minute/potato * 60 potatoes = 5 minutes
+Then add the total cutting and peeling time to find the total prep time: 5 minutes + 90 minutes = 95 minutes
+Answer: {95}"
+3,James gets 10 new CDs.  He decides he doesn't like 5 of them and sells them for 40.  Each CD cost $15.  He gets them for 40% off.  How much money was he out?,"Explanation:
+He bought 10 CDs at $15 each so that's 10*15 = $150 spent
+He got a 40% discount meaning he only paid 60% of the price: 150*.6 = $90
+He sold 5 for $40 so that means he lost 90-40 = $50
+Answer: {50}"
+4,There are 18 seats in each row. One-fourth of the seats were occupied by the administrators. One-third of the remaining seats were occupied by the parents and the rest were occupied by the students. The school auditorium has 4 rows of seats. How many students were there in the school auditorium?,"Explanation:
+First find the total number of seats in the auditorium: 18 seats/row * 4 rows = 72 seats
+Then multiply that number by 1/4 to find how many seats the administrators occupied: 72 seats * (1/4) = 18 seats
+Then subtract the number of seats the administrators occupied from the total number of seats to find the number of seats remaining: 72 seats - 18 seats = 54 seats
+Then multiply the number of remaining seats by 1/3 to find how many seats the parents occupied: 54 seats * (1/3) = 18 seats
+Then subtract the number of seats the parents occupied from the number of remaining seats to find the number of seats the students occupied: 54 seats - 18 seats = 36 seats
+So the answer is 36
+Answer: {36}"
+5,"A bag of glass chips holds 72 chips. Milo is making a mosaic with chips of glass. Milo wants his mosaic to be three inches tall. It takes twelve glass chips to make every square inch of the mosaic. If he has two bags of glass chips, how many inches long can he make his mosaic?","Explanation: Here's how to solve this problem step-by-step:
+
+* **Calculate total chips:** Milo has 2 bags * 72 chips/bag = 144 glass chips.
+* **Chips needed for the height:** His mosaic is 3 inches tall * 12 chips/inch = 36 chips needed for the height.
+* **Chips remaining for length:** Milo has 144 total chips – 36 chips for height = 108 chips left for the length.
+* **Inches of mosaic length:** He can make 108 chips / 12 chips/inch = 9 inches of length.
+
+Answer: {9} 
+"
+6,"Bernie has 4 dogs. The first needs to walk 1 mile. On average, they need to walk 3 miles per day. They each need a certain amount of exercise per day. The second needs to walk 4 miles. The third needs to walk 3 miles. How many miles does the last dog need?","We know the first 3 dogs need to walk 1 + 4 + 3 = 8 miles
+All 4 dogs need to walk 3 miles on average * 4 dogs = 12 miles
+So the last dog needs to walk 12 - 8 = 4 miles
+Answer: {4} 
+"
+7,"A perfume company is trying to create new scents. By the end of the day, they sell 5 of each of the vanilla scents and 2 of each of the fruity scents available. They already have 4 vanilla scents and 8 fruity scents available and they need to decide which kind of scent to focus on. They decide to focus on whichever scent sells the most and monitor their number of sales as part of their research. How many more vanilla scents sold compared with the fruity scents?","Explanation:
+They sold 5 vanilla scents * 4 kinds of vanilla scents = 20 bottles of vanilla scents.
+They also sold 2 fruit scents * 8 kinds of fruit scents = 16 bottles of fruit scents.
+That means they sold 20 bottles of vanilla scents - 16 bottles of fruit scents = 4 more vanilla scents.
+Answer: {4}"
+8,"Ron is fed up with the pothole in front of his house. If it doesn't get fixed, it's going to do $450 worth of damage to his car. Ron will also have to buy 3 buckets of asphalt that each cost $25 to fix it himself. Unfortunately, the city council refuses to fix it, and will fine Ron $120 for unauthorized road maintenance if he fixes it himself. How much money does Ron save by fixing the pothole?","Explanation: First find the total cost of the asphalt: 3 buckets * $25/bucket = $75
+Then add that cost to the cost of the fine to find Ron's total cost to fix the pothole: $75 + $120 = $195
+Then subtract that cost from the cost of the damage to his car to find how much money he saves: $450 - $195 = $255
+Answer: {255}"
+9,"Michael is replacing the carpet in his bedroom.  His bedroom measures 18 feet by 12 feet.  His contractor charges $4 per square foot to remove the old carpet, and $34 per square foot to install the new carpet.  The new carpet he's chosen costs $12 per square foot, plus $2 per square foot for padding underneath.  How much will it cost Michael to replace the carpet?","First find the total area of the room by multiplying the length and width: 18 feet * 12 feet = 216 square feet
+Then multiply that area by the cost to remove the old carpet to find the total removal cost: 216 square feet * $4/square foot = $864
+Then multiply the area of the room by the cost per square foot of the new carpet to find the total cost of the carpet: 216 square feet * $12/square foot = $2592
+Then multiply the area of the room by the cost per square foot of the padding to find the total cost of the padding: 216 square feet * $2/square foot = $432
+Then multiply the area of the room by the cost per square foot of installation to find the total cost of installation: 216 square feet * $34/square foot = $7344
+Then add the cost of removing the old carpet, the new carpet, the padding, and the installation to find the total cost: $864 + $2592 + $432 + $7344 = $11232
+Answer: {11232}"
+10,"Joanne gathers 30 apples from the tallest trees, half this amount from the shortest trees, and more apples from the average trees. Her sister gathers twice as many apples from the tallest trees and 3 times as many apples from the shortest trees. She doesn't take any from the average trees. While Joanne is gathering apples from her family's orchard, her sister comes outside to help her. If the sisters have gathered a combined total of 500 apples, how many apples did Joanne gather from the average trees?","Explanation:
+First find how many apples Joanne picked from the shortest trees: 30 apples / 2 = 15 apples
+Then find how many apples her sister picked from the tallest trees: 30 apples * 2 = 60 apples
+Then find how many apples her sister picked from the shortest trees: 15 apples * 3 = 45 apples
+Then add those amounts to find the total number of apples her sister picked: 60 apples + 45 apples = 105 apples
+Then subtract the number of apples her sister picked and the number Joanne picked from the tallest and shortest trees from the total number of apples to find the number Joanne picked from average trees: 500 apples - 105 apples - 30 apples - 15 apples = 350 apples
+Answer: {350}"
+11,"Pat has a flower bed that is 111 feet long.  Pat wants to fill her flower bed with plants.  Pat already owns 17 flowers.  Pat's flowers grow 12 inches wide so she needs to leave 1.5 feet between every plant.  Each flowering plant costs $6 at the store,  how much money will Pat spend at the store to fill up her flower bed?","First find the total amount of space between the plants: 1.5 feet/plant * 17 plants = 25.5 feet
+Then subtract that amount from the total length of the flower bed to find the amount of space in the flower bed that will not be occupied by a plant: 111 feet - 25.5 feet = 85.5 feet
+Then add the width of a plant to the amount of space that needs to be between plants to find the total amount of space one plant takes up in the flower bed: 12 inches + 1.5 feet = 2.25 feet
+Then convert the width of the plant from inches to feet: 12 inches / 12 inches/foot = 1 foot
+Then add that number to the amount of space between each plant to find the total amount of space each plant takes up in the flower bed: 1 foot + 1.5 feet = 2.5 feet
+Then divide the amount of space in the flower bed that will not be occupied by a plant by the total amount of space one plant takes up in the flower bed to find how many more plants can fit in the flower bed:  85.5 feet / 2.5 feet/plant = 34.2 plants
+Since you can't have .2 of a plant round down to 34 plants
+Now add the number of plants Pat can fit in her flower bed to the number of plants she already owns to find the total number of plants Pat will have in her flower bed: 34 plants + 17 plants = 51 plants
+Then multiply that number by the cost of each plant to find the total amount of money Pat will spend: 51 plants * $6/plant = $306
+Answer: {306}"
+12,John decides to do several activities while out on vacation.  He spent 40% of his time sightseeing. He spent 30% of the time with the following events. He spends 6 hours boating and half that time swimming.  He also watched 3 different shows which were 2 hours each.  How much time did he spend sightseeing?,"Explanation:
+He spent 6/2= 3 hours swimming
+So in total he spends 3+6= 9 hours on these two activities
+This represents 30% of his time, so each 10% is 9/3= 3 hours
+That means he spent 3*4= 12 hours sightseeing
+Answer: {12}"
+13,"Kim has started his own housekeeping business and is calculating how much profit he will make from his clients. He already has 3 clients, but is talking to another 5 potential clients and feels confident enough to include them in his calculations. Bottles of bleach will cost $2 each and packs of cloths will cost $5 each. He calculates that his total income each week will be $92. Each client's home will need 2 bottles of bleach and a pack of cloths to clean. These are his only expenses. Profit is the difference between total income and total expenses, so how much profit, in dollars, will Lucas make each week?","Explanation: Kim anticipates having 3+5=8 clients each week.
+That means his total weekly expenses will be (2*8)*2+(1*8)*5=$32+$40=$72.
+Therefore, his weekly profit will be $92-$72=$20.
+Answer: {20} 
+"
+14,"Lisa is part of a choir that has 52 members, 50% of which are boys and 50% of which are girls.  The choir decides to perform with just its female members.  The choir's 3 teachers decides to sing with them, because on the day of the performance, half the members supposed to perform can't make it to the show because their bus breaks down. How many people sang in the performance?","Explanation:
+Since 50% of the choir members are girls, there are .50*52 = 26 girls in the choir. 
+Half of the girls couldn't make it, meaning only 26/2 = 13 girls could sing. 
+Adding the three teachers who sang, a total of 13+3 = 16 people sang in the performance.  
+Answer: {16}"
+15,"A teacher uses a 5-inch piece of chalk to write math equations on a chalkboard for his students. Since the teacher cannot write with a very small piece of chalk, he recycles the chalk when it is smaller than 2 inches. The teacher likes to conserve chalk, so he tries to only use 20% of the chalk each day. On Monday the teacher used a new piece of chalk. His students need extra help that day, so he ended up writing more than usual. He used up 45% of the chalk by the end of the day. If the teacher goes back to using only 20% of the chalk each day, how many days does he have before he has to recycle this piece?","Explanation:
+On Monday, the teacher used 45% of the chalk, leaving 100% - 45% = 55% of the chalk remaining. 
+The teacher wants to use 20% of the chalk each day, and he has 55% / 20% per day = 2.75 days worth of chalk left. 
+However, since he can only use whole days, he has 2 full days left before he has to recycle the chalk.
+Answer: {2} 
+"
+16,"Mr. Smith measured and found the pool is 14 feet wide, 25 feet long, and 4 feet deep. The pool company instructed them to measure to find the volume of the pool, then to multiply it by 5.9 to calculate how many gallons of water they need. The Smith family is getting ready for summer and needs to have their swimming pool filled. The cost for the pool company to come and fill the pool is $0.10 per gallon. How much will it cost to fill the pool?","Explanation:
+First find the volume of the pool: 14 feet * 25 feet * 4 feet = 1400 cubic feet.
+Then multiply the volume by 5.9 to find how many gallons of water are needed to fill the pool: 1400 cubic feet * 5.9 gallons/cubic foot = 8260 gallons.
+Then multiply that number by the cost per gallon to find the total cost: 8260 gallons * $0.10/gallon = $826.00
+Answer: {$826.00} 
+"
+17,"Blake and Kelly are having a contest to see who can run the most in 15 minutes. They decide to do it on a football field that is 100 yards long. Kelly runs back and forth once, and then decides that she doesn't want to run next to Blake, so she starts to run to the 40-yard line and back. She does this 34 times. Blake runs back and forth 15 times. How much farther does the winner run than the loser?","Explanation: First find the total distance Kelly runs: 100 yards + 34 runs * 40 yards/run * 2 (there and back) = 2820 yards. Then multiply the number of times Blake ran back and forth by the distance of the football field to find the total distance he ran: 15 runs * 100 yards/run = 1500 yards. Then subtract the shorter distance from the longer distance to find the difference: 2820 yards - 1500 yards = 1320 yards. 
+Answer: {1320}"
+18,Jenny buys 1 bag of cookies a week.  Her husband eats 1 cookie a day for 7 days.  The bag has 36 cookies and she puts 4 cookies in her son's lunch box 5 days a week.  Jenny eats the rest of the cookies.  How many cookies does Jenny eat?,"Explanation:
+Jenny's husband eats 1*7=7 cookies a week.
+She puts 4*5=20 cookies in her son's lunchbox each week.
+So that means 20+7=27 cookies are eaten by her husband and son each week.
+That leaves Jenny with 36-27=9 cookies to eat.
+Answer: {9}"
+19,A gallon of paint can cover 20 square feet and cost $12. Tony is painting a room with four walls. The north and south walls are 10 x 8 feet. The east and west walls are 5 x 8 feet. How much will it cost to paint the room?,"The north and south walls each have an area of 10*8=80 square feet.
+So the north and south walls together have a combined area of 80*2=160 square feet.
+The east and west walls each have an area of 5*8=40 square feet.
+So the east and west walls together have a combined area of 40*2=80 square feet.
+The total area of the walls in the room is 160+80=240 square feet.
+Thus, Tony will need 240/20=12 gallons of paint to cover the room.
+Therefore, the paint will cost 12*12=$144.
+Answer: {144}"
+20,"On a busy Saturday morning, a hotel was completely booked with 100 guests.  24 guests elected an early checkout and 15 elected for a late checkout.  7 more people checked in after dinner was served.  In the afternoon twice as many people checked in as those who opted for a late checkout.  How many guests does the hotel have after dinner?","Explanation:
+The hotel had 100 - 24 = 76 guests after the early checkout.
+30 guests checked in the afternoon, which is twice the number of people who opted for a late checkout (15 x 2 = 30).
+So there were 76 + 30 = 106 guests before the late checkout.
+After the late checkout, 106 - 15 = 91 guests remained.
+After dinner, 91 + 7 = 98 guests were present in the hotel. 
+Answer: {98}"
+21,"Brendan has a bag of marbles with 10 inside. He tripped over a pebble while carrying it and dropped half of them. One of them he picked up wasn't a marble, but actually a bead so he got rid of it. He only picked up 3 in total. When he went back home, he inspected the marbles further. How many marbles did Brendan end up with?","Explanation:
+1. Brendan started with 10 marbles and dropped half, leaving him with 10 / 2 = 5 marbles.
+2. He picked up 3 items, but one was a bead, so he has 5 + 3 - 1 = 7 items.
+3. Since one of the items is a bead, he has 7 - 1 = 6 marbles.
+
+Answer: {6} 
+"
+22,"Today is December 31st. For a New Year's resolution, Andy wants to lose 30 lbs. by his birthday, which is July 19th. If Andy needs to burn 3500 calories to lose a pound, how much of a calorie deficit (net amount of calories burned vs. calories consumed) does he need each day to reach his goal?","Explanation: First, figure out how many days Andy has to lose weight: July is 7 months into the year, and his birthday is on the 19th, giving him 7*30+19 = 229 days. However, January has 31 days, not 30, so add one more day: 229 + 1 = 230 days.  Subtract the remaining days in December to find the total number of days Andy has to lose weight: 230 - 1 = 229 days.
+
+Next, calculate Andy's total calorie deficit by multiplying the number of pounds he wants to lose by the number of calories he needs to burn per pound: 30 lbs * 3500 calories/lb = 105000 calories.
+
+Finally, divide Andy's total calorie deficit by the number of days he has to lose weight to find his daily calorie deficit: 105000 calories / 229 days = 458.5 calories/day. 
+
+Answer: {458.5} 
+"
+23,"Artie has no change today, so he has decided to round all his prices to the nearest dollar. Artie has a flower stand at the Farmers Market. He sells three kinds of flowers: marigolds, petunias and begonias. He usually sells marigolds for $2.74 per pot, petunias for $1.87 per pot and begonias for $2.12 per pot. If Artie sells 12 pots of marigolds, 9 pots of petunias and 17 pots of begonias, how much will he make?","Here's how to solve the problem:
+
+**1. Round the flower prices:**
+
+* Marigolds: $2.74 rounds up to $3.00
+* Petunias: $1.87 rounds up to $2.00
+* Begonias: $2.12 rounds down to $2.00
+
+**2. Calculate the earnings for each type of flower:**
+
+* Marigolds: 12 pots * $3.00/pot = $36.00
+* Petunias: 9 pots * $2.00/pot = $18.00
+* Begonias: 17 pots * $2.00/pot = $34.00
+
+**3. Add up the earnings to find the total:**
+
+* $36.00 + $18.00 + $34.00 = $88.00
+
+**Answer: {88}** 
+"
+24,"The three boys picked up and carried all of the balls in one trip.  Jordan carried twice as many balls as Jason, and Jason carried twice as many balls as Jeffrey.  After the practice time was over, he asked Jordan, Jason, and Jeffrey to pick up the balls and carry them over to the bag. Coach brought one bag filled with basketballs to practice and dumped them all out onto the gym floor before practice began. If Jason had picked up and carried 2 balls, what is the total number of balls that the coach brought to practice?","Explanation: Since Jason carried twice as many balls as Jeffrey, Jeffrey carried 2 / 2 = 1 ball. Jordan carried twice as many as Jason, so he carried 2 * 2 = 4 balls. Altogether, they carried 1 + 2 + 4 = 7 balls.
+Answer: {7} 
+"
+25,"Mack wants to count things and decided to count how many birds there are in the sky over the next week. On day three he saw none. On days four and five, he saw 120 birds. On day six he saw 20 and on day seven he saw 90. On days one and two, Mack saw a total of 50 birds. On average, how many birds did Mack see in a day?","Explanation: First find the total number of birds Mack saw: 0 + 120 + 120 + 20 + 90 + 50 = 400 birds
+Then divide the total number of birds by the number of days to find the average: 400 birds / 7 days = 57.14 birds per day
+Answer: {57.14}"
+26,"Dale is selling butterscotch candies to raise money for his club at school. He doesn't have the candies yet and is instead just taking orders. He ordered 100 more after he started off with 100 total that he ordered and wanted to sell, but he ended up selling 150 butterscotch candies. How many does Dale still need to sell to sell all of his candy?","Explanation: Dale started off wanting to sell 100 candies and then ordered 100 more so now he wants to sell 100+100 = 200 candies
+He sold 150 so he needs to sell 200-150 = 50 more candies
+Answer: {50}"
+27,"Chris is way behind on his math homework. On Wednesday, he completes one-quarter of the remaining math problems. On Tuesday, he completes 3 times as many problems as he did on Monday. He has 100 math problems to complete in total. He completes 12 problems on Monday night. How many math problems does he have left to complete on Thursday?","Explanation: First find the number of problems Chris completes on Tuesday: 12 problems * 3 = 36 problems.
+Then add the number of problems he completed on Monday and Tuesday to find the total number he's completed so far: 36 problems + 12 problems = 48 problems.
+Then subtract that number from the total number of problems to find how many he had left to complete as of Wednesday morning: 100 problems - 48 problems = 52 problems.
+Then multiply that number by 1/4 to find how many problems he completed Wednesday: 52 problems * 1/4 = 13 problems.
+Then add that number to the number he'd already completed to find the total number of problems completed: 13 problems + 48 problems = 61 problems.
+Then subtract that number from 100 to find how many problems he has left to complete: 100 problems - 61 problems = 39 problems.
+Answer: {39}"
+28,"Felix notices that kids in the neighborhood are always getting things stuck in trees. Since he is an expert tree climber, he decided to start charging kids to get their stuff out. During the week he made $105. Every branch he has to climb up costs $.25. He charges based on how high he has to climb. On average, how many branches did he climb per day?","Explanation: First find how much money he makes per tree by subtracting the cost of climbing from what he charges: $1.00 - $0.25 = $0.75
+Then divide the total amount of money he made for the week by the amount he makes per tree to find how many trees he climbed: $105 / $0.75 = 140 trees
+Then divide the number of trees he climbed by the number of days he worked to find how many trees he climbed per day: 140 trees / 7 days = 20 trees
+Answer: {20} 
+"
+29,"Garrett is popping popcorn for a snack. As the pan of kernels heats up, the kernels start popping faster. The kernels increase to four times the initial popping rate after sixty seconds, but in the final 30 seconds, the popping slows down to half the rate as the past 30 seconds. Twenty pop in the first 30 seconds of cooking, then three times that amount in the next 30 seconds. After Garrett takes the pan off the heat, a quarter of the number of kernels that popped in the final 30 seconds of cooking also pop from the residual heat. How many pieces of popcorn does Garrett have to eat?","Explanation:
+Here's how to break down the problem:
+
+* **First 30 seconds:** 20 kernels pop.
+* **Next 30 seconds:** The popping rate is three times faster, so 20 * 3 = 60 kernels pop.
+* **Final 30 seconds:** The rate slows to half of the previous 30 seconds, meaning 60 / 2 = 30 kernels pop.
+* **Residual heat:** After taking the pan off the heat, 30 / 4 = 7.5 kernels pop (we'll round down to 7 since you can't have half a kernel).
+* **Total:** Garrett has 20 + 60 + 30 + 7 = 117 pieces of popcorn.
+
+Answer: {117} 
+"
+30,"An orange costs 5 less than what a watermelon cost. Dillon is sent to the store to buy 4 watermelons, 20 peppers, and 10 oranges. Well's mother sells watermelons, peppers, and oranges at the local store. A watermelon costs three times what each pepper costs. What's the total amount of money he will spend if each pepper costs 15$?","Explanation:
+Let's break down the problem step by step:
+
+**1. Calculate the cost of a watermelon:**
+
+* Each pepper costs $15.
+* A watermelon costs three times the price of a pepper, so it costs $15 * 3 = $45.
+
+**2. Calculate the cost of an orange:**
+
+* An orange costs $5 less than a watermelon, so it costs $45 - $5 = $40.
+
+**3. Calculate the total cost of the watermelons:**
+
+* Dillon buys 4 watermelons at $45 each, so the total cost is 4 * $45 = $180.
+
+**4. Calculate the total cost of the peppers:**
+
+* Dillon buys 20 peppers at $15 each, so the total cost is 20 * $15 = $300.
+
+**5. Calculate the total cost of the oranges:**
+
+* Dillon buys 10 oranges at $40 each, so the total cost is 10 * $40 = $400.
+
+**6. Calculate the total cost of all the fruits:**
+
+* The total cost is $180 (watermelons) + $300 (peppers) + $400 (oranges) = $880.
+
+**Therefore, Dillon will spend $880 in total.**
+
+Answer: {880} 
+"
+31,"Greg has an alarm set to ring three times a day as a reminder. The first time it went off today, it rang four times. The third time, it rang for half as long as the second time. When the alarm goes off, it continues to ring until Greg turns it off. The second time it went off, it rang for three times as long as the first time. How many times did the alarm ring in all?","Here's how to solve this problem step-by-step:
+
+* **Second alarm:** The second alarm rang three times as long as the first alarm, which rang 4 times. So, the second alarm rang 3 * 4 = 12 times.
+* **Third alarm:** The third alarm rang half as long as the second alarm, which rang 12 times. So, the third alarm rang 12 / 2 = 6 times.
+* **Total rings:** In total, the alarm rang 4 + 12 + 6 = 22 times.
+
+**Answer: {22}** 
+"
+32,Jim has a 20 pack of gum.  He also gives half the gum he has remaining to his sister when she asks for some right before bed.  He chews 1 piece of gum for every 2 hours he's at school over a school day that lasts 8 hours.  He chews 1 piece on the way home from school and 1 stick after dinner.  How many pieces of gum does Jim have left at the end of the day?,"Explanation:
+First find the total number of hours Jim is at school: 8 hours/school day * 1 school day = 8 hours
+Then multiply that number by the number of pieces of gum he chews per hour at school to find how many pieces he chews at school: 8 hours * 1 piece/2 hours = 4 pieces
+Then add the number of pieces he chews on his way home from school and the number he chews after dinner to find his total gum consumption for the day: 4 pieces + 1 piece + 1 piece = 6 pieces
+Then subtract that number from his starting number of pieces of gum to find how many pieces he has left before giving some to his sister: 20 pieces - 6 pieces = 14 pieces
+Then divide that number in half to find how many pieces he gives to his sister: 14 pieces / 2 = 7 pieces
+Then subtract that number from the number of pieces he had left to find how many pieces he has left at the end of the day: 14 pieces - 7 pieces = 7 pieces
+Answer: {7} 
+"
+33,"A farmer is buying feed for his horses. He buys a variety of hay, oats, carrots and sugar cubes. Since sugar cubes are a rare treat, he only buys two 1-pound boxes of them for the whole stable. Oats are a staple to supplement the hay, so he buys twenty 65-pound sacks. Hay is the main diet of his horses, so he buys forty-two 75-pound bales. He only wants enough carrots to feed the horses while the vegetables are fresh, so he buys four 12-pound bags. If his farm truck can carry 2250 pounds at a time, how many trips does the farmer need to transport all the feed?","Here's how to solve this problem:
+
+**1. Calculate the total weight of each type of feed:**
+
+* **Sugar Cubes:** 2 boxes * 1 pound/box = 2 pounds
+* **Oats:** 20 sacks * 65 pounds/sack = 1300 pounds
+* **Hay:** 42 bales * 75 pounds/bale = 3150 pounds
+* **Carrots:** 4 bags * 12 pounds/bag = 48 pounds
+
+**2. Calculate the total weight of all the feed:**
+
+* 2 pounds + 1300 pounds + 3150 pounds + 48 pounds = 4500 pounds
+
+**3. Determine the number of trips:**
+
+* 4500 pounds / 2250 pounds/trip = 2 trips
+
+**Answer: {2}** 
+"
+34,"Four dogs sat in a line within the veterinarian's waiting room.  The first dog was the Affenpinscher, who weighed only 10 pounds.  Next to the Dachshund sat a Papillon, who weighed one-fourth as much as the Dachshund.  And at the end of the line sat a Mastiff, who weighed 44 times the weight of the Papillon.  Next to Affenpinscher sat a Dachshund, who weighed twice as much as the Affenpinscher.  How much did the Mastiff weigh, in pounds?","Explanation: First find the weight of the Dachshund: 10 pounds * 2 = 20 pounds.
+Then find the weight of the Papillon: 20 pounds / 4 = 5 pounds.
+Then multiply the Papillon's weight by 44 to find the Mastiff's weight: 5 pounds * 44 = 220 pounds.
+Answer: {220} 
+"
+35,Carl's favorite food is cheese. He ate a sandwich every day this week for lunch and used 2 slices of cheese on each sandwich. He made a big dish of macaroni and cheese to last him several dinners for the week and used 8 slices of cheese in it. He ate cheese and egg omelets for breakfast 3 days in the week using one more slice per omelet than he did per sandwich. How many slices of cheese did he use?,"Explanation: Here's how to break down the problem:
+
+* **Sandwiches:** Carl ate a sandwich every day for 7 days, using 2 slices of cheese per sandwich, so he used 7 * 2 = 14 slices of cheese.
+* **Mac and Cheese:** He used 8 slices of cheese for the macaroni and cheese.
+* **Omelets:** He used 2 + 1 = 3 slices of cheese per omelet.
+* **Total Omelet Cheese:** He ate omelets for 3 days, using 3 slices per omelet, for a total of 3 * 3 = 9 slices of cheese. 
+* **Total Cheese:** In total, Carl used 14 + 8 + 9 = 31 slices of cheese.
+
+Answer: {31} 
+"
+36,"Johnny's dad brought him to watch some horse racing and his dad bet money. On the second race, he won $1 more than twice the amount he previously lost. On the first race, he lost $5. On the third race, he lost 1.5 times as much as he won in the second race. How much did he lose on average that day?","Explanation: On the second race, he won 2*5+1 = $11.
+On the third race, he lost 11*1.5 = $16.50.
+In total, he lost 5+16.5 = $21.50 and won $11.
+Therefore, he lost 21.5-11 = $10.5 on average.
+Answer: {10.5}"
+37,James buys a new wardrobe.  He buys 10 suits and 10 dress pants.  The suits cost $750 each and the dress pants cost 1/5 that cost.  He also buys 3 dress shirts per suit.  The dress shirts were $60 each.  How much did everything cost?,"Explanation:
+First find the cost of each pair of pants: $750 / 5 = $150
+Then multiply that cost by the number of pants to find the total pants cost: $150 * 10 = $1500
+Then multiply the number of dress shirts per suit by the number of suits to find the total number of shirts: 3 shirts/suit * 10 suits = 30 shirts
+Then multiply that number by the cost per shirt to find the total cost of the shirts: 30 shirts * $60/shirt = $1800
+Then multiply the cost per suit by the number of suits to find the total cost of the suits: $750/suit * 10 suits = $7500
+Then add the cost of the pants, shirts, and suits to find the total cost: $1500 + $1800 + $7500 = $10800
+Answer: {10800}"
+38,"Randy has 9 oatmeal cookies, 4 chocolate chip cookies, and 5 sugar cookies. He ate 3 cookies for an early day snack, one of each flavor. He gives 2 sugar cookies to his friends. Then, he bakes 4 of each flavor for dinner. He ate 2 oatmeal cookies for lunch. How many cookies does he have now?","Here's how to solve this problem step-by-step:
+
+* **Start:** Randy begins with 9 oatmeal + 4 chocolate chip + 5 sugar = 18 cookies.
+* **Snack:** He eats 3 cookies, leaving him with 18 - 3 = 15 cookies.
+* **Sharing:** He gives away 2 sugar cookies, leaving him with 15 - 2 = 13 cookies.
+* **Baking:** He bakes 4 oatmeal + 4 chocolate chip + 4 sugar = 12 more cookies.
+* **Total after baking:** He now has 13 + 12 = 25 cookies.
+* **Lunch:** He eats 2 oatmeal cookies, leaving him with 25 - 2 = 23 cookies.
+
+**Answer: {23}** 
+"
+39,"Jamaal is at the gym. At the beginning, he was using an 8-pound weight. After 2 hours, it turns out to be too heavy, so he uses a weight two pounds lighter than before. After one hour, he increases the weight that he uses by 50%. What is the weight, in pounds, that he now uses?","Explanation:
+Two pounds lighter than 8 pounds is 8-2 = 6 pounds.
+50% of 6 pounds is 6*(50/100) = 3 pounds.
+Thus, he increases the weight he is using by 3 pounds, bringing the weight to a total of 6+3 = 9 pounds.
+Answer: {9} 
+"
+40,A new arcade opens up and Jack decides to play with his 3 friends.  Jack can play a game with 1 quarter for 20 minutes.  Two of his friends are significantly worse than him and can only play half as long.  They play for 4 hours.  One of them is significantly better than him and can play for 1.5 times as long.  How much money is used?,"Explanation:
+Jack can play for 20 minutes on one quarter, which means he can play for 20*3=60 minutes in an hour.
+There are 4 quarters in a dollar so he spends 60/4=$15 per hour.
+His friend who is better than him can therefore play for 20*1.5=30 minutes on a quarter.
+This means he can play for 30*2=60 minutes in an hour.
+He also spends 60/4=$15 an hour.
+His two other friends can only play for 20/2=10 minutes on one quarter.
+That means they can play for 10*6=60 minutes in an hour.
+They also each spend 60/4=$15 per hour.
+In total, the group spends 15*4=$60 an hour.
+That means for a 4 hour session, they spent 60*4=$240.
+Answer: {240}"
+41,Mike decides he wants to replace his movie collection with digital versions.  He has 600 movies.  40% of the remaining movies that are not in series are older movies which are $5.  A third of the movies are in various series and he knows he can get those for only $6 of the cost of a normal movie by just buying the series together.  How much does replacing the movies cost if a normal movie costs $10?,"First find the number of movies in a series: 600 movies * (1/3) = 200 movies
+Then subtract that number from the total number of movies to find the number that aren't in a series: 600 movies - 200 movies = 400 movies
+Then multiply that number by the percentage that are older to find how many movies are older: 400 movies * 40% = 160 movies
+Then subtract the number of older movies and the number of movies in a series from the total number of movies to find the number of normal movies: 600 movies - 160 movies - 200 movies = 240 movies
+Then multiply the number of older movies by their price to find their total cost: 160 movies * $5 = $800
+Then multiply the number of normal movies by their price to find their total cost: 240 movies * $10 = $2400
+Then multiply the number of movies in series by their discounted price to find their total cost: 200 movies * $6 = $1200
+Then add the three costs together to find the total cost: $800 + $2400 + $1200 = $4400 
+Answer: {4400}"
+42,Gene is sewing a quilt out of old souvenir t-shirts. He has one shirt from each vacation he has been on. Every shirt is its own quilt block. He is now 34. He goes on four vacations a year and has been vacationing since he was 23 years old. Each row is made of blocks from a different year of vacations. How many quilt blocks does he have in total?,"Explanation: Gene has been on vacation for 34 years old - 23 years old = 11 years. He has 11 years * 4 vacations per year = 44 quilt blocks.
+Answer: {44}"
+43,Walter is collecting money for charity. His lawyer offers to donate three times as much as everyone else donates. First Walter collects $500 from his neighbors. Then he collects $1500 from a fund he set up online. Walter is going to tell his lawyer about his neighbors and the online fund until his friend gives him $200 as well. How much is Walter's lawyer going to contribute?,"Explanation:
+First find the total amount Walter's friends donated: $500 + $1500 + $200 = $2200
+Then multiply that amount by 3 to find how much Walter's lawyer donated: $2200 * 3 = $6600
+Answer: {6600}"
+44,"Students who are football players, cheerleaders or part of band in Mr. Roper's class will need to leave early today to travel to an away game.  In Mr. Roper's class of 30 students, 20% of the class are football players.  Out of the remaining class, 25% of the students are cheerleaders or part of band.  How many students are leaving early?","Explanation: First find the number of football players in the class: 30 students * .20 = 6 students
+Then subtract that number from the class total to find the number of students remaining: 30 students - 6 students = 24 students
+Then multiply that number by 25% to find the number of students who are cheerleaders or in band: 24 students * .25 = 6 students
+Then add the number of football players to the number of cheerleaders and band members to find the total number of students leaving early: 6 students + 6 students = 12 students
+Answer: {12} 
+"
+45,"Wanda and Ms. B decided to pump water from a pond to fill the tank in two days. On the first day, working in shifts, Wanda filled 1/4 of the tank's capacity with water, and Ms. B pumped 3/4 as much water as Wanda pumped into the tank that day. On the second day, Wanda pumped 2/3 of the amount of water she pumped on the previous day, while Ms. B only pumped 1/3 of the number of gallons she pumped on the first day. A tank has a capacity of 18000 gallons. How many gallons of water are remaining for the tank to be full?","Explanation:
+**Day 1:**
+
+* **Wanda:** Filled 1/4 * 18000 gallons = 4500 gallons
+* **Ms. B:** Filled 3/4 * 4500 gallons = 3375 gallons
+
+**Day 2:**
+
+* **Wanda:** Filled 2/3 * 4500 gallons = 3000 gallons
+* **Ms. B:** Filled 1/3 * 3375 gallons = 1125 gallons
+
+**Total:**
+
+* **Total filled:** 4500 gallons + 3375 gallons + 3000 gallons + 1125 gallons = 12000 gallons
+* **Remaining:** 18000 gallons - 12000 gallons = 6000 gallons 
+
+Answer: {6000} 
+"
+46,"George needs to pay for dental work. He needs 2 implants. Each implant has a base price of $2000. The crown costs an extra $500. For one of the implants, he wants a crown made of porcelain. He's already put down a deposit of $600. He makes $15 per hour at work. How many hours does he need to work before he has enough to pay for the dental work?","Explanation:
+First find the total cost of the regular crown: $2000 + $500 = $2500
+Then find the total cost of both implants: $2500 x 2 = $5000
+Then subtract his deposit to find out how much more he needs to pay: $5000 - $600 = $4400
+Then divide the remaining amount owed by his hourly rate to find out how many hours he needs to work: $4400 / $15 = 293.33 hours
+Since you can't work for a fraction of an hour, round this number up to the nearest whole number to find out the minimum number of hours he needs to work: 293.33 hours rounds up to 294 hours
+Answer: {294} 
+"
+47,"Boris owns a chocolate factory. He produces 50,000 bars of chocolate each month. The second week, Boris only produces half as much as the first week. But, the third week, Boris produces three times as much as the first week. Boris produces 8,000 bars of chocolate the first week. How much does he produce the fourth week?","Explanation: Boris produces 50000/4 = 12500 bars of chocolate each week. So, the second week, Boris produces 8000/2 = 4000 bars of chocolate. The third week, Boris produces 3*8000 = 24000 bars of chocolate. Therefore, Boris produces 12500 - 4000 - 24000 = 4500 bars of chocolate the fourth week.
+Answer: {4500} 
+"
+48,"Julia was preparing for a dinner party at her house, where she intended to serve stew.  She noticed that she was out of plastic spoons, so she bought a new package of spoons.  Later, her husband also bought a package of 5 new spoons and gave them to Julia. When she went to set the table, she had a total of 12 spoons. Before that when Julia was making the stew, she used three of the spoons to sample her stew.  How many spoons were in the package that Julia bought?","Explanation:
+Let X be the number of spoons Julia bought.
+Julia's husband gave her 5 spoons, so together they had X + 5 spoons.
+She then used 3 spoons, leaving her with X + 5 - 3 spoons.
+We know she had 12 spoons left in the end, so X + 5 - 3 = 12
+Combining like terms we get X + 2 = 12
+Subtracting 2 from both sides we find that X = 10
+So the package Julia bought contained 10 spoons.
+Answer: {10}"
+49,"A jellyfish tank has numerous jellyfish in it. A fifth of the jellyfish are large, and a third of the large jellyfish change color from green to blue under UV light. When a UV light turned on, 6 jellyfish changed color. The other jellyfish are small and always stay blue. How many jellyfish are in the tank?","Explanation:
+We know 6 jellyfish changed color and this represents 1/3 of the large jellyfish. So, there are 6 * 3 = 18 large jellyfish in the tank.
+Large jellyfish make up 1/5 of the total number of jellyfish. Therefore, there are 18 * 5 = 90 jellyfish in the tank.
+Answer: {90} 
+"
+50,"Maria was charging her power bank before going to the park when she disconnected it and noticed the power bank wasn't fully charged yet. Once at the park, her friends asked her if they could charge their phones. While charging her friends' phones, she noticed that her power bank was losing 9% of the total capacity each hour. In the end, the charge remaining was 28%. 5 hours after charging the battery started to lose instead 7% of the total capacity each hour for about 3 hours. What was the charge of the power bank when Maria went out to the park?","Explanation: Let's break this problem down step-by-step:
+
+* **Step 1: Calculate the battery loss over the last 3 hours.** The battery lost 7% per hour for 3 hours, a total of 7 * 3 = 21%.
+* **Step 2: Calculate the battery charge before the last 3 hours.**  Before the last 3 hours, the battery was at 28% + 21% = 49%.
+* **Step 3:  Calculate how much battery was used in the first 5 hours.** This means the battery went from 100% down to 49% in 5 hours, a loss of 100% - 49% = 51%.
+* **Step 4: Calculate the battery loss per hour during the first 5 hours.** Over 5 hours, the battery lost 51%, so it was losing 51% / 5 hours = 10.2% per hour. 
+* **Step 5:  Determine if the battery was fully charged when Maria left for the park.** Since the battery was losing charge at a rate of 10.2% per hour and it was at 49% after 5 hours, it means it was not fully charged when she left.
+
+Answer: {The power bank was not fully charged when Maria went to the park.} 
+"
+51,"Rose is out picking flowers for a vase she wants to fill.  She starts off by picking 3 flowers with 5 petals each.  She then picks 4 flowers with 6 petals each.  She then adds another 5 flowers with 4 petals each.  As she's carrying these flowers over to fill the vase, she drops 1 of each and the wind blows them away.  Lastly she picks 6 flowers with 7 petals each. She also drops 1 of these flowers.  She puts the remaining flowers in the vase.  How many petals in total are on the flowers in the vase?","Explanation: Rose started with 3 flowers * 5 petals/flower = 15 petals.
+Then she added 4 flowers * 6 petals/flower = 24 petals.
+Next she added 5 flowers * 4 petals/flower = 20 petals.
+At this point she had 15 petals + 24 petals + 20 petals = 59 petals.
+She lost 3 flowers total, so she lost 3 petals from dropping and having the wind blow them away.
+She had 59 petals - 3 petals = 56 petals remaining.
+Her last group of flowers added 6 flowers * 7 petals/flower = 42 petals.
+She dropped one of these flowers, so she lost 7 petals.
+This left her with 42 petals - 7 petals = 35 petals.
+In total she had 56 petals + 35 petals = 91 petals.
+Answer: {91}"
+52,"A charity group decides to do a yard sale.  10 people donate 5 boxes of stuff each.  They can fit 2 boxes worth of stuff per table.  They also have 10 boxes of stuff already.  If they already own 15 tables, how many new tables do they need?","Explanation: The charity group receives 10 people * 5 boxes/person = 50 boxes of donations.
+That means they have 50 boxes + 10 boxes = 60 boxes total.
+They need 60 boxes / 2 boxes/table = 30 tables total.
+So they need to get 30 tables - 15 tables = 15 new tables.
+Answer: {15} 
+"
+53,"Carlos, Jim and Carrey were at the beach playing and they decided to gather some seashells. They gathered all their seashells and divided them equally between themselves. Before gathering, Jim collected 27 seashells, which was 5 more than what Carlos collected. Carlos collected twice as many as Carrey. How many did each person get?","Explanation: 
+Let's solve step-by-step:
+1. **Carlos's seashells:** Jim collected 5 more seashells than Carlos, who collected 27 - 5 = 22 seashells.
+2. **Carrey's seashells:** Carlos collected twice as many seashells as Carrey, who collected 22 / 2 = 11 seashells.
+3. **Total seashells:** Together, they collected 27 + 22 + 11 = 60 seashells.
+4. **Seashells per person:** They divided the seashells equally, so each person received 60 / 3 = 20 seashells.
+Answer: {20} 
+"
+54,"Debra is monitoring a beehive to see how many bees come and go in a day. She sees 30 bees leave the hive in the first 6 hours, and then she sees 1/2 that many bees return in the next 6 hours. Then every bee that left before that hadn't already returned returns to the hive in the last 6 hours. She sees two times as many bees as she saw first leave the hive fly from the hive and leave in the third 6 hours. How many bees did Debra see return to the hive in the last 6 hours of the day?","Explanation:
+First find how many bees returned to the hive in the second 6 hours: 30 bees / 2 = 15 bees
+Then subtract the number of bees that returned in the second 6 hours from the number that left in the first 6 hours to find how many bees returned in the last 6 hours: 30 bees - 15 bees = 15 bees 
+Finally, multiply that number by 2 to find the total number of bees that Debra saw return to the hive in the last 6 hours: 15 bees * 2 = 30 bees
+Answer: {30}"
+55,"Buford writes many checks every year.  He also writes a check every month for the gas bill.  And quarterly, he writes a check to the pest and lawn service.  Once per month he writes a check to pay the electric bill.  Twice per month he writes a check to the church.  How many checks does Buford write per year?","Explanation:
+Buford writes 1 check per month for gas + 1 check per month for electricity + 4 checks per year for pest/lawn + 2*12 = 24 checks per year to the church + a whole bunch more that we don't have the information to calculate.
+That means that he writes at least 1+1+4+24 = 30 checks per year.
+Answer: {at least 30}"
+56,"Mr. Tan paid the transfer fees that amount to 3% of the selling price and also paid a brokerage fee that is 5% of the selling price. Mr. Tan sold his house for $400 000. If he also paid $250 000 for the remaining loan amount of the house, how much is Mr. Tan's net proceeds from selling the house?","Explanation: Let's calculate the transfer fees: 3/100 * $400,000 = $12,000.
+Let's calculate the brokerage fee: 5/100 * $400,000 = $20,000.
+The total expenses Mr. Tan paid is $12,000 + $20,000 + $250,000 = $282,000.
+Therefore, Mr. Tan's net proceeds is $400,000 - $282,000 = $118,000.
+Answer: {118000} 
+"
+57,"Tobias, Chikote, and Igneous are the three little wolves who live in the forest and howl at the moon every night. Chikote howls for twice as long as Tobias.  And Igneous howls for as long as the other two wolves combined.  When Tobias howls, each howl lasts for a total of 20 seconds.  What is the combined length of time, in minutes, of the three wolves' howls?","Explanation: If each of Tobias' howls last for 20 seconds, and he howls once every time he howls, then he spends 20*1=20 seconds howling each time he howls.
+We are told that Chikote howls twice as long as Tobias, so he howls for 20*2=40 seconds.
+And Igneous howls for as long as the other two combined, so he howls for 40+20=60 seconds.
+Therefore, the total time for all three wolves to howl is 20+40+60=120 seconds.
+Finally, since there are 60 seconds in every minute, the wolves howl for a total of 120/60=2 minutes.
+Answer: {2}"
+58,"Joe has $50 to buy an outfit for his new field trip. The shirt he picks out has a price of $25. There is a 30% off sale at the clothing store. He also picks out a pair of shorts for $35. Assuming that sales tax is included, how much money will Joe have left after the purchase?","Explanation:
+First find the discount amount on the shirt: $25 * .30 = $7.50
+Then subtract the discount from the original price to find the sale price: $25 - $7.50 = $17.50
+Then add the price of the discounted shirt and the shorts to find the total cost: $17.50 + $35 = $52.50
+Then subtract the total cost from Joe's budget to find how much money he has left: $50 - $52.50 = -$2.50
+Because Joe doesn't have enough money, the answer is displayed as -$2.50
+Answer: {-2.50}"
+59,"On Tuesday, Clara got $2 off at the till because she had a voucher. She bought 20 pomegranates at $20 each. The next day, the price shot to $30 per fruit, but the store also offered a 10% discount on the total cost. Sheila took advantage of the discount and bought 20 pomegranates. What is the difference between the final prices paid for the pomegranates on the two days?","Explanation:
+Let's calculate the cost for Clara first. 20 pomegranates at $20 each cost 20 * $20 = $400.
+After the voucher discount, Clara paid $400 - $2 = $398.
+Now let's calculate the cost for Sheila. 20 pomegranates at $30 each cost 20 * $30 = $600.
+A 10% discount on $600 is $600 * (10/100) = $60.
+Therefore Sheila paid $600 - $60 = $540.
+The difference between the final prices is $540 - $398 = $142.
+Answer: {142} 
+"
+60,"Elly is organizing her books on the new bookcases her parents bought her. The bottom shelf can hold twice as many books as a middle shelf. The top shelf can hold 5 fewer books than the bottom shelf. Each of the middle 2 shelves can hold 10 books. If she has 110 books, how many bookcases does she need to hold all of them?","Here's how we can solve this:
+
+1. **Bottom Shelf Capacity:** Since each middle shelf holds 10 books, the bottom shelf holds 10 * 2 = 20 books.
+
+2. **Top Shelf Capacity:** The top shelf holds 5 fewer books than the bottom shelf, so it holds 20 - 5 = 15 books.
+
+3. **Total Capacity per Bookcase:**  One bookcase can hold 20 (bottom) + 10 (middle) + 10 (middle) + 15 (top) = 55 books.
+
+4. **Number of Bookcases Needed:** Elly needs enough bookcases to hold 110 books, and each bookcase holds 55, so she needs 110 / 55 = 2 bookcases.
+
+**Answer: {2}** 
+"
+61,"When Sophie watches her nephew, she gets out a variety of toys for him. The tower of stacking rings has 9 multicolored rings on it. The bag of building blocks has 31 blocks in it. The bin of stuffed animals has 8 stuffed animals inside. Sophie recently bought a tube of bouncy balls, bringing her total number of toys for her nephew up to 62. How many bouncy balls came in the tube?","Explanation: First find the total number of toys Sophie had before she bought the bouncy balls: 9 rings + 31 blocks + 8 stuffed animals = 48 toys
+Then subtract that number from the total number of toys to find the number of bouncy balls: 62 total toys - 48 toys = 14 bouncy balls
+Answer: {14}"
+62,Eggs are 75 calories each.  Cheese is 120 calories per ounce.  Ham is 40 calories per ounce. John makes himself a 6 egg omelet with 2 oz of cheese and an equal amount of ham.  How many calories is the omelet?,"Explanation:
+First find the total calories in the cheese: 2 ounces * 120 calories/ounce = 240 calories
+Then find the total calories in the ham: 2 ounces * 40 calories/ounce = 80 calories
+Then multiply the number of eggs by the number of calories per egg to find the total calories from the eggs: 6 eggs * 75 calories/egg = 450 calories
+Then add the calories from the eggs, cheese, and ham to find the total calories: 240 calories + 80 calories + 450 calories = 770 calories
+Answer: {770}"
+63,"Sheila charged $85.00 worth of merchandise on her credit card. After she returned an item, she bought a frying pan that was on sale for 20% off $20.00 and a set of towels that was 10% off $30.00. She put both of these purchases on her credit card.  The returned item cost $15.00. What is the new balance on her credit card?","Explanation: First find how much money was credited back to her account: $85.00 - $15.00 = $70.00
+Then multiply the price of the frying pan by the discount percentage to find the discount: $20.00 x .20 = $4.00
+Then subtract the discount from the original price to find the sale price of the frying pan: $20.00 - $4.00 = $16.00
+Then multiply the price of the towels by the discount percentage to find the discount on the towels: $30.00 x .10 = $3.00
+Then subtract the discount from the original price to find the sale price of the towels: $30.00 - $3.00 = $27.00
+Then add the price of the frying pan and towels to find the total cost she charged to her card: $16.00 + $27.00 = $43.00
+Then add the new charges to her previous balance to find her new balance: $70.00 + $43.00 = $113.00
+Answer: {113.00}"
+64,Tom decides to give his wife an anniversary getaway. The hotel is 20% more expensive than normal because it is a busy weekend. The normal price is $1500 per day. The plane tickets cost $5000 each. If they are there for 3 days how much did the trip cost?,"Explanation: First find the price increase for the hotel: $1500 * .20 = $300
+Then add that amount to the original price to find the weekend price: $1500 + $300 = $1800
+Then multiply that cost by the number of days to find the total hotel cost: $1800 * 3 = $5400
+Then multiply the price of the plane ticket by two to find the total cost of airfare: $5000 * 2 = $10000
+Then add the cost of the hotel and the airfare to find the total cost: $10000 + $5400 = $15400
+Answer: {15400}"
+65,"Mark is a copy-editor. Mark edits a total number of 1000 sentences each week, and Publisher A pays him 5 cents per sentence. Publisher B pays Mark twice what Publisher A pays. He edits an equal number of sentences each week for the two different publishers, who each pay him a different rate per sentence. How much does Mark make in a week, in cents?","Explanation: Mark edits 1000 sentences / 2 publishers = 500 sentences per publisher.
+Publisher A pays Mark 500 sentences * 5 cents = 2500 cents.
+Publisher B pays Mark 2500 cents * 2 = 5000 cents.
+Therefore, Mark makes a total of 2500 cents + 5000 cents = 7500 cents in a week.
+Answer: {7500} 
+"
+66,"Morgan's dad said that she had $90 budgeted for her birthday party. A round of mini-golf is $5. She wants to make sure she and her friends all get to play one round of mini-golf, have $5 in arcade tokens, and get to ride the go-karts twice. The Go-karts cost $10 a ride. How many friends can she invite?","Explanation: First figure out how much each person will cost for arcade tokens and go-karts: $5 + (2 * $10) = $25.
+Then add the cost of mini golf to find the total cost per person: $25 + $5 = $30.
+Then subtract the cost per person from her total budget: $90 - $30 = $60.
+Then divide the remaining budget by the cost per person to find how many friends she can pay for: $60 / $30 = 2 friends.
+So the final answer is 2.
+Answer: {2}"
+67,"Each team member brings 2 guests. Maddy is buying pizza for her cousin's soccer game. There are 12 team members and 3 coaches. A pizza will serve 3 people. If each pizza costs $15, how many dollars will Maddy spend?","Explanation: 
+First find the total number of guests: 12 team members * 2 guests/team member = 24 guests
+Then add the guests to the team members and coaches to find the total number of people at the party: 24 guests + 12 team members + 3 coaches = 39 people
+Then divide the total number of people by the number of people that each pizza serves to find how many pizzas Maddy needs to buy: 39 people / 3 people/pizza = 13 pizzas
+Then multiply the number of pizzas by the cost per pizza to find the total cost: 13 pizzas * $15/pizza = $195
+Answer: {195}"
+68,"Mrs. Cruz saw a property that has a selling price of $350 000. On top of that, the buyer has to pay a brokerage fee which is 5% of the selling price, and also the transfer fee that is 12% of the selling price. Mrs. Cruz is looking for a house that will not go beyond her $400 000 budget. How much more is the total price of the house than Mrs. Cruz's budget?","Explanation:
+First find the brokerage fee: $350,000 * .05 = $17,500
+Then find the transfer fee: $350,000 * .12 = $42,000
+Then add the selling price, brokerage fee, and transfer fee to find the total price of the house: $17,500 + $42,000 + $350,000 = $409,500
+Then subtract Mrs. Cruz's budget from the total price of the house to find how much more the house costs than her budget: $409,500 - $400,000 = $9,500
+Answer: {9500}"
+69,"A blog article takes an average of 4 hours to research and write about. Meredith is a freelance blogger who writes about health topics and submits to clients each day as her permanent job. Last week, on Wednesday, she wrote twice the number of articles she wrote on Tuesday. She wrote 5 articles on Monday and 2/5 times more articles on Tuesday than on Monday. Calculate the total number of hours she spent writing articles in the three days.","Here's how to solve the problem:
+
+* **Tuesday's Articles:** Meredith wrote 2/5 * 5 articles = 2 more articles on Tuesday than Monday.
+* **Total Articles on Tuesday:** She wrote a total of 5 articles + 2 articles = 7 articles on Tuesday.
+* **Total Articles on Wednesday:** On Wednesday, she wrote 2 * 7 articles = 14 articles.
+* **Total Articles:** In total, she wrote 5 articles + 7 articles + 14 articles = 26 articles.
+* **Total Time Spent:** Meredith spent 26 articles * 4 hours/article = 104 hours writing.
+
+**Answer: {104}** 
+"
+70,"Students in class 3B are collecting school points for behavior. If they get enough points in total, they can go on a trip. In the class, there are Adam, Martha, Betty, and Tom. Adam has collected 50 points. Marta managed to collect 3 times more points than Tom, who has 30 points less than Betty. Betty was better than Adam and collected 30% more. How many points is the class missing to go on the trip if the minimum threshold is 400 points?","Explanation:
+First find how many points Betty collected: 50 points * 0.3 = 15 points more than Adam.
+So Betty has 50 points + 15 points = 65 points.
+Tom has 65 points - 30 points = 35 points.
+Marta collected 3 * 35 points = 105 points.
+Altogether, the students in class 3B have 50 points + 65 points + 35 points + 105 points = 255 points.
+That means they are missing 400 points - 255 points = 145 points.
+Answer: {145} 
+"
+71,"Bob decided he wanted to get some more fish, so he went to the pet store. He had a sales assistant at the pet shop dip out 17 fish out of a mixed tank of both white and orange fish. When he got them home and added them to his pond, he found that he now had twice as many orange fish as white fish. Bob started with 7 fish in his pond. 3 were orange, and 4 were white. How many white fish did Bob buy at the store?","Explanation:
+After buying the fish, Bob had 7 + 17 = 24 fish.
+Since twice as many of these were orange, Bob had 24 / 3 x 2 = 16 orange fish.
+This means he bought 16 - 3 = 13 new orange fish.
+Therefore, he must have bought 17 - 13 = 4 white fish.
+Answer: {4}"
+72,"Two years ago, Leo had 100 stickers in his collection. This year, he collected twice the number of stickers as the previous year. Last year, Leo collected 50 stickers. How many stickers does Leo have in his collection?","Explanation: This year, Leo collected 100 * 2 = 200 stickers.
+In total, Leo has 100 + 200 + 50 = 350 stickers. 
+Answer: {350} 
+"
+73,"A toy manufacturer receives an order for 400 toys. 5 workers are available to work on the order. They all work on the order during their 10-hour shift, and by the end of their shift the manufacturer still needs another 20 toys to be able to ship the order. 2 of the workers produce 6 toys an hour, and another 2 workers produce 4 toys an hour.  How many toys per hour does the fifth worker produce?","Explanation: The two fastest workers produce 2 workers * 6 toys/hour/worker = 12 toys/hour
+The two slower workers produce 2 workers * 4 toys/hour/worker = 8 toys/hour.
+So in their 10-hour shift, the four workers produce (12 toys/hour + 8 toys/hour) * 10 hours = 200 toys
+This means the fifth worker produced 400 total toys - 20 toys still needed - 200 toys = 180 toys during the shift.
+Therefore, the fifth worker produces 180 toys / 10 hours = 18 toys per hour.
+Answer: {18} 
+"
+74,"Stephen placed an online order for groceries.  His final bill came to $40.00.   Stephen added a $4.00 tip. Because this was through a delivery vendor, they tacked on a 25% fee to his final bill and charged him $3.00 in delivery fees.  After the extra fees, what was the final price of Stephen's groceries?","Explanation: Stephen's total before the vendor fees was $40.00 + $4.00 = $44.00.
+A 25% fee on $44.00 is $44.00 * .25 = $11.00
+So, Stephen's final total was $44.00 + $11.00 + $3.00 = $58.00
+Answer: {58.00} 
+"
+75,Audrey has to take two math tests to pass 6th grade. The second test has 40 questions. The first test has 70 questions and she gets 60% of them correct. She must correctly answer 70% of the total questions to move on to the 7th grade. How many questions does she need to get right on the second test to move onto the 7th grade?,"Explanation:
+First find the number of questions Audrey answered correctly on the first test: 70 questions * .60 = 42 questions
+Then multiply the total number of questions by 70% to find out how many total questions she needs to answer correctly: 110 questions * .70 = 77 questions
+Then subtract the number of questions she answered correctly on the first test from the total number of questions she needs to answer correctly to find out how many questions she needs to answer correctly on the second test: 77 questions - 42 questions = 35 questions
+Answer: {35} 
+"
+76,Tim enters a competition and has to try and guess the number of red jelly beans in a jar. He knows that a jelly bean is .15 cubic inches. He also knows that they get about 80% efficiency in packing. He estimates 30% of the jelly beans are red. The jar has a square base and is 6 inches by 6 inches and 15 inches tall.  The true number of red jelly beans in the container is 900.  How far off was his guess?,"Explanation:
+First find the volume of the jar: 6 inches * 6 inches * 15 inches = 540 cubic inches
+Then account for the packing efficiency: 540 cubic inches * .8 = 432 cubic inches
+Then divide that volume by the volume of each jelly bean to find the total number of jelly beans: 432 cubic inches / .15 cubic inches per jelly bean = 2880 jelly beans
+Then multiply that number by the percentage that are red to find the number of red jelly beans: 2880 jelly beans * .3 = 864 red jelly beans
+Finally, subtract his guess from the actual number to find the difference: 900 red jelly beans - 864 red jelly beans = 36 jelly beans
+Answer: {36} 
+"
+77,"Sandra, the florist around the corner, is very unhappy with Fred's incomplete order delivery. Sandra had ordered four times as many red roses as white carnations. Sandra has threatened to switch suppliers if the missing red roses are not delivered by 5 pm. She also ordered 200 pink calla lilies, which were five times the number of white carnations. To keep Sandra's business, how many red roses must Fred deliver by 5 pm?","Explanation:
+First find the number of white carnations: 200 pink calla lilies / 5 = 40 white carnations
+Then multiply that number by 4 to find the number of red roses: 40 white carnations * 4 = 160 red roses
+Answer: {160} 
+"
+78,Sidney ordered 3 less than ten meatball sub sandwiches.  One meatball sub sandwich contains 4 meatballs. Then Mark ate 4 of Sidney's meatball sub sandwiches. So Sidney ordered another three sub sandwiches. How many meatballs were in the sub sandwiches that remained?,"Explanation: Sidney ordered 10 - 3 = 7 meatball sub sandwiches.
+There were a total of 7 x 4 = 28 meatballs in his sub sandwiches.
+After Mark ate 4 sub sandwiches, there were 28 - (4 x 4) = 12 meatballs remaining.
+After ordering 3 more sub sandwiches, there were 12 + (3 x 4) = 24 meatballs in the sub sandwiches that remained.
+Answer: {24} 
+"
+79,John drives to his friend's house. He drives at a speed of 70 mph.  He had to take a detour that added 10 miles to his trip.  After he gets there he takes a route home that is 240 miles but he goes 80 mph. The friend's house is 200 miles away. How long did the trip take?,"Explanation:
+First find the total distance travelled on the way to the friend's house: 200 miles + 10 miles = 210 miles
+Then divide the distance by the speed to find the amount of time spent driving to the friend's house: 210 miles / 70 mph = 3 hours
+Then divide the distance by the speed to find the amount of time spent driving home from the friend's house: 240 miles / 80 mph = 3 hours
+Then add the time spent driving to the friend's house to the time spent driving home to find the total length of the trip: 3 hours + 3 hours = 6 hours
+Answer: {6}"
+80,"Cole wanted to buy new jeans for a dance contest. At the store, he couldn't decide between tattered jeans and jogger jeans. The tattered jeans cost $28 while the jogger jeans cost $6 less than the tattered jeans. Since the jeans were on sale, he decided to buy them both. He saved a total of $6. If he saved 1/3 of the total savings from the jogger jeans and the rest from the tattered jeans, how much more do jogger jeans originally cost than the tattered jeans?","Explanation:
+The jogger jeans cost $28 - $6 = $22.
+Cole bought the two jeans for a total of $28 + $22 = $50.
+Before the sale, the total cost of the two jeans was $50 + $6 = $56.
+He saved 1/3 * $6 = $2 from the jogger jeans.
+So, the jogger jeans originally cost $22 + $2 = $24.
+Therefore, the jogger jeans originally cost $24 - $28 = $4 more than the tattered jeans.
+Answer: {4}"
+81,"John decides to get a loan by mortgaging his home.  He gets a loan worth 40% of his house.  He uses 60% of that to pay off his debts.  His house is worth $250,000. How much money did he have leftover after paying debt?","Explanation:
+First find the total value of the loan: $250,000 * .40 = $100,000
+Then multiply that number by 60% to find how much he used to pay off debt: $100,000 * .60 = $60,000
+Then subtract the amount he paid in debt from the total loan to find the remaining amount: $100,000 - $60,000 = $40,000
+Answer: {40,000} 
+"
+82,"An air conditioner ran on low for 3 hours, then it was turned up to high for 4 hours. Afterward, it was turned off for 2 hours. The air conditioner cools the room 2 degrees an hour on low and 3 degrees an hour on high. The room will warm up at 2 degrees an hour with no air conditioner running. How many degrees lower than the starting temperature was the final temperature?","Explanation:
+First find the total degrees the air conditioner cooled the room on low: 3 hours * 2 degrees/hour = 6 degrees.
+Then find the total degrees the air conditioner cooled the room on high: 4 hours * 3 degrees/hour = 12 degrees.
+Then add those two amounts to find the total number of degrees the room cooled: 6 degrees + 12 degrees = 18 degrees.
+Then find the total number of degrees the room warmed up while the air conditioner was off: 2 hours * 2 degrees/hour = 4 degrees.
+Then subtract the number of degrees the room warmed from the number of degrees it cooled to find the final temperature difference: 18 degrees - 4 degrees = 14 degrees.
+Answer: {14}"
+83,"Jason works as a salesperson at a car dealership.   He knows that for every two customers that come into the car dealership, one will buy a car. He knows based on historical averages, that for every 25 telephone calls he makes to potential customers, he gets one person to come into the car dealership to look at new cars. He needs to sell 15 cars this month to earn a big bonus. Based on these average numbers, how many telephone calls would Jason need to make to sell 15 cars and earn his bonus?","Explanation: To sell 15 cars, Jason needs 15 * 2 = 30 customers to come into the dealership. To get 30 customers to come into the dealership, Jason needs to make 30 * 25 = 750 phone calls.
+Answer: {750} 
+"
+84,"Millie decides to open a lemonade stand. Each pitcher holds 12 cups of lemonade. She spends $18 to buy enough supplies to make 3 pitchers of lemonade.  She sells each cup of lemonade for $1. She sells an average of 4 cups per hour that her lemonade stand is open. If Millie sells all of the lemonade, how much profit will she make per hour that she spends running the lemonade stand?","Explanation: First find the total number of cups Millie can make: 3 pitchers * 12 cups/pitcher = 36 cups
+Then divide the total cost of supplies by the number of cups she can make to find the cost per cup: $18 / 36 cups = $0.50/cup
+Then subtract the cost per cup from the selling price per cup to find the profit per cup: $1.00/cup - $0.50/cup = $0.50/cup
+Then multiply the profit per cup by the number of cups sold per hour to find the total profit per hour: $0.50/cup * 4 cups/hour = $2/hour
+Answer: {2}"
+85,"Tim wanted to make lemonade for a pool party. He found that 6 lemons would yield 1 cup of juice.  For a gallon of lemonade, his recipe called for 1 cup of fresh lemon juice. He figured he would need to make 4 gallons of lemonade for the party.  His best friend Allen asked if Tim could make an extra gallon for him that was twice as tart as the other gallons.  How many lemons will Tim need?","First find the total number of gallons Tim will make: 4 gallons + 1 gallon = 5 gallons
+Then multiply that number by the number of cups of juice per gallon to find how many cups of juice he needs: 5 gallons * 1 cup/gallon = 5 cups
+Then multiply that number by the number of lemons per cup to find how many lemons he needs: 5 cups * 6 lemons/cup = 30 lemons
+Then double the amount of lemons needed for one gallon of lemonade to find out how many lemons are needed for the extra tart gallon: 6 lemons/gallon * 2 = 12 lemons
+Then add that number to the number of lemons needed for the first four gallons to find the total number of lemons Tim needs: 30 lemons + 12 lemons = 42 lemons
+Answer: {42}"
+86,Gunter is trying to count the jelly beans in a jar. He asks his friends how many they think are in the jar. The third friend says 25% more than the first friend. The second friend says 20 more than half the first friend. The first friend says 80. What is their average guess?,"Explanation:
+Let's break down each friend's guess:
+
+* **First friend:** 80 jelly beans
+* **Second friend:** Half of the first friend's guess is 80 / 2 = 40.  They guessed 20 more than that, so 40 + 20 = 60 jelly beans.
+* **Third friend:** 25% of the first friend's guess is (25/100) * 80 = 20. They guessed 20 more than that, so 80 + 20 = 100 jelly beans.
+
+Now, let's calculate the average:
+
+1. **Total guesses:** 80 + 60 + 100 = 240 jelly beans
+2. **Average guess:** 240 / 3 = 80 jelly beans
+
+Answer: {80} 
+"
+87,"A shoe store was having a weekend sale on a brand of popular tennis shoes. On the last day of the sale they sold one-half the amount that they did the day before, but six people returned their pairs because they didn't fit. On Friday the store sold 14 pairs of tennis shoes. The next day they sold double that number of shoes. How many tennis shoes were sold by the end of the sale?","Explanation: The store sold twice the amount on Saturday than they did on Friday, so they sold 14 pairs * 2 = 28 pairs on Saturday.
+On Sunday they sold half the amount that they did on Saturday, so they sold 28 pairs / 2 = 14 pairs on Sunday.
+In total, across the three days they sold 14 pairs + 28 pairs + 14 pairs = 56 pairs.
+However, 6 pairs were returned so they sold 56 pairs - 6 pairs = 50 pairs by the end of the sale.
+Answer: {50} 
+"
+88,"Every month, Madeline has to buy food, treats, and medicine for her dog. Treats cost $20 per month. Medicine costs $100 per month. Food costs $25 per week.  How much money does Madeline spend on her dog per year if there are 4 weeks in a month?","Explanation:
+First find the total monthly cost of food: $25/week * 4 weeks/month = $100/month
+Then add that amount to the cost of treats and medicine to find the total monthly cost: $100/month + $20/month + $100/month = $220/month
+Then multiply that number by the number of months in a year to find the total annual cost: $220/month * 12 months/year = $2640/year
+Answer: {2640} 
+"
+89,"Frankie watches TV after he finishes his homework every night. On Wednesday, he watched a few episodes of a 30-minute show. On Monday and Tuesday, he watched a 1-hour episode of his favorite show each night. On Thursday, he finished homework early and watched a 1-hour episode and a 30-minute show. On Friday, he got to stay up late for the weekend, so he watched two 1-hour episodes. If he watched 7 hours of TV in all, how many 30-minute episodes did he watch on Wednesday?","Explanation: Let's figure out how much TV time, in minutes, Frankie racked up from Monday to Friday:
+* Monday: 1 hour * 60 minutes/hour = 60 minutes
+* Tuesday: 1 hour * 60 minutes/hour = 60 minutes
+* Thursday: (1 hour * 60 minutes/hour) + 30 minutes = 90 minutes
+* Friday: 2 hours * 60 minutes/hour = 120 minutes
+That's 60 + 60 + 90 + 120 = 330 minutes of TV from Monday to Friday.
+Since he watched 7 hours in total, that's 7 hours * 60 minutes/hour = 420 minutes.
+Subtracting the time from Monday to Friday, we get 420 minutes - 330 minutes = 90 minutes of TV on Wednesday.
+Finally, divide that by the length of each episode to find the number of episodes: 90 minutes / 30 minutes/episode = 3 episodes. 
+Answer: {3}"
+90,"Cucumbers are $2 each.  Lettuce cost $3 each. Chase buys 1 head of lettuce from the farmer's market. Jack buys 5 tomatoes from the grocery store. Leila buys 3 cucumbers from the market.  Tomatoes are $1 each. Together, how much did the three of them spend to make a salad for the potluck?","Chase spent $3 on lettuce because 1 x $3 = $3.
+Leila spent $6 on cucumbers because 3 x $2 = $6.
+Jack spent $5 on tomatoes because 5 x $1 = $5. 
+Therefore, in total, they spent $3 + $6 + $5 = $14.
+Answer: {14} 
+"
+91,Hannah's city is having a big display of fireworks for the 4th of July. They're going to set off 15 boxes of 20 fireworks each. Hannah will also set off 3 boxes of 5 fireworks each in her backyard. Hannah's house is at the right angle to see 40% of the city's fireworks. How many fireworks will Hannah see in total?,"Explanation:
+First find the total number of fireworks the city is setting off: 15 boxes * 20 fireworks/box = 300 fireworks
+Then find the number of fireworks Hannah will set off: 3 boxes * 5 fireworks/box = 15 fireworks
+Then find the number of fireworks from the city's display that Hannah will see: 300 fireworks * 40% = 120 fireworks
+Then add that number to the number of fireworks Hannah is setting off to find the total number Hannah will see: 120 fireworks + 15 fireworks = 135 fireworks
+Answer: {135}"
+92,"Martha is knitting winter wear for her 3 grandchildren. It takes 2 skeins of wool to make a hat, 4 for a scarf, 12 for a sweater, 1 for a pair of mittens, and 2 for a pair of socks. She wants to make a hat, scarf, sweater, mittens, and socks for each of her grandchildren. They're triplets, so they're all the same size. How many skeins of wool will she need to buy?","Here's how to solve the problem:
+
+* **Calculate the wool needed per grandchild:** 2 (hat) + 4 (scarf) + 12 (sweater) + 1 (mittens) + 2 (socks) = 21 skeins per grandchild
+* **Calculate the total wool needed:** 21 skeins per grandchild * 3 grandchildren = 63 skeins 
+
+**Answer: {63}** 
+"
+93,"Twenty students are working together to raise money for a charity. The charity raises a total of $175,000. $50,000 comes from organizations and the rest from the students. Each student earns the same amount.  How much did each student raise?","Explanation: The students raised a total of $175,000 - $50,000 = $125,000. Therefore, each student raised $125,000 / 20 students = $6250. 
+Answer: {6250}"
+94,"Thomas withdraws $1000 in 20 dollar bills from the bank account.  After getting home, he uses half of the remaining bills to pay for a bill.  Thomas then triples his money.  He then converts all his bills to 5 dollar bills.  He lost 10 bills while getting home.  How many 5 dollar bills does he have?","Here's how to solve this problem step-by-step:
+
+1. **Calculate the initial number of bills:** Thomas withdrew $1000, and since each bill is worth $20, he had $1000 / $20 = 50 bills initially.
+
+2. **Account for lost bills:** He lost 10 bills on his way home, leaving him with 50 - 10 = 40 bills.
+
+3. **Calculate bills after paying the bill:** He used half his remaining bills to pay a bill, leaving him with 40 / 2 = 20 bills.
+
+4. **Calculate bills after tripling his money:**  After tripling his money, he had 20 * 3 = 60 bills.
+
+5. **Calculate the total value in 5 dollar bills:** Since he had 60 twenty-dollar bills, he had a total of 60 * $20 = $1200.  Converting this to 5 dollar bills, he has $1200 / $5 = 240 five-dollar bills. 
+
+**Answer: {240}** 
+"
+95,"Wayne and Bernadette are movie stars heading to the premiere of their latest film. Wayne is staying at a hotel close to the premiere theater, and Bernadette is staying at her high-rise apartment in the same city. Bernadette wants to arrive 5 minutes before Wayne. The drive from Bernadette\u2019s apartment takes four times as long as the drive from Wayne\u2019s hotel. If it takes Wayne four minutes to be driven to the theater, how much earlier should Bernadette leave than Wayne to get to the theater first?","Explanation:
+1. **Wayne's travel time:** Wayne takes 4 minutes to reach the theater.
+
+2. **Bernadette's travel time:** Bernadette's drive is four times longer than Wayne's, so it takes her 4 minutes * 4 = 16 minutes.
+
+3. **Bernadette's target arrival:** She wants to arrive 5 minutes before Wayne.
+
+4. **Calculate Bernadette's departure time:**  She needs to leave 16 minutes (travel time) + 5 minutes (early arrival) = 21 minutes before Wayne.
+
+Answer: {21} 
+"
+96,"To participate in the local community tree-planting campaign, Mr. Julius planted 10 more White Oak trees and 1/4 more Lodgepole Pine trees on the second day than he planted on the first day. On the first day, Mr. Julius planted twenty trees of White Oak and twice as many Lodgepole Pine as White Oak. Calculate the total number of trees planted by Mr. Julius in the two days.","Explanation: On the first day, Mr. Julius planted twice as many Lodgepole Pine as White Oak, a total of 20 trees * 2 = 40 Lodgepole Pine trees.
+Therefore, the total number of trees planted on the first day is 20 White Oak + 40 Lodgepole Pine = 60 trees.
+On the second day, Mr. Julius planted 10 more White Oak trees than on the first day, a total of 20 trees + 10 trees = 30 White Oak trees.
+He also planted 1/4 more Lodgepole Pine on the second day than on the first day, which is equivalent to 40 trees * (1/4) = 10 more trees.
+So, on the second day, he planted a total of 40 trees + 10 trees = 50 Lodgepole Pine trees.
+In total, Mr. Julius planted 30 White Oak trees + 50 Lodgepole Pine trees = 80 trees on the second day.
+Therefore, across the two days, Mr. Julius planted a total of 60 trees + 80 trees = 140 trees.
+Answer: {140} 
+"
+97,"Gunther, the gorilla, had 48 bananas hidden under a fern branch.  On the first day, when Gunther wasn't looking, Arnold, the chimpanzee, stole half of the bananas from the pile.  On the third day, Gunther added another 6 bananas to his pile and began counting bananas.  On the second day, Gunther added another 25 bananas to his pile, but later that evening, Arnold stole another 12 of the bananas. How many bananas did Gunther count to be in the pile?","Explanation:
+1. **Day 1:** Arnold stole 48 / 2 = 24 bananas.
+2. **Day 1 (after theft):** Gunther had 48 - 24 = 24 bananas left.
+3. **Day 2 (addition):** Gunther had 24 + 25 = 49 bananas.
+4. **Day 2 (theft):** Arnold stole another 12, leaving Gunther with 49 - 12 = 37 bananas.
+5. **Day 3 (addition):** Gunther added 6 more bananas, bringing the total to 37 + 6 = 43 bananas.
+
+**Answer: {43}** 
+"
+98,John hires a driving service to get him to work each day.  He goes to work 5 days a week for 50 weeks a year.  His work is 30 miles away and he has to go there and back each day.  He gets charged $2 per mile driven and he also gives his driver a $150 bonus per month.  How much does he pay a year for driving?,"Explanation:
+First find the total number of miles driven to work and back in a day: 30 miles * 2 = 60 miles
+Then multiply that number by the rate per mile to find the daily driving cost: 60 miles * $2/mile = $120
+Then multiply that number by the number of days he works in a week to find his weekly driving cost: $120/day * 5 days/week = $600/week
+Then multiply that by the number of weeks he works in a year to find his total yearly driving cost: $600/week * 50 weeks/year = $30,000/year
+Then multiply the monthly bonus by the number of months in a year to find his total bonus paid in a year: $150/month * 12 months/year = $1800/year
+Then add that number to the yearly driving cost to find the total cost of driving for the year: $30,000/year + $1800/year = $31,800/year
+Answer: {31800} 
+"
+99,"Henry is making cookies for a local baking competition. When he finishes baking, he realizes he actually baked 15 more cookies than he meant to. He drops 5 of his cookies as he is putting them out to cool, and now has a total of 110 cookies. Originally, he wanted to make twice as many as he did last year. How many cookies did Henry bake last year?","Explanation: Here's how to solve this problem step-by-step:
+
+* **Start with the current number of cookies:** Henry has 110 cookies after dropping some.
+* **Account for the dropped cookies:** He dropped 5, so he had 110 + 5 = 115 cookies.
+* **Account for the extra cookies:** He baked 15 extra, so he originally intended to bake 115 - 15 = 100 cookies.
+* **Calculate last year's cookies:** He wanted to bake twice as many as last year, meaning he baked 100 / 2 = 50 cookies last year. 
+
+Answer: {50} 
+"
+100,"The basketball team went to the steakhouse to eat dinner. The second player ate beef tips, containing 8 beef tips, each an ounce in size.  The first player ate a 6-ounce steak.  The third player ate a one-pound steak.  And the fourth and fifth players ordered vegetarian meals.  In total, how many ounces of meat were consumed by the team?","Explanation: The second player ate 8 ounces because 8 x 1 = 8
+The third player ate 16 ounces because 1 x 16 = 16
+The total ounces of meat eaten is 24 ounces because 8 + 16 = 24
+Answer: {24}"
+101,"Cameron arrives at 5 pm at a hotel in the Philippines and wants to leave at 10 am the next morning.  The hotel charges 1000 pesos for a 12-hour stay or 1600 pesos for a 24-hour stay. After 12 hours, visitors have the option to add 70 pesos for every additional hour. He decides to go with the option of adding on 70 pesos for every hour after the 12-hour mark instead of paying for 24 hours. How much money would Cameron save?","Explanation:
+Since Cameron wants to stay from 5 pm to 10 am the next day, which is 17 hours, he only needs to pay an additional 5 hours after the initial 12 hours. 
+That means he would need to pay 70 pesos/hour * 5 hours = 350 pesos for the additional hours.
+Therefore, his total cost would be 1000 pesos (for the first 12 hours) + 350 pesos = 1350 pesos. 
+This would save him 1600 pesos (24-hour rate) - 1350 pesos = 250 pesos.
+Answer: {250} 
+"
+102,Ryan did his chores for 3 weeks. Then he bought ice cream cones for himself and 3 friends at $1.25 each. Now they all want to go to the movies and tickets cost $6.50 each. Ryan's allowance is $6 each week he completes his chores. How many movie tickets can Ryan buy?,"Explanation: Ryan earned 3 weeks * $6/week = $18 for doing his chores.
+The ice cream cones cost $1.25/cone * 4 cones = $5.
+After buying ice cream, Ryan had $18 - $5 = $13 left.
+Each movie ticket costs $6.50, so Ryan could buy $13 / $6.50/ticket = 2 tickets.
+Answer: {2}"
+103,"Lana is brewing cups of tea for her friends. She has 27 cups, and she divides these into 3 rows. After pouring chamomile and mint tea, she then uses the remaining cups to brew a total of 15 cups of cinnamon tea. In each row, she creates equal amounts of chamomile and mint tea cups. How many cups of mint tea are in each row?","Explanation:
+1. **Cinnamon cups:** Lana starts with 27 cups and uses 15 for cinnamon tea, leaving her with 27 - 15 = 12 cups for chamomile and mint tea.
+
+2. **Cups per row:**  These 12 cups are divided equally into 3 rows, meaning there are 12 / 3 = 4 cups per row for chamomile and mint combined.
+
+3. **Mint cups per row:** Since each row has equal amounts of chamomile and mint, there are 4 / 2 = 2 cups of mint tea in each row. 
+
+Answer: {2} 
+"
+104,"Each pizza had 8 slices. Becky ate 3 more slices than Jake did. Silvia ate twice as many slices than Jake did. Becky, Jake, and Silvia shared 4 pizzas. If Becky ate 10 slices, how many total slices did they eat?","Explanation:
+If Becky ate 10 slices and this was 3 more than Jake ate, Jake ate 10 - 3 = 7 slices.
+Silvia ate twice as many slices as Jake, so she ate 2 * 7 = 14 slices. 
+Together, they ate 10 + 7 + 14 = 31 slices.
+They shared 4 pizzas, and since each pizza has 8 slices, they had a total of 4 * 8 = 32 slices.
+Therefore, they ate 31 out of the 32 total slices. 
+Answer: {31} 
+"
+105,"The power goes out in Brianna's house one night so she and her family gather all their candles and flashlights. There are 8 rooms in the house and 4 people living there, including Brianna. They have a variety of candles available; 4 small candles each for half the rooms and 5 medium candles each for the other half of the rooms. There is a flashlight for every person to carry and two for each room. With everything combined, how many candles and flashlights are Brianna's family using when the lights go out?","Explanation:
+First find the total number of small candles they have: 4 candles/half the rooms * 8 rooms / 2 half rooms = 16 candles
+Then find the total number of medium candles they have: 5 candles/half the rooms * 8 rooms / 2 half rooms = 20 candles
+Then add those two amounts to find the total number of candles: 16 candles + 20 candles = 36 candles
+Then multiply the number of people by the number of flashlights they each carry to find the total number of flashlights people are carrying: 4 people * 1 flashlight/person = 4 flashlights
+Then multiply the number of rooms by the number of flashlights in each room to find the total number of flashlights in rooms: 8 rooms * 2 flashlights/room = 16 flashlights
+Then add the number of flashlights people are carrying to the number of flashlights in rooms to find the total number of flashlights: 4 flashlights + 16 flashlights = 20 flashlights
+Then add the total number of candles to the total number of flashlights to find the total number of candles and flashlights: 36 candles + 20 flashlights = 56 candles and flashlights
+Answer: {56}"
+106,"Sue lives in a fun neighborhood.  One weekend, the neighbors decided to play a prank on Sue.  On Friday morning, the neighbors placed 18 pink plastic flamingos out on Sue's front yard. On Sunday morning, they added  18 pink plastic flamingos to the collection. On Saturday morning, the neighbors took back one third of the flamingos, painted them white, and put these newly painted white flamingos back out on Sue's front yard.  At noon on Sunday, how many more pink plastic flamingos were out than white plastic flamingos?","Explanation: On Friday and Saturday, the neighbors put out a total of 18+18=36 pink flamingos.
+They took 36/3=12 flamingos back.
+So, there were 36-12=24 pink flamingos left.
+On Sunday morning, they added 18 more pink flamingos for a total of 24+18=42 pink flamingos.
+Thus, there were 42-12=30 more pink flamingos than white flamingos.
+Answer: {30} 
+"
+107,"Shawnda decides that her neighborhood kids could really use a bike inflation service. She decides the best way to charge is by the tire. On the first day, 5 people on bicycles came by to get both tires inflated. 3 people came by to get all their tricycle tires inflated. Finally, one person actually came by on a unicycle. Each tire costs 25 cents to inflate. How many dollars did she make that day?","Explanation: Here's how we can break down the problem:
+
+* **Bicycles:** 5 bicycles * 2 tires/bicycle = 10 tires
+* **Tricycles:** 3 tricycles * 3 tires/tricycle = 9 tires
+* **Unicycle:** 1 unicycle * 1 tire/unicycle = 1 tire
+
+**Total Tires:** 10 + 9 + 1 = 20 tires
+
+**Total Earnings:** 20 tires * $0.25/tire = $5.00
+
+Answer: {5} 
+"
+108,"Every day, Wendi gives each of her chickens their feed in three separate meals. She feeds each of the chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy. In the morning, she gives her flock of chickens 15 cups of feed.  In the afternoon, she gives her chickens another 25 cups of feed.  How many cups of feed does she need to give her chickens in the final meal of the day if the size of Wendi's flock is 20 chickens?","Explanation:
+We need to figure out the total cups of feed Wendi gives her chickens each day. Then, we can figure out how many cups are left for the final meal.
+
+* **Morning and Afternoon:** She gives 15 cups + 25 cups = 40 cups of feed in the morning and afternoon.
+* **Total Daily Needs:** Since each chicken needs 3 cups a day, and she has 20 chickens, she needs 3 cups/chicken * 20 chickens = 60 cups of feed per day.
+* **Final Meal:** To find out how much she needs for the final meal, subtract the morning and afternoon feed from the total daily need: 60 cups - 40 cups = 20 cups.
+
+Answer: {20} 
+"
+109,"Fred was preparing for a party to be held in four days.  So, he made 24 gallons of root beer on the first day and put them in the refrigerator cooler.  But later that evening, his children discovered the delicious nectar and robbed the cooler, drinking 4 of those gallons of root beer.  On the fourth day, 3 people showed up for the party.  On the second day, his wife Barbie also discovered the root beer and accidentally spilled 7 gallons. On the third day, Fred's friend Ronnie visited Fred's house and helped himself to the root beer, further reducing the amount remaining by 5 gallons.  If Fred and the others shared the remaining root beer equally, how much was available for each to drink during the party?","Explanation: On the first day, Fred made 24 gallons of root beer, but his children drank 4 gallons, leaving 24-4=20 gallons.
+Then, his wife Barbie spilled 7 gallons, leaving only 20-7=13 gallons.
+When Ronnie came to visit, he drank 5 gallons, further reducing the total to 13-5=8 gallons. 
+Including Fred, there were 1+3=4 people at the party. 
+Thus, each person had 8/4=2 gallons of root beer.
+Answer: {2} 
+"
+111,"Marcus is trying to decide whether he really needs to do his homework. If the normal teacher comes in, there's a 40% chance she'll give everyone an extension. There's a 50% chance that tomorrow he'll have a substitute teacher who won't collect the homework. Even if the whole class doesn't get an extension, there's a 20% chance Marcus can convince the teacher his dog ate his assignment and get a personal extension. What is the percentage chance that Marcus will actually have to turn in his homework tomorrow?","Explanation:
+First find the probability that Marcus will *not* get an extension from the normal teacher: 100% - 40% = 60%
+Then multiply that probability by the probability that his dog ate his assignment story won't work to find the probability he'll have to do the homework if the normal teacher is there: 60% * 80% = 48%
+Then multiply the probability of having a substitute by the probability he won't have to do the homework if there is a substitute to find the probability he won't have to do it if there's a sub: 50% * 100% = 50%
+Then subtract that percentage from 100% to find the probability he will have to do it if there's a sub: 100% - 50% = 50%
+Finally, add the probability of having to do the homework if the normal teacher is there to the probability of having to do it if there is a substitute to get the overall probability: 50% + 48% = 98% 
+Answer: {98%}"
+112,Lorraine and Colleen are trading stickers for buttons. Each large sticker is worth a large button or three small buttons. A small sticker is worth one small button. A large button is worth three small stickers. Lorraine starts with 30 small stickers and 40 large stickers. She trades 50% of her large stickers for large buttons and trades the rest of them for small buttons. She trades 90% of her small stickers for large buttons. How many buttons does she have by the end?,"Lorraine trades 50/100 * 40 large stickers = 20 large stickers for large buttons.
+So she has 40 large stickers - 20 large stickers = 20 large stickers left that she trades for small buttons.
+This gets her 20 large stickers * 3 small buttons per large sticker = 60 small buttons.
+She also trades 90/100 * 30 small stickers = 27 small stickers for large buttons.
+This gets her 27 small stickers / 3 small stickers per large button = 9 large buttons.
+Her 20 large stickers traded for large buttons gets her another 20 large buttons.
+That means by the end, Lorraine has 60 small buttons + 9 large buttons + 20 large buttons = 89 buttons.
+Answer: {89} 
+"
+113,44 seniors need to receive awards.  2 of the seniors will also receive pins that are $5.  Each senior receives a picture frame that costs $20.  Each picture frame needs to be etched with the logo for an additional 20% cost per frame.  1/4 of the seniors are officers and they will need to receive cords that are $12 each.  How much will be spent on the senior gifts?,"Here's how to break down the costs:
+
+* **Picture Frames:** 
+    * Cost per frame after the logo etching: $20 + ($20 * 0.20) = $24
+    * Total cost of picture frames: $24 * 44 = $1056
+* **Pins:**
+    * Total cost of pins: $5 * 2 = $10
+* **Cords:**
+    * Number of officers: 44 / 4 = 11
+    * Total cost of cords: $12 * 11 = $132
+
+* **Total Cost:** $1056 + $10 + $132 = $1298
+
+**Answer: {1298}** 
+"
+114,Mike can write a page every 6 minutes. He was a pen pal with 5 people.  He stopped being penpals with 2 of them.  They each send 2 letters a week that are 5 pages long.  He responds in kind. How many hours does he spend writing a week?,"Explanation:
+Mike gets 2 letters * 5 pages/letter = 10 pages of letters from each penpal.
+That means he writes 10 pages/penpal * 3 penpals = 30 pages total per week
+That means he spends 30 pages / 6 pages/hour = 5 hours writing each week
+Answer: {5} 
+"
+115,Toby is reading a book that is 45 pages long. It averages 200 words a page. Toby can read at a rate of 300 words per minute. It takes 10 minutes to get to the airport. He has to be at the airport in 60 minutes and plans to leave as soon as he finishes the book. How many minutes early will Toby be?,"First find how many words are in the book: 45 pages * 200 words/page = 9000 words
+Then divide the number of words by his reading speed to find how long it will take him to read the book: 9000 words / 300 words/minute = 30 minutes
+Then add the time it takes to read the book to the time it takes to drive to the airport to find his total travel time: 30 minutes + 10 minutes = 40 minutes
+Then subtract his travel time from the time he needs to be at the airport to find how early he will be: 60 minutes - 40 minutes = 20 minutes
+Answer: {20}"
+116,Mr. Marcellus realized 2/5 of the amount of milk he purchased had passed the expiry date and could not be sold. A company had sold 4000 gallons of milk in jars to Mr. Marcellus' store at the cost of $3.5 per gallon. He returned the sour milk to the company and ordered a refund. Calculate how much he got in refunds.,"Explanation: First find the total number of gallons of milk that had passed the expiry date: 4000 gallons * (2/5) = 1600 gallons
+Then multiply that number by the price per gallon to find the total refund amount: 1600 gallons * $3.50/gallon = $5600
+Answer: {5600} 
+"
+117,"Antoine's french onion soup recipe calls for 2 pounds of onions. He likes to double that amount. The onions are currently on sale for $2.00 a pound. His soup serves 6 people. He also needs 2 boxes of beef stock, that are also on sale for $2.00 a box.  What is the cost per serving? (Round to the nearest integer.)","Explanation: First find the total weight of onions Antoine uses: 2 pounds/recipe * 2 = 4 pounds.
+Then multiply that amount by the price per pound to find the total cost of the onions: 4 pounds * $2.00/pound = $8.00
+Then multiply the price per box of beef stock by the number of boxes to find their total cost: $2.00/box * 2 boxes = $4.00
+Then add the cost of the onions and the beef stock to find the total cost of the recipe's ingredients: $8.00 + $4.00 = $12.00
+Then divide the total cost by the number of servings to find the cost per serving: $12.00 / 6 servings = $2.00/serving
+Answer: {2} 
+"
+118,"Tim makes a special honey and jam mix.  The passion fruit costs $6 per pound, the jackfruit is $8 per pound, and the honey is $10 per pound.  He sells each jar for $50.  To make 1 jar of the mixture it takes 2 pounds of passion fruit and 1.5 pounds of jackfruit.  It also takes 2 pounds of special honey.  How much profit does he make selling 10 jars?","Explanation: The cost of the ingredients for one jar is (2*$6)+(1.5*$8)+($10*2) = $44.
+So for 10 jars the cost would be 10*$44 = $440
+He sells 10 jars for a total of 10*$50 = $500
+So his profit is $500-$440 = $60
+Answer: {60} 
+"
+119,"Tom went on a two-week-long trip through Europe. On the seventh day, he wasn't traveling at all. In the first 4 days, he traveled 200 kilometers every day, and over the next two days, he totaled only 30% of the distance traveled over the first four days. During the second week, he made 300 kilometers every day. How many kilometers in total did Tom make during his two-week-long trip?","Explanation:
+First find the total distance traveled in the first four days: 200 kilometers/day * 4 days = 800 kilometers.
+Then find the total distance traveled in the next two days: 800 kilometers * 30% = 240 kilometers.
+Then find the total distance traveled in the second week: 300 kilometers/day * 7 days = 2100 kilometers
+Then add the distances from each week and the first week's 7th day to find the total distance: 800 kilometers + 240 kilometers + 2100 kilometers + 0 kilometers = 3140 kilometers.
+Answer: {3140}"
+120,"Glue sticks come in packs of 8. Mr. Jackson's fourth-grade class has 27 students. He wants to give each student 2 glue sticks. How many packs will Mr. Jackson need to buy so every student can have 2 glue sticks, assuming he can only buy whole packs and he expects to have some extra glue sticks left over?","He has 27 students and wants to give each student 2 glue sticks, so he needs 27 * 2 = 54 glue sticks.
+Each pack has 8 glue sticks, so he'll need 54 / 8 = 6.75 packs.
+Since he can only buy whole packs, he'll need to buy 7 packs to have enough for everyone.
+Answer: {7} 
+"
+122,There are 3 classes. Each class in a school has 20 students. The first class has 15 girls. The second class has 12 girls. The school as a whole is 50% boys and 50% girls. How many boys are in the third class?,"Explanation:
+Let's solve this step-by-step:
+
+1. **Total girls:** Since the school has 50% girls out of 60 students (3 classes x 20 students), there are 60 / 2 = 30 girls in total.
+2. **Girls in the third class:** We know there are 15 girls in the first class and 12 in the second. Therefore, there are 30 - 15 - 12 = 3 girls in the third class.
+3. **Boys in the third class:**  Since each class has 20 students, and the third class has 3 girls, there must be 20 - 3 = 17 boys in the third class. 
+
+Answer: {17} 
+"
+123,Bryce and four of his friends each ordered their own pizzas after football practice. Bryce and two friends ate 2/3 of their pizzas. The two remaining friends ate \u00be of their pizzas. Each pizza had 12 slices. How many slices of pizza were left?,"Explanation:
+**1. Calculate the number of slices eaten by the first group:**
+
+* Bryce and two friends make a total of 3 people.
+* They ate 2/3 of each pizza, so they ate (2/3) * 12 slices = 8 slices per pizza.
+* In total, this group ate 3 people * 8 slices/person = 24 slices.
+
+**2. Calculate the number of slices eaten by the second group:**
+
+* The two remaining friends make a total of 2 people.
+* They ate 3/4 of each pizza, so they ate (3/4) * 12 slices = 9 slices per pizza.
+* In total, this group ate 2 people * 9 slices/person = 18 slices.
+
+**3. Calculate the total number of slices eaten:**
+
+* The total eaten is 24 slices + 18 slices = 42 slices.
+
+**4. Calculate the total number of slices:**
+
+* Five pizzas were ordered, with 12 slices each, for a total of 5 pizzas * 12 slices/pizza = 60 slices.
+
+**5. Calculate the number of slices remaining:**
+
+* The number of slices remaining is 60 slices - 42 slices = 18 slices.
+
+Answer: {18} 
+"
+124,"James buys a plane. He pays $5000 a month to rent a hanger to keep it in. He also spends twice as much as that on fuel per month. The plane cost $150,000. How much did it cost him to get and maintain the plane for the first year?","Explanation: James' monthly fuel cost is $5000 * 2 = $10000.
+So he spends $10000 + $5000 = $15000 per month on fuel and hanger.
+That means he spends $15000 * 12 = $180000 a year on fuel and hanger.
+Adding the plane's cost, in the first year, it cost him $180000 + $150000 = $330000.
+Answer: {330000} 
+"
+127,"James needs to get more toys for his doggie shelter. James currently has 4 toys on hand for 4 dogs, but there are 8 more dogs in the shelter now. After buying the toys, he went back to see that there are twice as many more dogs than when he left so he had to buy some more toys. When James came back yet again, 3 dogs were gone so he no longer needed those toys. Each dog needs one toy. How many toys in total does James need?","Explanation:
+* **Step 1: Calculate toys needed after the first increase** James had 4 dogs and now has 8 more, totaling 4 + 8 = 12 dogs.
+* **Step 2: Calculate toys needed after the second increase** The number of dogs doubled from 12, making it 12 * 2 = 24 dogs.
+* **Step 3: Calculate toys needed after dogs left** With 3 dogs gone, there are 24 - 3 = 21 dogs.
+* **Step 4: Calculate total toys needed** Since each dog needs one toy, James needs 21 toys.
+
+Answer: {21} 
+"
+128,Billy sells DVDs. His first 3 customers buy one DVD each.  His last 3 customers don't buy any DVDs.  His next 2 customers buy 2 DVDs each. He has 8 customers on Tuesday. How many DVDs did Billy sell on Tuesday?,"Explanation:
+Billy sold 3 DVDs to his first 3 customers because 3 customers * 1 DVD/customer = 3 DVDs
+He sold 4 DVDs to his next 2 customers because 2 customers * 2 DVDs/customer = 4 DVDs.
+His last 3 customers bought 0 DVDs, so he sold a total of 3 + 4 + 0 = 7 DVDs
+Answer: {7} 
+"
+129,Tom plants 10 trees a year.  He starts with 50 trees.  After 10 years 30% of the trees die.  Every year he also chops down 2 trees a year.  How many trees does he have left?,"Explanation:
+After 10 years, Tom plants 10 trees/year * 10 years = 100 trees
+Adding the trees he started with, he has a total of 100 trees + 50 trees = 150 trees
+30% of his trees died, so he lost 150 trees * .30 = 45 trees
+After the trees died, he had 150 trees - 45 trees = 105 trees
+He chops down 2 trees every year for 10 years for a total of 2 trees/year * 10 years = 20 trees
+After chopping down trees, he has 105 trees - 20 trees = 85 trees remaining. 
+Answer: {85} 
+"
+130,"Mr. Smith has two farms, Farm X and Farm Y. He sold 10 goats from Farm X and twice as many goats from Farm Y. He has 55 goats in Farm X and 45 goats in Farm Y. How many goats are left in the two farms altogether?","Explanation: 
+He sold 10 x 2 = 20 goats from Farm Y.
+So, there are 55 - 10 = 45 goats left in Farm X.
+And 45 - 20 = 25 goats left in Farm Y.
+Therefore, there are a total of 45 + 25 = 70 goats left in the two farms.
+Answer: {70} 
+"
+131,"John cuts down an 80-foot tree.  He cuts it into 4-foot logs.  He sells planks for $1.2 each. He can make logs out of 80% of the tree. From each of those logs, he cuts 5 planks.  How much does he make?","Explanation:
+First find the percentage of the tree John makes into logs: 80 feet * .80 = 64 feet
+Then divide the useable length of the tree by the length of each log to find the number of logs: 64 feet / 4 feet/log = 16 logs
+Then multiply that number by the number of planks per log to find how many planks he sells: 16 logs * 5 planks/log = 80 planks
+Then multiply the number of planks by the price per plank to find the total profit: 80 planks * $1.20/plank = $96.00
+Answer: {96} 
+"
+132,Each muffaletta sandwich requires 1 pound each of meat and cheese and would serve 4 people.  Tyson decided to make muffaletta sandwiches for the big game. The meat cost $7.00 per pound and the cheese cost $3.00 per pound. There would be 20 people in total watching the game.  How much money would he spend on the meat and cheese to make enough sandwiches to serve 20 people?,"Explanation:
+He needs enough sandwiches for 20/4 = 5 groups of 4 people.
+So, he needs to buy 5 * 1 = 5 pounds of meat.
+He also needs to buy 5 * 1 = 5 pounds of cheese.
+The meat will cost $7.00/pound * 5 pounds = $35.00
+The cheese will cost $3.00/pound * 5 pounds = $15.00
+Therefore, he will spend $35.00 + $15.00 = $50.00 on the meat and cheese.
+Answer: {50.00} 
+"
+133,Cole hid 3 dozen eggs in the yard for the Easter egg hunt.  Lamar finds 5 eggs.  And Mei finds half as many as Charlie. Stacy finds twice as many as Lamar.  Charlie finds 2 less than Stacy.  How many eggs are still hidden in the yard?,"Explanation:
+1. **Calculate Cole's eggs:** Cole hid 3 dozen eggs, which is 3 * 12 = 36 eggs.
+2. **Calculate Stacy's eggs:** Stacy found twice as many eggs as Lamar, who found 5, so Stacy found 2 * 5 = 10 eggs.
+3. **Calculate Charlie's eggs:** Charlie found 2 fewer eggs than Stacy, who found 10, so Charlie found 10 - 2 = 8 eggs.
+4. **Calculate Mei's eggs:** Mei found half as many eggs as Charlie, who found 8, so Mei found 8 / 2 = 4 eggs.
+5. **Calculate the total found:** In total, they found 5 + 10 + 8 + 4 = 27 eggs.
+6. **Calculate the remaining eggs:**  Subtract the number of found eggs from the total hidden eggs: 36 - 27 = 9 eggs. 
+
+Answer: {9} 
+"
+134,"Each crayon weighs 1 ounce. Each pound is 16 ounces.  Nik has 200 crayons. He wants to separate them into groups of 8 and put them into boxes. If he puts all of his crayons into boxes, what is the total weight, in pounds, of the crayons and the boxes, if each box weighs 8 ounces?","Explanation: Nik has 200 / 8 = 25 groups of 8 crayons.
+That means he needs 25 boxes.
+The total weight of the crayons is 200 crayons * 1 ounce/crayon = 200 ounces.
+This is equal to 200 / 16 = 12.5 pounds.
+The total weight of the boxes is 25 boxes * 8 ounces/box = 200 ounces.
+This is equal to 200 / 16 = 12.5 pounds.
+Therefore, the total weight of the crayons and boxes is 12.5 pounds + 12.5 pounds = 25 pounds.
+Answer: {25}"
+135,Roger goes to the store to buy some coffee. He decides to buy a week's worth of coffee and he uses 1 pound of coffee per day. The normal brand of coffee he buys cost $5 per pound.  He had to buy a more expensive brand that cost 20% more since his favorite brand was sold out. He also decided to buy himself a donut for $2. How much did everything cost?,"Explanation:
+Roger drinks 1 pound of coffee per day and buys enough for 7 days so that's 1*7 = 7 pounds of coffee
+The more expensive coffee is 20/100 * 5 = $1 more expensive per pound. 
+So the more expensive coffee costs 5+1 = $6 per pound.
+So, he pays 6*7 = $42 for the coffee.
+Adding the cost of the donut, he pays a total of 42+2 = $44
+Answer: {44}"
+136,"Krissa needs to order field trip shirts for her preschool students. Four less than the number of size small students need size medium. 11 students need size extra-small.  Half as many students need size large as size medium. Six more students need size extra-large than large. Twice as many students need size small as extra small.  Altogether, how many shirts did Krissa order?","Explanation:
+Let's break down the problem step by step:
+
+* **Small:** Twice the number of extra-small students need small shirts, so 11 students * 2 = 22 students need size small.
+* **Medium:** Four less than the number of small students need medium, meaning 22 students – 4 students = 18 students need size medium.
+* **Large:** Half as many students need large as medium, so 18 students / 2 = 9 students need size large.
+* **Extra-Large:** Six more students need extra-large than large, meaning 9 students + 6 students = 15 students need size extra-large.
+
+Now, let's add up the number of students needing each size to find the total number of shirts:
+
+* **Total:** 22 (small) + 18 (medium) + 9 (large) + 15 (extra-large) + 11 (extra-small) = 75 shirts
+
+Answer: {75} 
+"
+137,"Colby loves going to the movies and already saw 5 movies on a Friday or Saturday, 8 movies on other days, had 2 tubs of popcorn, and four boxes of candy this month. Tickets for Fridays and Saturdays cost $10. Tickets for any other day cost $7. Popcorn costs $8 and boxes of candy cost $2. It is the last day of the month and it's a Friday. He wants to make sure he gets a popcorn and box of candy that night. How many movies can he see if every month his parents give him $150 to spend at the movies?","Explanation:
+First find the total cost of the movies Colby has already seen: 5 movies * $10/movie + 8 movies * $7/movie = $50 + $56 = $106.
+Then find the total cost of the food he has already bought: 2 tubs * $8/tub + 4 boxes * $2/box = $16 + $8 = $24.
+So he has spent $106 + $24 = $130 at the movies so far this month.
+That means he has $150 - $130 = $20 left to spend on movies this month.
+He wants to get popcorn and candy this time, so that will cost $8 + $2 = $10.
+That leaves $20 - $10 = $10 to spend on movie tickets.
+Since it is Friday, tickets cost $10 each, so he can buy $10 / $10 per ticket = 1 more movie ticket.
+Answer: {1}"
+138,"Chad has a gift card for $5.00 that he uses at check out. He ordered a build-your-own burrito for lunch. He adds extra meat for $2.00, extra cheese for $1.00, avocado for $1.00 and 2 sauces for $0.25 each.  He decides to upgrade his meal for an extra $3.00 which will add chips and a drink.   How much does he still owe, if the base burrito is $6.50?","Explanation:
+First find the total cost of the sauces: $0.25/sauce * 2 sauces = $0.50
+Then add that amount to the cost of the extras to find the total cost of extras: $0.50 + $2.00 + $1.00 + $1.00 = $4.50
+Then add the cost of the base burrito and the upgrade to find the subtotal before the gift card is applied: $4.50 + $6.50 + $3.00 = $14.00 
+Then subtract the value of the gift card to find the total amount owed: $14.00 - $5.00 = $9.00
+Answer: {9.00}"
+139,"Tanya makes a salt scrub from salt, oil, fragrance, citrus zest, and sugar. She uses the same amount of citrus zest as fragrance and the same amount of salt as sugar. She makes enough to fill a 10-ounce jar each time. She uses twice as much oil as salt and twice as much salt as zest. How many ounces of oil does she use?","Explanation:
+Let's break down the problem step-by-step:
+
+* **Let 'x' represent the amount of citrus zest (and fragrance) Tanya uses.**
+
+* **Salt and sugar:** She uses the same amount of salt and sugar as each other, and this amount is twice the amount of zest. So, she uses 2*x ounces of salt and 2*x ounces of sugar.
+
+* **Oil:**  She uses twice as much oil as salt. Since she uses 2*x ounces of salt, she uses 2 * (2*x) = 4*x ounces of oil.
+
+**To find the amount of oil, we need to find the value of 'x'.  However, we don't have enough information to determine the exact proportions of each ingredient in the 10-ounce jar.  We only know the *ratios* of ingredients to one another.**
+
+Answer: {Not enough information} 
+"
+140,"Artemis is potting flowers with her father. They buy a 30-pound bag of soil. Each rose needs 1 pound. Each Sunflower needs 3 pounds. Each carnation needs 1.5 pounds. If they plant 4 sunflowers and 10 carnations, how many roses can they plant?","Explanation:
+First find how much soil the sunflowers need: 4 sunflowers * 3 pounds/sunflower = 12 pounds
+Then find how much soil the carnations need: 10 carnations * 1.5 pounds/carnation = 15 pounds
+Then subtract the soil needed for the other flowers from the total amount to find how much soil is left for the roses: 30 pounds - 12 pounds - 15 pounds = 3 pounds
+Then divide the remaining soil by the amount each rose needs to find how many roses they can plant: 3 pounds / 1 pound/rose = 3 roses
+Answer: {3} 
+"
+141,"A bus has a capacity of 200 people. On the first stop, 40 people entered the bus. On the second station, 3/4 of the total number of people who entered the bus at the first station entered the bus. Before its first stop, it had 20 people. If the number of passengers on the bus doubled at the third station, calculate the total number of people required to fill the remaining spaces on the bus.","Explanation:
+1. **Second station passengers:** (3/4) * 40 people = 30 people entered at the second station.
+2. **Total after second station:** 20 people (initial) + 40 people + 30 people = 90 people on the bus.
+3. **Passengers after the third station:** 90 people * 2 = 180 people.
+4. **Remaining spaces:** 200 people (capacity) - 180 people = 20 spaces left.
+
+Answer: {20} 
+"
+142,"Sasha and Julie are best friends playing on opposing basketball teams. The teams have two practice games scheduled. In the first game, Sasha had the home court advantage and scored 14 points. Sasha always struggles during away games and their second match was at Julie's home court. Sasha scored 6 fewer points in the second game than Julie's score in the first game. Julie scored 4 fewer points than Sasha in the first game. How many total points did Sasha score during both games?","Explanation:
+First, find Julie's score in the first game: 14 points - 4 points = 10 points
+Then, find Sasha's score in the second game: 10 points - 6 points = 4 points
+Then, add Sasha's score from both games to find her total score: 14 points + 4 points = 18 points
+Answer: {18}"
+144,"Kayla is having her birthday party at a movie theater. Kayla invited her 25 classmates and the 7 girls in her dance class, as well as 13 family members. Only 4 people said they could not come. The fee to rent the theater is $125 for a party of 20, plus $6 for each additional guest. How much will the party cost?","Explanation:
+First find the total number of people Kayla invited: 25 classmates + 7 dance class friends + 13 family members = 45 people
+Then subtract the 4 people who can't come to find the number of guests: 45 people - 4 people = 41 people
+Then subtract 20 from the number of guests to find how many people are paying the extra fee: 41 people - 20 people = 21 people
+Now multiply that number by the extra fee amount to find the total cost of the extra guests: 21 people * $6/person = $126
+Then add that amount to the base fee to find the total cost: $126 + $125 = $251
+Answer: {251} 
+"
+145,"Since Sasha has leftover lumber, she decides to sell them. She notices that prices for lumber have gone up 50% in the last few months after she bought some lumber. She has leftover ten 2 x 4 x 10 boards that cost her $10 each. She also has five 4 x 4 x 10 boards she bought for $16 each. If she sells them all, how much profit does she make?","Here's how to break down the problem to find the solution:
+
+**1. Calculate the new selling price of the 2x4x10 boards:**
+
+* Price increase: $10 * 50/100 = $5
+* New selling price: $10 + $5 = $15
+
+**2. Calculate the earnings from selling the 2x4x10 boards:**
+
+* Total earnings: $15/board * 10 boards = $150
+
+**3. Calculate the new selling price of the 4x4x10 boards:**
+
+* Price increase: $16 * 50/100 = $8
+* New selling price: $16 + $8 = $24
+
+**4. Calculate the earnings from selling the 4x4x10 boards:**
+
+* Total earnings: $24/board * 5 boards = $120
+
+**5. Calculate the total earnings from selling all the boards:**
+
+* Total earnings: $150 + $120 = $270
+
+**6. Calculate the total cost of the boards:**
+
+* Cost of 2x4x10 boards: $10/board * 10 boards = $100
+* Cost of 4x4x10 boards: $16/board * 5 boards = $80
+* Total cost: $100 + $80 = $180
+
+**7. Calculate the profit:**
+
+* Profit: $270 (total earnings) - $180 (total cost) = $90
+
+**Answer: {90}** 
+"
+146,Crista's plants need to be watered every day. 8 plants need 1 cup of water. She has 20 plants. 4 of her plants need half of a cup of water. The rest need a quarter of a cup of water. How many cups of water does Crista need every day for her plants?,"Explanation:
+* **Plants needing 1 cup:** 8 plants * 1 cup/plant = 8 cups
+* **Plants needing 1/2 cup:** 4 plants * 1/2 cup/plant = 2 cups
+* **Plants needing 1/4 cup:** 20 total plants - 8 (1 cup plants) - 4 (1/2 cup plants) = 8 plants
+* **Water for 1/4 cup plants:** 8 plants * 1/4 cup/plant = 2 cups
+* **Total cups:** 8 cups + 2 cups + 2 cups = 12 cups
+
+Answer: {12} 
+"
+148,"Caroline has 4 children. The second child is two inches taller than the first child. The first child is 6 feet tall. The third child is 5 inches shorter than the second child.  And the fourth child is three inches taller than the third child.  How tall is the fourth child, in inches?","Explanation: The second child is 6 feet * 12 inches/foot + 2 inches = 74 inches tall.
+The third child is 74 inches - 5 inches = 69 inches tall.
+The fourth child is 69 inches + 3 inches = 72 inches tall
+Answer: {72}"
+149,"A mechanic charges different rates to repair the tires of trucks and cars.  On Friday, the mechanic repairs 12 car tries and doesn't repair any truck tires.  For each truck tire that is repaired, the mechanic will charge $60 and for each car tire that is repaired, the mechanic will charge $40.  On Thursday, the mechanic repairs 6 truck tires and 4 car tires.  How much more revenue did the mechanic earn on the day with higher revenue?","Explanation:
+On Friday, the mechanic made 12*$40 = $480.
+On Thursday, the mechanic made 6*$60 + 4*$40 = $520.
+So the mechanic made $520-$480 = $40 more on Thursday.
+Answer: {40}"
+151,"Marcel runs a bicycle store. His main products are three types of bikes: MTB, BMX, and Trekking. In one month, Marcel sold a total of 300 bikes among the types listed. Half of them were Trekking bikes, and 15% were BMX bikes. The rest of the sold bikes were MTB type. The price of one MTB is $500, BMX is half the price of an MTB, and a Trekking bike is $450. How much did Marcel earn from selling bicycles during that month?","Explanation:
+First, calculate the number of Trekking bikes sold: 300 bikes * 0.5 = 150 bikes
+Next, calculate the number of BMX bikes sold: 300 bikes * 0.15 = 45 bikes
+Now, calculate the number of MTB bikes sold: 300 bikes - 150 bikes - 45 bikes = 105 bikes
+Then, calculate the earnings from selling MTB bikes: 105 bikes * $500/bike = $52500
+Calculate the price of one BMX bike: $500 / 2 = $250
+Then, calculate the earnings from selling BMX bikes: 45 bikes * $250/bike = $11250
+Finally, calculate the earnings from selling Trekking bikes: 150 bikes * $450/bike = $67500
+Add up the earnings from all types of bikes to find the total earnings: $52500 + $11250 + $67500 = $131250
+Answer: {131250} 
+"
+152,Dean's mother gave him $28 to go to the toy store. Each toy car cost $2 and each teddy bear cost $1. Dean bought 6 toy cars and 5 teddy bears. His mother then feels generous and decides to give him an extra $10. How much money does Dean have left?,"Explanation: Dean spent 6 x $2 = $12 on toy cars. He also spent 5 x $1 = $5 on teddy bears. So far, he has spent $12 + $5 = $17 at the toy store. This means he had $28 - $17 = $11 left. After his mother gives him $10, Dean then has $11 + $10 = $21.
+Answer: {21} 
+"
+153,Ali is a superstar counter. His friend Izzy is also a really good counter and has 5 less medals than Ali. Ali has won 22 medals for counting super fast. Together they have 10 times less medals than have been given out for counting. How many medals have been given out for counting?,"Explanation:
+Izzy has 22 - 5 = 17 medals.
+Together, Ali and Izzy have 22 + 17 = 39 medals.
+Therefore, 39 x 10 = 390 medals have been given out in total.
+Answer: {390} 
+"
+154,"A certain company is in the business of selling fresh fruit. The price for such a crate depends on the price of its individual fruits. One crate of such fruit consists of 5 bananas, 12 apples, and 7 oranges. Oranges are the most expensive and cost three times as much as a banana per piece. One apple costs $0.5 and one banana costs twice as much. What would be the price for such a crate of fruit?","Explanation:
+Let's calculate the cost of each fruit:
+- One banana costs twice as much as an apple, which costs $0.5, so a banana costs 2 * $0.5 = $1.
+- An orange costs three times as much as a banana, which costs $1, so an orange costs 3 * $1 = $3.
+
+Now let's calculate the total cost of each type of fruit in the crate:
+- 5 bananas cost 5 * $1/banana = $5.
+- 12 apples cost 12 * $0.5/apple = $6.
+- 7 oranges cost 7 * $3/orange = $21.
+
+Therefore, the total price of the crate is $5 + $6 + $21 = $32.
+Answer: {32} 
+"
+156,"As Sally entered school, she found 8 blue balloons caught in a tree, and she added 75% of them to her remaining clutch of balloons, which she carried into the school.  Previously, when she started walking to school, she was holding the strings to 25 red balloons, 7 green balloons, and 12 yellow balloons. At this time, a gust of wind caused 40% of the red balloons to burst.  The shockingly loud sound startled Sally, and she accidentally released half of the yellow balloons.  What number of balloons did she finally carry into the school?","Explanation:
+First find the number of blue balloons Sally added to her collection: 8 balloons * .75 = 6 balloons
+Then calculate how many red balloons burst: 25 balloons * .40 = 10 balloons 
+Then subtract that number from her original number of red balloons to find how many red balloons remain: 25 balloons - 10 balloons = 15 balloons
+Then divide the original number of yellow balloons in half to find how many she accidentally released: 12 balloons / 2 = 6 balloons
+Then subtract that number from the original number of yellow balloons to find how many yellow balloons remain: 12 balloons - 6 balloons = 6 balloons.
+Now add up the number of each color balloon to find the total number of balloons she had before picking up the blue balloons: 15 balloons + 7 balloons + 6 balloons = 28 balloons
+Finally, add the number of blue balloons she picked up to the number of balloons she already had to find the total number she brought into the school: 28 balloons + 6 balloons = 34 balloons
+Answer: {34} 
+"
+157,"There are 6 periods in the day for a normal student.  Each class is 40 minutes long.  He goes to class for 5 days a week.  He then spends 1/16 of his weekly minutes each on Saturday and Sunday as extra learning time.  How many hours a week does he spend learning, if John has to take 2 extra classes a day?","Here's how to break down the problem:
+
+* **Classes per day:** John takes 6 periods/day * 2 extra classes = 8 classes per day
+* **Total class time per day:** 8 classes/day * 40 minutes/class = 320 minutes/day
+* **Total class time per week:** 320 minutes/day * 5 days/week = 1600 minutes/week
+* **Total minutes in a week:** 24 hours/day * 60 minutes/hour * 7 days/week = 10080 minutes/week
+* **Weekend study time (in minutes):** 10080 minutes/week * (1/16) = 630 minutes/week
+* **Total study time per week:** 1600 minutes (class) + 630 minutes (weekend) = 2230 minutes
+* **Total study time in hours:** 2230 minutes / 60 minutes/hour = 37.17 hours
+
+**Answer: {37.17}** 
+"
+158,"Max bought stamps at the post office. Some of the stamps had a snowflake design, some had a truck design, and some had a rose design. He bought 3 more truck stamps than snowflake stamps, and 9 fewer rose stamps than truck stamps. Max bought 16 snowflake stamps. How many stamps did Max buy in all?","Explanation: Max bought 16 + 3 = 19 truck stamps.
+He bought 19 - 9 = 10 rose stamps. 
+That means he bought a total of 16 + 19 + 10 = 45 stamps.
+Answer: {45} 
+"
+159,"Mr. Bert gives six tests each semester. Brinley is in Mr. Bert's math class. Mr. Bert allows the students to remove the lowest score from the average each semester. If Brinley has scores of 89, 71, 92, 100 and 86 on the first five tests, what score does she need on the sixth test to get an average of 93?","Explanation: In order for Brinley to have an average of 93 after the lowest score is dropped and after taking six tests, she needs a total score of 93*5=465. Currently, her lowest score is the 71, and her current sum of scores is 89+71+92+100+86 = 438. Therefore, she needs to get at least a 465-438 = 27 on her sixth test to have an average of 93 in the class.
+Answer: {27}"
+160,"A nurses' station orders bandages in bulk packs of 50. On the third day, they ordered two bulk packs of bandages and only used half a pack. On the second day, they used ten fewer bandages compared to the first day. On the first day, the nurses used 38 bandages and ordered one bulk pack of bandages. They had 78 bandages left at the end of the third day. How many bandages did they start with on the first day?","Explanation: Here's how we can solve this problem:
+
+* **Third day:** They used half a bulk pack, which is 50 / 2 = 25 bandages.
+* **Total used in the first three days:**  They had 78 bandages left and used 25 on the third day, so they used a total of 78 + 25 = 103 bandages in the first three days.
+* **Second day:** They used 10 fewer bandages than the first day, meaning they used 38 - 10 = 28 bandages.
+* **Total used in the first two days:**  They used 38 on the first day and 28 on the second day, for a total of 38 + 28 = 66 bandages.
+* **Bandages after the first order:** Since they used 103 bandages in total and 66 in the first two days, they must have used 103 - 66 = 37 bandages after the first order. 
+* **Bandages at the start of the first day:** They ordered a bulk pack (50 bandages) and had 37 left after using some, so they started with 50 - 37 = 13 bandages. 
+
+Answer: {13} 
+"
+161,"Bill is ordering a new truck.  The base price of the truck is $30,000, and any other features are at extra cost. He has decided to purchase a two-ton truck with several added features: a king cab upgrade, a towing package, leather seats, running boards, and the upgraded exterior light package. The king cab is an extra $7,500, leather seats are one-third the cost of the king cab upgrade, running boards are $500 less than the leather seats, and the upgraded exterior light package is $1500.  What is the total cost of Bill's new truck, in dollars?","Explanation: First find the cost of the leather seats: $7500 / 3 = $2500
+Then subtract $500 from the price of the leather seats to find the cost of the running boards: $2500 - $500 = $2000
+Then add the price of the base truck, king cab upgrade, leather seats, running boards, and upgraded exterior light package to find the total cost of the truck: $30000 + $7500 + $2500 + $2000 + $1500 = $43500
+Answer: {43500} 
+"
+162,"Steve and Tim decide to see who can get home from school the fastest. Steve lives further away than Tim, so he is allowed to ride his bike. Tim lives 2 miles away from the school. Steve lives 3 miles from the school and can bike at 440 feet per minute. If Tim can ride his skateboard at 264 feet per minute, how long will the winner be waiting at their house before the loser finishes the race?","Explanation: First figure out how long it will take Steve to bike home: he needs to travel 3 miles, which is 3*5280=15840 feet.  At a speed of 440 feet per minute, this will take him 15840/440=36 minutes.  Then figure out how long it takes Tim to get home: he needs to travel 2 miles, which is 2*5280=10560 feet.  At a speed of 264 feet per minute, this will take him 10560/264=40 minutes.  Therefore, Steve will get home first, and Tim will arrive 40-36=4 minutes later.
+Answer: {4}"
+163,It takes Julia sixteen seconds to row twenty feet. Julia's boat sprang a leak while she was out on the lake. The boat was taking on two liters of water for every ten feet she rowed back towards shore. The shore was 64 seconds away. How much water had the boat taken on by the time Julia reached shore?,"Explanation: First find how many feet Julia needs to row by multiplying the time to row across the lake by her rowing speed: 64 seconds * (20 feet / 16 seconds) = 80 feet.
+Then divide the total distance by the distance per water intake to find how many times water entered the boat: 80 feet / 10 feet/2 liters = 8 intakes.
+Then multiply the number of intakes by the amount of water per intake to find the total amount of water taken on: 8 intakes * 2 liters/intake = 16 liters.
+Answer: {16}"
+164,"Gissela, Gordy, and Gary are truck drivers.  Gissela has a truck large enough to haul 4,000 pounds of gravel. When Gary brings his truck and joins Gissela and Gordy, the three trucks combined can haul a total of 11,600 pounds of gravel. Gordy's truck can haul 800 pounds more than Gissela's truck.  How many pounds of gravel can Gary's truck carry?","Explanation:
+1. **Find Gordy's capacity:** Gordy's truck can haul 800 pounds more than Gissela's 4,000 pounds, so Gordy can haul 4,000 + 800 = 4,800 pounds.
+
+2. **Find the combined capacity of Gissela and Gordy:** Together, they can haul 4,000 + 4,800 = 8,800 pounds.
+
+3. **Find Gary's capacity:** Since the three trucks combined can haul 11,600 pounds, and Gissela and Gordy together haul 8,800 pounds, Gary's truck can haul 11,600 - 8,800 = 2,800 pounds.
+
+Answer: {2,800} 
+"
+165,"A pirate crew is digging for buried treasure on the island marked X on a map. The island had four times as many holes at the end of the fourth day as it did at the end of the first day. They dug ten holes the first day, thirteen holes the second day, and eight holes the third day. On the fourth day of digging, they unearthed a treasure chest full of gold, jewels, and an aged hat. They stopped digging early on the third day to fill in two holes the pirates kept falling in. How many holes did the pirates dig on the fourth day before finding the treasure?","Explanation:
+At the end of the first day, there were 10 holes.
+The island had 4 * 10 = 40 holes at the end of the fourth day.
+From the first to the third day, they dug 10 + 13 + 8 = 31 holes.
+They filled in 2 of the holes so at the end of the third day, there were 31 - 2 = 29 holes.
+That means they dug 40 - 29 = 11 holes on the fourth day. 
+Answer: {11} 
+"
+166,"Mr. Robles' first monkey eats 10 bananas each day. Mr. Robles buys 315 bananas, which is enough to feed his three monkeys for a week. The second monkey eats 4 more bananas than the first monkey and the third monkey eats the rest of the bananas for the day.  How many bananas does the third monkey eat each day?","Explanation:
+The first monkey eats 10 bananas a day so in a week (7 days), it eats 10*7= 70 bananas.
+That leaves 315 - 70 = 245 bananas for the second and third monkey.
+The second monkey eats 4 more bananas than the first monkey which is 10 + 4 = 14 bananas.
+That means the second monkey eats 14*7 = 98 bananas in a week
+So the third monkey eats 245 - 98 = 147 bananas in a week.
+Therefore, the third monkey eats 147/7 = 21 bananas a day.
+Answer: {21}"
+167,"Sean is practicing for his role in a theater production. He has to memorize his lines for two scenes and the lyrics to one solo song. His solo song has 54 lines in the lyrics. The second scene has six more lines than the song, and four-fifths of them are his. The first scene has twice the number of lines compared to the song, but only a third of them are his lines. How many lines does Sean have to memorize?","Here's how we can break down the problem to find the solution:
+
+* **Second scene lines:** The second scene has 54 + 6 = 60 lines.
+* **Sean's lines in the second scene:** Sean has to memorize (4/5) * 60 = 48 lines in the second scene.
+* **First scene lines:** The first scene has 2 * 54 = 108 lines.
+* **Sean's lines in the first scene:** Sean has to memorize (1/3) * 108 = 36 lines in the first scene.
+* **Total lines for Sean:**  Sean has to memorize a total of 54 + 48 + 36 = 138 lines.
+
+Answer: {138} 
+"
+168,"Russell works at a pet store and is distributing straw among the rodents. There are 10 cages of hamsters that are kept alone and each hamster is given 5 pieces of straw. The rats are kept in 3 cages in equal groups and each rat is given 6 pieces of straw. There is also a pen of rabbits where 20 pieces of straw are distributed among the rabbits. No straw is used anywhere else in the store. If 160 pieces of straw have been distributed among the small rodents, how many rats are in each cage?","Explanation:
+The hamsters use a total of 10 cages * 5 pieces/cage = 50 pieces of straw.
+This leaves 160 pieces total - 50 for hamsters - 20 for rabbits = 90 pieces of straw for the rats.
+This means there are 90 pieces / 6 pieces/rat = 15 rats in total.
+Therefore, each cage has 15 rats / 3 cages = 5 rats.
+Answer: {5} 
+"
+169,"Grandpa loves to eat jelly beans, but how many jelly beans he can eat depends on the size of the beans.  It takes 75 large jelly beans to fill Grandpa up.  And eating 3 small beans is the same as eating 1 medium-sized bean. He can eat twice as many medium-sized beans as large beans.  How many small beans can Grandpa eat?","Explanation:
+Since Grandpa can eat twice as many medium-sized beans as large beans, he can eat 75 large beans * 2 = 150 medium-sized beans.
+Because eating 3 small beans is the same as eating 1 medium-sized bean, Grandpa can eat 150 medium-sized beans * 3 = 450 small beans.
+Answer: {450} 
+"
+170,"Erika is saving for a new laptop. Her mom agrees to give her $80 to help her. The sales assistant told Erika that if she traded in her old laptop, the price of the new one would be reduced by $200. She thinks this is a good deal and agrees to do it. She already has some savings in her purse, and has also been paid $150 this week for her part-time job. The laptop Erika wants costs $600. If Erika now only needs an extra $50 to buy the laptop, how much money does she have in her purse?","Explanation:
+After trading in her old laptop, the price of the new one is $600 - $200 = $400.
+The total amount of money Erika has from her mom, her job and the extra money she needs is $80 + $150 + $50 = $280.
+This means the amount of money in her purse is $400 - $280 = $120
+Answer: {120} 
+"
+171,Rani is obsessed with sports cars. She wonders what the faster car ever made can go so she looks it up. The average car can go 120 Miles per hour. What she finds out is that the fastest car was 1.25 times faster than the 2nd fastest car. The 2nd fastest car was 5 times faster than the average car. How fast does the faster car go?,"Explanation:
+First find how many MPH the 2nd fastest car goes: 120 MPH * 5 = 600 MPH
+Then multiply that speed by 1.25 to find the fastest car's speed: 600 MPH * 1.25 = 750 MPH
+Answer: {750} 
+"
+172,"James gets a job selling used cars. He gets a 10% commission on the profits. He sold 10 cars that cost $25,000 each. The company paid 30% of the price to acquire the cars. How much did he make?","Explanation:
+First find the total cost of the cars: $25,000/car * 10 cars = $250,000
+Then find how much the company paid to acquire the cars: $250,000 * .3 = $75,000
+Then subtract the cost to acquire the cars from the total price to find the profit: $250,000 - $75,000 = $175,000
+Then multiply that number by his commission rate to find how much he made: $175,000 * .1 = $17,500
+Answer: {17,500} 
+"
+173,"Finley took part in a 100-meter race. At the end, she jumped ahead 1 spot to finish the race.   She started off in first, but then fell back 5 spots.  She then moved ahead 2 spots, before falling behind 3.  What place did she finish in?","Explanation: Finley starts in first, and then falls back 5 places, putting her in 1+5= 6th place.
+She then moves up 2 spots, so she is now in 6-2= 4th place.
+Then, Finley falls back 3 spots, putting her in 4+3= 7th place
+If she jumps ahead 1 spot at the end, this means she finishes in 7-1 = 6th place
+Answer: {6} 
+"
+174,Jello is currently on sale for $1.25.  A three-ounce box of flavored jello makes 10 small jello cups.  Greg wants to make small jello cups for his son's outdoor birthday party. There will be 30 kids and he wants to have enough so that each kid can have 4 jello cups. How much will he spend on jello?,"Explanation: Greg needs enough jello for 30 kids * 4 cups/kid = 120 cups of jello.
+Each box makes 10 cups so he'll need 120 cups / 10 cups/box = 12 boxes of jello.
+Since each box costs $1.25, he will spend $1.25/box * 12 boxes = $15 on jello.
+Answer: {15}"
+175,There are 364 yards in a skein of yarn. Mariah's grandma used 1/2 of a skein of yarn.  Mariah's grandma was teaching Mariah to knit. Mariah used 1/4 of a skein of yarn.  How many yards of yarn did they use altogether?,"Explanation:
+First find how many yards of yarn Mariah's grandma used: 364 yards / 2 = 182 yards.
+Then find how many yards of yarn Mariah used: 364 yards / 4 = 91 yards.
+Then add those two amounts to find the total amount of yarn they used: 182 yards + 91 yards = 273 yards
+Answer: {273}"
+176,"Amalia, Megan, and Dior divided the home chores so that each person had something to do while the others were working. Dior's work was to do laundry and she took well over 4 hours longer than the time Amalia took to mow the lawn. Megan had to walk the dog and this took her 2 hours longer than Amalia to complete her chore.  Amalia's work was to mow the lawn, which took her 4 hours. Calculate the total time they all took to do their chores altogether.","Explanation: Amalia took 4 hours to mow the lawn. Dior took 4 + 4 = 8 hours to do the laundry. Megan took 4 + 2 = 6 hours to walk the dog. They spent a total of 8 + 6 + 4 = 18 hours to complete all the chores.
+Answer: {18}"
+177,"A shop sells school supplies. Daniel is an engineering student, and he wants to buy five notebooks, two pens, one calculator, and one geometry set. The shop gives a 10% discount on all the purchased items. One notebook is sold at $1.50 each, a pen at $0.25 each, a calculator at $12 each, and a geometry set at $10.  How much does Daniel have to spend on all the items he wants to buy?","Explanation: Daniel wants to buy 5 notebooks at $1.50 each, so that's 5 * $1.50 = $7.50 for the notebooks.
+He wants 2 pens at $0.25 each, which is 2 * $0.25 = $0.50 for the pens.
+So far, his total cost is $7.50 + $0.50 + $12.00 + $10.00 = $30.00.
+He gets a 10% discount, which is $30.00 * .10 = $3.00 off.
+Therefore, his final cost is $30.00 - $3.00 = $27.00
+Answer: {27} 
+"
+178,"Annabelle's first job, where she earns $10 per hour, pays her for 20 hours of work. She already has $80 in her savings. She is saving for a phone that costs $400. She is also paid for 15 hours of work at her second job, where she earns $5 an hour. In dollars, how much money does Annabelle still need to save?","Explanation:
+First find Annabelle's earnings from her first job: $10/hour * 20 hours = $200.
+Then find her earnings from her second job: $5/hour * 15 hours = $75.
+Then add those two amounts to her savings to find her total money: $200 + $75 + $80 = $355.
+Then subtract the amount she has from the cost of the phone to find how much she still needs: $400 - $355 = $45.
+Answer: {45}"
+179,"Lucy sells apples from her orchard at $4 per piece. On Monday, she sold all the apples picked. Come Wednesday, Lucy picked double the number of apples she did the previous day. On Tuesday, she picked 12 apples. If Lucy got $56 from selling the apples picked on Monday, how many apples did she pick over the three days?","Explanation: Lucy earned $56 on Monday, and she sells each apple for $4, so she sold $56/$4 = 14 apples on Monday.
+On Wednesday, Lucy picked double the number of apples she picked on Monday, so she picked 14*2 = 28 apples on Wednesday.
+Over the three days, Lucy picked a total of 14 + 12 + 28 = 54 apples.
+Answer: {54} 
+"
+180,"Harry is 5 kg less than Christian's weight. Carl's weight is 16 kg more than Martin's weight. Christian's weight is 8 kg more than Carl's weight. Martin's weight is 55 kg. What is the weight of Harry, in kg?","Explanation:
+1. **Carl's weight:** Carl's weight is 16 kg more than Martin's weight, who weighs 55 kg. So, Carl weighs 16 kg + 55 kg = 71 kg.
+
+2. **Christian's weight:** Christian weighs 8 kg more than Carl, who weighs 71 kg. So, Christian weighs 8 kg + 71 kg = 79 kg.
+
+3. **Harry's weight:** Harry is 5 kg less than Christian, who weighs 79 kg. Therefore, Harry weighs 79 kg - 5 kg = 74 kg. 
+Answer: {74}"
+181,"Jane planted a beanstalk in her backyard. It doubled in height the second week. It grew another 4 inches in the third week. After the first week, it was 3 inches tall. How tall was the beanstalk after 3 weeks?","Explanation:
+After the second week, the beanstalk was 3 inches * 2 = 6 inches tall.
+Therefore, it was 6 inches + 4 inches = 10 inches tall after the third week.
+Answer: {10} 
+"
+182,"Mary is an avid gardener. Yesterday, she received 18 new potted plants from her favorite plant nursery. Feeling generous, she has decided that she will give 1 potted plant from each ledge to friends and family tomorrow. She already has 2 potted plants on each of the 40 window ledges of her large country home. How many potted plants will Mary remain with?","Explanation: Mary starts with 2 potted plants per ledge * 40 ledges = 80 potted plants.
+After receiving the new plants, she has 80 + 18 = 98 plants.
+She gives away 1 plant per ledge * 40 ledges = 40 plants.
+She is left with 98 - 40 = 58 plants.
+Answer: {58} 
+"
+183,"There are 100 plants in Mrs. Smith's garden. Among those that are not indoor plants, two-thirds of them are outdoor plants while the rest are flowering plants. One-fourth of her plants are indoor plants. What percent of the plants are flowering plants?","Explanation: There are 1/4 * 100 plants = 25 indoor plants.
+This means 100 plants - 25 plants = 75 plants are either outdoor or flowering plants.
+Of these, 2/3 * 75 plants = 50 plants are outdoor plants.
+This leaves 75 plants - 50 plants = 25 plants as flowering plants.
+So the percentage of flowering plants is 25 plants / 100 plants * 100% = 25%
+Answer: {25} 
+"
+184,"Angela has 6 mirrors and 2 chandeliers and 20 pictures that she needs installed/hung. An interior design firm offers installation for $129.00.  It includes hanging 4 mirrors, 2 shelves, 1 chandelier, and 10 pictures.  They will install additional items for an extra $15.00 per item.   How much will this cost her?","Angela needs 6-4=2 more mirror installations than what is offered. 
+She also needs 2-1=1 more chandelier installation than offered. 
+She also needs 20-10=10 more picture installations than offered. 
+That means she needs 2+1+10=13 additional installations.
+Therefore, it will cost her 13*$15+$129 = $324.
+Answer: {324}"
+185,"Tom has 4 bedrooms in his house.  The living room is 5 times bigger than one bedroom. The rest of the house is 1000 square feet.  The bedrooms measure 20 by 12 feet each. What is the total area, in square feet, of the house?","Explanation:
+Each bedroom is 20*12=240 square feet.
+The bedrooms take up a total of 240*4=960 square feet.
+So the living room is 240*5=1200 square feet.
+That means the total area of the house is 960+1200+1000=3160 square feet.
+Answer: {3160}"
+186,Tim decides to light off some fireworks for the fourth of July.  He buys a package of fireworks worth $400 and another pack worth twice that much.  He gets a 20% discount on them.  He also buys a finale firework that costs $150.  How much did he spend in total?,"Explanation: The pack of fireworks that cost twice as much as the $400 pack cost 2*400=$800
+So, before the discount, his fireworks cost him 400+800=$1200
+A 20% discount on that amount is .20*1200=$240
+That means his discount saved him $240, making his fireworks cost 1200-240=$960
+Adding the finale firework, the total cost for Tim's fireworks was 960+150=$1110
+Answer: {1110}"
+187,John is a dean of a public school. John has two classes in his school. Each class has 1/8 the capacity of Ali's class. Ali is a dean of a private school where he teaches one class.  Ali's class has the capacity of 120 students. What is the combined capacity of both schools?,"Explanation:
+Ali's class has a capacity of 120 students. One of John's classes has a capacity of 120 / 8 = 15 students.
+Since John has two classes with this capacity, the total capacity of his school is 15 x 2 = 30 students.
+The combined capacity of both schools is 120 + 30 = 150 students.
+Answer: {150} 
+"
+188,"Suzie loves to chew fruit-flavored gum. She bought four packs of gum the last time she was at the store.  She paid $7 in all. She got two packs of her favorite flavor, strawberry. She paid $2 for a pack of grape gum that she also liked. She wanted to try something new, so she paid half as much for a small pack of green apple gum. How many dollars did each pack of strawberry gum cost?","Explanation:
+1. **Find the cost of the green apple gum:** Suzie paid half the price of the grape gum for the green apple gum, so it cost $2 / 2 = $1.
+2. **Find the total cost of the grape and green apple gum:** The grape and green apple gum cost $2 + $1 = $3 together.
+3. **Find the total cost of the strawberry gum:** Suzie spent $7 total and $3 on the other gum, so the strawberry gum cost $7 - $3 = $4.
+4. **Find the cost of each pack of strawberry gum:** Since she bought two packs of strawberry gum, each pack cost $4 / 2 = $2. 
+
+Answer: {2} 
+"
+189,"Mark decides to buy packs of old magic cards and open them to sell.  He gets 1 card that is worth $4000 and another card worth $1000.  There are 30 more cards worth an average of $50 each.  In total, he bought 3 packs for $1800 each. How much money profit did he make?","Explanation: First find the total value of the 30 cards: 30 cards * $50/card = $1500.
+Then add that amount to the value of his other two cards to find his total income: $1500 + $4000 + $1000 = $6500
+Then multiply the price per pack by the number of packs to find his total expenses: $1800/pack * 3 packs = $5400
+Then subtract his expenses from his income to find his total profit: $6500 - $5400 = $1100
+Answer: {1100} 
+"
+190,"Elaine initially had 20 Pokemon cards. After a month, she collected three times that number. In the third month, she collected twice the combined number of pokemon cards she collected in the first and second months. In the second month, she collected 20 fewer cards than those she collected in the first month. How many pokemon cards does she have now in total?","Explanation: 
+Let's break down Elaine's Pokemon card collection month by month:
+
+* **Month 1:** Elaine starts with 20 cards.
+* **Month 2:** She collects 3 times the initial amount, meaning she collects 20 cards * 3 = 60 cards. However, she also collected 20 fewer cards than the first month, making it 60 cards - 20 cards = 40 cards collected in the second month. 
+* **Month 3:** She collects twice the combined amount from the first two months. Combined, she had 20 cards + 40 cards = 60 cards.  Twice this amount is 60 cards * 2 = 120 cards in the third month.
+* **Total:**  Over the three months, Elaine collected 20 cards + 40 cards + 120 cards = 180 cards.
+
+Answer: {180} 
+"
+191,"Paul is at a train station and is waiting for his train. He isn't sure how long he needs to wait, but he knows that the fourth train scheduled to arrive at the station is the one he needs to get on. The first train is scheduled to arrive in 10 minutes, and this train will stay in the station for 20 minutes. The second train is to arrive half an hour after the first train leaves the station, and this second train will stay in the station for a quarter of the amount of time that the first train stayed in the station.  The fourth train will arrive 20 minutes after the third train leaves, and this is the train Paul will board. The third train is to arrive an hour after the second train leaves the station, and this third train is to leave the station immediately after it arrives.  In total, how long, in minutes, will Paul wait for his train?","Explanation:
+First find the total time the first train is at the station: 10 minutes (arrival) + 20 minutes (stay) = 30 minutes
+Then find how long the second train is at the station: 20 minutes / 4 = 5 minutes
+Then determine when the second train arrives: 30 minutes (first train) + 30 minutes (half hour) = 60 minutes
+Then determine when the second train leaves: 60 minutes (second train arrival) + 5 minutes (second train stay) = 65 minutes
+Then determine when the third train arrives: 65 minutes (second train leaves) + 60 minutes (one hour) = 125 minutes
+Then determine when the fourth train arrives: 125 minutes (third train arrival) + 20 minutes = 145 minutes
+Then subtract the time the first train arrived from when the fourth train arrives to find Paul's total wait time: 145 minutes - 10 minutes = 135 minutes.
+Answer: {135}"
+192,A bumper car rink has 12 red cars. They have 2 fewer green cars than they have red cars. The rink also has yellow cars. They have 3 times the number of blue cars as they have green cars.  If the rink has 75 cars in total how many yellow cars do they have?,"Explanation: First find the number of green cars: 12 red cars - 2 cars = 10 green cars
+Then multiply that number by 3 to find the number of blue cars: 10 green cars * 3 = 30 blue cars
+Then add the number of red, green, and blue cars: 12 cars + 10 cars + 30 cars = 52 cars
+Then subtract that number from the total number of cars to find the number of yellow cars: 75 total cars - 52 cars = 23 yellow cars
+Answer: {23} 
+"
+193,"Carol and Jennifer are sisters from Los Angeles who love collecting signatures from celebrities. During their summer break from school, the sisters spend every afternoon collecting signatures. After five weeks, Carol and Jennifer compare their autograph books, counting up the number of signatures each sister has collected. The sisters have three more weeks of summer vacation, and they decide they want to reach 100 signatures between them by the end of the summer. Carol has 20 signatures in her book, and Jennifer has 44. How many signatures do the sisters need to collect to reach their goal?","Explanation:
+1. **Find the total signatures they have now:** 20 signatures (Carol) + 44 signatures (Jennifer) = 64 signatures
+2. **Calculate how many more signatures they need:** 100 signature goal - 64 signatures they have = 36 signatures 
+
+Answer: {36} 
+"
+194,"Rita hand-picks Junebugs off of her plants every summer. On both Tuesday and Wednesday, she removed twice as many Junebugs as she did on Monday. On Monday, she removed 39 Junebugs. Thursday she removed 48 and on Friday she removed 57.  What is the average number of Junebugs that she removes per day?","Explanation: On Tuesday and Wednesday, Rita removed 2 * 39 = 78 Junebugs each day.
+That means over the 5 days, she removed 39 + 78 + 78 + 48 + 57 = 300 Junebugs.
+So, she removed an average of 300 / 5 = 60 Junebugs each day.
+Answer: {60}"
+195,Larry loves taking care of animals.  He has 3 cats.  He has 3 times as many dogs as cats.  He has 2 fewer rabbits than dogs.  He also has a collection of gerbils that's 1/3 the number of fish he has.  He has a fish tank with three times the number of fish as rabbits.  How many pets does Larry have?,"Here's how we can solve this problem step-by-step:
+
+* **Dogs:** Larry has 3 cats * 3 = 9 dogs.
+* **Rabbits:** He has 9 dogs - 2 = 7 rabbits.
+* **Fish:** Larry has 7 rabbits * 3 = 21 fish.
+* **Gerbils:** He has 21 fish / 3 = 7 gerbils.
+* **Total:** Larry has 3 cats + 9 dogs + 7 rabbits + 21 fish + 7 gerbils = 47 pets.
+
+Answer: {47} 
+"
+196,"Melanie's mom puts toothpicks in her sandwiches when she serves them for lunch. Melanie started saving them and has saved 10 toothpicks each week for the past 12 weeks. Melanie found a blueprint online for a toothpick sculpture she wanted to make. It requires 200 toothpicks. If she continues saving toothpicks at the same rate, how many more weeks will it take her to collect 200 toothpicks?","Melanie has already saved 12 weeks * 10 toothpicks/week = 120 toothpicks.
+So she still needs 200 toothpicks - 120 toothpicks = 80 toothpicks.
+Therefore, it will take her another 80 toothpicks / 10 toothpicks/week = 8 weeks.
+Answer: {8} 
+"
+197,"Jake is shopping at a clothing store. Jake buys 2 T-shirts. The store has a buy one get one 50% off deal on T-shirts. Then, Jake buys a pair of shoes that is 40% off the original price.  The original price of each T-shirt is $8. The original price of the shoes is $40. What is the total amount of money Jake spends at the store?","Explanation: 
+First find the price of the second T-shirt: $8 * .50 = $4.
+Then add that price to the price of the first shirt to find the total price of the T-shirts: $4 + $8 = $12.
+Then multiply the original price of the shoes by the discount percentage to find how much money Jake saved on the shoes: $40 * .40 = $16.
+Then subtract the amount of money Jake saved on the shoes from the original price of the shoes to find how much he spent on the shoes: $40 - $16 = $24.
+Then add the price of the two T-shirts to the price of the shoes to find the total amount of money Jake spent: $24 + $12 = $36.
+Answer: {36}"
+198,"Oscar has 24 lollipops and eats 2 on his way to school.  On his way home, he buys twice as many lollipops as he gave to his friends at school. At school, he passed out 14 to his friends. He eats 3 more that night and 2 more in the morning.   How many lollipops does Oscar have?","Explanation: Oscar has 24 lollipops - 2 lollipops = 22 lollipops after eating two on his way to school.
+He has 22 lollipops - 14 lollipops = 8 lollipops left after giving some to his friends.
+He buys 14 lollipops * 2 = 28 lollipops on his way home from school.
+This means he has 28 lollipops + 8 lollipops = 36 lollipops after buying more.
+He eats 3 lollipops, leaving him with 36 lollipops - 3 lollipops = 33 lollipops.
+After eating more in the morning, he has 33 lollipops - 2 lollipops = 31 lollipops left.
+Answer: {31} 
+"
+199,"100 people apply for a job at Google.  Of the people that apply, only 30% receive interviews. Of the people who receive a job offer, a third of the people accept the position. Of the people who receive interviews, 20% receive a job offer. How many people accept the position?","Explanation:
+First find the number of people that received interviews: 100 people * .30 = 30 people
+Then find the number of people that received job offers: 30 people * .20 = 6 people
+Then find the number of people that accepted positions: 6 people * (1/3) = 2 people
+Answer: {2} 
+"
+200,"Mr. Rogers sold a watch to his friend at 120% of the price that he bought it.  The watch was originally $2000, but was put on sale so that Mr. Rogers bought it at 75% of its original price. What is the percentage discount obtained by Mr. Roger's friend from the original price?","Explanation: Here's how to solve the problem step-by-step:
+
+1. **Calculate the sale price:** Mr. Rogers bought the watch for 75/100 * $2000 = $1500.
+
+2. **Calculate the price at which Mr. Rogers sold the watch:** He sold it for 120/100 * $1500 = $1800.
+
+3. **Calculate the discount Mr. Rogers' friend received:** The discount is $2000 - $1800 = $200.
+
+4. **Calculate the percentage discount:** The percentage discount is ($200/$2000) * 100% = 10%.
+
+Answer: {10} 
+"
+201,"James loves to go swimming and has to swim across a 20-mile lake.  He swims 60% of the distance. He can swim at a pace of 2 miles per hour. After that, he stops on an island and rests for half as long as the swimming time.  He then finishes the remaining distance while going half the speed. How long did it take him to get across the lake?","Explanation:
+First find the distance James swims: 20 miles * .60 = 12 miles
+Then calculate how long it took him to swim that distance: 12 miles / 2 mph = 6 hours
+Then divide that time in half to find his resting time: 6 hours / 2 = 3 hours
+Then find the remaining distance: 20 miles - 12 miles = 8 miles
+Then divide his speed in half to find his slower speed: 2 mph / 2 = 1 mph
+Then calculate how long it took him to swim the rest of the way: 8 miles / 1 mph = 8 hours
+Then add all the times together to find the total time: 6 hours + 3 hours + 8 hours = 17 hours
+Answer: {17} 
+"
+202,"Sally went to the seashore for vacation.  At the trinket shop, taffy was on sale for \""Buy 1 pound at $3, get 1 pound 1/2 off.\""  She scooped up 2 pounds.  She also bought a mixed bag of seashells for $1.50 and 4 magnets that were $0.25 each.  Her parents gave her $10 to buy whatever she wanted.  How much money does Sally have left?","Explanation: The taffy costs 2 / 1.5 = 1.33 sets of 1.5 pounds. Since she can only buy the taffy in sets of 1.5 pounds, we round 1.33 up to 2. This means she bought 2 sets of taffy * 1.5 pounds per set = 3 pounds of taffy. Since taffy costs $3 per pound, she spent 3 * $3 = $9 on taffy. The 4 magnets cost 4 * $0.25 = $1. So, in total, she spent $9 + $1.50 + $1 = $11.50. Thus, she has $10 - $11.50 = -$1.50 left. 
+Answer: {-1.5}"
+203,"Mark is trying to choose between two venues for a surprise party for his wife.  The first venue charges a flat fee of $200, regardless of how many guests attend.  At the second venue, food for each guest is already included in the price. The second venue charges $25 per person who attends.  However, the first venue does not include food, which Mark estimates will cost $5 for each person who attends.  How many guests are necessary for the two venues to be equal in cost?","Explanation:
+Let 'x' be the number of guests.
+The cost of the first venue is $200 + $5x (flat fee + food cost per person).
+The cost of the second venue is $25x (cost per person).
+We need to find x when the costs are equal: $200 + $5x = $25x
+Solving for x:
+$200 = $20x
+x = 10 guests
+
+Answer: {10} 
+"
+204,"A farmer is baling hay in their field. At the same time, a truck is picking the hay bales up. Each hour the truck picks up 3 bales of hay. Each hour the farmer makes 5 bales. If the farmer and the truck driver put in a 6 hour day, how many bales of hay are left in the field?","Explanation:
+The farmer makes 5 bales of hay per hour and works for 6 hours so he makes 5*6 = 30 bales of hay.
+The truck picks up 3 bales of hay per hour and works for 6 hours so it picks up 3*6 = 18 bales of hay.
+That means there are 30 - 18 = 12 bales of hay left in the field.
+Answer: {12} 
+"
+206,"The Science Center hosted field trips Monday through Friday last week. 30 classes visited on Thursday and 25 visited on Friday. Twice as many visited on Tuesday and three times as many visited on Wednesday compared to Monday. On Monday, 32 classes visited. In all, how many classes visited the Science Center last week?","Explanation:
+Let's figure out how many classes visited each day:
+
+* **Tuesday:** Twice the number of classes visited on Monday compared to Tuesday, so 32 classes * 2 = 64 classes visited on Tuesday.
+* **Wednesday:** Three times the number of classes visited on Monday compared to Wednesday, so 32 classes * 3 = 96 classes visited on Wednesday.
+
+Now let's add up the classes from each day to find the total:
+
+* **Total classes:** 32 (Monday) + 64 (Tuesday) + 96 (Wednesday) + 30 (Thursday) + 25 (Friday) = 247 classes 
+
+Answer: {247} 
+"
+207,"Rory is retrieving tennis balls from the court after a tennis match. In the third set, he retrieved half as many balls as in the second. He retrieved 19 tennis balls in all. In the first of three sets, he had to retrieve four more balls than in the second set. How many tennis balls did he retrieve in the first set of the match?","Explanation:
+Let's break this problem down step by step:
+
+* **Let 'x' be the number of balls Rory retrieved in the second set.**
+
+* **Third set:** He retrieved half as many balls in the third set as the second set, which is x/2.
+
+* **First set:** He retrieved four more balls in the first set than the second set, which is x + 4.
+
+* **Total:** We know he retrieved 19 balls in total:  (x + 4) + x + (x/2) = 19
+
+Now we can solve for x:
+
+* Combine like terms: 2.5x + 4 = 19
+
+* Subtract 4 from both sides: 2.5x = 15
+
+* Divide both sides by 2.5: x = 6 
+
+* Now that we know x (balls retrieved in the second set), we can find the number of balls retrieved in the first set: x + 4 = 6 + 4 = 10
+
+Answer: {10} 
+"
+208,"Greta wanted brownies for her birthday.  She made a batch for herself; one dozen cream cheese swirl brownies.  When she arrived home, her friends were there to throw her a surprise party and had 4 dozen brownies waiting.  During the party, 1 1/2 dozen brownies were eaten.  Earlier, at her office, they threw her a party and sent her home with 1/2 a dozen brownies.  How many individual brownies did Greta have left over from the entire day?","Explanation:
+First find the total number of brownies Greta's friends brought to her party: 4 dozen * 12 brownies/dozen = 48 brownies
+Then add the brownies Greta baked to find the total number of brownies at her party: 48 brownies + 12 brownies = 60 brownies
+Then find how many brownies were eaten at the office party: 12 brownies / 2 = 6 brownies
+Then add that number to the number eaten at Greta's party to find the total number eaten: 6 brownies + 18 brownies = 24 brownies
+Then subtract the number of brownies eaten from the total number of brownies to find how many were left after her party: 60 brownies - 24 brownies = 36 brownies
+Then add the brownies from the office party to find the total number of brownies Greta had left: 36 brownies + 6 brownies = 42 brownies
+Answer: {42}"
+209,Jeans makeup artist charges her $250 an hour.  She requires very expensive makeup for a movie she is in and it takes 6 hours to do each day and she needs it done 4 times a week.  After the movie is done the makeup artist gives Jean a 10% discount because of the amount of work done.  The movie took 5 weeks to finish.  How much did Jean pay?,"Explanation: The makeup artist charges $250 an hour and it takes her 6 hours. That means each day costs 250*6 = $1500.
+The movie needs makeup done 4 times a week so that's 1500*4 = $6000
+The movie takes 5 weeks and Jean needs makeup done 4 times a week so that's 5*6000 = $30000 total.
+The makeup artist gave Jean a 10% discount so that's .10 * 30000 = $3000 off.
+That means Jean paid 30000-3000 = $27000.
+Answer: {27000} 
+"
+210,"Sam sells bread. He has a target of selling 120 crates of bread in a week. One week he was closed on Monday and Friday.  On Tuesday he sold 15 crates, on Wednesday 12 crates, and Thursday 18 crates. Over the weekend he sold 20 crates. By how many crates was Sam off from his target for the week?","Explanation: 
+He sold 15+12+18+20 = 65 crates during the week.
+He was off from his target by 120-65 = 55 crates.
+Answer: {55}"
+211,"For his 30th birthday, Elvira chose a new computer with many accessories as a gift. She goes to a computer store and chooses a machine that costs \u20ac1090 with a screen, keyboard and mouse. She also takes a scanner for \u20ac157, a CD burner worth \u20ac74 and a printer for \u20ac102. She has a budget of \u20ac1500 donated by her whole family and thinks that she will be able to keep a little money to afford a garment. How much money will she have left for her clothing?","Explanation:
+First, we need to calculate the total cost of the accessories: €157 + €74 + €102 = €333
+Then we add this amount to the price of the computer to get the total cost of her purchase: €333 + €1090 = €1423
+Finally, we subtract the total cost from her budget to find out how much money she has left: €1500 - €1423 = €77
+Answer: {€77} 
+"
+212,"Maria invited 4 of her friends over for a water balloon fight in the backyard. At the start of the game, Maria had one water balloon for herself. Then her mom came out and gave each person 3 more balloons.  At the start of the game, Maria gave each of her friends 2 water balloons. How many total balloons did the girls have in the end?","Explanation: At the start, they had 1 + 4*0 = 1 balloon.
+Her mom gave them 5*3 = 15 more balloons.
+Maria then gave out 4*2 = 8 balloons.
+So in total, they had 1 + 15 - 8 = 8 balloons left.
+Answer: {8}"
+213,"Cedar Falls Middle School has students in grades 4 \u2013 7 and each year they are challenged to earn as many Accelerated Reader points as they can.  Only 8 students can try the escape room at a time. They have 45 minutes to try and escape. The 10 students in each grade with the most points get to try an escape room set up by the teachers. If every group uses their full 45 minutes, how long will it take for everyone to try the escape room?","Explanation: First find the total number of students who get to try the escape room: 10 students/grade * 4 grades = 40 students
+Then divide the total number of students by the number of students who can be in the escape room at once to find how many groups there will be: 40 students / 8 students/group = 5 groups
+Then multiply the number of groups by the length of time each group gets to find the total amount of time it will take for everyone to try the escape room: 5 groups * 45 minutes/group = 225 minutes
+Answer: {225}"
+214," When Billy was first hired, he was paid at a rate of $10 per hour. Sally just started working at a different business, and her starting salary is $0.50 more per hour than Billy's starting salary was.  After 2 months, Billy was given a raise of $0.50 per hour.  On his first anniversary at work, he was given a raise of $1.00 per hour. If both Billy and Sally work 20 hours, how much more money will Billy earn than Sally, in dollars?","Explanation: Billy's wage after his first raise was $10 + $0.50 = $10.50.
+Billy's wage after his second raise was $10.50 + $1.00 = $11.50.
+Sally's wage is $10 + $0.50 = $10.50 per hour.
+Thus, in a 20-hour workweek, Billy makes 20*$11.50 = $230.
+And in that same 20-hour workweek, Sally makes 20*$10.50 = $210.
+Therefore, Billy makes $230 - $210 = $20 more than Sally every 20 hours they both work.
+Answer: {20} 
+"
+215,"Carlos is planting a lemon tree. Each year it will grow 7 lemons, which he can sell for $1.5 each. It costs $3 a year to water and feed the tree. The tree will cost $90 to plant. How many years will it take before he starts earning money on the lemon tree?","Explanation: First find the total earnings from lemons per year: 7 lemons * $1.50/lemon = $10.50.
+Then subtract the cost of water and feed to find the yearly profit: $10.50 - $3.00 = $7.50.
+Then divide the initial cost of the tree by the yearly profit to find how many years it will take to earn back the cost of the tree: $90 / $7.50/year = 12 years.
+Answer: {12} 
+"
+216,Julia and Nadine decided to combine their allowance to surprise their father on his birthday. They bought a cake which costs $11. They also bought 1 dozen balloons which were sold for $0.5 for 2 balloons. The remaining money was used to buy 2 tubs of ice cream for $7 each. The two girls were given the same amount of allowance by their mother. How much did Julia and Nadine's mother give each one of them?,"Explanation: The balloons cost $0.5 x 12 balloons = $6.
+So, the total amount that Julia and Nadine spent is $11 + $6 + $7 x 2 = $31.
+Therefore, Julia and Nadine each received $31/2 = $15.50 from their mother.
+Answer: {15.50} 
+"
+217,"Sara wants to buy herself a new jacket and 2 pairs of shoes. The jacket she wants costs $30 and each pair of shoes cost $20. Her parents pay her $4 each time she mows the lawn. Sara babysits the neighbor's kids 4 times, earning $5 each time she babysits them. If Sara already had $10 saved before she started babysitting, how many times must she mow the lawn before she can afford the jacket and shoes?","Explanation:
+The two pairs of shoes cost 2 * $20 = $40.
+So, the jacket and shoes cost a total of $30 + $40 = $70.
+From babysitting, Sara earns 4 * $5 = $20.
+Therefore, Sara has $10 + $20 = $30 before she starts mowing lawns.
+This means she still needs $70 - $30 = $40.
+So, Sara must mow the lawn $40 / $4 = 10 times.
+Answer: {10}"
+218,"A local town is expanding and wants to build several new homes across the next three years. In the first year, they will build 12 homes. In the third year, they will count how many homes they have built and double the amount. In the second year, they will build three times as many homes as they built in the first year. How many homes will the town have built over the next three years?","Here's how to solve the problem step-by-step:
+
+* **Year 2:** The town builds three times the number of homes in year 1: 12 homes * 3 = 36 homes.
+* **Total after 2 years:** They built 12 homes + 36 homes = 48 homes.
+* **Year 3:** They double the total number of homes built so far: 48 homes * 2 = 96 homes.
+* **Total over 3 years:** They built 48 homes (first two years) + 96 homes (year 3) = 144 homes.
+
+Answer: {144} 
+"
+219,"Aleksandra went to a restaurant for dinner. She ordered some soup, a bagel, and a piece of cake. The cake is only half of the price of the bagel. The bagel cost $4, and the soup 25% more. How much did Aleksandra need to pay for the dinner she ordered?","Explanation:
+Let's calculate the cost of each item:
+* **Cake:** The cake costs half the price of the bagel, so it costs $4 / 2 = $2.
+* **Soup:** The soup costs 25% more than the bagel.  25% of $4 is (25/100)*$4 = $1. So the soup costs $4 + $1 = $5. 
+* **Total cost:** The total cost of the dinner is $2 + $4 + $5 = $11.
+
+Answer: {11} 
+"
+220,"A large t-shirt is 6 square feet of fabric. A small t-shirt is 3 square feet of fabric. Octavia wants to make a quilt for her sister. She is going to build it from small, medium, and large t-shirts that her family is done with. A medium t-shirt is 4 square feet of fabric. If she uses 11 small shirts, 8 medium, and 6 large shirts, how many square feet is the quilt?","Explanation:
+First find the total square footage of the small shirts: 11 shirts * 3 sq ft/shirt = 33 sq ft
+Then find the total square footage of the medium shirts: 8 shirts * 4 sq ft/shirt = 32 sq ft
+Then find the total square footage of the large shirts: 6 shirts * 6 sq ft/shirt = 36 sq ft
+Then add the square footage of the three sizes to find the total area of the quilt: 33 sq ft + 32 sq ft + 36 sq ft = 101 sq ft
+Answer: {101}"
+221,Bethany can run 10 laps on the track in one hour.  Quinn can run 2 fewer laps than Shaelyn.  Shaelyn can run half as many laps as Trey.  Trey can run 4 more laps than Bethany.  How many more laps can Bethany run compared to Quinn?,"Explanation: 
+First find how many laps Trey can run: Trey runs 4 more laps than Bethany, who runs 10, so Trey runs 4+10 = 14 laps.
+Then find how many laps Shaelyn can run: Shaelyn runs half as many laps as Trey, who runs 14 laps, so Shaelyn runs 14/2 = 7 laps.
+Then find how many laps Quinn can run: Quinn runs 2 fewer laps than Shaelyn, who runs 7, so Quinn runs 7-2 = 5 laps.
+Then subtract the number of laps Quinn runs from the number of laps Bethany runs to find the difference: 10-5 = 5 laps.
+Answer: {5}"
+222,Frederick is making popsicles to sell and to save money he is making his own popsicle sticks. A 2 x 4 costs $4. A 2 x 8 costs $6.  He can get 200 sticks from a 2 x 4 piece of wood and 400 sticks from a 2 x 8 piece of wood. He has $24 to buy wood for sticks. What is the most popsicle sticks he can make if he buys the cheapest lumber?,"Explanation: First find the cost per stick for each type of wood: 2x4 = $4 / 200 sticks = $0.02 per stick, 2x8 = $6 / 400 sticks = $0.015 per stick.  The 2x8 lumber is cheaper so he should buy all 2x8s. He can buy $24 / $6 per 2x8 = 4 pieces of lumber. This means he can make 4 pieces of lumber * 400 sticks per lumber = 1600 sticks.
+Answer: {1600}"
+223,"Ellen decided to play a prank on her friend. She got a case of 12 sodas and shook 3 of them up. Ellen's brother stopped by and took 1 of the shaken sodas and 2 of the unshaken sodas, then Ellen's friend came along.  By this point, Ellen had taken 1 unshaken soda for herself and left.  What is the likelihood, expressed as a percentage, that Ellen's friend gets sprayed with soda from a shaken can?","Explanation: Initially, there were 3 shaken sodas out of 12.  Ellen's brother took 1 of the shaken sodas, leaving 3 - 1 = 2 shaken sodas.  The total number of sodas remaining is now 12 - 3 = 9.  Thus, there is a 2/9 probability that Ellen's friend will grab a shaken soda. Converting this to a percentage, we get (2/9) * 100% = 22.22%.
+Answer: {22.22}. 
+"
+224,Zoey and Sydney are having a watermelon seed spitting contest.  They each get one watermelon. Zoey's has 40 seeds and she spits each one 10 feet.  Whoever spits their seeds the most total distance wins. Sydney's has 35 she spits each one 12 feet. What is the average total distance spat?,"Explanation: First find the total distance Zoey spit her seeds: 40 seeds * 10 feet/seed = 400 feet
+Then find the total distance Sydney spit her seeds: 35 seeds * 12 feet/seed = 420 feet
+Then add those two distances together to find the total distance: 400 feet + 420 feet = 820 feet
+Then divide the total distance by 2 to find the average distance: 820 feet / 2 people = 410 feet
+Answer: {410}"
+225,"Donny has two mugs of water. One mug is 33 degrees. The other is an unknown temperature. If he pours 4 ounces of water from the 33-degree mug into his water bottle and one ounce from the other bottle, he is now able to drink the water. Donny can only drink water if it's at least 40 degrees.  At least how many degrees is the second bottle?","Explanation: After pouring 4 ounces of the 33-degree water into the bottle, the remaining ounce must be at least 40 degrees to make the mixture drinkable.  This means that the one ounce of water from the second mug raised the temperature of the 4 ounces from the first mug by at least 7 degrees (40 degrees - 33 degrees = 7 degrees). Since we're only adding 1 ounce compared to the existing 4 ounces, that 1 ounce must have a temperature 4 times greater than the required 7-degree increase. 
+
+Answer: {31} 
+"
+226,Gary bought a boat for $9000.  Over the third year it depreciated 20%.  Over the first year it depreciated 30%.  The second year it depreciated another 30%. How much is the boat worth after the three years?,"Explanation:
+First find the amount of depreciation of the first year: $9000 * .30 = $2700
+Then subtract the depreciation from the first year to find the value after the first year: $9000 - $2700 = $6300
+Then find the amount of depreciation of the second year: $6300 * .30 = $1890
+Then subtract the depreciation to find the value after the second year: $6300 - $1890 = $4410
+Then find the amount of depreciation for the third year: $4410 * .20 = $882
+Then subtract that amount to find the value after three years: $4410 - $882 = $3528
+Answer: {3528} 
+"
+227,"Each student in Marissa's class started the year with 10 pencils. After two months, 1/5 of the total pencils in class were used. At the end of the year, only 1/3 of the remaining pencils were left. There are 30 students in Marissa's class. How many pencils were left?","Explanation:
+1. **Total pencils:** The class started with 30 students * 10 pencils/student = 300 pencils.
+
+2. **Pencils used after two months:** After two months, 300 pencils * (1/5) = 60 pencils were used.
+
+3. **Pencils remaining after two months:** This left 300 pencils - 60 pencils = 240 pencils.
+
+4. **Pencils left at the end of the year:** Of the remaining pencils, only (1/3) were left, meaning 240 pencils * (1/3) = 80 pencils. 
+
+Answer: {80} 
+"
+228,"Kim sleepwalks, to monitor her sleeping hours, she installs a camera in her room. She is a sleepwalker. One day, after reviewing the cameras, she finds that she woke up that day and was sleepwalking from 2:15 to 2:38 am.  Also, that day she woke up 5 minutes earlier than usual to go to the bathroom. She usually goes to sleep at 10 p.m. and wakes up at 6 a.m. How many minutes did she sleep on her bed that day?","Explanation:
+Let's break down the problem step-by-step:
+
+1. **Usual sleep duration:** Kim usually sleeps from 10 p.m. to 6 a.m., a total of 8 hours, which is 8 * 60 = 480 minutes.
+
+2. **Sleepwalking duration:** She sleepwalked for 2:38 a.m. - 2:15 a.m. = 23 minutes.
+
+3. **Earlier wake-up:** She woke up 5 minutes earlier than usual.
+
+4. **Time spent sleeping on the bed:** To find the total time spent sleeping on the bed, we need to adjust her usual sleep duration by subtracting the time she was sleepwalking and the time she woke up earlier. So, the calculation is 480 minutes - 23 minutes - 5 minutes = 452 minutes.
+
+Answer: {452} 
+"
