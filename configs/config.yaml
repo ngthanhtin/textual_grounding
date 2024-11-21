@@ -27,8 +27,15 @@ data_paths:
   coin: "coin/test.json"
   word_sorting: "word_sorting/test.json"
   tracking_shuffled_objects_seven_objects: "tracking_shuffled_objects_seven_objects/test.json"
+  tracking_shuffled_objects_five_objects: "tracking_shuffled_objects_five_objects/test.json"
+  tracking_shuffled_objects_three_objects: "tracking_shuffled_objects_three_objects/test.json"
   gpqa: "gpqa/test.json"
   GSM8K_Hard: "GSM8K_Hard/test.jsonl"
+  temporal_sequences: "temporal_sequences/test.json"
+  web_of_lies: "web_of_lies/test.json"
+  drop_break: "drop_break/test.jsonl"
+  drop_cencus: "drop_cencus/test.jsonl"
+
 
 max_question_lengths:
   GSM8K: 336
@@ -43,7 +50,7 @@ max_question_lengths:
   wikimultihopQA: 104
   commonsenseQA: 167 # 93
   date: 105
-  spartQA: 1015
+  spartQA: 936
   sports: 48
   reclor: 0
   CLUTRR: 612
@@ -58,9 +65,15 @@ max_question_lengths:
   last_letter_4: 0
   coin: 0
   word_sorting: 0
+  tracking_shuffled_objects_three_objects: 0
+  tracking_shuffled_objects_five_objects: 0
   tracking_shuffled_objects_seven_objects: 0
   gpqa: 0
   GSM8K_Hard: 336
+  temporal_sequences: 0
+  web_of_lies: 0
+  drop_break: 0
+  drop_cencus: 0
 
 prompts:
   da:
@@ -92,8 +105,14 @@ prompts:
     coin: "coin/fewshot_da.txt"
     word_sorting: "word_sorting/fewshot_da.txt"
     tracking_shuffled_objects_seven_objects: "tracking_shuffled_objects_seven_objects/fewshot_da.txt"
+    tracking_shuffled_objects_five_objects: "tracking_shuffled_objects_seven_objects/fewshot_da.txt"
+    tracking_shuffled_objects_three_objects: "tracking_shuffled_objects_seven_objects/fewshot_da.txt"
     gpqa: "GSM8K/fewshot_da.txt"
     GSM8K_Hard: "GSM8K_Hard/fewshot_da.txt"
+    temporal_sequences: "temporal_sequences/fewshot_da.txt"
+    web_of_lies: "web_of_lies/fewshot_da.txt"
+    drop_break: "drop_break/fewshot_da.txt"
+    drop_cencus: "drop_cencus/fewshot_da.txt"
 
   cot:
     GSM8K: "GSM8K/fewshot_cot.txt"
@@ -113,10 +132,10 @@ prompts:
     reclor: "reclor/fewshot_cot.txt"
     CLUTRR: "CLUTRR/fewshot_cot.txt"
     object_counting: "object_counting/fewshot_cot.txt"
-    navigate: "navigate/fewshot_cot_1.txt"
+    navigate: "navigate/fewshot_cot.txt"
     causal_judgement: "causal_judgement/fewshot_cot.txt"
-    logical_deduction_three_objects: "logical_deduction_three_objects/fewshot_cot.txt"
-    logical_deduction_five_objects: "logical_deduction_five_objects/fewshot_cot.txt"
+    logical_deduction_three_objects: "logical_deduction_seven_objects/fewshot_cot.txt"
+    logical_deduction_five_objects: "logical_deduction_seven_objects/fewshot_cot.txt"
     logical_deduction_seven_objects: "logical_deduction_seven_objects/fewshot_cot.txt"
     reasoning_about_colored_objects: "reasoning_about_colored_objects/fewshot_cot.txt"
     last_letter_2: "last_letter/fewshot_cot.txt"
@@ -124,8 +143,14 @@ prompts:
     coin: "coin/fewshot_cot.txt"
     word_sorting: "word_sorting/fewshot_cot.txt"
     tracking_shuffled_objects_seven_objects: "tracking_shuffled_objects_seven_objects/fewshot_cot.txt"
+    tracking_shuffled_objects_five_objects: "tracking_shuffled_objects_seven_objects/fewshot_cot.txt"
+    tracking_shuffled_objects_three_objects: "tracking_shuffled_objects_seven_objects/fewshot_cot.txt"
     gpqa: "GSM8K/fewshot_cot.txt"
     GSM8K_Hard: "GSM8K_Hard/fewshot_cot.txt"
+    temporal_sequences: "temporal_sequences/fewshot_cot.txt"
+    web_of_lies: "web_of_lies/fewshot_cot.txt"
+    drop_break: "drop_break/fewshot_cot.txt"
+    drop_cencus: "drop_cencus/fewshot_cot.txt"
   
   grounding_cot:
     GSM8K: "GSM8K/fewshot_design_1_v4.txt"
@@ -156,5 +181,11 @@ prompts:
     coin: "coin/fewshot_design_1_v4.txt"
     word_sorting: "word_sorting/fewshot_design_1_v4.txt"
     tracking_shuffled_objects_seven_objects: "tracking_shuffled_objects_seven_objects/fewshot_design_1_v4.txt"
+    tracking_shuffled_objects_five_objects: "tracking_shuffled_objects_seven_objects/fewshot_design_1_v4.txt"
+    tracking_shuffled_objects_three_objects: "tracking_shuffled_objects_seven_objects/fewshot_design_1_v4.txt"
     gpqa: "GSM8K/fewshot_design_1_v4.txt"
     GSM8K_Hard: "GSM8K_Hard/fewshot_design_1_v4.txt"
+    temporal_sequences: "temporal_sequences/fewshot_design_1_v4.txt"
+    web_of_lies: "web_of_lies/fewshot_design_1_v4.txt"
+    drop_break: "drop_break/fewshot_design_1_v4.txt"
+    drop_cencus: "drop_cencus/fewshot_design_1_v4.txt"
