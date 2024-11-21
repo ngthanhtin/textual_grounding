@@ -66,16 +66,16 @@ def create_prompt(question, dataset, prompt_used, few_shot_prompt, answer_mode):
     
 def batch_query_llm(llm_model, ids, questions, dataset, few_shot_prompt, prompt_used, temperature=1.0, answer_mode='da'):
     prompts = []
-    ids = []
+
     for i, (id, q) in tqdm(enumerate(zip(ids, questions))):
         prompt = create_prompt(q, dataset, prompt_used, few_shot_prompt, answer_mode)
         prompts.append(prompt)
-        ids.append(id)
         
-    batch_output_file = f'batch_request/{dataset}/records.jsonl'
+    batch_output_file = f'batch_request/{dataset}/{answer_mode}/records.jsonl'
     os.makedirs(f'batch_request/{dataset}', exist_ok=True)
     result_file = f'batch_request/{args.dataset}/{answer_mode}/{prompt_used}_{llm_model}.jsonl'
     os.makedirs(f'batch_request/{args.dataset}/{answer_mode}', exist_ok=True)
+    
     
     batch_api_agent(llm_model, ids, prompts, temperature=temperature, batch_output_file=batch_output_file, result_file=result_file)
     
@@ -90,15 +90,22 @@ def query_llm(llm_model, ids, questions, dataset, few_shot_prompt, prompt_used, 
         prompt = create_prompt(q, dataset, prompt_used, few_shot_prompt, answer_mode)
         
         # if i == 1:
-        #     print(last_sentence)
+        #     print('haha')
         #     break
-        
-        response = api_agent(llm_model, prompt, temperature=temperature)
+        # query three times if response is None
+        response = None
+        counter = 0
+        while response is None:
+            if counter == 3 or response is not None:
+                break
+            response = api_agent(llm_model, prompt, temperature=temperature)
+            
         if response is not None:
             answers.append(response)
             questions_can_be_answered.append(q)
             ids_can_be_answered.append(id)
         else:
+            print(f"Failed to generate answer for question {i}")
             continue
     
     return ids_can_be_answered, questions_can_be_answered, answers
@@ -112,6 +119,7 @@ if __name__ == "__main__":
     version = 'v4'
     
     # save path
+    save_result_folder = args.base_result_path
     save_result_folder = 'results_auto_tagging'
     if args.answer_mode in ['da', 'cot']:
         save_path = f'{save_result_folder}/{args.dataset}/{args.answer_mode}/{args.prompt_used}_{args.llm_model}.csv'
@@ -130,9 +138,9 @@ if __name__ == "__main__":
     # data_path & fewshot_prompt_path & max_question_length
     with open('configs/config.yaml', 'r') as f:
         config = yaml.safe_load(f)
-    base_data_path = config["base_data_path"]
+    base_data_path = args.base_data_path
     data_path = os.path.join(base_data_path, config['data_paths'][args.dataset])
-    base_prompt_path = config["base_prompt_path"]
+    base_prompt_path = args.base_prompt_path
     base_prompt_path = 'prompt_auto_tagging/'
     fewshot_prompt_path = os.path.join(base_prompt_path, config['prompts'][args.answer_mode][args.dataset])
     question_length = config['max_question_lengths'][args.dataset]
@@ -190,15 +198,17 @@ if __name__ == "__main__":
         else:
             ids = [x["id"] for x in random_data if len(x["question"]) >= question_length]
     
-    # print(len(questions))
-    # exit()
     # ------------------------------
-    if args.data_mode == 'random' and args.dataset != 'p_GSM8K':
+    remain = False
+    if remain:
         # read infered id
-        if args.dataset in ['commonsenseQA', 'date', 'sports', 'reclor', 'CLUTRR']:
-            infered_data = pd.read_csv(f'{save_result_folder}/{args.dataset}/cot/fs_inst_gemini-1.5-pro-002_temp_0.csv')
-        else:
-            infered_data = pd.read_csv(f'{save_result_folder}/{args.dataset}/cot/fs_inst_gemini-1.5-flash-002_temp_0.csv')
+        if args.answer_mode == 'grounding_cot':
+            infered_path = f'/Users/tinnguyen/Downloads/LAB_PROJECTS/textual_grounding/results_auto_tagging/{args.dataset}/design_1_v4/fs_inst_llama_sambanova_70b_temp_10_longest.csv'
+        elif args.answer_mode == 'cot':
+            infered_path = f'/Users/tinnguyen/Downloads/LAB_PROJECTS/textual_grounding/results_auto_tagging/{args.dataset}/cot/fs_inst_llama_sambanova_70b_temp_10_longest.csv'
+            
+        save_path = save_path[:-4] + '_remain.csv'
+        infered_data = pd.read_csv(infered_path)
         infered_ids = infered_data['id'].tolist()
         # remove questions and ids that have been infered, so we can infer the rest of the questions
         remaining_questions, remaining_ids = [], []
@@ -206,20 +216,22 @@ if __name__ == "__main__":
             if id not in infered_ids:
                 remaining_questions.append(q)
                 remaining_ids.append(id)
-        # get random 200 questions, ids
-        question_id_pairs = list(zip(remaining_questions, remaining_ids))
-        random_pairs = random.sample(question_id_pairs, min(200, len(question_id_pairs))) 
-        selected_questions, selected_ids = zip(*random_pairs)  # Unzips into two separate lists
-        questions = list(selected_questions)
-        ids = list(selected_ids)
+        
+        questions = list(remaining_questions)
+        ids = list(remaining_ids)
     
     # ------------------------------
+    # batch request only supports gpt-4o for now
+    args.batch_request = False
     if not args.batch_request:
         ids_can_be_answered, questions_can_be_answered, answers = query_llm(args.llm_model, ids, questions, args.dataset, few_shot_prompt, args.prompt_used, args.temperature, args.answer_mode)
     else:
         batch_query_llm(args.llm_model, ids, questions, args.dataset, few_shot_prompt, args.prompt_used, args.temperature, args.answer_mode)
     
-    if args.save_answer:    
-        # save answers and questions to csv file (the len of question and answer should be the same)
-        df = pd.DataFrame({'id': ids_can_be_answered, 'question': questions_can_be_answered, 'answer': answers})
-        df.to_csv(save_path, index=False)
+    if args.save_answer:
+        if args.batch_request:
+            print('Batch request is used, please check the result in the batch_request folder')
+        else: 
+            # save answers and questions to csv file (the len of question and answer should be the same)
+            df = pd.DataFrame({'id': ids_can_be_answered, 'question': questions_can_be_answered, 'answer': answers})
+            df.to_csv(save_path, index=False)
