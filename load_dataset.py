@@ -149,8 +149,9 @@ class DatasetLoader:
         
         return gts
     
-    def _load_few_shot_prompt(self):
-        fewshot_prompt_path = os.path.join(self.base_few_shot_prompt_path, self.config['prompts']['design_1_v4'][self.dataset])
+    def _load_few_shot_prompt(self, fs_mode):
+        fewshot_prompt_path = os.path.join(self.base_few_shot_prompt_path, self.config['prompts'][fs_mode][self.dataset])
+        
         with open(fewshot_prompt_path, 'r') as file:
             few_shot_prompt = file.read()
         return few_shot_prompt
@@ -175,54 +176,65 @@ class DatasetLoader:
             return [json.loads(line) for line in file]
 
     def get_questions_and_ids(self):
+        if self.data_mode == 'random':
+            return self.get_random_questions_and_ids()
+        elif self.data_mode == 'longest':
+            return self.get_longest_questions_and_ids()
+        else:
+            return self.get_full_questions_and_ids()
+        
+    def get_full_questions_and_ids(self):
         """
         Process and extract questions and IDs based on dataset type.
         """
-        
+        question_length=0
         if self.dataset == 'p_GSM8K':
-            return self._process_generic('new_question', 'index')
+            return self._process_generic('new_question', 'index', question_length)
         elif self.dataset == 'commonsenseQA':
-            return self._process_commonsenseQA()
+            return self._process_commonsenseQA(question_length)
         elif self.dataset == 'spartQA':
-            return self._process_spartQA()
+            return self._process_spartQA(question_length)
         elif self.dataset == 'reclor':
-            return self._process_reclor()
+            return self._process_reclor(question_length)
         elif self.dataset in ['GSM_IC', 'GSM8K_Hard', 'GSM_Plus', 'coin', 'last_letter_2', 'last_letter_4']:
-            return self._process_simple()
+            return self._process_simple(question_length)
         elif self.dataset == 'wikimultihopQA':
-            return self._process_generic('question', '_id')
+            return self._process_generic('question', '_id', question_length)
         else:
-            return self._process_generic('question', 'id')
-
-    def _process_generic(self, question_key, id_key):
-        questions = [x[question_key] for x in self.data if len(x[question_key]) >= self.question_length]
-        ids = [x[id_key] for x in self.data if len(x[question_key]) >= self.question_length]
-        return questions, ids
-
-    def _process_commonsenseQA(self):
-        full_questions, full_ids = []
-        max_len_questions, max_len_ids = [], []
-        random_questions, random_ids = [], []
-        
-        for sample in self.data:
-            question = sample['question']['stem']
-            choices = sample['question']['choices']
-            answer_choices = ''.join(
-                f"({choice['label'].lower()}) {choice['text']}\n" for choice in choices
-            )
-               
-            full_questions.append(question + "\n" + answer_choices)
-            full_ids.append(sample['id'])
-            
-            if len(question) >= self.question_length:
-                max_len_questions.append(question + "\n" + answer_choices)
-                max_len_ids.append(sample['id'])
+            return self._process_generic('question', 'id', question_length)
+    
+    def get_longest_questions_and_ids(self):
+        """
+        Process and extract questions and IDs based on dataset type.
+        """
+        if self.dataset == 'p_GSM8K':
+            return self._process_generic('new_question', 'index', self.question_length)
+        elif self.dataset == 'commonsenseQA':
+            return self._process_commonsenseQA(self.question_length)
+        elif self.dataset == 'spartQA':
+            return self._process_spartQA(self.question_length)
+        elif self.dataset == 'reclor':
+            return self._process_reclor(self.question_length)
+        elif self.dataset in ['GSM_IC', 'GSM8K_Hard', 'GSM_Plus', 'coin', 'last_letter_2', 'last_letter_4']:
+            return self._process_simple(self.question_length)
+        elif self.dataset == 'wikimultihopQA':
+            return self._process_generic('question', '_id', self.question_length)
+        else:
+            return self._process_generic('question', 'id', self.question_length)
+    
+    def get_random_questions_and_ids(self):
+        """
+        Process and extract questions and IDs based on dataset type.
+        """
+        full_questions, full_ids = self.get_full_questions_and_ids()
+        longest_questions, longest_ids = self.get_longest_questions_and_ids()
         
         # get randoms except max_len_questions
-        for i, question in enumerate(full_questions):
-            if question not in max_len_questions:
+        random_questions, random_ids = [], []
+        for question, id in zip(full_questions, full_ids):
+            if question not in longest_questions:
                 random_questions.append(question)
-                random_ids.append(full_ids[i])
+                random_ids.append(id)
         
         indices = random.sample(range(len(random_questions)), self.num_samples)
 
@@ -230,17 +242,34 @@ class DatasetLoader:
         random_questions = [random_questions[i] for i in indices]
         random_ids = [random_ids[i] for i in indices]
         
-        if self.data_mode == 'longest':
-            return max_len_questions, max_len_ids
-        else:
-            return random_questions, random_ids
+        return random_questions, random_ids
+        
+    def _process_generic(self, question_key, id_key, question_length):
+        questions = [x[question_key] for x in self.data if len(x[question_key]) >= question_length]
+        ids = [x[id_key] for x in self.data if len(x[question_key]) >= question_length]
+        return questions, ids
 
-    def _process_spartQA(self):
+    def _process_commonsenseQA(self, question_length):
+        questions, ids = [], []
+        
+        for sample in self.data:
+            question = sample['question']['stem']
+            choices = sample['question']['choices']
+            answer_choices = ''.join(
+                f"({choice['label'].lower()}) {choice['text']}\n" for choice in choices
+            )
+            if len(question) >= question_length:
+                questions.append(question + "\n" + answer_choices)
+                ids.append(sample['id'])
+        
+        return questions, ids
+
+    def _process_spartQA(self, question_length):
         questions = [
             x['question'].replace('0:', '(a)').replace('1:', '(b)').replace('2:', '(c)').replace('3:', '(d)')
-            for x in self.data if len(x["question"]) >= self.question_length
+            for x in self.data if len(x["question"]) >= question_length
         ]
-        ids = [x["id"] for x in self.data if len(x["question"]) >= self.question_length]
+        ids = [x["id"] for x in self.data if len(x["question"]) >= question_length]
         
         # take 400 random questions and ids
         combined = list(zip(questions, ids))
@@ -253,22 +282,22 @@ class DatasetLoader:
         
         return questions, ids
 
-    def _process_reclor(self):
+    def _process_reclor(self, question_length):
         questions = [
             x['context'] + ' ' + x["question"] +
             '\n(a) ' + x['answers'][0] +
             '\n(b) ' + x['answers'][1] +
             '\n(c) ' + x['answers'][2] +
             '\n(d) ' + x['answers'][3]
-            for x in self.data if len(x["question"]) >= self.question_length
+            for x in self.data if len(x["question"]) >= question_length
         ]
-        ids = [x["id_string"] for x in self.data if len(x["question"]) >= self.question_length]
+        ids = [x["id_string"] for x in self.data if len(x["question"]) >= question_length]
         return questions, ids
 
-    def _process_simple(self):
+    def _process_simple(self, question_length):
         questions = [
             x['new_question'] if 'new_question' in x else x['question']
-            for x in self.data if len(x.get('new_question', x.get('question', ''))) >= self.question_length
+            for x in self.data if len(x.get('new_question', x.get('question', ''))) >= question_length
         ]
         ids = [i for i in range(len(questions))]
         return questions, ids  
