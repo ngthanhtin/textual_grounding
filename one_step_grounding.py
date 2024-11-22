@@ -142,6 +142,9 @@ if __name__ == "__main__":
     dataloader = DatasetLoader(config_path='configs/config.yaml', base_data_path=args.base_data_path, base_few_shot_prompt_path=args.base_prompt_path, dataset=args.dataset, data_mode=args.data_mode, num_samples=args.num_samples)
                     
     questions, ids = dataloader.get_questions_and_ids()
+    print(f"Number of questions: {len(questions)}")
+    if len(questions) > 200:
+        raise ValueError('Stop here')
     few_shot_prompt = dataloader._load_few_shot_prompt(fs_mode=args.answer_mode)
     
     # -------run remaining questions
