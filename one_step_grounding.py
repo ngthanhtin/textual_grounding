@@ -148,26 +148,18 @@ if __name__ == "__main__":
     few_shot_prompt = dataloader._load_few_shot_prompt(fs_mode=args.answer_mode)
     
     # -------run remaining questions
-    remain = False
-    if remain:
+    if args.data_mode == 'remain':
         # read infered id
         if args.answer_mode == 'grounding_cot':
-            infered_path = f'/Users/tinnguyen/Downloads/LAB_PROJECTS/textual_grounding/results_auto_tagging/{args.dataset}/design_1_v4/fs_inst_llama_sambanova_70b_temp_10_longest.csv'
+            infered_path = f'results_auto_tagging/{args.dataset}/design_1_v4/fs_inst_llama_sambanova_70b_temp_10_longest.csv'
         elif args.answer_mode == 'cot':
-            infered_path = f'/Users/tinnguyen/Downloads/LAB_PROJECTS/textual_grounding/results_auto_tagging/{args.dataset}/cot/fs_inst_llama_sambanova_70b_temp_10_longest.csv'
+            infered_path = f'results_auto_tagging/{args.dataset}/cot/fs_inst_llama_sambanova_70b_temp_10_longest.csv'
             
         save_path = save_path[:-4] + '_remain.csv'
         infered_data = pd.read_csv(infered_path)
         infered_ids = infered_data['id'].tolist()
-        # remove questions and ids that have been infered, so we can infer the rest of the questions
-        remaining_questions, remaining_ids = [], []
-        for q, id in zip(questions, ids):
-            if id not in infered_ids:
-                remaining_questions.append(q)
-                remaining_ids.append(id)
         
-        questions = list(remaining_questions)
-        ids = list(remaining_ids)
+        questions, ids = dataloader.get_remaining_questions_and_ids(infered_ids)
     
     # batch request only supports gpt-4o for now
     if not args.batch_request:

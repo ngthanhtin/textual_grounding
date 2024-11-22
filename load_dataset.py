@@ -56,6 +56,8 @@ class DatasetLoader:
             return self.get_longest_questions_and_ids()
         elif self.data_mode == 'shortest':
             return self.get_shortest_questions_and_ids()
+        elif self.data_mode == 'remain':
+            return self.get_remain_questions_and_ids()
         else:
             return self.get_full_questions_and_ids()
         
@@ -144,6 +146,17 @@ class DatasetLoader:
         random_ids = [random_ids[i] for i in indices]
         
         return random_questions, random_ids
+        
+    def get_remain_questions_and_ids(self, infered_ids):
+        full_questions, full_ids = self.get_full_questions_and_ids()
+        
+        remain_questions, remain_ids = [], []
+        for q, id in zip(full_questions, full_ids):
+            if id not in infered_ids:
+                remain_questions.append(q)
+                remain_ids.append(id)
+        
+        return list(remain_questions), list(remain_ids)
         
     def _process_generic(self, question_key, id_key):
         questions = [x[question_key] for x in self.data]
