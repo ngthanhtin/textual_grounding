@@ -71,7 +71,7 @@ class DatasetLoader:
             return self._process_spartQA()
         elif self.dataset == 'reclor':
             return self._process_reclor()
-        elif self.dataset in ['GSM_IC', 'GSM8K_Hard', 'GSM_Plus', 'coin', 'last_letter_2', 'last_letter_4']:
+        elif self.dataset in ['GSM_IC', 'GSM8K_Hard', 'GSM_Plus', 'coin', 'last_letter_2', 'last_letter_4', 'medQA']:
             return self._process_simple()
         elif self.dataset == 'wikimultihopQA':
             return self._process_generic('question', '_id')

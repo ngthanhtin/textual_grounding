@@ -36,7 +36,7 @@ data_paths:
   drop_break: "drop_break/test.jsonl"
   drop_cencus: "drop_cencus/test.jsonl"
   squad: "squad/test.json"
-  medQA: "medQA/test.json"
+  medQA: "medQA/test.jsonl"
 
 prompts:
   da:
