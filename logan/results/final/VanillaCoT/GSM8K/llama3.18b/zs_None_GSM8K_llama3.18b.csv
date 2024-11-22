@@ -1,0 +1,12 @@
+id,question,answer
+788,"John is raising money for a school trip. He has applied for help from the school, which has decided to cover half the cost of the trip. How much money is John missing if he has $50 and the trip costs $300?","Reformatted Question: How much money is John missing if he has <fact1>$50</fact1> and the trip costs <fact2>$300</fact2>?
+
+Answer: To find out how much money John is missing, we need to determine the difference between the cost of the trip and the amount of money John has. 
+
+1. We know that John has <fact1>$50</fact1> (Step 1).
+2. We also know that the trip costs <fact2>$300</fact2> (Step 2).
+3. To find the difference, we subtract the amount of money John has from the cost of the trip. 
+
+Answer: { <fact3>$250</fact3> }
+
+Final answer: { $250 }"
