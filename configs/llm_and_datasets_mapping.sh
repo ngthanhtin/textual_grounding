@@ -48,5 +48,7 @@ declare -A datasets_dict=(
     ["32"]='temporal_sequences'
     ["33"]='drop_break'
     ["34"]='drop_cencus'
+    ["35"]='squad'
+    ["36"]='medQA'
     
 )

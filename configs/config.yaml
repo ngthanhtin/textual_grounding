@@ -35,45 +35,8 @@ data_paths:
   web_of_lies: "web_of_lies/test.json"
   drop_break: "drop_break/test.jsonl"
   drop_cencus: "drop_cencus/test.jsonl"
-
-
-max_question_lengths:
-  GSM8K: 336
-  AQUA: 200
-  MultiArith: 168
-  ASDiv: 252
-  SVAMP: 199
-  p_GSM8K: 0
-  GSM_Plus: 450
-  GSM_IC: 583 # 370: 2 step
-  StrategyQA: 78 #78 
-  wikimultihopQA: 104
-  commonsenseQA: 167 # 93
-  date: 105
-  spartQA: 936
-  sports: 48
-  reclor: 0
-  CLUTRR: 612
-  object_counting: 0
-  navigate: 0
-  causal_judgement: 0
-  logical_deduction_three_objects: 0
-  logical_deduction_five_objects: 0
-  logical_deduction_seven_objects: 0
-  reasoning_about_colored_objects: 0
-  last_letter_2: 0
-  last_letter_4: 0
-  coin: 0
-  word_sorting: 0
-  tracking_shuffled_objects_three_objects: 0
-  tracking_shuffled_objects_five_objects: 0
-  tracking_shuffled_objects_seven_objects: 0
-  gpqa: 0
-  GSM8K_Hard: 336
-  temporal_sequences: 0
-  web_of_lies: 0
-  drop_break: 0
-  drop_cencus: 0
+  squad: "squad/test.json"
+  medQA: "medQA/test.json"
 
 prompts:
   da:
@@ -113,6 +76,8 @@ prompts:
     web_of_lies: "web_of_lies/fewshot_da.txt"
     drop_break: "drop_break/fewshot_da.txt"
     drop_cencus: "drop_cencus/fewshot_da.txt"
+    squad: "squad/fewshot_da.txt"
+    medQA: "medQA/fewshot_da.txt"
 
   cot:
     GSM8K: "GSM8K/fewshot_cot.txt"
@@ -151,6 +116,8 @@ prompts:
     web_of_lies: "web_of_lies/fewshot_cot.txt"
     drop_break: "drop_break/fewshot_cot.txt"
     drop_cencus: "drop_cencus/fewshot_cot.txt"
+    squad: "squad/fewshot_cot.txt"
+    medQA: "squad/fewshot_cot.txt"
   
   grounding_cot:
     GSM8K: "GSM8K/fewshot_design_1_v4.txt"
@@ -189,3 +156,5 @@ prompts:
     web_of_lies: "web_of_lies/fewshot_design_1_v4.txt"
     drop_break: "drop_break/fewshot_design_1_v4.txt"
     drop_cencus: "drop_cencus/fewshot_design_1_v4.txt"
+    squad: "squad/fewshot_design_1_v4.txt"
+    medQA: "medQA/fewshot_design_1_v4.txt"
