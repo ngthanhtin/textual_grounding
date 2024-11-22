@@ -130,10 +130,8 @@ if __name__ == "__main__":
         os.makedirs(f'{save_result_folder}/{args.dataset}/{prompt_design}_{version}', exist_ok=True)
     
     str_temperature = str(args.temperature).replace('.', '')
-    if args.data_mode == 'random':
-        save_path = save_path[:-4] + f'_temp_{str_temperature}_random.csv'
-    else:
-        save_path = save_path[:-4] + f'_temp_{str_temperature}_longest.csv'
+    save_path = save_path[:-4] + f'_temp_{str_temperature}_{args.data_mode}.csv'
+    
             
     # data loader --> load fs prompt, data questions and ids
     args.base_data_path = args.base_data_path
@@ -155,7 +153,6 @@ if __name__ == "__main__":
         elif args.answer_mode == 'cot':
             infered_path = f'results_auto_tagging/{args.dataset}/cot/fs_inst_llama_sambanova_70b_temp_10_longest.csv'
             
-        save_path = save_path[:-4] + '_remain.csv'
         infered_data = pd.read_csv(infered_path)
         infered_ids = infered_data['id'].tolist()
         
