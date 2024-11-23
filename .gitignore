@@ -16,7 +16,12 @@ test.py
 
 results/
 results_auto_tagging/
+batch_request_results/
 agents/__pycache__/
 __pycache__/
 
 data/
+demos/
+
+utils/vis_auto_tagging/
+utils/verification_results/
