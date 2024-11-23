@@ -7,18 +7,18 @@ Below are examples of tagged questions, answers and tagged answers that are tagg
 Sam works at the Widget Factory, assembling Widgets. He can assemble <fact1>1 widget every 10 minutes</fact1>. Jack from the loading dock can help assemble widgets when he doesn't have anything else to do. When he helps, they put together <fact2>2 complete widgets every 15 minutes</fact2>. Recently the factory hired Tony to help assemble widgets. Being new to the job, he doesn't work as fast as Sam or Jack. Yesterday Sam worked for <fact3>6 hours</fact3> before he had to leave work early for a dentist appointment. Jack was able to help out for <fact4>4 hours</fact4> before he had to go back to the loading dock to unload a new shipment of widget materials. Tony worked the entire <fact5>8-hour shift</fact5>. At the end of the day, they had completed <fact6>68 widgets</fact6>. How long does it take Tony to assemble a Widget, in minutes?
 
 ### ANSWER:
-Sam completes a widget every 10 minutes. When Jack helps they finish 2 in 15 minutes. Sam has finished 1 widget and has begun working on another one, and Jack finishes the second one at 15 minutes. So it takes Jack 15 minutes to complete a widget.
+Sam completes a widget every 10 minutes. When Jack helps, they finish 2 in 15 minutes. Sam has finished 1 widget and has begun working on another one, and Jack finishes the second one at 15 minutes. So it takes Jack 15 minutes to complete a widget.
 Sam worked for 6 hours yesterday, so he was able to complete 6 hours * 60 minutes per hour / 10 minutes per widget = 36 widgets.
 Jack worked for 4 hours, so he was able to complete 4 hours * 60 minutes per hour / 15 minutes per widget = 16 widgets.
 Sam, Jack, and Tony were able to complete 68 widgets together. So of those, Tony personally completed 68 widgets - 36 widgets - 16 widgets = 16 widgets.
 It took Tony 8 hours to complete those 16 widgets, so he takes 8 hours * 60 minutes per hour / 16 widgets = 8*60/16=30 minutes per widget. The answer is {30}.
 
 ### TAGGED ANSWER:
-<fact1>Sam completes a widget every 10 minutes</fact1>. <fact2>When Jack helps they finish 2 in 15 minutes</fact2>. Sam has finished 1 widget and has begun working on another one, and <fact2>Jack finishes the second one at 15 minutes</fact2>. So <fact2>it takes Jack 15 minutes to complete a widget</fact2>.
-<fact3>Sam worked for 6 hours yesterday</fact3>, so he was able to complete <fact3>6 hours</fact3> * 60 minutes per hour / <fact1>10 minutes per widget</fact1> = 36 widgets.
-<fact4>Jack worked for 4 hours</fact4>, so he was able to complete <fact4>4 hours</fact4> * 60 minutes per hour / <fact2>15 minutes per widget</fact2> = 16 widgets.
+Sam completes <fact1>a widget every 10 minutes</fact1>. When Jack helps, they finish <fact2>2 in 15 minutes</fact2>. Sam has finished 1 widget and has begun working on another one, and Jack finishes the second one at 15 minutes. So it takes Jack 15 minutes to complete a widget.
+Sam worked for <fact3>6 hours</fact3> yesterday, so he was able to complete <fact3>6 hours</fact3> * 60 minutes per hour / <fact1>10 minutes per widget</fact1> = 36 widgets.
+Jack worked for <fact4>4 hours</fact4>, so he was able to complete <fact4>4 hours</fact4> * 60 minutes per hour / <fact2>15 minutes per widget</fact2> = 16 widgets.
 Sam, Jack, and Tony were able to complete <fact6>68 widgets</fact6> together. So of those, Tony personally completed <fact6>68 widgets</fact6> - 36 widgets - 16 widgets = 16 widgets.
-<fact5>It took Tony 8 hours</fact5> to complete those 16 widgets, so he takes <fact5>8 hours</fact5> * 60 minutes per hour / 16 widgets = <fact5>8</fact5>*60/16=30 minutes per widget. The answer is {30}.
+It took Tony <fact5>8 hours</fact5> to complete those 16 widgets, so he takes <fact5>8 hours</fact5> * 60 minutes per hour / 16 widgets = <fact5>8</fact5>*60/16=30 minutes per widget. The answer is {30}.
 
 ## Question 2: 
 ### TAGGED QUESTION: 
@@ -31,6 +31,26 @@ There are 144/12 = 12 sets of 12 cans that the family collected. So, the family 
 There are <fact5>144</fact5>/<fact1>12</fact1> = 12 sets of <fact1>12 cans</fact1> that the family collected. So, the family would receive <fact2>$0.50</fact2> x 12 = $6 for the cans. There are <fact6>20</fact6>/<fact3>5</fact3> = 4 sets of <fact3>5 kilograms of newspapers</fact3> that the family collected. So, the family would receive <fact4>$1.50</fact4> x 4 = $6 for the newspapers. Therefore, the family would receive a total of $6 + $6 = $12. The answer is {12}.
 
 ## Question 3:
+### TAGGED QUESTION:
+Two friends plan to walk along a <fact1>43-km</fact1> trail, starting at opposite ends of the trail at the same time. If Friend P's rate is <fact2>15% faster</fact2> than Friend Q's, how many kilometers will Friend P have walked when they pass each other? Answer Choices: (a) 21 (b) 21.5 (c) 22 (d) 22.5 (e) 23
+
+### ANSWER:
+If Q completes x kilometers, then P completes 1.15x kilometers. x + 1.15x = 43 \n 2.15x=43 \n x = 43/2.15 = 20. Then P will have walked 1.15*20=23 km. So the answer is (e).
+
+### TAGGED ANSWER:
+If Q completes x kilometers, then P completes <fact2>1.15x</fact2> kilometers. x + <fact2>1.15x</fact2> = <fact1>43</fact1> \n 2.15x=<fact1>43</fact1> \n x = <fact1>43</fact1>/2.15 = 20. Then P will have walked <fact2>1.15</fact2>*20=23 km. So the answer is (e).
+
+## Question 4:
+### TAGGED QUESTION:
+A man is trying to maximize the amount of money he saves each month. In particular, he is trying to decide between two different apartments. The first apartment costs <fact1>$800 per month in rent</fact1> and will cost an additional <fact2>$260 per month in utilities</fact2>. The second apartment costs <fact3>$900 per month</fact3> and will cost an additional <fact4>$200 per month in utilities</fact4>. The first apartment is slightly further from the man's work, and the man would have to drive <fact5>31 miles per day</fact5> to get to work. The second apartment is closer, and the man would only have to drive <fact6>21 miles</fact6> to get to work. According to the IRS, each mile a person drives has an average cost of <fact7>58 cents</fact7>. If the man must drive to work <fact8>20 days</fact8> each month, what is the difference between the total monthly costs of these two apartments after factoring in utility and driving-related costs (to the nearest whole dollar)?
+
+### ANSWER:
+The mileage cost for the first apartment will be 31*20*0.58 = $359.60. This makes the total monthly cost of the first apartment 359.60 + 800 + 260 = $1419.60. Similarly, the mileage cost for the second apartment will be 21*20*0.58 = $243.60. Thus, the total monthly cost of the second apartment is 243.60 + 900 + 200 = $1343.60. Therefore, the difference in total monthly costs is 1419.60 - 1343.60 = $76. The answer is {76}.
+
+### TAGGED ANSWER:
+The mileage cost for the first apartment will be <fact5>31</fact5>*<fact8>20</fact8>*<fact7>0.58</fact7> = $359.60. This makes the total monthly cost of the first apartment 359.60 + <fact1>800</fact1> + <fact2>260</fact2> = $1419.60. Similarly, the mileage cost for the second apartment will be <fact6>21</fact6>*<fact8>20</fact8>*<fact7>0.58</fact7> = $243.60. Thus, the total monthly cost of the second apartment is 243.60 + <fact3>900</fact3> + <fact4>200</fact4> = $1343.60. Therefore, the difference in total monthly costs is 1419.60 - 1343.60 = $76. The answer is {76}.
+
+## Question 5:
 ### TAGGED QUESTION: 
 At a presentation about <fact1>post traumatic stress disorder</fact1>, would <fact2>Ariana Grande</fact2> be a topic of relevance?
 
@@ -44,7 +64,7 @@ So the answer is {true}.
 <fact2>Ariana Grande</fact2> has spoken openly about <fact1>her trauma experience</fact1> and <fact1>her PTSD</fact1> regarding the Manchester Bombing.
 So the answer is {true}.
 
-## Question 4: 
+## Question 6: 
 ### TAGGED QUESTION: 
 Has the <fact1>Indian Ocean garbage patch</fact1> <fact2>not</fact2> completed <fact3>two full rotations</fact3> of debris since its discovery?
 
@@ -58,7 +78,7 @@ The <fact1>Indian Ocean garbage patch</fact1> was discovered in 2010.
 The <fact1>Indian Ocean garbage patch</fact1> takes <fact2>6 years to complete a circulation</fact2>.
 So the answer is {true}.
 
-## Question 5: 
+## Question 7: 
 ### TAGGED QUESTION:
 The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were seven golfers: Ana, Eve, Ada, Dan, Rob, Amy, and Joe. <fact1>Dan finished third</fact1>. Ana finished above Ada. Amy finished last. Dan finished below Rob. Eve finished below Ada. Rob finished below Joe. Choose one correct option: (A) Ana finished third (B) Eve finished third (C) Ada finished third (D) Dan finished third (E) Rob finished third (F) Amy finished third (G) Joe finished third
 
@@ -68,7 +88,7 @@ In the arrangement of golfers in the golf tournament, Dan finished third. This d
 ### TAGGED ANSWER:
 In the arrangement of golfers in the golf tournament, <fact1>Dan finished third</fact1>. This directly answers the question. So the answer is {D}.
 
-## Question 6: 
+## Question 8: 
 ### TAGGED QUESTION:
 The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were seven golfers: Eve, Mya, Rob, Ana, Ada, Mel, and Joe. <fact1>Eve finished third</fact1>. <fact2>Mya finished above Joe<fact2>. <fact3>Mel finished above Ada</fact3>. <fact4>Mya finished above Rob</fact4>. <fact5>Mel finished below Joe</fact5>. <fact6>Mya finished second</fact6>. <fact7>Ada finished second-to-last</fact7>. Options: (A) Eve finished last (B) Mya finished last (C) Rob finished last (D) Ana finished last (E) Ada finished last (F) Mel finished last (G) Joe finished last
 
@@ -84,7 +104,7 @@ Next, we consider the relative positions: <fact2>Mya finished above Joe</fact2>,
 <fact3>Mel finished above Ada</fact3>, confirming Mel is fifth and Ada is sixth. This leaves Rob and Ana for the first and last positions. Since <fact4>Mya finished above Rob</fact4>, Rob cannot be first, so Ana must be first, leaving Rob in the last position.
 Therefore, the answer is {C}.
 
-## Question 7:
+## Question 9:
 ### TAGGED QUESTION:
 How would a typical person answer each of the following questions about causation? A machine is set up in such a way that it will <fact1>short circuit if both the black wire and the red wire touch the battery</fact1> at the same time. The machine will <fact2>not short circuit if just one of these wires touches the battery</fact2>. The black wire is designated as the one that is supposed to touch the battery, while the red wire is supposed to remain in some other part of the machine. One day, the <fact1>red wire and the black wire both end up touching</fact1> the battery at the same time. There is a short circuit. Did the black wire cause the short circuit? Options: - Yes - No
 
@@ -104,7 +124,7 @@ Causation: Even though the black wire touched the battery (as expected), the sho
 Conclusion: A typical person would say the black wire did not cause the short circuit alone; <fact1>both wires contributed to the short circuit</fact1>.
 The answer is {no}.
 
-## Question 8:
+## Question 10:
 ### TAGGED QUESTION:
 <fact1>A coin is heads up</fact1>. roxas does <fact2>not flip</fact2> the coin. scheideman does <fact3>not flip</fact3> the coin.  Is the coin still heads up? Flip means reverse.
 
@@ -113,10 +133,10 @@ The coin started out being heads up. Roxas does not flip the coin, which means t
 The answer is {yes}.
 
 ### TAGGED ANSWER:
-<fact1>The coin started out being heads up</fact1>. Roxas does <fact2>not flip the coin</fact2>, which means the coin remains in the same position. Scheideman also does <fact3>not flip the coin</fact3>, so again, there is no change in the coin's orientation. Since <fact2><fact3>neither Roxas nor Scheideman flipped the coin </fact3></fact2> (which would reverse its position), the coin remains heads up.
+The coin started out being <fact1>heads up</fact1>. Roxas does <fact2>not flip the coin</fact2>, which means the coin remains in the same position. Scheideman also does <fact3>not flip the coin</fact3>, so again, there is no change in the coin's orientation. Since <fact2>neither Roxas</fact2> <fact3>nor Scheideman</fact3> flipped the coin (which would reverse its position), the coin remains heads up.
 The answer is {yes}.
 
-## Question 9:
+## Question 11:
 ### TAGGED QUESTION:
 I have four pianos, <fact1>four snails</fact1>, <fact2>three chickens</fact2>, <fact3>a pig</fact3>, <fact4>a dog</fact4>, and <fact5>two cows</fact5>. How many animals do I have?
 
@@ -126,7 +146,7 @@ Total number of animals: 4 snails + 3 chickens + 1 pig + 1 dog + 2 cows = 11 ani
 ### TAGGED ANSWER:
 Total number of animals: <fact1>4 snails</fact1> + <fact2>3 chickens</fact2> + <fact3>1 pig</fact3> + <fact4>1 dog</fact4> + <fact5>2 cows</fact5> = 11 animals. The answer is {11}.
 
-## Question 10:
+## Question 12:
 ### TAGGED QUESTION:
 <fact1>2015</fact1> is coming in <fact2>36 hours</fact2>. What is the date <fact3>one week from today</fact3> in MM/DD/YYYY?
 
@@ -142,7 +162,7 @@ If <fact1>2015</fact1> is coming in <fact2>36 hours</fact2>, then it is coming i
 So <fact3>one week from today</fact3> will be 01/06/2015.
 The answer is {01/06/2015}.
 
-## Question 11:
+## Question 13:
 ### TAGGED QUESTION:
 If you follow these instructions, do you return to the starting point? Always face forward. Take <fact1>1 step right</fact1>. Take <fact2>3 steps left</fact2>. Take <fact3>2 steps right</fact3>. Options: - Yes - No
 
@@ -154,7 +174,7 @@ The answer is {yes}.
 Starting from the original point, you first take <fact1>1 step right</fact1>. Then, you take <fact2>3 steps left</fact2>, which moves you 2 steps left from the starting point. Finally, taking <fact3>2 steps right</fact3> brings you to the starting point. Therefore, you return to the starting point.
 The answer is {yes}.
 
-## Question 12:
+## Question 14:
 ### TAGGED QUESTION:
 On the desk, you see a set of things arranged in a row: a <fact1>grey cup</fact1>, a <fact2>purple mug</fact2>, and a blue teddy bear. What is <fact3>the color of the thing directly to the right of the cup</fact3>? Options: (A) red (B) orange (C) yellow (D) green (E) blue (F) brown (G) magenta (H) fuchsia (I) mauve (J) teal (K) turquoise (L) burgundy (M) silver (N) gold (O) black (P) grey (Q) purple (R) pink
 
@@ -172,7 +192,7 @@ Position of the <fact2>purple mug</fact2>: The <fact2>purple mug</fact2> is dire
 Conclusion: The item directly to the right of the <fact1>grey cup</fact1> is the <fact2>purple mug</fact2>, and its color is <fact2>purple</fact2>.
 The answer is {Q}.
 
-## Question 13:
+## Question 15:
 ### TAGGED QUESTION:
 Among the various models of Delta vacuum cleaners, <fact1>one cannot accurately predict how effectively a particular model cleans</fact1> simply by <fact2>determining how powerful its motor is</fact2>. The efficiency of <fact3>dust filtration systems varies significantly</fact3>, even between models of <fact4>Delta vacuum cleaners equipped with identically powerful motors</fact4>. The argument's conclusion is properly drawn if which one of the following is assumed?
 (a) All Delta vacuum cleaners that clean equally effectively have identically powerful motors.
@@ -196,7 +216,7 @@ C directly aligns with the argument. The <fact3>efficiency of the dust filtratio
 D contradicts the argument by suggesting that motor power is the main factor, but the argument highlights <fact3>the varying dust filtration systems</fact3>.
 The answer is {C}.
 
-## Question 14:
+## Question 16:
 ### TAGGED QUESTION:
 We have three blocks, A, B, and C. <fact1>Block A has a medium blue square</fact1>. <fact2>Below block A is block B, which has one medium black square</fact2>. <fact3>To the left of block B, there is block C, which has two medium blue squares</fact3>. Medium blue square number one is below <fact4>medium blue square number two</fact4>. A medium yellow square is below medium blue square number two and medium blue square number one. What is to the left of the black thing? <fact1>A medium blue square that is in block A</fact1> or <fact4>a medium blue square number two</fact4>?
 
@@ -206,7 +226,7 @@ Block A has a medium blue square, and Block B (below A) has a black square. Bloc
 ### TAGGED ANSWER:
 <fact1>Block A has a medium blue square</fact1>, and <fact2>Block B (below A) has a black square</fact2>. <fact3>Block C, to the left of Block B, has two medium blue squares</fact3>, with <fact4>blue square number two</fact4> on top and number one below it. Since <fact3>the blue squares in Block C are directly to the left of the black square in Block B</fact3>, the object to the left of the black thing is medium blue square number two. The answer is {B}.
 
-## Question 15:
+## Question 17:
 """
 
 instruction_for_grounding_in_answer = 'Given a pair of (Tagged Question, Answer) I want to generate Tagged Answer. That is, to generate Tagged Answer, take the Answer and add tags to the key phrases that refer to the corresponding tagged phrases (e.g., <fact1>...</fact1>) from the Tagged Question.\

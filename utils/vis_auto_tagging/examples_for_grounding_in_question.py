@@ -124,8 +124,8 @@ instruction_for_grounding_in_question = 'Read the question and insert the tags i
 1. Insert only tags keeping the original words unchanged.\
 2. Put the tags (e.g., <fact1></fact1>, <fact2></fact2>) around the shortest and most concise important phrases.\
 3. A phrase is considered important and should be tagged if replacing that phrase by a closest alternative phrase would change the answer. \
-4. Do not tag key phrases non-important to answering the question.\
-Re-generate the question after adding tags to the key phrases:\
+4. Do not tag phrases non-important to answering the question.\
+Re-generate the question after adding tags to the phrases:\
 ### AFTER: '
 
 
