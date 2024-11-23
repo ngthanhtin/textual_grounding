@@ -25,3 +25,4 @@ demos/
 
 utils/vis_auto_tagging/
 utils/verification_results/
+utils/compare_gcot_cot_results/
