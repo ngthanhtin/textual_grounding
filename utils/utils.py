@@ -24,28 +24,6 @@ index_2_color_map = {
 }
 
 char_2_color_map = {
-    'a': "#FF5733",  # Red
-    'b': "#33FF57",  # Green
-    'c': "#3357FF",  # Blue
-    'd': "#FF33A1",  # Pink
-    'e': "#FFA533",  # Orange
-    'f': "#33FFF3",  # Cyan
-    'g': "#FFDD33",  # Coral Red
-    'h': "#8D33FF",  # Purple
-    'i': "#33FF8D",  # Mint Green
-    'j': "#FF335E",  # Deep Rose
-    'k': "#3378FF",  # Light Blue
-    'l': "#FFB833",  # Amber
-    'm': "#FF33F5",  # Magenta
-    'n': "#75FF33",  # Lime Green
-    'o': "#33C4FF",  # Sky Blue
-    'p': "#FF8633",  # Deep Orange
-    'q': "#C433FF",  # Violet
-    'r': "#33FFB5",  # Aquamarine
-    's': "#FF336B",  # Bright Pink
-}
-
-char_2_color_map = {
     'fact1': "#FF5733",  # Red
     'fact2': "#33FF57",  # Green
     'fact3': "#3357FF",  # Blue
@@ -71,8 +49,8 @@ def read_jsonl_file(filepath):
     data = [] 
     with open(filepath, 'r') as file:
         for line in file:
-            json_obj = json.loads(line)  # Parse the JSON data from the line
-            data.append(json_obj)  # Add the parsed JSON object to a list
+            json_obj = json.loads(line)
+            data.append(json_obj)
     return data
 
 # Function to replace tags with colored tags
@@ -146,144 +124,3 @@ def count_tags(text):
     tag_counts = Counter(tags)
     
     return tag_counts
-
-
-def retrieve_gts(data_path, ids, dataset):
-    """
-    data_path: path to the whole data file
-    ids: ids of the predictions (list)
-    dataset: which dataset to retrieve the ground truth
-    """
-    if 'jsonl' in data_path:
-        data = read_jsonl_file(f"{data_path}")
-    else:
-        with open(f"{data_path}", 'r') as file:
-            data = json.load(file)
-            
-    # read gt
-    gts = []
-    if dataset in ['coin', 'last_letter_2', 'last_letter_4', 'GSM8K_Hard']:
-        for id in ids:
-            for i, temp in enumerate(data):
-                if id == i:
-                    # print(temp['new_question'], id, temp['answer'])
-                    # exit()
-                    gt = temp['answer']
-                    if dataset == 'coin':
-                        if gt == 'yes':
-                            gt = True
-                        else:
-                            gt = False
-                    gts.append(gt)
-        return gts
-    
-    if dataset in ['GSM_Plus', 'GSM_IC']:
-        if dataset == 'GSM_IC':
-            length = 583 # 370: 2 step, 583: mstep
-            questions = [x['new_question'] for x in data if len(x["new_question"]) >= length]
-            answers = [x['answer'] for x in data if len(x["new_question"]) >= length]
-            data = [{'new_question': q, 'answer': a} for q, a in zip(questions, answers)]
-        num_cannot_convert = 0
-        num_none = 0
-        for id in ids:
-            for i, temp in enumerate(data):
-                if id == i:
-                    # print(temp['new_question'], id, temp['answer'])
-                    # exit()
-                    gt = temp['answer']
-                    if temp['answer'] == 'None':
-                        gts.append(None)
-                        num_none += 1
-                    else:
-                        try:
-                            gts.append(float(gt))
-                        except:
-                            num_cannot_convert += 1
-                            gts.append(None)
-                            num_none += 1
-        print(num_none)
-        print(num_cannot_convert)
-        # exit()
-        
-        return gts
-    
-    for id in ids:
-        for temp in data:
-            if dataset == 'squad':
-                if temp['id'] == id:
-                    gt = temp['answer']
-                    gts.append(gt)
-            if dataset in ['drop_break', 'drop_cencus']:
-                if temp['id'] == id:
-                    gt = temp['answer'][0][0]
-                    gts.append(float(gt))
-            if dataset == 'p_GSM8K':
-                if temp['index'] == id:
-                    gt = temp['answer']
-                    gts.append(float(gt))
-            elif dataset == 'wikimultihopQA':
-                if temp['_id'] == id:
-                    gt = temp['answer']
-                    gts.append(gt)
-            elif dataset == 'spartQA':
-                if temp['id'] == id:
-                    gt = temp['answer']
-                    if gt == 0:
-                        gt = 'A'
-                    elif gt == 1:
-                        gt = 'B'
-                    elif gt == 2:
-                        gt = 'C'
-                    elif gt == 3:
-                        gt = 'D'
-                    gts.append(gt)
-            elif dataset == 'reclor':
-                if temp['id_string'] == id:
-                    gt = temp['label']
-                    if gt == 0:
-                        gt = 'A'
-                    elif gt == 1:
-                        gt = 'B'
-                    elif gt == 2:
-                        gt = 'C'
-                    elif gt == 3:
-                        gt = 'D'
-                    gts.append(gt)
-            elif dataset == 'commonsenseQA':
-                if temp['id'] == id:
-                    gt = temp['answerKey']
-                    gts.append(gt)
-            else:
-                if temp['id'] == id:
-                    gt = temp['answer']
-                    if dataset in ['GSM8K', 'MultiArith', 'SVAMP']:
-                        gt = gt.split('####')[1].strip()
-                        if ',' in gt:
-                            gt = gt.replace(',', '')
-                        gts.append(float(gt))
-                    if dataset == 'CLUTRR':
-                        gt = gt.split('####')[1].strip()
-                        gts.append(gt)
-                    if dataset == 'date':
-                        gt = gt.split('####')[1].strip()
-                        gts.append(gt)
-                    if dataset == 'ASDiv':
-                        #if gt is list, convert it to string
-                        if type(gt) == list:
-                            gt = gt[0]
-                        gt = gt.replace(',', '')
-                        gts.append(float(gt))
-                    if dataset in ['StrategyQA', 'navigate', 'causal_judgement']:
-                        gts.append(gt)
-                    if dataset == 'web_of_lies':
-                        if gt == 'yes':
-                            gt = True
-                        else:
-                            gt = False
-                        gts.append(gt)
-                    if dataset in ['AQUA', 'logical_deduction_three_objects', 'logical_deduction_five_objects', 'logical_deduction_seven_objects', 'reasoning_about_colored_objects', 'word_sorting', 'tracking_shuffled_objects_three_objects', 'tracking_shuffled_objects_five_objects', 'tracking_shuffled_objects_seven_objects', 'temporal_sequences']:
-                        gts.append(gt)    
-                    if dataset == 'object_counting':
-                        gts.append(float(gt))
-    
-    return gts
