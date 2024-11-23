@@ -5,7 +5,6 @@ import numpy as np
 import pandas as pd
 
 from arg_parser import get_common_args
-from utils import retrieve_gts
 
 
 from mmlu import check_math_answer, check_aqua_answer, check_asdiv_answer, check_bool_answer, check_exact_match_answer, check_multiple_choice_answer
@@ -95,7 +94,7 @@ if __name__ == '__main__':
         answers = df['answer'].tolist()
         ids = df['id'].tolist()
         
-        batch_output_file = f'../batch_request/{args.dataset}/{args.answer_mode}/batch.jsonl'
+        batch_output_file = f'../batch_request_results/{args.dataset}/{args.answer_mode}/batch.jsonl'
         # read jsonl file
         data = read_jsonl_file(batch_output_file)
         answers = []
