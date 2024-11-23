@@ -169,8 +169,6 @@ if __name__ == "__main__":
                     
     questions, ids = dataloader.get_questions_and_ids()
     print(f"Number of questions: {len(questions)}")
-    if len(questions) > 200:
-        raise ValueError('Stop here')
     few_shot_prompt = dataloader._load_few_shot_prompt(fs_mode=args.answer_mode)
     
     # -------run remaining questions
