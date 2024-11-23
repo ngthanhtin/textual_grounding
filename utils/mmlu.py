@@ -3,8 +3,8 @@ from typing import Dict
 import random
 random.seed(42)
 import numpy as np
-import re
-from utils import read_jsonl_file
+import re, json
+
 # ----------- Process Multi-choice -------------
 def parse_multi_choice_response(response, all_choices, index2ans):
     """
@@ -287,10 +287,7 @@ def check_math_answer(answer, gt, verbose=False):
         extracted_answer = extracted_answer.strip()
         if float(gt) == float(extracted_answer):
             acc += 1
-        else:
-            if verbose:
-                print("Answer: ", answer[-100:], 'GT: ', gt)
-                print("====================================")
+        
     except:
         extracted_answer = answer.split('{')[-1].split('}')[0]
         extracted_answer = extracted_answer.replace(":", "").replace("*", "").replace("$", "").replace(",", "").replace("{", "").replace("}", "").replace("€", "").replace('%', '')
@@ -299,15 +296,36 @@ def check_math_answer(answer, gt, verbose=False):
         pred_list = parse_open_response(extracted_answer)
         if gt in pred_list:
             acc += 1
-        else:
-            if verbose:
-                print("Answer 2: ", extracted_answer[-100:], 'GT: ', gt)
-                print("====================================")
+        
+    return acc
+
+def check_gsm_hard_answer(answer, gt, verbose=False):
+    acc = 0
     
+    try:
+        extracted_answer = answer.split('{')[-1].split('}')[0]
+        extracted_answer = extracted_answer.replace(":", "").replace("*", "").replace("$", "").replace(",", "").replace("{", "").replace("}", "").replace("€", "").replace('%', '')
+        extracted_answer = extracted_answer.strip()
+        if round(float(gt), 1) == round(float(extracted_answer), 1):
+            acc += 1
+        
+    except:
+        extracted_answer = answer.split('{')[-1].split('}')[0]
+        extracted_answer = extracted_answer.replace(":", "").replace("*", "").replace("$", "").replace(",", "").replace("{", "").replace("}", "").replace("€", "").replace('%', '')
+        extracted_answer = extracted_answer.strip()
+        
+        pred_list = parse_open_response(extracted_answer)
+        if gt in pred_list:
+            acc += 1
+        
     return acc
 
 def compute_acc_gsm_plus(questions, answers, gts):
     # load original dataset
+    def read_jsonl_file(file_path):
+        with open(file_path, 'r') as file:
+            data = [json.loads(line) for line in file]
+        return data
     data = read_jsonl_file('../data/GSM_Plus/test.jsonl')
 
     perturb_dict = {}
@@ -383,10 +401,6 @@ def check_aqua_answer(question, answer, gt, verbose=False):
         extracted_answer = answer.split('{')[-1].split('}')[0]
         if gt.upper() in extracted_answer or gt_number in extracted_answer:
             acc += 1
-        else:
-            if verbose:
-                print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                print('------------------------------------')
     except:
         
         if 'The closest answer option is' in answer:
@@ -410,15 +424,11 @@ def check_aqua_answer(question, answer, gt, verbose=False):
             if gt.upper() == label or gt_number in extracted_answer:
                 acc += 1
                 break
-            else:
-                if verbose:
-                    print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                    print('------------------------------------')
                     
     return acc
 
 
-def check_bool_answer(answer, gt, verbose=False):
+def check_bool_answer(answer, gt):
     acc = 0
     try:
         answer = answer.split('{')[1].split('}')[0]
@@ -448,10 +458,6 @@ def check_bool_answer(answer, gt, verbose=False):
                 if bool(gt) == True:
                     acc += 1
                     return acc
-            else:
-                if verbose:
-                    print("Answer: ", answer, "GT: ", gt)
-                    print('-----')
         except:
             return 0
     
@@ -461,11 +467,6 @@ def check_bool_answer(answer, gt, verbose=False):
         answer = False
     if bool(answer) == bool(gt):
         acc += 1
-    
-    else:
-        if verbose:
-            print("Answer: ", answer, "GT: ", gt)
-            print('-----')
         
     return acc
 

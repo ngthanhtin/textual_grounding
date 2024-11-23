@@ -1,6 +1,3 @@
-"""Response Parsing and Evaluation for various models"""
-from typing import Dict
-
 import sys, os, re, random, yaml
 sys.path.insert(0, '../')
 random.seed(42)
@@ -10,35 +7,47 @@ import pandas as pd
 from arg_parser import get_common_args
 from utils import retrieve_gts
 
-from mmlu import parse_open_response, parse_multi_choice_response, check_math_answer, check_aqua_answer, check_asdiv_answer, check_bool_answer, check_exact_match_answer, compute_acc_gsm_plus, check_multiple_choice_answer
+
+from mmlu import check_math_answer, check_aqua_answer, check_asdiv_answer, check_bool_answer, check_exact_match_answer, check_multiple_choice_answer
 
 from utils import read_jsonl_file
+from load_dataset import DatasetLoader
 
-
-def compute_acc(questions, answers, gts, dataset, tested_questions=None):
+def compute_acc(questions, answers, gts, dataset, verbose=False):
 
     # Append each question and its highlighted answer to the HTML content
     total_acc = 0
-    number_non_gts = 0
     
     for i, (question, answer, gt) in enumerate(zip(questions, answers, gts)):
+        is_correct = 0
         if dataset == 'ASDiv':
-            total_acc += check_asdiv_answer(answer, gt)
-        if dataset in ['GSM8K', 'p_GSM8K', 'MultiArith', 'SVAMP', 'GSM8K_Hard', 'GSM_Plus']:
-            total_acc += check_math_answer(answer, gt)
+            is_correct += check_asdiv_answer(answer, gt)
+        elif dataset in ['GSM8K', 'p_GSM8K', 'MultiArith', 'SVAMP', 'GSM_Plus', 'GSM8K_Hard', 'drop_break', 'drop_cencus']:
+            is_correct += check_math_answer(answer, gt)
         elif dataset in ['AQUA']:
-            total_acc += check_aqua_answer(answer, gt)
-        elif dataset in ['StrategyQA']:
-            total_acc += check_bool_answer(answer, gt)
+            is_correct += check_aqua_answer(question, answer, gt)
+        elif dataset in ['StrategyQA', 'navigate', 'causal_judgement', 'web_of_lies']:
+            is_correct += check_bool_answer(answer, gt)
         elif dataset in ['date', 'wikimultihopQA']:
-            total_acc += check_exact_match_answer(answer, gt)
-                    
-        elif dataset in ['logical_deduction_seven_objects', 'reasoning_about_colored_objects', 'commonsenseQA']:
-            total_acc += check_multiple_choice_answer(answer, gt)
+            is_correct += check_exact_match_answer(answer, gt)
+        elif dataset == 'squad':
+            if gt in answer or answer in gt:
+                is_correct += 1
+        elif dataset in ['logical_deduction_three_objects', 'logical_deduction_five_objects', 'logical_deduction_seven_objects', 'reasoning_about_colored_objects', 'commonsenseQA', 'spartQA', 'tracking_shuffled_objects_seven_objects', 'temporal_sequences']:
+            is_correct += check_multiple_choice_answer(question, answer, gt)
+    
+        total_acc += is_correct
+        
+        verbose=False
+        if verbose:
+            if is_correct == 0:
+                print("Index: ", i, "Answer: ", answer[-100:], 'GT: ', gt)
+                print("====================================")
                 
-    print(total_acc, len(questions)-number_non_gts)
-    print("Number of non-gts: ", number_non_gts)
-    print("Accuracy: ", total_acc/(len(questions)-number_non_gts))
+    print(total_acc, len(questions))
+    print("Accuracy: ", total_acc/(len(questions)))
+    
+    return total_acc/(len(questions)), total_acc
 
 if __name__ == '__main__':
     arg_parser = get_common_args()
@@ -58,12 +67,21 @@ if __name__ == '__main__':
     answer_mode = args.answer_mode
     if args.answer_mode == 'grounding_cot':
         answer_mode = 'design_1_v4'
-        
-    if args.data_mode == 'random':
-        df_path = f'{base_result_path}/{args.dataset}/{answer_mode}/fs_inst_{args.llm_model}_temp_10_random.csv'
-    else:
-        df_path = f'{base_result_path}/{args.dataset}/{answer_mode}/fs_inst_{args.llm_model}_temp_10_longest.csv'
 
+    
+    args.data_mode = 'longest'
+    df_path = f'{base_result_path}/{args.dataset}/{answer_mode}/fs_inst_{args.llm_model}_temp_10_{args.data_mode}.csv'
+    
+    if args.dataset == 'AQUA':
+        args.num_samples = 254//2
+    elif args.dataset == 'date':
+        args.num_samples = 359//2
+    elif args.dataset == 'p_GSM8K':
+        args.num_samples = 100
+    elif args.dataset in ['logical_deduction_seven_objects', 'reasoning_about_colored_objects']:
+        args.num_samples = 250//2
+        
+    dataloader = DatasetLoader(config_path='../configs/config.yaml', base_data_path=f'../{args.base_data_path}', base_few_shot_prompt_path=args.base_prompt_path, dataset=args.dataset, data_mode=args.data_mode, num_samples=args.num_samples)
     
     # batch request eval only supports gpt-4o now
     if not args.batch_request:
@@ -85,51 +103,69 @@ if __name__ == '__main__':
             response = row['response']['body']['choices'][0]['message']['content']
             answers.append(response)
     
-    # get ids of longest questions
-    tested_questions = []
-    tested_answers = []
-    tested_ids = []
+    longest_questions, longest_ids = dataloader.get_longest_questions_and_ids()
+    random_questions, random_ids = dataloader.get_random_questions_and_ids()
+    print(len(longest_questions), len(random_questions), len(questions))
+    shortest_questions, shortest_ids = dataloader.get_shortest_questions_and_ids()
     
-    if args.data_mode == 'longest':
-        question_length = config['max_question_lengths'][args.dataset]
-        for q, a, id in zip(questions, answers, ids):
-            if len(q) >= question_length:
-                tested_questions.append(q)
-                tested_answers.append(a)
-                tested_ids.append(id)
-    else: # random
-        if len(questions) > 200:
-            question_length = config['max_question_lengths'][args.dataset]
-            
-            longest_questions = [q for q in questions if len(q) >= question_length]
-            tested_questions = []
-            for q, a, id in zip(questions, answers, ids):
-                if q not in longest_questions:
-                    tested_questions.append(q)
-                    tested_answers.append(a)
-                    tested_ids.append(id)
-            
-            # Randomly select 200 unique indices from the lists
-            indices = random.sample(range(len(tested_questions)), 200)
-
-            # Create subsets based on the selected indices
-            tested_questions = [tested_questions[i] for i in indices]
-            tested_answers = [tested_answers[i] for i in indices]
-            tested_ids = [tested_ids[i] for i in indices]
-        else:
-            tested_questions = questions
-            tested_answers = answers
-            tested_ids = ids
+    longest_answers = []
+    shortest_answers = []
+    random_answers = []
+    for q, id in zip(longest_questions, longest_ids):
+        if id in ids:
+            longest_answers.append(answers[ids.index(id)])
+    for q, id in zip(shortest_questions, shortest_ids):
+        if id in ids:
+            shortest_answers.append(answers[ids.index(id)])
+    for q, id in zip(random_questions, random_ids):
+        if id in ids:
+            random_answers.append(answers[ids.index(id)])
     
-    print("Length of tested question: ", len(tested_questions))
-    questions = tested_questions
-    answers = tested_answers
-    ids = tested_ids
+    gts_for_longest_questions = dataloader.retrieve_gts(longest_ids)
+    gts_for_random_questions = dataloader.retrieve_gts(random_ids)
+    gts_for_shortest_questions = dataloader.retrieve_gts(shortest_ids)
+    gts_full = dataloader.retrieve_gts(ids)
     
-    gts = retrieve_gts(data_path, ids, args.dataset)
+    # compute avg length of answer
+    def avg_len(inputs):
+        avg_len = 0
+        for a in inputs:
+            avg_len += len(a)
+        avg_len = avg_len/len(inputs)
+        return avg_len
     
-    if args.dataset == 'GSM_Plus':
-        # compute_acc_gsm_plus(questions, answers, gts)
-        compute_acc(questions, answers, gts, args.dataset, tested_questions=tested_questions)
-    else:
-        compute_acc(questions, answers, gts, args.dataset, tested_questions=tested_questions)
+    # print("Avg length of random answer: ", avg_len(random_answers))
+    # print("Avg length of longest answer: ", avg_len(longest_answers))
+    # print("Avg length of shortest answer: ", avg_len(shortest_answers))
+    
+    # print("Avg length of random question: ", avg_len(random_questions))
+    print("Avg length of longest question: ", avg_len(longest_questions))
+    print("Avg length of shortest question: ", avg_len(shortest_questions))
+    
+    
+    
+    # exit()
+    # print("Accuracy for Random questions:")
+    # compute_acc(random_questions, random_answers, gts_for_random_questions, args.dataset, verbose=True)
+    # print("Accuracy for Longest questions:")
+    # compute_acc(longest_questions, longest_answers, gts_for_longest_questions, args.dataset, verbose=True)
+    
+    print(len(shortest_questions))
+    print("Accuracy for Shortest questions:")
+    a, b = compute_acc(shortest_questions, shortest_answers, gts_for_shortest_questions, args.dataset, verbose=True)
+    print("The number of correct answers: ", b)
+    
+    print(len(longest_questions))
+    print("Accuracy for Longest questions:")
+    a,b = compute_acc(longest_questions, longest_answers, gts_for_longest_questions, args.dataset, verbose=True)
+    print("The number of correct answers: ", b)
+    
+    # print("Accuracy for Full questions:")
+    # compute_acc(questions, answers, gts_full, args.dataset, verbose=True)
+    print('--------------------------------------')
+    
+    # if args.dataset == 'GSM_Plus':
+    #     # compute_acc_gsm_plus(questions, answers, gts)
+    #     compute_acc(questions, answers, gts, args.dataset)
+    # else:
+    #     compute_acc(questions, answers, gts, args.dataset, verbose=True)
