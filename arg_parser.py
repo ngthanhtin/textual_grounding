@@ -8,7 +8,7 @@ def get_common_args():
     arg_parser.add_argument('--prompt_used', type=str, default='fs_inst', help='The prompt used to query the language model', choices=['zs', 'fs', 'fs_inst'])
     arg_parser.add_argument('--answer_mode', type=str, default='da', help='The answer mode', choices=['da', 'cot', 'grounding_cot'])
     arg_parser.add_argument('--save_answer', action='store_true')
-    arg_parser.add_argument('--data_mode', type=str, default='longest', help='The data mode', choices=['random', 'longest', 'shortest', 'remain'])
+    arg_parser.add_argument('--data_mode', type=str, default='longest', help='The data mode', choices=['full', 'random', 'longest', 'shortest', 'remain'])
     arg_parser.add_argument('--num_samples', type=int, default=200, help='The number of samples to query')
     arg_parser.add_argument('--batch_request', action='store_true')
     arg_parser.add_argument('--base_data_path', type=str, default='data', help='The base data path')

@@ -53,12 +53,13 @@ class DatasetLoader:
         if self.data_mode == 'random':
             return self.get_random_questions_and_ids()
         elif self.data_mode == 'longest':
-            return self.get_longest_questions_and_ids()
+            # return self.get_longest_questions_and_ids()
+            return self.get_full_questions_and_ids()
         elif self.data_mode == 'shortest':
             return self.get_shortest_questions_and_ids()
         elif self.data_mode == 'remain':
             return self.get_remain_questions_and_ids()
-        else:
+        elif self.data_mode == 'full':
             return self.get_full_questions_and_ids()
         
     def get_full_questions_and_ids(self):
@@ -203,18 +204,12 @@ class DatasetLoader:
         """        
         # read gt
         gts = []
-        if self.dataset in ['GSM8K_Hard']:
+        if self.dataset in ['GSM8K_Hard', 'medQA']:
             for id in ids:
                 for i, temp in enumerate(self.data):
                     if id == i:
-                        # print(temp['new_question'], id, temp['answer'])
-                        # exit()
                         gt = temp['answer']
-                        if self.dataset == 'coin':
-                            if gt == 'yes':
-                                gt = True
-                            else:
-                                gt = False
+                        
                         gts.append(gt)
             return gts
         
