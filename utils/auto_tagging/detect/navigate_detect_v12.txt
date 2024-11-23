@@ -1,0 +1,16 @@
+If you follow these instructions, do you return to the starting point? Always face forward. Take <fact1>1 step right</fact1>. Take <fact2>3 steps left</fact2>. Take <fact3>2 steps right</fact3>. Options: - Yes - No
+
+If you follow these instructions, do you return to the starting point? Always face forward. Take <fact1>1 step forward</fact1>. Take <fact2>10 steps left</fact2>. Take <fact3>4 steps forward</fact3>. Options: - Yes - No
+
+If you follow these instructions, do you return to the starting point? Take <fact1>1 step</fact1>. Take <fact2>5 steps</fact2>. <fact3>Turn around</fact3>. <fact4>Turn around</fact4>. <fact5>Turn around</fact5>. Take <fact6>6 steps</fact6>. Options: - Yes - No
+
+If you follow these instructions, do you return to the starting point? Take <fact1>9 steps</fact1>. <fact2>Turn left</fact2>. <fact2>Turn left</fact2>. Take <fact3>5 steps</fact3>. Take <fact4>4 steps</fact4>. <fact2>Turn left</fact2>. <fact2>Turn left</fact2>. Options: - Yes - No
+
+If you follow these instructions, do you return to the starting point? Take <fact1>3 steps</fact1>. Turn <fact2>left</fact2>. Turn <fact3>left</fact3>. Turn <fact4>around</fact4>. Take <fact5>5 steps</fact5>. Turn <fact4>around</fact4>. Take <fact5>5 steps</fact5>. Options: - Yes - No
+
+If you follow these instructions, do you return to the starting point? Always face forward. Take <fact1>8 steps backward</fact1>. Take <fact2>2 steps backward</fact2>. Take <fact3>10 steps forward</fact3>. Options: - Yes - No
+
+If you follow these instructions, do you return to the starting point? Always face forward. Take <fact1>6 steps left</fact1>. Take <fact2>3 steps backward</fact2>. Take <fact3>3 steps left</fact3>. Options: - Yes - No
+
+If you follow these instructions, do you return to the starting point? Take <fact1>7 steps</fact1>. Turn <fact2>around</fact2>. Take <fact3>7 steps</fact3>. Turn <fact4>left</fact4>. Turn <fact5>around</fact5>. Turn <fact6>around</fact6>. Turn <fact7>left</fact7>. Options: - Yes - No
+

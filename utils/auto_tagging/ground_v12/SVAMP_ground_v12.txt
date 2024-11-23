@@ -1,0 +1,25 @@
+### TAGGED ANSWER:
+<fact1>Edward spent $6</fact1> on <fact2>2 books</fact2>, meaning each book cost <fact1>6</fact1>/<fact2>2</fact2>=<fact3>3 dollars</fact3>. The answer is {3}.
+
+### TAGGED ANSWER:
+Jessie currently weighs <fact2>66 kilograms</fact2> and lost <fact1>126 kilograms</fact1> after jogging, so her starting weight was <fact2>66</fact2>+<fact1>126</fact1>=192 kilograms. The answer is {192}.
+
+### TAGGED ANSWER:
+Dave has <fact3>14 tickets</fact3> left after using <fact2>12 tickets</fact2>, which means he originally had <fact2>12</fact2>+<fact3>14</fact3>=<fact1>26 tickets</fact1>. The answer is {26}.
+
+### TAGGED ANSWER:
+<fact1>Jerry initially had 7 books</fact1> and <fact2>3 action figures</fact2>, then added <fact3>2 more action figures</fact3>, making 5 in total. So, he has 7−5=2 more books than action figures. The answer is {2}.
+
+### TAGGED ANSWER:
+If <fact2>18 sacks of oranges were harvested per day</fact2>, and they harvested a total of <fact1>54 sacks</fact1>, it would take <fact1>54</fact1>/<fact2>18</fact2> = 3 days. The answer is {3}.
+
+### TAGGED ANSWER:
+The book has <fact3>67 pages</fact3> in total, and <fact2>the second chapter is 36 pages long</fact2>. Therefore, the first chapter has <fact3>67</fact3>−<fact2>36</fact2>=31 pages. The answer is {31}.
+
+
+### TAGGED ANSWER:
+If he currently has <fact1>557 g of wax</fact1> and needs an additional <fact2>17 g</fact2>, the total amount needed is <fact1>557</fact1>+<fact2>17</fact2>=574 grams. The answer is {574}.
+
+### TAGGED ANSWER:
+If each <fact3>house</fact3> receives <fact1>2 pieces of junk mail</fact1> and there are <fact2>14 pieces in total for each block</fact2>, then there must be <fact2>14</fact2>/<fact1>2</fact1> = 7 <fact3>houses</fact3> per block. The answer is {7}.
+

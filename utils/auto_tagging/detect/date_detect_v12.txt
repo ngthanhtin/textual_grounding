@@ -1,0 +1,20 @@
+<fact1>2015</fact1> is coming in <fact2>36 hours</fact2>. What is the date <fact3>one week from today</fact3> in MM/DD/YYYY?
+
+The first day of <fact1>2019</fact1> is a <fact2>Tuesday</fact2>, and today is the first <fact3>Monday</fact3> of <fact1>2019</fact1>. What is the date today in MM/DD/YYYY?
+
+The concert was scheduled to be on <fact1>06/01/1943</fact1>, but was delayed by <fact2>one day</fact2> to today. What is the date <fact3>10 days ago</fact3> in MM/DD/YYYY?
+
+<fact1>It is 4/19/1969 today</fact1>. What is the date <fact2>24 hours later</fact2> in MM/DD/YYYY?
+
+Jane thought today is <fact1>3/11/2002</fact1>, but today is in fact <fact2>Mar 12</fact2>, which is <fact3>1 day later</fact3>. What is the date <fact4>24 hours later</fact4> in MM/DD/YYYY?
+
+Jane was born on the <fact1>last day of February in 2001</fact1>. Today is her <fact2>16-year-old birthday</fact2>. What is the date yesterday in MM/DD/YYYY?
+
+Yesterday was <fact1>April 30, 2021</fact1>. What is the date <fact2>tomorrow</fact2> in MM/DD/YYYY?
+
+Today is <fact1>12/31/2020</fact1>. What is the date <fact2>1 week ago</fact2> in MM/DD/YYYY?
+
+<fact1>It was Sept. 1st, 2021 a week ago</fact1>. What is the date <fact2>tomorrow</fact2> in MM/DD/YYYY?
+
+In the US, Thanksgiving is on the <fact1>fourth Thursday of November</fact1>. Today is the US Thanksgiving of <fact2>2001</fact2>. What is the date <fact3>a month ago</fact3> in MM/DD/YYYY?
+

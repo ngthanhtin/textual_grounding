@@ -1,0 +1,56 @@
+Key Information:
+Dan finished third.
+Ana finished above Ada.
+Amy finished last.
+Dan finished below Rob.
+Eve finished below Ada.
+Rob finished below Joe. 
+
+Key Information:
+The station wagon is the fourth-newest.
+The motorcyle is newer than the truck.
+The station wagon is older than the hatchback.
+The minivan is newer than the hatchback.
+The bus is newer than the minivan.
+The truck is newer than the limousine.
+
+Key Information:
+The hummingbird is to the left of the quail.
+The robin is to the left of the cardinal.
+The blue jay is the leftmost.
+The cardinal is the fourth from the left.
+The raven is the third from the right.
+The owl is the third from the left.
+
+Key Information:
+The hummingbird is to the left of the falcon.
+The crow is to the right of the cardinal.
+The cardinal is the second from the right.
+The quail is the third from the right.
+The falcon is to the left of the robin.
+The owl is the second from the left.
+
+Key Information:
+The pears are the third-cheapest.
+The kiwis are the second-most expensive.
+The pears are more expensive than the plums.
+The oranges are less expensive than the kiwis.
+The mangoes are the third-most expensive.
+The peaches are the second-cheapest.
+
+Key Information:
+Ada finished above Mya.
+Eli finished below Joe.
+Eli finished above Eve.
+Ada finished second-to-last.
+Mel finished third.
+Rob finished fourth.
+
+Key Information:
+Joe finished third.
+Dan finished last.
+Eve finished first.
+Mel finished below Rob.
+Ada finished above Joe.
+Rob finished third-to-last. 
+

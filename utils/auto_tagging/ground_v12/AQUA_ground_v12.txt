@@ -1,0 +1,25 @@
+### TAGGED ANSWER:
+The <fact3>distance</fact3> that the person traveled would have been <fact1>20 km/hr</fact1> * <fact2>2.5 hrs</fact2> = 50 km. So the answer is (e).
+
+### TAGGED ANSWER:
+If <fact3>10 is added to each number</fact3>, then the <fact4>mean of the numbers</fact4> also increases by 10. So the new mean would be <fact2>40</fact2> + 10 = 50. So the answer is (a).
+
+### TAGGED ANSWER:
+If <fact1>a / b = 3/4</fact1>, then b = 4a / 3. So <fact2>8a + 5b = 22</fact2>. This simplifies to 8a + 20a / 3 = 22, which means 44a / 3 = 22. So <fact3>a</fact3> is equal to 3/2. So the answer is (b).
+
+### TAGGED ANSWER:
+There are <fact2>9 one-digit numbers from 1 to 9</fact2>. There are <fact2>90 two-digit numbers from 10 to 99</fact2>. There are <fact2>401 three-digit numbers from 100 to 500</fact2>. <fact2>9</fact2> + <fact2>90</fact2>(2) + <fact2>401</fact2>(3) = 1392 So the answer is (b).
+
+### TAGGED ANSWER:
+If Q completes x kilometers, then P completes 1.15x kilometers. <fact1>x + 1.15x = 43</fact1> <fact1>2.15x=43</fact1> x = 43/2.15 = 20 Then P will have walked 1.15*20=23 km. So the answer is (e).
+
+
+### TAGGED ANSWER:
+Total entrance fee is (2*<fact1>$5 for persons under the age of 18</fact1>) + (1.20*<fact1>$5 for persons under the age of 18</fact1>) = $16. Total rides fee is (<fact3>$0.50</fact3>*<fact5>3 rides</fact5>)*3= $4.50. Total money spent is $20.50. So the answer is (b).
+
+### TAGGED ANSWER: 
+The tip is <fact2>20%</fact2> of what he paid for lunch. tip = <fact2>20%</fact2> of <fact1>$50.00</fact1> = (20/100)*50.00 = $10.00. Total spent <fact1>$50.00</fact1> + $10.00 = $60.00. So the answer is (a).
+
+### TAGGED ANSWER:
+Volume of cube = <fact1>lbh = 8</fact1>. New cube l, b, h are decreases of <fact4>.5l</fact4>, <fact2>.5b</fact2>, <fact3>.5h</fact3>. New volume of cube = <fact4>.5l</fact4>*<fact2>.5b</fact2>*<fact3>.5h</fact3> = .125*<fact1>lbh</fact1> = .125*8 = 1. So the answer is (a).
+
