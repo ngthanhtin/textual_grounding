@@ -1,24 +1,20 @@
-### TAGGED ANSWER:
-Items on the desk in a row: We are told that there are three things arranged in a row: a <fact1>grey cup</fact1>, a <fact2>purple mug</fact2>, and a <fact3>blue teddy bear</fact3>. Position of the <fact1>grey cup</fact1>: The <fact1>grey cup</fact1> is the first item in the row. Position of the <fact2>purple mug</fact2>: The <fact2>purple mug</fact2> is to the right of the <fact1>grey cup</fact1>. The thing directly to the right of the <fact1>grey cup</fact1> is the <fact2>purple mug</fact2>, and its color is <fact2>purple</fact2>. The answer is {Q}.
+### TAGGED ANSWER: 
+<fact3>Construction business</fact3> is a profession in which a <fact1>union member</fact1> is required. Workplace is not a <fact3>profession</fact3>. Science is a subject and not a <fact3>profession</fact3>. Algebra is not a <fact3>profession</fact3>. Province is not a correct option. The answer is {E}.
 
-### TAGGED ANSWER:
-Let's think step by step. According to this question, it's directly stated that the color of the <fact2>stress ball</fact2> is <fact1>blue</fact1>. The answer is {E}.
+### TAGGED ANSWER: 
+Due to <fact1>Google maps</fact1>, other <fact2>highway and street GPS services</fact2> Atlas has been replaced since they provide better and more accurate data. Other options are places or locations which cannot be replaced by a service like <fact2>GPS</fact2>. The answer is {D}.
 
-### TAGGED ANSWER:
-Let's think step by step. According to this question, the objects are arranged in a row, from left to right, as follows: (1) a <fact1>purple paperclip</fact1>, (2) a <fact2>pink stress ball</fact2>, (3) a <fact3>brown keychain</fact3>, (4) a <fact4>green scrunchiephone charger</fact4>, (5) a <fact5>mauve fidget spinner</fact5>, (6) a <fact6>burgundy pen</fact6>. The <fact2>stress ball</fact2> is the second object on the list, namely (2). The object that is to the right of the <fact2>stress ball</fact2> corresponds to (3), which is a <fact3>brown keychain</fact3>. The answer is {F}.
+### TAGGED ANSWER: 
+The <fact1>fox</fact1> walked from the <fact2>city</fact2> into the <fact3>forest</fact3> looking for its <fact3>natural habitat</fact3> since <fact3>forests</fact3> are one of the main <fact3>natural habitats</fact3> of <fact1>foxes</fact1>. <fact1>Foxes</fact1> neither look for pretty flowers nor storybooks. Hen houses aren't in <fact3>forests</fact3>. <fact3>Dense forest</fact3> is not the only <fact3>forest</fact3> <fact1>foxes</fact1> inhabit. The answer is {C}.
 
-### TAGGED ANSWER:
-Let's think step by step. According to this question, the objects are arranged in a row, from left to right, as follows: (1) a <fact1>teal plate</fact1>, (2) a <fact2>burgundy keychain</fact2>, (3) a <fact3>yellow scrunchiephone charger</fact3>, (4) an <fact4>orange mug</fact4>, (5) a pink notebook, (6) a grey cup. The <fact1>teal plate</fact1> is the first item, namely (1). There is no item to the left of the <fact6>teal item</fact6>. The number of <fact5>non-orange items</fact5> to the left of the <fact6>teal item</fact6> is zero. The answer is {A}.
+### TAGGED ANSWER: 
+Barbeque is a way of <fact1>cooking</fact1> done <fact1>slowly</fact1> under heat on a <fact2>grill</fact2>. All the other options are not a way of cooking. The answer is {E}.
 
-### TAGGED ANSWER:
-The question lists the items on the desk as a <fact1>purple necklace</fact1>, a <fact2>gold scrunchiephone charger</fact2>, and a <fact3>red stress ball</fact3>. The question directly asks if the <fact3>stress ball is red</fact3>, and we can confirm from the list that it is indeed described as red. The answer is {A}.
+### TAGGED ANSWER: 
+If a person aims to <fact1>earn money</fact1>, they can <fact1>apply for a job</fact1>. When they work, they <fact1>earn money</fact1> for their work. All the other options are irrelevant. The answer is {A}.
 
-### TAGGED ANSWER:
-The list of items on the table includes a silver pen, a teal pencil, a <fact1>red booklet</fact1>, a black puzzle, and an orange cat toy. The question asks if the <fact1>booklet is red</fact1>, and based on the description, it indeed is red. The answer is {A}.
+### TAGGED ANSWER: 
+<fact2>Cable</fact2> can be fixed to a <fact1>television</fact1> and not to a desk. <fact1>Television</fact1> is a <fact1>home entertainment equipment</fact1> unlike radio shack, cabinet and a substation. The answer is {D}.
 
-### TAGGED ANSWER:
-The items on the floor are arranged as a <fact1>blue crayon</fact1>, a <fact2>purple stress ball</fact2>, and a <fact3>burgundy dog leash</fact3>. Since the <fact3>burgundy dog leash</fact3> is the last item listed, it is the <fact4>right-most item</fact4>. The answer is {L}.
-
-### TAGGED ANSWER:
-The items on the table are a <fact1>gold mug</fact1>, a teal paperclip, a blue plate, and an orange notebook. The <fact2>left-most item</fact2> is the <fact1>gold mug</fact1>, making gold the color of the <fact2>left-most item</fact2>. The answer is {N}.
-
+### TAGGED ANSWER: 
+Different food prepared in the <fact1>kitchen</fact1> gives a good aroma or a distinctive, typically pleasant smell. The <fact1>kitchen</fact1> is the place where he can eat good food, and that’s why it could be his favorite. The yard is not a room and is outside the <fact1>house</fact1>. The yard doesn’t give aroma. The basement doesn’t give aroma. The living room cannot give aroma. The garden is not a room and is not in the <fact1>house</fact1>. It cannot give aroma. The answer is {C}.
