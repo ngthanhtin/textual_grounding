@@ -41,7 +41,7 @@ def create_prompt(question, dataset, prompt_used, few_shot_prompt, answer_mode):
             #(ground in Q and A)
             instruction = f"I want you to answer this question but your explanation should contain references referring back to the information in the question. To do that, first, re-generate the question with proper tags for key phrases, the key phrases that are most relevant to answering the question {last_sentence} and then generate your answers. The output format is as follow:\n\
                 Reformatted Question: \
-                    Answer:"
+                    Answer: " + "{}"
                     
             #(ground in Q only)
             # instruction = "I want you to answer this question. To do that, first, re-generate the question with proper tags for key phrases, the key phrases that are most relevant to answering the question {last_sentence}, and then generate your answers. The output format is as follow:\n\
