@@ -1,15 +1,41 @@
 
-import yaml, os, re, random, json
+import os, re, random
 from tqdm import tqdm
 import pandas as pd
 
 from arg_parser import get_common_args
-from utils.utils import read_jsonl_file, extract_last_sentence
 from agents.api_agents import api_agent
 from agents.batch_api_agents import batch_api_agent
 from load_dataset import DatasetLoader
 
 random.seed(0)
+
+import re
+
+def extract_last_sentence(text):
+    # Split the text into sentences using regular expression to handle punctuation.
+    sentences = re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s', text)
+    
+    # Return the last sentence after stripping any extra spaces.
+    return sentences[-1].strip() if sentences else text
+
+def med_QA_extract_last_sentence(text):
+    # Split the text at the point where multiple-choice options start (e.g., "A)", "B)", etc.)
+    parts = re.split(r'\n[A-Z]\)', text, flags=re.MULTILINE)
+    
+    if parts:
+        # The first part contains everything before the options
+        pre_options = parts[0]
+        
+        # Use a regex to find all sentences ending with ., ?, or !
+        sentences = re.findall(r'[^.!?]*[.!?]', pre_options, re.DOTALL)
+        
+        if sentences:
+            # Return the last sentence after stripping any extra spaces
+            return sentences[-1].strip()
+    
+    # If splitting or finding sentences fails, return the original text
+    return text
 
 def create_prompt(question, dataset, prompt_used, few_shot_prompt, answer_mode):
     if dataset in ['commonsenseQA']:
@@ -25,6 +51,8 @@ def create_prompt(question, dataset, prompt_used, few_shot_prompt, answer_mode):
         last_sentence = 'Choose the correct answer.'
     elif dataset == 'spartQA':
         last_sentence = ""
+    elif dataset == 'medQA':
+        last_sentence = med_QA_extract_last_sentence(question)
     else:
         last_sentence = extract_last_sentence(question)
     

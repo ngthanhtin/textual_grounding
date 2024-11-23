@@ -67,16 +67,12 @@ class DatasetLoader:
         """
         if self.dataset == 'p_GSM8K':
             return self._process_generic('new_question', 'index')
-        elif self.dataset == 'commonsenseQA':
-            return self._process_commonsenseQA()
         elif self.dataset == 'spartQA':
             return self._process_spartQA()
         elif self.dataset == 'reclor':
             return self._process_reclor()
-        elif self.dataset in ['GSM_IC', 'GSM8K_Hard', 'GSM_Plus', 'coin', 'last_letter_2', 'last_letter_4', 'medQA']:
+        elif self.dataset in ['GSM_IC', 'GSM8K_Hard', 'GSM_Plus', 'medQA']:
             return self._process_simple()
-        elif self.dataset == 'wikimultihopQA':
-            return self._process_generic('question', '_id')
         else:
             return self._process_generic('question', 'id')
     
@@ -163,21 +159,6 @@ class DatasetLoader:
         ids = [x[id_key] for x in self.data]
         return questions, ids
 
-    def _process_commonsenseQA(self):
-        questions, ids = [], []
-        
-        for sample in self.data:
-            question = sample['question']['stem']
-            choices = sample['question']['choices']
-            answer_choices = ''.join(
-                f"({choice['label'].lower()}) {choice['text']}\n" for choice in choices
-            )
-            
-            questions.append(question + "\n" + answer_choices)
-            ids.append(sample['id'])
-        
-        return questions, ids
-
     def _process_spartQA(self):
         questions = [
             x['question'].replace('0:', '(a)').replace('1:', '(b)').replace('2:', '(c)').replace('3:', '(d)')
@@ -216,15 +197,15 @@ class DatasetLoader:
         return questions, ids  
         
     
-    def _retrieve_gts(self, ids):
+    def retrieve_gts(self, ids):
         """
         ids: ids of the predictions (list)
         """        
         # read gt
         gts = []
-        if self.dataset in ['coin', 'last_letter_2', 'last_letter_4', 'GSM8K_Hard']:
+        if self.dataset in ['GSM8K_Hard']:
             for id in ids:
-                for i, temp in enumerate(data):
+                for i, temp in enumerate(self.data):
                     if id == i:
                         # print(temp['new_question'], id, temp['answer'])
                         # exit()
@@ -237,16 +218,12 @@ class DatasetLoader:
                         gts.append(gt)
             return gts
         
-        if self.dataset in ['GSM_Plus', 'GSM_IC']:
-            if self.dataset == 'GSM_IC':
-                length = 583 # 370: 2 step, 583: mstep
-                questions = [x['new_question'] for x in data if len(x["new_question"]) >= length]
-                answers = [x['answer'] for x in data if len(x["new_question"]) >= length]
-                data = [{'new_question': q, 'answer': a} for q, a in zip(questions, answers)]
+        if self.dataset == 'GSM_Plus':
+            
             num_cannot_convert = 0
             num_none = 0
             for id in ids:
-                for i, temp in enumerate(data):
+                for i, temp in enumerate(self.data):
                     if id == i:
                         # print(temp['new_question'], id, temp['answer'])
                         # exit()
@@ -268,7 +245,15 @@ class DatasetLoader:
             return gts
     
         for id in ids:
-            for temp in data:
+            for temp in self.data:
+                if self.dataset == 'squad':
+                    if temp['id'] == id:
+                        gt = temp['answer']
+                        gts.append(gt)
+                if self.dataset in ['drop_break', 'drop_cencus']:
+                    if temp['id'] == id:
+                        gt = temp['answer'][0][0]
+                        gts.append(float(gt))
                 if self.dataset == 'p_GSM8K':
                     if temp['index'] == id:
                         gt = temp['answer']
@@ -308,7 +293,7 @@ class DatasetLoader:
                 else:
                     if temp['id'] == id:
                         gt = temp['answer']
-                        if self.dataset in ['GSM8K', 'p_GSM8K', 'MultiArith', 'SVAMP']:
+                        if self.dataset in ['GSM8K', 'MultiArith', 'SVAMP']:
                             gt = gt.split('####')[1].strip()
                             if ',' in gt:
                                 gt = gt.replace(',', '')

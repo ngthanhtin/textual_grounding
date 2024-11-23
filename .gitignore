@@ -18,3 +18,5 @@ results/
 results_auto_tagging/
 agents/__pycache__/
 __pycache__/
+
+data/
