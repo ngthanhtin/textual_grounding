@@ -2,9 +2,11 @@ from arg_parser import get_common_args
 
 import yaml, os
 import pandas as pd
-from utils.utils import add_color_to_tags, extract_parts_1, read_jsonl_file, retrieve_gts
+from utils.utils import add_color_to_tags, extract_parts_1, read_jsonl_file
 
 from utils.mmlu import check_math_answer, check_aqua_answer, check_asdiv_answer, check_bool_answer, check_exact_match_answer, compute_acc_gsm_plus, check_multiple_choice_answer, check_gsm_hard_answer
+
+from load_dataset import DatasetLoader
 
 def create_cot_highlight_html(dataset, questions, answers, gts, check_correct=False):
     html_content = """
@@ -205,8 +207,10 @@ if __name__ == "__main__":
     base_data_path = args.base_data_path
     gt_data_path = os.path.join(base_data_path, config['data_paths'][args.dataset])
     
+    dataloader = DatasetLoader(config_path='configs/config.yaml', base_data_path=args.base_data_path, base_few_shot_prompt_path=args.base_prompt_path, dataset=args.dataset, data_mode=args.data_mode, num_samples=args.num_samples)
+    
     print(f"Loading data from {gt_data_path}...")
-    gts = retrieve_gts(gt_data_path, ids, args.dataset)
+    gts = dataloader.retrieve_gts(ids)
 
     if args.answer_mode == 'cot':
         html_content = create_cot_highlight_html(args.dataset, questions, answers, gts, check_correct=args.check_correct)
