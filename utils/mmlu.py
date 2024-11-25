@@ -308,7 +308,6 @@ def check_gsm_hard_answer(answer, gt, verbose=False):
         extracted_answer = extracted_answer.strip()
         if round(float(gt), 1) == round(float(extracted_answer), 1):
             acc += 1
-        
     except:
         extracted_answer = answer.split('{')[-1].split('}')[0]
         extracted_answer = extracted_answer.replace(":", "").replace("*", "").replace("$", "").replace(",", "").replace("{", "").replace("}", "").replace("€", "").replace('%', '')
@@ -575,3 +574,53 @@ def check_multiple_choice_answer(question, answer, gt, verbose=False):
                 print("====================================")
     
     return acc
+
+
+def check_drop_answer(answer, gt, verbose=False):
+    
+    try:
+        extracted_answer = answer.split('{')[-1].split('}')[0]
+        extracted_answer = extracted_answer.replace(":", "").replace("*", "").replace("$", "").replace(",", "").replace("{", "").replace("}", "").replace("€", "").replace('%', '')
+        extracted_answer = extracted_answer.strip()
+        for _gt in gt:
+            if float(_gt) == float(extracted_answer):
+                return 1
+        # if float(_gt) == float(extracted_answer):
+        #     return 1
+        
+    except:
+        extracted_answer = answer.split('{')[-1].split('}')[0]
+        extracted_answer = extracted_answer.replace(":", "").replace("*", "").replace("$", "").replace(",", "").replace("{", "").replace("}", "").replace("€", "").replace('%', '')
+        extracted_answer = extracted_answer.strip()
+        
+        pred_list = parse_open_response(extracted_answer)
+    
+        for _gt in gt:
+            if _gt in pred_list:
+                return 1
+            
+    return 0
+
+def check_squad_answer(answer, gt):
+    # remove tag <fact> in the answer
+    answer = re.sub(r'</?fact\d+>', '', answer)
+    
+    if gt in answer or answer in gt:
+        return 1
+    
+    return 0
+
+def check_medQA_answer(question, answer, gt):
+    # remove tag <fact> in the answer
+    answer = re.sub(r'</?fact\d+>', '', answer)
+    gt_option = gt[0]
+    gt_text = gt[1]
+    
+    is_correct = check_multiple_choice_answer(question, answer, gt_option)
+    if is_correct == 0:
+        if gt_text.lower() in answer.lower() or answer.lower() in gt_text.lower():
+            return 1
+        else:
+            return 0
+    else:
+        return 1

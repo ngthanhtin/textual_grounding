@@ -4,7 +4,7 @@ import yaml, os
 import pandas as pd
 from utils.utils import add_color_to_tags, extract_parts_1, read_jsonl_file
 
-from utils.mmlu import check_math_answer, check_aqua_answer, check_asdiv_answer, check_bool_answer, check_exact_match_answer, compute_acc_gsm_plus, check_multiple_choice_answer, check_gsm_hard_answer
+from utils.mmlu import check_math_answer, check_aqua_answer, check_asdiv_answer, check_bool_answer, check_exact_match_answer, compute_acc_gsm_plus, check_multiple_choice_answer, check_gsm_hard_answer, check_drop_answer
 
 from load_dataset import DatasetLoader
 
@@ -127,8 +127,13 @@ def create_highlight_html(dataset, questions, answers, gts, check_correct=False)
             acc = check_asdiv_answer(answer, gt)
             if acc != correct_value:
                 continue
-        if dataset in ['GSM8K', 'p_GSM8K', 'MultiArith', 'SVAMP', 'GSM8K_Hard', 'GSM_Plus', 'drop_break', 'drop_cencus']:
+        
+        if dataset in ['GSM8K', 'p_GSM8K', 'MultiArith', 'SVAMP', 'GSM8K_Hard', 'GSM_Plus']:
             acc = check_math_answer(answer, gt)
+            if acc != correct_value:
+                continue
+        if dataset in ['drop_break', 'drop_cencus']:
+            acc = check_drop_answer(answer, gt)
             if acc != correct_value:
                 continue
         if dataset in ['AQUA']:
@@ -172,13 +177,9 @@ if __name__ == "__main__":
     arg_parser.add_argument('--check_correct', action='store_true')
     args = arg_parser.parse_args()
     
-    tail = '_temp_10_longest'
-    # tail = '_temp_0_longest'
+    tail = f'_temp_10_{args.data_mode}'
     result_folder = f"results_auto_tagging"
-    # result_folder = f"results"
     
-    # tail = '_temp_0_random'
-    # result_folder = 'results'
     save_html_path = f"{result_folder}/{args.dataset}/{args.answer_mode}/highlights_{args.prompt_used}_{args.llm_model}{tail}.html"
     df_path = f'{result_folder}/{args.dataset}/{args.answer_mode}/{args.prompt_used}_{args.llm_model}{tail}.csv'
     
