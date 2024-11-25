@@ -208,9 +208,11 @@ class DatasetLoader:
             for id in ids:
                 for i, temp in enumerate(self.data):
                     if id == i:
-                        gt = temp['answer']
-                        
-                        gts.append(gt)
+                        if self.dataset == 'GSM8K_Hard':
+                            gt = temp['answer']
+                            gts.append(gt)
+                        if self.dataset == 'medQA':
+                            gts.append([temp['answer'], temp['answer_text']])
             return gts
         
         if self.dataset == 'GSM_Plus':
@@ -247,8 +249,12 @@ class DatasetLoader:
                         gts.append(gt)
                 if self.dataset in ['drop_break', 'drop_cencus']:
                     if temp['id'] == id:
-                        gt = temp['answer'][0][0]
-                        gts.append(float(gt))
+                        all_gts = []
+                        for _, ans in enumerate(temp['answer']):
+                        # gt = temp['answer'][0][0]
+                        # gt_number = temp['answer'][0][1]
+                            all_gts.append(float(ans[0]))
+                        gts.append(all_gts)
                 if self.dataset == 'p_GSM8K':
                     if temp['index'] == id:
                         gt = temp['answer']
