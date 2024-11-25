@@ -273,8 +273,9 @@ def parse_options(question, dataset=""):
         # Convert the list of tuples into a dictionary
         answer_dict = {option: answer for option, answer in options}
     elif dataset in ["logical_deduction_seven_objects", "reasoning_about_colored_objects"]:
+        # print(question)
         options_section = question.split("Options:\n")[1]
-    
+        # print(options_section)
         # Parse each option line
         answer_dict = {}
         for line in options_section.split("\n"):
@@ -283,7 +284,7 @@ def parse_options(question, dataset=""):
                 letter = line[1]  # Get the letter between parentheses
                 text = line[4:].strip()  # Get the text after the closing parenthesis
                 answer_dict[letter] = text
-    if dataset in ["commonsenseQA"]:
+    if dataset in ["commonsenseQA", "medqa"]:
         try:
             # options_section = question.split("\n")[1]
             options_section = question[question.find("\n") + 1:]

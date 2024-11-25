@@ -28,7 +28,7 @@ def compute_acc(questions, answers, gts, dataset):
         if dataset in ['GSM8K', 'p_GSM8K', 'MultiArith', 'SVAMP', 'ASDiv', 'GSM8K_Hard', 'GSM_Plus', 'SPARTQA']:
             total_acc += check_math_answer(answer, gt)
             
-        elif dataset in ['AQUA', 'reasoning_about_colored_objects', 'logical_deduction_seven_objects', 'commonsenseQA']:
+        elif dataset in ['AQUA', 'reasoning_about_colored_objects', 'logical_deduction_seven_objects', 'commonsenseQA', 'medqa']:
             index2ans = parse_options(question, dataset)
             # remove ' in index2ans
             index2ans = {key: value.replace("'", "") for key, value in index2ans.items()}
@@ -42,14 +42,14 @@ def compute_acc(questions, answers, gts, dataset):
                 extracted_answer = answer.split('{')[-1].split('}')[0]
                 if gt.upper() in extracted_answer or gt_number in extracted_answer:
                     total_acc += 1
-                    # print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                    # print('------------------------------------')
+                    print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
+                    print('------------------------------------')
                 else:
-                    print('------------------------------------')
-                    print(question)
-                    # print('Incorrect Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                    print('GT: ', gt, gt_number)
-                    print('------------------------------------')
+                    # print('------------------------------------')
+                    # print(question)
+                    # print('Incorrect Answer: ', answer[-100:], 'GT: ', gt, gt_number)
+                    # print('GT: ', gt, gt_number)
+                    # print('------------------------------------')
                     pass
             except:
                 
@@ -211,7 +211,7 @@ def evaluate_model(llm_model: str, data_mode: str, answer_mode: str, dataset: st
         df_path = f'{result_folder}/{dataset}/{answer_mode}/fs_inst_{llm_model}_temp_10_random.csv'
     else:
         # df_path = f'{result_folder}/{args.dataset}/{answer_mode}/fs_inst_{args.llm_model}_temp_10_longest.csv'
-        df_path = f'/Users/log/Github/textual_grounding/logan/results/final/VanillaCoT/{dataset}/{llm_model}/zero_shot_vanilla_cot_None_{dataset}_{llm_model}.csv'
+        df_path = f'/Users/log/Github/textual_grounding/logan/results/final/GCoT/{dataset}/{llm_model}/gcot_shortest_gcot_examples.txt_{dataset}_{llm_model}.csv'
 
     
 

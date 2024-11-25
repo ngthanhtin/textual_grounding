@@ -29,6 +29,8 @@ data_paths:
   word_sorting: "word_sorting/test.json"
   tracking_shuffled_objects_seven_objects: "tracking_shuffled_objects_seven_objects/test.json"
   gpqa: "gpqa/test.json"
+  medqa: "medqa/test.jsonl"
+
 
 max_question_lengths:
   GSM8K: 336
