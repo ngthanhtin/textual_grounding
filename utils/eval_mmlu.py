@@ -46,10 +46,13 @@ def compute_acc(questions, answers, gts, dataset):
                     # print('------------------------------------')
                 else:
                     # print('------------------------------------')
-                    # print(question)
-                    # print('Incorrect Answer: ', answer[-100:], 'GT: ', gt, gt_number)
-                    # print('GT: ', gt, gt_number)
-                    # print('------------------------------------')
+                    print(question)
+                    print()
+                    # print('Incorrect Answer: ', answer, 'GT: ', gt, gt_number)
+                    print('LLM (incorrect) Answer: ')
+                    print(answer)
+                    print('(end of answer)...', answer[-100:], 'GT: ', gt, gt_number)
+                    print('------------------------------------')
                     pass
             except:
                 
@@ -216,6 +219,8 @@ def evaluate_model(llm_model: str, data_mode: str, answer_mode: str, dataset: st
         df_path = f'/Users/log/Github/textual_grounding/logan/results/final/fewshot_CoT/{dataset}/{llm_model}/cot_shortest_cot_examples.txt_{dataset}_{llm_model}.csv'
     elif data_mode == 'random':
         df_path = f'/Users/log/Github/textual_grounding/logan/results/final/fewshot_CoT/{dataset}/{llm_model}/cot_random_cot_examples.txt_{dataset}_{llm_model}.csv'
+    # TEMP - Tin Results
+    # df_path = '/Users/log/Downloads/fs_inst_llama_sambanova_70b_temp_10_shortest.csv'
 
     
 
