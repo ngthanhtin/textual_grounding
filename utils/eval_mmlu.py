@@ -42,8 +42,8 @@ def compute_acc(questions, answers, gts, dataset):
                 extracted_answer = answer.split('{')[-1].split('}')[0]
                 if gt.upper() in extracted_answer or gt_number in extracted_answer:
                     total_acc += 1
-                    print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
-                    print('------------------------------------')
+                    # print('Answer: ', answer[-200:], 'GT: ', gt, gt_number)
+                    # print('------------------------------------')
                 else:
                     # print('------------------------------------')
                     # print(question)
@@ -207,11 +207,15 @@ def evaluate_model(llm_model: str, data_mode: str, answer_mode: str, dataset: st
     if answer_mode == 'grounding_cot':
         answer_mode = 'design_1_v4'
         
-    if data_mode == 'random':
+    if data_mode == 'random_tin':
         df_path = f'{result_folder}/{dataset}/{answer_mode}/fs_inst_{llm_model}_temp_10_random.csv'
-    else:
+    elif data_mode == 'longest':
+        df_path = f'/Users/log/Github/textual_grounding/logan/results/final/fewshot_CoT/{dataset}/{llm_model}/cot_longest_cot_examples.txt_{dataset}_{llm_model}.csv'
+    elif data_mode == 'shortest':
         # df_path = f'{result_folder}/{args.dataset}/{answer_mode}/fs_inst_{args.llm_model}_temp_10_longest.csv'
-        df_path = f'/Users/log/Github/textual_grounding/logan/results/final/GCoT/{dataset}/{llm_model}/gcot_shortest_gcot_examples.txt_{dataset}_{llm_model}.csv'
+        df_path = f'/Users/log/Github/textual_grounding/logan/results/final/fewshot_CoT/{dataset}/{llm_model}/cot_shortest_cot_examples.txt_{dataset}_{llm_model}.csv'
+    elif data_mode == 'random':
+        df_path = f'/Users/log/Github/textual_grounding/logan/results/final/fewshot_CoT/{dataset}/{llm_model}/cot_random_cot_examples.txt_{dataset}_{llm_model}.csv'
 
     
 

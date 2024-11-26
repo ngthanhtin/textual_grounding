@@ -4048,3 +4048,621 @@ Given these considerations, the options can be evaluated as follows:
 - **E) Supination then maximal extension**: This is the correct technique for reducing a radial head subluxation. The maneuver involves gently supinating the forearm (which may cause initial discomfort) and then extending the elbow, which helps the radial head return to its normal position, often resulting in immediate relief.
 
 Answer: {E}"
+28,"A 26-year-old woman presents to a gynecologist after a missed period. After performing a complete physical examination and a screening test for pregnancy, her gynecologist informs her that she is pregnant. She is very surprised as she has been taking oral contraceptives regularly. When the gynecologist asks her about the consumption of any other medications, she mentions that she was placed on treatment for pulmonary tuberculosis (TB) 2 months ago. Her current anti-TB regimen includes rifampin, isoniazid, pyrazinamide, and ethambutol. Which of the following mechanisms best explains the failure of oral contraceptives in this patient?
+Options
+A) Induction of CYP3A4 by rifampin leading to decreased serum levels of ethinylestradiol and progesterone
+B) Induction of CYP2A6 by rifampin leading to increased inactivation of ethinylestradiol
+C) Induction of CYP2E1 by isoniazid leading to decreased serum levels of progesterone
+D) Interference with the intestinal absorption of the oral contraceptive by pyrazinamide
+E) Increased renal elimination of the progesterone component of the oral contraceptive by ethambutol","To address this question, let's break down the key elements and analyze the given options.
+
+The patient is a 26-year-old woman who became pregnant despite taking oral contraceptives regularly. She has also been undergoing treatment for pulmonary tuberculosis (TB) with a regimen that includes rifampin, isoniazid, pyrazinamide, and ethambutol. The failure of oral contraceptives in this context suggests a drug interaction that has reduced the effectiveness of the contraceptives.
+
+Rifampin is a well-known inducer of the cytochrome P450 enzyme system, particularly CYP3A4. This enzyme is involved in the metabolism of many drugs, including the components of oral contraceptives, such as ethinylestradiol and progesterone. Induction of CYP3A4 by rifampin would lead to increased metabolism and thus decreased serum levels of these hormones, potentially below the effective threshold for contraception.
+
+Let's evaluate the options:
+
+A) Induction of CYP3A4 by rifampin leading to decreased serum levels of ethinylestradiol and progesterone - This option directly addresses the known effect of rifampin on the CYP3A4 enzyme and its potential impact on oral contraceptives.
+
+B) Induction of CYP2A6 by rifampin leading to increased inactivation of ethinylestradiol - While rifampin does induce various CYP enzymes, the specific interaction with CYP2A6 and its impact on ethinylestradiol is less directly related to the scenario.
+
+C) Induction of CYP2E1 by isoniazid leading to decreased serum levels of progesterone - Isoniazid is primarily known for its inhibition of CYP enzymes rather than induction, making this option less likely.
+
+D) Interference with the intestinal absorption of the oral contraceptive by pyrazinamide - There is no well-documented interaction between pyrazinamide and the absorption of oral contraceptives.
+
+E) Increased renal elimination of the progesterone component of the oral contraceptive by ethambutol - Ethambutol's primary mechanism does not involve altering the renal elimination of other drugs.
+
+Given the analysis, the most plausible explanation for the failure of oral contraceptives in this patient is the induction of CYP3A4 by rifampin, leading to decreased serum levels of ethinylestradiol and progesterone.
+
+Answer: {A}"
+966,"A 52-year-old woman presents to the emergency department due to severe pain of her first metatarsophalangeal (MTP) joint. This pain started acutely, and she describes the pain as sharp. Her medical history is significant for obesity, hypertension, inflammatory bowel disease, and extensive alcohol use. She takes a number of medications but does not remember what they are. On physical exam, her right first MTP joint appears warm, swollen, erythematous, and exquisitely painful to the touch. After resolution of this acute episode, the patient is started on a drug to prevent recurrence of the symptoms. One month later on follow-up, she is found to have pancytopenia. Which of the following describes the mechanism of the drug most likely prescribed in this case?
+Options
+A) Antibody to soluble factor
+B) Inhibitor of microtubule polymerization
+C) Inhibitor of proximal tubule reabsorption
+D) Inhibitor of xanthine oxidase
+E) Recombinant enzyme","To approach this question, let's break down the key elements provided:
+
+1. **Patient Presentation**: The patient presents with severe, acute pain of the first metatarsophalangeal (MTP) joint, which is described as sharp. The joint is warm, swollen, erythematous, and painful to the touch. This presentation is classic for gout, a form of inflammatory arthritis characterized by sudden, severe attacks of pain, swelling, redness, and tenderness in one or more joints, most often the big toe.
+
+2. **Gout Pathophysiology**: Gout is caused by elevated levels of uric acid in the blood, which can form sharp, needle-like urate crystals in a joint or surrounding tissue, causing the inflammation and intense pain of a gout attack.
+
+3. **Treatment to Prevent Recurrence**: After the acute episode has resolved, the focus shifts to preventing future attacks. This typically involves medications that reduce uric acid production or increase its excretion.
+
+4. **Development of Pancytopenia**: The patient develops pancytopenia (a reduction in the number of red and white blood cells, as well as platelets) after starting the medication. This suggests the medication is affecting bone marrow function or blood cell production.
+
+Given these points, let's evaluate the options:
+
+- **A) Antibody to soluble factor**: This doesn't directly relate to common gout treatments or the side effect of pancytopenia.
+- **B) Inhibitor of microtubule polymerization**: This mechanism is associated with certain chemotherapy agents and could explain pancytopenia, but it's not directly related to gout treatment.
+- **C) Inhibitor of proximal tubule reabsorption**: This could relate to uricosuric agents, which increase uric acid excretion, but it's less likely to cause pancytopenia.
+- **D) Inhibitor of xanthine oxidase**: This class of drugs, including allopurinol and febuxostat, reduces uric acid production and is commonly used for gout prophylaxis. However, allopurinol, in particular, is known for its rare but serious side effect of bone marrow suppression, which can lead to pancytopenia.
+- **E) Recombinant enzyme**: This is not typically associated with gout treatment or the development of pancytopenia.
+
+Based on the information provided and the mechanism of action related to both gout treatment and the potential side effect of pancytopenia, the most likely drug prescribed in this case is an inhibitor of xanthine oxidase, specifically one that can cause bone marrow suppression.
+
+Answer: {D}"
+840,"A 48-year-old woman comes to the physician because of a 4-month history of lightheadedness, intermittent headaches, and easy bruising. Five months ago, she was treated for an episode of thrombophlebitis. Physical examination shows multiple bruises on her limbs. Laboratory studies show a platelet count of 900,000/mm3 and elevated levels of serum lactate dehydrogenase and uric acid. Treatment with a medication is begun that is also used in the treatment of sickle cell disease. Which of the following mechanisms is most likely responsible for the beneficial effect of this drug in sickle cell disease?
+Options
+A) Inhibition of thrombocyte aggregation
+B) Increase in circulating fetal hemoglobin
+C) Substitution of cofactors for DNA synthesis
+D) Inhibition of stem cell differentiation
+E) Restoration of the body's iron stores","To address this question, let's break down the key elements provided:
+
+1. **Patient's Symptoms and History**: The patient presents with lightheadedness, intermittent headaches, easy bruising, and a history of thrombophlebitis. These symptoms, combined with laboratory findings of an elevated platelet count (thrombocytosis), elevated serum lactate dehydrogenase, and uric acid, are suggestive of a myeloproliferative disorder, such as essential thrombocythemia or polycythemia vera.
+
+2. **Treatment and Connection to Sickle Cell Disease**: The treatment initiated for this patient is also used in the management of sickle cell disease. Given the context, the medication is likely hydroxyurea (hydroxycarbamide), which is used in both the treatment of certain myeloproliferative disorders and sickle cell disease.
+
+3. **Mechanism of Action in Sickle Cell Disease**: Hydroxyurea's beneficial effect in sickle cell disease primarily comes from its ability to increase levels of fetal hemoglobin (HbF). HbF inhibits the polymerization of sickle hemoglobin (HbS), thereby reducing the frequency of sickling and the resultant vaso-occlusive crises.
+
+Considering the options provided:
+
+- **A) Inhibition of thrombocyte aggregation**: While hydroxyurea can affect platelet production, this is not its primary beneficial mechanism in sickle cell disease.
+- **B) Increase in circulating fetal hemoglobin**: This is the correct answer. Hydroxyurea increases HbF levels, which is its primary beneficial effect in sickle cell disease.
+- **C) Substitution of cofactors for DNA synthesis**: This is not directly related to hydroxyurea's mechanism of action in sickle cell disease.
+- **D) Inhibition of stem cell differentiation**: Hydroxyurea can affect rapidly dividing cells, including stem cells, but this is not its primary beneficial mechanism in sickle cell disease.
+- **E) Restoration of the body's iron stores**: This is not a direct effect of hydroxyurea.
+
+Answer: {B}"
+1166,"A 4-month-old boy is brought to the pediatrician by his parents. He presents to the pediatric ward with fever, dyspnea, and cough, which he developed 3 days ago. His mother also reports he had poor weight gain despite a good appetite during the past 2 months as well as frequent stools with an unpleasant smell. He was born at 29 weeks via spontaneous vaginal delivery. He is meeting all of his milestones and is up to date with all vaccines. The child is breastfed exclusively. His blood pressure is 80/50 mm Hg, the heart rate is 109/min, the respiratory rate is 29/min, and the temperature is 39.1°C (102.4°F). The patient’s weight is between the 5th and 10th percentile. His length is between the 50th and 75th percentile. The patient is sluggish and reacts torpidly to examination. His skin is pale and dry with decreased turgor and elasticity. On auscultation, there are diminished vesicular sounds and disseminated moist rales at the bases of both lungs. Heart sounds are normal. The abdomen is distended without palpable masses. The patient’s blood analysis shows the following findings:
+Complete blood count 
+ Erythrocytes  3.3 x 106/mm3
+ Hb  12 g/dL
+ Total leukocyte count  17,500/mm3
+ Neutrophils
+ 59%
+ Lymphocytes
+ 32%
+ Eosinophils
+ 3%
+ Monocytes
+ 6%
+ Basophils
+ 0
+Platelet count
+232,000/mm3
+Sputum culture grows Pseudomonas aeruginosa. A sweat test shows chloride concentration of 85 mEq/L (elevated). Which of the following is involved in the pathogenesis of this patient’s symptoms?
+Options
+A) Neutrophil elastase damages lung tissue due to lack of alpha-1-antitrypsin.
+B) Abnormal CFTR protein
+C) Eosinophils infiltrate blood vessel walls.
+D) Electron transport chain in mitochondria is disrupted due to lack of glycerol-3-phosphate dehydrogenase.
+E) Due to mutations in dynein, the ciliary epithelium fails to provide appropriate mucociliary clearance.","To approach this question, let's break down the key components of the patient's presentation and the laboratory findings.
+
+1. **Clinical Presentation**: The patient is a 4-month-old boy with symptoms of fever, dyspnea, cough, poor weight gain despite a good appetite, and frequent stools with an unpleasant smell. He was born prematurely at 29 weeks but is meeting all his milestones and is up to date with all vaccines. He is exclusively breastfed.
+
+2. **Physical Examination Findings**: The child is sluggish, reacts torpidly to examination, has pale and dry skin with decreased turgor and elasticity, and shows signs of respiratory distress with diminished vesicular sounds and disseminated moist rales at the bases of both lungs.
+
+3. **Laboratory Findings**: The complete blood count shows a mild anemia (Hb 12 g/dL), leukocytosis (17,500/mm^3) with a predominance of neutrophils, and a normal platelet count. The sputum culture grows Pseudomonas aeruginosa, a pathogen commonly associated with cystic fibrosis lung infections. The sweat test, which is a diagnostic gold standard for cystic fibrosis, shows an elevated chloride concentration of 85 mEq/L.
+
+Given these findings, the patient's symptoms are most consistent with cystic fibrosis (CF), a genetic disorder caused by mutations in the CFTR (cystic fibrosis transmembrane conductance regulator) gene. The CFTR protein is a chloride channel that plays a critical role in the regulation of chloride and water transport across epithelial cells, affecting various organs, including the lungs, pancreas, and intestines. In CF, the abnormal or absent CFTR protein leads to thickened mucus production that clogs the airways and traps bacteria, resulting in recurrent respiratory infections and progressive lung damage. The presence of Pseudomonas aeruginosa in the sputum culture further supports this diagnosis, as this bacterium is a common pathogen in CF patients.
+
+The elevated sweat chloride concentration is diagnostic of CF, as individuals with CF have higher concentrations of chloride in their sweat due to the abnormal CFTR protein.
+
+Considering the options provided:
+
+- **A** refers to alpha-1-antitrypsin deficiency, which is associated with emphysema in adults, not the clinical picture described.
+- **B** correctly identifies the involvement of the abnormal CFTR protein in the pathogenesis of cystic fibrosis, matching the patient's symptoms and diagnostic findings.
+- **C** refers to eosinophilic disorders, not relevant to this case.
+- **D** mentions a mitochondrial disorder, which is not indicated by the patient's presentation or diagnostic results.
+- **E** refers to primary ciliary dyskinesia, another respiratory disorder, but the clinical findings and sweat test results point towards cystic fibrosis.
+
+Answer: {B}"
+1042,"A 3-year-old boy is brought to his pediatrician for evaluation because his parents have been concerned by a number of troubling signs. Specifically, they have noticed that he has been exhibiting aggressive behavior as well as hyperactivity. In addition, he has had intellectual disability and is slow to hit developmental milestones. Physical exam reveals coarse facies, short stature, and joint stiffness. Eye exam reveals no abnormalities of the cornea or lens. Based on these findings, the patient is referred to a geneticist for further evaluation. Which of the following substances would most likely accumulate in the cells of this patient?
+Options
+A) Cerebroside sulfate
+B) Galactocerebroside
+C) Glucocerebroside
+D) Heparan sulfate
+E) Sphingomyelin","To approach this question, let's break down the key components of the patient's presentation and how they relate to potential genetic disorders that could lead to the accumulation of specific substances within cells.
+
+1. **Aggressive behavior, hyperactivity, intellectual disability, and slow developmental milestones**: These symptoms suggest a disorder affecting the central nervous system and potentially other systems.
+
+2. **Coarse facies, short stature, and joint stiffness**: These physical findings are characteristic of certain lysosomal storage diseases, which are genetic disorders leading to the accumulation of specific substances within lysosomes due to enzyme deficiencies.
+
+3. **No abnormalities of the cornea or lens**: This helps to rule out disorders that specifically affect these parts of the eye, such as certain mucopolysaccharidoses.
+
+Given these points, the patient's presentation is most consistent with a lysosomal storage disease. Among the options provided:
+
+- **A) Cerebroside sulfate**: Accumulates in metachromatic leukodystrophy, primarily affecting the central nervous system, but the described physical features don't fully match this condition.
+
+- **B) Galactocerebroside**: Associated with Krabbe disease, characterized by severe neurological symptoms but not typically the physical features described.
+
+- **C) Glucocerebroside**: Accumulates in Gaucher's disease, which can present with a range of symptoms including systemic involvement, but the specific combination of aggressive behavior, hyperactivity, intellectual disability, coarse facies, short stature, and joint stiffness isn't the best fit.
+
+- **D) Heparan sulfate**: Accumulates in certain types of mucopolysaccharidosis (MPS), such as MPS III (Sanfilippo syndrome), which presents with severe neurological symptoms, intellectual disability, and in some cases, physical features like coarse facies. However, corneal clouding is more typical of other MPS types.
+
+- **E) Sphingomyelin**: Accumulates in Niemann-Pick disease, which can present with neurological symptoms and systemic involvement, including hepatosplenomegaly, but the specific combination of symptoms described doesn't perfectly match.
+
+Considering the aggressive behavior, hyperactivity, intellectual disability, coarse facies, short stature, and joint stiffness without specific eye abnormalities, the most likely substance to accumulate is heparan sulfate, associated with certain mucopolysaccharidoses, particularly Sanfilippo syndrome (MPS III), despite the lack of corneal clouding which is more typical of other MPS types.
+
+Answer: {D}"
+638,"A 12-year-old girl is brought to your psychiatry office by her parents, who are concerned that she has not made any friends since starting middle school last year. The girl tells you that she gets nervous around other children, as she cannot tell what they are feeling, when they are joking, or what she has in common with them. Her teachers describe her as “easily distracted” and “easily upset by change.” When asked about her hobbies and interests, she states that “marine biology” is her only interest and gives you a 15-minute unsolicited explanation of how to identify different penguin species. Mental status exam is notable for intense eye contact, flat affect, and concrete thought process. Which of the following is true regarding this child’s disorder?
+Options
+A) Boys are more commonly affected than girls
+B) Impaired attention is a key feature of the disorder
+C) Intellectual disability is a key feature of the disorder
+D) It is usually associated with a family history of schizophrenia
+E) Typical age of onset is 3-5 years of age","Analyzing the situation, the 12-year-old girl's difficulties in making friends, understanding social cues, and adapting to changes, along with her intense focus on a specific interest (marine biology), suggest a diagnosis of Autism Spectrum Disorder (ASD). Key features of ASD include challenges with social communication and interaction, and restricted or repetitive patterns of behavior or interests. While impaired attention can be a feature in some cases, it is not a defining characteristic of ASD. Intellectual disability is not a required feature of ASD, as individuals with ASD can have a wide range of intellectual abilities. There is no established direct link between ASD and a family history of schizophrenia. The typical age of onset for ASD symptoms is usually before 3 years of age, but diagnosis might occur later, especially in milder cases. Boys are indeed more commonly affected by ASD than girls, with a male-to-female ratio of approximately 4:1.
+
+Answer: [A]"
+796,"A 56-year-old man comes to the physician for a follow-up examination 1 week after a temporal artery biopsy was performed to evaluate headache and blurry vision. He has a 12-year history of hypertension treated with lisinopril. Results of the testing show decreased concentrations of arginine in vascular endothelial cells. Which of the following is the most likely explanation for this finding?
+Options
+A) Increased binding of calcium to calmodulin
+B) Increased phosphorylation of myosin
+C) Increased production of nitric oxide
+D) Decreased production of cyclic guanosine monophosphate
+E) Decreased concentration of bradykinin","To approach this question, let's break down the key elements provided:
+
+1. **Temporal artery biopsy**: This procedure is often performed to diagnose giant cell arteritis, a condition where the blood vessels, especially those in and around the head, become inflamed. However, the question does not directly state that the biopsy confirmed this diagnosis, so we should consider the symptoms and results more broadly.
+
+2. **Headache and blurry vision**: These symptoms can be associated with various vascular and neurological conditions. Given the context of a temporal artery biopsy, we might lean towards vascular conditions affecting the head or systemic conditions with vascular manifestations.
+
+3. **Decreased concentrations of arginine in vascular endothelial cells**: Arginine is an amino acid that serves as a precursor to nitric oxide (NO) in the endothelium. Nitric oxide is a crucial vasodilator, meaning it helps blood vessels relax and widen, improving blood flow and lowering blood pressure.
+
+4. **12-year history of hypertension**: Hypertension (high blood pressure) can lead to endothelial dysfunction, where the endothelium (the inner lining of blood vessels) does not function normally. This can affect the production of nitric oxide and, consequently, vascular tone and blood pressure regulation.
+
+Given these points, the question asks for the most likely explanation for the decreased concentrations of arginine in vascular endothelial cells. Let's evaluate the options:
+
+- **A) Increased binding of calcium to calmodulin**: This process is involved in the contraction of smooth muscle cells and is not directly related to arginine levels or nitric oxide production.
+
+- **B) Increased phosphorylation of myosin**: This is also related to muscle contraction and is not directly linked to arginine or nitric oxide.
+
+- **C) Increased production of nitric oxide**: This would typically require more arginine, not less, as arginine is a precursor to nitric oxide.
+
+- **D) Decreased production of cyclic guanosine monophosphate (cGMP)**: cGMP is a downstream effector of nitric oxide. Decreased production of cGMP could be a result of decreased nitric oxide, which in turn could be due to decreased arginine availability. This option seems related but does not directly explain the decrease in arginine.
+
+- **E) Decreased concentration of bradykinin**: Bradykinin is a peptide that causes blood vessels to dilate (expand), partly by stimulating the release of nitric oxide. Its action is related to the kinin-kallikrein system, which also interacts with the renin-angiotensin system (RAS) that regulates blood pressure. A decreased concentration of bradykinin could be related to decreased nitric oxide production and, indirectly, to decreased arginine utilization. However, this does not directly explain decreased arginine levels.
+
+Considering the information and the options provided, none directly explain the decrease in arginine levels in a straightforward manner. However, we can infer that decreased arginine levels could lead to decreased nitric oxide production, which is crucial for vascular health and function. Given the context of hypertension and potential endothelial dysfunction, the closest related option would involve the pathways affecting nitric oxide production or vascular tone regulation.
+
+However, based on the logic and the options provided, none perfectly match the expected explanation for decreased arginine levels directly. The closest related to vascular function and nitric oxide pathway would be option D, considering the downstream effect of decreased nitric oxide (which would be a consequence of decreased arginine), but this is not a direct explanation for decreased arginine levels.
+
+Answer: [D]"
+315,"A 26-year-old woman comes to the clinic for an annual wellness examination. She is healthy with no prior history of significant illness. She exercises 3-4 times a week and eats a plant-based diet with no carbonated drinks. When asked if anything is bothering her, she reports that she has been having recurring episodes of sneezing, congestion, and itchy eyes for the past year. She denies any fever, sick contacts, cough, headaches, chest pain, urinary symptoms, or constipation/diarrhea during these episodes. She is told to take a medication to alleviate her symptoms as needed. What is the likely mechanism of action of the medication in question?
+Options
+A) Alpha-adrenergic agonist
+B) Competitive blockage of muscarinic receptors
+C) Disruption of disulfide bonds
+D) Inhibition of phosphodiesterase-5
+E) Short acting beta-2 agonist","To address the symptoms described by the 26-year-old woman, which include recurring episodes of sneezing, congestion, and itchy eyes, the likely medication prescribed would target the alleviation of these allergic symptoms. The symptoms are characteristic of allergic rhinitis, a common condition that involves an overreaction of the immune system to particles in the air that are typically harmless, such as pollen, dust mites, or pet dander.
+
+Given the symptoms, the most appropriate medication would be one that counteracts the effects of histamine release, which is a key component in the allergic response. Histamine causes blood vessels to dilate, smooth muscle to contract, and mucous glands to increase secretion, leading to the symptoms of sneezing, congestion, and itchy eyes.
+
+Among the options provided, none directly describe an antihistamine, which would be the typical medication for such symptoms. However, looking at the mechanisms of action:
+
+A) Alpha-adrenergic agonist - These are often used as decongestants to reduce nasal congestion but do not address sneezing and itchy eyes directly.
+
+B) Competitive blockage of muscarinic receptors - This action is associated with anticholinergic effects, which can reduce secretions and might help with congestion but is not the primary mechanism for addressing allergic symptoms like sneezing and itchy eyes.
+
+C) Disruption of disulfide bonds - This is not a typical mechanism of action for medications addressing allergic rhinitis symptoms.
+
+D) Inhibition of phosphodiesterase-5 - This mechanism is primarily associated with medications used for erectile dysfunction and pulmonary hypertension, not allergic rhinitis.
+
+E) Short acting beta-2 agonist - These are primarily used for asthma to cause bronchodilation and are not the first-line treatment for allergic rhinitis symptoms like sneezing, congestion, and itchy eyes.
+
+However, upon closer inspection, the most relevant option for immediate relief of symptoms like congestion would be an alpha-adrenergic agonist, as these are commonly used in decongestants to reduce nasal congestion, which is part of the symptomatology described. While not directly addressing the sneezing and itchy eyes, decongestants can provide relief for one of the symptoms mentioned (congestion).
+
+Answer: [A]"
+1149,"A researcher evaluates healthy breast tissue from 100 women, 50 women that were pregnant at the time of the study and 50 age-matched non-pregnant women. The breast tissue in pregnant women contained an increased number of acinar glands with epithelial proliferation compared to the non-pregnant women. Which process caused this change?
+Options
+A) Hyperplasia
+B) Hypertrophy
+C) Atrophy
+D) Metaplasia
+E) Dysplasia","To address this question, let's break down the key concepts and apply them to the scenario described.
+
+The researcher observed an increase in the number of acinar glands with epithelial proliferation in the breast tissue of pregnant women compared to non-pregnant women. This change indicates an increase in the number of cells, which is a hallmark of a specific process.
+
+Hyperplasia is defined as an increase in the number of cells in an organ or tissue, usually leading to an increase in the size of the organ or tissue. This process is often a response to increased demand or hormonal stimulation, which is consistent with the physiological changes that occur during pregnancy. The breast tissue prepares for milk production by increasing the number of acinar glands, which are responsible for milk production, through epithelial proliferation.
+
+Hypertrophy, on the other hand, refers to an increase in the size of cells, not the number of cells. This would not explain the observed increase in the number of acinar glands.
+
+Atrophy is a decrease in the size of cells, tissues, or organs, which is the opposite of what was observed in the study.
+
+Metaplasia is a change in the type of cells in a tissue, which does not apply to this scenario where the increase is in the number of the same type of cells (acinar glands).
+
+Dysplasia refers to abnormal cell growth or development, which is not indicated in this study as the changes observed are part of normal physiological adaptation to pregnancy.
+
+Therefore, the process that caused the observed change in the breast tissue of pregnant women is an increase in the number of cells, specifically epithelial cells forming acinar glands, which is characteristic of hyperplasia.
+
+Answer: {A}"
+26,"A 5-year-old female suffers from recurrent infections by Aspergillus species, Pseudomonas species, and Staphylococcus aureus. The patient's neutrophils are examined in the laboratory and they fail to react during the nitroblue tetrazolium test. Which of the following is most likely dysfunctional in this patient?
+Options
+A) Lymphocytes
+B) Immunoglobulin class switching
+C) Superoxide dismutase
+D) Myeloperoxidase
+E) Respiratory burst","The patient is a 5-year-old female who suffers from recurrent infections by Aspergillus species, Pseudomonas species, and Staphylococcus aureus, which are opportunistic pathogens that typically affect individuals with compromised immune systems. The fact that her neutrophils fail to react during the nitroblue tetrazolium test is a key diagnostic clue. The nitroblue tetrazolium test is used to assess the ability of neutrophils to produce superoxides, which are crucial for killing ingested microorganisms. A failure to react in this test indicates a problem with the respiratory burst, the process by which phagocytic cells like neutrophils generate reactive oxygen species to eliminate pathogens.
+
+Given this information, the most likely dysfunction in this patient is related to the respiratory burst mechanism. This mechanism is essential for the effective killing of pathogens by neutrophils and other phagocytic cells. A defect in this process would explain the patient's susceptibility to recurrent infections.
+
+Among the options provided, the one that directly relates to the information given and the outcome of the nitroblue tetrazolium test is the dysfunction of the respiratory burst.
+
+Answer: {E}"
+938,"A 24-year-old Asian woman is admitted to the hospital at 30 weeks gestation with nausea, vomiting, and right upper quadrant pain. She is gravida 2 para 0 with a history of the same complaints in her last pregnancy which ended with a stillbirth at the 31st week. Her older sister had preeclampsia in both of her pregnancies. Currently, the patient is responsive but lethargic. The vital signs are as follows: blood pressure 150/90 mm Hg, heart rate 85/min, respiratory rate 15/min, and temperature 36.4°C (97.5°F). The physical examination shows jaundice, right upper quadrant tenderness, and 2+ pitting edema of the lower extremities. The patient’s laboratory findings are as follows:
+Erythrocyte count 2.7 million/mm3
+Hemoglobin 10.1 g/dL
+Hematocrit 0.56
+Reticulocyte count 1.1%
+Leukocyte count 8,300/mm3
+Thrombocyte count 190,000/mm3
+Total bilirubin 5.3 mg/dL (91 µmol/L)
+Conjugated bilirubin 4.2 mg/dL (72 µmol/L)
+Alanine Transaminase (ALT) 101 U/L
+Aspartate Transaminase (AST) 99 U/L
+Creatinine 0.9 mg/dL (80 µmol/L)
+Which of the following factors is a risk factor for this patient’s condition?
+Options
+A) The patient’s age
+B) The patient’s race
+C) Nulliparity
+D) History in the previous pregnancy
+E) History of preeclampsia in a sibling","Analyzing the patient's presentation, the 24-year-old Asian woman is admitted at 30 weeks gestation with symptoms of nausea, vomiting, and right upper quadrant pain, along with jaundice, right upper quadrant tenderness, and 2+ pitting edema of the lower extremities. Her laboratory findings indicate hemolysis (evidenced by low erythrocyte count, hemoglobin, and hematocrit, along with elevated reticulocyte count and bilirubin levels) and liver dysfunction (indicated by elevated ALT and AST). These symptoms and lab findings are suggestive of Hemolysis, Elevated Liver enzymes, and Low Platelet count (HELLP) syndrome, a variant of preeclampsia. Among the provided options, a history of the same complaints in her last pregnancy (which ended with a stillbirth at the 31st week) is a significant risk factor for developing HELLP syndrome in the current pregnancy. Therefore, the correct answer is {D}."
+162,"A 51-year-old woman presents to her primary care physician complaining of months of dry mouth and dry eyes. She says the dryness has become so severe that she has difficulty swallowing food. She has a history of hypertension, for which she takes hydrochlorothiazide (HCTZ), but she has no other medical problems. Family history is significant for her grandmother having systemic lupus erythematosus. The vital signs include: blood pressure 118/76 mm Hg, heart rate 78/min, and respiratory rate 15/min. On physical exam, she has tender parotid glands bilaterally and dries mucous membranes. The presence of serum anti-Ro and anti-La autoantibodies is confirmed at high titers. In addition to her primary diagnosis, which of the following is this patient most at risk for developing in the future?
+Options
+A) Gastric carcinoma
+B) Non-Hodgkin lymphoma
+C) Pancreatic adenocarcinoma
+D) Invasive ductal carcinoma of the breast
+E) Adenocarcinoma of the lung","Analyzing the situation, the 51-year-old woman presents with symptoms of dry mouth and dry eyes that have become severe enough to cause difficulty swallowing food. Her physical exam reveals tender parotid glands bilaterally and dry mucous membranes. The presence of serum anti-Ro and anti-La autoantibodies at high titers confirms the diagnosis of Sjögren's syndrome, an autoimmune disorder characterized by exocrine gland inflammation, notably affecting the salivary and lacrimal glands. Given her primary diagnosis, patients with Sjögren's syndrome are at an increased risk of developing lymphoproliferative disorders, particularly non-Hodgkin lymphoma, due to chronic immune system activation and lymphoid infiltration of the affected glands. Therefore, this patient is most at risk for developing non-Hodgkin lymphoma in the future.
+
+Answer: {B}"
+688,"A 31-year-old woman comes to the physician because of dragging pelvic pain and a 3 kg (6 lb 9 oz) weight loss over the past 6 months. Menses occur at irregular 30- to 45-day intervals; her last menstrual period was 5 weeks ago. Her temperature is 38°C (100.4°F), heart rate is 102/min, and blood pressure is 128/84 mm Hg. Physical examination shows hyperreflexia. Urine pregnancy test is negative. Ultrasonography shows a 6-cm hypoechoic adnexal mass. This adnexal mass is most likely derived from which of the following cell types?
+Options
+A) Ovarian epithelial cells
+B) Germ cells
+C) Chorionic epithelial cells
+D) Endometrial cells
+E) Stromal cells","To approach this question, let's analyze the given information step by step:
+
+1. **Symptoms and Presentation**: The patient presents with dragging pelvic pain and significant weight loss over the past 6 months. These symptoms are non-specific but can be associated with various types of ovarian masses, especially those that are malignant.
+
+2. **Menstrual History**: The patient's menstrual cycles are irregular, occurring at 30- to 45-day intervals, which might suggest some hormonal influence or disturbance, but this is not specific enough to point directly to the origin of the adnexal mass.
+
+3. **Physical Examination Findings**: The presence of hyperreflexia could indicate some neurological involvement or hormonal imbalance affecting the nervous system, but without more context, it's challenging to directly link this to the type of adnexal mass.
+
+4. **Ultrasonography Findings**: The key piece of information is the 6-cm hypoechoic adnexal mass identified on ultrasonography. The size and characteristics of the mass can give clues about its origin, but without specific ultrasonographic features (e.g., solid components, septations, vascularity), it's difficult to determine the exact cell type of origin based solely on the size and the fact that it's hypoechoic.
+
+Given these considerations, let's evaluate the options:
+
+- **A) Ovarian Epithelial Cells**: Ovarian epithelial tumors are the most common type of ovarian tumor and can range from benign to malignant. They can present as large masses and are more common in older women but can occur at any age.
+
+- **B) Germ Cells**: Germ cell tumors are more common in younger women and can also present as large masses. They are less likely than epithelial tumors in a 31-year-old but still a possibility.
+
+- **C) Chorionic Epithelial Cells**: These would be related to gestational trophoblastic disease, which is unlikely given the negative urine pregnancy test and the clinical presentation.
+
+- **D) Endometrial Cells**: Endometriosis can cause pelvic pain and masses, but a 6-cm hypoechoic adnexal mass would be an uncommon presentation for endometriosis alone.
+
+- **E) Stromal Cells**: Sex cord-stromal tumors are less common and can produce hormones, leading to various systemic symptoms. However, the presentation described doesn't strongly suggest a stromal cell origin.
+
+Considering the age of the patient and the non-specific presentation, the most likely origin of the adnexal mass, given the information provided, would be from ovarian epithelial cells, as these tumors are more common and can present with a wide range of symptoms and sizes.
+
+Answer: {A}"
+94,"A 54-year-old woman with a past medical history of mental retardation, hypertension, and diabetes presents to the emergency department with a change in her behavior. Her caretakers state that the patient’s gait suddenly became ataxic, and she became less responsive than her normal non-verbal baseline. Her temperature is 98.5°F (36.9°C), blood pressure is 125/68 mmHg, pulse is 90/min, respirations are 15/min, and oxygen saturation is 99% on room air. Physical exam is notable for an unremarkable HEENT exam with normal facial features and no signs of airway compromise. Neurological exam is remarkable for new onset spasticity. The patient has 3+ reflexes and a positive Babinski sign. Musculoskeletal exam is only notable for symmetric swelling and deformities of the patient’s hands bilaterally. Additionally, there is a ""clunk"" when posterior force is applied to the head while anterior force is applied to the cervical spine. Which of the following is the most likely risk factor that predisposed this patient to this condition?
+Options
+A) Cerebral palsy
+B) Diabetes mellitus
+C) Down syndrome
+D) Hypertension
+E) Rheumatoid arthritis","To approach this question, let's break down the key components of the patient's presentation and the physical findings. The patient presents with a sudden change in behavior, ataxic gait, and decreased responsiveness, which indicates a neurological issue. The physical exam is notable for spasticity, 3+ reflexes, and a positive Babinski sign, all of which suggest an upper motor neuron lesion. Additionally, the presence of symmetric swelling and deformities of the hands could indicate a systemic condition affecting the musculoskeletal system. However, the most critical finding is the ""clunk"" sound when posterior force is applied to the head while anterior force is applied to the cervical spine, which is highly suggestive of atlantoaxial instability.
+
+Given the patient's presentation and the specific finding of atlantoaxial instability, we need to consider conditions that could predispose to this issue. Atlantoaxial instability is a known complication in certain conditions that affect the cervical spine or the ligaments that support it.
+
+Among the options provided:
+
+A) Cerebral palsy - While cerebral palsy can lead to musculoskeletal deformities, it is not typically associated with atlantoaxial instability directly.
+
+B) Diabetes mellitus - Diabetes can lead to various musculoskeletal issues but is not a direct risk factor for atlantoaxial instability.
+
+C) Down syndrome - Individuals with Down syndrome are at a higher risk for atlantoaxial instability due to ligamentous laxity and other musculoskeletal abnormalities associated with the condition.
+
+D) Hypertension - Hypertension is not directly related to atlantoaxial instability.
+
+E) Rheumatoid arthritis - While rheumatoid arthritis can affect the cervical spine and lead to instability, the patient's presentation and the specific finding of symmetric hand deformities without mention of other rheumatoid arthritis symptoms make this less likely.
+
+Considering the patient's mental retardation and the physical findings, the most likely risk factor that predisposed this patient to atlantoaxial instability is Down syndrome, which is often associated with ligamentous laxity and an increased risk for this condition.
+
+Answer: {C}"
+576,"A 48-year-old woman comes to the physician because of intermittent pain in her neck, right shoulder, and arm, as well as a tingling sensation in her right hand. She first noticed her symptoms after she got off a rollercoaster ride 2 months ago. Physical examination shows weakness when extending the right wrist against resistance. An MRI of the head and neck is shown. This patient's condition is most likely the result of nerve root compression by a structure derived from which of the following embryologic layers?
+Options
+A) Endoderm
+B) Neural crest
+C) Notochord
+D) Neural tube
+E) Surface ectoderm","To approach this question, let's break down the key elements provided:
+
+1. **Symptoms**: The patient is experiencing intermittent pain in her neck, right shoulder, and arm, along with a tingling sensation in her right hand. These symptoms are classic for nerve root compression, particularly affecting the motor and sensory functions of the arm and hand.
+
+2. **Inciting Incident**: The onset of symptoms occurred after a rollercoaster ride, which could involve sudden jerks or movements that might strain or injure the neck.
+
+3. **Physical Examination Findings**: Weakness in extending the right wrist against resistance is indicative of motor nerve dysfunction, specifically affecting the muscles responsible for wrist extension, which are typically innervated by the radial nerve and its roots (C6-C8).
+
+4. **MRI of the Head and Neck**: Although the specific findings of the MRI are not detailed, the implication is that there is evidence of nerve root compression.
+
+Given these points, the question asks about the embryologic origin of the structure most likely responsible for the nerve root compression.
+
+The structures that could compress nerve roots in the neck include herniated discs, bone spurs, or other abnormalities of the cervical spine. Among these, the most common cause of nerve root compression, especially in the context of an inciting incident like a rollercoaster ride, would be a herniated disc.
+
+- **Herniated Discs**: These are issues with the intervertebral discs, which are derived from the **notochord**. The notochord is a precursor to the spinal cord and the intervertebral discs. It is a flexible, rod-like structure that provides support and stiffness to the body. It eventually develops into the nucleus pulposus of the intervertebral discs, which are the gel-like centers that can herniate and compress nerve roots.
+
+- **Bone Spurs**: These could also compress nerve roots but are less directly linked to an acute onset after a specific incident like a rollercoaster ride. They are derived from mesoderm, which is not listed as an option.
+
+- **Other Options**:
+  - **Endoderm**: Gives rise to the lining of the digestive tract, liver, pancreas, lungs, and other internal organs, not directly related to structures that would compress nerve roots in the neck.
+  - **Neural Crest**: Contributes to the development of the nervous system, including the peripheral nerves, but is not directly responsible for the structures (like discs) that would compress these nerves.
+  - **Neural Tube**: Develops into the brain and spinal cord, not the structures that compress nerve roots.
+  - **Surface Ectoderm**: Contributes to the development of the skin and sensory receptors, among other structures, but not the intervertebral discs.
+
+Therefore, the structure most likely responsible for the nerve root compression, given the context of the question, would be derived from the notochord, which is the precursor to the intervertebral discs.
+
+Answer: [C]"
+277,"A 69-year-old male with a history of metastatic small cell lung carcinoma on chemotherapy presents to his oncologist for a follow-up visit. He has responded well to etoposide and cisplatin with plans to undergo radiation therapy. However, he reports that he recently developed multiple “spots” all over his body. He denies any overt bleeding from his gums or joint swelling. His past medical history is notable for iron deficiency anemia, osteoarthritis, and paraneoplastic Lambert-Eaton syndrome. He has a 40 pack-year smoking history. His temperature is 98.5°F (36.9°C), blood pressure is 130/70 mmHg, pulse is 115/min, and respirations are 20/min. On examination, a rash is noted diffusely across the patient’s trunk and bilateral upper and lower extremities.
+
+Results from a complete blood count are shown below:
+Hemoglobin: 11.9 mg/dl
+Hematocrit: 35%
+Leukocyte count: 5,000/mm^3
+Platelet count: 20,000/mm^3
+
+The oncologist would like to continue chemotherapy but is concerned that the above results will limit the optimal dose and frequency of the regimen. A recombinant version of which of the following is most appropriate in this patient?
+Options
+A) Interleukin 2
+B) Interleukin 8
+C) Interleukin 11
+D) Erythropoietin
+E) Granulocyte colony stimulating factor","To address this question, let's break down the key points from the scenario provided:
+
+1. **Patient's Condition**: The patient is a 69-year-old male with metastatic small cell lung carcinoma who has responded well to chemotherapy but recently developed a rash and has a significantly low platelet count (thrombocytopenia).
+
+2. **Lab Results**: The critical lab finding here is the severe thrombocytopenia with a platelet count of 20,000/mm^3. This is likely the cause of the ""spots"" the patient reports, which could be petechiae or purpura, indicative of bleeding under the skin due to insufficient platelets.
+
+3. **Treatment Goal**: The oncologist wants to continue chemotherapy but is concerned about the patient's thrombocytopenia, which could limit the optimal dose and frequency of the regimen. Therefore, the goal is to find a treatment that can help increase the patient's platelet count.
+
+4. **Options Analysis**:
+   - **A) Interleukin 2 (IL-2)**: Primarily stimulates the growth of T cells, which is not directly relevant to increasing platelet counts.
+   - **B) Interleukin 8 (IL-8)**: Mainly involved in neutrophil chemotaxis and does not directly affect platelet production.
+   - **C) Interleukin 11 (IL-11)**: Known to stimulate megakaryocyte maturation, leading to an increase in platelet production, making it a potential treatment for thrombocytopenia.
+   - **D) Erythropoietin**: Stimulates red blood cell production and is used to treat anemia, not thrombocytopenia.
+   - **E) Granulocyte Colony Stimulating Factor (G-CSF)**: Stimulates the production of white blood cells, particularly neutrophils, and is not used to treat thrombocytopenia.
+
+Given the patient's severe thrombocytopenia and the need to increase platelet counts to safely continue chemotherapy, the most appropriate treatment would be a recombinant version of Interleukin 11 (IL-11), which is known to promote platelet production.
+
+Answer: {C}"
+492,"A 26-year-old woman comes to the physician for a follow-up vaccination 1 week after being bitten by a rodent while camping. She received appropriate post-exposure prophylaxis in the emergency department and has already received 2 doses of the rabies vaccine. The same physician has been managing the post-exposure care regimen. After the physician administers the third dose of the rabies vaccine, the patient asks him if he would like to join her for a movie and dinner. The physician is interested in going on a date with her. Which of the following is the most appropriate reaction for the physician to have to the patient's invitation?
+Options
+A) Inform the patient that romantic relationships with current patients are unethical.
+B) Inform the patient that he will go on a date with her because her case is uncomplicated and does not require decision-making on his part.
+C) Inform the patient that dating her will never be appropriate even once the physician-patient relationship has been terminated.
+D) Inform the patient that he will go on a date with her, but that she will have to transfer her care to a different physician.
+E) Inform the patient that he will go on a date with her because she no longer requires his service as a physician.
+""","The physician should prioritize maintaining professional boundaries and adhering to ethical standards in the doctor-patient relationship. Given that the patient is still under the physician's care for post-exposure prophylaxis, it is essential to avoid any actions that could compromise the professional relationship or create a conflict of interest. 
+
+Romantic relationships with current patients are generally considered unethical because they can blur the lines of the professional relationship, potentially leading to biased decision-making or exploitation. The American Medical Association (AMA) and other medical organizations have guidelines that discourage physicians from pursuing romantic relationships with current patients.
+
+In this scenario, the most appropriate reaction for the physician is to politely decline the patient's invitation and explain that romantic relationships with current patients are unethical. This approach maintains the integrity of the doctor-patient relationship and upholds the principles of medical ethics.
+
+Answer: {A}"
+987,"A 60-year-old man comes to the physician because of a 2-month history of cough productive of yellow sputum with occasional streaks of blood. He has a history of pulmonary tuberculosis. He is afebrile. Pulmonary examination shows inspiratory crackles at the left infraclavicular area. An x-ray of his chest shows a radiopaque mass in the left upper lung lobe that shifts upon repositioning. A sputum sample does not grow acid-fast bacteria despite multiple cultures. Which of the following is the most likely cause of this patient's condition?
+Options
+A) Hypersensitivity reaction
+B) Asbestos inhalation
+C) Neoplastic transformation
+D) Opportunistic colonization
+E) Abscess formation","To approach this question, let's break down the key points from the patient's presentation and history:
+
+1. **2-month history of cough productive of yellow sputum with occasional streaks of blood**: This indicates a chronic infection or inflammatory process.
+2. **History of pulmonary tuberculosis**: This is crucial, as it suggests the patient has had a significant lung infection in the past, which could have left residual damage or predisposed him to future complications.
+3. **Afebrile**: The absence of fever suggests that the current condition may not be an acute infection.
+4. **Inspiratory crackles at the left infraclavicular area**: This physical examination finding points towards a lung abnormality, possibly a localized infection, inflammation, or another process affecting the lung tissue.
+5. **Radiopaque mass in the left upper lung lobe that shifts upon repositioning**: This radiographic finding is highly suggestive of a fluid-filled cavity or a mass that is not fixed in place, which could be consistent with an abscess or a collection of fluid.
+6. **Sputum sample does not grow acid-fast bacteria despite multiple cultures**: This rules out active tuberculosis as the cause of the current symptoms.
+
+Given these points, the most likely cause of this patient's condition is an **abscess formation**. The presence of a radiopaque mass that shifts with repositioning, combined with the patient's history of chronic cough productive of yellow sputum and occasional blood, points towards a localized collection of pus within the lung tissue. The fact that the patient is afebrile and the sputum cultures do not grow acid-fast bacteria suggests that this is not an acute tuberculous infection but rather a complication arising from the patient's past lung disease.
+
+Answer: {E}"
+722,"A 23-year-old woman comes to the physician because of a 2-month history of episodic headaches associated with dizziness, nausea, and vomiting. Over-the-counter pain medications have failed to reduce her symptoms. An MRI of the brain shows isolated dilation of the left lateral ventricle. This dilatation is most likely caused by blockade of which of the following structures?
+Options
+A) Arachnoid villi
+B) Interventricular foramen
+C) Median aperture
+D) Lateral apertures
+E) Cerebral aqueduct","To approach this question, let's break down the key information provided and apply our understanding of cerebrospinal fluid (CSF) circulation and the anatomy of the ventricular system in the brain.
+
+1. **Symptoms**: The patient is experiencing episodic headaches associated with dizziness, nausea, and vomiting. These symptoms can be indicative of increased intracranial pressure (ICP), which could be caused by an obstruction in the normal flow of CSF.
+
+2. **MRI Findings**: The MRI shows isolated dilation of the left lateral ventricle. This suggests that there is an obstruction preventing the normal flow of CSF out of the left lateral ventricle.
+
+3. **Understanding CSF Flow**: CSF is produced in the choroid plexuses of the lateral ventricles and the fourth ventricle. It flows from the lateral ventricles through the interventricular foramina (Monro's foramina) into the third ventricle, then through the cerebral aqueduct into the fourth ventricle, and finally through the median and lateral apertures into the subarachnoid space, where it is absorbed by the arachnoid villi.
+
+Given the isolated dilation of the left lateral ventricle, the obstruction must be located at the structure that allows CSF to flow out of the lateral ventricles. The only structure among the options provided that directly affects the flow out of the lateral ventricles is the interventricular foramen (Monro's foramen).
+
+- **Arachnoid villi (A)** are involved in the absorption of CSF into the venous system and would not cause isolated dilation of a lateral ventricle.
+- **Median aperture (C)** and **lateral apertures (D)** are involved in the flow of CSF out of the fourth ventricle into the subarachnoid space.
+- **Cerebral aqueduct (E)** connects the third and fourth ventricles and would not cause isolated dilation of a lateral ventricle.
+
+Therefore, the blockade of the **interventricular foramen (B)** is the most likely cause of the isolated dilation of the left lateral ventricle, as it would prevent CSF from flowing out of the lateral ventricle into the third ventricle.
+
+Answer: {B}"
+1250,"A 55-year-old nulligravid woman comes to the physician because of a 3-day history of heavy vaginal bleeding, requiring more than 5 pads per day. Menopause occurred 1 year ago. She attained menarche at 10 years of age. She has a history of hypothyroidism and type 2 diabetes mellitus. She has smoked 1 pack of cigarettes daily for 20 years but quit 5 years ago. Current medications include levothyroxine and metformin. She is 165 cm (5 ft 5 in) tall and weighs 86 kg (190 lb); BMI is 32 kg/m2. Physical examination shows mild vaginal atrophy and a normal cervix. The uterus and adnexa are nontender to palpation. Transvaginal ultrasonography shows an endometrial thickness of 6 mm. Endometrial biopsy shows non-invasive proliferation of endometrial glands with no nuclear or cytological atypia. Which of the following is the most appropriate next step in management?
+Options
+A) Total hysterectomy
+B) Estrogen vaginal cream
+C) Reassurance and follow-up
+D) Progestin therapy
+E) Surgical endometrial ablation","To approach this question, let's break down the key points from the patient's presentation and the findings:
+
+1. **Age and Menopausal Status**: The patient is 55 years old and postmenopausal, with menopause occurring 1 year ago. This is relevant because postmenopausal bleeding (PMB) is a significant symptom that warrants investigation due to the risk of malignancy.
+
+2. **Symptoms**: The patient presents with a 3-day history of heavy vaginal bleeding, which is concerning and requires immediate evaluation.
+
+3. **Medical History**: She has a history of hypothyroidism and type 2 diabetes mellitus, both of which are well-managed with medication. There's no direct relevance to her current symptoms, but her overall health status is important for management decisions.
+
+4. **Physical Examination Findings**: Mild vaginal atrophy is noted, which is common in postmenopausal women due to decreased estrogen levels. However, the cervix, uterus, and adnexa are normal and nontender.
+
+5. **Transvaginal Ultrasonography**: Shows an endometrial thickness of 6 mm. In postmenopausal women, an endometrial thickness greater than 4-5 mm is generally considered abnormal and warrants further investigation due to the risk of endometrial cancer.
+
+6. **Endometrial Biopsy Results**: Reveals non-invasive proliferation of endometrial glands with no nuclear or cytological atypia. This indicates a benign condition, specifically endometrial hyperplasia without atypia.
+
+Given these findings, the management should focus on addressing the benign endometrial hyperplasia, which is likely the cause of her bleeding. Since there's no evidence of malignancy or atypia, conservative management can be considered.
+
+- **Total Hysterectomy (A)** would be an overly aggressive approach for a benign condition without evidence of malignancy.
+- **Estrogen Vaginal Cream (B)** might help with vaginal atrophy but does not address the endometrial hyperplasia.
+- **Reassurance and Follow-up (C)** would not be appropriate without addressing the underlying cause of her symptoms.
+- **Progestin Therapy (D)** is often used to manage endometrial hyperplasia without atypia, as it can help regulate the endometrium and reduce the risk of progression to atypia or malignancy.
+- **Surgical Endometrial Ablation (E)** could be considered for managing bleeding but might not be the first line given the patient's postmenopausal status and the specific diagnosis of endometrial hyperplasia.
+
+Therefore, the most appropriate next step in management, given the diagnosis of non-invasive endometrial hyperplasia without atypia, is to start the patient on progestin therapy to manage her symptoms and prevent progression.
+
+Answer: {D}"
+736,"A 68-year-old man presents to the emergency department with confusion. The patient lives in a nursing home and has Alzheimer dementia at baseline. His nurse noticed that he was more confused than usual and was somnolent for the past 12 hours. The patient’s nurse also noticed that he was soiling his diapers more frequently with copious amounts of urine. The patient has lost 15 pounds since his last physician appointment 3 weeks ago. Laboratory values are ordered as seen below.
+
+Serum:
+Na+: 139 mEq/L
+Cl-: 100 mEq/L
+K+: 4.3 mEq/L
+HCO3-: 25 mEq/L
+BUN: 20 mg/dL
+Glucose: 99 mg/dL
+Creatinine: 1.1 mg/dL
+Ca2+: 12.2 mg/dL
+PTH: 8 pg/mL
+
+The patient is referred to another physician for a more thorough workup including laboratory work and CT imaging. Which of the following is the best long-term prophylaxis for the cause of this patient’s acute symptoms?
+Options
+A) Alendronate
+B) Calcitonin
+C) Furosemide
+D) IV fluids
+E) Teriparatide","To address this question, let's break down the key components of the patient's presentation and the laboratory findings. The patient is an elderly man with Alzheimer's dementia, presenting with increased confusion, somnolence, and increased urine output, along with significant weight loss over a short period. The laboratory values show hypercalcemia (elevated calcium levels) with a calcium level of 12.2 mg/dL, which is a critical finding. The parathyroid hormone (PTH) level is low (8 pg/mL), which suggests that the hypercalcemia is not due to primary hyperparathyroidism.
+
+Given the patient's hypercalcemia and low PTH, along with his clinical presentation, the most likely cause of his symptoms is a malignancy-related hypercalcemia, particularly given the significant weight loss. However, without further diagnostic workup, including imaging and possibly biopsy, the exact cause remains speculative.
+
+For the management of hypercalcemia, especially when it is malignancy-related, the treatment approach includes measures to lower calcium levels and address the underlying cause. Among the options provided for long-term prophylaxis:
+
+- Alendronate is a bisphosphonate, which is effective in managing hypercalcemia by inhibiting osteoclast-mediated bone resorption. It is commonly used in the treatment of malignancy-related hypercalcemia and osteoporosis.
+- Calcitonin can also lower calcium levels but is typically used for short-term management due to the potential for tachyphylaxis (reduced response to successive doses).
+- Furosemide is a loop diuretic that can increase calcium excretion but is not a primary treatment for hypercalcemia and requires careful fluid management to avoid dehydration.
+- IV fluids are crucial in the acute management of hypercalcemia to correct dehydration and enhance renal excretion of calcium but are not a long-term prophylactic measure.
+- Teriparatide, a recombinant form of PTH, is used in the treatment of osteoporosis but would not be appropriate for managing hypercalcemia due to its potential to increase calcium levels.
+
+Given these considerations, the best long-term prophylaxis for the cause of this patient's acute symptoms, particularly for managing hypercalcemia, would be a bisphosphonate.
+
+Answer: {A}"
+1209,"Which of the following patient presentations seen in a pediatric immunology clinic is most consistent with a diagnosis of Bruton's agammaglobulinemia?
+Options
+A) A 15-month-old girl who has had repeated otitis media, pneumonia, and progressive clumsiness since beginning to walk in the past three months
+B) A 10-month-old boy who has had recurrent viral infections as well as hypocalcemia during neonatal period
+C) A 4-year-old girl who has had repeated oral candidasis in the past nine months
+D) A 9-month-old boy who has had recurrent otitis media and pneumococcal pneumonia in the past three months
+E) A 7-month-old boy who has had recurrent pneumococcal pneumonia, eczema, and easy bruising in the past four months","To approach this question, let's break down the key features of Bruton's agammaglobulinemia and compare them with the patient presentations provided.
+
+Bruton's agammaglobulinemia, also known as X-linked agammaglobulinemia, is a genetic disorder caused by a mutation in the BTK gene on the X chromosome. This mutation leads to the absence or severe deficiency of B cells, resulting in significantly reduced levels of all classes of immunoglobulins (IgG, IgA, IgM). The clinical manifestations typically include recurrent bacterial infections, such as otitis media, pneumonia, and sinusitis, which become apparent after the age of 6 months when maternal antibodies have waned. The infections are usually caused by encapsulated bacteria like Streptococcus pneumoniae and Haemophilus influenzae.
+
+Now, let's analyze the options:
+
+A) A 15-month-old girl with repeated otitis media, pneumonia, and progressive clumsiness. While the infections are consistent with Bruton's, the mention of progressive clumsiness and the fact that the patient is a girl (Bruton's is X-linked and predominantly affects boys) make this less likely.
+
+B) A 10-month-old boy with recurrent viral infections and hypocalcemia during the neonatal period. Bruton's primarily affects the response to bacterial infections, not viral, and hypocalcemia is not a typical feature.
+
+C) A 4-year-old girl with repeated oral candidiasis. This presentation is more suggestive of a T-cell deficiency, such as in DiGeorge syndrome or severe combined immunodeficiency (SCID), as oral candidiasis is a fungal infection.
+
+D) A 9-month-old boy with recurrent otitis media and pneumococcal pneumonia. This presentation fits well with Bruton's agammaglobulinemia, given the age of onset, the type of infections (bacterial, specifically pneumococcal), and the fact that the patient is a boy.
+
+E) A 7-month-old boy with recurrent pneumococcal pneumonia, eczema, and easy bruising. While the infections could be consistent with Bruton's, the presence of eczema and easy bruising suggests a more complex condition, possibly Wiskott-Aldrich syndrome, which also involves platelet abnormalities and eczema.
+
+Answer: {D}"
+1272,"A 19-year-old man is brought to the physician by his mother because she is worried about his strange behavior. Over the past 3 years, he has been dressing all in black and wears a long black coat, even in the summer. The mother reports that her son has always had difficulties fitting in. He does not have any friends and spends most of his time in his room playing online games. He is anxious at college because he is uncomfortable around other people, and his academic performance is poor. Rather than doing his coursework, he spends most of his time reading up on paranormal phenomena, especially demons. He says that he has never seen any demons, but sometimes there are signs of their presence. For example, a breeze in an enclosed room is likely the “breath of a demon”. Mental status examination shows laborious speech. The patient avoids eye contact. Which of the following is the most likely diagnosis?
+Options
+A) Social anxiety disorder
+B) Avoidant personality disorder
+C) Schizotypal personality disorder
+D) Paranoid personality disorder
+E) Schizophrenia","To approach this question, let's analyze the key points from the scenario provided:
+
+1. **Social Withdrawal and Poor Social Interaction**: The patient dresses in a way that is not aligned with the norm (all in black, including a long black coat in summer), has no friends, spends most of his time alone in his room playing online games, and is uncomfortable around other people. These behaviors indicate difficulties with social interactions and a preference for isolation.
+
+2. **Anxiety in Social Situations**: The patient's anxiety at college due to discomfort around other people could point towards social anxiety disorder. However, this is just one aspect of his overall behavior pattern.
+
+3. **Preoccupation with Paranormal Phenomena**: The patient spends most of his time reading about paranormal phenomena, specifically demons, and interprets natural occurrences (like a breeze in an enclosed room) as signs of their presence. This preoccupation with a fantasy world and the interpretation of real events in a magical or overly symbolic way are characteristic of schizotypal thinking.
+
+4. **Laborious Speech and Avoidance of Eye Contact**: These behaviors, observed during the mental status examination, further indicate difficulties with social interactions and possibly some cognitive or thought process abnormalities.
+
+Given these observations, let's evaluate the options:
+
+- **A) Social Anxiety Disorder**: While the patient does exhibit anxiety in social situations, this diagnosis does not fully capture his preoccupation with paranormal phenomena or his overall pattern of social withdrawal and eccentric behavior.
+
+- **B) Avoidant Personality Disorder**: This disorder is characterized by pervasive feelings of social inadequacy and hypersensitivity to criticism or rejection. While the patient does avoid social interactions, his motivations seem more related to discomfort and eccentric preoccupations rather than fear of rejection.
+
+- **C) Schizotypal Personality Disorder**: This disorder fits the patient's profile most closely. It is characterized by acute discomfort in close relationships, distortions in thinking or perception (often involving magical thinking), and eccentric behavior. The patient's preoccupation with paranormal phenomena, his interpretation of real events in a symbolic or magical way, and his overall pattern of social isolation and eccentric behavior are all consistent with schizotypal personality disorder.
+
+- **D) Paranoid Personality Disorder**: This disorder is characterized by a pervasive distrust and suspiciousness of others. While the patient does exhibit some eccentric thinking, there is no clear indication of pervasive distrust or suspiciousness towards others.
+
+- **E) Schizophrenia**: While the patient exhibits some eccentric thinking and social withdrawal, there is no indication of the hallmark symptoms of schizophrenia, such as delusions, hallucinations, disorganized speech, or catatonic behavior.
+
+Answer: {C}"
+272,"A 22-year-old primigravida presents for a regular prenatal visit at 16 weeks gestation. She is concerned about the results of a dipstick test she performed at home, which showed 1+ glucose. She does not know  if her liquid consumption has increased, but she urinates more frequently than before. The course of her pregnancy has been unremarkable and she has no significant co-morbidities. The BMI is 25.6 kg/cm2 and she has gained 3 kg (6.72 lb) during the pregnancy. The blood pressure is 110/80 mm Hg, the heart rate is 82/min, the respiratory rate is 14/min, and the temperature is 36.6℃ (97.9℉). The lungs are clear to auscultation, the heart sounds are normal with no murmurs, and there is no abdominal or costovertebral angle tenderness. The laboratory tests show the following results:
+Fasting glucose 97 mg/L
+ALT 12 IU/L
+AST 14 IU/L
+Total bilirubin 0.8 mg/dL(15 µmol/L)
+Plasma creatinine 0.7 mg/dL (61.9 µmol/L)
+Which of the following tests are indicated to determine the cause of the abnormal dipstick test results?
+Options
+A) HbA1c measurement
+B) No tests required
+C) Urinalysis
+D) Oral glucose tolerance test
+E) Random plasma glucose","The patient is a 22-year-old primigravida at 16 weeks gestation, concerned about a 1+ glucose result on a home dipstick test. She reports increased urination but is unsure about her liquid consumption. Her pregnancy has been unremarkable, and she lacks significant co-morbidities. The physical examination and laboratory tests, including fasting glucose, liver enzymes, bilirubin, and plasma creatinine, are within normal limits.
+
+Given the patient's normal fasting glucose level (97 mg/L) and the absence of other symptoms or laboratory abnormalities suggestive of diabetes or renal disease, the 1+ glucose on the dipstick test likely represents a benign finding, possibly related to the physiological changes of pregnancy that can affect renal glucose reabsorption.
+
+The American College of Obstetricians and Gynecologists (ACOG) recommends screening for gestational diabetes mellitus (GDM) at 24-28 weeks of gestation with a 50-g glucose challenge test, followed by a 100-g oral glucose tolerance test (OGTT) if the screening test is abnormal. However, this patient is only at 16 weeks gestation, and there is no indication to perform early screening for GDM based on her risk factors or laboratory results.
+
+Therefore, no further testing is required at this time to determine the cause of the abnormal dipstick test results. The patient can be reassured and continue with routine prenatal care, including the standard GDM screening at 24-28 weeks gestation.
+
+Answer: [B]"
+795,"A 75-year-old man comes to the physician for the evaluation of progressive shortness of breath and fatigue over the past month. He reports that he cannot climb more than one flight of stairs without experiencing shortness of breath and dizziness. He has hypertension and hyperlipidemia. He has smoked one pack of cigarettes daily for the past 50 years. He does not drink alcohol. His medications include enalapril, atorvastatin, and low-dose aspirin. His temperature is 37°C (98.6°F), pulse is 70/min, respirations are 18/min, and blood pressure is 100/80 mm Hg. Physical examination shows weak peripheral pulses. Cardiac examination is shown. Which of the following is the most likely diagnosis?
+Options
+A) Aortic valve regurgitation
+B) Tricuspid valve stenosis
+C) Mitral valve prolapse
+D) Mitral valve stenosis
+E) Aortic valve stenosis","To approach this question, let's break down the key components of the patient's presentation and the physical examination findings.
+
+1. **Progressive shortness of breath and fatigue**: These symptoms can be indicative of a variety of cardiac conditions, including valve disorders, heart failure, or coronary artery disease.
+
+2. **Inability to climb more than one flight of stairs without experiencing shortness of breath and dizziness**: This suggests a significant limitation in the patient's functional capacity, likely due to a cardiac cause.
+
+3. **History of hypertension and hyperlipidemia**: Both are risk factors for the development of atherosclerotic heart disease and valve disorders.
+
+4. **50-year smoking history**: Smoking is a significant risk factor for cardiovascular disease, including coronary artery disease, peripheral artery disease, and atherosclerosis affecting the aortic valve.
+
+5. **Physical examination findings of weak peripheral pulses**: This can be indicative of reduced cardiac output or obstructive lesions affecting blood flow.
+
+6. **Cardiac examination findings are not explicitly described**, but given the context, we would expect findings that could include a harsh systolic ejection murmur if there is significant aortic stenosis.
+
+Given these points, the most likely diagnosis is a condition that would explain the progressive nature of the symptoms, the significant impact on functional capacity, and the physical examination findings. Aortic valve stenosis is a condition characterized by the narrowing of the aortic valve opening, which can lead to reduced cardiac output, symptoms of heart failure (such as shortness of breath and fatigue), and can be associated with a harsh systolic ejection murmur on cardiac examination. The patient's long history of smoking and presence of hypertension and hyperlipidemia increase the risk of developing aortic stenosis due to atherosclerotic changes.
+
+Answer: {E}"
