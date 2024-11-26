@@ -12,6 +12,7 @@ from utils import retrieve_gts
 from mmlu import parse_open_response, parse_multi_choice_response, parse_options, check_math_answer
 
 from utils import read_jsonl_file
+import json
 
 def compute_acc(questions, answers, gts, dataset):
     # Append each question and its highlighted answer to the HTML content
@@ -29,6 +30,10 @@ def compute_acc(questions, answers, gts, dataset):
             total_acc += check_math_answer(answer, gt)
             
         elif dataset in ['AQUA', 'reasoning_about_colored_objects', 'logical_deduction_seven_objects', 'commonsenseQA', 'medqa']:
+            # print("Question: ", question)
+            # print("Answer: ", answer)
+            # print("GT: ", gt)
+            # print(id)
             index2ans = parse_options(question, dataset)
             # remove ' in index2ans
             index2ans = {key: value.replace("'", "") for key, value in index2ans.items()}
@@ -194,6 +199,31 @@ def compute_acc_gsm_plus(questions, answers, gts):
     for k, v in acc_perturb_dict.items():
         print(f'{k}: {v/perturb_dict[k]}')
 
+def medqa_retrieve_gts(data_path):
+    gt_path = '/Users/log/Github/textual_grounding/data/medqa/test.jsonl'
+    
+    with open(gt_path, 'r', encoding='utf-8') as f:
+        gt_data = [json.loads(line) for line in f]
+    data = pd.read_csv(data_path)
+
+    # print(data)
+    questions = []
+    answers = []
+    gts = []
+    for _, row in data.iterrows():
+        question = row['question']
+        answer = row['answer']
+        gt = [r['answer'] for r in gt_data if r['question'] == question][0]
+        # print("-----------------------")
+        # print(question)
+        # print(answer)
+        # print(gt)
+        questions.append(question)
+        answers.append(answer)
+        gts.append(gt)
+        
+    return questions, answers, gts
+
 def evaluate_model(llm_model: str, data_mode: str, answer_mode: str, dataset: str):
 
     
@@ -220,7 +250,7 @@ def evaluate_model(llm_model: str, data_mode: str, answer_mode: str, dataset: st
     elif data_mode == 'random':
         df_path = f'/Users/log/Github/textual_grounding/logan/results/final/fewshot_CoT/{dataset}/{llm_model}/cot_random_cot_examples.txt_{dataset}_{llm_model}.csv'
     # TEMP - Tin Results
-    # df_path = '/Users/log/Downloads/fs_inst_llama_sambanova_70b_temp_10_shortest.csv'
+    df_path = '/Users/log/Github/textual_grounding/logan/results/final/fewshot_CoT/medqa/llama3.18b/cot_longest_cot_examples.txt_medqa_llama3.18b.csv'
 
     
 
@@ -239,8 +269,8 @@ def evaluate_model(llm_model: str, data_mode: str, answer_mode: str, dataset: st
         # remove all the tags in the answer
         answers = [re.sub(r'</?fact\d+>', '', text) for text in answers]
 
-    gts = retrieve_gts(data_path, ids, dataset)
-    
+    # gts = retrieve_gts(data_path, ids, dataset)
+    questions, answers, gts = medqa_retrieve_gts(df_path)
     # 
     # print(len(questions), len(answers), len(gts), len(ids))
     
