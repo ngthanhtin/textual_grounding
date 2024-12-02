@@ -51,11 +51,11 @@ def compute_acc(questions, answers, gts, dataset):
                     # print('------------------------------------')
                 else:
                     # print('------------------------------------')
-                    print(question)
+                    # print(question)
                     print()
                     # print('Incorrect Answer: ', answer, 'GT: ', gt, gt_number)
                     print('LLM (incorrect) Answer: ')
-                    print(answer)
+                    # print(answer)
                     print('(end of answer)...', answer[-100:], 'GT: ', gt, gt_number)
                     print('------------------------------------')
                     pass
@@ -249,10 +249,9 @@ def evaluate_model(llm_model: str, data_mode: str, answer_mode: str, dataset: st
         df_path = f'/Users/log/Github/textual_grounding/logan/results/final/fewshot_CoT/{dataset}/{llm_model}/cot_shortest_cot_examples.txt_{dataset}_{llm_model}.csv'
     elif data_mode == 'random':
         df_path = f'/Users/log/Github/textual_grounding/logan/results/final/fewshot_CoT/{dataset}/{llm_model}/cot_random_cot_examples.txt_{dataset}_{llm_model}.csv'
-    # TEMP - Tin Results
-    df_path = '/Users/log/Github/textual_grounding/logan/results/final/fewshot_CoT/medqa/llama3.18b/cot_longest_cot_examples.txt_medqa_llama3.18b.csv'
+    elif data_mode == 'echo':
+        df_path = f'/Users/log/Github/textual_grounding/logan/results/{dataset}/{llm_model}/echo_fewshot_echo_cot_examples.txt_{dataset}_{llm_model}.csv'
 
-    
 
     df = pd.read_csv(df_path)
     questions = df['question'].tolist()
@@ -269,8 +268,8 @@ def evaluate_model(llm_model: str, data_mode: str, answer_mode: str, dataset: st
         # remove all the tags in the answer
         answers = [re.sub(r'</?fact\d+>', '', text) for text in answers]
 
-    # gts = retrieve_gts(data_path, ids, dataset)
-    questions, answers, gts = medqa_retrieve_gts(df_path)
+    gts = retrieve_gts(data_path, ids, dataset)
+    # questions, answers, gts = medqa_retrieve_gts(df_path)
     # 
     # print(len(questions), len(answers), len(gts), len(ids))
     
