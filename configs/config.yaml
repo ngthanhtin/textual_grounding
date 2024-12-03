@@ -30,6 +30,7 @@ data_paths:
   tracking_shuffled_objects_seven_objects: "tracking_shuffled_objects_seven_objects/test.json"
   gpqa: "gpqa/test.json"
   medqa: "medqa/test.jsonl"
+  squad: "squad/test.json"
 
 
 max_question_lengths:

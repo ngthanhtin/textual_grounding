@@ -1,0 +1,2546 @@
+id,question,answer
+118,Robert wants to practice goal kicks for soccer. He decides to have 98 kicks before going home from the park. He takes 43 kicks before taking a break to get a drink of water. He then takes another 36 kicks. How many more kicks does he need to make before he goes home?,"Fact_Diagram:
+graph TD
+    A[Robert's Goal Kicks]
+    A --> B[Total Kicks]
+    A --> C[Kicks Before Break]
+    A --> D[Kicks After Break]
+    B --> B1[98 kicks]
+    C --> C1[43 kicks]
+    D --> D1[36 kicks]
+Answer_Reasoning: Robert has taken a total of <C1>43</C1> + <D1>36</D1> = 79 kicks. He wants to take <B1>98</B1> kicks, so he needs to take <B1>98</B1> - 79 = 19 more kicks. 
+Final_Answer: {19} 
+"
+200,"Charlie and his father, an engineer, decided to build a treehouse in their backyard. In order to start constructing the house, Charlie and his father needed to gather some wood from the forest. If they initially have 15 extra planks of wood in the house and Charlie and his father got 10 planks of wood each, how many pieces of wood do they have in total?","Fact_Diagram:
+graph TD
+    A[Treehouse Building]
+    A --> B[Wood Collection]
+    A --> C[Initial Wood]
+    B --> D[Charlie's Wood]
+    B --> E[Father's Wood]
+    C --> F[15 planks]
+    D --> G[10 planks]
+    E --> H[10 planks]
+Answer_Reasoning: Charlie and his father initially have <F>15 planks of wood</F>. Charlie got <G>10 planks of wood</G> from the forest and his father also got <H>10 planks of wood</H>. In total, they now have <F>15</F> + <G>10</G> + <H>10</H> = 35 pieces of wood. 
+Final_Answer: {35} 
+"
+201,"While building the house, Charlie noticed that they were running out of nails so he told his father he's going to buy some. If they still have 9 nails left and Charlie bought 2 boxes of nails, the big one containing 55 nails and the small one containing 31, how many nails will they have?","Fact_Diagram:
+graph TD
+    A[Building Supplies]
+    A --> B[Nails]
+    B --> B1[9 nails left]
+    B --> B2[Charlie buys more nails]
+    B2 --> B2a[Big box: 55 nails]
+    B2 --> B2b[Small box: 31 nails]
+
+Answer_Reasoning: Charlie bought a total of <B2a>55</B2a> + <B2b>31</B2b> = 86 nails. Adding the nails they already have, they will have <B1>9</B1> + 86 = 95 nails. 
+Final_Answer: {95} 
+"
+202,"To have a more stable treehouse, Charlie's father decided to tie the corner posts of the house to the tree itself. He used 24 inches of rope for the first post, 20 inches on the second, 14 inches on the third and 12 inches on the fourth. How many inches of rope were used?","Fact_Diagram:
+graph TD
+    A[Treehouse Rope]
+    A --> B[Post 1]
+    A --> C[Post 2]
+    A --> D[Post 3]
+    A --> E[Post 4]
+    B --> B1[24 inches]
+    C --> C1[20 inches]
+    D --> D1[14 inches]
+    E --> E1[12 inches]
+
+Answer_Reasoning: Charlie's father used a total of <B1>24</B1> + <C1>20</C1> + <D1>14</D1> + <E1>12</E1> = 70 inches of rope. 
+Final_Answer: {70} 
+"
+205,"Annie is about to celebrate her birthday next week so her friends decided to throw her a surprise birthday party. Jessica, Annie's best friend, is hosting the party. She plans on making pizza for everyone. If she bought 15 pieces of pepperoni, 10 pieces of salami and 30 pieces of bacon as meat ingredients, how many pieces of meat did she buy in total?","Fact_Diagram:
+graph TD
+    A[Surprise Party]
+    A --> B[Jessica's Pizza Toppings]
+    B --> C{Pepperoni: 15 pieces}
+    B --> D{Salami: 10 pieces}
+    B --> E{Bacon: 30 pieces}
+Answer_Reasoning: Jessica bought a total of <C>15</C> + <D>10</D> + <E>30</E> = 55 pieces of meat for her pizza. 
+Final_Answer: {55} 
+"
+210,"It's Halloween in Chicago. Bob, Mary, John, Sue and Sam dressed as superheroes and went out to do some trick or treating. After passing through the houses on Main Street, the five friends counted how much candy they have. If Bob has 10 candies, Mary has 5, Sue has 20, John has 5 as well and Sam has also 10 candies. How many candies did they have together?","Fact_Diagram:
+graph TD
+    A[Trick or Treating]
+    A --> B[Group Candy Count]
+    B --> B1[Bob: 10 candies]
+    B --> B2[Mary: 5 candies]
+    B --> B3[Sue: 20 candies]
+    B --> B4[John: 5 candies]
+    B --> B5[Sam: 10 candies]
+Answer_Reasoning: The group collected a total of <B1>10</B1> + <B2>5</B2> + <B3>20</B3> + <B4>5</B4> + <B5>10</B5> = 50 candies. 
+Final_Answer: {50} 
+"
+211,"The group then went on to check out the houses along Broadway Street and the scary Werewolf Avenue. After the long walk, they decided to count their candy again. If Mary has 5 chewing gums, Sam has 10 chewing gums and Sue has 15 chewing gums, how many chewing gums did the three have in all?","Fact_Diagram:
+graph TD
+    A[Trick or Treating]
+    A --> B[Candy Count]
+    B --> B1[Mary: 5 chewing gums]
+    B --> B2[Sam: 10 chewing gums]
+    B --> B3[Sue: 15 chewing gums]
+
+Answer_Reasoning: Mary has <B1> 5 chewing gums</B1>, Sam has <B2>10 chewing gums</B2> and Sue has <B3> 15 chewing gums</B3>. They have a total of 5 + 10 + 15 = 30 chewing gums.
+Final_Answer: {30} 
+"
+212,"The friends then proceeded to the rest of the houses in their village. However, Sam had to go home earlier. She got her share of candies which are composed of 10 chewing gums, 15 chocolate bars, and 20 assorted fruit candies. How many candies did she get in total?","Fact_Diagram:
+graph TD
+    A[Sam's Candies]
+    A --> B[Chewing Gums]
+    A --> C[Chocolate Bars]
+    A --> D[Assorted Fruit Candies]
+    
+    B --> B1[10 chewing gums]
+    C --> C1[15 chocolate bars]
+    D --> D1[20 assorted fruit candies]
+
+Answer_Reasoning: Sam received <B1>10</B1> chewing gums, <C1>15</C1> chocolate bars, and <D1>20</D1> assorted fruit candies. She got a total of <B1>10</B1> + <C1>15</C1> + <D1>20</D1> = 45 candies. 
+Final_Answer: {45} 
+"
+214,"After Sam and Bob left, Mary, John and Sue decided to go home as well. They counted the total amount of treats that the three of them got. They were able to sort out 60 chewing gums, 55 chocolate bars and another 40 candies of different flavors. How many treats did Mary, John and Sue have in total?","Fact_Diagram:
+graph TD
+    A[Treats]
+    A --> B[People]
+    A --> C[Treat Types]
+    B --> B1[Mary, John, Sue]
+    C --> C1[60 Chewing Gums]
+    C --> C2[55 Chocolate Bars]
+    C --> C3[40 Other Candies]
+Answer_Reasoning: Mary, John and Sue have <C1>60</C1> chewing gums, <C2>55</C2> chocolate bars and <C3>40</C3> other candies. In total, they have <C1>60</C1> + <C2>55</C2> + <C3>40</C3> = 155 treats. 
+Final_Answer: {155} 
+"
+215,"It is Easter time and the kids in the neighborhood of Easterville are very excited about the annual Easter egg hunt. The parents have decided to hide the eggs in a lot of different places. They hid 55 eggs around the club house, 33 eggs around the village park and 22 eggs in the town hall garden. How many eggs were hidden in total?","Fact_Diagram:
+graph TD
+    A[Easterville Easter Egg Hunt]
+    A --> B[Eggs hidden]
+    B --> B1[55 around clubhouse]
+    B --> B2[33 around village park]
+    B --> B3[22 in town hall garden]
+
+Answer_Reasoning: There were <B1>55</B1> eggs hidden around the clubhouse, <B2>33</B2> eggs hidden around the village park, and <B3>22</B3> eggs hidden in the town hall garden. In total, there were <B1>55</B1> + <B2>33</B2> + <B3>22</B3> = 110 eggs hidden. 
+Final_Answer: {110} 
+"
+220,"Penny's class is going to Animaland, the largest zoo on earth, for their science field trip. The zoo has a variety of wild animals in captivity. Their first destination was the aviary. The aviary has 3 species of eagles on show that day. They have 20 Bald Eagles, 15 Harpy Eagles, and 30 Crowned Eagles. How many eagles are on display that day?","Fact_Diagram:
+graph TD
+    A[Animaland Zoo]
+    A --> B{Aviary}
+    B --> C[Bald Eagles: 20]
+    B --> D[Harpy Eagles: 15]
+    B --> E[Crowned Eagles: 30]
+
+Answer_Reasoning: The aviary has <C>20 Bald Eagles</C>, <D>15 Harpy Eagles</D>, and <E>30 Crowned Eagles</E>. That means there are a total of 20 + 15 + 30 = 65 eagles.
+Final_Answer: {65} 
+"
+223,"Next in their itinerary was the insectarium, home to hundreds of insect species. Penny, who likes butterflies and ants, took pictures of the different species. She was able to capture 60 species of butterflies, 15 species of ants and 20 species of other insects. How many species of insects did Penny capture?","Fact_Diagram:
+graph TD
+    A[Insectarium Visit]
+    A --> B{Penny's Photos}
+    B --> C[Butterfly Species: 60]
+    B --> D[Ant Species: 15]
+    B --> E[Other Insect Species: 20]
+
+Answer_Reasoning: Penny captured a total of <C>60</C> + <D>15</D> + <E>20</E> = 95 insect species. 
+Final_Answer: {95} 
+"
+225,"Marcus and his friends are starting a recycling project to help the school raise some money for charity. They were tasked to collect different materials and create useful things from those. If Marcus was able to gather 25 milk bottles, and John was able to gather 20 milk bottles, how many milk bottles do they have available for recycling?","Fact_Diagram:
+graph TD
+    A[Recycling Project]
+    A --> B[Milk Bottles Collected]
+    B --> B1[Marcus: 25 bottles]
+    B --> B2[John: 20 bottles]
+
+Answer_Reasoning: Marcus collected <B1>25 milk bottles</B1> and John collected <B2>20 milk bottles</B2>. Together, they have 25 + 20 = 45 milk bottles available for recycling. 
+Final_Answer: {45} 
+"
+230,"Robyn and Lucy are members of their village's Girl Scout troop. During weekends and some weekdays, they go around selling cookies in the neighborhood. They have a week before the month ends and they are doing their best to get a badge from selling cookies. Working overtime, Robyn sold 47 packs of cookies while Lucy sold 29. How many packs of cookies were they able to sell that day?","Fact_Diagram:
+graph TD
+    A[Girl Scout Cookie Sales]
+    A --> B[Robyn]
+    A --> C[Lucy]
+    B --> B1[Sold 47 packs]
+    C --> C1[Sold 29 packs]
+
+Answer_Reasoning: Robyn and Lucy sold a total of <B1>47</B1> + <C1>29</C1> = 76 packs of cookies. The answer is 76.
+Final_Answer: {76} 
+"
+235,"It's Earth Awareness Day and the town of Flora is celebrating by planting trees in areas where the forest has been damaged. Mayor Fauna, leader of the town of Flora, donated 27 oak tree seedlings and 16 seedlings of holly. How many seedlings did he donate altogether?","Fact_Diagram:
+graph TD
+    A[Earth Awareness Day]
+    A --> B[Flora Tree Planting]
+    B --> C{Mayor Fauna's Donation}
+    C --> D[27 oak tree seedlings]
+    C --> E[16 holly tree seedlings]
+
+Answer_Reasoning: Mayor Fauna donated a total of <D>27</D> + <E>16</E> = 43 seedlings. 
+Final_Answer: {43} 
+"
+240,"Hazel and her father both love going on fishing trips. This year, they planned to go around the Great Lakes for a unique fishing experience. Their first stop is Lake Ontario. Hazel and her father decided to have a contest between them. If Hazel caught 24 salmons and her dad caught 27, how many salmons did they catch in total?","Fact_Diagram:
+graph TD
+    A[Fishing Trip]
+    A --> B[Hazel's Catch]
+    A --> C[Father's Catch]
+    B --> B1[24 salmons]
+    C --> C1[27 salmons]
+
+Answer_Reasoning: Hazel caught <B1>24 salmons</B1> and her father caught <C1>27 salmons</C1>. Together, they caught <B1>24</B1> + <C1>27</C1> = 51 salmons.
+Final_Answer: {51} 
+"
+243,"Their last stop was the largest of them all, Lake Superior. Tired with their travels, they decided to do less fishing and enjoy the lake's beauty instead. They were able to catch 15 catfishes, 20 sturgeons, 25 pikes and 10 eels. How many fishes were caught from Lake Superior?","Fact_Diagram:
+graph TD
+    A[Lake Superior Fishing Trip] --> B{Total Fish Caught}
+    B --> C[Catfish]
+    B --> D[Sturgeon]
+    B --> E[Pike]
+    B --> F[Eel]
+    C --> G[15 Catfish]
+    D --> H[20 Sturgeon]
+    E --> I[25 Pike]
+    F --> J[10 Eel]
+
+Answer_Reasoning: They caught <G>15</G> catfish, <H>20</H> sturgeon, <I>25</I> pike and <J>10</J> eel from Lake Superior. That means they caught a total of <G>15</G> + <H>20</H> + <I>25</I> + <J>10</J> = 70 fish. 
+Final_Answer: {70} 
+"
+244,"Being concerned with the ecology of lakes, Hazel and her dad returned the youngling fishes they caught. If they took 23 fishes from Lake Ontario and Erie, 30 fishes from Lake Huron and Michigan and 44 from Lake Superior, how many fishes will they bring home with them?","Fact_Diagram:
+graph TD
+    A[Fish Release]
+    A --> B[Returned Fish]
+    A --> C[Lakes]
+    C --> D[Ontario and Erie]
+    C --> E[Huron and Michigan]
+    C --> F[Superior]
+    D --> G[23 fish]
+    E --> H[30 fish]
+    F --> I[44 fish]
+
+Answer_Reasoning: Hazel and her dad returned all the fish they caught back into the lakes. This includes <G>23 fish</G> from Lake Ontario and Erie, <H>30 fish</H> from Lake Huron and Michigan, and <I>44 fish</I> from Lake Superior. Since they released all the fish, they will bring home 0 fish. 
+Final_Answer: {0} 
+"
+245,"It is Buddy's first day at a new school and he is feeling very nervous. His day begins with some bacon and egg prepared by his mother. After eating and preparing, Buddy headed out to catch the school bus from the nearest bus stop. Including Buddy, there were 39 students that got on the bus during the first stop. If 29 more students got on the bus at the second stop, how many students are riding the bus?","Fact_Diagram:
+graph TD
+    A[Buddy's Bus Ride]
+    A --> B[First Stop]
+    A --> C[Second Stop]
+    B --> B1[39 students boarded, including Buddy]
+    C --> C1[29 more students boarded]
+
+Answer_Reasoning: There were <B1>39</B1> students on the bus after the first stop. Then <C1>29</C1> more students got on the bus, so there are 39 + 29 = 68 students riding the bus.
+Final_Answer: {68} 
+"
+255,"It's spring break at Rosewood High so Rachel and her family decided to take a trip across Europe. Since Rachel has always been fascinated by the French people, they began their tour with a visit to France. During their stay there, Rachel went to the famous Eiffel Tower. If she climbed 567 flights of stairs going up and 325 going down, what is the total number of steps that she took?","Fact_Diagram:
+graph TD
+    A[Rachel's Eiffel Tower Climb]
+    A --> B[Flights Climbed Up]
+    A --> C[Flights Climbed Down]
+    B --> D[567 Flights]
+    C --> E[325 Flights]
+Answer_Reasoning: Rachel climbed a total of <D>567</D> + <E>325</E> = 892 flights of stairs. 
+Final_Answer: {892} 
+"
+260,"Christmas is near. Mr. Anderson, president of Nice People Inc. organized a charity event to share happiness to the less fortunate people. The first thing that he did is to visit an orphanage. There he dressed up as Santa and gave toys to the children. If he gave 134 toy cars to the boys and 269 dolls to the girls, how many toys did he give to all?","Fact_Diagram:
+graph TD
+    A[Charity Event]
+    A --> B[Toys for Boys]
+    A --> C[Toys for Girls]
+    B --> B1[134 toy cars]
+    C --> C1[269 dolls]
+Answer_Reasoning: Mr. Anderson gave a total of <B1>134</B1> + <C1>269</C1> = 403 toys to the children. 
+Final_Answer: {403} 
+"
+265,"Denver the Dog is a famous architect in the city of Animapolis. Together with his engineer friend Wally the Wolf, they decided to build the tallest building ever, the Animus Tower. To make sure the framework of the tower is strongly built, they hired the best builders in town. If they hired 318 beavers and 544 spiders, how many workers in total did they hire to make the framework?","Fact_Diagram:
+graph TD
+    A[Animus Tower Construction]
+    A --> B[Framework Workers]
+    B --> B1[Beavers: 318]
+    B --> B2[Spiders: 544]
+Answer_Reasoning:  Denver and Wally hired a total of <B1>318</B1> + <B2>544</B2> = 862 workers to build the framework of the Animus Tower. 
+Final_Answer: {862} 
+"
+269,It took all of the workers one year to finish the Animus Tower and it was indeed the brightest and tallest structure that can be seen at Animapolis' skyline. If the first half of the building has 145 stories and the second half has 255 stories. How many stories do the Animus Tower has?,"Fact_Diagram:
+graph TD
+    A[Animus Tower]
+    A --> B[Construction Time]
+    A --> C[Building Height]
+    B --> B1[1 year]
+    C --> C1[First Half: 145 stories]
+    C --> C2[Second Half: 255 stories]
+
+Answer_Reasoning: The Animus Tower has <C1>145</C1> + <C2>255</C2> = 400 stories. 
+Final_Answer: {400} 
+"
+270,"It's New Year's Eve. Benjamin and his family went to New York City to take part in the celebration that is going to take place later that night. Before the evening celebrations, Benjamin wanted to see some of the famous places in NYC first. From the hotel, he walked 234 steps to the nearest restaurant then another 378 steps to Central Park. How many steps did he take to get to Central Park from the hotel?","Fact_Diagram:
+graph TD
+    A[New Year's Eve Trip]
+    A --> B[Benjamin's Walk]
+    B --> C{Hotel}
+    C --> D[Restaurant: 234 steps]
+    D --> E[Central Park: 378 steps]
+Answer_Reasoning: Benjamin walked a total of <D>234</D> + <E>378</E> = 612 steps to get to Central Park from the hotel. 
+Final_Answer: {612} 
+"
+272,"At the top of the Empire State Building, he saw the Madison Square Garden so he decided to go there as well. It took him 676 steps to get down the building and 315 steps from the building to Madison Square Garden. How many steps did he take to get to Madison Square?","Fact_Diagram:
+graph TD
+    A[Trip to Madison Square Garden]
+    A --> B[Empire State Building]
+    A --> C[Travel to Garden]
+    B --> B1[676 steps down]
+    C --> C1[315 steps from building]
+
+Answer_Reasoning: It took him <C1>315 steps from the building</C1> to get to Madison Square Garden. The answer is 315. 
+Final_Answer: {315} 
+"
+274,"After visiting the museum, Benjamin went back to the hotel where he prepared for New Year's Eve at the annual Times Square Ball Drop. To get there, he took 354 steps to the Rockefeller Center then 228 steps to Times Square itself. How many steps did he take before reaching Times Square?","Fact_Diagram:
+graph TD
+    A[Benjamin's Journey to Times Square]
+    A --> B[Museum Visit]
+    A --> C[Hotel Preparation]
+    A --> D[Travel to Times Square]
+    D --> D1[354 steps to Rockefeller Center]
+    D --> D2[228 steps to Times Square]
+
+Answer_Reasoning: Benjamin took <D1>354 steps to Rockefeller Center</D1> and then <D2>228 steps to Times Square</D2>. Therefore, he took a total of 354 + 228 = 582 steps before reaching Times Square. 
+Final_Answer: {582} 
+"
+275,"Sofia, president of the school student organization, held a meeting to talk about the food being served at the school cafeteria. The first order of business is to discuss whether the students like the food being served at the school. If 383 students said that they like the food and 431 students said they didn't, how many students participated in the discussion?","Fact_Diagram:
+graph TD
+    A[School Food Discussion]
+    A --> B[Students who like the food]
+    A --> C[Students who don't like the food]
+    B --> B1[383 students]
+    C --> C1[431 students]
+
+Answer_Reasoning: The total number of students who participated in the discussion is the sum of students who like the food (<B1>383</B1>) and those who don't like the food (<C1>431</C1>). A total of 383 + 431 = 814 students participated in the discussion. 
+Final_Answer: {814} 
+"
+285,"Wendy is a very generous kid. Every time her parents buy her some stuff, she always gives some of it to her friends. For her birthday this year, she received a new set of shoes. She now has a total of 33 pairs of shoes. If she gave away 14 pairs of shoes to her friends, how many pairs of shoes were left to her?","Fact_Diagram:
+graph TD
+    A[Wendy's Shoes]
+    A --> B[Total Pairs]
+    A --> C[Pairs Given Away]
+    A --> D[Pairs Remaining]
+    B --> B1[33 pairs]
+    C --> C1[14 pairs]
+
+Answer_Reasoning: Wendy has <D> <B1>33</B1> - <C1>14</C1> = 19 </D> pairs of shoes left.  The answer is 19.
+Final_Answer: {19} 
+"
+288,"Thanksgiving came and their family hosted their building's Thanksgiving dinner. They prepared a lot of food so she asked her parents if they could donate some to the soup kitchen next bock. If they prepared 36 turkeys and gave 18 of it to the soup kitchen, how many were left for them to eat?","Fact_Diagram:
+graph TD
+    A[Thanksgiving Dinner]
+    A --> B[Turkeys Prepared]
+    A --> C[Turkeys Donated]
+    B --> B1[36 Turkeys]
+    C --> C1[18 Turkeys]
+
+Answer_Reasoning: They prepared <B1> 36 </B1> turkeys and gave <C1> 18 </C1> turkeys to the soup kitchen. They had <B1> 36 </B1> - <C1> 18 </C1> = 18 turkeys left. 
+Final_Answer: {18} 
+"
+290,"Alicia loves collecting art. She has a whole house filled with all the art she obtained since she was a little kid. When she decided to move away, she started donating some of her art to different museums. First museum she went to was the Metropolitan museum in New York. She donated 46 medieval art pieces from the 70 she originally has. How many medieval art pieces were left with her?","Fact_Diagram:
+graph TD
+    A[Alicia's Art Collection]
+    A --> B[Medieval Art]
+    B --> B1[Originally Owned: 70 pieces]
+    B --> B2[Donated: 46 pieces]
+    
+Answer_Reasoning: Alicia had <B1>70</B1> medieval art pieces. She donated <B2>46</B2> to a museum. She has <B1>70</B1> - <B2>46</B2> = 24 medieval art pieces left. 
+Final_Answer: {24} 
+"
+294,"Her last stop was the post office. There she sent her rock collection to the Geological Museum in London. She was left with her 15 favorite stones after sending away a part of her collection. If she originally has 78 stones in her collection, how many did she send away?","Fact_Diagram:
+graph TD
+    A[Rock Collection]
+    A --> B[Original Number]
+    A --> C[Stones Sent]
+    A --> D[Stones Kept]
+    
+    B --> B1[78 stones]
+    D --> D1[15 stones]
+
+Answer_Reasoning: She had <B1>78</B1> stones originally, and she kept <D1>15</D1> stones. Therefore, she sent away 78-15 = 63 stones. 
+Final_Answer: {63} 
+"
+295,"Jasmine and her mom went to the grocery to buy some food. Her mom gave her $100.00 to spend. Since she loves fruits, she went to the fruits section first. There she bought apples and oranges worth $15.00. From the original $100.00 given by her mom, how much money was left for her to spend?","```mermaid
+graph TD
+    A[Grocery Shopping] --> B{Jasmine's Budget}
+    B --> C($100.00)
+    A --> D{Fruit Purchases}
+    D --> E($15.00)
+```
+
+Answer_Reasoning: Jasmine had <C>$100.00</C> to spend at the grocery.  She spent <E>$15.00</E> in the fruit section.  Therefore, she had <C>$100.00</C> - <E>$15.00</E> = $85.00 left to spend.
+Final_Answer: {85.00} 
+"
+300,"It's basketball season in Ashford Elementary School. Chuck, the team captain of the Blue Team is feeling nervous about it. Their first opponent is the Red Team, composed of other 3rd graders, gave them a hard time. If they lost by 13 points and the Red Team scored 61 points, what is their team's final score?","Fact_Diagram:
+graph TD
+    A[Basketball Game]
+    A --> B[Blue Team]
+    A --> C[Red Team]
+    B --> B1[Lost by 13 points]
+    C --> C1[Scored 61 points]
+
+Answer_Reasoning: Since the Blue Team lost by <B1>13 points</B1> to the Red Team's score of <C1>61 points</C1>, their final score is 61 - 13 = 48 points. 
+Final_Answer: {48} 
+"
+303,"With the win streak that they have, Chuck's team was able to get into the playoffs. They reached the semi-finals where they played against the Black Team. If they finished the game with 83 points and won it by 18 points, what is the Black Team's final score?","Fact_Diagram:
+graph TD
+    A[Basketball Game]
+    A --> B{Chuck's Team}
+    A --> C{Black Team}
+    B --> D[Final Score: 83 points]
+    B --> E[Won by: 18 points]
+Answer_Reasoning: Since <B>Chuck's team won by <E>18 points</E></B>, the Black Team's score is <D>83</D> - <E>18</E> = 65. 
+Final_Answer: {65} 
+"
+304,"For the championship game, they faced the powerful Red Team. Wanting redemption, Chuck and his teammates did their best and gave everything that they've got. In the end, they won the game with the final score of 95. If the Red Team scored 76 points, how large was the difference of their scores?","Fact_Diagram:
+graph TD
+    A[Championship Game]
+    A --> B[Chuck's Team]
+    A --> C[Red Team]
+    B --> B1[Final Score: 95]
+    C --> C1[Final Score: 76]
+
+Answer_Reasoning: The score difference is <B1>95</B1> - <C1>76</C1> = 19. The answer is 19.
+Final_Answer: {19} 
+"
+305,"Simon, Mark, Kevin, and Carl love collecting stamps. They meet up every month to compare and share their collections with each other. During the previous month, Kevin was able to collect 45 stamps while Simon was only able to collect 27. How many more stamps does Kevin have more than Simon?","Fact_Diagram:
+graph TD
+    A[Stamp Collections]
+    A --> B[Kevin's Stamps]
+    A --> C[Simon's Stamps]
+    B --> B1[45 stamps]
+    C --> C1[27 stamps]
+
+Answer_Reasoning: Kevin has <B1>45</B1> - <C1>27</C1> = 18 more stamps than Simon.
+Final_Answer: {18} 
+"
+308,"The following month, the four friends met again to share their collections. Carl, having the most number of stamps among all of them decided to give away some of his collections. If he has 96 stamps during that month, and he gave away 48, how many stamps were left with him?","Fact_Diagram:
+graph TD
+    A[Stamp Collections]
+    A --> B{Carl's Stamps]
+    B --> B1[Started with 96 stamps]
+    B --> B2[Gave away 48 stamps]
+
+Answer_Reasoning: Carl had <B1>96</B1> stamps and gave away <B2>48</B2> stamps. He had 96 - 48 = 48 stamps left. 
+Final_Answer: {48} 
+"
+310,"Rob is very fond of tall structures. He likes collecting pictures and comparing them. Two of his favorite buildings are Chicago's Sears Tower and Dubai's Burj Khalifa. If Burj Khalifa stands at 830 meters high and Sears stands at 527 meters high, how much higher is Burj Khalifa than Sears?","Fact_Diagram:
+graph TD
+    A[Building Heights]
+    A --> B[Burj Khalifa]
+    A --> C[Sears Tower]
+    B --> B1[830 meters]
+    C --> C1[527 meters]
+Answer_Reasoning: Burj Khalifa stands at <B1>830 meters</B1> high and Sears Tower stands at <C1>527 meters</C1> high. Burj Khalifa is <B1>830</B1>-<C1>527</C1> = 303 meters taller than Sears Tower. 
+Final_Answer: {303} 
+"
+315,"Mike and his brother Joe found a map leading to a buried treasure in an unknown island so they decided to go on a treasure hunt. After decoding the clues on the map, they found out that they need to go to the Island of Mysteries. To get there, they could either take a plane for $600.00 or a boat for $254.00. How much money can they save if they took a boat to the island?","Fact_Diagram:
+graph TD
+    A[Treasure Hunt]
+    A --> B[Transportation]
+    B --> B1[Plane: $600.00]
+    B --> B2[Boat: $254.00]
+Answer_Reasoning: To get to the Island of Mysteries, they can take a plane for <B1>$600.00</B1> or a boat for <B2>$254.00</B2>. They can save <B1>$600.00</B1> - <B2>$254.00</B2> = $346.00 if they took the boat.  The answer is $346.00.
+Final_Answer: {346.00}
+"
+316,"When they arrived at the island's starting point, they looked at the clues and found out that the number of steps they need to take to get to the next clue is the difference between 537 and 369. How many steps do they have to take to get to the next clue?","Fact_Diagram:
+graph TD
+    A[Treasure Hunt]
+    A --> B[Clue Location]
+    B --> B1[Difference between 537 and 369]
+Answer_Reasoning: They need to take the difference between <B1>537 and 369</B1>, which is 168 steps to get to the next clue.
+Final_Answer: {168} 
+"
+320,"Simon, an adventurer, got trapped in the magical Blackwood Forest. In order to find the way out, he needs to solve a series of puzzles. The first puzzle involved two giant trees. To open the path, he needs to find the height difference between the two trees. If the first tree is 465 ft high and the second is 399 ft, what is the height difference?","Fact_Diagram:
+graph TD
+    A[Blackwood Forest Puzzle]
+    A --> B[First Tree]
+    A --> C[Second Tree]
+    B --> D[Height: 465 ft]
+    C --> E[Height: 399 ft]
+Answer_Reasoning: The first tree is <D>465 ft</D> high. The second tree is <E>399 ft</E> high.  Therefore, the height difference between the two trees is 465 ft - 399ft = 66 ft. The answer is 66. 
+Final_Answer: {66} 
+"
+340,"Janine owns a catering service company. She was hired to cater for the mayor's 50th birthday. For the appetizers, she needs to make 750 mini meat pies. She divided her crew into 3 teams. If the first team made 235, and the second made 275, how many pies should the third team make?","Fact_Diagram:
+graph TD
+    A[Janine's Catering]
+    A --> B[Meat Pies]
+    B --> B1[Total: 750]
+    A --> C[Teams]
+    C --> C1[Team 1: 235 pies]
+    C --> C2[Team 2: 275 pies]
+    C --> C3[Team 3: ?]
+
+Answer_Reasoning: Teams 1 and 2 made a total of <C1>235</C1> + <C2>275</C2> = 510 meat pies.  Since Janine needs <B1>750</B1> meat pies in total, team 3 needs to make <B1>750</B1> - 510 = 240 meat pies. 
+Final_Answer: {240} 
+"
+345,"Alvin is trying to build a small house in the forest so that he has a place to stay whenever he goes hunting. He started by gathering some wood. According to his blueprint, he will need 376 pieces of wood. If his friend gave him 123 pieces and his brother gave him 136 pieces, how many more wood does he need to gather?","Fact_Diagram:
+graph TD
+    A[Alvin's House]
+    A --> B[Wood Needed]
+    B --> B1[376 pieces total]
+    A --> C[Wood Gathered]
+    C --> C1[Friend gave 123 pieces]
+    C --> C2[Brother gave 136 pieces]
+
+Answer_Reasoning: Alvin has gathered a total of <C1>123</C1> + <C2>136</C2> = 259 pieces of wood. Therefore, he still needs to gather <B1>376</B1> - 259 = 117 pieces of wood. 
+Final_Answer: {117} 
+"
+348,"He wanted to make sure that he is protected from the cold evenings in the forest so he decided to build a fireplace made of cement. If he bought 215 lbs of cement and his son brought another 137 lbs, how much cement did he have originally if he now has 450 lbs?","Fact_Diagram:
+graph TD
+    A[Cement for Fireplace]
+    A --> B[Total Cement]
+    A --> C[Father's Cement]
+    A --> D[Son's Cement]
+    B --> B1[450 lbs]
+    C --> C1[215 lbs]
+    D --> D1[137 lbs]
+Answer_Reasoning: The father and son have <B1>450 lbs</B1> of cement combined.  They bought  <C1>215 lbs</C1> and  <D1>137 lbs</D1> for a total of  <C1>215</C1> + <D1>137</D1> = 352 lbs. This means he originally had <B1>450</B1> - 352 = 98 lbs of cement. 
+Final_Answer: {98} 
+"
+350,"Lizzie lives in a very big and polluted city. Being an advocate for the environment, she organized a cleanup drive to help reduce the pollution. They started by cleaning the rivers that flow through and around the city. If her group was able to collect 387 pounds of garbage and another group gathered 39 pounds less than Lizzie's group, how much garbage were the two groups able to gather?","Fact_Diagram:
+graph TD
+    A[City Cleanup]
+    A --> B{Lizzie's Group}
+    A --> C{Another Group}
+    B --> D(Collected 387 pounds of garbage)
+    C --> E(Collected 39 pounds less than Lizzie's group)
+
+Answer_Reasoning: The other group collected <D>387</D> - <E>39</E> = 348 pounds of garbage. Together, the two groups collected a total of <D>387</D> + 348 = 735 pounds of garbage. 
+Final_Answer: {735} 
+"
+351,"After the cleaning the rivers they went on to tidy up the farmlands. If Lizzie's group covered 250 square feet of land and the other group covered 265, how many more square feet of land remains to be cleaned if there is total of 900 square feet of land?","Fact_Diagram:
+graph TD
+    A[Farmland Cleanup]
+    A --> B[Total Land]
+    A --> C[Cleaned Land]
+    B --> B1[900 square feet]
+    C --> D[Lizzie's Group]
+    C --> E[Other Group]
+    D --> D1[250 square feet]
+    E --> E1[265 square feet]
+Answer_Reasoning: Lizzie's group and the other group have cleaned a total of <D1>250</D1> + <E1>265</E1> = 515 square feet of land. Therefore, <B1>900</B1> - 515 = 385 square feet of land remains to be cleaned. The answer is 385.
+Final_Answer: {385} 
+"
+355,"Kevin and his family just moved to a new neighborhood so they are holding a party to be able to meet their new neighbors. For the party, they prepared a few snacks for everyone. If his sister prepared 25 mini cupcakes and his mother prepared 30, how many did his grandmother prepare if they have a total of 100 cupcakes?","Fact_Diagram:
+graph TD
+    A[Cupcake Party]
+    A --> B[Sister's Cupcakes]
+    A --> C[Mother's Cupcakes]
+    A --> D[Grandmother's Cupcakes]
+    A --> E[Total Cupcakes]
+    B --> B1[25 cupcakes]
+    C --> C1[30 cupcakes]
+    E --> E1[100 cupcakes]
+
+Answer_Reasoning: Kevin's sister and mother prepared a total of <B1>25</B1> + <C1>30</C1> = 55 cupcakes. Therefore, his grandmother prepared <E1>100</E1> - 55 = 45 cupcakes. 
+Final_Answer: {45}
+"
+360,"Katie loves to travel. On her birthday, she decided to go on a trip on a mysterious continent. Her first destination was in an island of statues which is 436 miles from her place. She took a plane that made two stopovers, the 1st stopover after covering 132 miles and the 2nd stopover after another 236 miles. How much farther is the island from the 2nd stopover?","Fact_Diagram:
+graph TD
+    A[Katie's Trip]
+    A --> B[Destination]
+    A --> C[Plane Journey]
+    B --> B1[Island of statues]
+    B1 --> B2[436 miles from home]
+    C --> C1[1st Stopover]
+    C1 --> C2[132 miles]
+    C --> C3[2nd Stopover]
+    C3 --> C4[236 miles after 1st stopover]
+
+Answer_Reasoning: The total distance covered in the first two legs of the journey is  <C2>132 miles</C2> + <C4>236 miles</C4> = 368 miles.  The remaining distance from the 2nd stopover to the island is <B2>436 miles</B2> - 368 miles = 68 miles. The answer is 68.
+Final_Answer: {68} 
+"
+365,"Thanksgiving is coming and Dr. Mary wants to celebrate it by sharing her blessing to different charities. She first went to Oldtown where she donated $700.00 in total to three different nursing homes. If she gave $245.00 to the first home and $225.00 to the second, how much did she give to the third home?","Fact_Diagram:
+graph TD
+    A[Dr. Mary's Donations]
+    A --> B{Total Donation: $700.00}
+    A --> C[Nursing Home Donations]
+    C --> D{Nursing Home 1: $245.00}
+    C --> E{Nursing Home 2: $225.00}
+    C --> F{Nursing Home 3: ?}
+Answer_Reasoning: Dr. Mary donated a total of <D>$245.00</D> + <E>$225.00</E> = $470.00 to the first two nursing homes. Given that her <B>total donation was $700.00</B>, she gave <B>$700.00</B> - $470.00 = $230.00 to the third nursing home. 
+Final_Answer: {$230.00} 
+"
+368,"Being a nature lover, she also gave some money to three forest reserves. If she donated $570.00 to Treetown National Park and The Forest Reserve which is $140.00 more than what she gave to Animal Preservation Park, how much did she donate to all three parks?","Fact_Diagram:
+graph TD
+    A[Donations]
+    A --> B{Treetown National Park}
+    B --> B1($570.00)
+    A --> C{The Forest Reserve}
+    C --> C1($140.00 more than Animal Preservation Park)
+    A --> D{Animal Preservation Park}
+
+Answer_Reasoning: The Forest Reserve received <C1>$140.00</C1> more than Animal Preservation Park, so Animal Preservation Park received <B1>$570.00</B1> - <C1>$140.00</C1> = $430.00. In total, she donated <B1>$570.00</B1> + $430.00 + (<B1>$570.00</B1> - <C1>$140.00</C1>) = $1430.00 to all three parks. 
+Final_Answer: {1430.00} 
+"
+370,"Andrew is having his friends over for game night. So he decided to prepare the snacks and the games. He started by making mini sandwiches. If he has 4 friends coming over and he made 3 sandwiches for each one of them, how many sandwiches did he make in total?","Fact_Diagram:
+graph TD
+    A[Game Night Preparations]
+    A --> B[Guests]
+    A --> C[Sandwiches]
+    B --> B1[4 friends]
+    C --> C1[3 sandwiches per friend]
+
+Answer_Reasoning: Andrew has <B1>4</B1> friends coming over. Since he made <C1>3 sandwiches per friend</C1>, he made a total of 4 * 3 = 12 sandwiches. 
+Final_Answer: {12} 
+"
+375,"Mona is having a party at her house to celebrate her birthday. She invited some friends and family. Mona prepared rainbow colored cupcakes for dessert. If she made 7 sets for each of the 7 colors of the rainbow and each set has 6 cupcakes, how many cupcakes did Mona prepare in total?","Fact_Diagram:
+graph TD
+    A[Mona's Birthday Party]
+    A --> B[Cupcakes]
+    B --> C[7 sets per rainbow color]
+    B --> D[7 colors in the rainbow]
+    B --> E[6 cupcakes per set]
+
+Answer_Reasoning: There are <D>7 colors in the rainbow</D> and Mona made <C>7 sets for each color</C> so she made <C>7</C>*<D>7</D> = 49 sets of cupcakes. Since each set has <E>6 cupcakes</E>, Mona made a total of 49*<E>6</E> = 294 cupcakes. 
+Final_Answer: {294} 
+"
+380,"John is building a tree house to serve as his hideout whenever he wanted to spend some time alone with himself. The first thing he did is to gather some materials. For the pillars, he needs two sets of wood with different lengths. If the first set of wood is 4 feet long and the second set is 5 times longer than the first set, how long is the second set of wood?","Fact_Diagram:
+graph TD
+    A[Tree House Materials] --> B(Pillars)
+    B --> C{First set: 4 feet long}
+    B --> D{Second set: 5 times longer than the first set}
+
+Answer_Reasoning: The second set of wood is <D>5 times longer than the first set</D> which is <C>4 feet long</C>. This means that the second set of wood is <D>5 * 4 = 20 feet long</D>.  The answer is {20}. 
+Final_Answer: {20} 
+"
+385,"The kids from Oakwood Elementary School are visiting a bird zoo for their field trip. To get to the bird zoo from the school, the kids have to ride some buses. If there are 7 buses and each bus has 3 adult supervisors to guide the children, how many supervisors are there in total?","Fact_Diagram:
+graph TD
+    A[Field Trip]
+    A --> B[Transportation]
+    B --> B1[7 buses]
+    B --> B2[3 supervisors per bus]
+
+Answer_Reasoning: There are a total of <B1>7</B1> buses taking the children from Oakwood Elementary School to the bird zoo. Each bus has <B2>3</B2> adult supervisors. So, there are a total of <B1>7</B1> * <B2>3</B2> = 21 supervisors. 
+Final_Answer: {21} 
+"
+390,"Annie takes trick or treating seriously. So, days before Halloween, she makes sure that the details of her trick or treating are well planned. First, she wanted to find out the number of houses in her village. If the village has 5 houses per block and has a total of 9 blocks, how many houses are there in her village?","Fact_Diagram:
+graph TD
+    A[Annie's Village]
+    A --> B[Houses per block]
+    A --> C[Total blocks]
+    B --> D[5 houses]
+    C --> E[9 blocks]
+Answer_Reasoning: Annie's village has <D>5</D> houses per block. Since there are <E>9</E> blocks in total, there are 5 * 9 = 45 houses in the village.
+Final_Answer: {45} 
+"
+394,"Finally, she planned on going to the Halloween party in the village club house. She wanted to make sure that she will have the perfect costume so she rented 4 different costumes from the Halloween store. If each costume rent costs $2.00, how much did she spend on all the costumes?","Fact_Diagram:
+graph TD
+    A[Halloween Party]
+    A --> B[Costume Rentals]
+    B --> B1[4 costumes rented]
+    B --> B2[Each costume costs $2.00]
+
+Answer_Reasoning: She rented <B1>4 costumes</B1> and each costume cost <B2>$2.00</B2>, so she spent 4 * $2.00 = $8.00 on all the costumes. 
+Final_Answer: {8.00} 
+"
+395,"Michael and Tom both love collecting robots. They meet up every month so that they can check out and compare their collections. On their latest meeting, they found out that Tom has twice as many animal robots than Michael. If Michael has 8 animal robots, how many animal robots does Tom have?","Fact_Diagram:
+graph TD
+    A[Robot Collections]
+    A --> B[Michael's Collection]
+    A --> C[Tom's Collection]
+    B --> B1[8 animal robots]
+    C --> C1[Twice as many as Michael]
+Answer_Reasoning: Tom has twice as many robots as Michael, who has <B1>8</B1> animal robots. That means Tom has <C1>2 * 8 = 16</C1> animal robots. 
+Final_Answer: {16} 
+"
+400,"Michelle likes to save money every now and then so that she has money to buy the things that she wants. One day, she decided to count her savings. She opened her piggy bank and sorted out the different coins and dollar bills. If she counted a total of 20 nickels (a nickel is equivalent to 5 cents), what is the total value of money does she have in nickels?","Fact_Diagram:
+graph TD
+    A[Michelle's Savings]
+    A --> B[Nickels]
+    B --> B1[20 Nickels]
+    B --> B2[1 Nickel = 5 cents]
+
+Answer_Reasoning: Michelle has <B1>20 nickels</B1>. Since each nickel is worth <B2>5 cents</B2>, the total value of her nickels is 20 * 5 = 100 cents.  This is equal to $1.00. The answer is $1.00.
+Final_Answer: {$1.00} 
+"
+405,"Daniel and his brother Ben went to their grandfather's farm for a few weeks of vacation. During their stay at the farm, they were asked to take care of the animals. One day, his grandfather asked if he could count the total number of sheep that they have. If there are 3 herds of sheep and each herd has 20 sheep, how many sheep do they have in total?","Fact_Diagram:
+graph TD
+    A[Sheep on Farm]
+    A --> B[Number of Herds]
+    A --> C[Sheep per Herd]
+    B --> B1[3 herds]
+    C --> C1[20 sheep per herd]
+
+Answer_Reasoning: There are a total of <B1>3</B1> herds of sheep. Each herd has <C1>20</C1> sheep. Therefore, there is a total of 3 * 20 = 60 sheep. 
+Final_Answer: {60} 
+"
+410,"Jenny and her family just moved into a new city and today would be her first day on a new school. She wanted to make sure that she is well rested so she made sure that she had 8 hours of sleep. If an hour is composed of 60 minutes, how many minutes of sleep did she have?","Fact_Diagram:
+graph TD
+    A[Jenny's Sleep]
+    A --> B[Sleep Duration]
+    B --> B1[8 hours]
+    A --> C[Time Conversion]
+    C --> C1[1 hour = 60 minutes]
+Answer_Reasoning: Jenny slept for a total of <B1>8 hours</B1>. Since an hour is equivalent to <C1>60 minutes</C1>, she had 8 * 60 = 480 minutes of sleep. 
+Final_Answer: {480} 
+"
+415,"Stanley, a car enthusiast, loves to drive across different places as a hobby. So for his vacation, he decided to go around his favorite places. His first destination is the famous Sky Falls, one of the tallest waterfalls in his country. It is said to be 20 times as tall as the tallest building in their city. If the building is 9 feet tall, how tall is Sky Falls?","Fact_Diagram:
+graph TD
+    A[Sky Falls]
+    A --> B[Height]
+    B --> C[20 times taller than the tallest building]
+    D[Tallest Building]
+    D --> E[Height: 9 feet]
+Answer_Reasoning:  Sky Falls is <B>20 times taller than the tallest building</B>. Since the building is <E>9 feet tall</E>, Sky Falls is 20 * <E>9</E> = 180 feet tall. 
+Final_Answer: {180} 
+"
+416,"When he arrived there, he went on to climb to the top of the falls. It usually takes 30 minutes for someone to get to the top. Stanley took time to see the view so his climb took 7 times longer than the usual. How many minutes did it take Stanley to get to the top?","Fact_Diagram:
+graph TD
+    A[Stanley's Climb]
+    A --> B[Usual Climb Time]
+    A --> C[Stanley's Climb Time]
+    B --> B1[30 minutes]
+    C --> C1[7 times longer than usual]
+
+Answer_Reasoning: It took Stanley <B1>30</B1> * <C1>7</C1> = 210 minutes to get to the top. 
+Final_Answer: {210} 
+"
+420,"It's Valentine's Day in the city and Mayor Harvey wants to celebrate by giving the institutions for women some flowers. His first beneficiary was the nursing home for old women. He bought 3 sets of flowers, 90 pieces each. How many flowers did he buy for the nursing home?","Fact_Diagram:
+graph TD
+    A[Valentine's Day Flowers]
+    A --> B[Nursing Home]
+    B --> C[3 sets of flowers]
+    C --> D[90 pieces per set]
+
+Answer_Reasoning: Mayor Harvey bought a total of <C>3</C> x <D>90</D> = 270 flowers for the nursing home.
+Final_Answer: {270} 
+"
+425,"Dean went to the beach with his friends to enjoy the last weeks of summer. When they got to the beach, they rented a house for them to stay in for a couple of weeks. If there are seven of them including Dean, and each paid $70.00 for the rent, how much did they pay in total?","Fact_Diagram:
+graph TD
+    A[Beach Trip]
+    A --> B[Group]
+    A --> C[Rental]
+    B --> B1[7 friends]
+    C --> C1[$70.00 per person]
+
+Answer_Reasoning: There were a total of <B1>7</B1> friends who went to the beach. Since each of them paid <C1>$70.00</C1> for rent, they paid a total of <B1>7</B1> * <C1>$70.00</C1> = $490.00 for the rent. The answer is $490.00.
+Final_Answer: {490.00} 
+"
+430,"Bryan has always been fond of studying rocks and minerals. He has a room full of books about and samples of the different types of rocks. One particular day, he went in the room to take a look at his mineral samples. If he has 65 samples of minerals per shelf, and he has a total of 7 shelves, how many mineral samples does he have?","Fact_Diagram:
+graph TD
+    A[Bryan's Mineral Samples]
+    A --> B[Samples per Shelf]
+    A --> C[Number of Shelves]
+    B --> D[65 samples]
+    C --> E[7 shelves]
+Answer_Reasoning: Bryan has a total of <D>65</D> * <E>7</E> = 455 mineral samples.
+Final_Answer: {455} 
+"
+435,"It is harvest season in the country. Lewis, whose family owns a fruit farm, is busy overseeing their farmers while they are harvesting the fruits. His day starts by going to the apple orchard. The farmers reported that they harvest 45 sacks of apples from each of the 8 sections of the orchard daily. How many apples are harvested every day?","Fact_Diagram:
+graph TD
+    A[Apple Harvest]
+    A --> B[Orchard Sections]
+    A --> C[Harvest per Section]
+    B --> B1[8 sections]
+    C --> C1[45 sacks per section]
+Answer_Reasoning: There are a total of <B1>8 sections</B1> in the orchard. With each section yielding <C1>45 sacks of apples</C1>, the total harvest per day is <B1>8</B1> * <C1>45</C1> = 360 sacks.  
+Final_Answer: {360} 
+"
+440,"Tyler, an animal rights advocate, decided to build his own animal sanctuary to protect different animals from poachers. The sanctuary was divided into different regions. The first region to be built was a bird sanctuary. Initially, he had 29 endangered bird species on that region. If each species has 7 pairs of birds, how many pairs does he have in total?","Fact_Diagram:
+graph TD
+    A[Animal Sanctuary]
+    A --> B[Bird Sanctuary]
+    B --> C{29 endangered bird species}
+    C --> D{Each species has 7 pairs of birds}
+Answer_Reasoning:  Tyler has a total of <C>29</C> x <D>7</D> = 203 pairs of birds in his sanctuary. 
+Final_Answer: {203} 
+"
+445,"It's Rachel's birthday. Her parents wanted her to have fun so they went to the circus that happened to be in town that day. Upon arriving at the circus, they went to the ticket booth and asked how much each ticket cost. If each ticket costs $44.00 and they bought 7 tickets, how much money did they spend on tickets?","Fact_Diagram:
+graph TD
+    A[Rachel's Birthday]
+    A --> B{Circus Trip}
+    B --> C[Ticket Price: $44.00]
+    B --> D[Tickets Purchased: 7]
+
+Answer_Reasoning: Rachel's parents bought <D>7 tickets</D> that cost $<C>44.00</C> each. They spent a total of $44.00 * 7 = $308.00 on tickets. 
+Final_Answer: {308.00} 
+"
+450,"Amanda and her friends decided to go to an amusement park for the weekend. The nearest amusement park from their city is Super Fun-tastic Land. If they cover a distance of 27 miles for every hour of travel and they travelled for 3 hours, how far is SFL from the city?","Fact_Diagram:
+graph TD
+    A[Trip to SFL]
+    A --> B[Distance]
+    A --> C[Time]
+    B --> D[27 miles every hour]
+    C --> E[Travelled for 3 hours]
+Answer_Reasoning: Amanda and her friends cover <D>27 miles every hour</D> of their trip to Super Fun-tastic Land. Since they travelled for <E>3 hours</E>, the total distance they covered is <D>27</D>*<E>3</E> = 81 miles. The answer is 81.
+Final_Answer: {81} 
+"
+455,"Jack loves to collect and read books. In fact, he has a mini-library in their house and he usually spends most of his time in it. The library is divided into different sections for different type of books. The science fiction section has 8 books. If each book has 478 pages, how many pages do all the 8 books have in total?","Fact_Diagram:
+graph TD
+    A[Jack's Mini-Library]
+    A --> B[Science Fiction Section]
+    B --> C{8 books}
+    B --> D{Each book has 478 pages} 
+
+Answer_Reasoning: The science fiction section has <C>8 books</C> and <D>each book has 478 pages</D>, so there are a total of 8 x 478 = 3824 pages.  
+Final_Answer: {3824} 
+"
+460,Lexie has a lot of art materials. She needs to organize all these materials into containers. She counted her crayons and found out that she has 80 crayons which she will place in crayon boxes. Every crayon box can contain 8 crayons. How many crayon boxes does she need?,"Fact_Diagram:
+graph TD
+    A[Lexie's Art Supplies]
+    A --> B[Crayons]
+    B --> B1[80 crayons in total]
+    B --> B2[8 crayons per box]
+
+Answer_Reasoning: Lexie has <B1>80 crayons</B1> and each crayon box can hold <B2>8 crayons</B2>. Therefore, she needs <B1>80</B1>/<B2>8</B2> = 10 crayon boxes. 
+Final_Answer: {10} 
+"
+465,"Christian and his parents went to Mt. Falton National Park for the weekend. They were welcomed warmly by the rangers who invite volunteers and call them ""earth keepers"". The junior ranger asked Christian to help him place 420 seedlings in packets. If every packet needs to contain 7 seeds, how many packets do they need?","Fact_Diagram:
+graph TD
+    A[Mt. Falton Trip]
+    A --> B[Seedling Task]
+    B --> C{420 seedlings}
+    B --> D{7 seedlings per packet}
+
+Answer_Reasoning: They need <C>420</C>/<D>7</D> = 60 packets. 
+Final_Answer: {60} 
+"
+467,"Christian's father and the senior ranger gathered firewood as they walked towards the lake in the park and brought with them sacks. If every sack can contain around 20 pieces of wood, how many sacks were they able to fill if they gathered 80 pieces of wood?","Fact_Diagram:
+graph TD
+    A[Gathering Firewood]
+    A --> B[Wood per Sack]
+    A --> C[Total Wood Collected]
+    B --> B1[20 pieces]
+    C --> C1[80 pieces]
+Answer_Reasoning: Christian's father and the senior ranger were able to collect a total of <C1>80 pieces of wood</C1>. Since each sack can contain around <B1>20 pieces of wood</B1>, they were able to fill 80/20 = 4 sacks. 
+Final_Answer: {4} 
+"
+470,"Shiela has started writing a list of gifts that she plans to give to her family and friends this Christmas. For her classmates, she made colorful paper stars which will be placed in small clear bottles. She was able to prepare 45 paper stars. How many stars will be placed in each bottle if Shiela has 9 classmates?","Fact_Diagram:
+graph TD
+    A[Christmas Gifts]
+    A --> B[Paper Stars]
+    B --> C[45 paper stars made]
+    A --> D[Classmates]
+    D --> E[9 classmates]
+
+Answer_Reasoning: Shiela made a total of <C>45 paper stars</C> for her classmates. Since she has <E>9 classmates</E>, there will be <C>45</C>/<E>9</E> = 5 stars in each bottle. 
+Final_Answer: {5} 
+"
+471,"Shiela has 6 neighbors who like to collect animal drawings. Shiela has a talent for drawing and so she drew 54 animals on small pieces of paper. If she plans to give the same number of animal drawings to her neighbors, how many will each of them receive?","Fact_Diagram:
+graph TD
+    A[Shiela's Animal Drawings]
+    A --> B[Neighbors]
+    A --> C[Total Drawings]
+    A --> D[Drawings per Neighbor]
+    
+    B --> B1[6 neighbors]
+    C --> C1[54 drawings]
+    D --> D1[Equal number for each neighbor]
+Answer_Reasoning: Shiela has <C1>54</C1> drawings that she wants to divide equally amongst her <B1>6</B1> neighbors. So each neighbor will receive <C1>54</C1>/<B1>6</B1> = 9 drawings. The answer is 9.
+Final_Answer: {9} 
+"
+474,"It has been tradition in Shiela's home to hang a sock above the fireplace for each member of the family. This year, she placed a cinnamon ball every day in the socks for 5 of her family members. How long can she do this if she bought 50 cinnamon balls?","Fact_Diagram: 
+graph TD
+    A[Cinnamon Ball Tradition]
+    A --> B[Family Members]
+    B --> B1[5 Members]
+    A --> C[Cinnamon Balls]
+    C --> C1[1 ball per member per day]
+    C --> C2[50 balls purchased]
+
+Answer_Reasoning: Shiela has <B1>5</B1> family members and uses <C1>1 cinnamon ball per family member each day</C1>, so she uses 5*1= 5 cinnamon balls per day.  She can therefore keep up this tradition for <C2>50</C2>/5 = 10 days. 
+Final_Answer: {10} 
+"
+475,"Haley loves to collect things. This year, she decided to give away part of her collection as it was taking too much space in her room. Nine of her closest friends like stickers. If she plans to give all of them an equal number of stickers, how many will each receive if she has 72 stickers?","Fact_Diagram:
+graph TD
+    A[Haley's Stickers]
+    A --> B[Total Stickers]
+    B --> B1[72 stickers]
+    A --> C[Friends Receiving Stickers]
+    C --> C1[9 friends]
+
+Answer_Reasoning: Haley has <B1>72 stickers</B1> to divide equally among her <C1>9 friends</C1>.  Each friend will receive 72/9 = 8 stickers. 
+Final_Answer: {8} 
+"
+480,"One bright sunny day, Betty decided to make bracelets from beautiful stones she bought from a local store. She bought 88 pink flower stones and wanted to make 8 bracelets out of these stones. How many pink flower stones will each bracelet have if she used the same number of stones in each bracelet?","Fact_Diagram:
+graph TD
+    A[Bracelet Making]
+    A --> B[Stones]
+    A --> C[Bracelets]
+    
+    B --> B1[88 pink flower stones]
+    
+    C --> C1[8 bracelets to make]
+
+Answer_Reasoning: Betty wants to make <C1>8 bracelets</C1> using her <B1>88 pink flower stones</B1>. Therefore, each bracelet will have <B1>88</B1>/<C1>8</C1> = 11 pink flower stones. 
+Final_Answer: {11} 
+"
+485,"On the first Saturday of spring, Jane woke up early to enjoy the whole day and help with chores at home. Jane had been saving large empty cans to serve as pots for sunflowers. If she has 54 sunflower seeds and there are 9 cans, how many seeds will be placed in each can if she places an equal number of seeds in each can?","Fact_Diagram:
+graph TD
+    A[Spring Chores]
+    A --> B[Sunflower Seeds]
+    A --> C[Planting Cans]
+    B --> B1[54 seeds total]
+    C --> C1[9 cans total]
+Answer_Reasoning: Jane has <B1>54 sunflower seeds</B1> that she wants to plant in <C1>9 cans</C1>. Therefore, she will plant 54/9 = 6 seeds in each can. 
+Final_Answer: {6} 
+"
+490,"Marian baked bread, cookies and pastries one Saturday at home for her family and friends this holiday season. She made 47 gingerbread cookies which she will distribute equally in tiny glass jars. If each jar is to contain six cookies each, how many cookies will not be placed in a jar?","Fact_Diagram:
+graph TD
+    A[Baking Output]
+    A --> B[Gingerbread Cookies]
+    B --> B1[47 cookies baked]
+    C[Cookie Jars]
+    C --> C1[6 cookies per jar]
+Answer_Reasoning: Marian baked <B1>47</B1> gingerbread cookies and wants to place <C1>6</C1> in each jar.  She can fill 7 jars because 47 divided by 6 is 7 with a remainder of 5. Therefore, <B1>5</B1> cookies will not be placed in a jar. 
+Final_Answer: {5} 
+"
+495,"Susie and her family woke up early on the first weekend of spring. They had a long list of activities for spring cleaning. Susie's mom prepared 74 carrot sticks for breakfast. If the carrots were served equally to 12 people, how many carrot sticks were left uneaten?","Fact_Diagram:
+graph TD
+    A[Spring Cleaning Breakfast]
+    A --> B[Carrot Sticks]
+    A --> C[People]
+    B --> B1[74 total carrot sticks]
+    C --> C1[12 people at breakfast]
+Answer_Reasoning: There were a total of <B1>74 carrot sticks</B1>. They divided the carrots between <C1>12 people</C1>.  74 divided by 12 is 6 with a remainder of 2. This means that each person ate 6 carrot sticks and there were <B1>2</B1> left over. The answer is 2. 
+Final_Answer: {2} 
+"
+501,"Matt and his friends were thinking of making Christmas decors for the clubhouse in their neighborhood. They are to repaint 350 balls in ten different colors. If they painted an equal number of balls for every color, how many balls are there for each color?","Fact_Diagram:
+graph TD
+    A[Christmas Decorations]
+    A --> B[Balls]
+    A --> C[Colors]
+    B --> B1[350 balls]
+    C --> C1[10 different colors]
+
+Answer_Reasoning: There are <B1>350</B1> balls to be painted with <C1>10</C1> different colors. Therefore there are <B1>350</B1>/<C1>10</C1> = 35 balls for each color.
+Final_Answer: {35} 
+"
+511,"Allen, Charles, Lex and Shiela spent days reading books for their book report. The texts were printed very small so they were only able to cover very few pages a day. Allen read about the Solar System. He read 10 pages a day of a book which has 120 pages. How many days did it take Allen to finish reading the book?","Fact_Diagram:
+graph TD
+    A[Book Report Reading]
+    A --> B[Allen's Reading]
+    B --> C[Read 10 pages/day]
+    B --> D[Book has 120 pages]
+
+Answer_Reasoning: It took Allen <D>120</D>/<C>10</C> = 12 days to finish reading the book. 
+Final_Answer: {12} 
+"
+516,"Instead of buying from the store, Melody made Christmas cards for the elderly in a nursing home. She had 99 blue sequins which she plans to use as snowflakes for the cards. If she distributes the sequins equally to 12 cards, how many sequins will Melody have left?","Fact_Diagram:
+graph TD
+    A[Christmas Card Supplies]
+    A --> B[Blue Sequins]
+    A --> C[Cards]
+    B --> B1[99 total sequins]
+    C --> C1[12 cards total]
+
+Answer_Reasoning: Melody can use <B1>99</B1>/<C1>12</C1> = 8 sequins per card with 3 leftover. The answer is 3.
+Final_Answer: {3} 
+"
+642,Chris has been saving his allowance to buy a new pair of soccer cleats and a ball. His grandmother gave him $25 for his birthday. His aunt and uncle gave him $20 and his parents gave him $75. Now he had $279. How much money did he have before his birthday?,"Fact_Diagram:
+graph TD
+    A[Chris's Savings]
+    A --> B{Total Savings}
+    B --> B1[$279]
+    A --> C{Money Received}
+    C --> C1[Grandmother: $25]
+    C --> C2[Aunt and Uncle: $20]
+    C --> C3[Parents: $75]
+
+Answer_Reasoning: Chris received a total of <C1>$25</C1> + <C2>$20</C2> + <C3>$75</C3> = $120 from his family.  Therefore, before his birthday, he had <B1>$279</B1> - $120 = $159 saved. 
+Final_Answer: {159} 
+"
+644,"Harry Hound had a terrible earache yesterday. When I peered into his ears yesterday, I found 36 frisky fleas having a party in his right ear and 85 baby fleas sleeping peacefully in his left ear. I cleaned out Harry Hound's ears. How many fleas perished?","Fact_Diagram:
+graph TD
+    A[Harry Hound's Fleas]
+    A --> B[Fleas in Right Ear]
+    A --> C[Fleas in Left Ear]
+    B --> D[36 frisky fleas]
+    C --> E[85 baby fleas]
+    A --> F[Ear cleaning]
+    F --> G[All fleas perished]
+
+Answer_Reasoning: Harry Hound had <D>36</D> fleas in his right ear and <E>85</E> fleas in his left ear, for a total of 36 + 85 = 121 fleas. Because of the ear cleaning <F>, <G> all the fleas perished</G>. The answer is 121.
+Final_Answer: {121} 
+"
+657,"Ulrich wants to buy a jump rope that costs $9, a board game that costs $9, and a playground ball that costs $5. He has saved $7 from his allowance, and his uncle gave him $15. How much more money does Ulrich need to buy the jump rope, the game, and the ball?","Fact_Diagram:
+graph TD
+    A[Ulrich's Shopping Trip]
+    A --> B{Items to Buy}
+    A --> C{Ulrich's Funds}
+    
+    B --> B1[Jump Rope: $9]
+    B --> B2[Board Game: $9]
+    B --> B3[Playground Ball: $5]
+    
+    C --> C1[Savings: $7]
+    C --> C2[Uncle's Gift: $15] 
+
+Answer_Reasoning: Ulrich wants to buy a jump rope for <B1>$9</B1>, a board game for <B2>$9</B2>, and a playground ball for <B3>$5</B3>, so he needs a total of $9 + $9 + $5 = $23. He has saved <C1>$7</C1> and received <C2>$15</C2> from his uncle, giving him a total of $7 + $15 = $22. Therefore, he still needs $23 - $22 = $1. 
+Final_Answer: {1} 
+"
+663,"Zeshaun bought stamps at the post office. Some of the stamps had a snowflake design, some had a truck design, and some had a rose design. Zeshaun bought 3 snowflake stamps. He bought 5 more truck stamps than snowflake stamps, and 2 fewer rose stamps than truck stamps. How many stamps did Zeshaun buy in all?","Fact_Diagram:
+graph TD
+    A[Zeshaun's Stamps]
+    A --> B[Snowflake Stamps]
+    A --> C[Truck Stamps]
+    A --> D[Rose Stamps]
+    
+    B --> B1[3 stamps]
+    
+    C --> C1[5 more than snowflake stamps]
+    
+    D --> D1[2 fewer than truck stamps]
+Answer_Reasoning: Zeshaun bought <C1>5</C1> + <B1>3</B1> = 8 truck stamps. He bought <D1>2</D1> fewer rose stamps than truck stamps, meaning he bought 8 - <D1>2</D1> = 6 rose stamps. In total, Zeshaun bought <B1>3</B1> + 8 + 6 = 17 stamps.
+Final_Answer: {17} 
+"
+674,"Many families serve each person in the family one 6-ounce glass of orange juice each morning. If they buy orange juice by the gallon, how many whole servings of juice will they get out of one gallon (one gallon = 4 quarts, 1 quart = 32 ounces) of juice?","Fact_Diagram:
+graph TD
+    A[Orange Juice Consumption]
+    A --> B[Serving Size]
+    A --> C[Juice Purchase]
+    B --> B1[6 ounces per serving]
+    C --> C1[1 gallon]
+    C1 --> C2[1 gallon = 4 quarts]
+    C2 --> C3[1 quart = 32 ounces]
+
+Answer_Reasoning: One gallon of orange juice contains <C2>4 quarts</C2>. Since each quart has <C3>32 ounces</C3>, one gallon has 4 * 32 = 128 ounces. With <B1>6 ounces per serving</B1>, one gallon yields 128 / 6 = 21.33 servings. Therefore, they will get 21 whole servings out of one gallon. 
+Final_Answer: {21} 
+"
+865,"When Jose rode on a bus, he noticed some people sitting. At the next bus stop, 5 people got on and 2 people got off. Two stops later, 7 people got on 15 people got off the bus at the terminal station. How many people were in the bus when Jose got on the bus?","Fact_Diagram:
+graph TD
+    A[Bus Ride]
+    A --> B[Stop 1]
+    A --> C[Stop 2]
+    A --> D[Terminal Station]
+    B --> B1[5 got on]
+    B --> B2[2 got off]
+    C --> C1[7 got on]
+    D --> D1[15 got off]
+Answer_Reasoning: Working backward from the <D>terminal station</D>, there were 15 passengers on the bus before arriving at the terminal. At <C>stop 2</C>, <C1>7 people got on</C1>, so there were 15 - 7 = 8 passengers before that. At <B>stop 1</B>, <B2>2 people got off</B2> and <B1>5 got on</B1>, meaning there were 8 - 5 + 2 = 5 passengers before that.  Therefore, there were <Final_Answer>{5}</Final_Answer> people on the bus when Jose got on. 
+"
+866,"Magellan has decided to make party baskets for the fund raiser. Balloons are sold in bags of 20, party horns are sold in bags of 10, and there are 8 candy bars in a package. How many of each should he buy so there are an equal number of balloons, horns and candy bars in each basket?","Fact_Diagram:
+graph TD
+    A[Party Basket Contents]
+    A --> B[Balloons]
+    A --> C[Party Horns]
+    A --> D[Candy Bars]
+    
+    B --> B1[20 per bag]
+    C --> C1[10 per bag]
+    D --> D1[8 per bag]
+
+Answer_Reasoning: To find the equal number of items from each category, we need the least common multiple of <B1>20</B1>, <C1>10</C1>, and <D1>8</D1>, which is 40. 
+Final_Answer: {40} 
+"
+869,"Mei has 15 oranges, 9 peaches and 18 pears. She wants to put all of the fruit into baskets with each basket having the same number of pieces of fruit in it. Without mixing the fruit, what is the greatest number of pieces of fruit Mei can put in each basket?","Fact_Diagram:
+graph TD
+    A[Mei's Fruit]
+    A --> B[Oranges]
+    A --> C[Peaches]
+    A --> D[Pears]
+    B --> B1[15 oranges]
+    C --> C1[9 peaches]
+    D --> D1[18 pears]
+Answer_Reasoning: To find the greatest number of fruit Mei can put in each basket without mixing, we need to find the greatest common factor of <B1>15</B1>, <C1>9</C1>, and <D1>18</D1>. The greatest common factor is 3.  The answer is 3. 
+Final_Answer: {3} 
+"
+899,Tina had a large collection of beanie babies. She gave 8 beanie babies to her cousin. She gave half that amount to her sister. She gave 36 beanie babies to needy children. She kept 12 for herself. How many beanie babies were in Tina's collection at first?,"Fact_Diagram:
+graph TD
+    A[Tina's Beanie Baby Collection]
+    A --> B[Giving Away]
+    A --> E[Remaining]
+    B --> B1[Cousin: 8 beanie babies]
+    B --> B2[Sister: Half of cousin's amount]
+    B --> B3[Needy children: 36 beanie babies]
+    E --> E1[Kept: 12 beanie babies]
+
+Answer_Reasoning: Tina gave her sister <B1>8</B1>/<B2>2</B2> = 4 beanie babies. In total, Tina gave away <B1>8</B1> + 4 + <B3>36</B3> = 48 beanie babies.  Therefore, Tina had <E1>12</E1> + 48 = 60 beanie babies in her collection at first. 
+Final_Answer: {60} 
+"
+910,A box of apples was delivered to Paul's Pies and Cakes. He put half of the apples aside for a pie he would make later. He put 25 of the remaining apples in the refrigerator. That left 6 apples to use in his muffins. How many apples were in the box at first?,"Fact_Diagram:
+graph TD
+    A[Apple Delivery]
+    A --> B[Apples Set Aside]
+    A --> C[Remaining Apples]
+    B --> B1[1/2 of total apples]
+    C --> C1[25 in refrigerator]
+    C --> C2[6 used for muffins]
+
+Answer_Reasoning: There were a total of <C1>25</C1> + <C2>6</C2> = 31 apples that were not set aside for the pie. Since the <B1>31 apples represent half the box</B1>, there must have been 31 x 2 = 62 apples in the box at first.
+Final_Answer: {62} 
+"
+968,"A committee organizing a marathon has 16 jugs of water and 12 jugs of sports drink. The committee would like to set up a number of refreshment stations along the marathon course, with the same combination of jugs of water and jugs of sports drink at each station, with no beverages left over. What is the greatest number of refreshment stations that can be set up?","Fact_Diagram:
+graph TD
+    A[Marathon Refreshment Stations]
+    A --> B[Available Beverages]
+    B --> B1[16 jugs of water]
+    B --> B2[12 jugs of sports drink]
+    A --> C[Station Setup]
+    C --> C1[Same combination of beverages at each station]
+    C --> C2[No beverages leftover]
+
+Answer_Reasoning: To find the greatest number of stations with the same combination of drinks and no leftovers, we need to find the greatest common factor of  <B1>16 jugs of water</B1> and <B2>12 jugs of sports drink</B2>. The greatest common factor of 16 and 12 is 4. 
+Final_Answer: {4} 
+"
+970,"Kathleen is a dental sales representative who wants to distribute 18 brochures and 12 pamphlets to local dental offices. She wants to deliver the same combination of brochures and pamphlets to each office, without having any materials left over. What is the greatest number of dental offices Kathleen can distribute materials to?","Fact_Diagram:
+graph TD
+    A[Kathleen's Materials]
+    A --> B[Brochures]
+    A --> C[Pamphlets]
+    A --> D[Distribution]
+    
+    B --> B1[18 brochures total]
+    
+    C --> C1[12 pamphlets total]
+    
+    D --> D1[Same combination per office]
+    D --> D2[No materials leftover]
+
+Answer_Reasoning: To find the greatest number of offices Kathleen can distribute to, we need to find the greatest common factor of <B1>18 brochures</B1> and <C1>12 pamphlets</C1>. The factors of 18 are 1, 2, 3, 6, 9, and 18. The factors of 12 are 1, 2, 3, 4, 6, and 12. The greatest common factor of 18 and 12 is 6. Therefore, Kathleen can distribute materials to a maximum of 6 dental offices. 
+Final_Answer: {6} 
+"
+971,"With flu season coming up, Lexi decides to make get-well-soon kits. She has 10 cans of chicken soup and 15 boxes of tissue, which she wants to use to make identical kits with no materials left over. What is the greatest number of get-well-soon kits Lexi can make?","Fact_Diagram:
+graph TD
+    A[Get-Well Kits]
+    A --> B[Chicken Soup]
+    A --> C[Tissues]
+    B --> B1[10 cans]
+    C --> C1[15 boxes]
+    A --> D[Identical kits with no leftover materials]
+
+Answer_Reasoning: To find the greatest number of kits Lexi can make with <B1>10 cans of soup</B1> and <C1>15 boxes of tissues</C1> with <D> no materials leftover</D>, we need to find the greatest common factor (GCD) of 10 and 15.  The GCD of 10 and 15 is 5. The answer is 5.
+Final_Answer: {5} 
+"
+973,"Denise is getting older and feels like she should donate her collection of stuffed animals to children who are less fortunate. She has 14 stuffed cats and 7 stuffed dogs, which she wants to divide into identical groups, with no stuffed animals left over. What is the greatest number of groups Denise can place her stuffed animals into?","Fact_Diagram:
+graph TD
+    A[Denise's Stuffed Animals]
+    A --> B[Stuffed Cats]
+    A --> C[Stuffed Dogs]
+    B --> B1[14 Stuffed Cats]
+    C --> C1[7 Stuffed Dogs]
+    A --> D[Identical Groups]
+
+Answer_Reasoning: To find the greatest number of identical groups, we need to find the greatest common factor of <B1>14 stuffed cats</B1> and <C1>7 stuffed dogs</C1>.  The greatest common factor of 14 and 7 is 7. Therefore, the greatest number of groups Denise can place her stuffed animals into is <D>7</D>.
+Final_Answer: {7} 
+"
+974,"A family is preparing backpacks filled with school supplies to donate to children in need. They have 9 pencils and 15 notebooks. If they want to make all the backpacks the same, with no school supplies left over, what is the greatest number of backpacks they can fill?","Fact_Diagram:
+graph TD
+    A[Backpack Preparation]
+    A --> B[Available Supplies]
+    A --> C[Goal]
+    B --> B1[9 pencils]
+    B --> B2[15 notebooks]
+    C --> C1[Identical backpacks]
+    C --> C2[No leftover supplies]
+
+Answer_Reasoning: To find the greatest number of identical backpacks the family can make with <B1>9 pencils</B1> and <B2>15 notebooks</B2> without any leftovers, we need to find the greatest common factor (GCD) of 9 and 15. The GCD of 9 and 15 is 3. Therefore, they can fill a maximum of 3 backpacks. 
+Final_Answer: {3} 
+"
+975,"Mrs. Wilson, the math teacher, has 18 logic puzzles and 9 visual puzzles that she wants to group into sets for students who finish their tests early. Mrs. Wilson wants each set to be identical, containing the same combination of logic puzzles and visual puzzles, with no puzzles left over. What is the greatest number of sets she can create?","Fact_Diagram:
+graph TD
+    A[Puzzle Sets]
+    A --> B[Logic Puzzles]
+    A --> C[Visual Puzzles]
+    B --> D[18 logic puzzles total]
+    C --> E[9 visual puzzles total]
+    A --> F[Equal number of logic and visual puzzles in each set]
+    A --> G[No leftover puzzles]
+
+Answer_Reasoning: To find the greatest number of sets Mrs. Wilson can create, we need to find the greatest common factor (GCD) of the number of <B>logic puzzles (18)</B> and <C>visual puzzles (9)</C>. The GCD of 18 and 9 is 9.  Therefore, Mrs. Wilson can create a maximum of <G>9</G> sets. 
+Final_Answer: {9} 
+"
+978,"Heather enjoys bird-watching and observed two types of birds traveling this season: ducks and seagulls. While the ducks traveled in flocks of 18, the seagulls traveled in flocks of 10. If Heather observed the same total number of ducks and seagulls, what is the smallest number of ducks that she could have observed?","Fact_Diagram:
+graph TD
+    A[Bird Observations]
+    A --> B[Ducks]
+    A --> C[Seagulls]
+    B --> B1[Travel in flocks of 18]
+    C --> C1[Travel in flocks of 10]
+    A --> D[Equal Observations]
+
+Answer_Reasoning: To find the smallest number of ducks Heather could have observed, we need to find the least common multiple of the flock sizes. The least common multiple of <B1>18</B1> and <C1>10</C1> is 90.  Therefore, the smallest number of ducks Heather could have observed is <B1>90</B1>.
+Final_Answer: {90} 
+"
+980,Joe's Bath Shop sells bars of soap in boxes of 5 bars and bottles of soap in boxes of 19 bottles. An employee is surprised to discover that the shop sold the same number of bars and bottles last week. What is the smallest number of each type of soap that the shop could have sold?,"Fact_Diagram:
+graph TD
+    A[Joe's Bath Shop Sales]
+    A --> B[Bars of Soap]
+    A --> C[Bottles of Soap]
+    B --> B1[Sold in boxes of 5]
+    C --> C1[Sold in boxes of 19]
+    D[Equal Sales]
+    A --> D
+
+Answer_Reasoning: To find the smallest number of each type of soap sold, we need to find the least common multiple of <B1>5</B1> and <C1>19</C1>.  Since 5 and 19 are both prime numbers, their least common multiple is their product. Thus, the shop must have sold 5 * 19 = 95 bars and bottles of soap. 
+Final_Answer: {95} 
+"
+992,"Jake set up a candy stand in his front yard. He has 80 pieces of candy to sell. He sold 15 pieces of candy on Monday. He sold much more than that on Tuesday. By Wednesday, Jakes only had 7 pieces left. How many pieces of candy did Jake sell on Tuesday?","Fact_Diagram:
+graph TD
+    A[Jake's Candy Stand]
+    A --> B[Starting Inventory]
+    A --> C[Monday Sales]
+    A --> D[Tuesday Sales]
+    A --> E[Wednesday's Remaining Candy]
+    B --> B1[80 pieces]
+    C --> C1[15 pieces]
+    E --> E1[7 pieces]
+Answer_Reasoning: Jake had <B1>80</B1> - <C1>15</C1> = 65 pieces of candy left after Monday.  He sold 65 - <E1>7</E1> = 58 pieces of candy on Tuesday.  The answer is 58.
+Final_Answer: {58} 
+"
+1063,"The Wholesome Bakery baked 5 loaves of bread on Wednesday, 7 loaves of bread on Thursday, 10 loaves of bread on Friday, 14 loaves of bread on Saturday, and 19 loaves of bread on Sunday. If this pattern continues, how many loaves of bread will they bake on Monday?","Fact_Diagram:
+graph TD
+    A[Wholesome Bakery Bread Baking]
+    A --> B[Wednesday]
+    A --> C[Thursday]
+    A --> D[Friday]
+    A --> E[Saturday]
+    A --> F[Sunday]
+    B --> B1[5 loaves]
+    C --> C1[7 loaves]
+    D --> D1[10 loaves]
+    E --> E1[14 loaves]
+    F --> F1[19 loaves]
+
+Answer_Reasoning: The bakery increases the number of loaves they bake by a consistent amount each day.  From <B1>Wednesday to Thursday</B1>, they bake 2 more loaves, from <C1>Thursday to Friday</C1> they bake 3 more loaves, from <D1>Friday to Saturday</D1> they bake 4 more loaves and from <E1>Saturday to Sunday</E1>, they bake 5 more loaves.  Following this pattern, they will bake 6 more loaves on Monday than Sunday for a total of  <F1>19</F1> + 6 = 25 loaves. 
+Final_Answer: {25} 
+"
+1064,"Austin is putting stickers in a sticker book. He put 8 stickers on the first page, 16 stickers on the second page, 24 stickers on the third page, and 32 stickers on the fourth page. If this pattern continues, how many stickers will Austin put on the fifth page?","Fact_Diagram:
+graph TD
+    A[Sticker Book]
+    A --> B[Page 1]
+    A --> C[Page 2]
+    A --> D[Page 3]
+    A --> E[Page 4]
+    A --> F[Page 5]
+    B --> B1[8 Stickers]
+    C --> C1[16 Stickers]
+    D --> D1[24 Stickers]
+    E --> E1[32 Stickers]
+
+Answer_Reasoning: The pattern seems to be increasing by 8 stickers every page because <C1>16</C1> - <B1>8</B1> = 8, <D1>24</D1> - <C1>16</C1> = 8, and <E1>32</E1> - <D1>24</D1> = 8. That means there will be <E1>32</E1> + 8 = 40 stickers on page 5. The answer is 40.
+Final_Answer: {40} 
+"
+1066,"Oliver is organizing his books and putting them on shelves. He put 2 books on the first shelf, 6 books on the second shelf, 18 books on the third shelf, and 54 books on the fourth shelf. If this pattern continues, how many books will Oliver put on the fifth shelf?","Fact_Diagram:
+graph TD
+    A[Oliver's Bookshelf]
+    A --> B[Shelf Number]
+    A --> C[Number of Books]
+    B --> B1[1st Shelf]
+    B --> B2[2nd Shelf]
+    B --> B3[3rd Shelf]
+    B --> B4[4th Shelf]
+    B --> B5[5th Shelf]
+    C --> C1[2 books]
+    C --> C2[6 books]
+    C --> C3[18 books]
+    C --> C4[54 books]
+
+Answer_Reasoning: The pattern for the number of books on each shelf is multiplying by 3 (<C1>2</C1> x 3 = <C2>6</C2>, <C2>6</C2> x 3 = <C3>18</C3>, <C3>18</C3> x 3 = <C4>54</C4>). So, for the <B5>fifth shelf</B5>, Oliver would put <C4>54</C4> x 3 = 162 books. 
+Final_Answer: {162} 
+"
+1067,"Kayla got a new video game. She scored 2 points on the first level, 3 points on the second level, 5 points on the third level, 8 points on the fourth level, and 12 points on the fifth level. If this pattern continues, how many points will Kayla score on the sixth level?","Fact_Diagram:
+graph TD
+    A[Kayla's Video Game Scores]
+    A --> B{Level}
+    B --> B1[Level 1]
+    B --> B2[Level 2]
+    B --> B3[Level 3]
+    B --> B4[Level 4]
+    B --> B5[Level 5]
+    B --> B6[Level 6]
+    A --> C{Points}
+    C --> C1[2 points]
+    C --> C2[3 points]
+    C --> C3[5 points]
+    C --> C4[8 points]
+    C --> C5[12 points]
+
+Answer_Reasoning: The difference between <C2>level 2</C2> and <C1>level 1</C1> is 1 point. The difference between <C3>level 3</C3> and <C2>level 2</C2> is 2 points. The difference between <C4>level 4</C4> and <C3>level 3</C3> is 3 points. The difference between <C5>level 5</C5> and <C4>level 4</C4> is 4 points.  This pattern shows that each increasing level, the point difference increases by one.  Therefore, the difference between <B6>level 6</B6> and <C5>level 5</C5> should be 5 points.  <B6>Level 6</B6> would then have <C5>12</C5> + 5 = 17 points.  The answer is 17
+Final_Answer: {17} 
+"
+1068,"Derek is picking flowers in the garden. He picked 18 flowers from the first bush, 22 flowers from the second bush, 26 flowers from the third bush, 30 flowers from the fourth bush, and 34 flowers from the fifth bush. If this pattern continues, how many flowers will Derek pick from the sixth bush?","Fact_Diagram:
+graph TD
+    A[Derek's Flower Picking]
+    A --> B{Bush Number}
+    B --> B1[First Bush: 18 Flowers]
+    B --> B2[Second Bush: 22 Flowers]
+    B --> B3[Third Bush: 26 Flowers]
+    B --> B4[Fourth Bush: 30 Flowers]
+    B --> B5[Fifth Bush: 34 Flowers]
+    A --> C[Sixth Bush: ?]
+
+Answer_Reasoning: Notice that the number of flowers Derek picks increases by 4 for each subsequent bush: <B2>22</B2> - <B1>18</B1> = 4,  <B3>26</B3> - <B2>22</B2> = 4, and so on.  Therefore, to find the number of flowers he'll pick from the sixth bush, we add 4 to the number he picked from the fifth bush: <B5>34</B5> + 4 = 38.
+Final_Answer: {38} 
+"
+1070,"The teacher gave 29 gold stickers to the first student, 35 gold stickers to the second student, 41 gold stickers to the third student, 47 gold stickers to the fourth student, and 53 gold stickers to the fifth student. If this pattern continues, how many gold stickers will the teacher give to the sixth student?","Fact_Diagram:
+graph TD
+    A[Gold Sticker Rewards]
+    A --> B{Student}
+    B --> B1[1st: 29 stickers]
+    B --> B2[2nd: 35 stickers]
+    B --> B3[3rd: 41 stickers]
+    B --> B4[4th: 47 stickers]
+    B --> B5[5th: 53 stickers]
+    A --> C[Pattern]
+    C --> C1[Continues]
+
+Answer_Reasoning: The difference between the number of stickers each student receives is 6 as seen by comparing <B2>student 2's</B2> amount to <B1>student 1's</B1>. If the <C>pattern <C1>continues</C1></C>, the sixth student would receive 53 + 6 = 59 stickers. 
+Final_Answer: {59} 
+"
+1071,"Jared owns a hardware store and is looking over his past orders. Jared's hardware store ordered 5 power drills in January, 6 power drills in February, 8 power drills in March, and 11 power drills in April. If this pattern continues, how many power drills will the store order in May?","Fact_Diagram:
+graph TD
+    A[Hardware Store Orders]
+    A --> B[Power Drill Orders]
+    B --> B1[January: 5 drills]
+    B --> B2[February: 6 drills]
+    B --> B3[March: 8 drills]
+    B --> B4[April: 11 drills]
+
+Answer_Reasoning: Observing the pattern from <B1>January</B1> to <B2>February</B2>, there was an increase of 1 drill. From <B2>February</B2> to <B3>March</B3>, there was an increase of 2 drills. And from <B3>March</B3> to <B4>April</B4>, there was an increase of 3 drills. If this pattern continues, there will be an increase of 4 drills from April to May. Therefore, the store will order <B4>11</B4> + 4 = 15 power drills in May.
+Final_Answer: {15} 
+"
+1073,"The teacher's helper was putting cookies onto plates. He put 5 cookies on the first plate, 7 cookies on the second plate, 10 cookies on the third plate, 14 cookies on the fourth plate, and 19 cookies on the fifth plate. If this pattern continues, how many cookies will the helper put on the sixth plate?","Fact_Diagram:
+graph TD
+    A[Cookie Placement]
+    A --> B[Plate Number]
+    B --> B1[1st plate: 5 cookies]
+    B --> B2[2nd plate: 7 cookies]
+    B --> B3[3rd plate: 10 cookies]
+    B --> B4[4th plate: 14 cookies]
+    B --> B5[5th plate: 19 cookies]
+
+Answer_Reasoning: The pattern adds  <B2>2</B2> more cookies than the previous amount added. Between the 1st and 2nd plate there are <B2>2</B2> more cookies added. Between the 2nd and 3rd plate, there are  <B3>3</B3> more cookies. Between the 3rd and 4th plate there are <B4>4</B4> more cookies, and between the 4th and 5th plate there are <B5>5</B5> more cookies.  This means the 6th plate would have 24 cookies because 19 + 5 = 24. The answer is 24.
+Final_Answer: {24} 
+"
+1074,"The flower shop displays a different number of roses in the front window every month. It displayed 108 roses in October, 120 roses in November, 132 roses in December, and 144 roses in January. If this pattern continues, how many roses will the flower shop window display in February?","Fact_Diagram:
+graph TD
+    A[Flower Shop Roses]
+    A --> B[Monthly Rose Display]
+    B --> C{October: 108 roses}
+    B --> D{November: 120 roses}
+    B --> E{December: 132 roses}
+    B --> F{January: 144 roses}
+
+Answer_Reasoning:  Looking at the pattern in the <B>monthly rose display</B>, the number of roses increases by 12 each month. <C> In October, there were 108 roses</C>. <D>In November, there were 120 roses</D>. <E>In December, there were 132 roses</E>, and <F>in January, there were 144 roses</F>. Following this trend, the flower shop will display 144 + 12 = 156 roses in February. 
+Final_Answer: {156} 
+"
+1075,"A baker is putting cupcakes on trays to cool. She put 3 cupcakes on the first tray, 6 cupcakes on the second tray, 12 cupcakes on the third tray, and 24 cupcakes on the fourth tray. If this pattern continues, how many cupcakes will the baker put on the fifth tray?","Fact_Diagram:
+graph TD
+    A[Cupcake Arrangement]
+    A --> B{Tray Number}
+    B --> B1[First Tray]
+    B --> B2[Second Tray]
+    B --> B3[Third Tray]
+    B --> B4[Fourth Tray]
+    B --> B5[Fifth Tray]
+    A --> C{Number of Cupcakes}
+    C --> C1[3 cupcakes]
+    C --> C2[6 cupcakes]
+    C --> C3[12 cupcakes]
+    C --> C4[24 cupcakes]
+
+Answer_Reasoning:  The number of cupcakes on each tray <C>doubles</C> as the tray number increases. Since there are <C4>24 cupcakes</C4> on the <B4>fourth tray</B4>, the baker will put 24 * 2 = 48 cupcakes on the <B5>fifth tray</B5>. 
+Final_Answer: {48} 
+"
+1077,"Steve is stacking cups; he put 17 plastic cups in the first stack, 21 plastic cups in the second stack, 25 plastic cups in the third stack, and 29 plastic cups in the fourth stack. If this pattern continues, how many plastic cups will Steve put in the fifth stack?","Fact_Diagram:
+graph TD
+    A[Steve's Cups]
+    A --> B[Stack 1]
+    A --> C[Stack 2]
+    A --> D[Stack 3]
+    A --> E[Stack 4]
+    A --> F[Stack 5]
+    B --> G[17 cups]
+    C --> H[21 cups]
+    D --> I[25 cups]
+    E --> J[29 cups]
+
+Answer_Reasoning: Examining the number of cups in each stack, we find that Steve adds 4 cups to each stack. <G>Stack 1 has 17 cups</G>, <H>stack 2 has 21 cups</H>, <I>stack 3 has 25 cups</I>, and <J>stack 4 has 29 cups</J>. That means <F>stack 5 will have 29 + 4 = 33 cups</F>. The answer is 33.
+Final_Answer: {33}
+"
+1078,"While counting chairs in the lunch room, Marie noticed that there were 14 chairs in the first row, 23 chairs in the second row, 32 chairs in the third row, 41 chairs in the fourth row, and 50 chairs in the fifth row. If this pattern continues, how many chairs will there be in the sixth row?","Fact_Diagram:
+graph TD
+    A[Lunch Room Chairs]
+    A --> B[Row Patterns]
+    B --> B1[Row 1: 14 chairs]
+    B --> B2[Row 2: 23 chairs]
+    B --> B3[Row 3: 32 chairs]
+    B --> B4[Row 4: 41 chairs]
+    B --> B5[Row 5: 50 chairs]
+
+Answer_Reasoning:  Observing the pattern of chairs in each row from the <B>Row Patterns</B> branch, each row adds 9 more chairs than the previous row. <B5>Row 5 has 50 chairs</B5>, so the sixth row would have <B5>50</B5> + 9 = 59 chairs. 
+Final_Answer: {59} 
+"
+1080,"Farmer Singleton has a plot of tomato plants. There are 4 tomato plants in the first row, 8 tomato plants in the second row, 16 tomato plants in the third row, 32 tomato plants in the fourth row, and 64 tomato plants in the fifth row. If this pattern continues, how many tomato plants will there be in the sixth row?","Fact_Diagram:
+graph TD
+    A[Tomato Plants]
+    A --> B[Row Pattern]
+    B --> B1[Row 1: 4 plants]
+    B --> B2[Row 2: 8 plants]
+    B --> B3[Row 3: 16 plants]
+    B --> B4[Row 4: 32 plants]
+    B --> B5[Row 5: 64 plants]
+
+Answer_Reasoning: Looking at the pattern in <B1>Row 1</B1> through <B5>Row 5</B5>, each row has double the number of tomato plants as the previous row. Therefore, the sixth row would have <B5>64</B5> * 2 = 128 tomato plants. 
+Final_Answer: {128} 
+"
+1135,"Yoda Soda is the intergalactic party drink that will have all your friends saying, ""Mmmmmm, good this is!"" You are throwing a party, and you need 5 liters of Yoda Soda for every 12 guests. If you have 36 guests, how many liters of Yoda Soda do you need?","Fact_Diagram:
+graph TD
+    A[Yoda Soda Party]
+    A --> B[Yoda Soda]
+    A --> C[Guests]
+    
+    B --> B1[5 liters per 12 guests]
+    
+    C --> C1[36 guests attending]
+Answer_Reasoning: You need <B1>5 liters of Yoda Soda</B1> for every <B1>12 guests</B1>. You are having <C1>36 guests</C1> which means you need to buy enough Yoda Soda for  <C1>36</C1>/<B1>12</B1> = 3 sets of 12 guests. Therefore, you need a total of 3 * <B1>5</B1> = 15 liters of Yoda Soda. 
+Final_Answer: {15} 
+"
+1170,"Sweet Time Bakery just opened and is increasing the number of items they bake. For example, the bakery made 19 carrot cakes in October, 21 carrot cakes in November, 23 carrot cakes in December, and 25 carrot cakes in January. If this pattern continues, how many carrot cakes will the bakery make in February?","Fact_Diagram:
+graph TD
+    A[Sweet Time Bakery]
+    A --> B{Carrot Cakes}
+    B --> B1[October: 19 cakes]
+    B --> B2[November: 21 cakes]
+    B --> B3[December: 23 cakes]
+    B --> B4[January: 25 cakes]
+
+Answer_Reasoning:  The number of carrot cakes Sweet Time Bakery makes increases by 2 each month, as seen by comparing <B1>October's</B1> number to <B2>November's</B2>, <B2>November's</B2> to <B3>December's</B3>, and <B3>December's</B3> to <B4>January's</B4>.  Because January saw <B4>25 carrot cakes</B4> made, we know February will see 25 + 2 = 27 carrot cakes made. 
+Final_Answer: {27} 
+"
+1171,"Jared is reviewing his cell phone bill. When he gets to the text message part, he notices that he sent 1 text message in November, 2 text messages in December, 4 text messages in January, and 8 text messages in February. If this pattern continues, how many text messages will Jared send in March?","Fact_Diagram:
+graph TD
+    A[Jared's Text Messages]
+    A --> B[November]
+    A --> C[December]
+    A --> D[January]
+    A --> E[February]
+    B --> B1[1 text message]
+    C --> C1[2 text messages]
+    D --> D1[4 text messages]
+    E --> E1[8 text messages]
+Answer_Reasoning: Based on the pattern from <B1>November</B1> to <C1>December</C1>, <C1>December</C1> to <D1>January</D1>, and <D1>January</D1> to <E1>February</E1>, the number of texts doubles each month. Therefore, Jared will likely send <E1>8</E1> * 2 = 16 text messages in March. 
+Final_Answer: {16} 
+"
+1172,"Malia is picking berries in the berry patch. She picks 3 berries from the first bush, 4 berries from the second bush, 7 berries from the third bush, and 12 berries from the fourth bush. If this pattern continues, how many berries will Malia pick from the fifth bush?","Fact_Diagram:
+graph TD
+    A[Berry Picking]
+    A --> B{Bush Number}
+    B --> B1[Bush 1]
+    B --> B2[Bush 2]
+    B --> B3[Bush 3]
+    B --> B4[Bush 4]
+    B --> B5[Bush 5]
+    A --> C{Berries Picked}
+    C --> C1[3 berries]
+    C --> C2[4 berries]
+    C --> C3[7 berries]
+    C --> C4[12 berries]
+
+Answer_Reasoning: The difference between <C2>the number of berries picked from bush 2</C2> and <C1>the number of berries picked from bush 1</C1> is 1 berry. The difference between <C3>the number of berries picked from bush 3 </C3> and <C2>the number of berries picked from bush 2</C2> is 3 berries. The difference between <C4>the number of berries picked from bush 4</C4> and <C3>the number of berries picked from bush 3</C3> is 5 berries. To continue this pattern, the difference between the number of berries picked from <B5>bush 5</B5> and <C4>the number of berries picked from bush 4</C4> will be 7 berries. Therefore, Malia will pick 12+7 = 19 berries from bush 5. 
+Final_Answer: {19} 
+"
+1175,"Andrew found some empty bins to put cans into for recycling. He put 2 empty cans in the first bin, 4 empty cans in the second bin, 7 empty cans in the third bin, 11 empty cans in the fourth bin, and 16 empty cans in the fifth bin. If this pattern continues, how many empty cans will Andrew put in the sixth bin?","Fact_Diagram:
+graph TD
+    A[Andrew's Recycling]
+    A --> B{Bin Number}
+    B --> B1[First: 2 cans]
+    B --> B2[Second: 4 cans]
+    B --> B3[Third: 7 cans]
+    B --> B4[Fourth: 11 cans]
+    B --> B5[Fifth: 16 cans]
+    A --> C[Sixth Bin]
+
+Answer_Reasoning: Observing the pattern in <B>, each bin increases in number from the last by a value that increments by 1. The difference between the first and second bin <B1> <B2> is 2, the difference between the second and third <B2> <B3> is 3, and so on. To continue this pattern, the sixth bin should have 5 more cans than the fifth bin <B5> <C>. Therefore, Andrew will put 16 + 5 = 21 cans in the sixth bin.
+Final_Answer: {21} 
+"
+1176,"Tess is writing a poem. She writes 23 words on the first line, 26 words on the second line, 29 words on the third line, 32 words on the fourth line, and 35 words on the fifth line. If this pattern continues, how many words will Tess write on the sixth line?","Fact_Diagram:
+graph TD
+    A[Tess's Poem]
+    A --> B{Line Number}
+    B --> B1(1)
+    B --> B2(2)
+    B --> B3(3)
+    B --> B4(4)
+    B --> B5(5)
+    B --> B6(6)
+    A --> C{Words per Line}
+    C --> C1(23 - Line B1)
+    C --> C2(26 - Line B2)
+    C --> C3(29 - Line B3)
+    C --> C4(32 - Line B4)
+    C --> C5(35 - Line B5)
+    C --> C6(Unknown - Line B6)
+
+Answer_Reasoning: The number of words Tess writes on each line increases by 3.  Following the pattern: <C1>23</C1>, <C2>26</C2>, <C3>29</C3>, <C4>32</C4>, <C5>35</C5>, Tess would write 35 + 3 = 38 words on line <B6>6</B6>. 
+Final_Answer: {38} 
+"
+1178,"Ava bagged the plastic bottles after a recycling drive. She placed 45 bottles in the first bag, 53 bottles in the second bag, 61 bottles in the third bag, and 69 bottles in the fourth bag. If this pattern continues, how many plastic bottles will Ava put in the fifth bag?","Fact_Diagram:
+graph TD
+    A[Recycling Drive]
+    A --> B[Ava's Bags]
+    B --> B1[Bag 1: 45 bottles]
+    B --> B2[Bag 2: 53 bottles]
+    B --> B3[Bag 3: 61 bottles]
+    B --> B4[Bag 4: 69 bottles]
+    B --> B5[Bag 5: ? bottles]
+
+Answer_Reasoning: Notice that the number of bottles Ava puts in each bag increases. The difference between the number of bottles in <B2>Bag 2</B2> and <B1>Bag 1</B1> is <B2>53</B2> - <B1>45</B1> = 8 bottles. The difference between <B3>Bag 3</B3> and <B2>Bag 2</B2> is <B3>61</B3> - <B2>53</B2> = 8 bottles.  The difference between <B4>Bag 4</B4> and <B3>Bag 3</B3> is <B4>69</B4> - <B3>61</B3> = 8 bottles. So, Ava puts 8 more bottles in each bag than the previous bag. Therefore, Ava will put <B4>69</B4> + 8 = 77 bottles in <B5>Bag 5</B5>. 
+Final_Answer: {77} 
+"
+1179,"While organizing his DVD collection, Seth put 2 DVDs on the first rack, 4 DVDs on the second rack, 8 DVDs on the third rack, 16 DVDs on the fourth rack, and 32 DVDs on the fifth rack. If this pattern continues, how many DVDs will Seth put on the sixth rack?","Fact_Diagram:
+graph TD
+    A[DVD Organization]
+    A --> B{Rack Number}
+    A --> C{Number of DVDs}
+    B --> B1{1st rack}
+    B --> B2{2nd rack}
+    B --> B3{3rd rack}
+    B --> B4{4th rack}
+    B --> B5{5th rack}
+    B --> B6{6th rack}
+    C --> C1{2 DVDs}
+    C --> C2{4 DVDs}
+    C --> C3{8 DVDs}
+    C --> C4{16 DVDs}
+    C --> C5{32 DVDs}
+
+Answer_Reasoning: The pattern for the number of DVDs on each rack <C> increases by a factor of 2</C>.  The fifth rack <B5> has <C5>32 DVDs</C5>, so the sixth rack <B6> will have 32 * 2 = 64 DVDs. 
+Final_Answer: {64} 
+"
+1180,"The teacher is handing out note cards to her students. She gave 3 note cards to the first student, 12 note cards to the second student, 48 note cards to the third student, and 192 note cards to the fourth student. If this pattern continues, how many note cards will the teacher give to the fifth student?","Fact_Diagram:
+graph TD
+    A[Note Card Distribution]
+    A --> B[Student 1]
+    A --> C[Student 2]
+    A --> D[Student 3]
+    A --> E[Student 4]
+    A --> F[Student 5]
+    B --> B1[3 note cards]
+    C --> C1[12 note cards]
+    D --> D1[48 note cards]
+    E --> E1[192 note cards]
+
+Answer_Reasoning: The teacher is multiplying the number of note cards by 4 for each student: <B1>3</B1> x 4 = <C1>12</C1>, <C1>12</C1> x 4 = <D1>48</D1>, and so on. Therefore, the fifth student would receive <E1>192</E1> x 4 = 768 note cards. 
+Final_Answer: {768} 
+"
+1181,"While organizing the magazines at the doctor's office, Blanca put 3 magazines in the first pile, 4 magazines in the second pile, 6 magazines in the third pile, and 9 magazines in the fourth pile. If this pattern continues, how many magazines will Blanca put in the fifth pile?","Fact_Diagram:
+graph TD
+    A[Magazine Organization]
+    A --> B{Pile Number}
+    B --> B1[First Pile: 3 Magazines]
+    B --> B2[Second Pile: 4 Magazines]
+    B --> B3[Third Pile: 6 Magazines]
+    B --> B4[Fourth Pile: 9 Magazines] 
+
+Answer_Reasoning: Observing the pattern from <B1>pile 1 to pile 4</B4>, the number of magazines increases by 1, then 2, then 3. Following this pattern, the fifth pile would have 3 more magazines than the fourth pile. Blanca will put <B4>9</B4> + 3 = 12 magazines in the fifth pile. 
+Final_Answer: {12} 
+"
+1182,"While sorting some buttons, Malia put 1 button in the first box, 3 buttons in the second box, 9 buttons in the third box, 27 buttons in the fourth box, and 81 buttons in the fifth box. If this pattern continues, how many buttons will Malia put in the sixth box?","Fact_Diagram:
+graph TD
+    A[Button Sorting]
+    A --> B[Boxes]
+    B --> B1[Box 1: 1 button]
+    B --> B2[Box 2: 3 buttons]
+    B --> B3[Box 3: 9 buttons]
+    B --> B4[Box 4: 27 buttons]
+    B --> B5[Box 5: 81 buttons]
+    A --> C[Pattern]
+    C --> C1[Continues]
+
+Answer_Reasoning: The number of buttons in each box is triple the number in the previous box (<B1>1</B1> x 3 = <B2>3</B2>, <B2>3</B2> x 3 = <B3>9</B3>, etc.). Since the pattern <C1>continues</C1>, Malia will put <B5>81</B5> x 3 = 243 buttons in the sixth box. 
+Final_Answer: {243} 
+"
+1183,"Christine is dividing cherries among some bowls. She put 35 cherries in the first bowl, 40 cherries in the second bowl, 45 cherries in the third bowl, 50 cherries in the fourth bowl, and 55 cherries in the fifth bowl. If this pattern continues, how many cherries will Christine put in the sixth bowl?","Fact_Diagram:
+graph TD
+    A[Cherry Distribution]
+    A --> B{Bowl Number}
+    A --> C{Number of Cherries}
+    B --> B1{1st Bowl}
+    B --> B2{2nd Bowl}
+    B --> B3{3rd Bowl}
+    B --> B4{4th Bowl}
+    B --> B5{5th Bowl}
+    B --> B6{6th Bowl}
+    C --> C1{35 cherries}
+    C --> C2{40 cherries}
+    C --> C3{45 cherries}
+    C --> C4{50 cherries}
+    C --> C5{55 cherries}
+
+Answer_Reasoning: The pattern for the number of cherries in each bowl is increasing by 5.  The fifth bowl (<B5>) had <C5>55 cherries</C5>. Therefore, Christine will put 55 + 5 = 60 cherries in the sixth bowl (<B6>). 
+Final_Answer: {60} 
+"
+1185,"While sorting some change into piggy banks, Diane put 72 coins in the first piggy bank, 81 coins in the second piggy bank, 90 coins in the third piggy bank, 99 coins in the fourth piggy bank, and 108 coins in the fifth piggy bank. If this pattern continues, how many coins will Diane put in the sixth piggy bank?","Fact_Diagram:
+graph TD
+    A[Coin Sorting]
+    A --> B{Piggy Banks}
+    B --> B1[First: 72 coins]
+    B --> B2[Second: 81 coins]
+    B --> B3[Third: 90 coins]
+    B --> B4[Fourth: 99 coins]
+    B --> B5[Fifth: 108 coins]
+    B --> B6{Sixth: ? coins}
+
+Answer_Reasoning: The pattern is increasing by 9 coins each time: <B2>81</B2> - <B1>72</B1> = 9, <B3>90</B3> - <B2>81</B2> = 9, and so on.  Therefore, there will be <B5>108</B5> + 9 = 117 coins in the sixth piggy bank (<B6>B6</B6>).
+Final_Answer: {117} 
+"
+1186,"Alec has a garden and likes to put flowers from his garden into pretty vases. Alec put 5 flowers in the first vase, 7 flowers in the second vase, 10 flowers in the third vase, and 14 flowers in the fourth vase. If this pattern continues, how many flowers will Alec put in the fifth vase?","Fact_Diagram:
+graph TD
+    A[Alec's Vases]
+    A --> B[Vase Arrangement]
+    B --> B1[Vase 1: 5 flowers]
+    B --> B2[Vase 2: 7 flowers]
+    B --> B3[Vase 3: 10 flowers]
+    B --> B4[Vase 4: 14 flowers]
+
+Answer_Reasoning: Observe that the number of flowers Alec puts in each vase increases. The difference between vase 1 (<B1>5 flowers</B1>) and vase 2 (<B2>7 flowers</B2>) is 2 flowers. The difference between vase 2 and vase 3 (<B3>10 flowers</B3>) is 3 flowers. The difference between vase 3 and vase 4 (<B4>14 flowers</B4>) is 4 flowers. Continuing this pattern, Alec would put 14 + 5 = 19 flowers in the fifth vase. 
+Final_Answer: {19} 
+"
+1187,"At a party, the cheese pizza is cut into 6 slices and the veggie pizza is cut into 12 slices. If the host wants to serve identical platters that contain the same combination of cheese and veggie slices, with no slices left over, what is the greatest number of platters the host can prepare?","Fact_Diagram:
+graph TD
+    A[Party Pizza]
+    A --> B[Cheese Pizza]
+    A --> C[Veggie Pizza]
+    B --> B1[6 slices]
+    C --> C1[12 slices]
+    A --> D[Platters]
+    D --> D1[Identical platters]
+    D --> D2[Same combination of cheese and veggie slices]
+    D --> D3[No slices leftover]
+
+
+Answer_Reasoning: To find the greatest number of platters with identical combinations and no slices leftover, we need to find the greatest common factor of <B1>6 slices of cheese pizza</B1> and <C1>12 slices of veggie pizza</C1>.  The greatest common factor of 6 and 12 is 6. This means the host can prepare a maximum of <D1>6 identical platters</D1>.
+Final_Answer: {6} 
+"
+1189,"Vondra is putting together bags of groceries to donate to charity. She has 7 boxes of macaroni and cheese and 14 cans of vegetables. Vondra wants to divide them up evenly, so that each bag has the same contents and no items are left over. What is the greatest number of bags of groceries Vondra can put together?","Fact_Diagram:
+graph TD
+    A[Grocery Bags]
+    A --> B{Macaroni and Cheese}
+    A --> C{Canned Vegetables}
+    B --> D[7 boxes]
+    C --> E[14 cans]
+
+Answer_Reasoning: To find the greatest number of bags Vondra can put together, we need to find the greatest common factor of <D>7 boxes of macaroni and cheese</D> and <E>14 cans of vegetables</E>. The greatest common factor of 7 and 14 is 7. Therefore, Vondra can put together a maximum of 7 bags. 
+Final_Answer: {7} 
+"
+1193,"Shelley has 12 forks and 16 knives to place in silverware holders at the fast food restaurant where she works. She wants to distribute them equally, with no forks or knives left over. What is the greatest number of silverware holders Shelley can stock?","Fact_Diagram:
+graph TD
+    A[Shelley's Silverware]
+    A --> B[Forks]
+    A --> C[Knives]
+    B --> D[12 forks]
+    C --> E[16 knives]
+    A --> F[Equal distribution into holders]
+
+Answer_Reasoning: To find the greatest number of silverware holders, we need to find the greatest common factor of <D>12 forks</D> and <E>16 knives</E>. The factors of 12 are 1, 2, 3, 4, 6, and 12. The factors of 16 are 1, 2, 4, 8, and 16. The greatest common factor of 12 and 16 is 4. Therefore, Shelley can stock a maximum of <F>4 silverware holders</F>. 
+Final_Answer: {4} 
+"
+1194,"Tess is decorating papers with a total of 45 heart stickers and 27 star stickers for the child she is babysitting. If she wants to make all the papers identical, with the same combination of heart and star stickers and no stickers left over, what is the greatest number of pages Tess can decorate?","Fact_Diagram:
+graph TD
+    A[Decorating Papers]
+    A --> B[Stickers]
+    B --> B1[45 heart stickers]
+    B --> B2[27 star stickers]
+    A --> C[Decoration Rules]
+    C --> C1[Identical decorations per page]
+    C --> C2[No leftover stickers]
+
+Answer_Reasoning: To find the greatest number of pages Tess can decorate, we need to find the greatest common factor (GCF) of the number of heart stickers (<B1>45</B1>) and star stickers (<B2>27</B2>). The GCF of 45 and 27 is 9. Therefore, Tess can decorate a maximum of 9 pages. 
+Final_Answer: {9} 
+"
+1195,"Daniel has 44 commemorative plates and 33 commemorative spoons. He wants to display them in groups throughout his house, each with the same combination of plates and spoons, with none left over. What is the greatest number of groups Daniel can display?","Fact_Diagram:
+graph TD
+    A[Daniel's Collection]
+    A --> B[Plates]
+    A --> C[Spoons]
+    A --> D[Display Groups]
+    B --> B1[44 plates]
+    C --> C1[33 spoons]
+    D --> D1[Same number of plates and spoons in each group]
+    D --> D2[No leftover items]
+
+Answer_Reasoning: To find the greatest number of groups Daniel can display, we need to find the greatest common factor (GCF) of <B1>44 plates</B1> and <C1>33 spoons</C1>.  The GCF is the largest number that divides into both 44 and 33 without leaving a remainder, ensuring <D1>an equal number of plates and spoons in each group</D1> and <D2>no leftovers</D2>. The GCF of 44 and 33 is 11. 
+Final_Answer: {11} 
+"
+1197,"At a concert, the band has 20 men's T-shirts and 8 women's T-shirts. The band wants to set up tables to sell the shirts, with an equal number of men's and women's shirts available at each table and no shirts left over. What is the greatest number of tables the band can sell shirts from?","Fact_Diagram:
+graph TD
+    A[Concert T-shirt Sales]
+    A --> B[Inventory]
+    A --> C[Table Setup]
+    
+    B --> B1[20 men's shirts]
+    B --> B2[8 women's shirts]
+    
+    C --> C1[Equal number of men's & women's shirts per table]
+    C --> C2[No shirts leftover]
+
+Answer_Reasoning: To find the greatest number of tables with an equal number of men's (<B1>20</B1>) and women's (<B2>8</B2>) shirts and no leftovers (<C2>), we need to find the greatest common factor (GCD) of 20 and 8. The GCD of 20 and 8 is 4. Therefore, the band can sell shirts from a maximum of {4} tables. 
+Final_Answer: {4} 
+"
+1198,"Amanda has two pieces of ribbon, one 8 inches long and the other 16 inches long. To decorate an album, she wants to cut them up to produce many pieces of ribbon that are all of the same length, with no ribbon left over. What is the greatest length, in inches, that she can make them?","Fact_Diagram:
+graph TD
+    A[Ribbon Lengths]
+    A --> B[Ribbon 1]
+    A --> C[Ribbon 2]
+    B --> D[8 inches]
+    C --> E[16 inches]
+    F[Goal]
+    F --> G[Same length pieces]
+    F --> H[No leftover ribbon]
+
+Answer_Reasoning: To find the greatest length Amanda can make the pieces, with <H>no ribbon leftover</H>, we need the greatest common factor of <D>8 inches</D> and <E>16 inches</E>. The greatest common factor of 8 and 16 is 8. 
+
+Final_Answer: {8} 
+"
+1202,"Allie has 5 math books and 10 science books. If she wants to distribute them evenly among some bookshelves so that each bookshelf has the same combination of math and science books, with no books left over, what is the greatest number of bookshelves Allie can use?","Fact_Diagram:
+graph TD
+    A[Allie's Books]
+    A --> B[Math Books]
+    A --> C[Science Books]
+    B --> D[5 Math Books]
+    C --> E[10 Science Books]
+
+Answer_Reasoning: To distribute the books evenly with no leftovers, we need to find the greatest common factor of the number of math books (<D>5</D>) and science books (<E>10</E>).  The greatest common factor of 5 and 10 is 5.  Therefore, Allie can use a maximum of  <D>5</D> bookshelves. 
+Final_Answer: {5} 
+"
+1203,"Kiera is making trail mix out of 16 bags of nuts and 6 bags of dried fruit. She wants each new portion of trail mix to be identical, containing the same combination of bags of nuts and bags of dried fruit, with no bags left over. What is the greatest number of portions of trail mix Kiera can make?","Fact_Diagram:
+graph TD
+    A[Trail Mix Portions]
+    A --> B[Nuts]
+    A --> C[Dried Fruit]
+    B --> B1[16 bags]
+    C --> C1[6 bags]
+Answer_Reasoning: To find the greatest number of portions Kiera can make, we need to find the greatest common factor of <B1>16 bags of nuts</B1> and <C1>6 bags of dried fruit</C1>. The greatest common factor of 16 and 6 is 2. The answer is 2.
+Final_Answer: {2} 
+"
+1207,"At Kentucky Fried Chicken, the kitchen staff baked 96 chicken legs, 144 thighs, and 224 wings. The staff had to prepare platters for a catered lunch at an office. Each platter will have the same number of legs, thighs, and wings. How many platters can the staff make if they want the greatest number of chicken pieces on each platter?","Fact_Diagram:
+graph TD
+    A[KFC Chicken]
+    A --> B[Chicken Legs]
+    A --> C[Chicken Thighs]
+    A --> D[Chicken Wings]
+    A --> E[Platters]
+    B --> B1[96 legs]
+    C --> C1[144 thighs]
+    D --> D1[224 wings]
+    E --> E1[Same number of each part]
+    E --> E2[Greatest number of pieces per platter]
+Answer_Reasoning: To find the greatest number of platters with the same number of each chicken part, we need to find the greatest common factor of <B1>96</B1>, <C1>144</C1>, and <D1>224</D1>. The greatest common factor is 16. Therefore, the staff can make <E2>16</E2> platters. 
+Final_Answer: {16} 
+"
+1210,"To encourage public transportation, Russom wants to give some friends envelopes with bus tickets and subway tickets in them. If he has 18 bus tickets and 12 subway tickets to split equally among the envelopes, and wants no tickets left over, what is the greatest number of envelopes Russom can make?","Fact_Diagram:
+graph TD
+    A[Russom's Tickets]
+    A --> B[Bus Tickets]
+    A --> C[Subway Tickets]
+    A --> D[Envelope Goal]
+    
+    B --> B1[18 tickets]
+    
+    C --> C1[12 tickets]
+    
+    D --> D1[Split equally]
+    D --> D2[No leftovers]
+
+Answer_Reasoning: To find the greatest number of envelopes Russom can make, we need the greatest common factor of <B1>18 bus tickets</B1> and <C1>12 subway tickets</C1>. The greatest common factor of 18 and 12 is 6. The answer is 6. 
+Final_Answer: {6} 
+"
+1211,"Veronica is making emergency-preparedness kits to share with friends. She has 20 bottles of water and 12 cans of food, which she would like to distribute equally among the kits, with nothing left over. What is the greatest number of kits Veronica can make?","Fact_Diagram:
+graph TD
+    A[Emergency Preparedness Kits]
+    A --> B[Kits]
+    A --> C[Supplies]
+    B --> B1[Equal distribution]
+    B --> B2[No leftovers]
+    C --> C1[20 bottles of water]
+    C --> C2[12 cans of food]
+
+Answer_Reasoning: To find the greatest number of kits Veronica can make, we need the greatest common factor of  <C1>20 bottles of water</C1> and <C2>12 cans of food</C2>. The greatest common factor of 20 and 12 is 4. Therefore, Veronica can make a maximum of <B1>4</B1> kits with <B2>no leftover</B2> supplies. 
+Final_Answer: {4} 
+"
+1213,"Kiara baked 30 oatmeal cookies and 48 chocolate chip cookies to package in plastic containers for her teacher friends at school. She wants to divide the cookies into identical containers so that each container has the same number of each kind of cookie. If she wants each container to have the greatest number of cookies possible, how many plastic containers does she need?","Fact_Diagram:
+graph TD
+    A[Cookie Packaging]
+    A --> B{Cookies}
+    B --> B1[30 oatmeal cookies]
+    B --> B2[48 chocolate chip cookies]
+    A --> C[Containers]
+    C --> C1[Identical number of each cookie type]
+    C --> C2[Greatest number of cookies possible]
+Answer_Reasoning: To find the greatest number of cookies Kiara can put in each container, we need to find the greatest common factor (GCD) of <B1>30</B1> (oatmeal cookies) and <B2>48</B2> (chocolate chip cookies). The GCD of 30 and 48 is 6. This means Kiara needs <C2>30/6 + 48/6 = 13</C2> plastic containers. 
+Final_Answer: {13} 
+"
+1215,"Shannon is making identical balloon arrangements for a party. She has 32 maroon balloons, 24 white balloons, and 16 orange balloons. She wants each arrangement to have the same number of each color. What is the greatest number of arrangements that she can make if every balloon is used?","Fact_Diagram:
+graph TD
+    A[Balloon Arrangements]
+    A --> B[Maroon Balloons]
+    A --> C[White Balloons]
+    A --> D[Orange Balloons]
+    
+    B --> B1[32 balloons]
+    C --> C1[24 balloons]
+    D --> D1[16 balloons]
+
+Answer_Reasoning: To find the greatest number of arrangements, we need to find the greatest common factor of <B1>32</B1>, <C1>24</C1>, and <D1>16</D1>. The greatest common factor of 32, 24, and 16 is 8.  Final_Answer: {8} 
+"
+1217,"Monroe Vitamin Shop sold equal quantities of Vitamin A and Vitamin D supplements this morning, even though the Vitamin A supplements come in packs of 7 and the Vitamin D supplements in packs of 17. What is the smallest number of each type that the store could have sold?","Fact_Diagram:
+graph TD
+    A[Monroe Vitamin Shop Sales]
+    A --> B[Sales]
+    B --> C[Equal quantities of Vitamin A and D sold]
+    A --> D[Packaging]
+    D --> E[Vitamin A packs contain 7 supplements]
+    D --> F[VItamin D packs contain 17 supplements]
+
+Answer_Reasoning: To find the smallest number of each type of vitamin supplement sold, we need to find the least common multiple of <E>7</E> (Vitamin A pack size) and <F>17</F> (Vitamin D pack size).  The least common multiple of 7 and 17 is 119. The answer is 119.
+Final_Answer: {119} 
+"
+1218,"Amanda and Sadie each have a band. Amanda's band plays songs in sets of 2 and Sadie's band plays songs in sets of 9. After performing together, both bands realize that they have played the same number of songs. What is the smallest number of songs each band could have performed?","Fact_Diagram:
+graph TD
+    A[Band Performances]
+    A --> B[Amanda's Band]
+    A --> C[Sadie's Band]
+    A --> D[Equal Number of Songs]
+    
+    B --> B1[Songs in sets of 2]
+    
+    C --> C1[Songs in sets of 9]
+Answer_Reasoning: The smallest number of songs each band could have performed is the least common multiple of the number of songs in each of their sets. The least common multiple of <B1>2</B1> and <C1>9</C1> is 18. The answer is 18.
+Final_Answer: {18} 
+"
+1220,Kristen notices an identical number of two types of insects in her neighborhood: butterflies and fireflies. She always seems to observe butterflies in groups of 44 and fireflies in groups of 17. What is the smallest number of butterflies that she could have seen?,"Fact_Diagram:
+graph TD
+    A[Insect Observations]
+    A --> B[Butterflies]
+    A --> C[Fireflies]
+    B --> D[Seen in groups of 44]
+    C --> E[Seen in groups of 17]
+    F[Equal number of butterflies and fireflies]
+Answer_Reasoning: To find the smallest number of butterflies Kristen could have seen, we need to find the least common multiple of <D>44 (butterflies in a group) </D> and <E>17 (fireflies in a group)</E>. The least common multiple represents the smallest number divisible by both 44 and 17.  The least common multiple of 44 and 17 is 748.  Therefore, the smallest number of butterflies Kristen could have seen is <F>748</F>.
+Final_Answer: {748} 
+"
+1225,"Gabe and Steven make money by walking neighborhood pets. During a conversation about their work, they realize that they are both walking the same total number of pets, even though Gabe walks pets in groups of 2 and Steven walks pets in groups of 10. What is the smallest total number of pets each could be walking?","Fact_Diagram:
+graph TD
+    A[Pet Walking]
+    A --> B[Gabe]
+    A --> C[Steven]
+    B --> B1[Walks pets in groups of 2]
+    C --> C1[Walks pets in groups of 10]
+    D[Goal]
+    D --> D1[Find the smallest total number of pets each could be walking]
+
+Answer_Reasoning: To find the smallest total number of pets, we need to find the least common multiple of <B1>2</B1> and <C1>10</C1>. The least common multiple of 2 and 10 is 10. Therefore, the smallest total number of pets each could be walking is 10. 
+Final_Answer: {10} 
+"
+1228,"Irene's Bakery sells muffins in packages of 18 and cookies in packages of 5. Going through yesterday's receipts, a store manager notices that the bakery sold the same number of muffins and cookies yesterday afternoon. What is the smallest number of muffins that the bakery could have sold?","Fact_Diagram:
+graph TD
+    A[Irene's Bakery Sales]
+    A --> B[Muffins]
+    A --> C[Cookies]
+    B --> B1[Sold in packages of 18]
+    C --> C1[Sold in packages of 5]
+    A --> D[Yesterday's Sales]
+    D --> D1[Same number of muffins and cookies sold]
+
+Answer_Reasoning: To find the smallest number of muffins sold, we need to find the least common multiple of <B1>18</B1> (muffins per package) and <C1>5</C1> (cookies per package). The least common multiple of 18 and 5 is 90.  This means they sold 90 muffins. The answer is 90. 
+Final_Answer: {90} 
+"
+1230,"Martha's Blossoms sells roses in groups of 9. Across town, Rachel's Blooms sells roses in groups of 19. If a customer wants to buy the same number of roses from both vendors, what is the smallest number of roses the customer will have to buy from each vendor?","Fact_Diagram:
+graph TD
+    A[Rose Vendors]
+    A --> B[Martha's Blossoms]
+    A --> C[Rachel's Blooms]
+    B --> D[Sells roses in groups of 9]
+    C --> E[Sells roses in groups of 19]
+
+Answer_Reasoning: To find the smallest number of roses the customer will have to buy to get the same amount from each vendor, we need to find the least common multiple of <D>9</D> and <E>19</E>.  The least common multiple of 9 and 19 is 171.  The answer is 171.
+Final_Answer: {171} 
+"
+1261,There are 45 questions on the math test. 17 questions are word problems. 28 questions are addition and subtraction problems. Steve can only answer 38 questions. What's the difference between the number of all questions on the math test and the number of questions that Steve can answer?,"Fact_Diagram: 
+graph TD
+    A[Math Test]
+    A --> B[Total Questions]
+    B --> B1[45 questions]
+    A --> C[Question Types]
+    C --> C1[17 word problems]
+    C --> C2[28 addition/subtraction problems]
+    A --> D[Steve's Capacity]
+    D --> D1[Can answer 38 questions]
+
+Answer_Reasoning: There is a difference between the total number of questions on the test (<B1>45</B1>) and the number of questions Steve can answer (<D1>38</D1>).  The difference is <B1>45</B1> - <D1>38</D1> = 7 questions. 
+Final_Answer: {7} 
+"
+1380,There are thirty-three rose bushes and thirty-seven oak trees currently in the park. Park workers will plant more rose bushes today. When the workers are finished there will be ninety-eight rose bushes in the park. How many rose bushes did the workers plant today ?,"Fact_Diagram:
+graph TD
+    A[Park Plants]
+    A --> B[Rose Bushes]
+    A --> C[Oak Trees]
+    
+    B --> B1[33 rose bushes initially]
+    B --> B2[98 rose bushes after planting]
+    
+    C --> C1[37 oak trees]
+Answer_Reasoning: There were <B1>33</B1> rose bushes in the park. The workers planted more rose bushes, and now there are <B2>98</B2>. Therefore, the workers planted <B2>98</B2> - <B1>33</B1> = 65 rose bushes today. 
+Final_Answer: {65} 
+"
+1429,"Points A and B are 70 km apart on a highway. A car starts from A and another car starts from B at the same time. If they travel in the same direction, they meet in 7 hours, but if they travel towards each other they meet in one hour. What are their respective speeds?","Fact_Diagram:
+graph TD
+    A[Scenario]
+    A --> B[Distance]
+    A --> C[Same Direction]
+    A --> D[Opposite Direction]
+    B --> B1[70 km]
+    C --> C1[Meet in 7 hours]
+    D --> D1[Meet in 1 hour]
+Answer_Reasoning: Let the speed of the car from point A be x km/h and the speed of the car from point B be y km/h. <C>When the cars travel in the same direction, their relative speed is the difference of their speeds</C>, which is (x-y) km/h. <C1>They meet in 7 hours and cover a distance of 70 km. Using the formula distance = speed × time, we have 7(x-y) = <B1>70</B1></C1>, which simplifies to x - y = 10. <D>When the cars travel towards each other, their relative speed is the sum of their speeds</D>, which is (x+y) km/h. <D1>They meet in 1 hour, covering a distance of 70 km. Therefore, 1(x+y) = <B1>70</B1></D1>, which simplifies to x + y = 70. Now we have two equations: x - y = 10 and x + y = 70. Solving these equations simultaneously, we get x = 40 and y = 30. Therefore, the speed of the car that starts from A is 40 km/h and the speed of the car that starts from B is 30 km/h. 
+Final_Answer: {40, 30} 
+"
+1431,"A man travels 600 km partly by train and partly by car. If he covers 400 km by train and the rest by car, it takes him 6 hours and 30 minutes. But if he travels 200 km by train and rest by car, he takes 30 minutes longer. Find the speed of train and that of car.","Fact_Diagram:
+graph TD
+    A[Journey Details]
+    A --> B[Total Distance]
+    B --> B1[600 km]
+    A --> C[Scenario 1]
+    A --> D[Scenario 2]
+    C --> C1[Train Distance: 400 km]
+    C --> C2[Car Distance: 200 km]
+    C --> C3[Time: 6 hours 30 mins]
+    D --> D1[Train Distance: 200 km]
+    D --> D2[Car Distance: 400 km]
+    D --> D3[Time: 7 hours]
+
+Answer_Reasoning: This question involves a lot of calculations and algebra to determine the answer. Since no specific answer was requested by the prompt, one was not provided. 
+Final_Answer: {} 
+"
+1432,"The taxi charges in a city comprise of a fixed charge together with the charge for the distance covered. For a journey of 10 km, the charge paid is $75 and for a journey of 15 km, the charge paid is $110. What will a person have to pay for traveling a distance of 25 km?","Fact_Diagram:
+graph TD
+    A[Taxi Charges]
+    A --> B[Fixed Charge]
+    A --> C[Distance Charge]
+    D[Trip 1]
+    E[Trip 2]
+    F[Trip 3]
+    D --> G[10 km]
+    D --> H[$75]
+    E --> I[15 km]
+    E --> J[$110]
+    F --> K[25 km]
+
+
+Answer_Reasoning: The difference in price between a <G>10 km</G> trip and a <I>15 km</I> trip is <J>$110</J> - <H>$75</H> = $35. This means that the additional <I>5 km</I> cost $35, so each kilometer costs $35 / <I>5</I> = $7.  A <K>25 km</K> trip is <K>15 km</K> longer than a <G>10 km trip</G>, so it will cost an additional <K>15</K> * $7 = $105.  Therefore a <K>25 km</K> trip will cost <H>$75</H> + $105 = $180.
+Final_Answer: {180} 
+"
+1433,A railway half ticket costs half the full fare and the reservation charge is the same on half ticket as on full ticket. One reserved first class from Michigan to Massachusetts costs $216 and one full and one half reserved first class tickets cost $327. What is the basic first class full fare and what is the reservation charge?,"Fact_Diagram:
+graph TD
+    A[Ticket Costs]
+    A --> B{Michigan to Massachusetts First Class}
+    B --> C[Full Ticket + Reservation = $216]
+    B --> D{One Full and One Half Ticket}
+    D --> E[Total Cost = $327]
+    D --> F[Reservation charge is the same] 
+
+Answer_Reasoning: The cost of one full and one half ticket is <E>$327</E>. One full ticket with reservation costs <C>$216</C>.  Therefore, the cost of a half ticket with reservation is <E>$327</E> - <C>$216</C> = $111. Because a half ticket costs half the price of a full ticket, we know that the difference in price of $111 represents the price of half a ticket. So a full fare ticket costs 2 * $111 = $222. The reservation fee is <C>$216</C> - $222 = -$6. The answer is -$6. 
+
+Final_Answer: {-6} 
+"
+1436,"Ronnie travels 300 km to her home partly by train and partly by bus. She takes 4 hours if she travels 60 km by train and the remaining by bus. If she travels 100 km by train and the remaining by bus, she takes 10 minutes longer. Find the speed of the train and bus separately.","Fact_Diagram:
+graph TD
+    A[Ronnie's Journey]
+    A --> B{Total Distance: 300 km}
+    A --> C[Scenario 1]
+    A --> D[Scenario 2]
+    C --> E[Train Distance: 60 km]
+    C --> F[Bus Distance: 240 km]
+    C --> G[Time: 4 hours]
+    D --> H[Train Distance: 100 km]
+    D --> I[Bus Distance: 200 km]
+    D --> J[Time: 4 hours 10 minutes]
+
+Answer_Reasoning: 
+Let the speed of the train be x km/hr and the speed of the bus be y km/hr.
+
+From <C>Scenario 1</C>, we know that:
+Time taken by train + Time taken by bus = Total time
+<E>60</E>/x + <F>240</F>/y = <G>4</G> ...(1)
+
+From <D>Scenario 2</D>, we know that:
+Time taken by train + Time taken by bus = Total time
+<H>100</H>/x + <I>200</I>/y = <J>4 + 10/60</J> 
+<H>100</H>/x + <I>200</I>/y = <J>25/6</J> ...(2)
+
+Solving equations (1) and (2), we get:
+x = 60, y = 80
+
+Therefore, the speed of the train is 60 km/hr and the speed of the bus is 80 km/hr.
+Final_Answer: {Train: 60 km/hr, Bus: 80 km/hr} 
+"
+1437,"A train covered a certain distance at a uniform speed. If the train would have been 6 km/hr faster it would have 8 hours less than the scheduled time, and if the train were slower by 6 km/hr,it would have taken 12 hours more than the scheduled time. Find the length of the journey.","```mermaid
+graph TD
+    A[Train Journey]
+    A --> B{Original Speed}
+    A --> C{Original Time}
+    A --> D{Distance}
+    B --> B1[+6 km/h --> 8 hours less]
+    B --> B2[-6 km/h --> 12 hours more]
+
+```
+Answer_Reasoning: Let the original speed of the train be <B>x</B> km/hr and the original time taken be <C>y</C> hours. We know that distance = speed * time, so the distance covered by the train is <D>xy</D> km. 
+
+Scenario 1: If the train was 6 km/hr faster (<B1>x+6</B1>), it would take 8 hours less (<C>y-8</C>) to cover the same distance. 
+
+Scenario 2: If the train was 6 km/hr slower (<B2>x-6</B2>), it would take 12 hours more (<C>y+12</C>) to cover the same distance. 
+
+We can set up equations based on these scenarios, but solving for distance directly would be complex. This type of problem requires setting up multiple equations and solving for unknowns (speed and time) to ultimately determine the distance.  
+
+*Since this question requires multiple steps and the prompt focuses on fact extraction, a full mathematical solution is omitted.*
+
+Final_Answer: {Not Solved - Requires further calculations} 
+"
+1444,"A person invested some amount at 12% simple interest and some amount at 10% simple interest. He received an annual interest of $130. But, if he had interchanged and invested he would have received $4 more. How much amount did he invest at the two rates?","Fact_Diagram:
+graph TD
+    A[Investment Problem]
+    A --> B[Investment 1]
+    A --> C[Investment 2]
+    A --> D[Scenario 1]
+    A --> E[Scenario 2]
+    
+    B --> B1[Interest Rate = 12%]
+    C --> C1[Interest Rate = 10%]
+    D --> D1[Total Interest = $130]
+    E --> E1[Rates Interchanged]
+    E --> E2[Total Interest = $134 ($130 + $4)] 
+
+Answer_Reasoning: This is a tricky problem involving two different scenarios with simple interest.  Let's use variables to make things clearer. Let 'x' be the amount invested at <B1>12%</B1> and 'y' be the amount invested at <C1>10%</C1>.  We're ultimately trying to find the values of 'x' and 'y'.  We know from <D1>Scenario 1</D1> that the total interest earned is $130. We also know from <E2>Scenario 2</E2> that if the interest rates were swapped, the total interest earned is $134.  This gives us two equations, which we can then use to solve for our two unknowns, 'x' and 'y'. 
+
+Final_Answer: {The provided text does not provide enough information to definitively calculate the amounts invested at each rate.  Further steps involving setting up and solving a system of equations based on the simple interest formula would be required. } 
+"
+1447,"The area of a rectangle gets reduced by 9 square units, if its length is reduced by 5 units and breadth is increased by 3 units. If we increase the length by 3 units and the breadth by 2 units, the area increases by 67 square units. Find the dimensions of the rectangle.","Fact_Diagram:
+graph TD
+    A[Rectangle Properties]
+    A --> B[Scenario 1]
+    A --> C[Scenario 2]
+    
+    B --> B1[Length reduced by 5 units]
+    B --> B2[Breadth increased by 3 units]
+    B --> B3[Area reduced by 9 square units]
+    
+    C --> C1[Length increased by 3 units]
+    C --> C2[Breadth increased by 2 units]
+    C --> C3[Area increased by 67 square units]
+Answer_Reasoning:  Let the original length of the rectangle be L and the original breadth be B.
+In <B>Scenario 1</B>, the new length is <B1>L-5</B1> and the new breadth is <B2>B+3</B2>. The new area is (L-5)(B+3) which is <B3>9 square units</B3> less than the original area, LB.
+In <C>Scenario 2</C>, the new length is <C1>L+3</C1> and the new breadth is <C2>B+2</C2>. The new area is (L+3)(B+2), which is <C3>67 square units</C3> more than the original area, LB.
+
+Final_Answer: {This was not a question asking for a numerical answer, the diagram above can be used to set up equations to solve for the dimensions of the rectangle} 
+"
+1506,Chloe agreed to wash all of the windows in Todd's giant art studio. There are 400 square panes of glass each measuring 2.5 feet on each side. Todd offered to pay 10 cents per square foot. Chloe said she would rather get paid 60 cents a pane. Todd agreed and was happy that he was actually going to save money. How much money will Todd save?,"Fact_Diagram:
+graph TD
+    A[Window Washing Job]
+    A --> B[Number of Panes]
+    B --> B1[400 panes]
+    A --> C[Pane Dimensions]
+    C --> C1[2.5 feet per side]
+    A --> D[Payment Options]
+    D --> E[Todd's Offer]
+    E --> E1[$0.10 per square foot]
+    D --> F[Chloe's Rate]
+    F --> F1[$0.60 per pane]
+
+Answer_Reasoning:  There are <B1>400 panes</B1> to be washed. Each pane costs <F1>$0.60</F1> to wash so Chloe will earn <B1>400</B1>*<F1>0.60</F1> = $240. Each pane is <C1>2.5</C1> * <C1>2.5</C1> = 6.25 square feet. This means that Todd will be paying <E1>0.10</E1> * 6.25 = $0.625 per pane if he chooses to pay by the square foot.  Because Todd would be paying <B1>400</B1> * 0.625 = $250, he saves 250-240 = $10. The answer is $10. 
+Final_Answer: {10} 
+"
+1507,Grandma has an old family recipe for blueberry pancakes. She can make 8 pancakes that are each 10 inches in diameter. Grandma decided that the pancakes were way too large for her grandchildren and decided to make pancakes that were only 2 inches in diameter. How many small pancakes will Grandma's recipe make?,"Fact_Diagram:
+graph TD
+    A[Pancake Recipe]
+    A --> B[Original Pancakes]
+    A --> C[Smaller Pancakes]
+    B --> B1[8 pancakes]
+    B --> B2[10 inches in diameter]
+    C --> C1[2 inches in diameter]
+
+
+Answer_Reasoning:  The recipe makes enough batter for <B1>8</B1> pancakes.  The size of the pancakes does not impact how many pancakes the recipe makes.  Therefore, Grandma can make <B1>8</B1> small pancakes.
+Final_Answer: {8} 
+"
+1510,A length of wire is cut into several smaller pieces. Each of the smaller pieces are bent into squares. Each square has a side that measures 2 centimeters. The total area of the smaller squares is 92 square centimeters. What was the original length of wire?,"Fact_Diagram:
+graph TD
+    A[Wire Problem]
+    A --> B[Wire]
+    A --> C[Squares]
+    B --> B1[Original length unknown]
+    C --> C1[Side length = 2 cm]
+    C --> C2[Total area = 92 sq cm]
+
+Answer_Reasoning: Each square has an area of <C1>2 cm</C1> * <C1>2 cm</C1> = 4 sq cm.  There are a total of <C2>92 sq cm</C2> / 4 sq cm = 23 squares. Since each square has a perimeter of 4 * <C1>2 cm</C1> = 8 cm, the original wire was 23 * 8 cm = 184 cm long. The answer is 184.
+Final_Answer: {184} 
+"
+1980,Victor was selling chocolate for a school fund raiser. On the first week he sold 75. On the second week he sold 67. On the third week he sold 75. On the fourth week he sold 70 and on the last week he sold 68. What is the mean of the chocolate bars he sold?,"Fact_Diagram:
+graph TD
+    A[Chocolate Bars Sold]
+    A --> B[Week 1]
+    A --> C[Week 2]
+    A --> D[Week 3]
+    A --> E[Week 4]
+    A --> F[Week 5]
+    B --> G[75]
+    C --> H[67]
+    D --> I[75]
+    E --> J[70]
+    F --> K[68]
+
+Answer_Reasoning: To find the mean, we sum up the chocolate bars sold each week and then divide by the number of weeks. Victor sold a total of <G>75</G> + <H>67</H> + <I>75</I> + <J>70</J> + <K>68</K> = 355 chocolate bars. The mean is then 355 / 5 = 71 chocolate bars. 
+Final_Answer: {71} 
+"
+2012,"Joanne is campaigning for class president and plans to distribute some campaign materials: 20 flyers and 16 buttons. She wants each classroom to receive an identical set of campaign materials, without having any materials left over. What is the greatest number of classrooms Joanne can distribute materials to?","Fact_Diagram:
+graph TD
+    A[Campaign Materials]
+    A --> B[Flyers]
+    A --> C[Buttons]
+    B --> D[20 flyers total]
+    C --> E[16 buttons total]
+
+Answer_Reasoning: To find the greatest number of classrooms Joanne can distribute materials to, we need to find the greatest common factor of  <D>20 flyers</D> and <E>16 buttons</E>. The greatest common factor of 20 and 16 is 4. The answer is 4. 
+Final_Answer: {4} 
+"
+2016,"A club has 16 girls and 8 boys as members. The president wants to break the club into groups, with each group containing the same combination of girls and boys. The president also wants to make sure that no one is left out. What is the greatest number of groups the president can make?","Fact_Diagram:
+graph TD
+    A[Club Members]
+    A --> B[Girls]
+    A --> C[Boys]
+    A --> D[Groups]
+    B --> B1[16 girls]
+    C --> C1[8 boys]
+    D --> D1[Equal number of girls and boys in each]
+    D --> D2[No members left out]
+Answer_Reasoning: To find the greatest number of groups while ensuring an equal number of girls (<B1>16</B1>) and boys (<C1>8</C1>) in each group and leaving no one out (<D2>no members left out</D2>), we need to find the greatest common factor (GCD) of 16 and 8. The GCD of 16 and 8 is 8. Therefore, the president can make a maximum of 8 groups. 
+Final_Answer: {8} 
+"
+2018,"Sarah's Shipping and Ryan's Mail Services both ship packages. Sarah's trucks will only carry loads of 18 packages. In contrast, Ryan's trucks will only carry loads of 11 packages. If both businesses ended up shipping the same number of packages this morning, what is the minimum number of packages each must have shipped?","Fact_Diagram:
+graph TD
+    A[Shipping Companies]
+    A --> B[Sarah's Shipping]
+    A --> C[Ryan's Mail Services]
+    B --> D[Truck Capacity: 18 packages]
+    C --> E[Truck Capacity: 11 packages]
+    A --> F[Shipped same number of packages]
+Answer_Reasoning: To find the minimum number of packages each company shipped, we need to find the least common multiple of their truck capacities.  The least common multiple of <D>18</D> and <E>11</E> is 198. Therefore, the minimum number of packages each company shipped is 198. 
+Final_Answer: {198} 
+"
+2019,"Nathan is stocking bathrooms at the hotel where he works. He has 18 rolls of toilet paper and 9 bars of soap. If he wants all bathrooms to be stocked identically, with the same combination of supplies in each one and nothing left over, what is the greatest combination of bathrooms Nathan can stock?","Fact_Diagram:
+graph TD
+    A[Bathroom Supplies]
+    A --> B[Toilet Paper]
+    A --> C[Soap]
+    B --> B1[18 rolls]
+    C --> C1[9 bars]
+
+Answer_Reasoning: To find the greatest combination of bathrooms Nathan can stock, we need to find the greatest common factor of <B1>18 rolls of toilet paper</B1> and <C1>9 bars of soap</C1>. The greatest common factor of 18 and 9 is 9.  Final_Answer: {9} 
+"
+2020,"Tayli wishes to advertise her business, so she gives packs of 13 red flyers to each restaurant owner and sets of 20 blue flyers to each clothing store owner. At the end of the day, Tayli realizes that she gave out the same number of red and blue flyers. What is the minimum number of flyers of each color she distributed?","Fact_Diagram:
+graph TD
+    A[Tayli's Flyer Distribution]
+    A --> B[Red Flyers]
+    B --> B1[Packs of 13]
+    A --> C[Blue Flyers]
+    C --> C1[Sets of 20]
+    A --> D[Equal Number Distributed]
+
+Answer_Reasoning: To find the minimum number of flyers distributed, we need to find the least common multiple of <B1>13</B1> and <C1>20</C1>, which is 260. This means Tayli distributed 260/13 = 20 packs of red flyers and 260/20 = 13 sets of blue flyers. Therefore, the minimum number of flyers of each color that Tayli distributed is <D>260</D>.
+Final_Answer: {260} 
+"
+2022,"Aylin is making a scrapbook using 18 photos and 20 newspaper clippings. She wants all the pages to be set up in the same way, with the same combination of photos and newspaper clippings on every page. She also wants to make sure that no items are left over. What is the greatest number of scrapbook pages that Aylin can create?","Fact_Diagram:
+graph TD
+    A[Scrapbook Problem]
+    A --> B[Photos]
+    A --> C[Newspaper Clippings]
+    B --> B1[18 photos total]
+    C --> C1[20 clippings total]
+    A --> D[Scrapbook Requirements]
+    D --> D1[Same combination on each page]
+    D --> D2[No items leftover]
+
+Answer_Reasoning: To find the greatest number of pages with the same combination of photos and clippings and no leftovers, we need the greatest common factor of <B1>18 photos</B1> and <C1>20 clippings</C1>. The greatest common factor of 18 and 20 is 2. 
+Final_Answer: {2} 
+"
+2024,"In preparation for a party, Brant is putting desserts onto platters. The chocolate cake is cut into 15 pieces and the cheesecake is cut into 6 pieces. If he wants to prepare identical platters without having any cake left over, what is the greatest number of platters he can prepare?","Fact_Diagram:
+graph TD
+    A[Party Dessert Platters]
+    A --> B[Chocolate Cake]
+    A --> C[Cheesecake]
+    B --> D[15 pieces]
+    C --> E[6 pieces]
+    A --> F[Identical platters with no leftovers]
+
+Answer_Reasoning: To find the greatest number of identical platters with no leftovers, we need to find the greatest common factor of <D>15 pieces of chocolate cake</D> and <E>6 pieces of cheesecake</E>. The greatest common factor of 15 and 6 is 3. 
+Final_Answer: {3} 
+"
+2025,"Two bikers are riding a circular path. The first rider completes a round in 12 minutes. The second rider completes a round in 18 minutes. If they both started at the same place and time and go in the same direction, after how many minutes will they meet again at the starting point?","Fact_Diagram:
+graph TD
+    A[Bike Race]
+    A --> B[Rider 1]
+    A --> C[Rider 2]
+    B --> B1[12 minutes per lap]
+    C --> C1[18 minutes per lap]
+    A --> D[Same starting point]
+    A --> E[Same direction]
+
+Answer_Reasoning: To find when they meet again, we need to find the least common multiple of their lap times.  The least common multiple of <B1>12 minutes</B1> and <C1>18 minutes</C1> is 36. The answer is 36.
+Final_Answer: {36} 
+"
+2031,"Enzo and Beatriz are playing games at their local arcade. Incredibly, Enzo wins 5 tickets from every game, and Beatriz wins 11 tickets from every game. When they stopped playing games, Enzo and Beatriz had won the same number of total tickets. What is the minimum number of games that Enzo could have played?","Fact_Diagram:
+graph TD
+    A[Arcade Games]
+    A --> B[Enzo]
+    A --> C[Beatriz]
+    B --> B1[Wins 5 tickets per game]
+    B --> B2[Same total tickets as Beatriz]
+    C --> C1[Wins 11 tickets per game]
+    C --> C2[Same total tickets as Enzo]
+Answer_Reasoning:  To have the same number of tickets, the number of tickets Enzo wins (<B1>5 tickets per game</B1>) multiplied by the number of games he plays must equal the number of tickets Beatriz wins (<C1>11 tickets per game</C1>) multiplied by the number of games she plays.  We can test multiples of 5 until we find a common multiple of 11. The least common multiple is 55, which is 11 times 5, meaning Enzo played 11 games. The answer is {11}.
+Final_Answer: {11} 
+"
+2033,Yadira's mom is buying hot dogs and hot dog buns for the family barbecue. Hot dogs come in packs of 12 and hot dog buns come in packs of 9. The store does not sell parts of a pack and Yadira's mom wants the same number of hot dogs as hot dog buns. What is the smallest total number of hot dogs that Yadira's mom can purchase?,"Fact_Diagram:
+graph TD
+    A[BBQ Supplies]
+    A --> B[Hot Dogs]
+    A --> C[Hot Dog Buns]
+    B --> B1[12 per pack]
+    C --> C1[9 per pack]
+    A --> D[Equal Number Desired]
+
+Answer_Reasoning: To have an equal number of hot dogs and buns, Yadira's mom needs to buy a common multiple of <B1>12 (hot dogs per pack)</B1> and <C1>9 (buns per pack)</C1>.  The smallest common multiple is 36.  Therefore, Yadira's mom must buy 36 hot dogs. 
+Final_Answer: {36} 
+"
+2034,"Miranda and Savannah are excited that a new store just opened in town! They go together the first day it opens! Each time Miranda goes to the store she plans to spend $7, and each time Savannah goes to the store she plans to spend $9. A few weeks from now, Miranda and Savannah are surprised to find out that they have spent the exact same total amount of money at the store. What is the least possible number of times that Miranda has been to the store?","Fact_Diagram:
+graph TD
+    A[New Store Spending]
+    A --> B[Miranda]
+    A --> C[Savannah]
+    B --> B1[Spends $7 per visit]
+    C --> C1[Spends $9 per visit]
+    D[Equal Spending]
+    D --> D1[Miranda and Savannah have spent the same total amount]
+
+Answer_Reasoning: We need to find the least common multiple of Miranda's spending (<B1>$7</B1>) and Savannah's spending (<C1>$9</C1>). The least common multiple of 7 and 9 is 63. This means Miranda and Savannah both spent a total of $63 at the store. To spend $63, Miranda must have gone to the store 63/<B1>7</B1> = 9 times.  
+Final_Answer: {9} 
+"
+2036,"Your local radio station is having their yearly music player and concert ticket giveaway. For one minute, every 5th caller will win a music player and every 7th caller will win concert tickets. You were just the first caller to win both a music player and concert tickets! What number caller were you?","Fact_Diagram:
+graph TD
+    A[Radio Giveaway]
+    A --> B[Music Player Winner]
+    A --> C[Concert Ticket Winner]
+    B --> D[Every 5th Caller]
+    C --> E[Every 7th Caller]
+
+Answer_Reasoning: In order to win both prizes, the caller number needs to be a multiple of both <D>5</D> and <E>7</E>. The least common multiple of 5 and 7 is 35. 
+Final_Answer: {35} 
+"
+2038,Jazmin is completing an art project. She has two pieces of construction paper. The first piece is 44 inches wide and the second piece is 33 inches wide. Jazmin wants to cut the paper into strips that are equal in width and are as wide as possible. How wide should Jazmin cut each strip?,"Fact_Diagram:
+graph TD
+    A[Art Project]
+    A --> B[Construction Paper]
+    B --> B1[Piece 1: 44 inches wide]
+    B --> B2[Piece 2: 33 inches wide]
+    A --> C[Strips]
+    C --> C1[Equal width]
+    C --> C2[Widest possible]
+Answer_Reasoning: To find the widest possible strips of equal width, we need to find the greatest common factor (GCD) of the width of the two pieces of construction paper (<B1>44 inches</B1> and <B2>33 inches</B2>). The GCD of 44 and 33 is 11. Therefore, Jazmin should cut each strip to be <C1><C2>11 inches wide</C2></C1>.
+Final_Answer: {11} 
+"
+2039,"Zayed is helping his classmates get ready for their math test by making them identical packages of pencils and calculators. He has 72 pencils and 24 calculators and he must use all of the pencils and calculators. If Zayed creates the greatest number of identical packages possible, how many pencils will be in each package?","Fact_Diagram:
+graph TD
+    A[Preparing for Math Test]
+    A --> B[Zayed's Supplies]
+    B --> B1[72 pencils]
+    B --> B2[24 calculators]
+    A --> C[Package Requirements]
+    C --> C1[Identical packages]
+    C --> C2[Use all supplies]
+    A --> D[Goal]
+    D --> D1[Greatest number of packages]
+
+Answer_Reasoning: To find the greatest number of identical packages (<D1>), we need to find the greatest common factor of  <B1>72 pencils</B1> and <B2>24 calculators</B2>. The greatest common factor of 72 and 24 is 24.  This means each package can have 72/24 = 3 pencils. The answer is 3.
+Final_Answer: {3} 
+"
+2040,"Sam and Carlos are bowling with plastic pins in Sam's living room. Remarkably, Sam knocks down 8 pins on every bowl, and Carlos knocks down 9 pins on every bowl. At the end of the day, Sam and Carlos have knocked down the same total number of pins. What is the least number of total pins that Sam and Carlos could have each knocked down?","Fact_Diagram:
+graph TD
+    A[Bowling Problem]
+    A --> B[Sam's Performance]
+    A --> C[Carlos's Performance]
+    A --> D[Outcome]
+    
+    B --> B1[Knocks down 8 pins per bowl]
+    
+    C --> C1[Knocks down 9 pins per bowl]
+
+    D --> D1[Same total number of pins knocked down]
+Answer_Reasoning: To find the least common number of pins they could have each knocked down, we need to find the least common multiple (LCM) of their pins per bowl.  The LCM of <B1>8</B1> and <C1>9</C1> is 72.  Therefore, the least number of pins each could have knocked down is <D1>72</D1>. 
+Final_Answer: {72} 
+"
+2041,"Shaquira is baking cookies to put in packages for a fundraiser. Shaquira has made 86 chocolate chip cookies and 42 sugar cookies. Shaquira wants to create identical packages of cookies to sell, and she must use all of the cookies. What is the greatest number of identical packages that Shaquira can make?","Fact_Diagram:
+graph TD
+    A[Cookie Packages]
+    A --> B[Shaquira's Cookies]
+    B --> B1[86 Chocolate Chip Cookies]
+    B --> B2[42 Sugar Cookies]
+    A --> C[Package Requirements]
+    C --> C1[Identical Packages]
+    C --> C2[Use All Cookies]
+
+Answer_Reasoning: To find the greatest number of identical packages, we need to find the greatest common factor of <B1>86</B1> and <B2>42</B2>. The greatest common factor of 86 and 42 is 2.  Therefore, Shaquira can make 2 identical packages.
+Final_Answer: {2} 
+"
+2042,"There are 32 forwards and 80 guards in Leo's basketball league. Leo must include all players on a team and wants each team to have the same number of forwards and the same number of guards. If Leo creates the greatest number of teams possible, how many guards will be on each team?","Fact_Diagram:
+graph TD
+    A[Leo's Basketball League]
+    A --> B[Forwards]
+    A --> C[Guards]
+    A --> D[Teams]
+    
+    B --> B1[32 forwards total]
+    
+    C --> C1[80 guards total]
+    
+    D --> D1[Same number of forwards per team]
+    D --> D2[Same number of guards per team]
+    D --> D3[Greatest number of teams possible]
+Answer_Reasoning: To find the greatest number of teams possible with an equal number of forwards and guards, we need to find the greatest common factor of <B1>32 forwards</B1> and <C1>80 guards</C1>. The greatest common factor of 32 and 80 is 16. Therefore, Leo can create 16 teams. Since there are <C1>80 guards total</C1> and 16 teams, there will be 80/16 = 5 guards on each team. 
+Final_Answer: {5} 
+"
+2043,Li Na is going to plant 63 tomato plants and 81 rhubarb plants. Li Na would like to plant the plants in rows where each row has the same number of tomato plants and each row has the same number of rhubarb plants. What is the greatest number of rows Li Na can plant?,"Fact_Diagram:
+graph TD
+    A[Li Na's Garden]
+    A --> B[Tomato Plants]
+    A --> C[Rhubarb Plants]
+    B --> B1[63 plants total]
+    C --> C1[81 plants total]
+    A --> D[Planting Instructions]
+    D --> D1[Plants in rows]
+    D --> D2[Same number of each plant per row]
+    D --> D3[Find greatest number of rows]
+
+Answer_Reasoning: To find the greatest number of rows <D3>Li Na</D3> can plant, we need to find the greatest common factor of the number of <B>tomato plants </B>(<B1>63</B1>) and the number of <C>rhubarb plants</C> (<C1>81</C1>). The greatest common factor of 63 and 81 is 9.  Final_Answer: {9} 
+"
+2044,"There are 72 boys and 90 girls on the math team. For the next math competition, Mr. Johnson would like to arrange all of the students in equal rows with only girls or only boys in each row. What is the greatest number of students that can be in each row?","Fact_Diagram:
+graph TD
+    A[Math Team]
+    A --> B[Total Students]
+    A --> C[Arrangement Requirements]
+    B --> B1[72 boys]
+    B --> B2[90 girls]
+    C --> C1[Equal rows]
+    C --> C2[Single-gender rows]
+
+Answer_Reasoning: To find the greatest number of students in each row, we need to find the greatest common factor of <B1>72</B1> (boys) and <B2>90</B2> (girls). The greatest common factor of 72 and 90 is 18. Therefore, the greatest number of students that can be in each row is 18. 
+Final_Answer: {18} 
+"
+2045,"Rafaela is a physical education teacher and has 25 girls and 35 boys in her class. She wants to divide the class into teams of the same size, where each team has the same number of girls and the same number of boys. If Rafaela creates the greatest number of teams possible, how many boys will be on each team?","Fact_Diagram:
+graph TD
+    A[Physical Education Class]
+    A --> B{25 girls}
+    A --> C{35 boys}
+    A --> D{Teams}
+    D --> E{Same size}
+    D --> F{Same number of girls}
+    D --> G{Same number of boys}
+
+Answer_Reasoning: To find the greatest number of teams with an equal number of girls and boys, we need to find the greatest common factor of  <B>25 girls</B> and <C>35 boys</C>. The greatest common factor of 25 and 35 is 5. This means there will be 5 teams with <C>35 boys</C>/5 teams = 7 boys on each team. 
+Final_Answer: {7} 
+"
+2046,"Destiny just received two separate gifts from her great-great-grandmother. The first gift is a box of 18 chocolate candy bars, and the second gift is a pack of 12 cookies. Destiny wants to use all of the chocolate candy bars and cookies to make identical snack bags for her cousins. What is the greatest number of snack bags that Destiny can make?","Fact_Diagram:
+graph TD
+    A[Destiny's Gifts]
+    A --> B[Chocolate Candy Bars]
+    A --> C[Cookies]
+    B --> B1[18 candy bars]
+    C --> C1[12 cookies]
+    D[Snack Bags]
+    D --> D1[Identical contents]
+    D --> D2[Use all gifts]
+
+Answer_Reasoning: To find the greatest number of snack bags Destiny can make, we must find the greatest common factor of  <B1>18 candy bars</B1> and <C1>12 cookies</C1>. The greatest common factor of 18 and 12 is 6. Therefore, Destiny can make a maximum of 6 snack bags. <D1><D2> 
+Final_Answer: {6} 
+"
+2047,Two of the lights at the local stadium are flickering. They both just flickered at the same time. One of the lights flickers every 7 seconds and the other light flickers every 8 seconds. How many seconds until both lights will flicker at the same time again?,"Fact_Diagram:
+graph TD
+    A[Flickering Lights]
+    A --> B[Light 1]
+    A --> C[Light 2]
+    B --> B1[Flickers every 7 seconds]
+    C --> C1[Flickers every 8 seconds]
+
+Answer_Reasoning: To find when both lights flicker together again, we need to find the least common multiple of their flicker rates. The least common multiple of <B1>7 seconds</B1> and <C1>8 seconds</C1> is 56. The answer is 56.
+Final_Answer: {56} 
+"
+2049,"By coincidence, Luther's Paint Supplies sold equal quantities of two paint colors yesterday: yellow and blue. All yellow paint comes in 2-liter containers while blue paint is sold in containers of 19 liter. What is the smallest amount of each paint color the store must have sold?","Fact_Diagram:
+graph TD
+    A[Paint Sales]
+    A --> B[Yellow Paint]
+    A --> C[Blue Paint]
+    B --> D[Sold in 2-liter containers]
+    C --> E[Sold in 19-liter containers]
+    A --> F[Equal quantities of each color sold]
+
+Answer_Reasoning: To find the smallest amount of each paint sold, we need to find the least common multiple of the two container sizes.  The least common multiple of <D>2</D> and <E>19</E> is 38.  Therefore, the smallest amount of each paint color the store must have sold is 38 liters. 
+Final_Answer: {38} 
+"
+2056,"The Khan Corporation would like to donate 48 computers and 32 printers to local schools. The corporation would like to make sure that each school receives the same set of computers and printers, with none left over. What is the greatest number of schools that The Khan Corporation can donate to?","Fact_Diagram:
+graph TD
+    A[Khan Corporation Donation]
+    A --> B[Items]
+    A --> C[School Distribution]
+    
+    B --> B1[48 computers]
+    B --> B2[32 printers]
+    
+    C --> C1[Equal sets of computers & printers]
+    C --> C2[No leftover items]
+
+Answer_Reasoning: To find the greatest number of schools the Khan Corporation can donate to, we need to find the greatest common factor (GCF) of <B1>48 computers</B1> and <B2>32 printers</B2>. The GCF of 48 and 32 is 16. Therefore, the greatest number of schools The Khan Corporation can donate to is 16. 
+Final_Answer: {16} 
+"
+2057,"Mitch owns a business and assigns two of his employees their shifts. He assigns the first employee shifts in blocks of 2 hours, and he assigns the second worker shifts in blocks of 11 hours. If both workers must receive the same number of hours, what is the minimum number of hours each must be assigned?","Fact_Diagram:
+graph TD
+    A[Work Shifts]
+    A --> B[Employee 1]
+    A --> C[Employee 2]
+    B --> B1[2-hour shifts]
+    C --> C1[11-hour shifts]
+    A --> D[Equal work hours]
+
+Answer_Reasoning: To find the minimum number of hours each employee must work for their shifts to be equal, we need to find the least common multiple of their shift lengths. The least common multiple of <B1>2</B1> and <C1>11</C1> is 22. The answer is 22.
+Final_Answer: {22} 
+"
+2066,"Bill observed two types of birds in the bushes: sparrows and parrots. While the sparrows were in flocks of 13, the parrots were in flocks of 14. If Bill observed the same total number of sparrows and parrots, what is the smallest number of sparrows that he could have observed?","Fact_Diagram:
+graph TD
+    A[Bird Observations]
+    A --> B[Sparrows]
+    A --> C[Parrots]
+    B --> B1[Flocks of 13]
+    C --> C1[Flocks of 14]
+    A --> D[Equal Total Birds]
+Answer_Reasoning: To find the smallest number of sparrows, we need to find the least common multiple of the sparrow flock size (<B1>13</B1>) and the parrot flock size (<C1>14</C1>). The least common multiple of 13 and 14 is 182. Since sparrows come in flocks of 13, Bill must have observed 182/<B1>13</B1> = 14 sparrows. 
+Final_Answer: {14} 
+"
+2068,"Morris observed two types of birds traveling: ducks and cranes. While the ducks traveled in flocks of 13, the cranes traveled in flocks of 17. If Morris observed the same total number of ducks and cranes, what is the smallest number of ducks that he could have observed?","Fact_Diagram:
+graph TD
+    A[Bird Observations]
+    A --> B[Ducks]
+    A --> C[Cranes]
+    B --> B1[Travel in flocks of 13]
+    C --> C1[Travel in flocks of 17]
+    A --> D[Equal number of ducks and cranes observed]
+Answer_Reasoning: To find the smallest number of ducks, we need to find the least common multiple of the flock sizes. The least common multiple of <B1>13</B1> and <C1>17</C1> is 221. This means Morris observed 221/13 = 17 flocks of ducks. Therefore, the smallest number of ducks Morris could have observed is 17 * <B1>13</B1> = 221. 
+Final_Answer: {221} 
+"
+2070,Melanie has pieces of train track that are 8 inches long that she is connecting together to form a track that her train can travel on. Martin is also trying to construct a track for his train but is using track pieces that are 20 inches long. How long will the shortest track be if the track that Melanie builds ends up being the same length as Martin's track?,"Fact_Diagram:
+graph TD
+    A[Model Train Tracks]
+    A --> B[Melanie's Track]
+    A --> C[Martin's Track]
+    B --> B1[Track pieces are 8 inches long]
+    C --> C1[Track pieces are 20 inches long]
+    A --> D[Equal Track Length]
+Answer_Reasoning: To find the shortest track length where both tracks are equal, we need to find the least common multiple of <B1>Melanie's 8-inch track pieces</B1> and <C1>Martin's 20-inch track pieces</C1>.  The least common multiple of 8 and 20 is 40.  This means that the shortest track possible where <D>both tracks are the same length</D> is 40 inches.
+Final_Answer: {40} 
+"
+2077,The Math Counts Club had a party at school. There were 20 cookies and 40 slices of pizza to be shared equally. Each student had the same number of whole cookies and the same number of slices of pizza with nothing left over. What is the greatest number of cookies and pizza slices the students can each get?,"Fact_Diagram:
+graph TD
+    A[Math Counts Club Party]
+    A --> B[Food]
+    B --> B1[20 Cookies]
+    B --> B2[40 Pizza Slices]
+    A --> C[Distribution]
+    C --> C1[Equal share per student]
+    C --> C2[No leftovers]
+
+Answer_Reasoning: To find the greatest number of cookies and pizza slices each student can get, we need to find the greatest common factor of <B1>20 cookies</B1> and <B2>40 pizza slices</B2>. The greatest common factor of 20 and 40 is 10. This means that each student can have 10/2= 5 cookies and 40/10 = 4 slices of pizza. Therefore, the greatest number of cookies and pizza slices a student can get is 5 + 4 = 9. 
+Final_Answer: {9} 
+"
+2078,"Tim has a bag of 36 orange-flavoured sweets and Peter has a bag of 44 grape-flavoured sweets. They have to divide up the sweets into small trays with equal number of sweets; each tray containing either orange-flavoured or grape-flavoured sweets only. If there is no remainder, what is the largest possible number of sweets in each tray?","Fact_Diagram:
+graph TD
+    A[Sweet Arrangement]
+    A --> B[Tim's Sweets]
+    A --> C[Peter's Sweets]
+    A --> D[Tray Requirement]
+    
+    B --> B1[36 orange sweets]
+    
+    C --> C1[44 grape sweets]
+
+    D --> D1[Equal number of sweets in each tray]
+    D --> D2[No remainder]
+    D --> D3[Each tray contains single flavor]
+Answer_Reasoning: To find the largest possible number of sweets in each tray, we need to find the greatest common factor (GCD) of <B1>36 (Tim's sweets)</B1> and <C1>44 (Peter's sweets)</C1>.  The GCD of 36 and 44 is 4.  Therefore, the largest possible number of sweets in each tray is 4. 
+Final_Answer: {4} 
+"
+2079,"Martin is pasting pieces of square colored paper of equal size onto a board measuring 72 cm by 90 cm. If only whole square pieces are used, and the board is to be completely covered, what is the largest possible length of the side of each square colored paper?","Fact_Diagram:
+graph TD
+    A[Project]
+    A --> B[Board]
+    A --> C[Paper]
+    B --> B1[72 cm x 90 cm]
+    C --> C1[Square pieces]
+    C --> C2[Whole squares only]
+    C --> C3[Cover the board completely]
+Answer_Reasoning: To find the largest possible square, we need the greatest common factor of the board's dimensions (<B1>72 cm x 90 cm</B1>). The greatest common factor of <B1>72</B1> and <B1>90</B1> is 18.  The answer is 18.
+Final_Answer: {18} 
+"
+239,"Professor Treehead of the Flora University requested his students to participate. He said that they planted 15 species of trees in the natural park, 20 species of trees in the neighboring forest and 10 species of trees all around different locations in town. How many species of trees were planted by the students?","Fact_Diagram:
+graph TD
+    A[Tree Planting Project]
+    A --> B[Natural Park]
+    A --> C[Neighboring Forest]
+    A --> D[Town Locations]
+    B --> B1[15 species]
+    C --> C1[20 species]
+    D --> D1[10 species]
+
+Answer_Reasoning: Professor Treehead's students planted <B1>15</B1> species of trees in the natural park, <C1>20</C1> species in the neighboring forest, and <D1>10</D1> species in town locations. In total, they planted 15 + 20 + 10 = 45 species of trees. 
+Final_Answer: {45} 
+"
+1191,Lindsey has 16 cans of regular soda and 8 cans of diet soda. She wants to create some identical refreshment tables that will operate during the football game. She also doesn't want to have any sodas left over. What is the greatest number of refreshment tables that Lindsey can stock?,"Fact_Diagram:
+graph TD
+    A[Lindsey's Sodas]
+    A --> B[Regular Soda]
+    A --> C[Diet Soda]
+    A --> D[Refreshment Tables]
+    
+    B --> B1[16 cans]
+    
+    C --> C1[8 cans]
+    
+    D --> D1[Identical tables]
+    D --> D2[No sodas leftover]
+
+Answer_Reasoning: To find the greatest number of identical refreshment tables with no sodas leftover, we need to find the greatest common factor of <B1>16 cans of regular soda</B1> and <C1>8 cans of diet soda</C1>. The greatest common factor of 16 and 8 is 8. Therefore, the greatest number of refreshment tables Lindsey can stock is <D1>8</D1>.
+Final_Answer: {8} 
+"
+1349,A field is in the shape of an equilateral triangle attached to the width of the rectangular region where width of the rectangle and side of the triangle measures the same. The length of rectangular region is 76 ft and the side of triangular region measures 42 ft. Find the perimeter of the field.,"Fact_Diagram:
+graph TD
+    A[Field]
+    A --> B[Shape]
+    B --> B1[Equilateral Triangle]
+    B --> B2[Rectangle (attached to triangle's width)]
+    B1 --> B1a[Side = 42 ft]
+    B2 --> B2a[Width = B1a]
+    B2 --> B2b[Length = 76 ft]
+
+
+Answer_Reasoning: The field is a combination of an equilateral triangle and a rectangle.  The equilateral triangle has 3 sides each measuring <B1a>42 ft</B1a>. The rectangle has a length of <B2b>76 ft</B2b>.  Since the rectangle is attached to the triangle, one of the widths of the rectangle is common with one of the sides of the triangle and hence the width of the rectangle is <B2a>42 ft</B2a>.  The other width of the rectangle also measures <B2a>42 ft</B2a>. Therefore the perimeter of the field = (3 * <B1a>42</B1a>) + <B2b>76</B2b> + <B2a>42</B2a> + <B2a>42</B2a> = 334 ft.
+Final_Answer: {334} 
+"
+312,"Having been to Paris, Rob also remembered the Eiffel Tower which was the tallest structure in the world at the time it was built. If the height of Eiffel Tower is 324 m, how much lower is it compared to 830m height, today’s tallest man-made structure, the Burj Khalifa?","Fact_Diagram:
+graph TD
+    A[Structures]
+    A --> B[Eiffel Tower]
+    A --> C[Burj Khalifa]
+    B --> B1[Height: 324 m]
+    C --> C1[Height: 830 m]
+    C --> C2[Tallest man-made structure]
+Answer_Reasoning: The Eiffel Tower is <C1>830</C1> - <B1>324</B1> = 506 m shorter than the Burj Khalifa. 
+Final_Answer: {506} 
+"
+2072,"Henry and Margo both began traveling around a circular track. Henry is riding his bike, and Margo is walking. It takes Henry 7 minutes to make it all the way around, and Margo takes 12 minutes. How much time will pass until they meet at the starting line?","Fact_Diagram:
+graph TD
+    A[Circular Track Race]
+    A --> B[Henry]
+    A --> C[Margo]
+    B --> B1[7 minutes per lap]
+    C --> C1[12 minutes per lap]
+
+Answer_Reasoning: To find when they meet at the starting line, we need to find the least common multiple of their lap times. The least common multiple of <B1>7 minutes</B1> and <C1>12 minutes</C1> is 84.  Therefore, 84 minutes will pass until they meet at the starting line. 
+Final_Answer: {84} 
+"

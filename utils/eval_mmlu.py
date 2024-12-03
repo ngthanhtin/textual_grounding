@@ -14,6 +14,16 @@ from mmlu import parse_open_response, parse_multi_choice_response, parse_options
 from utils import read_jsonl_file
 import json
 
+def check_squad_answer(answer, gt):
+    # remove tag <fact> in the answer
+    answer = re.sub(r'</?fact\d+>', '', answer)
+    
+    if gt in answer or answer in gt:
+        
+        return 1
+    
+    return 0
+
 def compute_acc(questions, answers, gts, dataset):
     # Append each question and its highlighted answer to the HTML content
     total_acc = 0
@@ -52,12 +62,12 @@ def compute_acc(questions, answers, gts, dataset):
                 else:
                     # print('------------------------------------')
                     # print(question)
-                    print()
+                    # print()
                     # print('Incorrect Answer: ', answer, 'GT: ', gt, gt_number)
-                    print('LLM (incorrect) Answer: ')
-                    # print(answer)
-                    print('(end of answer)...', answer[-100:], 'GT: ', gt, gt_number)
-                    print('------------------------------------')
+                    # print('LLM (incorrect) Answer: ')
+                    # # print(answer)
+                    # print('(end of answer)...', answer[-100:], 'GT: ', gt, gt_number)
+                    # print('------------------------------------')
                     pass
             except:
                 
@@ -160,6 +170,17 @@ def compute_acc(questions, answers, gts, dataset):
                     print("====================================")
             except:
                 continue
+        elif dataset in ['squad']:
+            total_acc += check_squad_answer(answer, gt)
+            if check_squad_answer(answer, gt) == 0:
+                print(question)
+                print()
+                # print('correct Answer: ', answer, 'GT: ', gt, gt_number)
+                print('LLM Answer: ')
+                print(answer)
+                # print('(end of answer)...', answer[-100:], 'GT: ', gt)
+                print("GT: ", gt)
+                print('------------------------------------')
                 
     # print("The number of failed to follow the format (question, final answer): ", failed_follow_format_question, failed_follow_format_final_answer)
     # print(total_iou/len(questions))
@@ -250,8 +271,8 @@ def evaluate_model(llm_model: str, data_mode: str, answer_mode: str, dataset: st
     elif data_mode == 'random':
         df_path = f'/Users/log/Github/textual_grounding/logan/results/final/fewshot_CoT/{dataset}/{llm_model}/cot_random_cot_examples.txt_{dataset}_{llm_model}.csv'
     elif data_mode == 'echo':
-        df_path = f'/Users/log/Github/textual_grounding/logan/results/{dataset}/{llm_model}/echo_fewshot_echo_cot_examples.txt_{dataset}_{llm_model}.csv'
-
+        df_path = f'/Users/log/Github/textual_grounding/logan/results/{dataset}/{llm_model}/echo_fewshot_echo_longest_cot_examples.txt_{dataset}_{llm_model}.csv'
+    # df_path = '/Users/log/Downloads/fs_inst_llama_sambanova_70b_temp_10_longest (2).csv'
 
     df = pd.read_csv(df_path)
     questions = df['question'].tolist()
@@ -273,6 +294,8 @@ def evaluate_model(llm_model: str, data_mode: str, answer_mode: str, dataset: st
     # 
     # print(len(questions), len(answers), len(gts), len(ids))
     
+
+    print(f"Model: {llm_model}")
     if dataset == 'GSM_Plus':
         compute_acc_gsm_plus(questions, answers, gts)
         # compute_acc(questions, answers, gts, args.dataset)
