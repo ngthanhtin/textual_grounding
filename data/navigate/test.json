@@ -1,0 +1,1252 @@
+[
+    {
+        "id": 0,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 1 step backward. Take 9 steps left. Take 2 steps backward. Take 6 steps forward. Take 4 steps forward. Take 4 steps backward. Take 3 steps right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 1,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps left. Take 10 steps forward. Take 7 steps forward. Take 2 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 2,
+        "question": "If you follow these instructions, do you return to the starting point? Take 1 step. Take 10 steps. Take 4 steps. Take 1 step. Take 10 steps. Turn right. Turn around.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 3,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 1 step right. Take 3 steps left. Take 2 steps right.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 4,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps backward. Take 7 steps backward. Take 8 steps right. Take 6 steps right. Take 3 steps left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 5,
+        "question": "If you follow these instructions, do you return to the starting point? Take 8 steps. Turn around. Take 8 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 6,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 6 steps right. Take 1 step forward. Take 10 steps left. Take 8 steps forward. Take 9 steps backward. Take 4 steps right.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 7,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 6 steps forward. Take 7 steps backward. Take 7 steps backward. Take 8 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 8,
+        "question": "If you follow these instructions, do you return to the starting point? Take 5 steps. Take 4 steps. Take 3 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 9,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 8 steps backward. Take 9 steps forward. Take 4 steps forward. Take 2 steps left. Take 4 steps forward. Take 6 steps forward. Take 10 steps backward. Take 8 steps right. Take 1 step left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 10,
+        "question": "If you follow these instructions, do you return to the starting point? Take 8 steps. Take 5 steps. Take 5 steps. Take 10 steps. Take 5 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 11,
+        "question": "If you follow these instructions, do you return to the starting point? Take 3 steps. Take 6 steps. Take 8 steps. Take 5 steps. Take 6 steps. Take 2 steps. Take 1 step. Take 2 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 12,
+        "question": "If you follow these instructions, do you return to the starting point? Take 3 steps. Turn around. Take 3 steps. Turn right.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 13,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 5 steps backward. Take 2 steps left. Take 5 steps right. Take 3 steps left. Take 5 steps backward. Take 10 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 14,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 3 steps left. Take 10 steps right. Take 7 steps left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 15,
+        "question": "If you follow these instructions, do you return to the starting point? Turn left. Turn right. Turn around. Turn left. Take 4 steps. Turn left. Turn around. Take 3 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 16,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 9 steps forward. Take 1 step backward. Take 4 steps backward. Take 4 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 17,
+        "question": "If you follow these instructions, do you return to the starting point? Take 3 steps. Turn around. Take 5 steps. Turn right. Turn right. Take 1 step. Take 1 step.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 18,
+        "question": "If you follow these instructions, do you return to the starting point? Take 3 steps. Take 6 steps. Take 9 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 19,
+        "question": "If you follow these instructions, do you return to the starting point? Take 8 steps. Turn left. Take 9 steps. Take 7 steps. Turn around.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 20,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 6 steps backward. Take 6 steps forward. Take 6 steps right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 21,
+        "question": "If you follow these instructions, do you return to the starting point? Take 4 steps. Take 2 steps. Turn around. Take 6 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 22,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 1 step forward. Take 10 steps left. Take 4 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 23,
+        "question": "If you follow these instructions, do you return to the starting point? Take 7 steps. Turn right. Turn right. Take 6 steps. Turn right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 24,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 2 steps backward. Take 8 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 25,
+        "question": "If you follow these instructions, do you return to the starting point? Take 9 steps. Take 6 steps. Take 9 steps. Take 6 steps. Take 2 steps. Turn left. Take 6 steps. Turn around. Take 8 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 26,
+        "question": "If you follow these instructions, do you return to the starting point? Take 10 steps. Turn around. Take 4 steps. Take 6 steps. Turn around.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 27,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 8 steps forward. Take 5 steps backward. Take 5 steps left. Take 5 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 28,
+        "question": "If you follow these instructions, do you return to the starting point? Turn left. Take 5 steps. Turn around. Turn right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 29,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 5 steps forward. Take 7 steps backward. Take 10 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 30,
+        "question": "If you follow these instructions, do you return to the starting point? Take 7 steps. Take 7 steps. Take 10 steps. Take 1 step. Turn left. Take 7 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 31,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 4 steps forward. Take 5 steps right. Take 7 steps left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 32,
+        "question": "If you follow these instructions, do you return to the starting point? Take 10 steps. Turn left. Turn left. Take 10 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 33,
+        "question": "If you follow these instructions, do you return to the starting point? Take 3 steps. Take 5 steps. Take 8 steps. Turn right. Turn right. Take 5 steps. Turn around. Take 2 steps. Take 4 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 34,
+        "question": "If you follow these instructions, do you return to the starting point? Take 7 steps. Take 8 steps. Turn right. Turn right. Take 1 step. Take 7 steps. Take 6 steps. Take 1 step.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 35,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 7 steps forward. Take 4 steps backward. Take 4 steps backward. Take 5 steps forward. Take 7 steps forward. Take 10 steps backward. Take 1 step backward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 36,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 9 steps forward. Take 7 steps left. Take 5 steps backward. Take 4 steps right. Take 3 steps right. Take 4 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 37,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 6 steps right. Take 5 steps right. Take 7 steps left. Take 3 steps left. Take 7 steps left. Take 6 steps right.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 38,
+        "question": "If you follow these instructions, do you return to the starting point? Take 1 step. Take 5 steps. Turn around. Turn around. Turn around. Take 6 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 39,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 2 steps forward. Take 2 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 40,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 8 steps left. Take 6 steps right. Take 10 steps right. Take 2 steps left. Take 5 steps left. Take 1 step left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 41,
+        "question": "If you follow these instructions, do you return to the starting point? Take 6 steps. Take 10 steps. Take 10 steps. Take 1 step. Take 7 steps. Take 5 steps. Turn around.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 42,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 7 steps left. Take 2 steps backward. Take 7 steps backward. Take 7 steps backward. Take 3 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 43,
+        "question": "If you follow these instructions, do you return to the starting point? Take 6 steps. Take 8 steps. Take 7 steps. Turn around. Take 6 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 44,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 7 steps forward. Take 7 steps backward. Take 10 steps backward. Take 10 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 45,
+        "question": "If you follow these instructions, do you return to the starting point? Turn right. Take 9 steps. Turn around. Take 9 steps. Turn right.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 46,
+        "question": "If you follow these instructions, do you return to the starting point? Turn right. Take 9 steps. Take 10 steps. Turn left. Take 10 steps. Turn right. Turn around. Take 4 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 47,
+        "question": "If you follow these instructions, do you return to the starting point? Turn left. Turn around. Take 1 step. Take 10 steps. Turn around. Take 7 steps. Take 4 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 48,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 2 steps right. Take 4 steps right. Take 6 steps left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 49,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 7 steps right. Take 1 step forward. Take 3 steps left. Take 2 steps left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 50,
+        "question": "If you follow these instructions, do you return to the starting point? Take 10 steps. Take 7 steps. Turn around. Take 8 steps. Take 9 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 51,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 2 steps right. Take 2 steps right. Take 4 steps left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 52,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 6 steps left. Take 7 steps forward. Take 8 steps left. Take 7 steps left. Take 6 steps forward. Take 1 step forward. Take 4 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 53,
+        "question": "If you follow these instructions, do you return to the starting point? Take 9 steps. Take 5 steps. Take 2 steps. Take 10 steps. Turn right. Take 10 steps. Take 8 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 54,
+        "question": "If you follow these instructions, do you return to the starting point? Turn right. Take 3 steps. Turn around. Take 3 steps. Turn left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 55,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 9 steps left. Take 4 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 56,
+        "question": "If you follow these instructions, do you return to the starting point? Take 9 steps. Turn left. Turn left. Take 5 steps. Take 4 steps. Turn left. Turn left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 57,
+        "question": "If you follow these instructions, do you return to the starting point? Take 4 steps. Take 2 steps. Take 7 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 58,
+        "question": "If you follow these instructions, do you return to the starting point? Take 8 steps. Take 1 step. Take 8 steps. Turn right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 59,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 5 steps left. Take 5 steps left. Take 10 steps right.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 60,
+        "question": "If you follow these instructions, do you return to the starting point? Take 6 steps. Take 2 steps. Take 6 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 61,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps forward. Take 10 steps right. Take 10 steps backward. Take 3 steps forward. Take 7 steps forward. Take 9 steps left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 62,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 7 steps left. Take 8 steps left. Take 1 step left. Take 9 steps left. Take 10 steps forward. Take 5 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 63,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 1 step right. Take 9 steps left. Take 9 steps right. Take 1 step backward. Take 3 steps right. Take 6 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 64,
+        "question": "If you follow these instructions, do you return to the starting point? Turn left. Take 4 steps. Turn around. Take 4 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 65,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 7 steps forward. Take 3 steps backward. Take 4 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 66,
+        "question": "If you follow these instructions, do you return to the starting point? Take 5 steps. Turn around. Take 10 steps. Turn right. Take 10 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 67,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 1 step right. Take 4 steps right. Take 5 steps left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 68,
+        "question": "If you follow these instructions, do you return to the starting point? Take 3 steps. Turn left. Turn left. Turn around. Take 5 steps. Turn around. Take 5 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 69,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps forward. Take 4 steps backward. Take 6 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 70,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 8 steps backward. Take 2 steps backward. Take 10 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 71,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 6 steps forward. Take 2 steps backward. Take 4 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 72,
+        "question": "If you follow these instructions, do you return to the starting point? Take 5 steps. Take 5 steps. Take 2 steps. Turn around. Take 8 steps. Take 4 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 73,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 4 steps forward. Take 2 steps backward. Take 10 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 74,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 9 steps left. Take 7 steps forward. Take 9 steps right. Take 7 steps left. Take 7 steps backward. Take 8 steps right. Take 10 steps left. Take 1 step backward. Take 1 step forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 75,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 9 steps backward. Take 2 steps forward. Take 1 step backward. Take 8 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 76,
+        "question": "If you follow these instructions, do you return to the starting point? Take 1 step. Take 5 steps. Take 1 step. Take 6 steps. Turn left. Take 7 steps. Take 2 steps. Take 4 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 77,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 1 step backward. Take 5 steps right. Take 3 steps left. Take 1 step backward. Take 5 steps backward. Take 4 steps forward. Take 3 steps forward. Take 2 steps left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 78,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 5 steps right. Take 8 steps backward. Take 1 step right. Take 7 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 79,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps forward. Take 4 steps forward. Take 7 steps backward. Take 7 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 80,
+        "question": "If you follow these instructions, do you return to the starting point? Turn around. Turn left. Take 1 step. Take 2 steps. Turn around. Turn around. Turn around. Take 3 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 81,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 8 steps forward. Take 9 steps right. Take 2 steps forward. Take 10 steps backward. Take 9 steps left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 82,
+        "question": "If you follow these instructions, do you return to the starting point? Take 8 steps. Take 1 step. Turn left. Turn left. Take 9 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 83,
+        "question": "If you follow these instructions, do you return to the starting point? Take 2 steps. Turn around. Turn right. Turn left. Take 2 steps. Turn around. Turn around.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 84,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 1 step backward. Take 5 steps forward. Take 10 steps backward. Take 9 steps forward. Take 7 steps right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 85,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 1 step forward. Take 10 steps forward. Take 6 steps backward. Take 7 steps backward. Take 1 step left. Take 10 steps right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 86,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps left. Take 4 steps forward. Take 1 step left. Take 4 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 87,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 3 steps right. Take 5 steps right. Take 2 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 88,
+        "question": "If you follow these instructions, do you return to the starting point? Turn left. Turn right. Take 8 steps. Take 4 steps. Turn right. Turn right. Take 10 steps. Take 1 step. Take 1 step.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 89,
+        "question": "If you follow these instructions, do you return to the starting point? Turn around. Turn around. Take 7 steps. Take 6 steps. Take 5 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 90,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps forward. Take 8 steps right. Take 8 steps right. Take 9 steps left. Take 6 steps right. Take 2 steps forward. Take 9 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 91,
+        "question": "If you follow these instructions, do you return to the starting point? Turn left. Take 9 steps. Take 9 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 92,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 6 steps left. Take 3 steps backward. Take 3 steps left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 93,
+        "question": "If you follow these instructions, do you return to the starting point? Take 7 steps. Turn around. Take 10 steps. Take 2 steps. Turn around. Take 5 steps. Turn left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 94,
+        "question": "If you follow these instructions, do you return to the starting point? Turn left. Turn left. Take 10 steps. Take 6 steps. Turn left. Take 3 steps. Take 3 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 95,
+        "question": "If you follow these instructions, do you return to the starting point? Take 2 steps. Take 8 steps. Take 8 steps. Take 6 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 96,
+        "question": "If you follow these instructions, do you return to the starting point? Take 6 steps. Turn right. Turn right. Take 7 steps. Turn around. Take 1 step.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 97,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 9 steps right. Take 6 steps right. Take 10 steps backward. Take 9 steps left. Take 4 steps left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 98,
+        "question": "If you follow these instructions, do you return to the starting point? Take 3 steps. Take 6 steps. Take 6 steps. Turn left. Take 8 steps. Take 1 step. Take 3 steps. Take 7 steps. Take 8 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 99,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 6 steps backward. Take 2 steps backward. Take 1 step forward. Take 6 steps forward. Take 3 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 100,
+        "question": "If you follow these instructions, do you return to the starting point? Take 7 steps. Turn around. Take 7 steps. Turn left. Turn around. Turn around. Turn left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 101,
+        "question": "If you follow these instructions, do you return to the starting point? Turn around. Turn right. Take 7 steps. Turn right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 102,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 4 steps right. Take 7 steps right. Take 1 step left. Take 4 steps left. Take 6 steps left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 103,
+        "question": "If you follow these instructions, do you return to the starting point? Turn left. Take 7 steps. Turn left. Turn left. Take 9 steps. Take 2 steps. Turn left. Take 4 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 104,
+        "question": "If you follow these instructions, do you return to the starting point? Take 6 steps. Turn left. Take 4 steps. Take 4 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 105,
+        "question": "If you follow these instructions, do you return to the starting point? Take 6 steps. Turn left. Take 6 steps. Turn around. Take 2 steps. Take 10 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 106,
+        "question": "If you follow these instructions, do you return to the starting point? Take 2 steps. Take 2 steps. Turn around. Take 4 steps. Turn right.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 107,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 5 steps right. Take 7 steps left. Take 8 steps right. Take 6 steps left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 108,
+        "question": "If you follow these instructions, do you return to the starting point? Take 5 steps. Take 8 steps. Take 2 steps. Turn right. Take 8 steps. Turn left. Take 6 steps. Take 6 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 109,
+        "question": "If you follow these instructions, do you return to the starting point? Take 10 steps. Take 8 steps. Turn left. Take 3 steps. Take 1 step. Take 6 steps. Take 7 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 110,
+        "question": "If you follow these instructions, do you return to the starting point? Turn around. Turn left. Take 6 steps. Take 4 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 111,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 5 steps left. Take 4 steps left. Take 1 step left. Take 2 steps left. Take 2 steps right. Take 3 steps left. Take 5 steps forward. Take 3 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 112,
+        "question": "If you follow these instructions, do you return to the starting point? Take 8 steps. Take 9 steps. Turn around. Take 5 steps. Turn left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 113,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps left. Take 10 steps right. Take 7 steps backward. Take 7 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 114,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps left. Take 7 steps right. Take 4 steps right. Take 1 step left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 115,
+        "question": "If you follow these instructions, do you return to the starting point? Take 8 steps. Take 2 steps. Turn right. Turn right. Take 10 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 116,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 7 steps backward. Take 6 steps forward. Take 6 steps backward. Take 7 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 117,
+        "question": "If you follow these instructions, do you return to the starting point? Take 6 steps. Turn left. Turn left. Take 1 step. Take 5 steps. Turn around.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 118,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 4 steps backward. Take 8 steps forward. Take 10 steps backward. Take 2 steps forward. Take 4 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 119,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 3 steps forward. Take 3 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 120,
+        "question": "If you follow these instructions, do you return to the starting point? Take 7 steps. Take 6 steps. Take 5 steps. Turn around. Take 5 steps. Take 3 steps. Take 4 steps. Take 6 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 121,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 4 steps right. Take 5 steps right. Take 9 steps left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 122,
+        "question": "If you follow these instructions, do you return to the starting point? Turn left. Turn left. Turn around. Take 1 step. Take 6 steps. Turn left. Turn left. Take 7 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 123,
+        "question": "If you follow these instructions, do you return to the starting point? Take 6 steps. Take 5 steps. Take 6 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 124,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 9 steps right. Take 10 steps left. Take 10 steps backward. Take 3 steps backward. Take 5 steps backward. Take 8 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 125,
+        "question": "If you follow these instructions, do you return to the starting point? Turn right. Take 2 steps. Take 8 steps. Turn around.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 126,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 6 steps backward. Take 8 steps left. Take 3 steps right. Take 7 steps forward. Take 3 steps right. Take 9 steps right. Take 1 step backward. Take 7 steps left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 127,
+        "question": "If you follow these instructions, do you return to the starting point? Turn left. Take 5 steps. Take 9 steps. Take 7 steps. Turn around. Take 1 step. Take 10 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 128,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 7 steps backward. Take 1 step forward. Take 1 step backward. Take 5 steps forward. Take 6 steps backward. Take 8 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 129,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 8 steps right. Take 5 steps forward. Take 10 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 130,
+        "question": "If you follow these instructions, do you return to the starting point? Take 10 steps. Take 2 steps. Take 3 steps. Turn around. Take 4 steps. Turn around. Take 4 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 131,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 1 step right. Take 2 steps forward. Take 2 steps right. Take 4 steps right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 132,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 2 steps forward. Take 2 steps backward. Take 4 steps right. Take 7 steps right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 133,
+        "question": "If you follow these instructions, do you return to the starting point? Take 5 steps. Take 4 steps. Turn around. Take 10 steps. Take 8 steps. Turn around. Take 2 steps. Take 7 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 134,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps forward. Take 3 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 135,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 9 steps left. Take 4 steps forward. Take 2 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 136,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 2 steps left. Take 4 steps backward. Take 10 steps right. Take 2 steps left. Take 3 steps left. Take 7 steps right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 137,
+        "question": "If you follow these instructions, do you return to the starting point? Take 2 steps. Turn right. Take 6 steps. Take 10 steps. Take 7 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 138,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 1 step right. Take 4 steps forward. Take 8 steps forward. Take 6 steps backward. Take 1 step left. Take 6 steps right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 139,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 9 steps left. Take 5 steps right. Take 2 steps left. Take 2 steps right. Take 6 steps forward. Take 10 steps backward. Take 1 step forward. Take 6 steps left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 140,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 8 steps left. Take 8 steps right.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 141,
+        "question": "If you follow these instructions, do you return to the starting point? Take 5 steps. Take 10 steps. Turn around.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 142,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 5 steps left. Take 7 steps left. Take 2 steps left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 143,
+        "question": "If you follow these instructions, do you return to the starting point? Take 1 step. Take 5 steps. Take 10 steps. Take 4 steps. Take 4 steps. Take 1 step. Turn right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 144,
+        "question": "If you follow these instructions, do you return to the starting point? Turn left. Turn right. Take 5 steps. Take 4 steps. Turn around. Take 9 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 145,
+        "question": "If you follow these instructions, do you return to the starting point? Turn around. Turn around. Turn left. Take 7 steps. Take 8 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 146,
+        "question": "If you follow these instructions, do you return to the starting point? Turn right. Turn around. Take 2 steps. Take 6 steps. Take 4 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 147,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 8 steps left. Take 9 steps right. Take 1 step right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 148,
+        "question": "If you follow these instructions, do you return to the starting point? Take 1 step. Take 5 steps. Take 1 step. Turn left. Turn left. Take 9 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 149,
+        "question": "If you follow these instructions, do you return to the starting point? Take 2 steps. Turn around. Take 9 steps. Take 7 steps. Take 6 steps. Turn left. Take 2 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 150,
+        "question": "If you follow these instructions, do you return to the starting point? Take 7 steps. Take 8 steps. Take 10 steps. Turn around. Turn around. Take 5 steps. Turn around.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 151,
+        "question": "If you follow these instructions, do you return to the starting point? Take 9 steps. Turn left. Turn left. Take 9 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 152,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 3 steps forward. Take 9 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 153,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 5 steps forward. Take 7 steps backward. Take 4 steps right. Take 10 steps backward. Take 4 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 154,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps right. Take 3 steps forward. Take 8 steps right. Take 2 steps right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 155,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 8 steps right. Take 8 steps left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 156,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 1 step backward. Take 4 steps left. Take 4 steps left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 157,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 5 steps forward. Take 8 steps backward. Take 4 steps forward. Take 4 steps right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 158,
+        "question": "If you follow these instructions, do you return to the starting point? Take 5 steps. Turn around. Take 4 steps. Take 1 step. Turn left. Turn around. Turn left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 159,
+        "question": "If you follow these instructions, do you return to the starting point? Take 10 steps. Turn around. Take 1 step. Take 9 steps. Turn around.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 160,
+        "question": "If you follow these instructions, do you return to the starting point? Take 7 steps. Turn around. Take 7 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 161,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 5 steps backward. Take 8 steps forward. Take 7 steps forward. Take 5 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 162,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 1 step forward. Take 4 steps left. Take 6 steps left. Take 10 steps right. Take 7 steps backward. Take 5 steps left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 163,
+        "question": "If you follow these instructions, do you return to the starting point? Take 1 step. Take 7 steps. Take 1 step.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 164,
+        "question": "If you follow these instructions, do you return to the starting point? Turn left. Turn left. Take 6 steps. Take 3 steps. Turn around. Take 1 step. Take 3 steps. Take 5 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 165,
+        "question": "If you follow these instructions, do you return to the starting point? Take 10 steps. Turn around. Take 10 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 166,
+        "question": "If you follow these instructions, do you return to the starting point? Take 2 steps. Take 1 step. Take 8 steps. Take 4 steps. Turn right. Turn right. Take 4 steps. Turn left. Turn around.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 167,
+        "question": "If you follow these instructions, do you return to the starting point? Take 4 steps. Take 5 steps. Take 9 steps. Take 3 steps. Turn right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 168,
+        "question": "If you follow these instructions, do you return to the starting point? Take 3 steps. Take 1 step. Take 10 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 169,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 8 steps left. Take 2 steps right. Take 6 steps right.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 170,
+        "question": "If you follow these instructions, do you return to the starting point? Turn right. Take 10 steps. Turn around. Take 10 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 171,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps right. Take 8 steps backward. Take 1 step backward. Take 8 steps backward. Take 8 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 172,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 7 steps backward. Take 4 steps left. Take 7 steps left. Take 7 steps right. Take 8 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 173,
+        "question": "If you follow these instructions, do you return to the starting point? Take 10 steps. Turn left. Turn around. Take 9 steps. Take 8 steps. Turn right. Turn around. Take 8 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 174,
+        "question": "If you follow these instructions, do you return to the starting point? Take 1 step. Take 2 steps. Turn right. Take 6 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 175,
+        "question": "If you follow these instructions, do you return to the starting point? Take 2 steps. Take 10 steps. Turn around. Take 6 steps. Turn left. Turn right. Take 6 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 176,
+        "question": "If you follow these instructions, do you return to the starting point? Take 7 steps. Take 4 steps. Take 3 steps. Take 10 steps. Turn left. Turn around.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 177,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 8 steps backward. Take 8 steps forward. Take 10 steps forward. Take 8 steps backward. Take 8 steps right. Take 6 steps backward. Take 7 steps forward. Take 8 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 178,
+        "question": "If you follow these instructions, do you return to the starting point? Turn left. Turn around. Take 4 steps. Take 5 steps. Turn left. Take 3 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 179,
+        "question": "If you follow these instructions, do you return to the starting point? Take 6 steps. Take 2 steps. Take 2 steps. Turn left. Take 5 steps. Take 8 steps. Turn around.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 180,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps left. Take 7 steps right. Take 4 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 181,
+        "question": "If you follow these instructions, do you return to the starting point? Take 10 steps. Take 4 steps. Take 7 steps. Take 1 step. Take 2 steps. Take 10 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 182,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 6 steps forward. Take 10 steps right. Take 8 steps right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 183,
+        "question": "If you follow these instructions, do you return to the starting point? Take 7 steps. Turn around. Take 7 steps. Turn left.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 184,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 4 steps forward. Take 5 steps left. Take 6 steps forward. Take 8 steps backward. Take 5 steps backward. Take 1 step backward. Take 1 step backward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 185,
+        "question": "If you follow these instructions, do you return to the starting point? Take 2 steps. Take 3 steps. Turn around. Take 5 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 186,
+        "question": "If you follow these instructions, do you return to the starting point? Take 2 steps. Take 10 steps. Take 8 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 187,
+        "question": "If you follow these instructions, do you return to the starting point? Turn left. Take 9 steps. Take 2 steps. Take 5 steps. Turn right. Turn right. Take 5 steps. Take 10 steps. Take 1 step.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 188,
+        "question": "If you follow these instructions, do you return to the starting point? Turn right. Take 5 steps. Take 6 steps. Take 4 steps. Take 1 step. Turn around. Take 6 steps. Take 10 steps. Turn around.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 189,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 8 steps left. Take 9 steps left. Take 8 steps right. Take 8 steps left. Take 3 steps right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 190,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 9 steps backward. Take 9 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 191,
+        "question": "If you follow these instructions, do you return to the starting point? Take 2 steps. Take 3 steps. Turn around. Take 4 steps. Take 1 step.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 192,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps backward. Take 9 steps backward. Take 9 steps backward. Take 9 steps left. Take 10 steps right. Take 3 steps right. Take 3 steps forward. Take 9 steps right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 193,
+        "question": "If you follow these instructions, do you return to the starting point? Take 3 steps. Turn right. Turn left. Take 5 steps. Take 10 steps. Take 7 steps. Turn left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 194,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps left. Take 10 steps right.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 195,
+        "question": "If you follow these instructions, do you return to the starting point? Take 1 step. Take 8 steps. Turn around. Take 8 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 196,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps forward. Take 8 steps left. Take 3 steps backward. Take 7 steps right. Take 2 steps forward. Take 4 steps forward. Take 10 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 197,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 4 steps forward. Take 9 steps right. Take 6 steps right. Take 8 steps right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 198,
+        "question": "If you follow these instructions, do you return to the starting point? Take 3 steps. Take 5 steps. Turn around. Take 3 steps. Take 5 steps. Turn right. Turn right.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 199,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 2 steps backward. Take 5 steps backward. Take 5 steps right. Take 9 steps right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 200,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 9 steps left. Take 10 steps forward. Take 9 steps right. Take 10 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 201,
+        "question": "If you follow these instructions, do you return to the starting point? Take 4 steps. Turn around. Take 4 steps. Turn around. Turn right.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 202,
+        "question": "If you follow these instructions, do you return to the starting point? Take 6 steps. Take 4 steps. Turn around. Take 10 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 203,
+        "question": "If you follow these instructions, do you return to the starting point? Take 7 steps. Take 1 step. Take 7 steps. Turn left. Take 5 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 204,
+        "question": "If you follow these instructions, do you return to the starting point? Take 10 steps. Turn left. Turn left. Take 9 steps. Take 3 steps. Take 3 steps. Turn around. Take 5 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 205,
+        "question": "If you follow these instructions, do you return to the starting point? Turn left. Turn right. Take 7 steps. Turn around. Take 7 steps. Turn right. Turn left. Turn right.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 206,
+        "question": "If you follow these instructions, do you return to the starting point? Take 8 steps. Take 9 steps. Turn right. Turn right. Take 8 steps. Take 9 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 207,
+        "question": "If you follow these instructions, do you return to the starting point? Take 6 steps. Turn around. Take 8 steps. Take 2 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 208,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 1 step left. Take 4 steps forward. Take 6 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 209,
+        "question": "If you follow these instructions, do you return to the starting point? Take 3 steps. Take 9 steps. Turn around. Take 2 steps. Take 7 steps. Take 3 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 210,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 1 step backward. Take 1 step backward. Take 1 step backward. Take 3 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 211,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 6 steps backward. Take 8 steps right. Take 1 step backward. Take 5 steps left. Take 2 steps left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 212,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 9 steps left. Take 10 steps left. Take 3 steps left. Take 1 step left. Take 3 steps backward. Take 6 steps left. Take 3 steps forward. Take 4 steps right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 213,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 4 steps left. Take 3 steps forward. Take 1 step right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 214,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 3 steps right. Take 1 step backward. Take 6 steps left. Take 1 step forward. Take 3 steps right.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 215,
+        "question": "If you follow these instructions, do you return to the starting point? Turn right. Turn right. Turn around. Turn left. Take 4 steps. Take 10 steps. Take 8 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 216,
+        "question": "If you follow these instructions, do you return to the starting point? Take 10 steps. Turn around. Take 9 steps. Take 10 steps. Turn around. Take 3 steps. Take 6 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 217,
+        "question": "If you follow these instructions, do you return to the starting point? Take 7 steps. Take 9 steps. Turn around. Turn right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 218,
+        "question": "If you follow these instructions, do you return to the starting point? Turn around. Take 1 step. Take 2 steps. Take 9 steps. Take 7 steps. Turn left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 219,
+        "question": "If you follow these instructions, do you return to the starting point? Turn right. Take 1 step. Take 7 steps. Take 1 step. Take 5 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 220,
+        "question": "If you follow these instructions, do you return to the starting point? Take 1 step. Take 1 step. Take 3 steps. Turn left. Take 6 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 221,
+        "question": "If you follow these instructions, do you return to the starting point? Take 5 steps. Take 3 steps. Take 2 steps. Turn around. Take 10 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 222,
+        "question": "If you follow these instructions, do you return to the starting point? Take 3 steps. Take 7 steps. Turn around. Take 10 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 223,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 7 steps left. Take 2 steps right. Take 5 steps backward. Take 8 steps left. Take 7 steps forward. Take 7 steps right. Take 9 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 224,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 7 steps backward. Take 9 steps left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 225,
+        "question": "If you follow these instructions, do you return to the starting point? Turn around. Take 4 steps. Turn around. Take 4 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 226,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 6 steps left. Take 6 steps right.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 227,
+        "question": "If you follow these instructions, do you return to the starting point? Turn right. Take 5 steps. Turn around. Take 5 steps. Turn around.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 228,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 2 steps backward. Take 3 steps backward. Take 3 steps backward. Take 8 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 229,
+        "question": "If you follow these instructions, do you return to the starting point? Take 3 steps. Take 10 steps. Take 4 steps. Take 1 step.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 230,
+        "question": "If you follow these instructions, do you return to the starting point? Take 9 steps. Turn around. Take 9 steps. Turn around.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 231,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps right. Take 7 steps backward. Take 3 steps left. Take 8 steps backward. Take 3 steps backward. Take 8 steps right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 232,
+        "question": "If you follow these instructions, do you return to the starting point? Take 7 steps. Turn around. Turn around. Turn around. Take 1 step. Take 6 steps.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 233,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 5 steps backward. Take 4 steps backward. Take 9 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 234,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 5 steps left. Take 1 step backward. Take 4 steps right. Take 1 step backward. Take 8 steps left. Take 6 steps left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 235,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 3 steps forward. Take 3 steps backward. Take 3 steps backward. Take 7 steps left. Take 7 steps right. Take 8 steps backward. Take 4 steps backward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 236,
+        "question": "If you follow these instructions, do you return to the starting point? Turn around. Take 2 steps. Take 8 steps. Turn around. Take 10 steps. Turn around.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 237,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 6 steps forward. Take 4 steps forward. Take 9 steps backward. Take 1 step backward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 238,
+        "question": "If you follow these instructions, do you return to the starting point? Take 5 steps. Take 5 steps. Take 7 steps. Take 10 steps.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 239,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 6 steps backward. Take 7 steps left. Take 4 steps backward. Take 8 steps backward. Take 3 steps left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 240,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 2 steps backward. Take 4 steps backward. Take 6 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 241,
+        "question": "If you follow these instructions, do you return to the starting point? Take 10 steps. Turn around. Turn right. Turn left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 242,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 7 steps left. Take 8 steps right. Take 10 steps backward. Take 4 steps left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 243,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 5 steps right. Take 4 steps backward. Take 8 steps left. Take 5 steps left. Take 6 steps backward. Take 9 steps forward. Take 5 steps right. Take 1 step forward. Take 3 steps right.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 244,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 6 steps right. Take 1 step forward. Take 4 steps right. Take 4 steps left. Take 8 steps left. Take 2 steps forward. Take 9 steps forward. Take 3 steps left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 245,
+        "question": "If you follow these instructions, do you return to the starting point? Turn left. Take 9 steps. Take 3 steps. Turn right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 246,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 6 steps right. Take 9 steps left. Take 5 steps left. Take 8 steps right.\nOptions:\n- Yes\n- No",
+        "answer": true
+    },
+    {
+        "id": 247,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 4 steps left. Take 5 steps backward. Take 2 steps forward.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 248,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 10 steps backward. Take 8 steps backward. Take 10 steps forward. Take 7 steps backward. Take 1 step forward. Take 7 steps right. Take 1 step left. Take 1 step right.\nOptions:\n- Yes\n- No",
+        "answer": false
+    },
+    {
+        "id": 249,
+        "question": "If you follow these instructions, do you return to the starting point? Always face forward. Take 7 steps backward. Take 10 steps right. Take 4 steps forward. Take 1 step left.\nOptions:\n- Yes\n- No",
+        "answer": false
+    }
+]
