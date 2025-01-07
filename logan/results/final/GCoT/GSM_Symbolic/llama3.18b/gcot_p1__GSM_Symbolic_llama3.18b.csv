@@ -1,0 +1,77 @@
+id,question,answer
+0,Sanjay saw a 60-foot dolphin with 16 12-inch remoras attached to it. But a quarter of the remoras go away. What percentage of the dolphin's body length is the combined length of the remaining remoras?,"**Reformatted Question:** 
+Given a 60-foot dolphin with 16 12-inch remoras attached to it, a quarter of the remoras go away. What percentage of the dolphin's body length is the combined length of the remaining remoras?
+
+**Answer:** 
+
+To find the percentage of the dolphin's body length that is the combined length of the remaining remoras, we first need to find the combined length of the remaining remoras. 
+
+Initially, there are 16 remoras, each 12 inches long. So, the combined length of all the remoras is 16 * 12 = 192 inches.
+
+Since a quarter of the remoras go away, the number of remaining remoras is 16 - (16 / 4) = 12.
+
+The combined length of the remaining remoras is 12 * 12 = 144 inches.
+
+Now, we need to convert the combined length of the remaining remoras from inches to feet. Since 1 foot = 12 inches, the combined length of the remaining remoras in feet is 144 / 12 = 12 feet.
+
+The percentage of the dolphin's body length that is the combined length of the remaining remoras is (12 / 60) * 100 = 20%."
+1,Tara saw a 70-foot dolphin with 14 12-inch remoras attached to it. But half of the remoras go away. What percentage of the dolphin's body length is the combined length of the remaining remoras?,"**Reformatted Question:** 
+Given a dolphin with a length of 70 feet and 14 remoras attached to it, each with a length of 12 inches, what percentage of the dolphin's body length is the combined length of the remaining remoras after half of them go away?
+
+**Answer:** 
+
+To find the combined length of the remaining remoras, we first need to find the total length of all the remoras and then divide it by 2 since half of them go away.
+
+The total length of all the remoras is 14 * 12 inches = 168 inches.
+
+Since there are 12 inches in a foot, we can convert the total length of the remoras from inches to feet: 168 inches / 12 = 14 feet.
+
+After half of the remoras go away, the remaining remoras have a total length of 14 / 2 = 7 feet.
+
+The percentage of the dolphin's body length that is the combined length of the remaining remoras is (7 / 70) * 100% ≈ 10%."
+2,Liam saw a 50-foot shark with 12 15-inch remoras attached to it. But 1/3 of the remoras go away. What percentage of the shark's body length is the combined length of the remaining remoras?,"**Reformatted Question:**
+Given a shark with a length of 50 feet, having 12 remoras attached to it, each with a length of 15 inches, and 1/3 of the remoras go away, what percentage of the shark's body length is the combined length of the remaining remoras?
+
+**Answer:**
+
+To find the combined length of the remaining remoras, we first need to find the total length of all remoras and then subtract the length of the remoras that went away.
+
+1. Total length of all remoras: 
+   Since there are 12 remoras, each with a length of 15 inches, the total length is 12 * 15 = 180 inches.
+
+2. Convert the total length of all remoras to feet:
+   Since 1 foot = 12 inches, 180 inches = 180 / 12 = 15 feet.
+
+3. Find the number of remoras that went away:
+   1/3 of the remoras went away, so the number of remoras that went away is 12 * (1/3) = 4.
+
+4. Find the number of remaining remoras:
+   The number of remaining remoras is 12 - 4 = 8.
+
+5. Find the combined length of the remaining remoras:
+   Since there are 8 remoras, each with a length of 15 inches, the combined length is 8 * 15 = 120 inches.
+
+6. Convert the combined length of the remaining remoras to feet:
+   Since 1 foot = 12 inches, 120 inches = 120 / 12 = 10 feet.
+
+7. Find the percentage of the shark's body length that is the combined length of the remaining remoras:
+   The percentage is (10 / 50) * 100 = 20%.
+
+Therefore, the combined length of the remaining remoras is 20% of the shark's body length."
+3,"A fog bank rolls in from the ocean to cover a city. It takes 64 minutes to cover every 2 miles of the city. If the city is 80 miles across from the oceanfront to the opposite inland edge, how many minutes will it take for the fog bank to cover a tenth of the city?","**Reformatted Question:**
+A fog bank rolls in from the ocean to cover a city. It takes 64 minutes to cover every 2 miles of the city. If the city is 80 miles across from the oceanfront to the opposite inland edge, how many minutes will it take for the fog bank to cover a tenth of the city?
+
+**Key Phrases:**
+- fog bank
+- city
+- 64 minutes
+- 2 miles
+- 80 miles
+- a tenth of the city
+
+**Answer:**
+To find the time it takes for the fog bank to cover a tenth of the city, we need to first determine the distance that a tenth of the city covers. Since the city is 80 miles across, a tenth of the city is 80 / 10 = 8 miles.
+
+According to the given information, it takes 64 minutes to cover every 2 miles of the city. To find the time it takes to cover 8 miles, we need to divide 8 by 2, which equals 4. Then, we multiply the result by 64 minutes, which gives us 4 * 64 = 256 minutes.
+
+Therefore, it will take the fog bank 256 minutes to cover a tenth of the city."
