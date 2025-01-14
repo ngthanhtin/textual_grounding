@@ -1,0 +1,22 @@
+id,question,gt,isTrue,isTagged,dataset,unique_id,question_len
+7,"Reformatted Question: A farmer is buying feed for his cows. He buys <fact1>eight 3-pound boxes of apples</fact1> for the whole stable. He buys <fact2>fourteen 9-pound bags of cucumbers</fact2>. He buys <fact3>thirty-three 36-pound packs of wheats</fact3>. He buys <fact4>seventeen 16-pound sacks of oats</fact4>.  <fact5>His farm truck can carry 230 pounds at a time</fact5>. How many trips does the farmer need to transport all the feed?
+
+Answer: First, let's calculate the total weight of each type of feed:
+
+* **Apples:** <fact1>eight 3-pound boxes</fact1> = 8 * 3 = 24 pounds
+* **Cucumbers:** <fact2>fourteen 9-pound bags</fact2> = 14 * 9 = 126 pounds
+* **Wheats:** <fact3>thirty-three 36-pound packs</fact3> = 33 * 36 = 1188 pounds
+* **Oats:** <fact4>seventeen 16-pound sacks</fact4> = 17 * 16 = 272 pounds
+
+Now, let's find the total weight of all the feed: 24 + 126 + 1188 + 272 = 1610 pounds.
+
+Since <fact5>his farm truck can carry 230 pounds at a time</fact5>, we need to divide the total weight by the truck's capacity to determine the number of trips: 1610 pounds / 230 pounds/trip = 7.0 trips.
+
+Because we can't make a partial trip, the farmer needs to make a total of 8 trips to transport all the feed.
+
+Therefore, the answer is {8}.
+",7,0,1,p2,359,1246
+22,"Reformatted Question: Amelia was preparing for a lunch party at her house, where she intended to serve <fact1>beef stew</fact1>. She noticed that she was out of plastic plates, so she <fact2>bought a new package of plates</fact2>. Later, her husband also <fact3>bought a package of 5 new plates</fact3> and gave them to Amelia. While Amelia was making the <fact1>beef stew</fact1>, she <fact4>used five of the plates to sample her beef stew</fact4>. Later, when she went to set the table, she <fact5>had a total of 24 plates</fact5>. How many plates were in the package that Amelia bought?
+
+Answer:  Amelia ended up with a total of <fact5>24 plates</fact5>. Her husband gave her <fact3>5 plates</fact3>.  She used <fact4>5 plates</fact4> for sampling her beef stew.  Therefore, before using the plates for sampling, she had 24 + 5 = 29 plates. Since she bought a package of plates <fact2>before her husband gave her plates</fact2>, the number of plates in the package she originally bought was 29 plates. The answer is {29}.
+",24,0,1,p2,1145,1025

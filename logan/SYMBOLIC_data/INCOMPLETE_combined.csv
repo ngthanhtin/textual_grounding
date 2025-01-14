@@ -1,0 +1,137 @@
+id,question,gt,isTrue,isTagged,dataset,unique_id,question_len
+70,"Reformatted Question: A carpenter works for <fact1>3 weeks every month</fact1> and for <fact2>6 days every week</fact2>. If he gets paid <fact3>¥50 every day</fact3>, how much does he earn if he works for <fact4>a year</fact4>?
+
+Answer: Since the carpenter works for <fact1>3 weeks every month</fact1> and there are approximately 4 weeks in a month, he works for approximately 3/4 of the month. Since he works for <fact2>6 days every week</fact2> and there are 7 days in a week, he works for 6/7 of the week. Since there are 52 weeks in <fact4>a year</fact4>, he works for approximately (3/4) * (6/7) * 52 = 3 * 6 * 52 / (4 * 7) = 3 * 6 * 13 * 4 / 7 = 936 / 7 * 3 = 36 * 13 * 3 / 7 * 3 = 36 * 13 = 468 days in a year. Since he gets paid <fact3>¥50 every day</fact3>, he earns 468 * <fact3>50</fact3> = ¥23400 in a year.
+The answer is {23400}.",10800.0,0,1,p2,3520,842
+70,"Reformatted Question: A plumber works for <fact1>3 weeks every month</fact1> and for <fact2>6 days every week</fact2>. If he gets paid <fact3>$180 every day</fact3>, how much does he earn if he works for <fact4>a year</fact4>?
+
+Answer: Since the plumber works for <fact1>3 weeks every month</fact1> and there are approximately 4 weeks in a month, he works for approximately 3/4 of the month. Since he works for <fact2>6 days every week</fact2> and there are 7 days in a week, he works for 6/7 of the week. Since there are 52 weeks in <fact4>a year</fact4>, the plumber works for approximately (3/4) * (6/7) * 52 = 3 * 6 * 13/7 = 234/7 * 6 = 1404/7 = 200.57 weeks, or approximately 200.57 * (6/7) * 7 = 200.57 * 6 = 1203.42 days, in a year. Since he gets paid <fact3>$180 every day</fact3>, he earns approximately 1203.42 * 180 = 216,615.6 or $216,616 per year (rounding up from 216,615.6 to 216,616).",38880.0,0,1,p2,3543,900
+83,"Reformatted Question: The Williams family is busy making cupcakes. So far, <fact1>they've made 6075 cupcakes</fact1>. They have <fact2>1833 vanilla cupcakes</fact2>, <fact3>2596 blueberry cupcakes</fact3>, and some peanut butter cupcakes. How many peanut butter cupcakes have they made?
+
+Answer: To find the number of peanut butter cupcakes, we need to subtract the number of vanilla and blueberry cupcakes from the total number of cupcakes. The number of vanilla and blueberry cupcakes is <fact2>1833</fact2> + <fact3>2596</fact3> = 4430. Subtracting this from the total number of cupcakes, we get <fact1>6075</fact1> - 4430 = 1645. Therefore, the Williams family has made 1645 peanut butter cupcakes.
+The answer is {1645}.",1646.0,0,1,p2,4179,724
+83,"Reformatted Question: The Johnson family is busy making muffins. So far, <fact1>they've made 6900 muffins</fact1>. They have <fact2>2066 blueberry muffins</fact2>, <fact3>1753 lemon muffins</fact3>, and some strawberry muffins. How many strawberry muffins have they made?
+
+Answer: To find the number of strawberry muffins, we need to subtract the number of blueberry and lemon muffins from the total number of muffins. The number of blueberry and lemon muffins is <fact2>2066</fact2> + <fact3>1753</fact3> = 3820. Subtracting this from the total number of muffins, we get <fact1>6900</fact1> - 3820 = 3080 strawberry muffins.
+The answer is {3080}.",3081.0,0,1,p2,4183,647
+89,"Reformatted Question: Luis hires a boat from <fact1>4 PM to 10 PM</fact1>. He gets <fact2>2 hours free</fact2>. The <fact3>first paid hour is ₺12</fact3> and each hour after that is <fact4>twice the cost</fact4>. How much did he pay?
+
+Answer: Luis hires the boat for <fact1>6 hours</fact1>. Since he gets <fact2>2 hours free</fact2>, he has to pay for 6 - 2 = 4 hours. The <fact3>first paid hour is ₺12</fact3>. Each hour after that is <fact4>twice the cost</fact4>, so the second paid hour is ₺12 * 2 = ₺24, the third paid hour is ₺24 * 2 = ₺48, and the fourth paid hour is ₺48 * 2 = ₺96. Therefore, the total amount Luis paid is ₺12 + ₺24 + ₺48 + ₺96 = ₺180.
+The answer is {180}.",84.0,0,1,p2,4478,681
+14,"Reformatted Question: Leilani and Mateo have <fact1>192 minutes</fact1> to walk to the mall together starting from their home. It takes them <fact2>13 minutes</fact2> to get to the corner where the gym is. It takes them another <fact3>42 minutes</fact3> to get to the library. When they reach the library, they remember they forgot their wallets at home, so they have to return to pick up their wallets and then walk all the way back to the library again. Once they reach the library for the second time, how much longer do they have to get to the mall without being late?
+
+Answer: It takes them <fact2>13 minutes</fact2> + <fact3>42 minutes</fact3> = 55 minutes to get to the library. Since they have to return home and then walk back to the library, they spend 55 * 2 = 110 minutes walking to the library and back. They have <fact1>192 minutes</fact1> - 110 minutes = 82 minutes left to get to the mall without being late.
+The answer is {82}.",27.0,0,1,p2,644,944
+14,"Reformatted Question: Valeria and Luis have <fact1>182 minutes</fact1> to walk to the library together starting from their home. It takes them <fact2>12 minutes</fact2> to get to the corner where the park is. It takes them another <fact3>12 minutes</fact3> to get to the grocery store. When they reach the grocery store, they remember they forgot their wallets at home, so they have to return to pick up their wallets and then walk all the way back to the grocery store again. Once they reach the grocery store for the second time, how much longer do they have to get to the library without being late?
+
+Answer: To get to the grocery store, it takes Valeria and Luis <fact2>12 minutes</fact2> + <fact3>12 minutes</fact3> = 24 minutes. 
+Since they have to return home and then go back to the grocery store, they spend 24 * 2 = 48 minutes to get to the grocery store and back home and then get back to the grocery store again. 
+So far, they have spent 48 minutes, and they have <fact1>182 minutes</fact1> - 48 minutes = 134 minutes left to get to the library without being late.
+The answer is {134}.",110.0,0,1,p2,656,1097
+1,"Reformatted Question: A fog bank rolls in from the ocean to cover a city. <fact1>It takes 241 minutes to cover every 5 miles of the city</fact1>. If <fact2>the city is 85 miles across from the oceanfront to the opposite inland edge</fact2>, how many minutes will it take for the fog bank to cover the whole city?
+
+Answer: To find the total time it will take for the fog bank to cover the whole city, we need to divide the total distance across the city by the distance covered in the given time and then multiply by the given time. The total distance across the city is <fact2>85 miles</fact2> and the distance covered in the given time is <fact1>5 miles</fact1>. So, the number of times the given distance fits into the total distance is <fact2>85</fact2>/<fact1>5</fact1> = 17. Now, we multiply this by the given time, which is <fact1>241 minutes</fact1>. Therefore, the total time it will take for the fog bank to cover the whole city is 17 * <fact1>241 minutes</fact1> = 4100 minutes, but since 85 is not perfectly divisible by 5, we should calculate the remaining distance and add the time it takes to cover that distance. The remaining distance is 85 - (17 * 5) = 0 miles, so we don't need to add any extra time.",4097.0,0,1,p2,99,1218
+2,"Reformatted Question: Hiroshi is rolling a <fact1>d10 die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 2</fact2> than that he rolls <fact3>two odd numbers in a row</fact3>?
+
+Answer: The probability of rolling a <fact2>number greater than 2</fact2> on a <fact1>d10 die</fact1> is 7/10, since there are 7 numbers greater than 2 (3, 4, 5, 6, 7, 8, 9, 10) out of a total of 10 possible outcomes.
+
+The probability of rolling <fact3>two odd numbers in a row</fact3> is (5/10) * (5/10) = 25/100, since there are 5 odd numbers (1, 3, 5, 7, 9) out of a total of 10 possible outcomes, and the probability of rolling an odd number twice in a row is the product of the individual probabilities.
+
+To find the difference in probability, subtract the probability of rolling two odd numbers in a row from the probability of rolling a number greater than 2: (7/10) - (25/100) = (70/100) - (25/100) = 45/100.
+
+To express this difference as a percentage, multiply by 100: (45/100) * 100 = 45%.
+
+The answer is {45}.",55.0,0,1,p2,102,1057
+35,"Reformatted Question: Ravi is raising money for a conference. He has applied for help from the local charity, which has decided to cover <fact1>half of the cost of the conference</fact1>. How much money is Ravi missing if he has <fact2>₣195</fact2> and the conference costs <fact3>₣980</fact3>?
+
+Answer: The charity will cover <fact1>half of the cost of the conference</fact1>, which is <fact3>₣980</fact3>/2 = ₣490. Ravi has <fact2>₣195</fact2>, so he is missing ₣490 + ₣195 = ₣685.",295.0,0,1,p2,1752,483
+35,"Reformatted Question: Arash is raising money for a music festival. He has applied for help from the <fact1>youth club, which has decided to cover 1/5 of the cost of the music festival</fact1>. How much money is Arash missing if he has <fact2>¥90</fact2> and the music festival costs <fact3>¥420</fact3>?
+
+Answer: The youth club will cover <fact1>1/5</fact1> of the cost of the music festival, which is <fact1>1/5</fact1> * <fact3>¥420</fact3> = ¥84. Arash has <fact2>¥90</fact2>, so he has ¥90 - ¥84 = ¥6 more than the amount covered by the youth club. Since the music festival costs ¥420, Arash is missing ¥420 - ¥90 = ¥330.",246.0,0,1,p2,1755,625
+35,"Reformatted Question: Jin is raising money for a conference. He has applied for help from the local charity, which has decided to cover <fact1>half of the cost of the conference</fact1>. How much money is Jin missing if he has <fact2>₣110</fact2> and the conference costs <fact3>₣980</fact3>?
+
+Answer: The charity will cover <fact1>half of the cost of the conference</fact1>, which is <fact3>₣980</fact3>/2 = ₣490. Jin has <fact2>₣110</fact2>, so he is missing ₣490 + ₣110 = ₣600.",380.0,0,1,p2,1787,480
+44,"Reformatted Question: There are <fact1>45 girls</fact1> in the park. If there are <fact2>two-sixths the number of boys</fact2> in the park, how many kids are in the park?
+
+Answer: To find the number of boys, we need to calculate two-sixths of the number of girls. Two-sixths is equivalent to one-third, so we can calculate the number of boys as <fact1>45</fact1> / 3 = 15. Since there are two-sixths the number of boys, we multiply 15 by 2 to get 30 boys. Therefore, the total number of kids in the park is <fact1>45 girls</fact1> + 30 boys = 75 kids.",60.0,0,1,p2,2245,551
+70,"Reformatted Question: A plumber works for <fact1>3 weeks every month</fact1> and for <fact2>6 days every week</fact2>. If he gets paid <fact3>$110 every day</fact3>, how much does he earn if he works for a year?
+
+Answer: The plumber works <fact2>6 days every week</fact2> and there are approximately 4 weeks in a month, so he works <fact2>6</fact2> * <fact1>3</fact1> * 4 = 72 days in a 4-week month. However, since the question asks about a year, we should use 52 weeks in a year. So, he works <fact2>6</fact2> * <fact1>3</fact1> * 52/4 = 6 * 3 * 13 = 234 days in a year. He earns <fact3>$110 every day</fact3>, so he earns <fact3>$110</fact3> * 234 = $25,740 in a year.
+The answer is {25740}.",23760.0,0,1,p2,3548,694
+6,"Reformatted Question: <fact1>Umar has 70 square meters of banana field</fact1>. <fact2>There are 31 bananas per square meter</fact2>. <fact3>Umar can harvest his bananas every 4 months</fact3>. How many bananas can <fact4>Umar harvest within a year</fact4>?
+Answer: Since Umar can harvest his bananas every <fact3>4 months</fact3>, he can harvest bananas <fact3>4</fact3> times a year. Each time he harvests, he gets <fact2>31 bananas per square meter</fact2> * <fact1>70 square meters</fact1> = 2170 bananas. Therefore, Umar can harvest a total of <fact3>4</fact3> * 2170 = 8680 bananas within a year.",6510.0,0,1,p2,326,602
+6,"Reformatted Question: <fact1>Hiroshi has 20 square yards of banana field</fact1>. <fact2>There are 50 bananas per square yard</fact2>. <fact3>Hiroshi can harvest his bananas every 2 months</fact3>. How many bananas can <fact4>Hiroshi harvest within a year</fact4>?
+Answer: Since Hiroshi can harvest his bananas every <fact3>2 months</fact3>, he can harvest <fact3>2</fact3> times per year. 
+Each time he harvests, he gets <fact1>20</fact1> * <fact2>50</fact2> = 1000 bananas. 
+Therefore, Hiroshi can harvest a total of <fact3>2</fact3> * 1000 = 2000 bananas within a year.",6000.0,0,1,p2,338,572
+10,"Reformatted Question: To make a call from a hotel room phone, you must pay <fact1>€0.6 for each minute of your call</fact1>. After <fact2>30 minutes</fact2>, that price drops to <fact3>€0.5 per minute</fact3>. How much would a <fact4>96-minute call</fact4> cost?
+
+Answer: The call is <fact4>96 minutes</fact4> long, which is longer than <fact2>30 minutes</fact2>. Therefore, the entire call will be charged at the rate of <fact3>€0.5 per minute</fact3>. The cost of the call is <fact3>€0.5</fact3> * <fact4>96</fact4> = <fact5>€48</fact5>.",51.0,0,1,p2,504,539
+14,"Reformatted Question: Mei and Diego have <fact1>97 minutes</fact1> to walk to the cinema together. <fact2>It takes them 27 minutes to get to the corner where the mall is</fact2>. <fact3>It takes them another 61 minutes to get to the bank</fact3>. How much longer do they have to get to cinema without being late?
+Answer: To find out how much longer Mei and Diego have to get to the cinema without being late, we need to subtract the time it takes them to get to the bank from the total time they have to walk to the cinema together. 
+
+<fact1>97 minutes</fact1> is the total time they have to walk to the cinema together. 
+<fact2>27 minutes</fact2> is the time it takes them to get to the corner where the mall is, but this time is not relevant to the calculation.
+<fact3>61 minutes</fact3> is the time it takes them to get to the bank. 
+
+So, we subtract <fact3>61 minutes</fact3> from <fact1>97 minutes</fact1> to find out how much longer Mei and Diego have to get to the cinema without being late. 
+<fact1>97 minutes</fact1> - <fact3>61 minutes</fact3> = <fact4>36 minutes</fact4> 
+
+Therefore, Mei and Diego have 36 minutes to get to the cinema without being late.",9.0,0,1,p2,746,1165
+14,"Reformatted Question: <fact1>Liam and Camila have 126 minutes to walk to the mall together</fact1>. It takes them <fact2>26 minutes to get to the corner where the cinema is</fact2> and <fact3>another 54 minutes to get to the bank</fact3>. How much longer do they have to get to mall without being late?
+Answer: To find out how much longer they have to get to the mall, we need to subtract the time it takes them to get to the corner and the bank from the total time they have. This can be calculated as <fact1>126 minutes</fact1> - <fact2>26 minutes</fact2> - <fact3>54 minutes</fact3> = <fact1>126</fact1>/<fact2>26</fact2> - <fact2>26</fact2> - <fact3>54</fact3> = 100 - 26 - 54 = 20 minutes.",46.0,0,1,p2,749,694
+18,"Reformatted Question: <fact1>Mateo went to buy some school supplies</fact1>. He <fact2>bought 6 pencils</fact2> which <fact3>cost $5.0 each</fact3>, <fact4>8 markers</fact4> which <fact5>cost $16.75 each</fact5>, and a <fact6>rim of bond paper</fact6> which <fact7>cost $13</fact7>. How much did <fact8>Mateo spend on everything</fact8>?
+Answer: To find out how much Mateo spent on everything, we need to calculate the total cost of the pencils, markers, and bond paper. First, we find the total cost of the pencils: <fact2>6 pencils</fact2> * <fact3>$5.0 each</fact3> = $30. Next, we find the total cost of the markers: <fact4>8 markers</fact4> * <fact5>$16.75 each</fact5> = $133.80. Then, we add the cost of the bond paper: $133.80 + <fact7>$13</fact7> = $146.80. Therefore, Mateo spent a total of $146.80 on everything.
+
+The answer is {146.80}.",177.0,0,1,p2,906,848
+22,"Reformatted Question: Ananya was preparing for a lunch party at her house, where she intended to serve <fact1>shrimp scampi</fact1>. She noticed that she was out of <fact2>plastic plates</fact2>, so she bought a new package of plates. Later, her husband also bought a package of <fact3>17 new plates</fact3> and gave them to Ananya. While Ananya was making the <fact4>shrimp scampi</fact4>, she used <fact5>seven of the plates</fact5> to sample her <fact4>shrimp scampi</fact4>. Later, when she went to set the table, she had a total of <fact6>31 plates</fact6>. How many plates were in the package that Ananya bought?
+
+Answer: Ananya had a total of <fact6>31</fact6> plates at the end. She used <fact5>7</fact5> of the plates to sample her <fact4>shrimp scampi</fact4>. So, the number of plates she had left is <fact6>31</fact6> - <fact5>7</fact5> = 24 plates.
+She got <fact3>17 new plates</fact3> from her husband. So, the number of plates she bought originally is 24 - 17 = 7 plates.
+The answer is {7}.",21.0,0,1,p2,1108,1005
+22,"Reformatted Question: Fatima was preparing for a birthday party at her house, where she intended to serve <fact1>shrimp scampi</fact1>. She noticed that she was out of <fact2>plastic spoons</fact2>, so she bought a new package of spoons. Later, her husband also bought a package of <fact3>8 new spoons</fact3> and gave them to Fatima. While Fatima was making the <fact4>shrimp scampi</fact4>, she used <fact5>ten of the spoons</fact5> to sample her <fact4>shrimp scampi</fact4>. Later, when she went to set the table, she had a total of <fact6>27 spoons</fact6>. How many spoons were in the package that Fatima bought?
+Answer: Fatima initially had <fact6>27 spoons</fact6> after using <fact5>10 spoons</fact5> to sample her <fact4>shrimp scampi</fact4>. This means she had <fact6>27</fact6> + <fact5>10</fact5> = 37 spoons in total before using any spoons. Her husband gave her <fact3>8 spoons</fact3>, so before using any spoons, she had <fact3>8</fact3> + <fact6>27</fact6> = 35 spoons. This means that the package that Fatima bought initially had <fact6>35</fact6> - <fact6>27</fact6> = 8 spoons.",29.0,0,1,p2,1113,1099
+26,"Reformatted Question: A grandfather eats <fact1>7 burritos per day</fact1>, his partner eats <fact2>7 burritos per day</fact2>, and their son eats <fact3>7 burritos per day</fact3>. How many burritos does this family eat in <fact4>one week</fact4>?
+Answer: Since there are <fact4>7 days</fact4> in a week, the family eats <fact1>7 burritos per day</fact1> * <fact4>7 days</fact4> = 49 burritos per week.",147.0,0,1,p2,1342,403
+28,"Reformatted Question: A medical center has a capacity of <fact1>1600 wards</fact1> with <fact2>1/10 occupied</fact2>. Due to the major accident, <fact3>35 patients are admitted into the medical center each day</fact3>. Calculate the total number of unoccupied wards in the medical center after <fact4>4 weeks</fact4>.
+Answer: Since the medical center has <fact1>1600 wards</fact1> and <fact2>1/10</fact2> of them are occupied, the number of occupied wards is <fact1>1600</fact1> * <fact2>1/10</fact2> = 160 wards. The number of unoccupied wards is <fact1>1600</fact1> - 160 = 1440 wards. 
+
+Since <fact3>35 patients are admitted into the medical center each day</fact3>, the number of patients admitted in <fact4>4 weeks</fact4> is <fact3>35</fact3> * 7 * 4 = 980 patients. 
+
+However, since the medical center has a capacity of <fact1>1600 wards</fact1> and only <fact2>1/10</fact2> of them are occupied, the medical center can accommodate more than 160 patients. Therefore, the medical center will not run out of space after 4 weeks, and the number of unoccupied wards remains the same, which is 1440 wards.
+
+The answer is {1440}.",460.0,0,1,p2,1449,1130
+39,"Reformatted Question: A cleaner has to clean a hospital with <fact1>160 rooms</fact1>. They have <fact2>8 days</fact2> to get it done. It takes them <fact3>15 minutes per room</fact3>. If they work <fact4>10 hours each day</fact4>, what percentage of their day, on average, is spent cleaning rooms?
+Answer: The cleaner has <fact2>8 days</fact2> to clean <fact1>160 rooms</fact1>. Since it takes them <fact3>15 minutes per room</fact3>, they will need <fact1>160</fact1> * <fact3>15</fact3> = 2400 minutes to clean all the rooms.
+Since they work <fact4>10 hours each day</fact4>, they work <fact4>10</fact4> * 60 = 600 minutes per day.
+To find the percentage of their day spent cleaning rooms, we need to divide the total minutes spent cleaning rooms by the total minutes worked per day and multiply by 100. This gives us (2400 / 600) * 100 = 400%.
+The answer is {400}.",50.0,0,1,p2,1954,868
+39,"Reformatted Question: A maintenance worker has to clean a university with <fact1>135 rooms</fact1>. They have <fact2>5 days</fact2> to get it done. It takes them <fact3>20 minutes per room</fact3>. If they work <fact4>10 hours each day</fact4>, what percentage of their day, on average, is spent cleaning rooms?
+
+Answer: The total number of minutes they have to work each day is <fact4>10 hours</fact4> * 60 minutes per hour = 600 minutes.
+The total number of minutes they spend cleaning rooms each day is <fact1>135 rooms</fact1> * <fact3>20 minutes per room</fact3> = 2700 minutes.
+The percentage of their day spent cleaning rooms is (<fact3>2700 minutes</fact3> / <fact4>600 minutes</fact4>) * 100% = 450%.
+The answer is {450}.",90.0,0,1,p2,1963,730
+41,"Reformatted Question: A stack is made out of <fact1>2 green tiles</fact1>, <fact2>seven times as many orange tiles</fact2>, and an unknown number of <fact3>black tiles</fact3>. If there are <fact4>46 tiles in the total</fact4>, how many <fact5>black tiles</fact5> are there?
+Answer: Let's denote the number of orange tiles as <fact2>7x</fact2>, where x is a positive integer. The total number of tiles in the stack is the sum of the green tiles, orange tiles, and black tiles. We can write an equation to represent this: <fact1>2</fact1> + <fact2>7x</fact2> + <fact5>black tiles</fact5> = <fact4>46</fact4>. Since we don't know the number of black tiles, we can represent it as <fact5>black tiles</fact5> = <fact4>46</fact4> - <fact1>2</fact1> - <fact2>7x</fact2>. We can simplify this expression to <fact5>black tiles</fact5> = <fact4>44</fact4> - <fact2>7x</fact2>. Since the number of black tiles must be a non-negative integer, we can set up the inequality <fact4>44</fact4> - <fact2>7x</fact2> ≥ 0. Solving for x, we get x ≤ <fact4>44</fact4> / <fact2>7</fact2> ≈ 6.29. Since x must be a positive integer, the largest possible value of x is 6. Substituting x = 6 into the expression for the number of black tiles, we get <fact5>black tiles</fact5> = <fact4>44</fact4> - <fact2>7</fact2> * <fact6>6</fact6> = <fact4>44</fact4> - <fact7>42</fact7> = <fact8>2</fact8>. Therefore, there are 2 black tiles in the stack.",30.0,0,1,p2,2063,1419
+42,"Reformatted Question: Arash goes to the store to buy some rice. <fact1>The normal brand of rice he buys costs €5 per kg</fact1>. He had to buy a more expensive brand that costs <fact2>40% more</fact2> since his favorite brand was sold out. He decides to buy a week's worth of rice and he uses <fact3>2 kg of rice per day</fact3>. He also decided to buy himself a bagel for <fact4>€2</fact4>. How much did everything cost?
+Answer: First, we need to find out how much the more expensive brand of rice costs. To do this, we need to find 40% of the normal brand's price and add it to the normal brand's price. 40% of <fact1>€5</fact1> is <fact2>40%</fact2> * <fact1>€5</fact1> = <fact2>40%</fact2> * <fact1>€5</fact1> / <fact5>100%</fact5> = €2. So, the more expensive brand of rice costs <fact1>€5</fact1> + <fact2>€2</fact2> = €7 per kg. Arash needs <fact3>2 kg of rice per day</fact3> for a week, so he needs <fact3>2 kg</fact3> * <fact4>7 days</fact4> = 14 kg of rice. The normal brand of rice would cost <fact1>€5</fact1> * <fact6>14 kg</fact6> = €70. The more expensive brand of rice would cost <fact2>€7</fact2> * <fact6>14 kg</fact6> = €98. So, the total cost of the rice is €70 + €98 = €168. Finally, Arash also bought a bagel for <fact4>€2</fact4>, so the total cost of everything is €168 + €2 = €170.",100.0,0,1,p2,2126,1307
+44,"Reformatted Question: There are <fact1>44 girls in the field</fact1>. If there are <fact2>1/4 the number of boys in the field</fact2>, how many kids are in the field?
+Answer: Since there are <fact2>1/4 the number of boys in the field</fact2> as there are girls, there must be <fact1>44</fact1> * <fact2>4</fact2> = 176 boys in the field. To find the total number of kids, we need to add the number of girls and the number of boys. So, the total number of kids is <fact1>44</fact1> + <fact2>176</fact2> = 220 kids.",55.0,0,1,p2,2237,513
+7,"Reformatted Question: A farmer is buying feed for his cows. He buys <fact1>eight 3-pound boxes of apples</fact1> for the whole stable. He buys <fact2>fourteen 9-pound bags of cucumbers</fact2>. He buys <fact3>thirty-three 36-pound packs of wheats</fact3>. He buys <fact4>seventeen 16-pound sacks of oats</fact4>.  <fact5>His farm truck can carry 230 pounds at a time</fact5>. How many trips does the farmer need to transport all the feed?
+
+Answer: First, let's calculate the total weight of each type of feed:
+
+* **Apples:** <fact1>eight 3-pound boxes</fact1> = 8 * 3 = 24 pounds
+* **Cucumbers:** <fact2>fourteen 9-pound bags</fact2> = 14 * 9 = 126 pounds
+* **Wheats:** <fact3>thirty-three 36-pound packs</fact3> = 33 * 36 = 1188 pounds
+* **Oats:** <fact4>seventeen 16-pound sacks</fact4> = 17 * 16 = 272 pounds
+
+Now, let's find the total weight of all the feed: 24 + 126 + 1188 + 272 = 1610 pounds.
+
+Since <fact5>his farm truck can carry 230 pounds at a time</fact5>, we need to divide the total weight by the truck's capacity to determine the number of trips: 1610 pounds / 230 pounds/trip = 7.0 trips.
+
+Because we can't make a partial trip, the farmer needs to make a total of 8 trips to transport all the feed.
+
+Therefore, the answer is {8}.
+",7.0,0,1,p2,359,1246

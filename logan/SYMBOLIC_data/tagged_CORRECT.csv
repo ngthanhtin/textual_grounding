@@ -1,0 +1,164 @@
+id,question,gt,isTrue,isTagged,dataset,unique_id,question_len
+47,"Reformatted Question: Yuki hid <fact1>5 dozen eggs</fact1> in the yard for the Easter egg hunt. <fact2>Gabriel finds 5 eggs</fact2>. <fact3>Sophia finds two times as many as Gabriel</fact3>. <fact4>Ali finds 4 less than Sophia</fact4>, and <fact5>Esteban finds a third as many as Ali</fact5>. How many eggs are still hidden in the yard?
+
+Answer: First, we need to find out how many eggs were hidden in total. Since <fact1>5 dozen eggs</fact1> were hidden, and 1 dozen equals 12, then 5 x 12 = 60 eggs were hidden.
+
+Next, we need to find out how many eggs each person found. We know that <fact2>Gabriel finds 5 eggs</fact2>. Since <fact3>Sophia finds two times as many as Gabriel</fact3>, then Sophia found 2 x 5 = 10 eggs.
+
+Since <fact4>Ali finds 4 less than Sophia</fact4>, then Ali found 10 - 4 = 6 eggs.
+
+Finally, since <fact5>Esteban finds a third as many as Ali</fact5>, then Esteban found 6 / 3 = 2 eggs.
+
+Now, we can add up all the eggs that were found: 5 (Gabriel) + 10 (Sophia) + 6 (Ali) + 2 (Esteban) = 23 eggs.
+
+To find out how many eggs are still hidden, we subtract the number of eggs found from the total number of eggs hidden: 60 - 23 = 37 eggs.
+
+The answer is {37}.",37,1,1,p2,2360,1181
+31,"Reformatted Question: Amelia and Tara are currently <fact1>22 years apart in age</fact1>. If <fact2>Amelia, who is younger than Tara, is 37 years old</fact2>, what's the average of their ages?
+
+Answer: Since <fact2>Amelia is 37 years old</fact2> and <fact1>22 years apart in age</fact1> from Tara, Tara must be 37 + <fact1>22</fact1> = 59 years old. To find the average of their ages, we add their ages together and divide by 2. The sum of their ages is 37 + 59 = 96. Dividing by 2, we get 96 / 2 = 48. Therefore, the average of their ages is 48.
+The answer is {48}.",48,1,1,p2,1564,566
+48,"Reformatted Question: Ava can <fact1>peel 10 shrimps a minute</fact1> and <fact2>saute 20 shrimps in 18 minutes</fact2>. How long will it take her to <fact3>peel and saute 100 shrimps</fact3>?
+
+Answer: To peel 100 shrimps, it will take Ava <fact3>100 shrimps</fact3> / <fact1>10 shrimps per minute</fact1> = 10 minutes. To saute 100 shrimps, it will take Ava (<fact2>18 minutes</fact2> / <fact2>20 shrimps</fact2>) * <fact3>100 shrimps</fact3> = (18/20) * 100 = 90 minutes. So, the total time it will take Ava to peel and saute 100 shrimps is 10 + 90 = 100 minutes.
+The answer is {100}.",100,1,1,p2,2431,586
+43,"Reformatted Question: Benjamin went to their orchard to pick some strawberries and found <fact1>nine times as many caterpillars as ladybugs</fact1> in the garden. If there were <fact2>99 ladybugs</fact2>, calculate the total number of insects in the garden.
+
+Answer: Since there are <fact1>nine times as many caterpillars as ladybugs</fact1>, the number of caterpillars is <fact1>9</fact1> * <fact2>99 ladybugs</fact2> = 891 caterpillars. The total number of insects in the garden is the sum of the number of ladybugs and caterpillars, which is <fact2>99 ladybugs</fact2> + 891 caterpillars = 990 insects.
+The answer is {990}.",990,1,1,p2,2196,626
+28,"Reformatted Question: A medical center has a capacity of <fact1>1600 wards</fact1> with <fact2>1/10 occupied</fact2>. Due to the major accident, <fact3>35 patients are admitted into the medical center each day</fact3>. Calculate the total number of unoccupied wards in the medical center after <fact4>4 weeks</fact4>.
+
+Answer: The number of occupied wards initially is <fact1>1600 wards</fact1> * <fact2>1/10</fact2> = 160 wards. 
+The number of unoccupied wards initially is <fact1>1600 wards</fact1> - 160 wards = 1440 wards.
+There are <fact4>4 weeks</fact4> * 7 days/week = 28 days in 4 weeks.
+The number of patients admitted in 4 weeks is <fact3>35 patients/day</fact3> * 28 days = 980 patients.
+Assuming each patient occupies one ward, the number of occupied wards after 4 weeks is 160 wards + 980 wards = 1140 wards.
+The number of unoccupied wards after 4 weeks is <fact1>1600 wards</fact1> - 1140 wards = 460 wards.
+The answer is {460}.",460,1,1,p2,1449,942
+43,"Reformatted Question: Thiago went to their orchard to pick some strawberries and found <fact1>2/3 as many grasshoppers as wasps</fact1> in the garden. If there were <fact2>144 wasps</fact2>, calculate the total number of insects in the garden.
+
+Answer: To find the number of grasshoppers, we need to multiply the number of wasps by 2/3. So, the number of grasshoppers is <fact2>144</fact2> * <fact1>2/3</fact1> = 96. The total number of insects in the garden is the sum of the number of wasps and grasshoppers, which is <fact2>144</fact2> + 96 = 240.
+The answer is {240}.",240,1,1,p2,2164,571
+8,"Reformatted Question: A juggler can juggle <fact1>960 balls</fact1>. <fact2>An eighth of the balls are tennis balls</fact2>, and <fact3>1/5 of the tennis balls are indigo</fact3>. How many indigo tennis balls are there?
+
+Answer: First, we need to find out how many tennis balls there are. Since <fact2>an eighth of the balls are tennis balls</fact2>, we can calculate the number of tennis balls by dividing the total number of balls by 8. So, the number of tennis balls is <fact1>960</fact1> / 8 = 120. 
+
+Next, we need to find out how many of these tennis balls are indigo. Since <fact3>1/5 of the tennis balls are indigo</fact3>, we can calculate the number of indigo tennis balls by dividing the number of tennis balls by 5 and then multiplying by 1. So, the number of indigo tennis balls is 120 / 5 = 24.
+
+The answer is {24}.",24,1,1,p2,412,828
+62,"Reformatted Question: In a set of chef's cards, there are <fact1>25 yellow cards</fact1>, and <fact2>76% more orange cards</fact2>. <fact3>Green cards are as many as the sum of yellow and orange cards</fact3>. How many cards of all mentioned colors are there?
+
+Answer: First, we need to find the number of orange cards. Since there are <fact2>76% more orange cards</fact2> than yellow cards, we can calculate the number of orange cards by finding 76% of the number of yellow cards and adding it to the number of yellow cards. 76% of <fact1>25 yellow cards</fact1> is 0.76 * 25 = 19. So, there are 25 + 19 = 44 orange cards.
+
+Now, we know that <fact3>green cards are as many as the sum of yellow and orange cards</fact3>. Therefore, the number of green cards is <fact1>25 yellow cards</fact1> + 44 orange cards = 69 green cards.
+
+To find the total number of cards of all mentioned colors, we add the number of yellow, orange, and green cards: <fact1>25 yellow cards</fact1> + 44 orange cards + 69 green cards = 138 cards.
+
+The answer is {138}.",138,1,1,p2,3131,1042
+8,"Reformatted Question: A juggler can juggle <fact1>680 balls</fact1>. <fact2>Half of the balls are golf balls</fact2>, and <fact3>1/5 of the golf balls are green</fact3>. How many green golf balls are there?
+
+Answer: First, we need to find out how many golf balls there are. Since <fact2>half of the balls are golf balls</fact2>, we can calculate the number of golf balls by dividing the total number of balls by 2. So, the number of golf balls is <fact1>680</fact1> / 2 = 340.
+
+Next, we need to find out how many of these golf balls are green. Since <fact3>1/5 of the golf balls are green</fact3>, we can calculate the number of green golf balls by multiplying the number of golf balls by 1/5. So, the number of green golf balls is 340 * 1/5 = 68.
+
+The answer is {68}.",68,1,1,p2,410,768
+57,"Reformatted Question: Diego has <fact1>18 tubes of black paint</fact1> and <fact2>19 tubes of magenta paint</fact2>. Umar has <fact3>two-sixths as many tubes of black paint as Diego</fact3>, and <fact4>six times as many tubes of magenta paint as Diego</fact4>. How many tubes of paint does Umar have?
+
+Answer: Umar has <fact3>two-sixths as many tubes of black paint as Diego</fact3>, so Umar has (<fact1>18 tubes of black paint</fact1>)*(2/6) = 6 tubes of black paint. Umar also has <fact4>six times as many tubes of magenta paint as Diego</fact4>, so Umar has (<fact2>19 tubes of magenta paint</fact2>)*6 = 114 tubes of magenta paint. Therefore, Umar has 6 + 114 = 120 tubes of paint.
+The answer is {120}.",120,1,1,p2,2896,706
+23,"Reformatted Question: Valeria is knitting winter wear for her <fact1>4 grandchildren</fact1>. They're quadruplets, so they're all the same size. She wants to make a <fact2>shawl, vest, hat, socks, and leg warmers</fact2> for each of them. It takes <fact3>9 skeins of wool to make a shawl</fact3>, <fact4>16 for a vest</fact4>, <fact5>15 for a hat</fact5>, <fact6>4 for a pair of socks</fact6>, and <fact7>17 for a pair of leg warmers</fact7>. How many skeins of wool will she need to buy?
+
+Answer: Valeria needs to make a set of <fact2>shawl, vest, hat, socks, and leg warmers</fact2> for each of her <fact1>4 grandchildren</fact1>. For each set, she needs <fact3>9 skeins of wool for a shawl</fact3> + <fact4>16 skeins for a vest</fact4> + <fact5>15 skeins for a hat</fact5> + <fact6>4 skeins for a pair of socks</fact6> + <fact7>17 skeins for a pair of leg warmers</fact7> = 9 + 16 + 15 + 4 + 17 = 61 skeins of wool. Since she needs to make 4 sets, she will need 61 * <fact1>4</fact1> = 244 skeins of wool.
+The answer is {244}.",244,1,1,p2,1172,1029
+26,"Reformatted Question: A father eats <fact1>7 sushi rolls per day</fact1>, his wife eats <fact2>4 sushi rolls per day</fact2>, and their daughter eats <fact3>3 sushi rolls per day</fact3>. How many sushi rolls does this family eat in <fact4>one month</fact4>?
+
+Answer: To find the total number of sushi rolls the family eats in one month, we need to calculate the total number of sushi rolls each person eats in a month and then add them together. 
+
+Since there are approximately 30 days in <fact4>one month</fact4>, the father eats <fact1>7 sushi rolls per day</fact1> * 30 days = 210 sushi rolls per month. 
+
+The wife eats <fact2>4 sushi rolls per day</fact2> * 30 days = 120 sushi rolls per month. 
+
+The daughter eats <fact3>3 sushi rolls per day</fact3> * 30 days = 90 sushi rolls per month. 
+
+Therefore, the total number of sushi rolls the family eats in one month is 210 + 120 + 90 = 420 sushi rolls.
+
+The answer is {420}.",420,1,1,p2,1346,927
+79,"Reformatted Question: Gabriel finished <fact1>two-thirds of a 294 piece puzzle</fact1>, and then started and finished another <fact2>358 piece puzzle</fact2> within an hour. How many puzzle pieces did Gabriel place during that hour?
+
+Answer: Gabriel finished <fact1>two-thirds of a 294 piece puzzle</fact1>, which is (2/3) * 294 = 196 pieces. Then he finished a <fact2>358 piece puzzle</fact2>. So in total, he placed 196 + 358 = 554 pieces. 
+The answer is {554}.",554,1,1,p2,3962,463
+75,"Reformatted Question: There are currently <fact1>3 pink balls</fact1>, <fact2>16 orange balls</fact2>, and <fact3>35 green balls</fact3> in the shop. <fact4>Pink balls cost ₺6</fact4>, <fact5>green balls cost ₺7</fact5>, and <fact6>orange balls cost ₺5</fact6>. How much will the shop have received after all the balls are sold?
+
+Answer: The shop will receive <fact1>3</fact1> * <fact4>₺6</fact4> = ₺18 from the pink balls, <fact2>16</fact2> * <fact6>₺5</fact6> = ₺80 from the orange balls, and <fact3>35</fact3> * <fact5>₺7</fact5> = ₺245 from the green balls. Therefore, the total amount the shop will receive is ₺18 + ₺80 + ₺245 = ₺343.
+The answer is {343}.",343,1,1,p2,3774,660
+50,"Reformatted Question: The area of Noah's rectangular kitchen is <fact1>810 square meters</fact1>. If the <fact2>length of his room is 6 meters</fact2>, what is the <fact3>perimeter of the room</fact3> in meters?
+
+Answer: To find the perimeter of the room, we need to find the width of the room first. Since the area of the room is given as <fact1>810 square meters</fact1> and the area of a rectangle is calculated as length times width, we can set up the equation: <fact2>6 meters</fact2> * width = <fact1>810 square meters</fact1>. Solving for width, we get width = <fact1>810 square meters</fact1> / <fact2>6 meters</fact2> = 135 meters. Now that we have the length and width, we can calculate the <fact3>perimeter of the room</fact3> using the formula: perimeter = 2 * (length + width). Plugging in the values, we get perimeter = 2 * (<fact2>6 meters</fact2> + 135 meters) = 2 * 141 meters = 282 meters.
+The answer is {282}.",282,1,1,p2,2538,928
+55,"Reformatted Question: Tara is learning to write and decides to keep re-writing the <fact1>Farsi alphabet (with 32 letters)</fact1> until she knows it. She <fact2>writes it in full four times</fact2>, <fact3>writes one-fourth of it once</fact3>, then <fact4>re-writes everything she has already written</fact4>. How many letters has Tara written in total?
+
+Answer: Tara first <fact2>writes the alphabet in full four times</fact2>, which is <fact1>32 letters</fact1> * 4 = 128 letters. Then she <fact3>writes one-fourth of the alphabet</fact3>, which is <fact1>32 letters</fact1> / 4 = 8 letters. So far, she has written 128 + 8 = 136 letters. Then she <fact4>re-writes everything she has already written</fact4>, which is another 136 letters. In total, Tara has written 136 + 136 = 272 letters.
+The answer is {272}.",272,1,1,p2,2758,814
+41,"Reformatted Question: A stack is made out of <fact1>2 green tiles</fact1>, <fact2>seven times as many orange tiles</fact2>, and an unknown number of black tiles. If there are <fact3>46 tiles in the stack in total</fact3>, how many black tiles are there?
+
+Answer: There are <fact1>2 green tiles</fact1>. Since there are <fact2>seven times as many orange tiles</fact2> as green tiles, there are <fact2>7</fact2> * <fact1>2</fact1> = 14 orange tiles. We know that there are <fact3>46 tiles in total</fact3>, so the number of black tiles is <fact3>46</fact3> - <fact1>2</fact1> - 14 = 30.
+The answer is {30}.",30,1,1,p2,2063,604
+26,"Reformatted Question: A grandfather eats <fact1>7 burritos per day</fact1>, his partner eats <fact2>7 burritos per day</fact2>, and their son eats <fact3>7 burritos per day</fact3>. How many burritos does this family eat in <fact4>one week</fact4>?
+
+Answer: The total number of burritos the family eats per day is <fact1>7</fact1> + <fact2>7</fact2> + <fact3>7</fact3> = 21. Since there are 7 days in <fact4>one week</fact4>, the family eats a total of 21 * 7 = 147 burritos in <fact4>one week</fact4>.
+The answer is {147}.",147,1,1,p2,1342,523
+68,"Reformatted Question: It takes Aisha <fact1>16 minutes to finish a word puzzle</fact1> and <fact2>10 minutes to finish a brain teaser</fact2>. Over the day off she solved <fact3>6 word puzzles</fact3> and <fact4>14 brain teasers</fact4>. How much time did she spend playing these games?
+
+Answer: Aisha spent <fact1>16 minutes per word puzzle</fact1> * <fact3>6 word puzzles</fact3> = 96 minutes on word puzzles. She also spent <fact2>10 minutes per brain teaser</fact2> * <fact4>14 brain teasers</fact4> = 140 minutes on brain teasers. Therefore, she spent a total of 96 + 140 = 236 minutes playing these games.
+The answer is {236}.",236,1,1,p2,3430,632
+44,"Reformatted Question: There are <fact1>15 girls</fact1> in the playground. If there are <fact2>3/5 the number of boys</fact2> in the playground, how many kids are in the playground?
+
+Answer: To find the number of boys, we need to calculate 3/5 of the number of girls. Since there are <fact1>15 girls</fact1>, we multiply 15 by 3/5. 
+3/5 * <fact1>15</fact1> = (3 * <fact1>15</fact1>) / 5 = 45 / 5 = 9. 
+So, there are 9 boys in the playground. 
+The total number of kids in the playground is the sum of the number of girls and boys, which is <fact1>15</fact1> + 9 = 24.
+The answer is {24}.",24,1,1,p2,2209,586
+23,"Reformatted Question: Winnie is knitting winter wear for her <fact1>3 grandchildren</fact1>. They're triplets, so they're all the same size. She wants to make a poncho, sweater, vest, leg warmers, and socks for each of them. It takes <fact2>5 skeins of wool to make a poncho</fact2>, <fact3>18 for a sweater</fact3>, <fact4>9 for a vest</fact4>, <fact5>6 for a pair of leg warmers</fact5>, and <fact6>4 for a pair of socks</fact6>. How many skeins of wool will she need to buy?
+
+Answer: To determine how many skeins of wool Winnie will need, we must first calculate how many skeins of wool are needed for one set of winter wear. One set of winter wear includes a poncho, sweater, vest, leg warmers, and socks. So, one set of winter wear requires <fact2>5 skeins of wool</fact2> + <fact3>18 skeins of wool</fact3> + <fact4>9 skeins of wool</fact4> + <fact5>6 skeins of wool</fact5> + <fact6>4 skeins of wool</fact6> = 42 skeins of wool. Since Winnie has <fact1>3 grandchildren</fact1>, she will need 3 x 42 = 126 skeins of wool.
+The answer is {126}.",126,1,1,p2,1179,1048
+57,"Reformatted Question: <fact1>Benjamin has 18 tubes of blue paint</fact1> and <fact2>18 tubes of cyan paint</fact2>. <fact3>Deshawn has 2/4 as many tubes of blue paint as Benjamin</fact3>, and <fact4>twice as many tubes of cyan paint as Benjamin</fact4>. How many tubes of paint does DeShawn have?
+
+Answer: Deshawn has <fact3>2/4 as many tubes of blue paint as Benjamin</fact3>, so he has <fact1>18</fact1> * 2/4 = 9 tubes of blue paint. Deshawn also has <fact4>twice as many tubes of cyan paint as Benjamin</fact4>, so he has <fact2>18</fact2> * 2 = 36 tubes of cyan paint. Therefore, Deshawn has 9 + 36 = 45 tubes of paint.
+
+The answer is {45}.",45,1,1,p2,2861,645
+89,"Reformatted Question: Liam hires a luxury car from <fact1>3 PM to 9 PM</fact1>. He gets <fact2>1 hour free</fact2>. The <fact3>first paid hour is $13</fact3> and <fact4>each hour after that is twice the cost</fact4>. How much did he pay?
+
+Answer: First, we need to calculate the total number of hours Liam hired the car. He hired it from <fact1>3 PM to 9 PM</fact1>, which is 6 hours. Since he gets <fact2>1 hour free</fact2>, he only needs to pay for 6 - 1 = 5 hours. The <fact3>first paid hour is $13</fact3>. For the remaining 4 hours, <fact4>each hour after that is twice the cost</fact4>, so each hour costs $13 * 2 = $26. Therefore, the total cost is $13 + ($26 * 4) = $13 + $104 = $117.
+
+The answer is {117}.",117,1,1,p2,4471,715
+13,"Reformatted Question: Yara is an avid gardener. Last week, she received <fact1>38 new potted plants</fact1> from her favorite plant nursery. She already has <fact2>11 potted plants on each of the 51 window ledges</fact2> of her large country home. Feeling generous, she has decided that she will give <fact3>6 potted plants from each ledge</fact3> to friends and family tomorrow. How many potted plants will Yara remain with?
+
+Answer: Yara originally had <fact2>11 potted plants on each of the 51 window ledges</fact2>, so she had 11 * 51 = 561 potted plants. She then received <fact1>38 new potted plants</fact1>, bringing her total to 561 + 38 = 599 potted plants. She then gave away <fact3>6 potted plants from each ledge</fact3>, so she gave away 6 * 51 = 306 potted plants. Therefore, Yara will remain with 599 - 306 = 293 potted plants.
+The answer is {293}.",293,1,1,p2,699,863
+97,"Reformatted Question: Haruka operates the cash register exactly <fact1>eight times as fast</fact1> as her less-experienced colleague Yara. Daily, <fact2>Yara processes 90 customers</fact2>. What is the total weekly production for the two if they work <fact3>all days of the week</fact3>?
+
+Answer: Since Haruka operates the cash register <fact1>eight times as fast</fact1> as Yara, she processes 8 * <fact2>90 customers</fact2> = 720 customers per day. Together, they process <fact2>90 customers</fact2> + 720 customers = 810 customers per day. Since they work <fact3>all days of the week</fact3>, which is 7 days, their total weekly production is 810 customers/day * 7 days = 5670 customers.
+The answer is {5670}.",5670,1,1,p2,4866,713
+56,"Reformatted Question: A bottle of lemonade is <fact1>12 ounces of lemonade</fact1>. Mateo drinks <fact2>3 bottles of lemonade</fact2>. If lemonade has <fact3>4 calories per ounce</fact3> how many calories did he consume?
+
+Answer: Mateo consumed <fact2>3 bottles of lemonade</fact2> * <fact1>12 ounces of lemonade</fact1> = 36 ounces of lemonade. Since lemonade has <fact3>4 calories per ounce</fact3>, Mateo consumed 36 ounces * <fact3>4 calories per ounce</fact3> = 144 calories.
+The answer is {144}.",144,1,1,p2,2833,501
+97,"Reformatted Question: Mia operates the cash register exactly <fact1>two times as fast</fact1> as her less-experienced colleague Haruka. Daily, <fact2>Haruka processes 63 customers</fact2>. What is the total weekly production for the two if they work <fact3>all days of the week</fact3>?
+
+Answer: Since Mia operates the cash register <fact1>two times as fast</fact1> as Haruka, Mia processes 2 * <fact2>63 customers</fact2> = 126 customers daily. Together, they process <fact2>63 customers</fact2> + 126 customers = 189 customers daily. Since they work <fact3>all days of the week</fact3>, which is 7 days, their total weekly production is 189 customers/day * 7 days = 1323 customers.
+The answer is {1323}.",1323,1,1,p2,4889,705
+12,"Reformatted Question: Andre places bananas on some baskets. <fact1>Each basket can hold 20 bananas</fact1>. If he has <fact2>326 bananas</fact2> and <fact3>8 baskets</fact3>, how many bananas won't he be able to place on the basket?
+
+Answer: To find out how many bananas Andre can place on the baskets, we need to multiply the number of baskets by the capacity of each basket. So, <fact3>8 baskets</fact3> * <fact1>20 bananas per basket</fact1> = 160 bananas. Since Andre has <fact2>326 bananas</fact2>, we subtract the number of bananas he can place on the baskets from the total number of bananas: <fact2>326 bananas</fact2> - 160 bananas = 166 bananas. Therefore, Andre won't be able to place 166 bananas on the baskets.
+
+The answer is {166}.",166,1,1,p2,629,745
+50,"Reformatted Question: The <fact1>area of Santiago's rectangular study is 600 square meters</fact1>. If the <fact2>length of his room is 5 meters</fact2>, what is the <fact3>perimeter of the room in meters</fact3>?
+
+Answer: To find the perimeter of the room, we need to know the width of the room. We can find the width by dividing the area of the room by the length. The area of the room is <fact1>600 square meters</fact1> and the length is <fact2>5 meters</fact2>, so the width is <fact1>600</fact1> / <fact2>5</fact2> = 120 meters. The perimeter of a rectangle is given by the formula P = 2(l + w), where l is the length and w is the width. Plugging in the values, we get P = 2(<fact2>5</fact2> + 120) = 2(125) = 250 meters.
+The answer is {250}.",250,1,1,p2,2514,748
+95,"Reformatted Question: There are <fact1>20 students playing badminton</fact1> and <fact2>thrice that number playing basketball</fact2>. There are <fact3>17 boys and 20 girls playing volleyball</fact3>. If each student only participates in one group, how many students are there in total?
+
+Answer: There are <fact1>20 students playing badminton</fact1>. Since there are <fact2>thrice that number playing basketball</fact2>, there are 3 * <fact1>20</fact1> = 60 students playing basketball. There are <fact3>17 boys and 20 girls playing volleyball</fact3>, so there are 17 + 20 = 37 students playing volleyball. In total, there are <fact1>20</fact1> + 60 + 37 = 117 students.
+
+The answer is {117}.",117,1,1,p2,4771,694
