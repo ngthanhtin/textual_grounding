@@ -1,0 +1,319 @@
+id,question,gt,isTrue,isTagged,dataset,unique_id,question_len
+31,"Reformatted Question: Hiroshi, Olivia are currently <fact1>18 years apart in age</fact1>. Hiroshi and Mateo are currently <fact2>15 years apart</fact2>. Hiroshi, who is <fact3>younger than Olivia but older than Mateo</fact3>, will be <fact4>67 in 4 years</fact4>. How much younger is Mateo than the average age of all three?
+
+Answer: Since Hiroshi will be <fact4>67 in 4 years</fact4>, he is currently 67 - 4 = 63 years old. 
+Since Hiroshi is <fact3>younger than Olivia but older than Mateo</fact3>, and Hiroshi and Olivia are <fact1>18 years apart in age</fact1>, Olivia is 63 + 18 = 81 years old. 
+Since Hiroshi and Mateo are <fact2>15 years apart</fact2>, Mateo is 63 - 15 = 48 years old. 
+The average age of all three is (63 + 81 + 48) / 3 = 64 years old. 
+So Mateo is 64 - 48 = 16 years younger than the average age of all three.
+The answer is {16}.",16.0,1,1,p2,1383,854
+46,"Reformatted Question: 
+Sunnyside High is holding graduation in its Sports Arena this year which has space for <fact1>6700 people</fact1>. After accounting for the <fact2>1250 seats for graduate</fact2>, <fact3>350 seats for the faculty attending</fact3>, and reserving <fact4>100 seats for the event's staff</fact4>, how many tickets would each graduate receive to give to their friends and family if the tickets are split equally?
+
+Answer: 
+First, we need to find out how many seats are available for the graduates' friends and family. We do this by subtracting the number of seats already reserved from the total number of seats in the arena. So, we have <fact1>6700 people</fact1> - <fact2>1250 seats for graduate</fact2> - <fact3>350 seats for the faculty attending</fact3> - <fact4>100 seats for the event's staff</fact4> = 5000 seats available for friends and family. Now, we need to divide the available seats by the number of graduates to find out how many tickets each graduate will receive. Since there are <fact2>1250 seats for graduate</fact2>, we can assume that there are 1250 graduates. So, each graduate will receive 5000 / 1250 = 4 tickets.
+The answer is {4}.",4.0,1,1,p2,2024,1176
+2,"Reformatted Question: Yusuf is rolling a <fact1>twenty-sided die</fact1>. How much more likely is it (expressed as a difference in percentage points) that he rolls a number greater than 5 <fact2>twice in a row</fact2>, than that he rolls <fact3>four even numbers in a row</fact3>?
+
+Answer: To calculate the probability of rolling a number greater than 5 twice in a row, we first need to find the probability of rolling a number greater than 5 on a single roll. Since there are 15 numbers greater than 5 on a <fact1>twenty-sided die</fact1> (6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20), the probability is 15/20 = 0.75. To find the probability of rolling a number greater than 5 <fact2>twice in a row</fact2>, we square this probability: 0.75^2 = 0.5625.
+
+Next, we need to calculate the probability of rolling <fact3>four even numbers in a row</fact3>. Since there are 10 even numbers on a <fact1>twenty-sided die</fact1> (2, 4, 6, 8, 10, 12, 14, 16, 18, 20), the probability of rolling an even number on a single roll is 10/20 = 0.5. To find the probability of rolling <fact3>four even numbers in a row</fact3>, we raise this probability to the power of 4: 0.5^4 = 0.0625.
+
+Now, we can convert these probabilities to percentages: 0.5625 becomes 56.25%, and 0.0625 becomes 6.25%. The difference between these percentages is 56.25% - 6.25% = 50%.
+
+The answer is {50}.",50.0,1,1,p2,126,1377
+34,"Reformatted Question: Mr. Miller sold his apartment for <fact1>$270000</fact1>. He paid the transfer fees that amounted to <fact2>3% of the selling price</fact2> and also paid a brokerage fee that is <fact3>6% of the selling price</fact3>. He also paid <fact4>$190000 for the remaining loan amount</fact4> on the apartment, and <fact5>$25000 for closing costs</fact5>. Mr. Miller used the net proceeds from selling the apartment to invest in stocks. The stocks <fact6>gained 10% each year for two years</fact6>. How much were Mr. Miller's net proceeds after two years?
+
+Answer: Mr. Miller paid transfer fees of <fact2>3%</fact2> * <fact1>$270000</fact1> = $8100 and brokerage fees of <fact3>6%</fact3> * <fact1>$270000</fact1> = $16200. He also paid <fact4>$190000</fact4> for the remaining loan amount and <fact5>$25000</fact5> for closing costs. So, the total amount he paid is $8100 + $16200 + <fact4>$190000</fact4> + <fact5>$25000</fact5> = $239300. The net proceeds from selling the apartment is <fact1>$270000</fact1> - $239300 = $30700. The net proceeds after one year is $30700 * (1 + <fact6>10%</fact6>) = $33770. The net proceeds after two years is $33770 * (1 + <fact6>10%</fact6>) = $37147.
+The answer is {37147}.",37147.0,1,1,p2,1506,1226
+25,"Reformatted Question: In <fact1>Mrs. Garcia's class of 160 students</fact1>, <fact2>50% of the class are swimmers</fact2>. Out of the <fact3>remaining class</fact3>, <fact4>50% of the students are dancers or part of debate team members</fact4>. These 3 groups of students will need to leave early today to travel to an away tournament. <fact5>Half of the swimmers are absent for being sick</fact5>. Also, <fact6>3 cheerleaders will accompany each of these groups</fact6>. How many students are leaving early to the tournament?
+
+Answer: First, we need to find the number of swimmers in the class. Since <fact2>50% of the class are swimmers</fact2>, the number of swimmers is <fact1>160</fact1> * <fact2>0.5</fact2> = 80.
+However, <fact5>half of the swimmers are absent for being sick</fact5>, so the number of swimmers leaving early is 80 / 2 = 40.
+The <fact3>remaining class</fact3> has <fact1>160</fact1> - 80 = 80 students. Since <fact4>50% of the students are dancers or part of debate team members</fact4>, the number of dancers and debate team members is 80 * <fact4>0.5</fact4> = 40.
+So, the total number of students leaving early is 40 (swimmers) + 40 (dancers and debate team members) = 80.
+Additionally, <fact6>3 cheerleaders will accompany each of these groups</fact6>, and there are 3 groups, so 3 * 3 = 9 cheerleaders will also be leaving early.
+Therefore, the total number of students leaving early to the tournament is 80 + 9 = 89.
+The answer is {89}.",89.0,1,1,p2,1113,1465
+35,"Reformatted Question: Pavel is raising money for a <fact1>3-day science fair</fact1>. Each day costs <fact2>€200 for hotel</fact2>, <fact3>€30 for food</fact3>, and <fact4>€10 for transportation</fact4>. Pavel only has <fact5>€30</fact5>. His friends have chipped in and will cover the cost of all the <fact3>food for the science fair</fact3>. Pavel has also applied for help from the community center, which has decided to cover <fact6>1/2 of the remaining cost of the science fair</fact6>. How much money is Pavel still missing?
+
+Answer: First, let's calculate the total cost of the science fair. The cost of the hotel for the <fact1>3-day science fair</fact1> is <fact2>€200</fact2> * 3 = €600. The cost of the <fact3>food for the science fair</fact3> is <fact3>€30</fact3> * 3 = €90, but this cost is covered by Pavel's friends, so we don't need to consider it. The cost of the transportation for the <fact1>3-day science fair</fact1> is <fact4>€10</fact4> * 3 = €30. So, the total cost of the science fair is €600 + €30 = €630. 
+
+Since Pavel's friends are covering the cost of the food, the remaining cost of the science fair is €630. The community center is covering <fact6>1/2 of the remaining cost of the science fair</fact6>, which is €630 / 2 = €315. 
+
+Now, let's calculate how much money Pavel still needs. The total cost of the science fair that Pavel needs to cover is €630 - €315 = €315. Pavel only has <fact5>€30</fact5>, so he still needs €315 - €30 = €285.
+
+The answer is {285}.",285.0,1,1,p2,1549,1495
+39,"Reformatted Question: A janitor has to clean a building with <fact1>105 floors</fact1>. They have <fact2>7 days</fact2> to get it done. It takes them <fact3>6 minutes per floor</fact3>. However, due to a recent injury, the janitor has become slower and it will take them <fact4>twice as long</fact4> to clean a floor these days. If they work for <fact5>15 hours a day</fact5>, what percentage of their day, on average, is spent cleaning floors?
+
+Answer: The janitor has to clean <fact1>105 floors</fact1> in <fact2>7 days</fact2>. Due to the injury, it now takes them <fact3>6 minutes per floor</fact3> * <fact4>2</fact4> = 12 minutes per floor. They work for <fact5>15 hours a day</fact5> * 60 minutes per hour = 900 minutes per day. They have to clean <fact1>105 floors</fact1> / <fact2>7 days</fact2> = 15 floors per day. Cleaning 15 floors per day takes 15 floors per day * 12 minutes per floor = 180 minutes per day. So, the percentage of their day spent cleaning floors is (180 minutes per day / 900 minutes per day) * 100% = 20%.
+The answer is {20}.",20.0,1,1,p2,1729,1056
+3,"Reformatted Question: A class of <fact1>170 students</fact1> has various hobbies. <fact2>46 like to dance</fact2>, <fact3>8 like to play chess</fact3>, <fact4>13 like to swim</fact4>, <fact5>19 like to play basketball</fact5>, and the rest like to either play video games or read. What percentage of the students like to play video games if the number of the students that like to read is <fact6>5 less than two times the number that prefer playing basketball</fact6>?
+
+Answer: First, let's find the number of students that like to read. Two times the number that prefer playing basketball is 2 * <fact5>19</fact5> = 38. So, the number of students that like to read is 38 - <fact6>5</fact6> = 33.
+Now, let's find the total number of students that like to dance, play chess, swim, or play basketball. This is <fact2>46</fact2> + <fact3>8</fact3> + <fact4>13</fact4> + <fact5>19</fact5> = 86.
+The number of students that like to play video games is <fact1>170</fact1> - 86 - 33 = 51.
+The percentage of students that like to play video games is 51 / <fact1>170</fact1> * 100% ≈ 30%.
+The answer is {30}.",30.0,1,1,p2,163,1099
+28,"Reformatted Question: A care facility has a <fact1>capacity of 1500 rooms</fact1> with <fact2>1/6 occupied</fact2> and <fact3>two-sixths of all the rooms being out of service</fact3>. Due to the pandemic, <fact4>20 patients are admitted into the care facility each day</fact4>. Calculate the total number of unoccupied rooms in the care facility after <fact5>2 weeks</fact5>.
+
+Answer: First, we need to find the number of occupied rooms. Since <fact2>1/6 of the rooms are occupied</fact2>, the number of occupied rooms is <fact1>1500</fact1> * <fact2>1/6</fact2> = 250 rooms.
+
+Next, we need to find the number of rooms that are out of service. Since <fact3>two-sixths of all the rooms are out of service</fact3>, the number of rooms out of service is <fact1>1500</fact1> * <fact3>2/6</fact3> = 500 rooms.
+
+Now, we need to find the number of unoccupied rooms initially. This is <fact1>1500</fact1> - 250 (occupied) - 500 (out of service) = 750 rooms.
+
+Since <fact4>20 patients are admitted into the care facility each day</fact4>, the total number of patients admitted in <fact5>2 weeks</fact5> is <fact4>20</fact4> * 14 = 280 patients.
+
+Assuming all these patients occupy a room, the number of unoccupied rooms after <fact5>2 weeks</fact5> is 750 - 280 = 470 rooms.
+
+The answer is {470}.",470.0,1,1,p2,1269,1287
+16,"Reformatted Question: Faisal is selling muffins and apricot pies for a fundraiser. On Wednesday, he sold <fact1>27 boxes of muffin</fact1> and <fact2>13 fewer boxes of apricot pie, than on Thursday</fact2>. On Thursday, he sold <fact3>11 more boxes of muffins than on Wednesday</fact3> and <fact4>21 boxes of apricot pie</fact4>. On Friday, he sold <fact5>as much as he did in the past two days combined</fact5>. If the <fact6>muffin cost ₺9</fact6> and the <fact7>apricot pie cost ₺21</fact7>, what was Faisal's average daily earning?
+
+Answer: On Wednesday, Faisal sold <fact1>27 boxes of muffins</fact1> and <fact4>21</fact4> - <fact2>13</fact2> = 8 boxes of apricot pie. 
+On Thursday, he sold <fact1>27</fact1> + <fact3>11</fact3> = 38 boxes of muffins and <fact4>21 boxes of apricot pie</fact4>. 
+On Friday, he sold <fact5>as much as he did in the past two days combined</fact5>, so he sold (38 + <fact1>27</fact1>) boxes of muffins and (8 + <fact4>21</fact4>) boxes of apricot pie. 
+This means he sold (38 + <fact1>27</fact1>) + (38 + <fact1>27</fact1>) = 130 boxes of muffins and (8 + <fact4>21</fact4>) + (8 + <fact4>21</fact4>) = 58 boxes of apricot pie over the three days. 
+His total earnings were (<fact6>₺9</fact6> * 130) + (<fact7>₺21</fact7> * 58) = ₺1170 + ₺1218 = ₺2388. 
+His average daily earnings were ₺2388 / 3 = ₺796.
+The answer is {796}.",796.0,1,1,p2,734,1358
+3,"Reformatted Question: A group of <fact1>230 students</fact1> has various hobbies. <fact2>38 like to bake</fact2>, <fact3>8 like to play chess</fact3>, <fact4>13 like to swim</fact4>, <fact5>14 like to play football</fact5>, and the rest like to either play video games or paint. What percentage of the students like to play video games if the number of the students that like to paint is <fact6>5 less than five times the number that prefer playing football</fact6>?
+
+Answer: First, we need to find the number of students that like to paint. We know that the number of students that like to paint is <fact6>5 less than five times the number that prefer playing football</fact6>. Since <fact5>14 students like to play football</fact5>, the number of students that like to paint is 5 * <fact5>14</fact5> - 5 = 65.
+
+Now, we can find the total number of students that like to bake, play chess, swim, play football, or paint. This is <fact2>38</fact2> + <fact3>8</fact3> + <fact4>13</fact4> + <fact5>14</fact5> + 65 = 138.
+
+Since there are <fact1>230 students</fact1> in total, the number of students that like to play video games is <fact1>230</fact1> - 138 = 92.
+
+To find the percentage of students that like to play video games, we divide the number of students that like to play video games by the total number of students and multiply by 100. This gives us (92 / <fact1>230</fact1>) * 100 = 40%.
+
+The answer is {40}.",40.0,1,1,p2,165,1416
+21,"Reformatted Question: Kai watches TV after he finishes his homework every night. On <fact1>Friday and Saturday, he watched 5-hour episodes of his favorite show each night</fact1>. On <fact2>Sunday, he watched a few episodes of a 45-minute show</fact2>. On <fact3>Monday, he finished homework early and watched a 2-hour episode and a 45-minute show</fact3>. On <fact4>Tuesday, he got to stay up late, so he watched two 4-hour episodes</fact4>. On <fact5>Wednesday, he watched two episodes, each 15 minutes</fact5>. If <fact6>he watched 25 hours of TV in all</fact6>, how many 45-minute episodes did he watch on Sunday?
+
+Answer: First, let's calculate the total hours of TV Kai watched on the days other than Sunday. On Friday and Saturday, he watched <fact1>5 hours * 2 nights = 10 hours</fact1>. On Monday, he watched <fact3>2 hours + 45 minutes = 2.75 hours</fact3>. On Tuesday, he watched <fact4>4 hours * 2 = 8 hours</fact4>. On Wednesday, he watched <fact5>15 minutes * 2 = 30 minutes = 0.5 hours</fact5>. So, the total hours of TV he watched on the days other than Sunday is 10 + 2.75 + 8 + 0.5 = 21.25 hours. Since <fact6>he watched 25 hours of TV in all</fact6>, he must have watched 25 - 21.25 = 3.75 hours of TV on Sunday. Since each episode on Sunday is 45 minutes, which is 0.75 hours, he must have watched 3.75 / 0.75 = 5 episodes on Sunday.
+The answer is {5}.",5.0,1,1,p2,938,1372
+14,"Reformatted Question: Bodhi and Santiago have <fact1>249 minutes</fact1> to walk to the mall together starting from their home. It takes them <fact2>27 minutes</fact2> to get to the corner where the library is. It takes them another <fact3>49 minutes</fact3> to get to the cinema. When they reach the cinema, they remember they forgot their wallets at home, so they have to return to pick up their wallets and then walk all the way back to the cinema again. Once they reach the cinema for the second time, how much longer do they have to get to the mall without being late?
+
+Answer: Bodhi and Santiago have <fact1>249 minutes</fact1> to get to the mall. They spend <fact2>27 minutes</fact2> + <fact3>49 minutes</fact3> = 76 minutes to get to the cinema. Then they have to return home, which takes another 76 minutes, and then walk back to the cinema, which takes another 76 minutes. So, they have spent a total of 76 + 76 + 76 = 228 minutes. They have <fact1>249 minutes</fact1> - 228 minutes = 21 minutes left to get to the mall.
+The answer is {21}.",21.0,1,1,p2,626,1050
+20,"Reformatted Question: <fact1>Tariq picks 193 plums on Saturday</fact1>. Then he picks <fact2>75 plums on Sunday</fact2>. On Monday, he picks <fact3>quadruple the number of plums he did on Saturday</fact3>. On Tuesday, he picks <fact4>half the amount of what he picked in the past 3 days combined</fact4>. On Wednesday, Tariq is going to sell plums in <fact5>boxes of 20 plums each</fact5>. He is going to sell <fact6>each box for $9</fact6>. How much is Tariq going to make?
+
+Answer: On Monday, Tariq picked <fact3>quadruple the number of plums he did on Saturday</fact3>, which is <fact1>193</fact1> * 4 = 772 plums.
+So, in the first 3 days, Tariq picked <fact1>193</fact1> + <fact2>75</fact2> + 772 = 1040 plums.
+On Tuesday, he picked <fact4>half the amount of what he picked in the past 3 days combined</fact4>, which is 1040 / 2 = 520 plums.
+In total, Tariq picked <fact1>193</fact1> + <fact2>75</fact2> + 772 + 520 = 1560 plums.
+Since Tariq is going to sell plums in <fact5>boxes of 20 plums each</fact5>, he will have 1560 / 20 = 78 boxes.
+He is going to sell <fact6>each box for $9</fact6>, so he will make 78 * 9 = $702.
+The answer is {702}.",702.0,1,1,p2,900,1149
+21,"Reformatted Question: Liam watches TV after he finishes his homework every night. On <fact1>Friday and Saturday, he watched 3-hour episodes of his favorite show each night</fact1>. On <fact2>Sunday, he watched a few episodes of a 30-minute show</fact2>. On <fact3>Monday, he finished homework early and watched a 5-hour episode and a 30-minute show</fact3>. On <fact4>Tuesday, he got to stay up late, so he watched three 2-hour episodes</fact4>. On <fact5>Wednesday, he watched three episodes, each 30 minutes</fact5>. If <fact6>he watched 22 hours of TV in all</fact6>, how many 30-minute episodes did he watch on Sunday?
+
+Answer: First, let's calculate the total hours of TV watched on the days other than Sunday. On Friday and Saturday, Liam watched 2 * 3 = 6 hours of TV (<fact1>3 hours each night for 2 nights</fact1>). On Monday, he watched 5 hours and 30 minutes, which is 5.5 hours (<fact3>5 hours + 30 minutes</fact3>). On Tuesday, he watched 3 * 2 = 6 hours (<fact4>three 2-hour episodes</fact4>). On Wednesday, he watched 3 * 0.5 = 1.5 hours (<fact5>three 30-minute episodes</fact5>). So, the total hours watched on days other than Sunday is 6 + 5.5 + 6 + 1.5 = 19 hours. Since <fact6>Liam watched 22 hours of TV in all</fact6>, he must have watched 22 - 19 = 3 hours of TV on Sunday. Since each episode on Sunday is 30 minutes, which is 0.5 hours, Liam watched 3 / 0.5 = 6 episodes on Sunday.
+The answer is {6}.",6.0,1,1,p2,948,1423
+10,"Reformatted Question: To make a call from a hotel room phone, you must pay <fact1>€0.8 for each minute of your call</fact1>. After <fact2>10 minutes</fact2>, the price drops to <fact3>€0.4 per minute</fact3>. After <fact4>35 minutes from the start of the call</fact4>, the price drops even more to <fact5>€0.3 per two minutes</fact5>. If your total bill is more than <fact6>€15</fact6>, you get a <fact7>10% discount on your total bill</fact7>. How much would a <fact8>115-minute call</fact8> cost?
+
+Answer: The call can be divided into three parts: the first <fact2>10 minutes</fact2>, the next <fact4>35</fact4> - <fact2>10</fact2> = 25 minutes, and the remaining <fact8>115</fact8> - <fact4>35</fact4> = 80 minutes. 
+For the first <fact2>10 minutes</fact2>, the cost is <fact1>€0.8 per minute</fact1> * <fact2>10 minutes</fact2> = €8.
+For the next 25 minutes, the cost is <fact3>€0.4 per minute</fact3> * 25 minutes = €10.
+For the remaining 80 minutes, the cost is <fact5>€0.3 per two minutes</fact5> * (80/2) = €12.
+The total cost is €8 + €10 + €12 = €30.
+Since the total bill is more than <fact6>€15</fact6>, a <fact7>10% discount</fact7> is applied, making the final cost €30 - (10% of €30) = €30 - €3 = €27.
+The answer is {27}.",27.0,1,1,p2,452,1234
+8,"Reformatted Question: A juggler can juggle <fact1>240 balls</fact1>. A <fact2>quarter of the balls are tennis balls</fact2>, and the rest are golf balls. <fact3>1/6 of the tennis balls are blue</fact3>, of which <fact4>a tenth are marked</fact4>. <fact5>1/2 of the golf balls are gray</fact5>, and all except <fact6>1/6 of those gray balls are marked</fact6>. How many marked balls are there in total?
+
+Answer: First, we need to find out how many tennis balls and golf balls there are. Since <fact2>a quarter of the balls are tennis balls</fact2>, the number of tennis balls is <fact1>240</fact1> * 1/4 = 60. The rest are golf balls, so there are <fact1>240</fact1> - 60 = 180 golf balls.
+
+Next, we need to find out how many blue tennis balls are marked. Since <fact3>1/6 of the tennis balls are blue</fact3>, the number of blue tennis balls is 60 * 1/6 = 10. And since <fact4>a tenth of those blue tennis balls are marked</fact4>, the number of marked blue tennis balls is 10 * 1/10 = 1.
+
+Now, we need to find out how many gray golf balls are marked. Since <fact5>1/2 of the golf balls are gray</fact5>, the number of gray golf balls is 180 * 1/2 = 90. And since all except <fact6>1/6 of those gray balls are marked</fact6>, the number of marked gray golf balls is 90 - 90 * 1/6 = 90 - 15 = 75.
+
+Finally, we add the number of marked blue tennis balls and marked gray golf balls to get the total number of marked balls: 1 + 75 = 76.
+
+The answer is {76}.",76.0,1,1,p2,390,1453
+16,"Reformatted Question: Kai is selling cookies and apple pies for a fundraiser. On Sunday, he sold <fact1>22 boxes of cookie</fact1> and <fact2>12 fewer boxes of apple pie, than on Monday</fact2>. On Monday, he sold <fact3>13 more boxes of cookies than on Sunday</fact3> and <fact4>27 boxes of apple pie</fact4>. On Tuesday, he sold <fact5>as much as he did in the past two days combined</fact5>. If the <fact6>cookie cost ₺9</fact6> and the <fact7>apple pie cost ₺22</fact7>, what was Kai's average daily earning?
+
+Answer: On Sunday, Kai sold <fact1>22 boxes of cookies</fact1> and <fact4>27</fact4> - <fact2>12</fact2> = 15 boxes of apple pie. On Monday, he sold <fact1>22</fact1> + <fact3>13</fact3> = 35 boxes of cookies and <fact4>27 boxes of apple pie</fact4>. On Tuesday, he sold <fact5>as much as he did in the past two days combined</fact5>, so he sold (22 + 35) boxes of cookies and (15 + 27) boxes of apple pie. This is a total of (22 + 35 + 57) = 114 boxes of cookies and (15 + 27 + 42) = 84 boxes of apple pie. The total amount of money he earned is (<fact6>₺9</fact6> * 114) + (<fact7>₺22</fact7> * 84) = ₺1026 + ₺1848 = ₺2874. His average daily earning is ₺2874 / 3 = ₺958.
+The answer is {958}.",958.0,1,1,p2,711,1207
+20,"Reformatted Question: 
+Theo picks <fact1>47 oranges on Friday</fact1>. Then he picks <fact2>100 oranges on Saturday</fact2>. On Sunday, he picks <fact3>triple the number of oranges he did on Friday</fact3>. On Monday, he picks <fact4>half the amount of what he picked in the past 3 days combined</fact4>. On Tuesday, Theo is going to sell oranges in <fact5>boxes of 27 oranges each</fact5>. He is going to sell <fact6>each box for $11</fact6>. How much is Theo going to make?
+
+Answer: 
+On Sunday, Theo picks <fact3>triple the number of oranges he did on Friday</fact3>, which is 3 x <fact1>47 oranges</fact1> = 141 oranges. 
+So, in the past 3 days, he picked <fact1>47 oranges</fact1> + <fact2>100 oranges</fact2> + 141 oranges = 288 oranges. 
+On Monday, he picks <fact4>half the amount of what he picked in the past 3 days combined</fact4>, which is 288 / 2 = 144 oranges. 
+So, in total, he has <fact1>47 oranges</fact1> + <fact2>100 oranges</fact2> + 141 oranges + 144 oranges = 432 oranges. 
+Since he sells oranges in <fact5>boxes of 27 oranges each</fact5>, he can sell 432 / 27 = 16 boxes. 
+Since he sells <fact6>each box for $11</fact6>, he will make 16 x $11 = $176.
+
+The answer is {176}.",176.0,1,1,p2,896,1195
+21,"Reformatted Question: Diego watches TV after he finishes his homework every night. On <fact1>Wednesday and Thursday, he watched 6-hour episodes of his favorite show each night</fact1>. On <fact2>Friday, he watched a few episodes of a 30-minute show</fact2>. On <fact3>Saturday, he finished homework early and watched a 4-hour episode and a 15-minute show</fact3>. On <fact4>Sunday, he got to stay up late, so he watched three 3-hour episodes</fact4>. On <fact5>Monday, he watched three episodes, each 45 minutes</fact5>. If <fact6>he watched 30 hours of TV in all</fact6>, how many 30-minute episodes did he watch on Friday?
+
+Answer: First, let's calculate the total hours of TV Diego watched on the days other than Friday. On Wednesday and Thursday, he watched <fact1>6 hours * 2 nights = 12 hours</fact1>. On Saturday, he watched <fact3>4 hours + 15 minutes = 4 hours + 0.25 hours = 4.25 hours</fact3>. On Sunday, he watched <fact4>3 hours * 3 episodes = 9 hours</fact4>. On Monday, he watched <fact5>45 minutes * 3 episodes = 2.25 hours</fact5>. So, the total hours of TV he watched on the days other than Friday is 12 + 4.25 + 9 + 2.25 = 27.5 hours. Since <fact6>he watched 30 hours of TV in all</fact6>, he must have watched 30 - 27.5 = 2.5 hours of TV on Friday. Since each episode on Friday is 30 minutes, which is 0.5 hours, the number of episodes he watched on Friday is 2.5 / 0.5 = 5 episodes.
+
+The answer is {5}.",5.0,1,1,p2,956,1423
+21,"Reformatted Question: Sanjay watches TV after he finishes his homework every night. On <fact1>Tuesday and Wednesday, he watched 5-hour episodes of his favorite show each night</fact1>. On <fact2>Thursday, he watched a few episodes of a 15-minute show</fact2>. On <fact3>Friday, he finished homework early and watched a 2-hour episode and a 60-minute show</fact3>. On <fact4>Saturday, he got to stay up late, so he watched three 3-hour episodes</fact4>. On <fact5>Sunday, he watched three episodes, each 45 minutes</fact5>. If <fact6>he watched 25 hours of TV in all</fact6>, how many 15-minute episodes did he watch on Thursday?
+
+Answer: First, we need to calculate the total hours of TV Sanjay watched on the days other than Thursday. On Tuesday and Wednesday, he watched a total of <fact1>2 * 5 = 10 hours</fact1>. On Friday, he watched a total of <fact3>2 + 1 = 3 hours</fact3>. On Saturday, he watched a total of <fact4>3 * 3 = 9 hours</fact4>. On Sunday, he watched a total of <fact5>3 * 45/60 = 2.25 hours</fact5>. So, the total hours of TV he watched on the days other than Thursday is 10 + 3 + 9 + 2.25 = 24.25 hours. Since <fact6>he watched 25 hours of TV in all</fact6>, he must have watched 25 - 24.25 = 0.75 hours of TV on Thursday. Since each episode on Thursday is 15 minutes, he must have watched 0.75 * 60/15 = 3 episodes on Thursday.
+The answer is {3}.",3.0,1,1,p2,936,1369
+16,"Reformatted Question: Deshawn is selling brownies and banana pies for a fundraiser. On Friday, he sold <fact1>29 boxes of brownie</fact1> and <fact2>11 fewer boxes of banana pie, than on Saturday</fact2>. On Saturday, he sold <fact3>14 more boxes of brownies than on Friday</fact3> and <fact4>28 boxes of banana pie</fact4>. On Sunday, he sold <fact5>as much as he did in the past two days combined</fact5>. If the <fact6>brownie cost €10</fact6> and the <fact7>banana pie cost €28</fact7>, what was DeShawn's average daily earning?
+
+Answer: On Friday, DeShawn sold <fact1>29 boxes of brownie</fact1> and <fact4>28</fact4> - <fact2>11</fact2> = 17 boxes of banana pie. 
+On Saturday, he sold <fact1>29</fact1> + <fact3>14</fact3> = 43 boxes of brownie and <fact4>28 boxes of banana pie</fact4>. 
+On Sunday, he sold <fact5>as much as he did in the past two days combined</fact5>, so he sold (29 + 43) boxes of brownie and (17 + 28) boxes of banana pie. 
+This means he sold (29 + 43 + 72) = 144 boxes of brownie and (17 + 28 + 45) = 90 boxes of banana pie. 
+His total earning is <fact6>€10</fact6> * 144 + <fact7>€28</fact7> * 90 = €1440 + €2520 = €3960. 
+His average daily earning is €3960 / 3 = €1320.
+The answer is {1320}.",1320.0,1,1,p2,743,1222
+10,"Reformatted Question: To make a call from a hotel room phone, you must pay <fact1>₣0.8 for each minute of your call</fact1>. After <fact2>5 minutes</fact2>, the price drops to <fact3>₣0.7 per minute</fact3>. After <fact4>25 minutes from the start of the call</fact4>, the price drops even more to <fact5>₣0.3 per two minutes</fact5>. If your total bill is more than <fact6>₣15</fact6>, you get a <fact7>20% discount on your total bill</fact7>. How much would a <fact8>105-minute call</fact8> cost?
+
+Answer: For the first <fact2>5 minutes</fact2>, the cost is <fact1>₣0.8 per minute</fact1> * <fact2>5 minutes</fact2> = ₣4.
+For the next <fact4>25 - 5 = 20 minutes</fact4>, the cost is <fact3>₣0.7 per minute</fact3> * 20 minutes = ₣14.
+For the remaining <fact8>105 - 25 = 80 minutes</fact8>, the cost is <fact5>₣0.3 per two minutes</fact5> * (80/2) = ₣12.
+The total cost is ₣4 + ₣14 + ₣12 = ₣30.
+Since the total bill is more than <fact6>₣15</fact6>, a <fact7>20% discount</fact7> is applied, making the final cost ₣30 * 0.8 = ₣24.
+The answer is {24}.",24.0,1,1,p2,482,1049
+41,"Reformatted Question: A building is made out of <fact1>7 pink bricks</fact1>, <fact2>twice as many white bricks</fact2>, and an unknown number of black bricks. If there are <fact3>35 bricks in the building in total</fact3>, what percentage of bricks are black?
+
+Answer: The number of white bricks is <fact2>twice as many white bricks</fact2> as pink bricks, so there are 2 * <fact1>7 pink bricks</fact1> = 14 white bricks. The total number of pink and white bricks is <fact1>7 pink bricks</fact1> + 14 white bricks = 21 bricks. Since there are <fact3>35 bricks in the building in total</fact3>, the number of black bricks is <fact3>35 bricks in the building in total</fact3> - 21 bricks = 14 bricks. The percentage of black bricks is (14 / <fact3>35 bricks in the building in total</fact3>) * 100% = 40%.
+
+The answer is {40}.",40.0,1,1,p2,1833,825
+2,"Reformatted Question: Carlos is rolling a <fact1>4-sided die</fact1>. How much more likely is it (expressed as a difference in percentage points) that he rolls a number greater than 2 <fact2>twice in a row</fact2>, than that he rolls <fact3>four odd numbers in a row</fact3>?
+
+Answer: To calculate the probability of rolling a number greater than 2 twice in a row, we first need to find the probability of rolling a number greater than 2 on a single roll. Since the die is <fact1>4-sided</fact1>, there are 2 numbers greater than 2 (3 and 4) out of a total of 4 possible outcomes. So, the probability of rolling a number greater than 2 on a single roll is 2/4 = 0.5. To find the probability of rolling a number greater than 2 <fact2>twice in a row</fact2>, we square this probability: 0.5^2 = 0.25.
+
+Next, we need to calculate the probability of rolling <fact3>four odd numbers in a row</fact3>. Since there are 2 odd numbers (1 and 3) out of a total of 4 possible outcomes on a single roll, the probability of rolling an odd number on a single roll is 2/4 = 0.5. To find the probability of rolling <fact3>four odd numbers in a row</fact3>, we raise this probability to the power of 4: 0.5^4 = 0.0625.
+
+Now, we can find the difference in probability between these two events: 0.25 - 0.0625 = 0.1875. To express this as a difference in percentage points, we multiply by 100: 0.1875 x 100 = 18.75.
+
+The answer is {18.75}.",18.75,1,1,p2,121,1419
+19,"Reformatted Question: In a <fact1>80-item quiz</fact1>, <fact2>25% of the questions are physics</fact2>, <fact3>15% are geometry</fact3>, and the rest are equally divided as <fact4>chemistry and literature questions</fact4>. If Chen is sure to get <fact5>25% of the geometry questions</fact5>, <fact6>75% of the physics questions</fact6>, and <fact7>1/8 of the chemistry and literature questions</fact7> correctly, how many points is she sure to get?
+
+Answer: First, we need to find the number of questions for each subject. The number of physics questions is <fact1>80</fact1> * <fact2>25%</fact2> = 20 questions. The number of geometry questions is <fact1>80</fact1> * <fact3>15%</fact3> = 12 questions. The number of chemistry and literature questions is <fact1>80</fact1> - 20 - 12 = 48 questions, and since they are equally divided, there are 48 / 2 = 24 questions for each subject.
+
+Now, we can calculate the number of correct answers for each subject. Chen will get <fact5>25%</fact5> of 12 geometry questions correct, which is 0.25 * 12 = 3 questions. She will get <fact6>75%</fact6> of 20 physics questions correct, which is 0.75 * 20 = 15 questions. She will get <fact7>1/8</fact7> of 24 chemistry questions correct, which is 24 / 8 = 3 questions, and <fact7>1/8</fact7> of 24 literature questions correct, which is also 3 questions.
+
+In total, Chen will get 3 + 15 + 3 + 3 = 24 questions correct. Therefore, she is sure to get 24 points.
+
+The answer is {24}.",24.0,1,1,p2,838,1469
+36,"Reformatted Question: Mia went to the cafe and bought various types of treats. She bought <fact1>48 danishes at $20 per dozen</fact1>, <fact2>60 tarts at $24 per dozen</fact2>, and <fact3>24 scones</fact3>. After a <fact4>25% discount</fact4>, she paid a total of <fact5>$1140</fact5>. What was the cost of scones per dozen?
+
+Answer: First, let's calculate the cost of danishes and tarts. The cost of <fact1>48 danishes at $20 per dozen</fact1> is 48 / 12 * $20 = $80. The cost of <fact2>60 tarts at $24 per dozen</fact2> is 60 / 12 * $24 = $120. The total cost of danishes and tarts is $80 + $120 = $200. 
+
+Let x be the cost of scones per dozen. Then the cost of <fact3>24 scones</fact3> is 24 / 12 * x = 2x. 
+
+The total cost of all treats before the discount is $200 + 2x. 
+
+After a <fact4>25% discount</fact4>, the total cost becomes ($200 + 2x) * (1 - 0.25) = ($200 + 2x) * 0.75 = $150 + 1.5x.
+
+Since Mia paid a total of <fact5>$1140</fact5>, we can set up the equation $150 + 1.5x = $1140.
+
+Solving for x, we get 1.5x = $1140 - $150 = $990, so x = $990 / 1.5 = $660.
+
+The answer is {660}.",660.0,1,1,p2,1585,1093
+41,"Reformatted Question: A building is made out of <fact1>3 white bricks</fact1>, <fact2>two times as many pink bricks</fact2>, and <fact3>an unknown number of green bricks</fact3>. If there are <fact4>30 bricks in the building in total</fact4>, what percentage of bricks are green?
+
+Answer: First, we need to find the number of pink bricks. Since there are <fact2>two times as many pink bricks</fact2> as white bricks, and there are <fact1>3 white bricks</fact1>, there must be 2 * <fact1>3</fact1> = 6 pink bricks. Now, we know that there are <fact1>3 white bricks</fact1> and 6 pink bricks, so the total number of non-green bricks is <fact1>3</fact1> + 6 = 9 bricks. Since there are <fact4>30 bricks in the building in total</fact4>, the number of green bricks is <fact4>30</fact4> - 9 = 21 bricks. To find the percentage of green bricks, we divide the number of green bricks by the total number of bricks and multiply by 100: (21 / <fact4>30</fact4>) * 100 = 70%. Therefore, 70% of the bricks are green.
+
+The answer is {70}.",70.0,1,1,p2,1813,1025
+31,"Reformatted Question: Noah, Jasmine are currently <fact1>22 years apart in age</fact1>. Noah and Oliver are currently <fact2>7 years apart</fact2>. Noah, who is <fact3>younger than Jasmine but older than Oliver</fact3>, will be <fact4>74 in 5 years</fact4>. How much younger is Oliver than the average age of all three?
+
+Answer: Since Noah will be <fact4>74 in 5 years</fact4>, he is currently 74 - 5 = 69 years old. 
+Since Noah is <fact3>younger than Jasmine but older than Oliver</fact3> and he and Jasmine are <fact1>22 years apart in age</fact1>, Jasmine must be 69 + 22 = 91 years old. 
+Since Noah and Oliver are <fact2>7 years apart</fact2> and Noah is older, Oliver must be 69 - 7 = 62 years old. 
+The average age of the three is (69 + 91 + 62) / 3 = 74 years old. 
+Since Oliver is 62 years old, he is 74 - 62 = 12 years younger than the average age of all three.
+The answer is {12}.",12.0,1,1,p2,1386,890
+27,"Reformatted Question: Qasim receives <fact1>30 emails a day</fact1>. <fact2>20% of those emails don't require any response</fact2>. From the rest, Qasim can only respond to <fact3>2 less than the 1/2 of them</fact3>. How many emails does Qasim respond to in a <fact4>3 day work week</fact4>? Qasim work overtime on the last day so he can respond to <fact5>20% more emails than usual</fact5>.
+
+Answer: First, let's calculate the number of emails that require a response. Since <fact2>20% of the emails don't require a response</fact2>, the number of emails that require a response is <fact1>30</fact1> * (1 - 0.2) = 24 emails per day.
+
+Next, let's calculate the number of emails Qasim can respond to in a day. According to the problem, Qasim can respond to <fact3>2 less than the 1/2 of them</fact3>, which is (1/2) * 24 - 2 = 10 emails per day.
+
+Since Qasim works for <fact4>3 days</fact4>, the total number of emails he can respond to is 10 * 2 = 20 emails for the first two days. On the last day, he works overtime and can respond to <fact5>20% more emails than usual</fact5>, which is 10 * 1.2 = 12 emails.
+
+Therefore, the total number of emails Qasim responds to in a 3-day work week is 20 + 12 = 32 emails.
+
+The answer is {32}.",32.0,1,1,p2,1213,1232
+36,"Reformatted Question: Fatima went to the confectionery and bought various types of desserts. She bought <fact1>24 eclairs at $17 per dozen</fact1>, <fact2>72 cookies at $21 per dozen</fact2>, and <fact3>60 muffins</fact3>. After a <fact4>25% discount</fact4>, she paid a total of <fact5>$1230</fact5>. What was the cost of muffins per dozen?
+
+Answer: First, we need to calculate the total cost of the eclairs and cookies. Since there are 12 eclairs in a dozen, the total cost of the eclairs is <fact1>24 eclairs</fact1> / 12 * <fact1>$17 per dozen</fact1> = $34. The total cost of the cookies is <fact2>72 cookies</fact2> / 12 * <fact2>$21 per dozen</fact2> = $126. The total cost of the eclairs and cookies is $34 + $126 = $160. 
+
+Since Fatima paid a total of <fact5>$1230</fact5> after a <fact4>25% discount</fact4>, the original price of all the desserts was <fact5>$1230</fact5> / (1 - <fact4>25%</fact4>) = <fact5>$1230</fact5> / 0.75 = $1640. 
+
+The cost of the muffins is $1640 - $160 = $1480. Since there are <fact3>60 muffins</fact3>, the cost of the muffins per dozen is $1480 / (<fact3>60 muffins</fact3> / 12) = $1480 / 5 = $296.
+
+The answer is {296}.",296.0,1,1,p2,1608,1162
+13,"Reformatted Question: Sofia is an avid gardener. Two days ago, she received <fact1>35 new potted plants</fact1> from her favorite plant nursery. She already has <fact2>11 potted plants on each of the 62 window ledges</fact2> of her large country home. She also purchased <fact3>120 new plants yesterday at a 50% discount</fact3>. Feeling generous, she has decided that she will give <fact4>7 potted plants from each ledge</fact4> to friends and family tomorrow. How many potted plants will Sofia remain with?
+
+Answer: First, let's calculate the total number of plants Sofia had before giving any away. She received <fact1>35 new potted plants</fact1> two days ago. She already had <fact2>11 potted plants on each of the 62 window ledges</fact2>, which is a total of <fact2>11</fact2> * 62 = 682 plants. She also purchased <fact3>120 new plants yesterday at a 50% discount</fact3>, which means she got 120 * 0.5 = 60 plants at the discounted price, but the discount is irrelevant to the quantity, so she got <fact3>120 new plants</fact3>. So, in total, Sofia had 35 + 682 + 120 = 837 plants.
+
+Now, let's calculate how many plants Sofia will give away. She will give <fact4>7 potted plants from each ledge</fact4>, and there are 62 ledges, so she will give away <fact4>7</fact4> * 62 = 434 plants.
+
+Finally, let's subtract the number of plants Sofia will give away from the total number of plants she had: 837 - 434 = 403.
+
+The answer is {403}.",403.0,1,1,p2,608,1442
+38,"Reformatted Question: A loaf of sourdough at the market costs <fact1>€15</fact1>. The cost of a biscuit is <fact2>one-fourth of a loaf of sourdough</fact2>. The market has a promotion that if one buys <fact3>5 biscuits or more</fact3>, they get a <fact4>20% discount on biscuits</fact4>. How much more do <fact5>9 loaves of sourdough</fact5> cost than <fact6>12 biscuits</fact6>?
+
+Answer: The cost of a biscuit is <fact2>one-fourth of a loaf of sourdough</fact2>, which is <fact1>€15</fact1>/4 = €3.75. Since the market has a promotion that if one buys <fact3>5 biscuits or more</fact3>, they get a <fact4>20% discount on biscuits</fact4>, and we are buying <fact6>12 biscuits</fact6>, we can apply the discount. The discount amount is €3.75 * <fact4>20%</fact4> = €0.75. So, the cost of a biscuit after the discount is €3.75 - €0.75 = €3. The total cost of <fact6>12 biscuits</fact6> is €3 * 12 = €36. The total cost of <fact5>9 loaves of sourdough</fact5> is <fact1>€15</fact1> * 9 = €135. Therefore, the difference in cost is €135 - €36 = €99.
+
+The answer is {99}.",99.0,1,1,p2,1691,1067
+27,"Reformatted Question: Gabriel receives <fact1>30 emails a day</fact1>. <fact2>20% of those emails don't require any response</fact2>. From the rest, Gabriel can only respond to <fact3>2 less than the half of them</fact3>. How many emails does Gabriel respond to in a <fact4>4 day work week</fact4>? Gabriel work overtime on the last day so he can respond to <fact5>40% more emails than usual</fact5>.
+
+Answer: First, let's calculate the number of emails that require a response. Since <fact2>20% of the emails don't require a response</fact2>, the number of emails that require a response is <fact1>30</fact1> * (1 - 0.2) = 24 emails per day.
+
+Next, let's calculate the number of emails Gabriel can respond to in a day. He can respond to <fact3>2 less than the half of them</fact3>, which is (24 / 2) - 2 = 10 emails per day.
+
+Since Gabriel works for <fact4>4 days</fact4>, he can respond to 10 * 3 = 30 emails in the first 3 days. On the last day, he works overtime and can respond to <fact5>40% more emails than usual</fact5>, which is 10 * 1.4 = 14 emails.
+
+Therefore, the total number of emails Gabriel responds to in a 4-day work week is 30 + 14 = 44 emails.
+
+The answer is {44}.",44.0,1,1,p2,1227,1184
+15,"Reformatted Question: Noah's dog has <fact1>100 puppies</fact1>, <fact2>28 of which have spots</fact2>. Wei's dog has <fact3>45 puppies</fact3>, <fact4>15 of which have spots</fact4>. Qasim has <fact5>68 dogs</fact5>, each having <fact6>10 puppies with spots</fact6>. After a visit to the vet, Noah discovered that <fact7>half of his unspotted puppies actually have spots that were not visible before</fact7>. What percentage of all the puppies have spots?
+
+Answer: First, we need to find the total number of puppies. Noah has <fact1>100 puppies</fact1>, Wei has <fact3>45 puppies</fact3>, and Qasim has <fact5>68 dogs</fact5> with <fact6>10 puppies</fact6> each, so Qasim has <fact5>68</fact5> * <fact6>10</fact6> = 680 puppies. The total number of puppies is <fact1>100</fact1> + <fact3>45</fact3> + 680 = 825 puppies.
+
+Noah has <fact2>28 puppies with spots</fact2> and Wei has <fact4>15 puppies with spots</fact4>. Qasim has <fact5>68</fact5> * <fact6>10</fact6> = 680 puppies with spots. So, the initial total number of puppies with spots is <fact2>28</fact2> + <fact4>15</fact4> + 680 = 723.
+
+Noah also has <fact1>100</fact1> - <fact2>28</fact2> = 72 unspotted puppies. Since <fact7>half of his unspotted puppies actually have spots</fact7>, 72 / 2 = 36 more puppies have spots.
+
+So, the total number of puppies with spots is 723 + 36 = 759. The percentage of puppies with spots is (759 / 825) * 100% ≈ 92%.
+
+The answer is {92}.",92.0,1,1,p2,675,1433
+41,"Reformatted Question: A pyramid is made out of <fact1>4 purple cubes</fact1>, <fact2>two times as many white cubes</fact2>, and an unknown number of <fact3>pink cubes</fact3>. If there are <fact4>48 cubes in the pyramid in total</fact4>, what percentage of cubes are <fact3>pink</fact3>?
+
+Answer: There are <fact1>4 purple cubes</fact1> and <fact2>two times as many white cubes</fact2>, so there are 2 * <fact1>4</fact1> = 8 white cubes. The total number of cubes that are not <fact3>pink</fact3> is <fact1>4</fact1> + 8 = 12 cubes. Since there are <fact4>48 cubes in the pyramid in total</fact4>, the number of <fact3>pink cubes</fact3> is <fact4>48</fact4> - 12 = 36 cubes. The percentage of cubes that are <fact3>pink</fact3> is 36 / <fact4>48</fact4> * 100% = 75%.
+
+The answer is {75}.",75.0,1,1,p2,1841,789
+48,"Reformatted Question: Leilani can <fact1>peel 10 carrots a minute</fact1> and <fact2>saute 45 carrots in 18 minutes</fact2>. How many minutes will it take her to peel and saute <fact3>90 carrots</fact3> if it takes <fact4>12 seconds to wash each carrot</fact4> before peeling it? Note that Leilani can't work in parallel and needs to take a <fact5>12-minute break after peeling the carrots</fact5> before she can start sautéing them.
+
+Answer: First, Leilani needs to wash the carrots. Since there are <fact3>90 carrots</fact3> and it takes <fact4>12 seconds to wash each carrot</fact4>, it will take her <fact3>90</fact3> * <fact4>12</fact4> = 1080 seconds to wash all the carrots. Since there are 60 seconds in a minute, this is equivalent to 1080 / 60 = 18 minutes.
+
+Next, Leilani needs to peel the carrots. She can <fact1>peel 10 carrots a minute</fact1>, so it will take her <fact3>90</fact3> / <fact1>10</fact1> = 9 minutes to peel all the carrots.
+
+After peeling the carrots, Leilani needs to take a <fact5>12-minute break</fact5>. 
+
+Finally, Leilani needs to saute the carrots. She can <fact2>saute 45 carrots in 18 minutes</fact2>, so it will take her <fact3>90</fact3> / <fact2>45</fact2> * <fact2>18</fact2> = 36 minutes to saute all the carrots.
+
+Therefore, the total time it will take Leilani to peel and saute the carrots is 18 + 9 + 12 + 36 = 75 minutes.
+The answer is {75}.",75.0,1,1,p2,2133,1388
+2,"Reformatted Question: Carlos is rolling a <fact1>10-sided die</fact1>. How much more likely is it (expressed as a difference in percentage points) that he rolls a number greater than 5 <fact2>twice in a row</fact2>, than that he rolls <fact3>four odd numbers in a row</fact3>?
+
+Answer: There are 5 numbers greater than 5 on a <fact1>10-sided die</fact1>, so the probability of rolling a number greater than 5 is 5/10 = 0.5. The probability of rolling a number greater than 5 <fact2>twice in a row</fact2> is 0.5 * 0.5 = 0.25. There are 5 odd numbers on a <fact1>10-sided die</fact1>, so the probability of rolling an odd number is 5/10 = 0.5. The probability of rolling <fact3>four odd numbers in a row</fact3> is 0.5 * 0.5 * 0.5 * 0.5 = 0.0625. The difference in probability is 0.25 - 0.0625 = 0.1875. To convert this to a percentage point difference, we multiply by 100: 0.1875 * 100 = 18.75.
+
+The answer is {18.75}.",18.75,1,1,p2,114,918
+26,"Reformatted Question: An uncle eats <fact1>16 pizzas per day</fact1>, his spouse eats <fact2>24 pizzas per day</fact2>, and their grandchild eats <fact3>one-tenth of the combined number of pizzas they eat per day</fact3>. After <fact4>one month</fact4>, the family decides to go on a diet in the second month, reducing their food consumption by <fact5>50%</fact5> for the first half of the month, and then by an additional <fact6>50%</fact6> for the second half. How many pizzas does this family eat in two months?
+
+Answer: The uncle eats <fact1>16 pizzas per day</fact1> and his spouse eats <fact2>24 pizzas per day</fact2>, so together they eat <fact1>16</fact1> + <fact2>24</fact2> = 40 pizzas per day. The grandchild eats <fact3>one-tenth of the combined number of pizzas they eat per day</fact3>, which is 40 / 10 = 4 pizzas per day. So, the family eats 40 + 4 = 44 pizzas per day. In <fact4>one month</fact4>, which is 30 days, the family eats 44 * 30 = 1320 pizzas. In the first half of the second month, the family reduces their food consumption by <fact5>50%</fact5>, so they eat 44 * 0.5 = 22 pizzas per day for 15 days, which is 22 * 15 = 330 pizzas. In the second half of the second month, the family reduces their food consumption by an additional <fact6>50%</fact6>, so they eat 22 * 0.5 = 11 pizzas per day for 15 days, which is 11 * 15 = 165 pizzas. Therefore, the family eats a total of 1320 + 330 + 165 = 1815 pizzas in two months.
+The answer is {1815}.",1815.0,1,1,p2,1153,1471
+48,"Reformatted Question: Beatriz can <fact1>peel 8 carrots a minute</fact1> and <fact2>saute 20 carrots in 12 minutes</fact2>. How many minutes will it take her to peel and saute <fact3>160 carrots</fact3> if it takes <fact4>12 seconds to wash each carrot</fact4> before peeling it? Note that Beatriz can't work in parallel and needs to take a <fact5>5-minute break after peeling the carrots</fact5> before she can start sautéing them.
+
+Answer: First, we need to calculate the time it takes to wash the carrots. Since it takes <fact4>12 seconds to wash each carrot</fact4>, the total time to wash <fact3>160 carrots</fact3> is <fact3>160</fact3> * <fact4>12</fact4> seconds = 1920 seconds. Converting this to minutes, we get 1920 / 60 = 32 minutes.
+
+Next, we calculate the time it takes to peel the carrots. Since Beatriz can <fact1>peel 8 carrots a minute</fact1>, the total time to peel <fact3>160 carrots</fact3> is <fact3>160</fact3> / <fact1>8</fact1> = 20 minutes.
+
+After peeling, Beatriz needs to take a <fact5>5-minute break</fact5>, so we add this to the total time.
+
+Finally, we calculate the time it takes to sauté the carrots. Since Beatriz can <fact2>saute 20 carrots in 12 minutes</fact2>, the total time to sauté <fact3>160 carrots</fact3> is <fact3>160</fact3> / <fact2>20</fact2> * <fact2>12</fact2> = 96 minutes.
+
+Adding up all the times, we get 32 minutes (washing) + 20 minutes (peeling) + 5 minutes (break) + 96 minutes (sauteing) = 153 minutes.
+
+The answer is {153}.",153.0,1,1,p2,2113,1485

@@ -1,0 +1,491 @@
+id,question,gt,isTrue,isTagged,dataset,unique_id,question_len
+2,"Reformatted Question: Gabriel is rolling a <fact1>twenty-sided die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a number greater than 1 than that he rolls <fact2>two odd numbers in a row</fact2>?
+
+Answer: There are 19 numbers greater than 1 on a <fact1>twenty-sided die</fact1>, so the probability of rolling a number greater than 1 is 19/20. 
+To roll <fact2>two odd numbers in a row</fact2>, Gabriel must roll an odd number on the first roll (10/20 probability) and then roll an odd number on the second roll (10/20 probability). So the probability of rolling <fact2>two odd numbers in a row</fact2> is (10/20) * (10/20) = 100/400 = 1/4. 
+The difference in probabilities is 19/20 - 1/4 = 16/20 = 4/5 = 0.8. 
+Expressed as a percentage, this is 0.8 * 100% = 80%.
+The answer is {80}.",70,0,1,p2,107,814
+2,"Reformatted Question: Leon is rolling a <fact1>d20 die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a number greater than 1 than that he rolls <fact2>two even numbers in a row</fact2>?
+
+Answer: To calculate the probability of rolling a number greater than 1 on a <fact1>d20 die</fact1>, we first note that there are 20 possible outcomes, and 19 of them are greater than 1. So, the probability of rolling a number greater than 1 is 19/20.
+
+To calculate the probability of rolling <fact2>two even numbers in a row</fact2>, we note that the probability of rolling an even number on a single roll is 10/20, since half of the numbers on a <fact1>d20 die</fact1> are even. The probability of rolling <fact2>two even numbers in a row</fact2> is then (10/20) * (10/20) = 1/4.
+
+The difference in probabilities is (19/20) - (1/4) = 11/20. To express this as a percentage, we multiply by 100: (11/20) * 100 = 55%.
+
+The answer is {55}.",70,0,1,p2,118,956
+2,"Reformatted Question: Kai is rolling a <fact1>d4 die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a number greater than 2 than that he rolls <fact2>two even numbers in a row</fact2>?
+
+Answer: A <fact1>d4 die</fact1> has 4 sides, numbered 1 through 4. There are 3 numbers greater than 2 on a <fact1>d4 die</fact1>, so the probability of rolling a number greater than 2 is 3/4. To roll <fact2>two even numbers in a row</fact2>, the first roll must be even (probability 2/4 = 1/2) and the second roll must also be even (probability 1/2). The probability of rolling <fact2>two even numbers in a row</fact2> is (1/2) * (1/2) = 1/4. The difference in probabilities is 3/4 - 1/4 = 1/2. Expressed as a percentage, this is 50%.
+The answer is {50}.",25,0,1,p2,131,771
+2,"Reformatted Question: Tariq is rolling a <fact1>4-sided die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a number greater than 2 than that he rolls two <fact2>even numbers</fact2> in a row?
+
+Answer: There are <fact1>4 possible outcomes</fact1> when rolling a <fact1>4-sided die</fact1>: 1, 2, 3, and 4. Two of these outcomes are <fact2>even numbers</fact2> (2 and 4), and two are odd numbers (1 and 3). Three of these outcomes are greater than 2 (3 and 4). 
+
+The probability of rolling a number greater than 2 is therefore 3/4 or 0.75, since there are 3 favorable outcomes out of a total of 4 possible outcomes.
+
+To roll two <fact2>even numbers</fact2> in a row, Tariq must roll an <fact2>even number</fact2> on the first roll (with a probability of 2/4 or 0.5), and then roll another <fact2>even number</fact2> on the second roll (also with a probability of 2/4 or 0.5). Since these two events are independent, the probability of rolling two <fact2>even numbers</fact2> in a row is (0.5) x (0.5) = 0.25.
+
+The difference in probabilities is 0.75 - 0.25 = 0.5. Expressed as a percentage, this is 0.5 x 100% = 50%.
+
+The answer is {50}.",25,0,1,p2,148,1166
+5,"Reformatted Question: Valentina makes coffee using <fact1>teaspoons of sugar and cups of water in the ratio of 83:25</fact1>. If she used a <fact2>total of 1188 teaspoons of sugar and cups of water</fact2>, calculate the number of teaspoonfuls of sugar she used.
+
+Answer: Let's start by identifying the total number of parts in the ratio, which is <fact1>83 + 25 = 108</fact1>. Since Valentina used a <fact2>total of 1188 teaspoons of sugar and cups of water</fact2>, we can set up a proportion to find the number of teaspoonfuls of sugar she used. 
+
+Let x be the number of teaspoonfuls of sugar. We can set up the proportion: 
+x / <fact2>1188</fact2> = <fact1>83</fact1> / <fact1>108</fact1>
+
+To solve for x, we can cross-multiply:
+x = (<fact2>1188</fact2> * <fact1>83</fact1>) / <fact1>108</fact1>
+x = 918
+
+Therefore, Valentina used 918 teaspoonfuls of sugar.
+
+The answer is {918}.",913,0,1,p2,276,883
+19,"Reformatted Question: In a <fact1>40-item quiz</fact1>, <fact2>25% of the questions are biology</fact2>, and the rest are equally divided as geography and geometry questions. If Sophia is sure to get <fact3>30% of the biology questions</fact3>, and <fact4>a tenth of the geography and geometry questions</fact4> correctly, how many points is she sure to get?
+
+Answer: First, we need to find out how many biology questions there are. Since <fact2>25% of the questions are biology</fact2>, we can calculate the number of biology questions as <fact1>40</fact1> * <fact2>0.25</fact2> = 10 questions. Sophia is sure to get <fact3>30% of the biology questions</fact3> correctly, which is 10 * <fact3>0.3</fact3> = 3 questions.
+
+The rest of the questions are equally divided as geography and geometry questions. Since there are <fact1>40</fact1> questions in total, and 10 of them are biology questions, the number of geography and geometry questions is <fact1>40</fact1> - 10 = 30 questions. Since they are equally divided, there are 30 / 2 = 15 questions for each subject. Sophia is sure to get <fact4>a tenth of the geography and geometry questions</fact4> correctly, which is 15 * <fact4>0.1</fact4> = 1.5 questions for each subject. Since we can't have a fraction of a question, we'll round down to 1 question for each subject.
+
+In total, Sophia is sure to get 3 biology questions, 1 geography question, and 1 geometry question correctly. Therefore, she is sure to get 3 + 1 + 1 = 5 points.
+
+The answer is {5}.",6,0,1,p2,951,1508
+19,"Reformatted Question: In a <fact1>110-item quiz</fact1>, <fact2>40% of the questions are chemistry</fact2>, and the rest are equally divided as biology and algebra questions. If Zahra is sure to get <fact3>25% of the chemistry questions</fact3>, and <fact4>1/6 of the biology and algebra questions</fact4> correctly, how many points is she sure to get?
+
+Answer: First, we need to find the number of chemistry questions. Since <fact2>40% of the questions are chemistry</fact2>, we can calculate this as <fact2>0.4</fact2> * <fact1>110</fact1> = 44 chemistry questions. Zahra is sure to get <fact3>25% of the chemistry questions</fact3> correct, which is <fact3>0.25</fact3> * 44 = 11 chemistry questions correct.
+
+The rest of the questions are equally divided as biology and algebra questions. Since there are <fact1>110</fact1> questions in total, and 44 are chemistry questions, there are <fact1>110</fact1> - 44 = 66 biology and algebra questions. Since they are equally divided, there are 66 / 2 = 33 biology questions and 33 algebra questions.
+
+Zahra is sure to get <fact4>1/6 of the biology and algebra questions</fact4> correct. This means she will get <fact4>1/6</fact4> * 33 = 5.5 biology questions correct, and <fact4>1/6</fact4> * 33 = 5.5 algebra questions correct. Since we can't have a fraction of a question, we will round down to 5 correct questions for both biology and algebra.
+
+In total, Zahra is sure to get 11 chemistry questions correct, 5 biology questions correct, and 5 algebra questions correct. This gives her a total of 11 + 5 + 5 = 21 points.
+
+The answer is {21}.",22,0,1,p2,952,1591
+19,"Reformatted Question: In a <fact1>50-item quiz</fact1>, <fact2>40% of the questions are economics</fact2>, and the rest are equally divided as literature and geography questions. If Valentina is sure to get <fact3>30% of the economics questions</fact3>, and <fact4>1/2 of the literature and geography questions</fact4> correctly, how many points is she sure to get?
+
+Answer: First, we need to find out how many economics questions there are. Since <fact2>40% of the questions are economics</fact2>, we can calculate the number of economics questions as <fact2>40%</fact2> * <fact1>50</fact1> = 0.4 * 50 = 20 questions.
+
+Next, we need to find out how many literature and geography questions there are. Since the rest of the questions are equally divided as literature and geography questions, we can calculate the number of literature and geography questions as (<fact1>50</fact1> - 20) / 2 = 15 questions each.
+
+Now, we can calculate the number of points Valentina is sure to get. She will get <fact3>30% of the economics questions</fact3> correctly, which is <fact3>30%</fact3> * 20 = 0.3 * 20 = 6 questions.
+
+She will also get <fact4>1/2 of the literature and geography questions</fact4> correctly, which is <fact4>1/2</fact4> * 15 = 7.5 questions for each subject. Since we can't have a fraction of a question, we'll round down to 7 questions for each subject.
+
+In total, Valentina is sure to get 6 + 7 + 7 = 20 questions correctly.
+
+The answer is {20}.",21,0,1,p2,980,1456
+19,"Reformatted Question: In a <fact1>150-item quiz</fact1>, <fact2>10% of the questions are biology</fact2>, and the rest are equally divided as literature and history questions. If Isabella is sure to get <fact3>40% of the biology questions</fact3>, and <fact4>a third of the literature and history questions</fact4> correctly, how many points is she sure to get?
+
+Answer: First, we need to find out how many biology questions there are. Since <fact2>10% of the questions are biology</fact2>, we can calculate the number of biology questions as <fact1>150</fact1> * <fact2>0.10</fact2> = 15 questions. 
+Isabella is sure to get <fact3>40% of the biology questions</fact3> correctly, which is 15 * <fact3>0.40</fact3> = 6 questions. 
+The rest of the questions are equally divided as literature and history questions, so there are (<fact1>150</fact1> - 15) / 2 = 67.5 questions of each type. Since we can't have a fraction of a question, we'll assume that there are 67 questions of each type (this won't affect the final answer since we're not dealing with fractions of points). 
+Isabella is sure to get <fact4>a third of the literature and history questions</fact4> correctly, which is 67 * <fact4>1/3</fact4> = 22.33 questions of each type. Again, we'll assume that she gets 22 questions of each type correct. 
+In total, Isabella is sure to get 6 + 22 + 22 = 50 questions correct. 
+The answer is {50}.",51,0,1,p2,985,1398
+19,"Reformatted Question: In a <fact1>90-item quiz</fact1>, <fact2>50% of the questions are geography</fact2>, and the rest are equally divided as biology and literature questions. If Zahra is sure to get <fact3>60% of the geography questions</fact3>, and <fact4>a third of the biology and literature questions</fact4> correctly, how many points is she sure to get?
+
+Answer: There are <fact2>50%</fact2> * <fact1>90</fact1> = 45 geography questions. Zahra will get <fact3>60%</fact3> * 45 = 27 geography questions correct. The rest of the questions are 100% - <fact2>50%</fact2> = 50% of the total questions, which is 50% * <fact1>90</fact1> = 45 questions. Half of these are biology and half are literature, so there are 45 / 2 = 22.5 biology questions and 22.5 literature questions. Since you can't have a fraction of a question, we can assume that there are 22 biology questions and 23 literature questions, or vice versa. Either way, Zahra will get <fact4>1/3</fact4> * 22 = 7.33 biology questions correct and <fact4>1/3</fact4> * 23 = 7.67 literature questions correct. We can round these down to 7 and 7, since you can't get a fraction of a question correct. So Zahra will get a total of 27 + 7 + 7 = 41 questions correct.
+The answer is {41}.",42,0,1,p2,988,1244
+19,"Reformatted Question: In a <fact1>50-item quiz</fact1>, <fact2>40% of the questions are literature</fact2>, and the rest are equally divided as <fact3>algebra and history questions</fact3>. If Fatima is sure to get <fact4>100% of the literature questions</fact4>, and <fact5>half of the algebra and history questions</fact5> correctly, how many points is she sure to get?
+
+Answer: First, we need to find out how many literature questions there are. Since <fact2>40% of the questions are literature</fact2>, we can calculate the number of literature questions as <fact2>40%</fact2> * <fact1>50 items</fact1> = 0.4 * 50 = 20 questions. 
+
+Next, we need to find out how many algebra and history questions there are. Since the rest of the questions are equally divided as <fact3>algebra and history questions</fact3>, we can calculate the number of non-literature questions as <fact1>50 items</fact1> - 20 literature questions = 30 questions. Then, we divide this by 2 to get the number of algebra questions and the number of history questions, which is 30 / 2 = 15 questions each.
+
+Now, we can calculate the number of points Fatima is sure to get. She will get <fact4>100% of the literature questions</fact4> correct, which is 20 questions. She will also get <fact5>half of the algebra and history questions</fact5> correct, which is 15 / 2 = 7.5 questions each. Since we can't have a fraction of a question, we round down to 7 questions each for algebra and history.
+
+In total, Fatima will get 20 literature questions + 7 algebra questions + 7 history questions = 34 questions correct. Therefore, she is sure to get 34 points.
+
+The answer is {34}.",35,0,1,p2,997,1644
+19,"Reformatted Question: In a <fact1>60-item quiz</fact1>, <fact2>60% of the questions are geometry</fact2>, and the rest are equally divided as literature and geography questions. If Daphne is sure to get <fact3>50% of the geometry questions</fact3>, and <fact4>1/8 of the literature and geography questions</fact4> correctly, how many points is she sure to get?
+
+Answer: First, we need to find out how many geometry questions there are. Since <fact2>60% of the questions are geometry</fact2>, we can calculate the number of geometry questions as <fact2>60%</fact2> of <fact1>60 items</fact1>, which is 0.6 * <fact1>60</fact1> = 36 questions.
+
+The rest of the questions are equally divided as literature and geography questions, so there are (<fact1>60</fact1> - 36) / 2 = 12 questions for each of literature and geography.
+
+Daphne is sure to get <fact3>50% of the geometry questions</fact3> correctly, which is <fact3>50%</fact3> of 36 questions, or 0.5 * 36 = 18 questions.
+
+She is also sure to get <fact4>1/8 of the literature and geography questions</fact4> correctly, which is <fact4>1/8</fact4> of 12 questions for each subject, or 12 * <fact4>1/8</fact4> = 1.5 questions for each subject. Since she can't get a fraction of a question correct, we'll round down to 1 question for each subject, for a total of 2 questions.
+
+Therefore, Daphne is sure to get 18 + 2 = 20 questions correct.
+
+The answer is {20}.",21,0,1,p2,998,1410
+24,"Reformatted Question: According to its nutritional info, a bag of cookies has <fact1>250 calories per serving</fact1>. If a <fact2>100 oz bag has 4 servings</fact2>, how many oz can you eat if your <fact3>daily calorie target is 2000</fact3> and you have already consumed <fact4>750 calories</fact4>?
+
+Answer: First, we need to calculate how many calories you can still consume for the day. This is <fact3>2000</fact3> - <fact4>750</fact4> = 1250 calories. Since each serving has <fact1>250 calories</fact1>, you can eat 1250 / <fact1>250</fact1> = 5 servings. Since a <fact2>100 oz bag has 4 servings</fact2>, each serving is <fact2>100 oz</fact2> / 4 = 25 oz. Therefore, you can eat 5 servings * 25 oz per serving = 125 oz.
+
+However, since the question asks how many oz you can eat and you can only eat a maximum of the bag's capacity, the answer is the minimum between the calculated amount (125 oz) and the bag's capacity (<fact2>100 oz</fact2>). Therefore, the answer is 100 oz.",125,0,1,p2,1225,983
+32,"Reformatted Question: Mrs. Smith is looking for a house that will not go beyond her <fact1>$320000 budget</fact1>. She saw a property that has a <fact2>selling price of $290000</fact2>. On top of that, the buyer has to pay a <fact3>brokerage fee which is 3% of the selling price</fact3>, and also the <fact4>transfer fee that is 10% of the selling price</fact4>. How much more is the total price of the house than Mrs. Smith's budget?
+
+Answer: The brokerage fee is <fact3>3% of the selling price</fact3>, which is <fact3>3%</fact3> * <fact2>$290000</fact2> = $8700.
+The transfer fee is <fact4>10% of the selling price</fact4>, which is <fact4>10%</fact4> * <fact2>$290000</fact2> = $29000.
+The total price of the house is the sum of the <fact2>selling price</fact2>, the brokerage fee, and the transfer fee, which is <fact2>$290000</fact2> + $8700 + $29000 = $328700.
+The difference between the total price of the house and Mrs. Smith's <fact1>budget of $320000</fact1> is $328700 - <fact1>$320000</fact1> = $8700.
+The answer is {8700}.",7700,0,1,p2,1603,1036
+32,"Reformatted Question: Mrs. Smith is looking for a house that will not go beyond her <fact1>$320000 budget</fact1>. She saw a property that has a <fact2>selling price of $290000</fact2>. On top of that, the buyer has to pay a <fact3>brokerage fee which is 4% of the selling price</fact3>, and also the <fact4>transfer fee that is 13% of the selling price</fact4>. How much more is the total price of the house than Mrs. Smith's budget?
+
+Answer: The brokerage fee is <fact3>4%</fact3> of the <fact2>$290000 selling price</fact2>, which is 0.04 x <fact2>$290000</fact2> = $11600. The transfer fee is <fact4>13%</fact4> of the <fact2>$290000 selling price</fact2>, which is 0.13 x <fact2>$290000</fact2> = $37700. The total price of the house is the <fact2>$290000 selling price</fact2> + $11600 brokerage fee + $37700 transfer fee = $338300. This is $338300 - <fact1>$320000 budget</fact1> = $18300 more than Mrs. Smith's budget.
+The answer is {18300}.",19300,0,1,p2,1605,949
+32,"Reformatted Question: Mrs. Lee is looking for a townhouse that will not go beyond her <fact1>$460000 budget</fact1>. She saw a property that has a <fact2>selling price of $440000</fact2>. On top of that, the buyer has to pay a <fact3>brokerage fee which is 4% of the selling price</fact3>, and also the <fact4>transfer fee that is 11% of the selling price</fact4>. How much more is the total price of the townhouse than Mrs. Lee's budget?
+
+Answer: The brokerage fee is <fact3>4%</fact3> of the <fact2>$440000 selling price</fact2>, which is 0.04 x <fact2>$440000</fact2> = $17600. The transfer fee is <fact4>11%</fact4> of the <fact2>$440000 selling price</fact2>, which is 0.11 x <fact2>$440000</fact2> = $48400. The total price of the townhouse is the <fact2>$440000 selling price</fact2> + $17600 brokerage fee + $48400 transfer fee = $505000. This is $505000 - <fact1>$460000 budget</fact1> = $45000 more than Mrs. Lee's budget.
+The answer is {45000}.",46000,0,1,p2,1615,955
+32,"Reformatted Question: Mrs. Smith is looking for a house that will not go beyond her <fact1>$400000 budget</fact1>. She saw a property that has a <fact2>selling price of $350000</fact2>. On top of that, the buyer has to pay a <fact3>brokerage fee which is 7% of the selling price</fact3>, and also the <fact4>transfer fee that is 11% of the selling price</fact4>. How much more is the total price of the house than Mrs. Smith's budget?
+
+Answer: The brokerage fee is <fact3>7%</fact3> of the <fact2>$350000 selling price</fact2>, which is 0.07 x <fact2>$350000</fact2> = $24500. The transfer fee is <fact4>11%</fact4> of the <fact2>$350000 selling price</fact2>, which is 0.11 x <fact2>$350000</fact2> = $38500. The total price of the house is the <fact2>$350000 selling price</fact2> + $24500 brokerage fee + $38500 transfer fee = $412500. This is $412500 - <fact1>$400000 budget</fact1> = $12500 more than Mrs. Smith's budget.
+The answer is {12500}.",13000,0,1,p2,1623,949
+32,"Reformatted Question: Dr. Patel is looking for a condo that will not go beyond her <fact1>$340000 budget</fact1>. She saw a property that has a <fact2>selling price of $330000</fact2>. On top of that, the buyer has to pay a <fact3>brokerage fee which is 5% of the selling price</fact3>, and also the <fact4>transfer fee that is 12% of the selling price</fact4>. How much more is the total price of the condo than Dr. Patel's budget?
+
+Answer: The brokerage fee is <fact3>5%</fact3> of the <fact2>$330000 selling price</fact2>, which is 0.05 * <fact2>$330000</fact2> = $16500.
+The transfer fee is <fact4>12%</fact4> of the <fact2>$330000 selling price</fact2>, which is 0.12 * <fact2>$330000</fact2> = $39600.
+The total price of the condo is the <fact2>$330000 selling price</fact2> + $16500 brokerage fee + $39600 transfer fee = $385500.
+This is $385500 - <fact1>$340000 budget</fact1> = $45500 more than Dr. Patel's budget.
+The answer is {45500}.",46100,0,1,p2,1626,946
+32,"Reformatted Question: Ms. Johnson is looking for a apartment that will not go beyond her <fact1>$420000 budget</fact1>. She saw a property that has a <fact2>selling price of $390000</fact2>. On top of that, the buyer has to pay a <fact3>brokerage fee which is 6% of the selling price</fact3>, and also the <fact4>transfer fee that is 14% of the selling price</fact4>. How much more is the total price of the apartment than Ms. Johnson's budget?
+
+Answer: The brokerage fee is <fact3>6% of the selling price</fact3>, which is <fact2>$390000</fact2> * 0.06 = $23400.
+The transfer fee is <fact4>14% of the selling price</fact4>, which is <fact2>$390000</fact2> * 0.14 = $54600.
+The total price of the apartment is the <fact2>selling price</fact2> plus the brokerage fee and the transfer fee, which is <fact2>$390000</fact2> + $23400 + $54600 = $467400.
+The difference between the total price and Ms. Johnson's <fact1>budget of $420000</fact1> is $467400 - <fact1>$420000</fact1> = $47400.
+The answer is {47400}.",48000,0,1,p2,1627,1007
+32,"Reformatted Question: Mrs. Smith is looking for a house that will not go beyond her <fact1>$420000 budget</fact1>. She saw a property that has a <fact2>selling price of $380000</fact2>. On top of that, the buyer has to pay a <fact3>brokerage fee which is 5% of the selling price</fact3>, and also the <fact4>transfer fee that is 12% of the selling price</fact4>. How much more is the total price of the house than Mrs. Smith's budget?
+
+Answer: The brokerage fee is <fact3>5%</fact3> of the <fact2>$380000 selling price</fact2>, which is 0.05 * <fact2>$380000</fact2> = $19000. The transfer fee is <fact4>12%</fact4> of the <fact2>$380000 selling price</fact2>, which is 0.12 * <fact2>$380000</fact2> = $45600. The total price of the house is the <fact2>$380000 selling price</fact2> + $19000 brokerage fee + $45600 transfer fee = $454600. This is $454600 - <fact1>$420000 budget</fact1> = $34600 more than Mrs. Smith's budget.
+The answer is {34600}.",24600,0,1,p2,1641,949
+32,"Reformatted Question: Mrs. Lee is looking for a townhouse that will not go beyond her <fact1>$380000 budget</fact1>. She saw a property that has a <fact2>selling price of $330000</fact2>. On top of that, the buyer has to pay a <fact3>brokerage fee which is 3% of the selling price</fact3>, and also the <fact4>transfer fee that is 14% of the selling price</fact4>. How much more is the total price of the townhouse than Mrs. Lee's budget?
+
+Answer: The brokerage fee is <fact3>3% of the selling price</fact3>, which is <fact3>3%</fact3> * <fact2>$330000</fact2> = $9900. The transfer fee is <fact4>14% of the selling price</fact4>, which is <fact4>14%</fact4> * <fact2>$330000</fact2> = $46200. The total price of the townhouse is <fact2>$330000</fact2> + $9900 + $46200 = $385100. This is $385100 - <fact1>$380000</fact1> = $5100 more than Mrs. Lee's budget.
+The answer is {5100}.",6100,0,1,p2,1643,880
+32,"Reformatted Question: Mrs. Lee is looking for a townhouse that will not go beyond her <fact1>$380000 budget</fact1>. She saw a property that has a <fact2>selling price of $370000</fact2>. On top of that, the buyer has to pay a <fact3>brokerage fee which is 6% of the selling price</fact3>, and also the <fact4>transfer fee that is 14% of the selling price</fact4>. How much more is the total price of the townhouse than Mrs. Lee's budget?
+
+Answer: The brokerage fee is <fact3>6% of the selling price</fact3>, which is <fact2>$370000</fact2> * 0.06 = $22200.
+The transfer fee is <fact4>14% of the selling price</fact4>, which is <fact2>$370000</fact2> * 0.14 = $51800.
+So the total price of the townhouse is <fact2>$370000</fact2> + $22200 + $51800 = $443000.
+This is <fact1>$380000</fact1> - $443000 = -$63000 over budget. However, the question asks how much more the total price is than Mrs. Lee's budget, so the answer should be a positive number. Thus, the answer is $63000.
+The answer is {63000}.",64000,0,1,p2,1644,1000
+34,"Reformatted Question: Mr. Williams sold his condo for <fact1>$620000</fact1>. He paid the transfer fees that amount to <fact2>4% of the selling price</fact2> and also paid a brokerage fee that is <fact3>3% of the selling price</fact3>. If he also paid <fact4>$520000 for the remaining loan amount of the condo</fact4>, how much is Mr. Williams's net proceeds from selling the condo?
+
+Answer: Mr. Williams paid transfer fees of <fact2>4%</fact2> * <fact1>$620000</fact1> = $24800 and brokerage fees of <fact3>3%</fact3> * <fact1>$620000</fact1> = $18600. So, the total fees paid were $24800 + $18600 = $43400. Mr. Williams also paid <fact4>$520000 for the remaining loan amount</fact4>. Therefore, his net proceeds from selling the condo are <fact1>$620000</fact1> - $43400 - <fact4>$520000</fact4> = $56700.
+The answer is {56700}.",56600,0,1,p2,1706,830
+34,"Reformatted Question: Mr. Jones sold his cottage for <fact1>$610000</fact1>. He paid the transfer fees that amount to <fact2>3% of the selling price</fact2> and also paid a brokerage fee that is <fact3>5% of the selling price</fact3>. If he also paid <fact4>$480000 for the remaining loan amount of the cottage</fact4>, how much is Mr. Jones's net proceeds from selling the cottage?
+
+Answer: Mr. Jones paid transfer fees of <fact2>3%</fact2> * <fact1>$610000</fact1> = $18300 and brokerage fees of <fact3>5%</fact3> * <fact1>$610000</fact1> = $30500. So, the total fees paid are $18300 + $30500 = $48800. Mr. Jones also paid <fact4>$480000 for the remaining loan amount</fact4>. Therefore, his net proceeds from selling the cottage are <fact1>$610000</fact1> - $48800 - <fact4>$480000</fact4> = $81300.
+The answer is {81300}.",81200,0,1,p2,1719,825
+34,"Reformatted Question: Dr. Garcia sold his house for <fact1>$660000</fact1>. He paid the legal fees that amount to <fact2>1% of the selling price</fact2> and also paid a realtor fee that is <fact3>5% of the selling price</fact3>. If he also paid <fact4>$500000 for the remaining loan amount of the house</fact4>, how much is Dr. Garcia's net proceeds from selling the house?
+
+Answer: Dr. Garcia paid <fact2>1% of the selling price</fact2> in legal fees, which is <fact2>1%</fact2> * <fact1>$660000</fact1> = $6600. He also paid <fact3>5% of the selling price</fact3> in realtor fees, which is <fact3>5%</fact3> * <fact1>$660000</fact1> = $33000. The total fees paid are $6600 + $33000 = $39600. Dr. Garcia's net proceeds from selling the house are <fact1>$660000</fact1> - $39600 - <fact4>$500000</fact4> = $160400.
+The answer is {160400}.",120400,0,1,p2,1725,838
+34,"Reformatted Question: Dr. Johnson sold his apartment for <fact1>$450000</fact1>. He paid the legal fees that amount to <fact2>2% of the selling price</fact2> and also paid a realtor fee that is <fact3>6% of the selling price</fact3>. If he also paid <fact4>$310000 for the remaining loan amount of the apartment</fact4>, how much is Dr. Johnson's net proceeds from selling the apartment?
+
+Answer: Dr. Johnson's total proceeds from selling the apartment is <fact1>$450000</fact1>. He paid <fact2>2% of the selling price</fact2> in legal fees, which is <fact2>2%</fact2> * <fact1>$450000</fact1> = $9000. He also paid <fact3>6% of the selling price</fact3> in realtor fees, which is <fact3>6%</fact3> * <fact1>$450000</fact1> = $27000. Additionally, he paid <fact4>$310000 for the remaining loan amount of the apartment</fact4>. So, his total expenses are $9000 + $27000 + <fact4>$310000</fact4> = $348000. Therefore, Dr. Johnson's net proceeds from selling the apartment is <fact1>$450000</fact1> - $348000 = $102000.
+The answer is {102000}.",104000,0,1,p2,1731,1040
+34,"Reformatted Question: Prof. Davis sold his condo for <fact1>$780000</fact1>. He paid the registration fees that amount to <fact2>2% of the selling price</fact2> and also paid a agent fee that is <fact3>3% of the selling price</fact3>. If he also paid <fact4>$430000 for the remaining loan amount of the condo</fact4>, how much is Prof. Davis's net proceeds from selling the condo?
+
+Answer: Prof. Davis sold his condo for <fact1>$780000</fact1>. He paid registration fees of <fact2>2%</fact2> * <fact1>$780000</fact1> = $15600. He also paid an agent fee of <fact3>3%</fact3> * <fact1>$780000</fact1> = $23400. Additionally, he paid <fact4>$430000 for the remaining loan amount</fact4>. So, his total expenses were $15600 + $23400 + $430000 = $468000. Therefore, his net proceeds from selling the condo are <fact1>$780000</fact1> - $468000 = $312000.
+The answer is {312000}.",311000,0,1,p2,1732,872
+34,"Reformatted Question: Dr. Smith sold his house for <fact1>$560000</fact1>. He paid the legal fees that amount to <fact2>4% of the selling price</fact2> and also paid a realtor fee that is <fact3>3% of the selling price</fact3>. If he also paid <fact4>$490000 for the remaining loan amount of the house</fact4>, how much is Dr. Smith's net proceeds from selling the house?
+
+Answer: Dr. Smith paid <fact2>4% of the selling price</fact2> for the legal fees, which is <fact2>4%</fact2> * <fact1>$560000</fact1> = $22400. He also paid <fact3>3% of the selling price</fact3> for the realtor fee, which is <fact3>3%</fact3> * <fact1>$560000</fact1> = $16800. So the total fees he paid is $22400 + $16800 = $39200. Dr. Smith's net proceeds from selling the house is <fact1>$560000</fact1> - $39200 - <fact4>$490000</fact4> = $31000.
+The answer is {31000}.",30800,0,1,p2,1736,847
+34,"Reformatted Question: Mr. Williams sold his condo for <fact1>$390000</fact1>. He paid the transfer fees that amount to <fact2>1% of the selling price</fact2> and also paid a brokerage fee that is <fact3>4% of the selling price</fact3>. If he also paid <fact4>$310000 for the remaining loan amount of the condo</fact4>, how much is Mr. Williams's net proceeds from selling the condo?
+
+Answer: Mr. Williams paid a transfer fee of <fact2>1%</fact2> of <fact1>$390000</fact1> = $3900 and a brokerage fee of <fact3>4%</fact3> of <fact1>$390000</fact1> = $15600. So the total fees paid were $3900 + $15600 = $19500. Mr. Williams also paid <fact4>$310000 for the remaining loan amount of the condo</fact4>. Therefore, his net proceeds from selling the condo are <fact1>$390000</fact1> - $19500 - <fact4>$310000</fact4> = $60000.
+The answer is {60000}.",60500,0,1,p2,1739,844
+34,"Reformatted Question: Prof. Johnson sold his apartment for <fact1>$810000</fact1>. He paid the registration fees that amount to <fact2>1% of the selling price</fact2> and also paid a agent fee that is <fact3>5% of the selling price</fact3>. If he also paid <fact4>$650000 for the remaining loan amount of the apartment</fact4>, how much is Prof. Johnson's net proceeds from selling the apartment?
+
+Answer: Prof. Johnson paid <fact2>1% of the selling price</fact2> in registration fees, which is <fact2>1%</fact2> * <fact1>$810000</fact1> = $8100. He also paid <fact3>5% of the selling price</fact3> in agent fees, which is <fact3>5%</fact3> * <fact1>$810000</fact1> = $40500. So the total fees paid is $8100 + $40500 = $48600. Prof. Johnson's net proceeds from selling the apartment is <fact1>$810000</fact1> - $48600 - <fact4>$650000</fact4> = $161400.
+The answer is {161400}.",111400,0,1,p2,1746,877
+48,"Reformatted Question: Nia can <fact1>peel 4 clams a minute</fact1> and <fact2>saute 20 clams in 6 minutes</fact2>. How long will it take her to <fact3>peel and saute 80 clams</fact3>?
+
+Answer: To determine how long it will take Nia to peel 80 clams, we can divide the total number of clams by her peeling rate: 80 clams / <fact1>4 clams per minute</fact1> = 20 minutes. To determine how long it will take Nia to saute 80 clams, we can divide the total number of clams by her sauteing rate: 80 clams / (<fact2>20 clams in 6 minutes</fact2> = 20/6 = 3.33 clams per minute) = 80 / 3.33 = 24 minutes. So, the total time it will take Nia to peel and saute 80 clams is 20 + 24 = 44 minutes, but we can simplify this problem by finding the time it takes to saute and peel at the same time. We can find the time it takes to saute 80 clams which is 24 minutes, and then find how many clams Nia can peel in that time: <fact1>4 clams per minute</fact1> * 24 minutes = 96 clams. Since 96 > 80, we know that Nia will be done peeling the clams before she is done sauteing the clams. Therefore, the total time it will take Nia to <fact3>peel and saute 80 clams</fact3> is 24 minutes.
+The answer is {24}.",44,0,1,p2,2425,1188
+48,"Reformatted Question: Mia can <fact1>peel 5 shrimps a minute</fact1> and <fact2>saute 20 shrimps in 13 minutes</fact2>. How long will it take her to <fact3>peel and saute 100 shrimps</fact3>?
+
+Answer: To determine how long it will take Mia to <fact3>peel and saute 100 shrimps</fact3>, we need to calculate the time it takes to peel 100 shrimps and the time it takes to saute 100 shrimps. 
+
+Mia can <fact1>peel 5 shrimps a minute</fact1>, so to peel 100 shrimps, it will take her 100 / <fact1>5</fact1> = 20 minutes.
+
+To saute 100 shrimps, we need to determine how many sets of <fact2>20 shrimps</fact2> are in 100 shrimps. 100 / <fact2>20</fact2> = 5 sets of <fact2>20 shrimps</fact2>. Since it takes <fact2>13 minutes</fact2> to saute <fact2>20 shrimps</fact2>, it will take 5 x <fact2>13 minutes</fact2> = 65 minutes to saute 100 shrimps.
+
+However, Mia can saute and peel at the same time, so we can't simply add the times together. But we can peel the shrimps while we are waiting for other shrimps to saute, so the total time will be the time it takes to saute 100 shrimps, which is 65 minutes, and the time we spend peeling while we aren't sauteing. We spend 20 minutes peeling, but we can peel for 13 minutes while we are waiting for the first set of shrimps to saute, so we only have to add 20 - 13 = 7 minutes to the total time.
+
+Therefore, the total time it will take Mia to <fact3>peel and saute 100 shrimps</fact3> is 65 + 7 = 72 minutes.
+
+The answer is {72}.",85,0,1,p2,2442,1471
+49,"Reformatted Question: Wei collects garbage from <fact1>5 different apartment complexes</fact1>. The <fact2>first 4 have 350 apartments each</fact2> and the last one is <fact3>30% bigger than the other 4 combined</fact3>. Wei collects garbage <fact4>3 times a week from each place</fact4> and he gets paid <fact5>₺0.45 per collection for each apartment</fact5>. How much money does he make in a week?
+
+Answer: The first 4 apartment complexes have a total of <fact2>350</fact2> * 4 = 1400 apartments. The last apartment complex is <fact3>30% bigger than the other 4 combined</fact3>, so it has 1400 + 0.3 * 1400 = 1820 apartments. In total, Wei collects garbage from 1400 + 1820 = 3220 apartments. Since he collects garbage <fact4>3 times a week from each place</fact4>, he makes <fact5>₺0.45 per collection for each apartment</fact5> * 3 collections per week * 3220 apartments = ₺4359 per week.
+The answer is {4359}.",4347,0,1,p2,2479,915
+58,"Reformatted Question: <fact1>One troll can mine 5 kgs of ore per day with bare hands</fact1>. He can mine <fact2>two times as much with a nickel pickaxe</fact2> and <fact3>40% more with a titanium pickaxe than with a nickel pickaxe</fact3>. How many kgs of ore can <fact4>24 trolls with titanium pickaxes</fact4> mine in a <fact5>month with 29 days</fact5>?
+
+Answer: First, we need to find out how much ore a troll can mine with a nickel pickaxe. Since a troll can mine <fact2>two times as much with a nickel pickaxe</fact2> as with bare hands, and <fact1>a troll can mine 5 kgs of ore per day with bare hands</fact1>, then with a nickel pickaxe, a troll can mine 2 * <fact1>5 kgs</fact1> = 10 kgs of ore per day.
+
+Next, we need to find out how much ore a troll can mine with a titanium pickaxe. Since a troll can mine <fact3>40% more with a titanium pickaxe than with a nickel pickaxe</fact3>, and a troll can mine 10 kgs of ore per day with a nickel pickaxe, then with a titanium pickaxe, a troll can mine 10 + (10 * 0.4) = 10 + 4 = 14 kgs of ore per day.
+
+Now, we need to find out how much ore <fact4>24 trolls with titanium pickaxes</fact4> can mine in a day. Since one troll can mine 14 kgs of ore per day with a titanium pickaxe, then 24 trolls can mine 24 * 14 = 336 kgs of ore per day.
+
+Finally, we need to find out how much ore <fact4>24 trolls with titanium pickaxes</fact4> can mine in a <fact5>month with 29 days</fact5>. Since 24 trolls can mine 336 kgs of ore per day, then in 29 days, they can mine 336 * 29 = 9734 kgs of ore.
+
+The answer is {9734}.",9744,0,1,p2,2922,1564
+58,"Reformatted Question: <fact1>One miner can mine 5 pounds of ore per day with basic shovel</fact1>. He can mine <fact2>twice as much with a bronze pickaxe</fact2> and <fact3>40% more with a steel pickaxe than with a bronze pickaxe</fact3>. How many pounds of ore can <fact4>21 miners with steel pickaxes</fact4> mine in a <fact5>month with 29 days</fact5>?
+
+Answer: First, we need to find out how much ore a miner can mine with a bronze pickaxe. Since he can mine <fact2>twice as much with a bronze pickaxe</fact2> as with a basic shovel, he can mine <fact1>5 pounds</fact1> * 2 = 10 pounds of ore per day with a bronze pickaxe.
+
+Next, we need to find out how much ore a miner can mine with a steel pickaxe. Since he can mine <fact3>40% more with a steel pickaxe than with a bronze pickaxe</fact3>, he can mine 10 pounds * 1.4 = 14 pounds of ore per day with a steel pickaxe.
+
+Now, we need to find out how much ore <fact4>21 miners with steel pickaxes</fact4> can mine in a day. Since each miner can mine 14 pounds of ore per day, <fact4>21 miners</fact4> can mine 14 pounds * 21 = 294 pounds of ore per day.
+
+Finally, we need to find out how much ore <fact4>21 miners with steel pickaxes</fact4> can mine in a <fact5>month with 29 days</fact5>. Since they can mine 294 pounds of ore per day, they can mine 294 pounds * <fact5>29 days</fact5> = 8536 pounds of ore in a month.
+
+The answer is {8536}.",8526,0,1,p2,2935,1397
+70,"Reformatted Question: A painter works for <fact1>3 weeks every month</fact1> and for <fact2>6 days every week</fact2>. If he gets paid <fact3>₣160 every day</fact3>, how much does he earn if he works for <fact4>a year</fact4>?
+
+Answer: Since the painter works for <fact1>3 weeks every month</fact1> and there are approximately 4 weeks in a month, he works for approximately 3/4 of the month. Since he works for <fact2>6 days every week</fact2> and there are 7 days in a week, he works for 6/7 of the week. Since there are 52 weeks in <fact4>a year</fact4>, he works for approximately (3/4) * (6/7) * 52 = 3 * 6 * 52 / (4 * 7) = 3 * 6 * 13 * 4 / 7 = 936 / 7 * 3 = 36 * 13 * 3 / 7 * 3 = 36 * 13 = 468 days in a year. Since he gets paid <fact3>₣160 every day</fact3>, he earns 468 * <fact3>₣160</fact3> = ₣74880 in a year.
+The answer is {74880}.",34560,0,1,p2,3510,842
+70,"Reformatted Question: A landscaper works for <fact1>3 weeks every month</fact1> and for <fact2>5 days every week</fact2>. If he gets paid <fact3>₺105 every day</fact3>, how much does he earn if he works for <fact4>a year</fact4>?
+
+Answer: Since the landscaper works for <fact1>3 weeks every month</fact1> and there are approximately 4 weeks in a month, he works for approximately 3/4 of the month. Since he works for <fact2>5 days every week</fact2>, he works for approximately 5/7 of the week. Since there are 365 days in <fact4>a year</fact4>, the total number of days he works in a year is (3/4) * (5/7) * 365 ≈ 234 days. Since he gets paid <fact3>₺105 every day</fact3>, his total earnings for the year are 234 * <fact3>₺105</fact3> ≈ ₺24,570.
+
+The answer is {24570}.",18900,0,1,p2,3518,771
+70,"Reformatted Question: A carpenter works for <fact1>3 weeks every month</fact1> and for <fact2>6 days every week</fact2>. If he gets paid <fact3>¥50 every day</fact3>, how much does he earn if he works for <fact4>a year</fact4>?
+
+Answer: Since the carpenter works for <fact1>3 weeks every month</fact1> and there are approximately 4 weeks in a month, he works for approximately 3/4 of the month. Since he works for <fact2>6 days every week</fact2> and there are 7 days in a week, he works for 6/7 of the week. Since there are 52 weeks in <fact4>a year</fact4>, he works for approximately (3/4) * (6/7) * 52 = 3 * 6 * 52 / (4 * 7) = 3 * 6 * 13 * 4 / 7 = 936 / 7 * 3 = 36 * 13 * 3 / 7 * 3 = 36 * 13 = 468 days in a year. Since he gets paid <fact3>¥50 every day</fact3>, he earns 468 * <fact3>50</fact3> = ¥23400 in a year.
+The answer is {23400}.",10800,0,1,p2,3520,842
+70,"Reformatted Question: A painter works for <fact1>3 weeks every month</fact1> and for <fact2>5 days every week</fact2>. If he gets paid <fact3>₣190 every day</fact3>, how much does he earn if he works for <fact4>a year</fact4>?
+
+Answer: Since the painter works for <fact1>3 weeks every month</fact1> and there are approximately 4 weeks in a month, he works for approximately 3/4 of the month. Since he works for <fact2>5 days every week</fact2> and there are 7 days in a week, he works for 5/7 of the week. Since there are 52 weeks in <fact4>a year</fact4>, he works for approximately (5/7) * (3/4) * 52 = 39 * (3/4) * (5/7) * 4 = 39 * 15/7 = 195/7 * 13 = 15 * 13 = 195 days in a year. Since he earns <fact3>₣190 every day</fact3>, he earns approximately 195 * 190 = ₣37,050 in a year.
+The answer is {37050}.",34200,0,1,p2,3538,807
+70,"Reformatted Question: A plumber works for <fact1>3 weeks every month</fact1> and for <fact2>6 days every week</fact2>. If he gets paid <fact3>$180 every day</fact3>, how much does he earn if he works for <fact4>a year</fact4>?
+
+Answer: Since the plumber works for <fact1>3 weeks every month</fact1> and there are approximately 4 weeks in a month, he works for approximately 3/4 of the month. Since he works for <fact2>6 days every week</fact2> and there are 7 days in a week, he works for 6/7 of the week. Since there are 52 weeks in <fact4>a year</fact4>, the plumber works for approximately (3/4) * (6/7) * 52 = 3 * 6 * 13/7 = 234/7 * 6 = 1404/7 = 200.57 weeks, or approximately 200.57 * (6/7) * 7 = 200.57 * 6 = 1203.42 days, in a year. Since he gets paid <fact3>$180 every day</fact3>, he earns approximately 1203.42 * 180 = 216,615.6 or $216,616 per year (rounding up from 216,615.6 to 216,616).",38880,0,1,p2,3543,900
+70,"Reformatted Question: A carpenter works for <fact1>3 weeks every month</fact1> and for <fact2>6 days every week</fact2>. If he gets paid <fact3>¥115 every day</fact3>, how much does he earn if he works for <fact4>a year</fact4>?
+
+Answer: Since the carpenter works for <fact1>3 weeks every month</fact1> and there are approximately 4 weeks in a month, he works for approximately 3/4 of the month. Since he works for <fact2>6 days every week</fact2> and there are 7 days in a week, he works for 6/7 of the week. Since there are 52 weeks in <fact4>a year</fact4>, he works for approximately (3/4) * (6/7) * 52 = 3 * 6 * 52 / (4 * 7) = 3 * 6 * 13 * 4 / 7 = 936 / 7 * 3 = 36 * 13 * 3 / 7 * 3 = 36 * 13 = 468 / 7 * 7 = 468 / 7 * 7 = 468 days in a year. Since he gets paid <fact3>¥115 every day</fact3>, he earns 468 * <fact3>¥115</fact3> = ¥53,820 in a year.
+The answer is {53820}.",24840,0,1,p2,3544,875
+72,"Reformatted Question: Leon was a pen pal with <fact1>8 people</fact1>. He stopped being penpals with <fact2>4 of them</fact2>. They each send <fact3>4 letters a week</fact3> that are <fact4>9 pages long</fact4>. He responds in kind. He can write a <fact5>page every 10 minutes</fact5>. How many hours does he spend writing a week?
+
+Answer: Leon is now penpals with <fact1>8 people</fact1> - <fact2>4 of them</fact2> = 4 people. Since each of them sends <fact3>4 letters a week</fact3> and he responds in kind, he writes 4 * <fact3>4 letters a week</fact3> * 2 (for him and the other person) = 32 letters a week. Each letter is <fact4>9 pages long</fact4>, so he writes 32 * <fact4>9 pages long</fact4> = 288 pages a week. Since he can write a <fact5>page every 10 minutes</fact5>, he spends 288 * <fact5>10 minutes</fact5> = 2880 minutes a week writing. Converting this to hours, he spends 2880 / 60 = 48 hours a week writing.
+The answer is {48}.",24,0,1,p2,3606,946
+72,"Reformatted Question: Oscar was a pen pal with <fact1>8 people</fact1>. He stopped being penpals with <fact2>4 of them</fact2>. They each send <fact3>3 letters a week</fact3> that are <fact4>5 pages long</fact4>. He responds in kind. He can write a <fact5>page every 14 minutes</fact5>. How many hours does he spend writing a week?
+
+Answer: Oscar is now penpals with <fact1>8 people</fact1> - <fact2>4 of them</fact2> = 4 people. Since they each send <fact3>3 letters a week</fact3> and Oscar responds in kind, he writes 2 * <fact3>3 letters a week</fact3> * 4 people = 24 letters a week. Each letter is <fact4>5 pages long</fact4>, so he writes 24 * <fact4>5 pages long</fact4> = 120 pages a week. Since he can write a <fact5>page every 14 minutes</fact5>, he spends 120 * <fact5>14 minutes</fact5> = 1680 minutes a week writing. Converting this to hours, he spends 1680 / 60 = 28 hours a week writing.
+The answer is {28}.",14,0,1,p2,3608,923
+72,"Reformatted Question: Wei was a pen pal with <fact1>6 people</fact1>. He stopped being penpals with <fact2>1 of them</fact2>. They each send <fact3>2 letters a week</fact3> that are <fact4>9 pages long</fact4>. He responds in kind. He can write a <fact5>page every 6 minutes</fact5>. How many hours does he spend writing a week?
+
+Answer: Wei is now penpals with <fact1>6 people</fact1> - <fact2>1 person</fact2> = 5 people. 
+Each person sends <fact3>2 letters a week</fact3> and Wei responds in kind, so there are 2 * 2 = 4 letters per person per week. 
+With 5 people, that is 4 * 5 = 20 letters per week. 
+Each letter is <fact4>9 pages long</fact4>, so that is 20 * 9 = 180 pages per week. 
+Wei can write a <fact5>page every 6 minutes</fact5>, so it takes him 180 * 6 = 1080 minutes to write 180 pages. 
+There are 60 minutes in an hour, so Wei spends 1080 / 60 = 18 hours per week writing.
+The answer is {18}.",9,0,1,p2,3628,910
+72,"Reformatted Question: Arjun was a pen pal with <fact1>6 people</fact1>. He stopped being penpals with <fact2>1 of them</fact2>. They each send <fact3>2 letters a week</fact3> that are <fact4>8 pages long</fact4>. He responds in kind. He can write a page every <fact5>12 minutes</fact5>. How many hours does he spend writing a week?
+
+Answer: Arjun is now penpals with <fact1>6 people</fact1> - <fact2>1 person</fact2> = 5 people. Since each person sends <fact3>2 letters a week</fact3> and Arjun responds in kind, he writes 2 * 2 = 4 letters per person per week. With 5 penpals, he writes 4 * 5 = 20 letters per week. Since each letter is <fact4>8 pages long</fact4>, he writes 20 * 8 = 160 pages per week. Since he can write a page every <fact5>12 minutes</fact5>, he spends 160 * 12 = 1920 minutes per week writing. Converting this to hours, he spends 1920 / 60 = 32 hours per week writing.
+
+The answer is {32}.",16,0,1,p2,3629,912
+72,"Reformatted Question: Faisal was a pen pal with <fact1>7 people</fact1>. He stopped being penpals with <fact2>1 of them</fact2>. They each send <fact3>2 letters a week</fact3> that are <fact4>5 pages long</fact4>. He responds in kind. He can write a page every <fact5>12 minutes</fact5>. How many hours does he spend writing a week?
+
+Answer: Faisal is now penpals with <fact1>7 people</fact1> - <fact2>1 person</fact2> = 6 people. 
+Each person sends <fact3>2 letters a week</fact3> and Faisal responds in kind, so he writes 2 * 2 = 4 letters per person per week. 
+With 6 penpals, he writes 4 * 6 = 24 letters per week. 
+Each letter is <fact4>5 pages long</fact4>, so he writes 24 * 5 = 120 pages per week. 
+Since he can write a page every <fact5>12 minutes</fact5>, he spends 120 * 12 = 1440 minutes per week writing. 
+There are 60 minutes in an hour, so he spends 1440 / 60 = 24 hours per week writing.
+The answer is {24}.",12,0,1,p2,3637,923
+72,"Reformatted Question: Jin was a pen pal with <fact1>7 people</fact1>. He stopped being penpals with <fact2>1 of them</fact2>. They each send <fact3>2 letters a week</fact3> that are <fact4>5 pages long</fact4>. He responds in kind. He can write a <fact5>page every 14 minutes</fact5>. How many hours does he spend writing a week?
+
+Answer: Jin is now penpals with <fact1>7 people</fact1> - <fact2>1 person</fact2> = 6 people. 
+Each person sends <fact3>2 letters a week</fact3> and Jin responds in kind, so he writes 2 * 2 = 4 letters per person per week. 
+Since there are 6 people, he writes 4 * 6 = 24 letters per week. 
+Each letter is <fact4>5 pages long</fact4>, so he writes 24 * 5 = 120 pages per week. 
+Since he can write a <fact5>page every 14 minutes</fact5>, he spends 120 * 14 = 1680 minutes per week writing. 
+There are 60 minutes in an hour, so he spends 1680 / 60 = 28 hours per week writing.
+The answer is {28}.",14,0,1,p2,3638,924
+72,"Reformatted Question: Leon was a pen pal with <fact1>9 people</fact1>. He stopped being penpals with <fact2>3 of them</fact2>. They each send <fact3>2 letters a week</fact3> that are <fact4>5 pages long</fact4>. He responds in kind. He can write a <fact5>page every 4 minutes</fact5>. How many hours does he spend writing a week?
+
+Answer: Leon is now penpals with <fact1>9 people</fact1> - <fact2>3 of them</fact2> = 6 people. Since each of them sends <fact3>2 letters a week</fact3> and he responds in kind, he writes 2 * 2 = 4 letters per person per week. With 6 penpals, he writes 4 * 6 = 24 letters per week. Since each letter is <fact4>5 pages long</fact4>, he writes 24 * 5 = 120 pages per week. Since he can write a <fact5>page every 4 minutes</fact5>, he spends 120 * 4 = 480 minutes per week writing. Converting this to hours, he spends 480 / 60 = 8 hours per week writing.
+The answer is {8}.",4,0,1,p2,3642,901
+72,"Reformatted Question: Esteban was a pen pal with <fact1>14 people</fact1>. He stopped being penpals with <fact2>4 of them</fact2>. They each send <fact3>3 letters a week</fact3> that are <fact4>9 pages long</fact4>. He responds in kind. He can write a <fact5>page every 4 minutes</fact5>. How many hours does he spend writing a week?
+
+Answer: Esteban is now penpals with <fact1>14 people</fact1> - <fact2>4 of them</fact2> = 10 people. Since they each send <fact3>3 letters a week</fact3> and he responds in kind, he writes 3 * 2 = 6 letters per person per week. With 10 penpals, he writes 6 * 10 = 60 letters per week. Since each letter is <fact4>9 pages long</fact4>, he writes 60 * 9 = 540 pages per week. Since he can write a <fact5>page every 4 minutes</fact5>, he spends 540 * 4 = 2160 minutes per week writing. Converting this to hours, he spends 2160 / 60 = 36 hours per week writing.
+
+The answer is {36}.",18,0,1,p2,3644,913
+72,"Reformatted Question: Jin was a pen pal with <fact1>13 people</fact1>. He stopped being penpals with <fact2>1 of them</fact2>. They each send <fact3>4 letters a week</fact3> that are <fact4>10 pages long</fact4>. He responds in kind. He can write a <fact5>page every 6 minutes</fact5>. How many hours does he spend writing a week?
+
+Answer: Jin is now penpals with <fact1>13 people</fact1> - <fact2>1 person</fact2> = 12 people. 
+Since each person sends <fact3>4 letters a week</fact3> and Jin responds in kind, the total number of letters he writes per week is 2 * <fact3>4 letters</fact3> * 12 people = 96 letters. 
+Since each letter is <fact4>10 pages long</fact4>, Jin writes 96 letters * <fact4>10 pages</fact4> = 960 pages per week. 
+Since Jin can write a <fact5>page every 6 minutes</fact5>, he spends 960 pages * <fact5>6 minutes</fact5> = 5760 minutes per week writing. 
+There are 60 minutes in an hour, so Jin spends 5760 minutes / 60 = 96 hours per week writing.
+The answer is {96}.",48,0,1,p2,3648,992
+78,"Reformatted Question: There are <fact1>7 periods in the day for a normal student</fact1> but Kai has to take <fact2>1 extra class</fact2>. Each class is <fact3>50 minutes long</fact3>. He goes to class for <fact4>6 days a week</fact4>. He then spends <fact5>2/4 of his weekly minutes</fact5> each on Saturday and Sunday as extra learning time. How many hours a week does he spend learning?
+
+Answer: Kai has <fact1>7 periods</fact1> + <fact2>1 extra class</fact2> = 8 classes per day. Since each class is <fact3>50 minutes long</fact3>, he spends 8 * <fact3>50 minutes</fact3> = 400 minutes per day in class. He goes to class for <fact4>6 days a week</fact4>, so he spends 400 * <fact4>6</fact4> = 2400 minutes per week in class. He also spends <fact5>2/4 of his weekly minutes</fact5> each on Saturday and Sunday as extra learning time, which is <fact5>2/4</fact5> * 2400 = 1200 minutes on Saturday and Sunday combined. So, his total weekly learning time is 2400 + 1200 = 3600 minutes. Converting this to hours, we get 3600 / 60 = 60 hours per week.
+
+The answer is {60}.",80,0,1,p2,3910,1070
+78,"Reformatted Question: There are <fact1>5 periods in the day for a normal student</fact1> but Gabriel has to take <fact2>3 extra classes</fact2>. <fact3>Each class is 45 minutes long</fact3>. He goes to class for <fact4>4 days a week</fact4>. He then spends <fact5>two-fourths of his weekly minutes</fact5> each on Saturday and Sunday as extra learning time. How many hours a week does he spend learning?
+
+Answer: Gabriel has <fact1>5 periods</fact1> + <fact2>3 extra classes</fact2> = 8 classes per day. Since <fact3>each class is 45 minutes long</fact3>, he spends 8 * <fact3>45 minutes</fact3> = 360 minutes per day in class. Since he goes to class for <fact4>4 days a week</fact4>, he spends 360 * <fact4>4</fact4> = 1440 minutes per week in class. He spends an additional <fact5>two-fourths of his weekly minutes</fact5> * 2 = 1440 * 1/2 = 720 minutes on the weekends. So, in total, he spends 1440 + 720 = 2160 minutes per week learning. Converting this to hours, we get 2160 / 60 = 36 hours per week.
+
+The answer is {36}.",48,0,1,p2,3912,1026
+78,"Reformatted Question: There are <fact1>7 periods in the day for a normal student</fact1> but DeShawn has to take <fact2>1 extra class</fact2>. Each class is <fact3>60 minutes long</fact3>. He goes to class for <fact4>6 days a week</fact4>. He then spends <fact5>two-sixths of his weekly minutes</fact5> each on Saturday and Sunday as extra learning time. How many hours a week does he spend learning?
+
+Answer: DeShawn has to take <fact1>7 periods</fact1> + <fact2>1 extra class</fact2> = 8 classes per day. Since each class is <fact3>60 minutes long</fact3>, he spends 8 * <fact3>60</fact3> = 480 minutes per day in class. He goes to class for <fact4>6 days a week</fact4>, so he spends 480 * <fact4>6</fact4> = 2880 minutes per week in class. He also spends <fact5>two-sixths of his weekly minutes</fact5> each on Saturday and Sunday as extra learning time. Two-sixths is equal to 1/3, so he spends 1/3 * 2880 = 960 minutes on Saturday and Sunday. Therefore, the total time he spends learning per week is 2880 + 960 = 3840 minutes. To convert this to hours, we divide by 60: 3840 / 60 = 64 hours.
+
+The answer is {64}.",80,0,1,p2,3924,1118
+78,"Reformatted Question: There are <fact1>9 periods in the day for a normal student</fact1> but James has to take <fact2>4 extra classes</fact2>. Each class is <fact3>40 minutes long</fact3>. He goes to class for <fact4>6 days a week</fact4>. He then spends <fact5>two-fourths of his weekly minutes</fact5> each on Saturday and Sunday as extra learning time. How many hours a week does he spend learning?
+
+Answer: James has <fact1>9 periods</fact1> + <fact2>4 extra classes</fact2> = 13 classes per day. Since each class is <fact3>40 minutes long</fact3>, he spends 13 * <fact3>40 minutes</fact3> = 520 minutes per day in class. Since he goes to class for <fact4>6 days a week</fact4>, he spends 520 * <fact4>6</fact4> = 3120 minutes per week in class. He spends an additional <fact5>two-fourths of his weekly minutes</fact5> * 2 = 3120 * 1/2 = 1560 minutes on Saturday and Sunday. So, in total, he spends 3120 + 1560 = 4680 minutes per week learning. Converting this to hours, we get 4680 / 60 = 78 hours per week.
+
+The answer is {78}.",104,0,1,p2,3927,1033
+78,"Reformatted Question: There are <fact1>6 periods in the day for a normal student</fact1> but Sanjay has to take <fact2>3 extra classes</fact2>. <fact3>Each class is 35 minutes long</fact3>. He goes to class for <fact4>6 days a week</fact4>. He then spends <fact5>2/4 of his weekly minutes</fact5> each on Saturday and Sunday as extra learning time. How many hours a week does he spend learning?
+
+Answer: Sanjay has <fact1>6 periods</fact1> + <fact2>3 extra classes</fact2> = 9 classes per day. Since <fact3>each class is 35 minutes long</fact3>, he spends 9 * <fact3>35 minutes</fact3> = 315 minutes per day in class. Since he goes to class for <fact4>6 days a week</fact4>, he spends 315 * <fact4>6</fact4> = 1890 minutes per week in class. He spends an additional <fact5>2/4 of his weekly minutes</fact5> * 2 = <fact5>2/4</fact5> * 2 * 1890 = 945 minutes per week on extra learning time on Saturday and Sunday. So, in total, he spends 1890 + 945 = 2835 minutes per week learning. Converting this to hours, we get 2835 / 60 = 47.25 hours per week.
+
+The answer is {47.25}.",63,0,1,p2,3941,1072
+78,"Reformatted Question: There are <fact1>5 periods in the day for a normal student</fact1> but Mateo has to take <fact2>2 extra classes</fact2>. <fact3>Each class is 40 minutes long</fact3>. He goes to class for <fact4>6 days a week</fact4>. He then spends <fact5>2/4 of his weekly minutes</fact5> each on Saturday and Sunday as extra learning time. How many hours a week does he spend learning?
+
+Answer: Mateo has <fact1>5 periods</fact1> + <fact2>2 extra classes</fact2> = 7 classes per day. Since <fact3>each class is 40 minutes long</fact3>, he spends 7 * <fact3>40 minutes</fact3> = 280 minutes per day in class. He goes to class for <fact4>6 days a week</fact4>, so he spends 280 * <fact4>6</fact4> = 1680 minutes per week in class. He spends an additional <fact5>2/4 of his weekly minutes</fact5> * 2 = <fact5>2/4</fact5> * 2 * 1680 = 840 minutes per week on extra learning time on Saturday and Sunday. In total, he spends 1680 + 840 = 2520 minutes per week learning. Converting this to hours, we get 2520 / 60 = 42 hours per week.
+
+The answer is {42}.",56,0,1,p2,3942,1057
+79,"Reformatted Question: Ravi finished <fact1>4/5 of a 395 piece puzzle</fact1>, and then started and finished another <fact2>521 piece puzzle</fact2> within an hour. How many puzzle pieces did Ravi place during that hour?
+
+Answer: Ravi finished <fact1>4/5 of a 395 piece puzzle</fact1>, which is (4/5) * 395 = 316 pieces. Then he finished a <fact2>521 piece puzzle</fact2>. So in total, he placed 316 + 521 = 837 pieces. However, this is not the total number of pieces he placed in the hour, because he had already started the 395 piece puzzle before the hour began. So, to find the total number of pieces he placed in the hour, we need to subtract the number of pieces he had already placed before the hour began. Since he had finished <fact1>4/5 of a 395 piece puzzle</fact1>, he had already placed 316 pieces before the hour began. This means he had 395 - 316 = 79 pieces left to place in the 395 piece puzzle. He placed these 79 pieces in the hour, in addition to the 521 pieces from the <fact2>521 piece puzzle</fact2>. So, the total number of pieces he placed in the hour is 79 + 521 = 600.
+
+The answer is {600}.",837,0,1,p2,3996,1116
+82,"Reformatted Question: At the beginning of the party, there were <fact1>67 artists</fact1> and <fact2>32 doctors</fact2>. After half an hour, <fact3>1/3 of the total number of people left</fact3>. How many doctors are left if <fact4>30 artists stayed at the party</fact4>?
+
+Answer: First, we need to find the total number of people at the beginning of the party. We know that there were <fact1>67 artists</fact1> and <fact2>32 doctors</fact2>, so the total number of people is <fact1>67</fact1> + <fact2>32</fact2> = 99.
+
+Since <fact3>1/3 of the total number of people left</fact3>, the number of people who left is 99 * <fact3>1/3</fact3> = 33.
+
+We are given that <fact4>30 artists stayed at the party</fact4>, so the number of artists who left is <fact1>67</fact1> - <fact4>30</fact4> = 37.
+
+However, we know that a total of 33 people left, and 37 artists left is not possible since it exceeds the total number of people who left. This means that all 33 people who left cannot be artists, and some must be doctors.
+
+Since 37 artists left is not possible, we know that 33 people left, and 37 - 33 = 4 of those ""extra"" artists did not actually leave. Instead, 4 doctors left.
+
+So, the number of doctors who left is 4, and the number of doctors who stayed is <fact2>32</fact2> - 4 = 28.
+
+The answer is {28}.",36,0,1,p2,4106,1305
+82,"Reformatted Question: At the beginning of the celebration, there were <fact1>66 nurses</fact1> and <fact2>42 doctors</fact2>. After <fact3>45 minutes</fact3>, <fact4>1/9 of the total number of people left</fact4>. How many doctors are left if <fact5>33 nurses stayed</fact5> at the celebration?
+
+Answer: First, we need to find the total number of people at the beginning of the celebration. This is the sum of the number of nurses and doctors: <fact1>66 nurses</fact1> + <fact2>42 doctors</fact2> = 108 people. 
+Then, we need to find out how many people left after <fact3>45 minutes</fact3>. Since <fact4>1/9 of the total number of people left</fact4>, the number of people who left is (1/9) * 108 = 12. 
+We also know that <fact5>33 nurses stayed</fact5> at the celebration. This means that the number of nurses who left is <fact1>66 nurses</fact1> - <fact5>33 nurses</fact5> = 33. 
+Since the total number of people who left is 12, the number of doctors who left is 12 - 33 (nurses who left, but we know 33 is too many, so we know some doctors must have stayed, so we know 33 is not the number of nurses who left, but we do know 33 nurses stayed) + x (number of nurses who left) = 12,  x = 12 - (33 - 33), x = 12, x = 12 - 33 + 33, x is the number of nurses who left, we know 33 nurses stayed so we know 66 - 33 = 33 nurses left, so we know x = 33, so we know 12 - 33 + x = 12 - 33 + 33, so we know 12 = 12, so we know 0 doctors left, so we know 12 people left, all nurses, so we know 33 nurses left, so we know 0 doctors left, so we know all doctors stayed, so we know the answer is 42 doctors, so we know there are 42 doctors left, so we know the answer is 42.
+The answer is {42}.",63,0,1,p2,4149,1682
+83,"Reformatted Question: The Williams family is busy making cupcakes. So far, <fact1>they've made 6075 cupcakes</fact1>. They have <fact2>1833 vanilla cupcakes</fact2>, <fact3>2596 blueberry cupcakes</fact3>, and some peanut butter cupcakes. How many peanut butter cupcakes have they made?
+
+Answer: To find the number of peanut butter cupcakes, we need to subtract the number of vanilla and blueberry cupcakes from the total number of cupcakes. The number of vanilla and blueberry cupcakes is <fact2>1833</fact2> + <fact3>2596</fact3> = 4430. Subtracting this from the total number of cupcakes, we get <fact1>6075</fact1> - 4430 = 1645. Therefore, the Williams family has made 1645 peanut butter cupcakes.
+The answer is {1645}.",1646,0,1,p2,4179,724
+83,"Reformatted Question: The Johnson family is busy making muffins. So far, <fact1>they've made 6900 muffins</fact1>. They have <fact2>2066 blueberry muffins</fact2>, <fact3>1753 lemon muffins</fact3>, and some strawberry muffins. How many strawberry muffins have they made?
+
+Answer: To find the number of strawberry muffins, we need to subtract the number of blueberry and lemon muffins from the total number of muffins. The number of blueberry and lemon muffins is <fact2>2066</fact2> + <fact3>1753</fact3> = 3820. Subtracting this from the total number of muffins, we get <fact1>6900</fact1> - 3820 = 3080 strawberry muffins.
+The answer is {3080}.",3081,0,1,p2,4183,647
+89,"Reformatted Question: James hires a party bus from <fact1>6 PM to 11 PM</fact1>. He gets <fact2>2 hours free</fact2>. The <fact3>first paid hour is ¥44</fact3> and each hour after that is <fact4>twice the cost</fact4>. How much did he pay?
+
+Answer: James hires the party bus for <fact1>6 PM to 11 PM</fact1>, which is 5 hours. Since he gets <fact2>2 hours free</fact2>, he only needs to pay for 5 - 2 = 3 hours. The <fact3>first paid hour is ¥44</fact3>. Each hour after that is <fact4>twice the cost</fact4>, so the second paid hour is ¥44 x 2 = ¥88, and the third paid hour is ¥88 x 2 = ¥176. Therefore, James pays ¥44 + ¥88 + ¥176 = ¥308.
+
+The answer is {308}.",220,0,1,p2,4457,663
+89,"Reformatted Question: Luis hires a boat from <fact1>4 PM to 10 PM</fact1>. He gets <fact2>2 hours free</fact2>. The <fact3>first paid hour is ₺12</fact3> and each hour after that is <fact4>twice the cost</fact4>. How much did he pay?
+
+Answer: Luis hires the boat for <fact1>6 hours</fact1>. Since he gets <fact2>2 hours free</fact2>, he has to pay for 6 - 2 = 4 hours. The <fact3>first paid hour is ₺12</fact3>. Each hour after that is <fact4>twice the cost</fact4>, so the second paid hour is ₺12 * 2 = ₺24, the third paid hour is ₺24 * 2 = ₺48, and the fourth paid hour is ₺48 * 2 = ₺96. Therefore, the total amount Luis paid is ₺12 + ₺24 + ₺48 + ₺96 = ₺180.
+The answer is {180}.",84,0,1,p2,4478,681
+96,"Reformatted Question: Keisha's aunt said that <fact1>she had €180 budgeted for her birthday party</fact1>. She wants to make sure she and her friends all get to play <fact2>one round of laser tag</fact2>, have <fact3>€7 in pinball tokens</fact3>, and get to ride <fact4>the roller coaster two times</fact4>. <fact5>A round of laser tag is €6</fact5>. <fact6>The roller coaster cost €16 a ride</fact6>. How many friends can she invite?
+
+Answer: The total cost of the roller coaster rides will be <fact6>€16 per ride</fact6> * 2 rides = €32.
+The cost of the pinball tokens is <fact3>€7</fact3>.
+The total cost of laser tag will be <fact5>€6 per person</fact5> * number of people, where the number of people is Keisha plus the number of friends she invites.
+The total cost of the party must be less than or equal to <fact1>€180</fact1>.
+So, the equation for the total cost is: €6 * number of people + €32 + €7 ≤ €180.
+Simplifying the equation gives: €6 * number of people ≤ €141.
+Dividing both sides by €6 gives: number of people ≤ 23.5.
+Since Keisha must be one of the people, the number of friends she can invite is 23.5 - 1 = 22.5.
+Since she can't invite a fraction of a person, she can invite 22 friends.
+The answer is {22}.",3,0,1,p2,4808,1225
+96,"Reformatted Question: Tara's aunt said that she had <fact1>₣190 budgeted for her birthday party</fact1>. She wants to make sure she and her friends all get to play <fact2>one round of bowling</fact2>, have <fact3>₣3 in game room tokens</fact3>, and get to ride the bumper cars <fact4>eight times</fact4>. <fact5>A round of bowling is ₣4</fact5>. The bumper cars cost <fact6>₣11 a ride</fact6>. How many friends can she invite?
+
+Answer: Tara's aunt has <fact1>₣190</fact1> to spend on the party. Tara wants to ride the bumper cars <fact4>eight times</fact4> at <fact6>₣11 per ride</fact6>, which will cost 8 * <fact6>11</fact6> = ₣88. She also wants <fact3>₣3 in game room tokens</fact3>, so that's an additional <fact3>₣3</fact3>. This leaves <fact1>₣190</fact1> - ₣88 - <fact3>₣3</fact3> = ₣99 for bowling. Since <fact5>a round of bowling is ₣4</fact5>, Tara can afford ₣99 / <fact5>₣4</fact5> = 24.75 rounds of bowling. Since Tara wants to play <fact2>one round of bowling</fact2> with her friends, and she can't invite a fraction of a friend, she can invite 24 friends (not including herself).
+The answer is {24}.",1,0,1,p2,4813,1116
+96,"Reformatted Question: Ava's mom said that she had <fact1>₣160 budgeted for her birthday party</fact1>. She wants to make sure she and her friends all get to play <fact2>one round of laser tag</fact2>, have <fact3>₣9 in pinball tokens</fact3>, and get to ride <fact4>the roller coaster two times</fact4>. <fact5>A round of laser tag is ₣9</fact5>. <fact6>The roller coaster cost ₣7 a ride</fact6>. How many friends can she invite?
+
+Answer: Ava's mom has budgeted <fact1>₣160</fact1> for the party. Ava wants to play <fact2>one round of laser tag</fact2> with her friends, which costs <fact5>₣9</fact5> per person. She also wants to ride <fact4>the roller coaster two times</fact4>, which costs <fact6>₣7</fact6> per ride, so 2 x <fact6>₣7</fact6> = ₣14 per person. Additionally, she wants <fact3>₣9 in pinball tokens</fact3>, but this is a fixed cost and does not depend on the number of friends. Let's denote the number of friends Ava can invite as x. Then, the total cost of the party will be (<fact5>₣9</fact5> + 2 x <fact6>₣7</fact6>) x (x + 1) + <fact3>₣9</fact3>, since Ava will also participate in the activities. This expression should be less than or equal to <fact1>₣160</fact1>. We can set up the inequality and solve for x.
+
+Let's calculate: 
+(₣9 + ₣14) x (x + 1) + ₣9 ≤ ₣160
+₣23 x (x + 1) + ₣9 ≤ ₣160
+₣23x + ₣23 + ₣9 ≤ ₣160
+₣23x + ₣32 ≤ ₣160
+₣23x ≤ ₣128
+x ≤ ₣128 / ₣23
+x ≤ 5.57
+
+Since Ava can't invite a fraction of a friend, we round down to the nearest whole number. Therefore, Ava can invite 5 friends.
+
+The answer is {5}.",4,0,1,p2,4818,1537
+96,"Reformatted Question: Amelia's dad said that she had <fact1>₺210 budgeted for her birthday party</fact1>. She wants to make sure she and her friends all get to play <fact2>one round of bowling</fact2>, have <fact3>₺8 in game room tokens</fact3>, and get to ride the bumper cars <fact4>nine times</fact4>. <fact5>A round of bowling is ₺8</fact5>. The bumper cars cost <fact6>₺6 a ride</fact6>. How many friends can she invite?
+
+Answer: First, let's calculate the total cost of the activities Amelia wants to do. The cost of <fact2>one round of bowling</fact2> for Amelia and her friends is <fact5>₺8</fact5> per person. The cost of the bumper cars is <fact6>₺6 a ride</fact6>, and they want to ride <fact4>nine times</fact4>, so the total cost of the bumper cars is <fact6>₺6</fact6> * <fact4>9</fact4> = ₺54. Additionally, Amelia wants <fact3>₺8 in game room tokens</fact3> for each person. Let's denote the number of friends Amelia can invite as x. Then, the total cost of the activities is (<fact5>₺8</fact5> + <fact3>₺8</fact3>) * (x + 1) + <fact6>₺54</fact6>. This total cost should not exceed <fact1>₺210</fact1>. We can set up the inequality (<fact5>₺8</fact5> + <fact3>₺8</fact3>) * (x + 1) + <fact6>₺54</fact6> ≤ <fact1>₺210</fact1> and solve for x. 
+
+We have: 
+(₺8 + ₺8) * (x + 1) + ₺54 ≤ ₺210
+₺16 * (x + 1) + ₺54 ≤ ₺210
+₺16x + ₺16 + ₺54 ≤ ₺210
+₺16x + ₺70 ≤ ₺210
+₺16x ≤ ₺140
+x ≤ ₺140 / ₺16
+x ≤ 8.75
+
+Since x must be an integer (Amelia can't invite a fraction of a friend), the maximum number of friends Amelia can invite is 8.
+
+The answer is {8}.",2,0,1,p2,4822,1555
+96,"Reformatted Question: Mei's aunt said that she had <fact1>₣210 budgeted for her birthday party</fact1>. She wants to make sure she and her friends all get to play <fact2>one round of laser tag</fact2>, have <fact3>₣5 in pinball tokens</fact3>, and get to ride <fact4>the roller coaster eight times</fact4>. <fact5>A round of laser tag is ₣4</fact5>. <fact6>The roller coaster cost ₣12 a ride</fact6>. How many friends can she invite?
+
+Answer: The total cost of the roller coaster rides will be <fact6>₣12 per ride</fact6> * 8 rides = ₣96. 
+The cost of pinball tokens is <fact3>₣5</fact3>. 
+The cost of laser tag for Mei is <fact5>₣4</fact5>. 
+The remaining budget for her friends' laser tag is <fact1>₣210</fact1> - ₣96 - <fact3>₣5</fact3> - <fact5>₣4</fact5> = ₣105. 
+The number of friends Mei can invite is ₣105 / <fact5>₣4</fact5> = 26.25, which we round down to 26.
+However, since Mei also plays a round of laser tag, we need to include her in the total number of people playing laser tag. 
+So the number of friends Mei can invite is 26.
+The answer is {26}.",1,0,1,p2,4825,1061
+96,"Reformatted Question: Kayla's dad said that she had <fact1>$130 budgeted for her birthday party</fact1>. She wants to make sure she and her friends all get to play <fact2>one round of bowling</fact2>, have <fact3>$8 in game room tokens</fact3>, and get to ride the <fact4>bumper cars five times</fact4>. <fact5>A round of bowling is $7</fact5>. The <fact6>bumper cars cost $10 a ride</fact6>. How many friends can she invite?
+
+Answer: First, let's calculate the total cost of the activities that Kayla wants to do. The cost of <fact2>one round of bowling</fact2> for Kayla and her friends will be <fact5>$7</fact5> times the number of friends plus one (for Kayla). The cost of the <fact4>bumper cars five times</fact4> will be <fact6>$10</fact6> times 5, which is $50. Additionally, Kayla wants <fact3>$8 in game room tokens</fact3> for each of her friends and herself.
+
+Let's denote the number of friends as x. Then the total cost of the activities will be <fact5>$7</fact5> * (x + 1) + $50 + <fact3>$8</fact3> * (x + 1).
+
+We know that the total cost cannot exceed <fact1>$130</fact1>. So we can set up the inequality: <fact5>$7</fact5> * (x + 1) + $50 + <fact3>$8</fact3> * (x + 1) ≤ <fact1>$130</fact1>.
+
+Simplifying the inequality, we get: 7x + 7 + 50 + 8x + 8 ≤ 130.
+
+Combine like terms: 15x + 65 ≤ 130.
+
+Subtract 65 from both sides: 15x ≤ 65.
+
+Divide both sides by 15: x ≤ 4.33.
+
+Since x must be an integer (you can't invite a fraction of a friend), the maximum number of friends Kayla can invite is 4.
+
+The answer is {4}.",1,0,1,p2,4836,1528
+96,"Reformatted Question: Elena's dad said that she had <fact1>$190 budgeted for her birthday party</fact1>. She wants to make sure she and her friends all get to play <fact2>one round of bowling</fact2>, have <fact3>$3 in game room tokens</fact3>, and get to ride the <fact4>bumper cars seven times</fact4>. <fact5>A round of bowling is $8</fact5>. The <fact6>bumper cars cost $12 a ride</fact6>. How many friends can she invite?
+
+Answer: Elena wants to make sure she and her friends all get to play <fact2>one round of bowling</fact2>, which costs <fact5>$8</fact5> per person, have <fact3>$3 in game room tokens</fact3> per person, and get to ride the <fact4>bumper cars seven times</fact4>, which costs <fact6>$12</fact6> * 7 = $84 total. The cost per person for bowling and game room tokens is <fact5>$8</fact5> + <fact3>$3</fact3> = $11. Let x be the number of friends Elena invites. Then the total cost for the party is $11 * (x + 1) + $84. This total must be less than or equal to <fact1>$190</fact1>. So $11 * (x + 1) + $84 ≤ <fact1>$190</fact1>. Subtracting $84 from both sides gives $11 * (x + 1) ≤ $106. Dividing both sides by $11 gives x + 1 ≤ 9.66. Since x must be an integer, x + 1 ≤ 9. So x ≤ 8. Therefore, Elena can invite up to 8 friends.
+The answer is {8}.",1,0,1,p2,4848,1271
+96,"Reformatted Question: Nadia's uncle said that she had <fact1>$180 budgeted for her birthday party</fact1>. She wants to make sure she and her friends all get to play <fact2>one round of bowling</fact2>, have <fact3>$6 in game room tokens</fact3>, and get to ride the <fact4>bumper cars six times</fact4>. <fact5>A round of bowling is $6</fact5>. The <fact6>bumper cars cost $13 a ride</fact6>. How many friends can she invite?
+
+Answer: First, let's calculate the total cost of the activities Nadia wants to do. The cost of <fact2>one round of bowling</fact2> for Nadia and her friends is <fact5>$6</fact5> per person. The cost of the <fact4>bumper cars six times</fact4> is <fact6>$13</fact6> per ride, so the total cost is 6 x <fact6>$13</fact6> = $78. Additionally, Nadia wants to give each of her friends <fact3>$6 in game room tokens</fact3>, which is <fact3>$6</fact3> per person. Let's denote the number of friends Nadia can invite as x. Then, the total cost of the activities is (<fact5>$6</fact5> + <fact3>$6</fact3>) x (x + 1) + $78, since Nadia also participates in the activities. This total cost should not exceed <fact1>$180</fact1>. So, we can set up the inequality: (<fact5>$6</fact5> + <fact3>$6</fact3>) x (x + 1) + $78 ≤ <fact1>$180</fact1>. Solving this inequality, we get 12x^2 + 12x - 102 ≤ 0. Dividing both sides by 6, we get 2x^2 + 2x - 17 ≤ 0. Using the quadratic formula, we find that x is between -3.5 and 2.5. Since x must be a non-negative integer, the maximum number of friends Nadia can invite is 2.
+The answer is {2}.",1,0,1,p2,4849,1548
+97,"Reformatted Question: Aisha operates the cash register exactly <fact1>eight times as fast</fact1> as her less-experienced colleague Mei. Daily, <fact2>Mei processes 81 customers</fact2>. What is the total weekly production for the two if they work <fact3>all days of the week</fact3>?
+
+Answer: Since Aisha operates the cash register <fact1>eight times as fast</fact1> as Mei, she processes 8 * <fact2>81 customers</fact2> = 648 customers per day. Together, they process <fact2>81 customers</fact2> + 648 customers = 729 customers per day. Since they work <fact3>all days of the week</fact3>, which is 7 days, their total weekly production is 729 customers/day * 7 days = 5093 customers.
+The answer is {5093}.",5103,0,1,p2,4865,708
+98,"Reformatted Question: A new bacteria infects <fact1>8 people</fact1>. Every day, <fact2>each infected person infects 4 others</fact2>. How many people are infected after <fact3>4 days</fact3>?
+
+Answer: On the first day, the <fact1>8 people</fact1> who are initially infected will infect <fact1>8</fact1> * <fact2>4 others</fact2> = 32 people. So, at the end of the first day, there will be <fact1>8</fact1> + 32 = 40 people infected. On the second day, these 40 people will infect 40 * <fact2>4 others</fact2> = 160 people. So, at the end of the second day, there will be 40 + 160 = 200 people infected. On the third day, these 200 people will infect 200 * <fact2>4 others</fact2> = 800 people. So, at the end of the third day, there will be 200 + 800 = 1000 people infected. On the fourth day, these 1000 people will infect 1000 * <fact2>4 others</fact2> = 4000 people. So, at the end of the <fact3>4 days</fact3>, there will be 1000 + 4000 = 5000 people infected, but we also need to add the <fact1>8 people</fact1> initially infected to the 40 people infected at the end of the first day, which were already included in the 1000 people, to correctly calculate the infected people after 4 days, we only need to add the 8 to the 40 which were already included.
+The answer is {5008}.",5000,0,1,p2,4913,1283
