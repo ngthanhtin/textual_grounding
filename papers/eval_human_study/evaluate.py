@@ -179,11 +179,14 @@ for file in files:
     for response, question in zip(responses, questions):
         if 'timed_out' not in response.keys() or 'time_spent_seconds' not in response.keys():
             continue
-        if response['timed_out'] == True:
+        else:
+            time_spent = response.get('time_spent_seconds', 0)  # Get time spent, default to 0
+        if response['timed_out'] == True or 'time_spent_seconds' not in response.keys():
+            time_spent = 120
             num_time_out += 1
         
-        if response['time_spent_seconds'] < time_answer_threshold:
-            num_below_threshold += 1
+        # if response['time_spent_seconds'] < time_answer_threshold:
+        #     num_below_threshold += 1
             if isTagged:
                 num_tag_below_threshold += 1
             else:
@@ -192,7 +195,7 @@ for file in files:
         
         binary_gt = question['isTrue']  # Ground truth: 1 (True), 0 (False)
         binary_pred = 1 if response['user_choice'] == "Correct" else 0  # Predicted: 1 (Correct), 0 (Incorrect)
-        time_spent = response.get('time_spent_seconds', 0)  # Get time spent, default to 0
+        
         
         if binary_gt == 1:
             dict_[tag_type]['num_correct_label'] += 1
