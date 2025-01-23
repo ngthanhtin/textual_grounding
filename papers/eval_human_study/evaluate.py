@@ -103,7 +103,7 @@ dict_ = {'tagged': {'num_correct_label': 0, 'num_incorrect_label': 0, 'false_neg
 accs = {"tagged": [], "non_tagged": []}
 times = {"tagged": [], "non_tagged": []}
 # Initialize session count
-time_answer_threshold = [0, 20, 40, 60, 80, 100, 130]
+time_answer_threshold = 0
 
 num_sessions = 0
 num_tag_sessions = 0
@@ -115,8 +115,6 @@ num_non_tag_below_threshold = 0
 
 num_practice_result_incorrect = 0
 
-time_answer_threshold = time_answer_threshold[0]
-
 # %%
 # remove 25% percentile
 mean_acc, std_acc = quarter_percentile(files)
@@ -126,7 +124,7 @@ print("Std Accuracy: ", std_acc)
 # %%    
 total_responses = {'tagged': 0, 'non_tagged': 0}
 for file in files:
-    if 'admin' in file:
+    if 'admin' in file.lower():
         continue
     
     if 'giang' in file.lower():
@@ -141,6 +139,12 @@ for file in files:
     if 'mehrshad' in file.lower():
         continue
     
+    if 'pp' in file.lower():
+        continue
+    
+    if 'test' in file.lower():
+        continue
+    
     num_sessions += 1
     
     file_path = os.path.join(path, file)
@@ -152,7 +156,7 @@ for file in files:
     isTagged = data['isTagged']
     questions = data['questions']
     responses = data['responses']
-    practice_result = data['practice_result']
+    practice_result = data['practice_correct']
     
     # Parse the start time into a datetime object
     start_datetime = datetime.fromisoformat(start_time)
@@ -160,7 +164,7 @@ for file in files:
     if start_datetime < cutoff_date:
         continue
     
-    if practice_result != 'correct':
+    if practice_result < 2:
         num_practice_result_incorrect += 1
         continue
     
@@ -177,21 +181,24 @@ for file in files:
     temp_time = 0
     temp_len_response = 0
     for response, question in zip(responses, questions):
-        if 'timed_out' not in response.keys() or 'time_spent_seconds' not in response.keys():
+        if response['timed_out'] == True and response['user_choice'] == None:
+            # print(response)
+            # print('-----')
             continue
-        else:
-            time_spent = response.get('time_spent_seconds', 0)  # Get time spent, default to 0
-        if response['timed_out'] == True or 'time_spent_seconds' not in response.keys():
+        
+        if response['timed_out'] == True:
             time_spent = 120
             num_time_out += 1
-        
+        else:
+            time_spent = response.get('time_spent_seconds', 0)  # Get time spent, default to 0
+
         # if response['time_spent_seconds'] < time_answer_threshold:
         #     num_below_threshold += 1
             if isTagged:
                 num_tag_below_threshold += 1
             else:
                 num_non_tag_below_threshold += 1
-            continue
+            # continue
         
         binary_gt = question['isTrue']  # Ground truth: 1 (True), 0 (False)
         binary_pred = 1 if response['user_choice'] == "Correct" else 0  # Predicted: 1 (Correct), 0 (Incorrect)
@@ -264,8 +271,19 @@ print("Number of non-tagged sessions: ", num_non_tag_sessions)
 # print("Number of non-tagged below threshold sessions: ", num_non_tag_below_threshold)
 
 
-# %% -- Method 2 to compute accuracy----
-print(dict_)
+# %% -- Compute Sensitivity and Specificity----
+# print TP, TN, FP, FN
+print("=== Tagged Data ===")
+print("True Positive: ", dict_['tagged']['true_positive']['num'])
+print("True Negative: ", dict_['tagged']['true_negative']['num'])
+print("False Positive: ", dict_['tagged']['false_positive']['num'])
+print("False Negative: ", dict_['tagged']['false_negative']['num'])
+print("=== Non-Tagged Data ===")
+print("True Positive: ", dict_['non_tagged']['true_positive']['num'])
+print("True Negative: ", dict_['non_tagged']['true_negative']['num'])
+print("False Positive: ", dict_['non_tagged']['false_positive']['num'])
+print("False Negative: ", dict_['non_tagged']['false_negative']['num'])
+
 
 # compute average time per question for tagged and nontagged questions
 total_time_tagged_questions = dict_['tagged']['true_positive']['time'] + dict_['tagged']['false_negative']['time'] + dict_['tagged']['false_positive']['time'] + dict_['tagged']['true_negative']['time']
@@ -298,29 +316,25 @@ print("Non-Tagged Wrong Accuracy: ", non_tagged_wrong_accuracy)
 print("Non-Tagged Wrong Time: ", non_tagged_wrong_time)
 
 # %%
-# Function to compute total accuracy
-def compute_accuracy(correct_predict_count, total_cases):
-    return (correct_predict_count / total_cases) * 100
+# # Function to compute total accuracy
+# def compute_accuracy(correct_predict_count, total_cases):
+#     return (correct_predict_count / total_cases) * 100
 
-# Compute accuracy for tagged and non-tagged
-tagged_correct_predict_count = dict_['tagged']['true_positive']['num'] + dict_['tagged']['true_negative']['num']
-print(tagged_correct_predict_count)
+# # Compute accuracy for tagged and non-tagged
+# tagged_correct_predict_count = dict_['tagged']['true_positive']['num'] + dict_['tagged']['true_negative']['num']
+# print(tagged_correct_predict_count)
 
-non_tagged_correct_predict_count = dict_['non_tagged']['true_positive']['num'] + dict_['non_tagged']['true_negative']['num']
-print(non_tagged_correct_predict_count)
-total_tagged_cases = dict_['tagged']['num_correct_label'] + dict_['tagged']['num_incorrect_label']
-print(total_tagged_cases)
-total_non_tagged_cases = dict_['non_tagged']['num_correct_label'] + dict_['non_tagged']['num_incorrect_label']
-print(total_non_tagged_cases)
-tagged_accuracy = compute_accuracy(tagged_correct_predict_count, total_tagged_cases)
-non_tagged_accuracy = compute_accuracy(non_tagged_correct_predict_count, total_non_tagged_cases)
+# non_tagged_correct_predict_count = dict_['non_tagged']['true_positive']['num'] + dict_['non_tagged']['true_negative']['num']
+# print(non_tagged_correct_predict_count)
+# total_tagged_cases = dict_['tagged']['num_correct_label'] + dict_['tagged']['num_incorrect_label']
+# print(total_tagged_cases)
+# total_non_tagged_cases = dict_['non_tagged']['num_correct_label'] + dict_['non_tagged']['num_incorrect_label']
+# print(total_non_tagged_cases)
+# tagged_accuracy = compute_accuracy(tagged_correct_predict_count, total_tagged_cases)
+# non_tagged_accuracy = compute_accuracy(non_tagged_correct_predict_count, total_non_tagged_cases)
 
-print("Tagged Accuracy: ", tagged_accuracy)
-print("Non-Tagged Accuracy: ", non_tagged_accuracy)
-# %%
-# Compute time for tagged and non-tagged
-def compute_time(correct_predict_time, total_cases):
-    return correct_predict_time / total_cases
+# print("Tagged Accuracy: ", tagged_accuracy)
+# print("Non-Tagged Accuracy: ", non_tagged_accuracy)
 
 # %%
 import matplotlib.pyplot as plt
