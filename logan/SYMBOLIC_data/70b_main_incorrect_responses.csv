@@ -26,93 +26,12 @@ To find the difference in probability, subtract the probability of rolling two o
 To express this difference as a percentage, multiply by 100: (45/100) * 100 = 45%.
 
 The answer is {45}.",55,0,1,p2,102,1057
-2,"Reformatted Question: Ibrahim is rolling a <fact1>d4 die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 2</fact2> than that he rolls <fact3>two odd numbers in a row</fact3>?
-
-Answer: The probability of rolling a <fact2>number greater than 2</fact2> on a <fact1>d4 die</fact1> is 2/4 = 1/2, since there are two numbers greater than 2 (3 and 4) out of a total of 4 possible outcomes.
-
-The probability of rolling <fact3>two odd numbers in a row</fact3> on a <fact1>d4 die</fact1> is (1/2) * (1/2) = 1/4, since the probability of rolling an odd number on a single roll is 1/2 (there are two odd numbers, 1 and 3, out of a total of 4 possible outcomes), and the rolls are independent.
-
-To find the difference in probability, we subtract the probability of rolling two odd numbers in a row from the probability of rolling a number greater than 2: 1/2 - 1/4 = 1/4.
-
-To express this difference as a percentage, we multiply by 100: (1/4) * 100 = 25%.
-
-Therefore, it is 25% more likely that Ibrahim rolls a number greater than 2 than that he rolls two odd numbers in a row.",25,0,1,p2,103,1123
-2,"Reformatted Question: Ibrahim is rolling a <fact1>d4 die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 1</fact2> than that he rolls <fact3>two odd numbers in a row</fact3>?
-
-Answer: The probability of rolling a <fact2>number greater than 1</fact2> on a <fact1>d4 die</fact1> is 3/4, since there are 3 numbers greater than 1 (2, 3, and 4) out of a total of 4 possible outcomes.
-
-The probability of rolling <fact3>two odd numbers in a row</fact3> on a <fact1>d4 die</fact1> is (1/2) × (1/2) = 1/4, since there are 2 odd numbers (1 and 3) out of a total of 4 possible outcomes, and the rolls are independent.
-
-To find the difference in probability, subtract the probability of rolling two odd numbers in a row from the probability of rolling a number greater than 1: 3/4 - 1/4 = 2/4 = 1/2.
-
-To express this difference as a percentage, multiply by 100: (1/2) × 100 = 50%.
-
-Therefore, it is 50% more likely that Ibrahim rolls a number greater than 1 than that he rolls two odd numbers in a row.",50,0,1,p2,106,1050
-2,"Reformatted Question: Gabriel is rolling a <fact1>twenty-sided die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 1</fact2> than that he rolls <fact3>two odd numbers in a row</fact3>?
-
-Answer: The probability of rolling a <fact2>number greater than 1</fact2> is 19/20, since there are 19 numbers greater than 1 on a <fact1>twenty-sided die</fact1>. The probability of rolling an odd number is 10/20 = 1/2, since there are 10 odd numbers on a <fact1>twenty-sided die</fact1>. The probability of rolling <fact3>two odd numbers in a row</fact3> is (1/2) * (1/2) = 1/4. To find the difference in probabilities, we subtract the probability of rolling two odd numbers in a row from the probability of rolling a number greater than 1: 19/20 - 1/4 = 19/20 - 5/20 = 14/20 = 7/10. To express this as a percentage, we multiply by 100: (7/10) * 100 = 70%. Therefore, it is 70% more likely that Gabriel rolls a <fact2>number greater than 1</fact2> than that he rolls <fact3>two odd numbers in a row</fact3>.",70,0,1,p2,107,1054
-2,"Reformatted Question: James is rolling a <fact1>d20 die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 2</fact2> than that he rolls <fact3>two even numbers in a row</fact3>?
-
-Answer: There are 18 numbers greater than 2 on a d20 die, so the probability of rolling a number greater than 2 is 18/20 = 0.9. The probability of rolling an even number is 10/20 = 0.5, so the probability of rolling two even numbers in a row is 0.5 * 0.5 = 0.25. The difference between these probabilities is 0.9 - 0.25 = 0.65. Expressed as a percentage, this is 0.65 * 100% = 65%. Therefore, it is 65% more likely that James rolls a number greater than 2 than that he rolls two even numbers in a row.",65,0,1,p2,108,736
-2,"Reformatted Question: Noah is rolling a <fact1>d6 die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 3</fact2> than that he rolls <fact3>two even numbers in a row</fact3>?
-
-Answer: The probability of rolling a <fact2>number greater than 3</fact2> is 3/6 = 1/2, since there are 3 numbers greater than 3 (4, 5, and 6) out of a total of 6 possible outcomes.
-
-The probability of rolling <fact3>two even numbers in a row</fact3> is (1/2) * (1/2) = 1/4, since the probability of rolling an even number on the first roll is 1/2 (there are 3 even numbers out of 6 possible outcomes), and the probability of rolling an even number on the second roll is also 1/2.
-
-To find the difference in probability, we subtract the probability of rolling two even numbers in a row from the probability of rolling a number greater than 3: 1/2 - 1/4 = 1/4.
-
-To express this difference as a percentage, we multiply by 100: (1/4) * 100 = 25%.
-
-Therefore, it is 25% more likely that Noah rolls a number greater than 3 than that he rolls two even numbers in a row.",25,0,1,p2,109,1096
-2,"Reformatted Question: Mateo is rolling a <fact1>6-sided die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 3</fact2> than that he rolls <fact3>two even numbers in a row</fact3>?
-
-Answer: There are <fact1>6</fact1> possible outcomes when rolling a die: 1, 2, 3, 4, 5, and 6. Of these, 4, 5, and 6 are <fact2>numbers greater than 3</fact2>, so the probability of rolling a number greater than 3 is 3/6 = 1/2 = 50%. The probability of rolling an even number is 3/6 = 1/2 = 50%, since there are 3 even numbers (2, 4, and 6) out of the 6 possible outcomes. To find the probability of rolling <fact3>two even numbers in a row</fact3>, we multiply the probability of rolling an even number by itself: 50% * 50% = 25%. Therefore, it is 50% - 25% = 25% more likely that Mateo rolls a number greater than 3 than that he rolls two even numbers in a row.",25,0,1,p2,111,902
-2,"Reformatted Question: Diego is rolling a <fact1>ten-sided die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 2</fact2> than that he rolls <fact3>two even numbers in a row</fact3>?
-
-Answer: The probability of rolling a <fact2>number greater than 2</fact2> is 7/10, since there are 7 numbers greater than 2 on a <fact1>ten-sided die</fact1> (3, 4, 5, 6, 7, 8, 9, 10). The probability of rolling an even number is 5/10, since there are 5 even numbers on a <fact1>ten-sided die</fact1> (2, 4, 6, 8, 10). The probability of rolling <fact3>two even numbers in a row</fact3> is (5/10) * (5/10) = 25/100 = 1/4. To find the difference in probabilities, subtract the probability of rolling <fact3>two even numbers in a row</fact3> from the probability of rolling a <fact2>number greater than 2</fact2>: 7/10 - 1/4 = 7/10 - 2.5/10 = 4.5/10 = 45%. The answer is {45}.",55,0,1,p2,113,915
-2,"Reformatted Question: Leon is rolling a <fact1>d20 die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 1</fact2> than that he rolls <fact3>two even numbers in a row</fact3>?
-
-Answer: The probability of rolling a <fact2>number greater than 1</fact2> on a <fact1>d20 die</fact1> is 19/20, since there are 19 numbers greater than 1 out of a total of 20 numbers.
-
-To roll <fact3>two even numbers in a row</fact3>, Leon must first roll an even number, which has a probability of 1/2, and then roll another even number, which also has a probability of 1/2. Therefore, the probability of rolling two even numbers in a row is (1/2) × (1/2) = 1/4.
-
-To find the difference in probability, subtract the probability of rolling two even numbers in a row from the probability of rolling a number greater than 1: 19/20 - 1/4 = 0.95 - 0.25 = 0.7.
-
-To express this difference as a percentage, multiply by 100: 0.7 × 100 = 70%.
-
-Therefore, it is 70% more likely that Leon rolls a number greater than 1 than that he rolls two even numbers in a row.",70,0,1,p2,118,1088
-2,"Reformatted Question: James is rolling a <fact1>d20 die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 2</fact2> than that he rolls <fact3>two even numbers in a row</fact3>?
-
-Answer: There are 18 numbers greater than 2 on a d20 die, so the probability of rolling a number greater than 2 is 18/20 = 0.9. The probability of rolling an even number is 10/20 = 0.5, so the probability of rolling two even numbers in a row is 0.5 * 0.5 = 0.25. The difference between these probabilities is 0.9 - 0.25 = 0.65. Expressed as a percentage, this is 0.65 * 100% = 65%. Therefore, it is 65% more likely that James rolls a number greater than 2 than that he rolls two even numbers in a row.",65,0,1,p2,119,736
-2,"Reformatted Question: James is rolling a <fact1>d20 die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 4</fact2> than that he rolls <fact3>two even numbers in a row</fact3>?
-
-Answer: The probability of rolling a <fact2>number greater than 4</fact2> on a <fact1>d20 die</fact1> is 15/20 = 3/4, since there are 15 numbers greater than 4 on a d20 die. 
-
-The probability of rolling <fact3>two even numbers in a row</fact3> on a <fact1>d20 die</fact1> is (1/2) * (1/2) = 1/4, since there is a 1/2 chance of rolling an even number on a d20 die, and this chance is independent for each roll.
-
-To find the difference in these probabilities, we can subtract the probability of rolling two even numbers in a row from the probability of rolling a number greater than 4: 3/4 - 1/4 = 2/4 = 1/2.
-
-To express this difference as a percentage, we can multiply by 100: (1/2) * 100 = 50%.
-
-The answer is {50}.",55,0,1,p2,120,950
 2,"Reformatted Question: Yusuf is rolling a <fact1>d10 die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 5</fact2> than that he rolls <fact3>two odd numbers in a row</fact3>?
 
 Answer: To calculate the probability of rolling a number greater than 5, we note that there are 5 numbers greater than 5 on a d10 die (6, 7, 8, 9, 10). So the probability of rolling a number greater than 5 is 5/10 = 1/2 = 50%. 
 To calculate the probability of rolling two odd numbers in a row, we note that there are 5 odd numbers on a d10 die (1, 3, 5, 7, 9). So the probability of rolling an odd number is 5/10 = 1/2. Since the rolls are independent, the probability of rolling two odd numbers in a row is (1/2) * (1/2) = 1/4 = 25%.
 The difference in probability is 50% - 25% = 25%. To express this as a percentage, we note that 25% is 25/25 = 1 times 25%, so it is 100% more likely to roll a number greater than 5 than to roll two odd numbers in a row.
 The answer is {100}.",25,0,1,p2,129,1010
-2,"Reformatted Question: Kai is rolling a <fact1>d4 die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 2</fact2> than that he rolls <fact3>two even numbers in a row</fact3>?
-
-Answer: The probability of rolling a <fact2>number greater than 2</fact2> on a <fact1>d4 die</fact1> is 2/4 = 1/2, since there are two numbers greater than 2 (3 and 4) out of a total of 4 possible outcomes.
-
-The probability of rolling <fact3>two even numbers in a row</fact3> on a <fact1>d4 die</fact1> is (1/2) * (1/2) = 1/4, since the probability of rolling an even number on a single roll is 1/2 (there are two even numbers, 2 and 4, out of a total of 4 possible outcomes), and the rolls are independent.
-
-To find the difference in probability, we subtract the probability of rolling two even numbers in a row from the probability of rolling a number greater than 2: 1/2 - 1/4 = 1/4.
-
-To express this difference as a percentage, we multiply by 100: (1/4) * 100 = 25%.
-
-Therefore, it is 25% more likely that Kai rolls a number greater than 2 than that he rolls two even numbers in a row.",25,0,1,p2,131,1121
 2,"Reformatted Question: Jin is rolling a <fact1>d20 die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 5</fact2> than that he rolls <fact3>two even numbers in a row</fact3>?
 
 Answer: The probability of rolling a number greater than 5 on a d20 die is 14/20, since there are 14 numbers greater than 5 on a d20 die and 20 possible outcomes in total.
@@ -126,17 +45,6 @@ The difference in probability is 0.7 - 0.25 = 0.45. To express this as a percent
 Therefore, it is 45% more likely that Jin rolls a number greater than 5 than that he rolls two even numbers in a row.
 
 The answer is {45}.",50,0,1,p2,136,1156
-2,"Reformatted Question: Ali is rolling a <fact1>10-sided die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 1</fact2> than that he rolls <fact3>two even numbers in a row</fact3>?
-
-Answer: The probability of rolling a <fact2>number greater than 1</fact2> on a <fact1>10-sided die</fact1> is 9/10, since there are 9 numbers greater than 1 (2-10) out of a total of 10 possible outcomes.
-
-To roll <fact3>two even numbers in a row</fact3>, Ali must first roll an even number, which has a probability of 5/10 (since there are 5 even numbers out of 10 possible outcomes). If he succeeds, he must then roll another even number, which again has a probability of 5/10. Therefore, the probability of rolling two even numbers in a row is (5/10) × (5/10) = 25/100 = 1/4.
-
-To find the difference in probability, we subtract the probability of rolling two even numbers in a row from the probability of rolling a number greater than 1: 9/10 - 1/4 = 36/40 - 10/40 = 26/40 = 13/20.
-
-To express this as a percentage, we divide 13 by 20 and multiply by 100: (13 ÷ 20) × 100 = 65%.
-
-Therefore, it is 65% more likely that Ali rolls a number greater than 1 than that he rolls two even numbers in a row.",65,0,1,p2,137,1237
 2,"Reformatted Question: Tariq is rolling a <fact1>10-sided die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 5</fact2> than that he rolls <fact3>two even numbers in a row</fact3>?
 
 Answer: The probability of rolling a <fact2>number greater than 5</fact2> is 4/10 = 0.4, since there are 4 numbers greater than 5 on a <fact1>10-sided die</fact1> (6, 7, 8, 9, 10). The probability of rolling an even number is 5/10 = 0.5, since there are 5 even numbers on a <fact1>10-sided die</fact1> (2, 4, 6, 8, 10). The probability of rolling <fact3>two even numbers in a row</fact3> is 0.5 * 0.5 = 0.25. Therefore, the difference in probability is 0.4 - 0.25 = 0.15. Expressed as a percentage, this is 0.15 * 100% = 15%.",25,0,1,p2,140,765
@@ -165,9 +73,6 @@ Therefore, it is 33.33% more likely that Pavel rolls a <fact2>number greater tha
 2,"Reformatted Question: Leon is rolling a <fact1>10-sided die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 2</fact2> than that he rolls <fact3>two even numbers in a row</fact3>?
 
 Answer: There are <fact1>10</fact1> possible outcomes when rolling a die. Of these, <fact2>7</fact2> are greater than 2. So the probability of rolling a number greater than 2 is <fact2>7</fact2>/<fact1>10</fact1>=0.7. There are <fact1>5</fact1> even numbers on a die, so the probability of rolling an even number is <fact1>5</fact1>/<fact1>10</fact1>=0.5. The probability of rolling <fact3>two even numbers in a row</fact3> is 0.5*0.5=0.25. The difference between these probabilities is 0.7-0.25=0.45. Expressed as a percentage, this is 0.45*100=45%. The answer is {45}.",55,0,1,p2,147,809
-2,"Reformatted Question: Tariq is rolling a <fact1>4-sided die</fact1>. How much more likely is it (expressed as a percentage) that he rolls a <fact2>number greater than 2</fact2> than that he rolls <fact3>two even numbers in a row</fact3>?
-
-Answer: The probability of rolling a <fact2>number greater than 2</fact2> is 2/4 = 1/2, since there are two numbers greater than 2 on a <fact1>4-sided die</fact1> (namely, 3 and 4). The probability of rolling <fact3>two even numbers in a row</fact3> is (1/2) * (1/2) = 1/4, since there is a 1/2 chance of rolling an even number on each roll, and the rolls are independent. To find the difference in these probabilities, we calculate 1/2 - 1/4 = 1/4. To express this as a percentage, we calculate (1/4) * 100% = 25%. Therefore, it is 25% more likely that Tariq rolls a <fact2>number greater than 2</fact2> than that he rolls <fact3>two even numbers in a row</fact3>.",25,0,1,p2,148,904
 5,"Reformatted Question: Sofia makes coffee using <fact1>teaspoons of sugar and cups of water in the ratio of 97:37</fact1>. If she used a total of <fact2>1474 teaspoons of sugar and cups of water</fact2>, calculate the number of teaspoonfuls of sugar she used.
 
 Answer: The total ratio parts are <fact1>97</fact1> + <fact1>37</fact1> = 134. 
@@ -226,63 +131,6 @@ Answer: The total ratio parts are <fact1>71+21=92</fact1>. The fraction of the t
 5,"Reformatted Question: Winnie makes coffee using <fact1>teaspoons of sugar and cups of water in the ratio of 38:5</fact1>. If she used a total of <fact2>473 teaspoons of sugar and cups of water</fact2>, calculate the number of teaspoonfuls of sugar she used.
 
 Answer: Let's start by adding the parts of the ratio together: <fact1>38 + 5 = 43</fact1>. This means that for every 43 ""units"" of the mixture, 38 of those units are teaspoons of sugar. To find the number of teaspoonfuls of sugar, we need to find out how many ""units"" of the mixture Winnie used, and then multiply that by the fraction of the mixture that is sugar. We know that Winnie used a total of <fact2>473 teaspoons of sugar and cups of water</fact2>, so we can set up the following proportion: 43 units / 473 total = 38 units / x, where x is the number of teaspoonfuls of sugar. Solving for x, we get x = (473 * 38) / 43 = 416. This means that Winnie used 416 teaspoonfuls of sugar.",418,0,1,p2,299,948
-14,"Reformatted Question: Thiago and Sakura have <fact1>107 minutes</fact1> to walk to the bank together. It takes them <fact2>19 minutes</fact2> to get to the corner where the gym is. It takes them another <fact3>21 minutes</fact3> to get to the cinema. How much longer do they have to get to bank without being late?
-
-Answer: Thiago and Sakura have <fact1>107 minutes</fact1> to walk to the bank together. They have already spent <fact2>19 minutes</fact2> to get to the corner where the gym is and another <fact3>21 minutes</fact3> to get to the cinema. So, they have spent <fact2>19</fact2> + <fact3>21</fact3> = 40 minutes. Therefore, they have <fact1>107</fact1> - 40 = 67 minutes left to get to the bank without being late.",67,0,1,p2,701,725
-14,"Reformatted Question: Hiroshi and Rania have <fact1>81 minutes</fact1> to walk to the gym together. It takes them <fact2>13 minutes</fact2> to get to the corner where the mall is. It takes them another <fact3>13 minutes</fact3> to get to the park. How much longer do they have to get to gym without being late?
-
-Answer: Hiroshi and Rania have <fact1>81 minutes</fact1> to walk to the gym together. They have already spent <fact2>13 minutes</fact2> to get to the corner where the mall is and another <fact3>13 minutes</fact3> to get to the park. So they have spent <fact2>13</fact2> + <fact3>13</fact3> = 26 minutes. Therefore, they have <fact1>81</fact1> - 26 = 55 minutes left to get to the gym without being late.",55,0,1,p2,708,715
-14,"Reformatted Question: Kayla and Quinn have <fact1>107 minutes</fact1> to walk to the bank together. It takes them <fact2>14 minutes</fact2> to get to the corner where the mall is. It takes them another <fact3>21 minutes</fact3> to get to the park. How much longer do they have to get to bank without being late?
-
-Answer: Kayla and Quinn have <fact1>107 minutes</fact1> to walk to the bank together. They have already spent <fact2>14 minutes</fact2> + <fact3>21 minutes</fact3> = 35 minutes walking to the corner and the park. Therefore, they have <fact1>107 minutes</fact1> - 35 minutes = 72 minutes left to get to the bank without being late.",72,0,1,p2,714,643
-14,"Reformatted Question: Ava and Uma have <fact1>113 minutes</fact1> to walk to the bank together. It takes them <fact2>16 minutes</fact2> to get to the corner where the gym is. It takes them another <fact3>12 minutes</fact3> to get to the library. How much longer do they have to get to bank without being late?
-
-Answer: Ava and Uma have <fact1>113 minutes</fact1> to walk to the bank together. They have already used <fact2>16 minutes</fact2> to get to the corner where the gym is and another <fact3>12 minutes</fact3> to get to the library. So, they have used <fact2>16</fact2> + <fact3>12</fact3> = 28 minutes. Therefore, they have <fact1>113</fact1> - 28 = 85 minutes left to get to the bank without being late.",85,0,1,p2,716,713
-14,"Reformatted Question: Nia and Sanjay have <fact1>87 minutes</fact1> to walk to the cinema together. It takes them <fact2>11 minutes</fact2> to get to the corner where the mall is. It takes them another <fact3>24 minutes</fact3> to get to the gym. How much longer do they have to get to cinema without being late?
-
-Answer: Nia and Sanjay have <fact1>87 minutes</fact1> to walk to the cinema together. They have already spent <fact2>11 minutes</fact2> to get to the corner where the mall is and another <fact3>24 minutes</fact3> to get to the gym. So, they have spent <fact2>11</fact2> + <fact3>24</fact3> = 35 minutes. Therefore, they have <fact1>87</fact1> - 35 = 52 minutes left to get to the cinema without being late.",52,0,1,p2,720,720
-14,"Reformatted Question: Fatima and Beatriz have <fact1>89 minutes</fact1> to walk to the cinema together. It takes them <fact2>12 minutes</fact2> to get to the corner where the bank is. It takes them another <fact3>26 minutes</fact3> to get to the gym. How much longer do they have to get to cinema without being late?
-
-Answer: Fatima and Beatriz have already spent <fact2>12 minutes</fact2> + <fact3>26 minutes</fact3> = 38 minutes walking to the gym. They have <fact1>89 minutes</fact1> - 38 minutes = 51 minutes left to get to the cinema without being late.",51,0,1,p2,742,558
-14,"Reformatted Question: Viktor and Ava have <fact1>82 minutes</fact1> to walk to the mall together. It takes them <fact2>22 minutes</fact2> to get to the corner where the park is. It takes them another <fact3>16 minutes</fact3> to get to the cinema. How much longer do they have to get to mall without being late?
-
-Answer: Viktor and Ava have <fact1>82 minutes</fact1> to walk to the mall together. They have already spent <fact2>22 minutes</fact2> to get to the corner where the park is and another <fact3>16 minutes</fact3> to get to the cinema. So, they have spent <fact2>22</fact2> + <fact3>16</fact3> = 38 minutes. Therefore, they have <fact1>82</fact1> - 38 = 44 minutes left to get to the mall without being late.",44,0,1,p2,743,718
-17,"Reformatted Question: Sophia walks <fact1>23 miles</fact1> every day on her favorite walking trail, which includes <fact2>11 miles of walking on the beach</fact2> and <fact3>12 miles of walking on the sidewalk</fact3>. On the sidewalk, Sophia walks at <fact4>three times the rate of speed</fact4> that she does on the beach. If <fact5>55 minutes of her walk is spent on the beach</fact5>, how long does it take for her to complete the entire <fact1>23-mile walk</fact1>, in minutes?
-
-Answer: Sophia walks <fact2>11 miles on the beach</fact2> in <fact5>55 minutes</fact5>, so her speed on the beach is <fact2>11 miles</fact2>/<fact5>55 minutes</fact5> = 1/5 miles per minute. 
-Since Sophia walks at <fact4>three times the rate of speed</fact4> on the sidewalk, her speed on the sidewalk is 3 * 1/5 miles per minute = 3/5 miles per minute. 
-She walks <fact3>12 miles on the sidewalk</fact3> at 3/5 miles per minute, so she spends <fact3>12 miles</fact3>/(3/5 miles per minute) = 20 minutes walking on the sidewalk. 
-Therefore, Sophia spends <fact5>55 minutes</fact5> + 20 minutes = 75 minutes walking the entire <fact1>23-mile</fact1> trail.",75,0,1,p2,862,1139
-17,"Reformatted Question: Sofia walks <fact1>23 miles</fact1> every day on her favorite walking trail, which includes <fact2>11 miles of walking on the beach</fact2> and <fact3>12 miles of walking on the sidewalk</fact3>. On the sidewalk, Sofia walks at <fact4>three times the rate of speed</fact4> that she does on the beach. If <fact5>66 minutes of her walk is spent on the beach</fact5>, how long does it take for her to complete the entire <fact1>23-mile walk</fact1>, in minutes?
-
-Answer: Sofia walks <fact2>11 miles on the beach</fact2> in <fact5>66 minutes</fact5>, so she walks at a rate of <fact2>11 miles</fact2>/<fact5>66 minutes</fact5> = 1/6 miles per minute on the beach. Since she walks at <fact4>three times the rate of speed</fact4> on the sidewalk, she walks at 3 * 1/6 = 1/2 miles per minute on the sidewalk. She walks <fact3>12 miles on the sidewalk</fact3> at a rate of 1/2 miles per minute, so she walks for <fact3>12 miles</fact3>/(1/2 miles per minute) = 24 minutes on the sidewalk. Therefore, it takes her <fact5>66 minutes</fact5> + 24 minutes = 90 minutes to complete the entire <fact1>23-mile walk</fact1>.",90,0,1,p2,877,1130
-17,"Reformatted Question: Quinn walks <fact1>26 kilometers every day</fact1> on her favorite walking trail, which includes <fact2>12 kilometers of walking on the beach</fact2> and <fact3>14 kilometers of walking on the sidewalk</fact3>. On the sidewalk, Quinn walks at <fact4>two times the rate of speed that she does on the beach</fact4>. If <fact5>48 minutes of her walk is spent on the beach</fact5>, how long does it take for her to complete the entire <fact1>26-kilometer walk</fact1>, in minutes?
-
-Answer: Quinn walks <fact2>12 kilometers on the beach</fact2> in <fact5>48 minutes</fact5>. So, her speed on the beach is <fact2>12 kilometers</fact2> / <fact5>48 minutes</fact5> = 0.25 kilometers per minute. Since Quinn walks at <fact4>two times the rate of speed that she does on the beach</fact4> on the sidewalk, her speed on the sidewalk is 0.25 * 2 = 0.5 kilometers per minute. Quinn walks <fact3>14 kilometers on the sidewalk</fact3> at a speed of 0.5 kilometers per minute, so she spends <fact3>14 kilometers</fact3> / 0.5 kilometers per minute = 28 minutes walking on the sidewalk. Therefore, it takes Quinn <fact5>48 minutes</fact5> + 28 minutes = 76 minutes to complete the entire <fact1>26-kilometer walk</fact1>.",76,0,1,p2,879,1225
-17,"Reformatted Question: Leilani walks <fact1>27 miles</fact1> every day on her favorite walking trail, which includes <fact2>15 miles of walking on the beach</fact2> and <fact3>12 miles of walking on the sidewalk</fact3>. On the sidewalk, Leilani walks at <fact4>three times the rate of speed</fact4> that she does on the beach. If <fact5>60 minutes of her walk is spent on the beach</fact5>, how long does it take for her to complete the entire <fact1>27-mile walk</fact1>, in minutes?
-
-Answer: Leilani walks <fact2>15 miles</fact2> on the beach in <fact5>60 minutes</fact5>, so her speed on the beach is <fact2>15 miles</fact2>/<fact5>60 minutes</fact5> = 0.25 miles per minute. Since she walks at <fact4>three times the rate of speed</fact4> on the sidewalk, her speed on the sidewalk is 3 * 0.25 miles per minute = 0.75 miles per minute. She walks <fact3>12 miles</fact3> on the sidewalk, so it takes her <fact3>12 miles</fact3>/0.75 miles per minute = 16 minutes to walk on the sidewalk. Therefore, it takes her <fact5>60 minutes</fact5> + 16 minutes = 76 minutes to complete the entire <fact1>27-mile walk</fact1>.",76,0,1,p2,882,1118
-17,"Reformatted Question: Elena walks <fact1>24 miles every day</fact1> on her favorite walking trail, which includes <fact2>11 miles of walking on the beach</fact2> and <fact3>13 miles of walking on the sidewalk</fact3>. On the sidewalk, Elena walks at <fact4>three times the rate of speed that she does on the beach</fact4>. If <fact5>66 minutes of her walk is spent on the beach</fact5>, how long does it take for her to complete the entire <fact1>24-mile walk</fact1>, in minutes?
-
-Answer: Elena walks <fact2>11 miles on the beach</fact2> in <fact5>66 minutes</fact5>, so her speed on the beach is <fact2>11 miles</fact2>/<fact5>66 minutes</fact5> = 1/6 miles per minute. 
-Since Elena walks at <fact4>three times the rate of speed that she does on the beach</fact4>, her speed on the sidewalk is 3 * 1/6 = 1/2 miles per minute. 
-Elena walks <fact3>13 miles on the sidewalk</fact3> at a speed of 1/2 miles per minute, so she spends <fact3>13 miles</fact3>/(1/2 miles per minute) = 26 minutes walking on the sidewalk. 
-Therefore, Elena spends <fact5>66 minutes</fact5> + 26 minutes = 92 minutes walking the entire <fact1>24-mile walk</fact1>.",92,0,1,p2,892,1140
-17,"Reformatted Question: Mei walks <fact1>28 miles</fact1> every day on her favorite walking trail, which includes <fact2>15 miles of walking on the beach</fact2> and <fact3>13 miles of walking on the sidewalk</fact3>. On the sidewalk, Mei walks at <fact4>two times the rate of speed</fact4> that she does on the beach. If <fact5>60 minutes of her walk is spent on the beach</fact5>, how long does it take for her to complete the entire <fact1>28-mile walk</fact1>, in minutes?
-
-Answer: Mei walks <fact2>15 miles</fact2> on the beach in <fact5>60 minutes</fact5>, so her speed on the beach is <fact2>15 miles</fact2>/<fact5>60 minutes</fact5> = 0.25 miles per minute. 
-Since Mei walks at <fact4>two times the rate of speed</fact4> on the sidewalk, her speed on the sidewalk is 2 * 0.25 miles per minute = 0.5 miles per minute. 
-Mei walks <fact3>13 miles</fact3> on the sidewalk, so she spends <fact3>13 miles</fact3>/0.5 miles per minute = 26 minutes walking on the sidewalk. 
-Therefore, Mei spends <fact5>60 minutes</fact5> + 26 minutes = 86 minutes walking the entire <fact1>28-mile</fact1> trail.",86,0,1,p2,895,1096
-19,"Reformatted Question: In a <fact1>40-item quiz</fact1>, <fact2>25% of the questions are biology</fact2>, and the rest are equally divided as <fact3>geography and geometry questions</fact3>. If Sophia is sure to get <fact4>30% of the biology questions</fact4>, and a <fact5>tenth of the geography and geometry questions correctly</fact5>, how many points is she sure to get?
-
-Answer: There are <fact2>25%</fact2> * <fact1>40 questions</fact1> = 10 biology questions. Sophia is sure to get <fact4>30%</fact4> * 10 biology questions = 3 biology questions correct.
-There are <fact1>40 questions</fact1> - 10 biology questions = 30 geography and geometry questions. Since they are equally divided, there are 30/2 = 15 geography questions and 15 geometry questions. Sophia is sure to get <fact5>1/10</fact5> * 15 geography questions = 1.5 geography questions correct and <fact5>1/10</fact5> * 15 geometry questions = 1.5 geometry questions correct. Since you can't get a fraction of a question correct, we'll round down to 1 geography question and 1 geometry question correct.
-So, Sophia is sure to get 3 biology questions + 1 geography question + 1 geometry question = 5 questions correct.
-The answer is {5}.",6,0,1,p2,951,1203
-19,"Reformatted Question: In a <fact1>110-item quiz</fact1>, <fact2>40% of the questions are chemistry</fact2>, and the rest are equally divided as <fact3>biology and algebra questions</fact3>. If <fact4>Zahra is sure to get 25% of the chemistry questions</fact4>, and <fact5>1/6 of the biology and algebra questions correctly</fact5>, how many points is she sure to get?
-
-Answer: The number of chemistry questions is <fact1>110</fact1> * <fact2>40%</fact2> = 44 questions. Zahra is sure to get <fact4>25%</fact4> of these, which is 44 * <fact4>25%</fact4> = 11 questions. The remaining questions are <fact1>110</fact1> - 44 = 66 questions, which are divided equally between <fact3>biology and algebra</fact3>. So there are 66/2 = 33 questions of each type. Zahra is sure to get <fact5>1/6</fact5> of these, which is 33 * <fact5>1/6</fact5> = 5.5 questions of each type. Since you can't get a fraction of a question, we'll round down to 5 questions of each type. So Zahra is sure to get 11 + 5 + 5 = 21 questions correct.",22,0,1,p2,952,1017
 19,"Reformatted Question: In a <fact1>150-item quiz</fact1>, <fact2>40% of the questions are chemistry</fact2>, and the rest are equally divided as <fact3>history and literature questions</fact3>. If <fact4>Nia is sure to get 35% of the chemistry questions</fact4>, and <fact5>1/9 of the history and literature questions correctly</fact5>, how many points is she sure to get?
 
 Answer: The number of chemistry questions is <fact1>150</fact1> * <fact2>40%</fact2> = 60 questions.
@@ -313,9 +161,6 @@ Answer: There are <fact2>30%</fact2> * <fact1>100</fact1> = 30 physics questions
 There are <fact1>100</fact1> - 30 = 70 questions that are either economics or literature. Since they are equally divided, there are 70/2 = 35 questions of each type. Olivia is sure to get <fact4>1/2</fact4> * 35 = 17.5 of the economics questions correct and <fact4>1/2</fact4> * 35 = 17.5 of the literature questions correct. Since you can't get a fraction of a question correct, we'll round down to 17 for each type.
 So, Olivia is sure to get 9 + 17 + 17 = 43 questions correct.
 The answer is {43}.",44,0,1,p2,999,1026
-21,"Reformatted Question: Luis watches TV after he finishes his homework every night. On <fact1>Tuesday and Wednesday</fact1>, he watched a <fact2>5-hour episode</fact2> of his favorite show each night. On <fact3>Thursday</fact3>, he watched a few episodes of a <fact4>45-minute show</fact4>. On <fact5>Friday</fact5>, he finished homework early and watched a <fact2>5-hour episode</fact2> and a <fact6>30-minute show</fact6>. On <fact7>Saturday</fact7>, he got to stay up late, so he watched two <fact8>2-hour episodes</fact8>. If he watched <fact9>21 hours of TV in all</fact9>, how many <fact4>45-minute episodes</fact4> did he watch on <fact3>Thursday</fact3>?
-
-Answer: On <fact1>Tuesday and Wednesday</fact1>, Luis watched <fact2>5 hours</fact2> * 2 = 10 hours of TV. On <fact5>Friday</fact5>, he watched <fact2>5 hours</fact2> + <fact6>30 minutes</fact6> = 5.5 hours of TV. On <fact7>Saturday</fact7>, he watched <fact8>2 hours</fact8> * 2 = 4 hours of TV. So, in total, he watched 10 + 5.5 + 4 = 19.5 hours of TV on <fact1>Tuesday, Wednesday, Friday, and Saturday</fact1>. This means that on <fact3>Thursday</fact3>, he watched <fact9>21 hours</fact9> - 19.5 hours = 1.5 hours of TV. Since each episode is <fact4>45 minutes</fact4> long, he watched 1.5 hours / (<fact4>45 minutes</fact4> / 60 minutes per hour) = 1.5 / 0.75 = 2 episodes of the <fact4>45-minute show</fact4> on <fact3>Thursday</fact3>.",2,0,1,p2,1082,1404
 22,"Reformatted Question: Mia was preparing for a game night at her house, where she intended to serve stuffed peppers. She noticed that she was out of plastic plates, so she bought a new package of plates (<fact1>package of plates that Mia bought</fact1>). Later, her husband also bought a package of <fact2>12 new plates</fact2> and gave them to Mia. While Mia was making the stuffed peppers, she used <fact3>six of the plates</fact3> to sample her stuffed peppers. Later, when she went to set the table, she had a total of <fact4>34 plates</fact4>. How many plates were in the <fact1>package of plates that Mia bought</fact1>?
 
 Answer: Mia's husband bought <fact2>12 new plates</fact2>. Mia used <fact3>six of the plates</fact3> to sample her stuffed peppers. So, the total number of plates that Mia had, excluding the plates that she bought, is <fact2>12</fact2> + <fact3>6</fact3> = 18. Since Mia had a total of <fact4>34 plates</fact4>, the number of plates in the <fact1>package of plates that Mia bought</fact1> is <fact4>34</fact4> - 18 = 16.",28,0,1,p2,1133,1047
@@ -741,9 +586,3 @@ Answer: The total weight of the SUV is <fact1>1800 kilograms</fact1> + <fact2>40
 
 Answer: The plumber works <fact2>6 days every week</fact2> and there are approximately 4 weeks in a month, so he works <fact2>6</fact2> * <fact1>3</fact1> * 4 = 72 days in a 4-week month. However, since the question asks about a year, we should use 52 weeks in a year. So, he works <fact2>6</fact2> * <fact1>3</fact1> * 52/4 = 6 * 3 * 13 = 234 days in a year. He earns <fact3>$110 every day</fact3>, so he earns <fact3>$110</fact3> * 234 = $25,740 in a year.
 The answer is {25740}.",23760,0,1,p2,3548,694
-73,"Reformatted Question: <fact1>Comet Hyakutake orbits the sun every 70 years</fact1>. <fact2>Leon's uncle saw the Comet when he was 31 years old</fact2>. <fact3>Leon saw the comet a second time when he was three times the age his uncle was when he saw the Comet</fact3>. How old was Leon when he saw the Comet for the first time?
-
-Answer: Leon's uncle was <fact2>31 years old</fact2> when he saw the Comet. Since <fact1>Comet Hyakutake orbits the sun every 70 years</fact1>, Leon's uncle would have been 31 + 70 = 101 years old when Leon saw the Comet for the second time. According to <fact3>Leon saw the comet a second time when he was three times the age his uncle was when he saw the Comet</fact3>, Leon was 3 * 31 = 93 years old when he saw the Comet for the second time. Therefore, Leon was 93 - 70 = 23 years old when he saw the Comet for the first time.",23,0,1,p2,3690,859
-73,"Reformatted Question: Comet Halley orbits the sun every <fact1>80 years</fact1>. Mateo's dad saw the Comet when he was <fact2>43 years old</fact2>. Mateo saw the comet a second time when he was <fact3>two times the age his dad was when he saw the Comet</fact3>. How old was Mateo when he saw the Comet for the first time?
-
-Answer: Mateo saw the comet a second time when he was <fact3>two times the age his dad was when he saw the Comet</fact3>, so he was <fact2>43</fact2> * 2 = 86 years old when he saw the comet for the second time. Since <fact1>Comet Halley orbits the sun every 80 years</fact1>, Mateo must have seen the comet for the first time 80 years before he saw it for the second time. Therefore, Mateo was 86 - 80 = 6 years old when he saw the Comet for the first time.",6,0,1,p2,3698,781
