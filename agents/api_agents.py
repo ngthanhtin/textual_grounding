@@ -14,7 +14,6 @@ import openai
 
 import random, time
 from tqdm import tqdm
-random.seed(0)
 
 def api_agent(llm_model, prompt, temperature=1.0):
     """
@@ -131,11 +130,11 @@ def api_agent(llm_model, prompt, temperature=1.0):
                             "content": prompt,
                         }
                     ],
-                temperature=0.6, # Meta default
-                top_p = 0.9, # Meta default
+                temperature=0.6, # Meta default 0.6
+                top_p = 0.9, # Meta default 0.9
                 max_tokens=1024
             )
-            time.sleep(2)  # Pause execution for 2 seconds
+            time.sleep(1)  # Pause execution for 2 seconds
             return response.choices[0].message.content
         except:
             return None
@@ -157,7 +156,7 @@ def api_agent(llm_model, prompt, temperature=1.0):
                 top_p = 0.9, # Meta default
                 max_tokens=1024
             )
-            time.sleep(2)  # Pause execution for 2 seconds
+            time.sleep(1)  # Pause execution for 2 seconds
             return response.choices[0].message.content
         except:
             return None
@@ -179,7 +178,75 @@ def api_agent(llm_model, prompt, temperature=1.0):
                 top_p = 0.9, # Meta default
                 max_tokens=1024
             )
+            time.sleep(1)  # Pause execution for 2 seconds
+            return response.choices[0].message.content
+        except:
+            return None
+        
+    elif llm_model == 'llama_sambanova_33_70b':
+        client = openai.OpenAI(
+            api_key=API_KEYS['sambanova'],
+            base_url="https://api.sambanova.ai/v1",
+        )
+        try:
+            response = client.chat.completions.create(
+                model='Meta-Llama-3.3-70B-Instruct',
+                    messages=[
+                        {
+                            "role": "user",
+                            "content": prompt,
+                        }
+                    ],
+                temperature=0.6, # Meta default
+                top_p = 0.9, # Meta default
+                max_tokens=1024
+            )
             time.sleep(2)  # Pause execution for 2 seconds
             return response.choices[0].message.content
         except:
             return None
+    
+    elif llm_model == 'qwen25_coder_32b':
+        try:
+            client = openai.OpenAI(
+            api_key=API_KEYS['sambanova'],
+            base_url="https://api.sambanova.ai/v1",
+            )
+            
+            messages = [
+                {"role": "system", "content": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant."},
+                {"role": "user", "content": prompt}
+            ]
+
+            response = client.chat.completions.create(
+                model='Qwen2.5-Coder-32B-Instruct',
+                messages=messages,
+                temperature =  0.7,
+                top_p = 0.8,
+                max_tokens = 1024
+            )
+
+            time.sleep(2)  # Pause execution for 2 seconds
+            return response.choices[0].message.content
+        except:
+            return None
+    elif llm_model == 'deepseek_r1':
+        try:
+            client = openai.OpenAI(
+            api_key=API_KEYS['sambanova'],
+            base_url="https://api.sambanova.ai/v1",
+        )
+            messages=[{"role":"system","content":"You are a helpful assistant"},{"role":"user","content":prompt}],
+
+            response = client.chat.completions.create(
+                model="DeepSeek-R1-Distill-Llama-70B",
+                messages=messages,
+                temperature=0.6,
+                top_p=0.1
+            )
+            
+            time.sleep(2)  # Pause execution for 2 seconds
+            return response.choices[0].message.content
+        except:
+            return None
+            

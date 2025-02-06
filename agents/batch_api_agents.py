@@ -15,7 +15,7 @@ from openai import OpenAI
 import openai
 
 import random, json, os
-random.seed(0)
+# random.seed(0)
 
 def prepare_batch_input(llm_model, ids, prompts, temperature=1.0, max_tokens=1024, batch_output_file='batch_output.jsonl'):
     tasks = []
