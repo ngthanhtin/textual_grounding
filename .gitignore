@@ -28,3 +28,5 @@ utils/verification_results/
 utils/compare_gcot_cot_results/
 utils/acc_all/
 utils/check_gsm8k_hard.py
+
+papers/
