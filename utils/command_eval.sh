@@ -29,7 +29,7 @@ llm_model="${llm_models_dict[$model_key]}"
 dataset="${datasets_dict[$dataset_key]}"
 
 echo "Running for model: $llm_model and dataset: $dataset and run_mode: cot" 
-python eval_mmlu.py --llm_model "$llm_model" --data_mode longest --answer_mode cot --dataset "$dataset"
+python evaluate.py --llm_model "$llm_model" --data_mode longest --answer_mode cot --dataset "$dataset"
 echo "Running for model: $llm_model and dataset: $dataset and run_mode: grounding_cot" 
-python eval_mmlu.py --llm_model "$llm_model" --data_mode longest --answer_mode grounding_cot --dataset "$dataset"
+python evaluate.py --llm_model "$llm_model" --data_mode longest --answer_mode grounding_cot --dataset "$dataset"
 

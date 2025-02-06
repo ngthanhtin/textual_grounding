@@ -62,35 +62,6 @@ def add_color_to_tags(text):
         text = re.sub(f'</{tag}>', f'</{tag}>', text)  # Closing tags remain unchanged
     return text
 
-# Function to extract and compare text segments from tags
-def calculate_iou(original_text, reformulated_text):
-    # Extract tagged segments from both texts
-    # original_tags = re.findall(r'<([abcde])>(.*?)<\/\1>', original_text)
-    # reformulated_tags = re.findall(r'<([abcde])>(.*?)<\/\1>', reformulated_text)
-    original_tags = re.findall(r'<(fact\d+)>(.*?)<\/\1>', original_text)
-    reformulated_tags = re.findall(r'<(fact\d+)>(.*?)<\/\1>', reformulated_text)
-    
-    # Convert lists to dictionaries
-    original_dict = {tag: text.strip() for tag, text in original_tags}
-    reformulated_dict = {tag: text.strip() for tag, text in reformulated_tags}
-
-    # Compute overlaps and unions for IoU
-    ious = []
-    for tag in original_dict:
-        if tag in reformulated_dict:
-            original_segment = original_dict[tag]
-            reformulated_segment = reformulated_dict[tag]
-            # Compute overlap (minimum of possible overlaps)
-            overlap = len(set(original_segment.split()).intersection(set(reformulated_segment.split())))
-            # Compute union
-            union = len(set(original_segment.split()).union(set(reformulated_segment.split())))
-            # Compute IoU
-            iou = overlap / union if union != 0 else 0
-            ious.append(iou)
-    
-    # Return average IoU if there are any IoUs calculated
-    return sum(ious) / len(ious) if ious else 0, original_tags, reformulated_tags
-
 # Function to extract parts of the text based on headers
 def extract_parts_1(text):
     # Find the "Reformatted Question" and "Answer" sections
@@ -117,10 +88,12 @@ def extract_parts_1(text):
     return question_text, answer_text
 
 def count_tags(text):
-    # Find all the tags using a regular expression
-    tags = re.findall(r'<([a-z])>', text)
+    # Regular expression pattern to match tags
+    pattern = r'<[^>]*>'
     
-    # Count the occurrences of each tag using Counter
-    tag_counts = Counter(tags)
+    # Find all tags in the sentence
+    tags = re.findall(pattern, text)
     
-    return tag_counts
+    # Return the count of tags
+    return len(tags)
+    

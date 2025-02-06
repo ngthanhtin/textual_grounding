@@ -4,6 +4,7 @@ import random
 random.seed(42)
 import numpy as np
 import re, json
+from collections import Counter
 
 # ----------- Process Multi-choice -------------
 def parse_multi_choice_response(response, all_choices, index2ans):
@@ -601,14 +602,65 @@ def check_drop_answer(answer, gt, verbose=False):
             
     return 0
 
+# Function to extract parts of the text based on headers
+def extract_parts_1(text):
+    # Find the "Reformatted Question" and "Answer" sections
+    question_match = re.search(r"Reformatted Question:(.*?)\nAnswer:", text, re.S)
+    answer_match = re.search(r"Answer:(.*)", text, re.S)
+
+    # Extracting text for each part
+    if question_match:
+        question_text = question_match.group(1).strip()
+    else:
+        question_match = re.search(r"Reformatted Question:(.*?)Answer:", text, re.S)
+        answer_match = re.search(r"Answer:(.*)", text, re.S)
+        
+        if question_match:
+            question_text = question_match.group(1).strip()
+        else:
+            question_text = "Question not found"
+    
+    if answer_match:
+        answer_text = answer_match.group(1).strip()
+    else:
+        answer_text = "Answer not found"
+
+    return question_text, answer_text
+
 def check_squad_answer(answer, gt):
+    
     # remove tag <fact> in the answer
     answer = re.sub(r'</?fact\d+>', '', answer)
+    try:
+        reformatted_question, answer = extract_parts_1(answer)    
+        answer = answer.replace("*", "").strip()
+    except:
+        answer = answer.replace("*", "").strip()
     
-    if gt in answer or answer in gt:
-        return 1
+    # if gt == []:
+    #     answer = answer.split('{')[-1].split('}')[0]
+    #     if answer == '':
+    #         return 0
+    #     elif answer == 'no answer':
+    #         return 0
+    #     else:
+    #         return 1
+        
+    # if gt in answer or answer in gt:
+    #     return 1
     
-    return 0
+    # return 0
+
+    gold_tokens = gt.split()
+    pred_tokens = answer.split()
+    common = Counter(gold_tokens) & Counter(pred_tokens)
+    num_same = sum(common.values())
+    if num_same == 0:
+        return 0 # f1
+    precision = num_same / len(pred_tokens)
+    recall = num_same / len(gold_tokens)
+    f1 = 2 * precision * recall / (precision + recall)
+    return f1
 
 def check_medQA_answer(question, answer, gt):
     # remove tag <fact> in the answer
@@ -617,10 +669,12 @@ def check_medQA_answer(question, answer, gt):
     gt_text = gt[1]
     
     is_correct = check_multiple_choice_answer(question, answer, gt_option)
-    if is_correct == 0:
-        if gt_text.lower() in answer.lower() or answer.lower() in gt_text.lower():
-            return 1
-        else:
-            return 0
-    else:
-        return 1
+    return is_correct
+    # if is_correct == 0:
+    #     answer = answer[-100:]
+    #     if gt_text.lower() in answer.lower() or answer.lower() in gt_text.lower():
+    #         return 1
+    #     else:
+    #         return 0
+    # else:
+    #     return 1
