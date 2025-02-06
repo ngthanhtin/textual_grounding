@@ -10,6 +10,9 @@ declare -A llm_models_dict=(
     ["6"]="llama_sambanova_8b"
     ["7"]="llama_sambanova_70b"
     ["8"]="llama_sambanova_405b"
+    ["9"]="qwen25_coder_32b"
+    ["10"]="qwq_32b"
+    ["11"]="deepseek_r1"
 )
 
 # Define datasets_dict
@@ -50,5 +53,6 @@ declare -A datasets_dict=(
     ["34"]='drop_cencus'
     ["35"]='squad'
     ["36"]='medQA'
+    ["37"]='GSM_Symbolic'
     
 )

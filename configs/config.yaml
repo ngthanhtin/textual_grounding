@@ -35,8 +35,9 @@ data_paths:
   web_of_lies: "web_of_lies/test.json"
   drop_break: "drop_break/test.jsonl"
   drop_cencus: "drop_cencus/test.jsonl"
-  squad: "squad/test.json"
+  squad: "squad/test.json" # "squad/squadv2.json" # "squad/test.json"
   medQA: "medQA/test.jsonl"
+  GSM_Symbolic: "GSM_Symbolic/test.jsonl"
 
 prompts:
   da:
@@ -78,6 +79,7 @@ prompts:
     drop_cencus: "drop_cencus/fewshot_da.txt"
     squad: "squad/fewshot_da.txt"
     medQA: "medQA/fewshot_da.txt"
+    GSM_Symbolic: "GSM8K/fewshot_da.txt"
 
   cot:
     GSM8K: "GSM8K/fewshot_cot.txt"
@@ -118,6 +120,7 @@ prompts:
     drop_cencus: "drop_cencus/fewshot_cot.txt"
     squad: "squad/fewshot_cot.txt"
     medQA: "squad/fewshot_cot.txt"
+    GSM_Symbolic: "GSM8K/fewshot_cot.txt"
   
   grounding_cot:
     GSM8K: "GSM8K/fewshot_design_1_v4.txt"
@@ -158,3 +161,4 @@ prompts:
     drop_cencus: "drop_cencus/fewshot_design_1_v4.txt"
     squad: "squad/fewshot_design_1_v4.txt"
     medQA: "medQA/fewshot_design_1_v4.txt"
+    GSM_Symbolic: "GSM8K/fewshot_design_1_v4.txt"
