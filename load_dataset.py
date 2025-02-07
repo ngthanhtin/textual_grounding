@@ -3,7 +3,7 @@ import yaml, os, re, random, json
 random.seed(0)
 
 class DatasetLoader:
-    def __init__(self, config_path, base_data_path, base_few_shot_prompt_path, dataset, data_mode='longest', num_samples=200):
+    def __init__(self, config_path, base_data_path, base_few_shot_prompt_path, dataset, data_mode='longest', num_samples=400):
         """
         Initialize the dataset loader with configuration.
 
@@ -22,10 +22,13 @@ class DatasetLoader:
         self.config = self._load_config()
         self.data_path = self._get_data_path()
         self.data = self._read_data()
-        
+    
+    def _get_dataset_length(self):
+        return len(self.data)
+    
     def _load_few_shot_prompt(self, fs_mode):
         fewshot_prompt_path = os.path.join(self.base_few_shot_prompt_path, self.config['prompts'][fs_mode][self.dataset])
-        
+        # fewshot_prompt_path = fewshot_prompt_path[:-4] + "_random_tag.txt"
         with open(fewshot_prompt_path, 'r') as file:
             few_shot_prompt = file.read()
         return few_shot_prompt
@@ -53,8 +56,8 @@ class DatasetLoader:
         if self.data_mode == 'random':
             return self.get_random_questions_and_ids()
         elif self.data_mode == 'longest':
-            # return self.get_longest_questions_and_ids()
-            return self.get_full_questions_and_ids()
+            return self.get_longest_questions_and_ids()
+            # return self.get_full_questions_and_ids()
         elif self.data_mode == 'shortest':
             return self.get_shortest_questions_and_ids()
         elif self.data_mode == 'remain':
@@ -62,6 +65,19 @@ class DatasetLoader:
         elif self.data_mode == 'full':
             return self.get_full_questions_and_ids()
         
+    def get_questions_with_ids(self, ids):
+        """
+        ids: ids of the predictions (list)
+        """
+        full_questions, full_ids = self.get_full_questions_and_ids()
+        questions = []
+        for i in ids:
+            for k in full_ids:
+                if i == k:
+                    questions.append(full_questions[full_ids.index(k)])
+
+        return questions
+    
     def get_full_questions_and_ids(self):
         """
         Process and extract questions and IDs based on dataset type.
@@ -74,6 +90,8 @@ class DatasetLoader:
             return self._process_reclor()
         elif self.dataset in ['GSM_IC', 'GSM8K_Hard', 'GSM_Plus', 'medQA']:
             return self._process_simple()
+        elif self.dataset == 'GSM_Symbolic':
+            return self._process_generic('question', 'unique_id')
         else:
             return self._process_generic('question', 'id')
     
@@ -107,6 +125,8 @@ class DatasetLoader:
         2. find longest questions and ids based on the longest question length
         """
         full_questions, full_ids = self.get_full_questions_and_ids()
+
+        # return full_questions, full_ids
         # Combine questions and IDs into a list of tuples
         full_questions_ids = list(zip(full_questions, full_ids))
         
@@ -167,14 +187,14 @@ class DatasetLoader:
         ]
         ids = [x["id"] for x in self.data]
         
-        # take 400 random questions and ids
-        combined = list(zip(questions, ids))
-        sampled = random.sample(combined, k=400)
+        # # # take 400 random questions and ids
+        # combined = list(zip(questions, ids))
+        # sampled = random.sample(combined, k=400)
 
-        questions, ids = zip(*sampled)
+        # questions, ids = zip(*sampled)
 
-        questions = list(questions)
-        ids = list(ids)
+        # questions = list(questions)
+        # ids = list(ids)
         
         return questions, ids
 
@@ -204,6 +224,14 @@ class DatasetLoader:
         """        
         # read gt
         gts = []
+        if self.dataset == 'GSM_Symbolic':
+            for id in ids:
+                for i, temp in enumerate(self.data):
+                    if id == temp['unique_id']:
+                        gt = temp['gt']
+                        gts.append(float(gt))
+            return gts
+        
         if self.dataset in ['GSM8K_Hard', 'medQA']:
             for id in ids:
                 for i, temp in enumerate(self.data):
