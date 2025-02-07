@@ -15,7 +15,7 @@ google-generativeai==0.8.3
 openai==1.58.1
 ```
 
-## 2. How to Run
+# 2. How to Run
 
 Run the following command to execute the script:
 
@@ -23,7 +23,7 @@ Run the following command to execute the script:
 python main.py --prompt_used fs_inst --save_answer --llm_model "$llm_model" --dataset "$dataset" --answer_mode "$run_mode" --data_mode random
 ```
 
-### Parameters:
+## Parameters:
 - `--prompt_used fs_inst`: Specifies the prompt type. `fs_inst` means a few-shot prompt with instructions.
 - `--llm_model "$llm_model"`: Defines the LLM model to use. Choices include:
   - `gemini-1.5-pro-002`, `gemini-1.5-flash-002`, `claude`
@@ -38,12 +38,24 @@ python main.py --prompt_used fs_inst --save_answer --llm_model "$llm_model" --da
   - `hot`: Direct answer without reasoning
 - `--data_mode random`: Runs the model on 200 randomly selected samples.
 
-## 3. Example Usage
+## Example Usage
 ```bash
 python main.py --prompt_used fs_inst --save_answer --llm_model "gpt-4o-2024-08-06" --dataset "GSM8K" --answer_mode "cot" --data_mode random
 ```
 
 # 3. How to evaluate the result
+Run the following command to evaluate the results:
+```bash
+python evaluate.py --llm_model "$llm_model" --data_mode longest --answer_mode "$answer_mode" --dataset "$dataset"
+```
+
+## Example Usage
+```bash
+python main.py --prompt_used fs_inst --save_answer --llm_model "gpt-4o-2024-08-06" --dataset "GSM8K" --answer_mode "cot" --data_mode random
+```
+```bash
+python evaluate.py --llm_model "gpt-4o-2024-08-06" --data_mode longest --answer_mode "cot" --dataset "GSM8K"
+```
 
 # 4. How to visualize the result
 ```
@@ -51,6 +63,11 @@ visualize.py
 ```
 
 # 5. Human Study
+
+
+
+
+
 
 
 
