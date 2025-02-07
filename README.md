@@ -70,7 +70,8 @@ python visualize.py --llm_model "gpt-4o-2024-08-06" --dataset "GSM8K" --answer_m
 ```
 ![Example Figure](figures/example2.png)
 
-
+# 5. License
+MIT
 
 
 
