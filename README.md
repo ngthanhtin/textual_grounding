@@ -20,49 +20,52 @@ openai==1.58.1
 Run the following command to execute the script:
 
 ```bash
-python main.py --prompt_used fs_inst --save_answer --llm_model "$llm_model" --dataset "$dataset" --answer_mode "$run_mode" --data_mode random
+python main.py --save_answer --llm_model "$llm_model" --dataset "$dataset" --answer_mode "$run_mode" --data_mode "$data_mode"
 ```
 
 ## Parameters:
-- `--prompt_used fs_inst`: Specifies the prompt type. `fs_inst` means a few-shot prompt with instructions.
-- `--llm_model "$llm_model"`: Defines the LLM model to use. Choices include:
-  - `gemini-1.5-pro-002`, `gemini-1.5-flash-002`, `claude`
-  - `gpt-4o-2024-08-06`, `gpt-4o-mini-2024-07-18`
-  - `llama_transformer`, `llama_groq`, `llama_together`
-  - `llama_sambanova_70b`, `llama_sambanova_8b`, `llama_sambanova_405b`
+- `--llm_model`: Defines the LLM model to use. Choices include:
+  - `gemini-1.5-pro-002`, `gemini-1.5-flash-002`,
+  - `gpt-4o-2024-08-06`
+  - `llama_8b`, `llama_70b`, `llama_sambanova_405b`
   - `qwen25_coder_32b`, `qwq_32b`, `deepseek_r1`
-- `--dataset "$dataset"`: Specifies the dataset to evaluate, such as:
+- `--dataset`: Specifies the dataset to evaluate, such as:
   - `GSM8K`, `AQUA`, `DROP`
-- `--answer_mode "$run_mode"`: Determines the answering strategy:
-  - `cot`: Chain-of-Thought reasoning
-  - `hot`: Direct answer without reasoning
-- `--data_mode random`: Runs the model on 200 randomly selected samples.
+- `--answer_mode"`: Determines the answering strategy:
+  - `cot`: Chain-of-Thought prompting
+  - `hot`: Highlight Chain-of-Thought prompting
+- `--data_mode`: 
+  - `random`: Runs the model on 200 randomly selected samples.
+  - `longest`: Runs the model on 200 longest samples.
+  - `shortest`: Runs the model on 200 shortest samples.
+  - `full`: Runs the model on the whole dataset.
 
 ## Example Usage
 ```bash
-python main.py --prompt_used fs_inst --save_answer --llm_model "gpt-4o-2024-08-06" --dataset "GSM8K" --answer_mode "cot" --data_mode random
+python main.py --save_answer --llm_model "gpt-4o-2024-08-06" --dataset "GSM8K" --answer_mode "cot" --data_mode random
 ```
 
 # 3. How to evaluate the result
 Run the following command to evaluate the results:
 ```bash
-python evaluate.py --llm_model "$llm_model" --data_mode longest --answer_mode "$answer_mode" --dataset "$dataset"
+python evaluate.py --llm_model "$llm_model" --dataset "$dataset" --answer_mode "$answer_mode" --data_mode "$data_mode"
 ```
 
 ## Example Usage
 ```bash
-python main.py --prompt_used fs_inst --save_answer --llm_model "gpt-4o-2024-08-06" --dataset "GSM8K" --answer_mode "cot" --data_mode random
-```
-```bash
-python evaluate.py --llm_model "gpt-4o-2024-08-06" --data_mode longest --answer_mode "cot" --dataset "GSM8K"
+python evaluate.py --llm_model "gpt-4o-2024-08-06" --dataset "GSM8K" --answer_mode "cot" --data_mode longest
 ```
 
 # 4. How to visualize the result
+Run the following command to render the result on html pages:
+```bash
+python visualize.py --llm_model "$llm_model" --dataset "$dataset" --answer_mode "$answer_mode" --save_html
 ```
-visualize.py
+## Example Usage
+```bash
+python visualize.py --llm_model "gpt-4o-2024-08-06" --dataset "GSM8K" --answer_mode "cot" --data_mode --save_html
 ```
 
-# 5. Human Study
 
 
 
