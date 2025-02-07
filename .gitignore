@@ -24,3 +24,7 @@ utils/acc_all/
 utils/check_gsm8k_hard.py
 
 papers/*
+
+command_run.sh
+command_visualize.sh
+utils/command_eval.sh
