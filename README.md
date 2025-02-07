@@ -1,7 +1,7 @@
 <div align="center">    
  
 # HoT: Highlighted Chain of Thought for Referencing Supportive Facts from Inputs
-by [Tin Nguyen](https://ngthanhtin.github.io/), [Logan Bolton](), and [Anh Nguyen](https://anhnguyen.me/). 
+by [Tin Nguyen](https://ngthanhtin.github.io/), [Logan Bolton](), [Mohammad R. Taesiri](), and [Anh Nguyen](https://anhnguyen.me/). 
 </div> 
 
 <i>
