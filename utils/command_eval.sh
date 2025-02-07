@@ -32,4 +32,3 @@ echo "Running for model: $llm_model and dataset: $dataset and run_mode: cot"
 python evaluate.py --llm_model "$llm_model" --data_mode longest --answer_mode cot --dataset "$dataset"
 echo "Running for model: $llm_model and dataset: $dataset and run_mode: grounding_cot" 
 python evaluate.py --llm_model "$llm_model" --data_mode longest --answer_mode grounding_cot --dataset "$dataset"
-

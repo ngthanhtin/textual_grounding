@@ -28,7 +28,6 @@ fi
 llm_model="${llm_models_dict[$model_key]}"
 dataset="${datasets_dict[$dataset_key]}"
 
-python one_step_visualize.py --dataset "$dataset" --llm_model "$llm_model" --save_html --answer_mode grounding_cot --check_correct
+python visualize.py --dataset "$dataset" --llm_model "$llm_model" --save_html --answer_mode grounding_cot --check_correct
 
-python one_step_visualize.py --dataset "$dataset" --llm_model "$llm_model" --save_html --answer_mode grounding_cot
-
+python visualize.py --dataset "$dataset" --llm_model "$llm_model" --save_html --answer_mode grounding_cot

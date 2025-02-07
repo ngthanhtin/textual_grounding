@@ -5,7 +5,7 @@ source ./configs/llm_and_datasets_mapping.sh
 # Define run modes
 declare -A run_modes_dict=(
     ["1"]="cot"
-    ["2"]="grounding_cot"
+    ["2"]="hot"
 )
 
 # Check if two arguments are passed (model key and dataset key)
@@ -43,4 +43,4 @@ run_mode="${run_modes_dict[$run_mode_key]}"
 
 echo "Running for model: $llm_model and dataset: $dataset" and run_mode: $run_mode
 
-python one_step_grounding.py --prompt_used fs_inst --save_answer --llm_model "$llm_model" --dataset "$dataset" --answer_mode "$run_mode" --data_mode longest
+python main.py --prompt_used fs_inst --save_answer --llm_model "$llm_model" --dataset "$dataset" --answer_mode "$run_mode" --data_mode random
