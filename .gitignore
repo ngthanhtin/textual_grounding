@@ -3,11 +3,6 @@ utils/keys.py
 utils/__pycache__/
 utils/one_step_to_two_step.py
 
-data/CLUTRR
-data/infinityMath
-data/saycan
-data/sports
-
 utils/vis_fs/
 utils/eval_results/
 
@@ -20,7 +15,6 @@ batch_request_results/
 agents/__pycache__/
 __pycache__/
 
-data/
 demos/
 
 utils/vis_auto_tagging/
@@ -29,4 +23,4 @@ utils/compare_gcot_cot_results/
 utils/acc_all/
 utils/check_gsm8k_hard.py
 
-papers/
+papers/*

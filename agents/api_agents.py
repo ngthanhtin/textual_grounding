@@ -12,6 +12,8 @@ from together import Together
 from openai import OpenAI
 import openai
 
+from together import Together
+
 import random, time
 from tqdm import tqdm
 
@@ -232,21 +234,22 @@ def api_agent(llm_model, prompt, temperature=1.0):
             return None
     elif llm_model == 'deepseek_r1':
         try:
-            client = openai.OpenAI(
-            api_key=API_KEYS['sambanova'],
-            base_url="https://api.sambanova.ai/v1",
-        )
-            messages=[{"role":"system","content":"You are a helpful assistant"},{"role":"user","content":prompt}],
-
+            messages = [
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": prompt}
+            ]
+            
+            client = Together(api_key=API_KEYS['together'])
             response = client.chat.completions.create(
-                model="DeepSeek-R1-Distill-Llama-70B",
+                model="deepseek-ai/DeepSeek-R1",
                 messages=messages,
+                max_tokens=2048,
                 temperature=0.6,
-                top_p=0.1
+                top_p=0.95,
+                top_k=50,
+                repetition_penalty=1
             )
             
-            time.sleep(2)  # Pause execution for 2 seconds
             return response.choices[0].message.content
         except:
             return None
-            
