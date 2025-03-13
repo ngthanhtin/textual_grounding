@@ -1,6 +1,6 @@
 <div align="center">    
  
-# HoT: Highlighted Chain of Thought for Referencing Supportive Facts from Inputs
+# HoT: Highlighted Chain of Thought for Referencing Supporting Facts from Inputs
 by [Tin Nguyen](https://ngthanhtin.github.io/), [Logan Bolton](), [Mohammad R. Taesiri](), and [Anh Nguyen](https://anhnguyen.me/). 
 
 [![Website](http://img.shields.io/badge/Website-4b44ce.svg)](https://highlightedchainofthought.github.io/)
