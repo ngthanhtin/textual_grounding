@@ -82,7 +82,7 @@ MIT
 If you use this for your research, please cite:
 ```
 @article{nguyen2025hot,
-  title={HoT: Highlighted Chain of Thought for Referencing Supportive Facts from Inputs},
+  title={HoT: Highlighted Chain of Thought for Referencing Supporting Facts from Inputs},
   author={Nguyen, Tin and Bolton, Logan and Taesiri, Mohammad Reza and Nguyen, Anh Totti},
   journal={arXiv preprint arXiv:2503.02003},
   year={2025}
