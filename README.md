@@ -78,6 +78,20 @@ python visualize.py --llm_model "gpt-4o-2024-08-06" --dataset "GSM8K" --answer_m
 MIT
 
 
+### Citation
+If you use this for your research, please cite:
+```
+@misc{nguyen2025hothighlightedchainthought,
+      title={HoT: Highlighted Chain of Thought for Referencing Supporting Facts from Inputs}, 
+      author={Tin Nguyen and Logan Bolton and Mohammad Reza Taesiri and Anh Totti Nguyen},
+      year={2025},
+      eprint={2503.02003},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2503.02003}, 
+}
+```
+
 
 
 
